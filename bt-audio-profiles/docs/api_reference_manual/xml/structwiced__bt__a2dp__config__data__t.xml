@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__a2dp__config__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_a2dp_config_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__a2dp__config__data__t_1a8babf7675ddd0e5da572384dbd683eef" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_sink_feature_mask_t</type>
+        <definition>wiced_bt_a2dp_sink_feature_mask_t wiced_bt_a2dp_config_data_t::feature_mask</definition>
+        <argsstring></argsstring>
+        <name>feature_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="104" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__a2dp__config__data__t_1aeadd9edacfcc3971564f3baddd7c13c4" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__codec__info__list__t" kindref="compound">wiced_bt_a2dp_codec_info_list_t</ref></type>
+        <definition>wiced_bt_a2dp_codec_info_list_t wiced_bt_a2dp_config_data_t::codec_capabilities</definition>
+        <argsstring></argsstring>
+        <name>codec_capabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="105" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__a2dp__config__data__t_1ae77c321a7462958cd96470f6c7eab0f1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_a2dp_config_data_t::sink_delay</definition>
+        <argsstring></argsstring>
+        <name>sink_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="110" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>wiced_bt_a2dp_config_data_t</label>
+        <link refid="structwiced__bt__a2dp__config__data__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>codec_capabilities</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>wiced_bt_a2dp_codec_info_list_t</label>
+        <link refid="structwiced__bt__a2dp__codec__info__list__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="103" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="102" bodyend="112"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__a2dp__config__data__t_1aeadd9edacfcc3971564f3baddd7c13c4" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_config_data_t</scope><name>codec_capabilities</name></member>
+      <member refid="structwiced__bt__a2dp__config__data__t_1a8babf7675ddd0e5da572384dbd683eef" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_config_data_t</scope><name>feature_mask</name></member>
+      <member refid="structwiced__bt__a2dp__config__data__t_1ae77c321a7462958cd96470f6c7eab0f1" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_config_data_t</scope><name>sink_delay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

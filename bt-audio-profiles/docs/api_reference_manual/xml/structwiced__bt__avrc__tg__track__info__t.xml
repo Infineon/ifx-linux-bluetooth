@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__avrc__tg__track__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_avrc_tg_track_info_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__track__info__t_1a966ee0a0f8e40d31c42a6195e731df8d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_avrc_tg_track_info_t::app_attr_count</definition>
+        <argsstring></argsstring>
+        <name>app_attr_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="93" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__track__info__t_1a0b5cd2d774422b39cef831ed4db49f0d" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__avrc__tg__track__attr__t" kindref="compound">wiced_bt_avrc_tg_track_attr_t</ref></type>
+        <definition>wiced_bt_avrc_tg_track_attr_t wiced_bt_avrc_tg_track_info_t::app_track_attr[APP_AVRC_MAX_ATTR+1]</definition>
+        <argsstring>[APP_AVRC_MAX_ATTR+1]</argsstring>
+        <name>app_track_attr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="95" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="48">
+        <label>wiced_bt_avrc_tg_track_info_t</label>
+        <link refid="structwiced__bt__avrc__tg__track__info__t"/>
+        <childnode refid="49" relation="usage">
+          <edgelabel>app_track_attr</edgelabel>
+        </childnode>
+      </node>
+      <node id="49">
+        <label>wiced_bt_avrc_tg_track_attr_t</label>
+        <link refid="structwiced__bt__avrc__tg__track__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="91" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="91" bodyend="96"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__avrc__tg__track__info__t_1a966ee0a0f8e40d31c42a6195e731df8d" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_track_info_t</scope><name>app_attr_count</name></member>
+      <member refid="structwiced__bt__avrc__tg__track__info__t_1a0b5cd2d774422b39cef831ed4db49f0d" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_track_info_t</scope><name>app_track_attr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

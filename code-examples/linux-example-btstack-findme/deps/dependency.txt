@@ -1,0 +1,2 @@
+https://gitlab.intra.infineon.com/repo-staging/bluetooth-linux.git#3.6.0.12
+https://gitlab.intra.infineon.com/repo-staging/btstack.git#btstack360

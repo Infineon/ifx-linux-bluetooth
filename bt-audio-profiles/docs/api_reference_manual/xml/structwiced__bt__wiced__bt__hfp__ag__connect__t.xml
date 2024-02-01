@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__wiced__bt__hfp__ag__connect__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_wiced_bt_hfp_ag_connect_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__wiced__bt__hfp__ag__connect__t_1abe6664a8909ff114134a32bd66705eaa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_wiced_bt_hfp_ag_connect_t::peer_features</definition>
+        <argsstring></argsstring>
+        <name>peer_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="169" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="168" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="167" bodyend="170"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__wiced__bt__hfp__ag__connect__t_1abe6664a8909ff114134a32bd66705eaa" prot="public" virt="non-virtual"><scope>wiced_bt_wiced_bt_hfp_ag_connect_t</scope><name>peer_features</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

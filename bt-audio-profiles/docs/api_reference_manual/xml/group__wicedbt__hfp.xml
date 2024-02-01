@@ -1,0 +1,1512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wicedbt__hfp" kind="group">
+    <compoundname>wicedbt_hfp</compoundname>
+    <title>Hands Free Profile (HFP) HandsFree</title>
+    <innerclass refid="structwiced__bt__hfp__hf__call__data__t" prot="public">wiced_bt_hfp_hf_call_data_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__hf__volume__data__t" prot="public">wiced_bt_hfp_hf_volume_data_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__hf__config__data__t" prot="public">wiced_bt_hfp_hf_config_data_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__hf__clip__data__t" prot="public">wiced_bt_hfp_hf_clip_data_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__hf__at__result__t" prot="public">wiced_bt_hfp_hf_at_result_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__hf__connection__data__t" prot="public">wiced_bt_hfp_hf_connection_data_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__hf__active__call__t" prot="public">wiced_bt_hfp_hf_active_call_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__hf__bind__data__t" prot="public">wiced_bt_hfp_hf_bind_data_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__hf__event__data__t" prot="public">wiced_bt_hfp_hf_event_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wicedbt__hfp_1gad467072c49f3bb8dcf0bc935ffa5d941" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_supported_features_t</name>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a9cab54f147da17bde1f4bd250e50c700" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_ECNR</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para>HF feature Echo Noise Cancellation (ECNR) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a7ada2938c3659b4703319ce5dc3989b3" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_3WAY_CALLING</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+<para>HF feature Three-way calling. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a19395cf54382b5b11498ed55a698615e" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_CLIP_CAPABILITY</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+<para>HF feature Clip capability. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941ab63b034558a7d091b6958b74a231cec0" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_VOICE_RECOGNITION_ACTIVATION</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+<para>HF feature Voice recognition activation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941aa07dfd2715b54e8eb7762900205d649a" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_REMOTE_VOLUME_CONTROL</name>
+          <initializer>= 0x00000010</initializer>
+          <briefdescription>
+<para>HF feature Remote volume control. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a5721254a2705d57c17019fe28ef30b4c" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_ENHANCED_CALL_STATUS</name>
+          <initializer>= 0x00000020</initializer>
+          <briefdescription>
+<para>HF feature Enhanced call status. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a4e5402d114483e40860c10e1aff96bdb" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_ENHANCED_CALL_CONTROL</name>
+          <initializer>= 0x00000040</initializer>
+          <briefdescription>
+<para>HF feature Enhanced call control. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a5a4c377b10b942ed5bdc61ef7d432f64" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_CODEC_NEGOTIATION</name>
+          <initializer>= 0x00000080</initializer>
+          <briefdescription>
+<para>HF feature Codec negotiation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a9518b3e364ea4bc50424f934ff19f41a" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_HF_INDICATORS</name>
+          <initializer>= 0x00000100</initializer>
+          <briefdescription>
+<para>HF feature HF indicators. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941aa706181ee3979e2e7b5df284e558580a" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_ESCO_S4_SETTINGS_SUPPORT</name>
+          <initializer>= 0x00000200</initializer>
+          <briefdescription>
+<para>HF feature eSCO S4 Settings Supported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a18742ea9d9730a7d1ff051b6df83e664" prot="public">
+          <name>WICED_BT_HFP_HF_FEATURE_ENHANCED_VOICE_RECOGNITION</name>
+          <initializer>= 0x00000400</initializer>
+          <briefdescription>
+<para>HF feature Enhanced Voice Recognition status. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>HF device supported feature flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="78" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="77" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1ga698ff5e28045678d476c6ac3e1c3a9d2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_ag_supported_features_t</name>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2a21562e5799313e9f1b578519b472a77f" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_3WAY_CALLING</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para>AG feature Three-way calling. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2af499b3aaf831fe7747403b0b802829f4" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_ECNR</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+<para>AG feature Echo Noise Cancellation (ECNR) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2a17098608e05b10dcea6e0adc8394fb71" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_VOICE_RECOGNITION_ACTIVATION</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+<para>AG feature Voice recognition activation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2a420f469bc91d6bb1216a35d2792d9204" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_INBAND_RING_TONE_CAPABILITY</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+<para>AG feature In-band ring tone capability. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2af1191c95d1fa7b4ad0c3cc6bdcd9d4dd" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_ATTACH_NUMBER_TO_VOICE_TAG</name>
+          <initializer>= 0x00000010</initializer>
+          <briefdescription>
+<para>AG feature Attach a number to voice tag. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2a676e430836d2d33db809b15a78ef3948" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_ABILITY_TO_REJECT_CALL</name>
+          <initializer>= 0x00000020</initializer>
+          <briefdescription>
+<para>AG feature Ability to reject a call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2a49a3e8d68303acdd64ed7edc33e59bf6" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_ENHANCED_CALL_STATUS</name>
+          <initializer>= 0x00000040</initializer>
+          <briefdescription>
+<para>AG feature Enhanced call status. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2addf95d1ded13145913bbfd1ec9b9fbc3" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_ENHANCED_CALL_CONTROL</name>
+          <initializer>= 0x00000080</initializer>
+          <briefdescription>
+<para>AG feature Enhanced call control. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2a1827c3b5049cada6fe262376885b5aea" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_EXTENDED_ERROR_RESULT_CODES</name>
+          <initializer>= 0x00000100</initializer>
+          <briefdescription>
+<para>AG feature Extended Error Result Codes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2a4e3e90f72d9b5995990189be08b3faa8" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_CODEC_NEGOTIATION</name>
+          <initializer>= 0x00000200</initializer>
+          <briefdescription>
+<para>AG feature Codec negotiation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2afb93dfdfcc6c4f98c1174fe82d612079" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_HF_INDICATORS</name>
+          <initializer>= 0x00000400</initializer>
+          <briefdescription>
+<para>AG feature HF Indicators. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2af0d22a3f6b772d5f787dcbbaa4771569" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_ESCO_S4_SETTINGS_SUPPORT</name>
+          <initializer>= 0x00000800</initializer>
+          <briefdescription>
+<para>AG featuree SCO S4 Settings Supported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2ad2a6b6a66fa9931175aeb028144a9a14" prot="public">
+          <name>WICED_BT_HFP_AG_FEATURE_ENHANCED_VOICE_RECOGNITION</name>
+          <initializer>= 0x00001000</initializer>
+          <briefdescription>
+<para>AG featuree Recognition Status. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AG supported feature flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="94" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="93" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1ga4fe00fa848152020909729f50ee07504" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_event_t</name>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a600fd993e0b9597a10fae183ee9533ea" prot="public">
+          <name>WICED_BT_HFP_HF_CONNECTION_STATE_EVT</name>
+          <briefdescription>
+<para>Received on control path connection state change. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504af9f10ded2dd0240df3b3f81cc2094aef" prot="public">
+          <name>WICED_BT_HFP_HF_AG_FEATURE_SUPPORT_EVT</name>
+          <briefdescription>
+<para>Indicates HFP features supported in AG. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504aec233ee9a0c01a48f369427128a90ba5" prot="public">
+          <name>WICED_BT_HFP_HF_SERVICE_STATE_EVT</name>
+          <briefdescription>
+<para>Indicates AG&apos;s cellular network connection state. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a1eb4f8609ff9c58f0355af611bf3d98d" prot="public">
+          <name>WICED_BT_HFP_HF_SERVICE_TYPE_EVT</name>
+          <briefdescription>
+<para>Indicates whether AG is connected to home or romaing network. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a9afa7e0a833ef3a00f1245387b32b3cd" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_SETUP_EVT</name>
+          <briefdescription>
+<para>Received when there is a change in call state, e.g., incoming call, call termination. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504aa4d439ba4a050b69c54a66548bbcb7d2" prot="public">
+          <name>WICED_BT_HFP_HF_RING_EVT</name>
+          <briefdescription>
+<para>Ring indication (during incoming call) received. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504af11910aebe21298019fd5dbdcbf4d4a9" prot="public">
+          <name>WICED_BT_HFP_HF_INBAND_RING_STATE_EVT</name>
+          <briefdescription>
+<para>Indicates if the AG supports sending the ring-tone to HF over audio connection. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504af1d7a60680099d543a821fb86136b630" prot="public">
+          <name>WICED_BT_HFP_HF_RSSI_IND_EVT</name>
+          <briefdescription>
+<para>Indicates AG&apos;s cellular signal strength. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a8f2b5c5a866e41e5106b4218bab30478" prot="public">
+          <name>WICED_BT_HFP_HF_BATTERY_STATUS_IND_EVT</name>
+          <briefdescription>
+<para>Indicates AG&apos;s battery status. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a15c6357446b4288c768aa9b501cdca31" prot="public">
+          <name>WICED_BT_HFP_HF_VOLUME_CHANGE_EVT</name>
+          <briefdescription>
+<para>Received when there is a change in the microphone or speaker volume is changed by AG. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a76b004cccd3428485d328779097e8410" prot="public">
+          <name>WICED_BT_HFP_HF_CLIP_IND_EVT</name>
+          <briefdescription>
+<para>Indicates calling line identification name/number. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504aaf52b6c65547920fca71f8498bf44c90" prot="public">
+          <name>WICED_BT_HFP_HFP_CODEC_SET_EVT</name>
+          <briefdescription>
+<para>Received when codec is selected (If Codec negotiation is supported) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a3f04b9700a3557f5018e62e4115142d4" prot="public">
+          <name>WICED_BT_HFP_HFP_ACTIVE_CALL_EVT</name>
+          <briefdescription>
+<para>Response of AT+CLCC command. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a0d2d1c2f0249d2e0ed2aafc09b213d0a" prot="public">
+          <name>WICED_BT_HFP_HF_OK_EVT</name>
+          <briefdescription>
+<para>Received AT+OK response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504ace0505245a3bfd51bcf090e3877d180e" prot="public">
+          <name>WICED_BT_HFP_HF_ERROR_EVT</name>
+          <briefdescription>
+<para>Received AT+ERROR response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504ac65e84822a98d54f161b65ceb00217da" prot="public">
+          <name>WICED_BT_HFP_HF_CME_ERROR_EVT</name>
+          <briefdescription>
+<para>Received AT+CME ERROR response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a8f810292129ba2183d9f42fb7bb03795" prot="public">
+          <name>WICED_BT_HFP_HF_CNUM_EVT</name>
+          <briefdescription>
+<para>Received AT+CNUM response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a94dc5aa05d62ab5a96c92a0d61ac1fce" prot="public">
+          <name>WICED_BT_HFP_HF_BINP_EVT</name>
+          <briefdescription>
+<para>Received AT+BINP response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a4977593e9972336217318835b61f7393" prot="public">
+          <name>WICED_BT_HFP_HF_VOICE_RECOGNITION_EVT</name>
+          <briefdescription>
+<para>Received AT+BVRA response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a9d94134413a86e01e2b6cdb885b2cd59" prot="public">
+          <name>WICED_BT_HFP_HF_BIND_EVT</name>
+          <briefdescription>
+<para>Indicators Update event. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504ae6d3e6071d52637b9de4e20911ebdcf9" prot="public">
+          <name>WICED_BT_HFP_HF_COPS_EVT</name>
+          <briefdescription>
+<para>Received AT+COPS response(current Network Name) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>HF Events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>These are received via <ref refid="group__wicedbt__hfp_1gaa05f2aafaa51393f9b75ad641199ec0d" kindref="member">wiced_bt_hfp_hf_event_cb_t()</ref> callback function. see <ref refid="structwiced__bt__hfp__hf__event__data__t" kindref="compound">wiced_bt_hfp_hf_event_data_t</ref> for payload. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="113" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="112" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1gace33c1c1188090c4d1ece1ce9123a1c7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_connection_state_t</name>
+        <enumvalue id="group__wicedbt__hfp_1ggace33c1c1188090c4d1ece1ce9123a1c7acf16364c217222012531819dc9e19b8f" prot="public">
+          <name>WICED_BT_HFP_HF_STATE_DISCONNECTED</name>
+          <briefdescription>
+<para>HF control connection is closed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggace33c1c1188090c4d1ece1ce9123a1c7accb0a8464dba232296ba4586a5779955" prot="public">
+          <name>WICED_BT_HFP_HF_STATE_CONNECTED</name>
+          <briefdescription>
+<para>HF control connection established. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggace33c1c1188090c4d1ece1ce9123a1c7a284494ea5787581d276e416ea10bcdb5" prot="public">
+          <name>WICED_BT_HFP_HF_STATE_SLC_CONNECTED</name>
+          <briefdescription>
+<para>HF synchronized with AG&apos;s state, ready to send/recive commands/notifications. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>HF Control Connection States. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="140" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="139" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1ga5becf2b81ab9966b180f2ae1a8526872" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_service_state_t</name>
+        <enumvalue id="group__wicedbt__hfp_1gga5becf2b81ab9966b180f2ae1a8526872a183d76617de449cf5b7420cd251b6992" prot="public">
+          <name>WICED_BT_HFP_HF_SERVICE_STATE_NOT_AVAILABLE</name>
+          <briefdescription>
+<para>AG&apos;s cellular services not available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga5becf2b81ab9966b180f2ae1a8526872a6a158f2ab7f268e9848696f84db4d554" prot="public">
+          <name>WICED_BT_HFP_HF_SERVICE_STATE_AVAILABLE</name>
+          <briefdescription>
+<para>AG is connected to cellular services. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AG&apos;s serivce states. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="148" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1ga31769d2412c71d378f690799a3cb82ec" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_service_type_t</name>
+        <enumvalue id="group__wicedbt__hfp_1gga31769d2412c71d378f690799a3cb82eca2a9350f1a395fb6d5a8ada608d36703b" prot="public">
+          <name>WICED_BT_HFP_HF_SERVICE_TYPE_HOME</name>
+          <briefdescription>
+<para>AG is connected to home network. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga31769d2412c71d378f690799a3cb82eca654206c70154afe96f4d15719fab93a8" prot="public">
+          <name>WICED_BT_HFP_HF_SERVICE_TYPE_ROAMING</name>
+          <briefdescription>
+<para>AG is connected to a romaing network. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AG&apos;s serivce type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="155" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="154" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1ga1a6a3f746c4ba8c515caf93a03ea91ef" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_callsetup_state_t</name>
+        <enumvalue id="group__wicedbt__hfp_1gga1a6a3f746c4ba8c515caf93a03ea91efac9b0182b54e0581562d340dfb8bb0626" prot="public">
+          <name>WICED_BT_HFP_HF_CALLSETUP_STATE_IDLE</name>
+          <briefdescription>
+<para>No call set up in progress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga1a6a3f746c4ba8c515caf93a03ea91efa2e1a4adcfa363a6f41d42dfc028f5506" prot="public">
+          <name>WICED_BT_HFP_HF_CALLSETUP_STATE_INCOMING</name>
+          <briefdescription>
+<para>There is an incoming call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga1a6a3f746c4ba8c515caf93a03ea91efac9c169116d07495b7c798d974da06e4a" prot="public">
+          <name>WICED_BT_HFP_HF_CALLSETUP_STATE_DIALING</name>
+          <briefdescription>
+<para>Outgoing call is being setup up. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga1a6a3f746c4ba8c515caf93a03ea91efacbdf9a4e0be9a7d86387eca9a17db8f9" prot="public">
+          <name>WICED_BT_HFP_HF_CALLSETUP_STATE_ALERTING</name>
+          <briefdescription>
+<para>Remote party is being alterted of the call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga1a6a3f746c4ba8c515caf93a03ea91efa19f0960af368227f4dc1cea9d0f65ebc" prot="public">
+          <name>WICED_BT_HFP_HF_CALLSETUP_STATE_WAITING</name>
+          <briefdescription>
+<para>Incoming call is waiting (received when a call is already active) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>States of a call during setup procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="162" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="161" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1gaefc3137ceb787ec502a62411336f1aef" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_inband_ring_state_t</name>
+        <enumvalue id="group__wicedbt__hfp_1ggaefc3137ceb787ec502a62411336f1aefa0474592dbf4bba4e1e588fafb619facf" prot="public">
+          <name>WICED_BT_HFP_HF_INBAND_RING_DISABLED</name>
+          <briefdescription>
+<para>AG will not send ring-tone thru audio connection, HF will use some means to alert the user of an incoming call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaefc3137ceb787ec502a62411336f1aefa702079954e9a5246fee02b6014d9bbd5" prot="public">
+          <name>WICED_BT_HFP_HF_INBAND_RING_ENABLED</name>
+          <briefdescription>
+<para>AG will send the ring-tone thru audio connection. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>In-band ring tone setting in AG. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="172" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="171" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1ga27a6ebcebe6385d6d89b5dcb8dd9f08c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_volume_type_t</name>
+        <enumvalue id="group__wicedbt__hfp_1gga27a6ebcebe6385d6d89b5dcb8dd9f08ca302ec11e8dd9a3637005b99496944e92" prot="public">
+          <name>WICED_BT_HFP_HF_SPEAKER</name>
+          <briefdescription>
+<para>Refers to speaker on the HF Device. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga27a6ebcebe6385d6d89b5dcb8dd9f08caca66be846459f10ba7a2c33ae86f3230" prot="public">
+          <name>WICED_BT_HFP_HF_MIC</name>
+          <briefdescription>
+<para>Refers to microphone on the HF Device. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Audio input/output device on the HF Device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="179" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1gaeebed2d8b4e824634c470ceb3fba3886" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_call_action_t</name>
+        <enumvalue id="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886acf61488bed518cca9db5a1178bd8b42a" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ACTION_DIAL</name>
+          <briefdescription>
+<para>Place an outgoing call request. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886ace9210dd6586e160565620ba893b1bb3" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ACTION_ANSWER</name>
+          <briefdescription>
+<para>Answer an incoming call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886a11a730f28f732264bbc6a4ae95d8a899" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ACTION_HANGUP</name>
+          <briefdescription>
+<para>Hangup an active call, reject an incoming call, end an outgoing call (which is being setup) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886aa342395a1c1dfcb7f7360f6fd87c033c" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ACTION_HOLD_0</name>
+          <briefdescription>
+<para>Release a held call, or reject a waiting call (UDUB) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886ada47bd0babaffb8cd54dad2503950031" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ACTION_HOLD_1</name>
+          <briefdescription>
+<para>Release active call and activate a held or waiting call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886a3c3aaa1a7056a1e96fad4130dae111d4" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ACTION_HOLD_2</name>
+          <briefdescription>
+<para>Place active call on hold, and accept a waiting call or retrieve a held call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886a3b765f3d20606ae4065e1a09655d5c3b" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ACTION_HOLD_3</name>
+          <briefdescription>
+<para>Adds a held call to the conversation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886a7e41d3685b380eac5d6793ffbc5e7515" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ACTION_HOLD_4</name>
+          <briefdescription>
+<para>Connects the two calls and disconnects the subscriber from both calls (Explicit Call Transfer). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Call action command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="186" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="185" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1ga68111fa7a4a27221e466b90f7d70c19b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_codec_t</name>
+        <enumvalue id="group__wicedbt__hfp_1gga68111fa7a4a27221e466b90f7d70c19ba1ca564489cfb6e0221faa3b185ba4891" prot="public">
+          <name>WICED_BT_HFP_HF_CVSD_CODEC</name>
+          <initializer>=   1</initializer>
+          <briefdescription>
+<para>Received seleceted codec type CVSD. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga68111fa7a4a27221e466b90f7d70c19baa425d0daf89f60ad033872ddc550fd1f" prot="public">
+          <name>WICED_BT_HFP_HF_MSBC_CODEC</name>
+          <initializer>=   2</initializer>
+          <briefdescription>
+<para>Received seleceted codec type mSBC. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Codec for HF profile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="199" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="198" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1gaea206862853455a8555156fced1cee57" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_call_dir_t</name>
+        <enumvalue id="group__wicedbt__hfp_1ggaea206862853455a8555156fced1cee57a5bc18e730254d8352334b58876da862c" prot="public">
+          <name>WICED_BT_HFP_HF_OUTGOING</name>
+          <initializer>=   0</initializer>
+          <briefdescription>
+<para>Active Call Direction Outgoing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaea206862853455a8555156fced1cee57a696b2d110098b4906c249578cb508768" prot="public">
+          <name>WICED_BT_HFP_HF_INCOMING</name>
+          <initializer>=   1</initializer>
+          <briefdescription>
+<para>Active Call Direction Incoming. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>HF Call direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="206" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="205" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1gaa75ffb28d6cac2b6c831b02849eb0068" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_profile_type_t</name>
+        <enumvalue id="group__wicedbt__hfp_1ggaa75ffb28d6cac2b6c831b02849eb0068a9a3f62c2aa492027583b0cbd51dbef32" prot="public">
+          <name>WICED_BT_HFP_PROFILE</name>
+          <briefdescription>
+<para>Received profile connected to HFP. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaa75ffb28d6cac2b6c831b02849eb0068a3ac9e9735c37df7e49eae7fc79d4bbe9" prot="public">
+          <name>WICED_BT_HSP_PROFILE</name>
+          <briefdescription>
+<para>Received profile connected to HSP. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Profile type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="213" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="212" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1ga43dc756446e509de775ca9f769f1e1d3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_call_status_t</name>
+        <enumvalue id="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3a41d1ef64e90677d0fd161db50ac547ba" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ACTIVE</name>
+          <initializer>=   0</initializer>
+          <briefdescription>
+<para>Status of the call Active. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3a799c0140d846861e1801fd009121e996" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_HELD</name>
+          <briefdescription>
+<para>Status of the call Held. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3ab008d68b55dcc39892d4b9bcaebf5500" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_DIALING</name>
+          <briefdescription>
+<para>Status of the call Dialing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3a5557978e93a40544f36b85a75f18eb07" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_ALERING</name>
+          <briefdescription>
+<para>Status of the call Alerting. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3a4e6be3af8c12498949f5999efeef22d5" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_INCOMING</name>
+          <briefdescription>
+<para>Status of the call Incoming. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3aa1117e68cd24af79b1f07436030590e9" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_WAITING</name>
+          <briefdescription>
+<para>Status of the call Waiting. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3a378922aa58684a2413977f49e0efedd4" prot="public">
+          <name>WICED_BT_HFP_HF_CALL_HELD_BY_RSP_HOLD</name>
+          <briefdescription>
+<para>Status of the call held by response hold. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>HF Call status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="220" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="219" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__hfp_1gaf643397accceeb473e4e36c4518de2cb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_hf_call_mode_t</name>
+        <enumvalue id="group__wicedbt__hfp_1ggaf643397accceeb473e4e36c4518de2cbafdf6ab973d9d6a77b1e2ca1bd86a2767" prot="public">
+          <name>WICED_BT_HFP_HF_MODE_VOICE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Type of call Voice. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaf643397accceeb473e4e36c4518de2cba84f5a4b36e58fc9c07799dcbe82bbd47" prot="public">
+          <name>WICED_BT_HFP_HF_MODE_DATA</name>
+          <briefdescription>
+<para>Type of call Data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__hfp_1ggaf643397accceeb473e4e36c4518de2cba7da986fda84afcdd3f2e7983af1c177f" prot="public">
+          <name>WICED_BT_HFP_HF_MODE_FAX</name>
+          <briefdescription>
+<para>Type of call Fax. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>HF Call mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="232" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="231" bodyend="236"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wicedbt__hfp_1gab3c8daddf8f59cd6ea66e44f3819465f" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char wiced_bt_hfp_hf_caller_num_t[WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH]</definition>
+        <argsstring>[WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH]</argsstring>
+        <name>wiced_bt_hfp_hf_caller_num_t</name>
+        <briefdescription>
+<para>HF caller number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="67" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wicedbt__hfp_1gac5d8d1e0a4813afc504792aaa919238b" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char wiced_bt_hfp_hf_at_result_code_t[WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH]</definition>
+        <argsstring>[WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH]</argsstring>
+        <name>wiced_bt_hfp_hf_at_result_code_t</name>
+        <briefdescription>
+<para>HF AT result code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="70" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wicedbt__hfp_1gaa05f2aafaa51393f9b75ad641199ec0d" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_hfp_hf_event_cb_t) (wiced_bt_hfp_hf_event_t event, wiced_bt_hfp_hf_event_data_t *p_data)</definition>
+        <argsstring>)(wiced_bt_hfp_hf_event_t event, wiced_bt_hfp_hf_event_data_t *p_data)</argsstring>
+        <name>wiced_bt_hfp_hf_event_cb_t</name>
+        <briefdescription>
+<para>The HF control path callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application implements a callback of this type to receive HF events and commands.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: HF event </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to event data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="351" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wicedbt__hfp_1ga5ac7509eeaf7a91fe45da31185e482e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_hfp_hf_init</definition>
+        <argsstring>(wiced_bt_hfp_hf_config_data_t *p_config_data, wiced_bt_hfp_hf_event_cb_t event_cb)</argsstring>
+        <name>wiced_bt_hfp_hf_init</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__hf__config__data__t" kindref="compound">wiced_bt_hfp_hf_config_data_t</ref> *</type>
+          <declname>p_config_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wicedbt__hfp_1gaa05f2aafaa51393f9b75ad641199ec0d" kindref="member">wiced_bt_hfp_hf_event_cb_t</ref></type>
+          <declname>event_cb</declname>
+        </param>
+        <briefdescription>
+<para>The API to initialize the HFP-HF component and register with the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application before any other API is called. Application provides the SINK configuration data and callback to receive control events</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_config_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: HF configuration parameters array for each server. see <ref refid="structwiced__bt__hfp__hf__config__data__t" kindref="compound">wiced_bt_hfp_hf_config_data_t</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">event_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Callback function for receiving HF events.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t <linebreak/>
+ <bold> WICED_ALREADY_INITIALIZED </bold> : if already in initialized <linebreak/>
+<bold> WICED_BADARG </bold> : if parameter(s) are out of range or not in correct state <linebreak/>
+<bold> WICED_BT_SUCCESS </bold> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="371" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__hfp_1ga58fb1fd2f5fc4fd61075117a251c4755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_hfp_hf_deinit</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_hfp_hf_deinit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>The API to deregister the HFP-HF component from the stack and to clean up internal data structures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application when the HFP-HF component is no longer needed by it.</para>
+<para><simplesect kind="return"><para>wiced_result_t <linebreak/>
+ <bold> WICED_SUCCESS </bold> : if successfully deinitialized <linebreak/>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="383" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__hfp_1ga0df9b2e9221bc93bd5064f1015d3c068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_hfp_hf_connect</definition>
+        <argsstring>(wiced_bt_device_address_t bd_address)</argsstring>
+        <name>wiced_bt_hfp_hf_connect</name>
+        <param>
+          <type>wiced_bt_device_address_t</type>
+          <declname>bd_address</declname>
+        </param>
+        <briefdescription>
+<para>The API to initiate a HFP connection to an AG. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application to connect to an AG with the given address.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bd_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BD address of the AG.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t <linebreak/>
+ <bold> WICED_NOTUP </bold> : if hf not initialized <linebreak/>
+<bold> WICED_OUT_OF_HEAP_SPACE </bold> : if out of memory <linebreak/>
+<bold> WICED_BT_SUCCESS </bold> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="398" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__hfp_1ga30ac6d15769ad2a3823796815f3fc834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_hfp_hf_disconnect</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_hfp_hf_disconnect</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>The API to disconnect from an AG. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application to disconnect from an AG with a given address.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Connection handle.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t <linebreak/>
+ <bold> WICED_NOTUP </bold> : if hf not initialized <linebreak/>
+<bold> WICED_OUT_OF_HEAP_SPACE </bold> : if out of memory <linebreak/>
+<bold> WICED_BT_SUCCESS </bold> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="413" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__hfp_1ga18aae95521e74259e36f4ad54774b307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_hfp_hf_perform_call_action</definition>
+        <argsstring>(uint16_t handle, wiced_bt_hfp_hf_call_action_t action, char *number)</argsstring>
+        <name>wiced_bt_hfp_hf_perform_call_action</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wicedbt__hfp_1gaeebed2d8b4e824634c470ceb3fba3886" kindref="member">wiced_bt_hfp_hf_call_action_t</ref></type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>The API to manipulate a call (i.e., to answer, hold, hangup, reject, etc). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Allows the application to take actions indicated in <ref refid="group__wicedbt__hfp_1gaeebed2d8b4e824634c470ceb3fba3886" kindref="member">wiced_bt_hfp_hf_call_action_t</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Connection handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Action to be initiated, see <ref refid="group__wicedbt__hfp_1gaeebed2d8b4e824634c470ceb3fba3886" kindref="member">wiced_bt_hfp_hf_call_action_t</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Contains a NULL terminated number to be called, if NULL, the last number redial (LNR) is initiated. valid when action is WICED_BT_HFP_HF_CALL_ACTION_DIAL, for all other actions this is ignored.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t <linebreak/>
+ <bold> WICED_NOTUP </bold> : if hf not initialized <linebreak/>
+<bold> WICED_OUT_OF_HEAP_SPACE </bold> : if out of memory <linebreak/>
+<bold> WICED_BADARG </bold> : if parameter(s) are out of range <linebreak/>
+<bold> WICED_BT_SUCCESS </bold> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="434" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__hfp_1gaeb2701ba2246c70f8571f77c7205b1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_hfp_hf_notify_volume</definition>
+        <argsstring>(uint16_t handle, wiced_bt_hfp_hf_volume_type_t volume_type, uint8_t volume_level)</argsstring>
+        <name>wiced_bt_hfp_hf_notify_volume</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wicedbt__hfp_1ga27a6ebcebe6385d6d89b5dcb8dd9f08c" kindref="member">wiced_bt_hfp_hf_volume_type_t</ref></type>
+          <declname>volume_type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>volume_level</declname>
+        </param>
+        <briefdescription>
+<para>The API to send the current speaker/mic volume level to AG. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application to notify the AG of the change in volume of mic or speaker.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Connection handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">volume_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Mic or speaker for which the volume was changed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">volume_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Volume level from 0 to 15.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t <linebreak/>
+ <bold> WICED_NOTUP </bold> : if hf not initialized <linebreak/>
+<bold> WICED_OUT_OF_HEAP_SPACE </bold> : if out of memory <linebreak/>
+<bold> WICED_BT_SUCCESS </bold> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="452" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__hfp_1gaf3e2a9013409efe182c5697e11ad020c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_hfp_hf_send_at_cmd</definition>
+        <argsstring>(uint16_t handle, char *at_cmd)</argsstring>
+        <name>wiced_bt_hfp_hf_send_at_cmd</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>at_cmd</declname>
+        </param>
+        <briefdescription>
+<para>The API to send the at command to the AG Called by the application to send an command to AG. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The command sent is passed thru for the library. The response is received through WICED_BT_HFP_HF_AT_RESULT_CODE_IND_EVT.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Connection handle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">at_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Null terminated at command string to be sent to AG.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t <linebreak/>
+ <bold> WICED_NOTUP </bold> : if hf not initialized <linebreak/>
+<bold> WICED_OUT_OF_HEAP_SPACE </bold> : if out of memory <linebreak/>
+<bold> WICED_BT_SUCCESS </bold> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="470" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__hfp_1gac8e00418e5924aa627dfee2af4eb77bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_hfp_hf_lrac_switch_get</definition>
+        <argsstring>(void *p_opaque, uint16_t *p_sync_data_len)</argsstring>
+        <name>wiced_bt_hfp_hf_lrac_switch_get</name>
+        <param>
+          <type>void *</type>
+          <declname>p_opaque</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>p_sync_data_len</declname>
+        </param>
+        <briefdescription>
+<para>The API to get LRAC Switch data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application to get the LRAC Switch Data.</para>
+<para><simplesect kind="note"><para>Supported only on chips that support LRAC feature.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: The pointer to a buffer which will be filled with LRAC Switch data (current HFP Sink State). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_sync_data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Size of the buffer (IN), size filled (OUT)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t <linebreak/>
+ <bold> WICED_BADARG </bold> : if parameter(s) are out of range <linebreak/>
+ <bold> WICED_BT_SUCCESS </bold> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="488" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__hfp_1ga2a679bd6ae16601d21b3c95b2026efa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_hfp_hf_lrac_switch_set</definition>
+        <argsstring>(void *p_opaque, uint16_t sync_data_len)</argsstring>
+        <name>wiced_bt_hfp_hf_lrac_switch_set</name>
+        <param>
+          <type>void *</type>
+          <declname>p_opaque</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>sync_data_len</declname>
+        </param>
+        <briefdescription>
+<para>The API to set LRAC switch data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application to set the LRAC Switch Data</para>
+<para><simplesect kind="note"><para>Supported only on chips that support LRAC feature.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: The pointer to a buffer which contains LRAC Switch data (new HFP Sink State). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sync_data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Size of the buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t <linebreak/>
+ <bold> WICED_BADARG </bold> : if parameter(s) are out of range <linebreak/>
+ <bold> WICED_BT_SUCCESS </bold> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="504" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wicedbt__hfp_1ga4c91fbb612d8f72d2aa4544c20f6cbd6" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH</name>
+        <initializer>32</initializer>
+        <briefdescription>
+<para>Maximum length of caller number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="37" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1gaaa5d83feb25077d0e18b378e66cb8cfb" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH</name>
+        <initializer>256</initializer>
+        <briefdescription>
+<para>Maximum length of AT command result code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="40" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1ga88d92968f905786196082c629da02bbb" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_MAX_CONN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Default Maximum connection supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="44" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1gac040c8497b03eeec1784e6b90d7531c3" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_SDP_FEATURE_ECNR</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+<para>SDP SupportedFeatures attribute bit mapping for HF. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Table 5.2 of Hand-Free Profile 1.7.1 EC and/or NR function (yes:1, no:0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="49" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1gaba713802239ed49c4d8fc0d8fc5490ce" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_SDP_FEATURE_3WAY_CALLING</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+<para>Call waiting or three-way calling (yes:1, no:0) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="50" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1ga214701601af52c33882e08a393d41800" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_SDP_FEATURE_CLIP</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+<para>CLI presentation capability (yes:1, no:0) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="51" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1gaad6354e60df1a2d2dbf0234ccea7e48b" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_SDP_FEATURE_VRECG</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+<para>Voice recognition activation (yes:1, no:0) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="52" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1ga9c5dca9615be23a08144456bec4cf91a" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_SDP_FEATURE_REMOTE_VOL_CTRL</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+<para>Remote volume control (yes:1, no:0) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="53" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1gab9683646bf6952d5c4a026059786b190" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_SDP_FEATURE_WIDEBAND_SPEECH</name>
+        <initializer>0x0020</initializer>
+        <briefdescription>
+<para>Wide band speech (yes:1, no:0) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="54" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1ga9d8daf4c2ead185de60da6f95e692c54" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_IND_ID_ENHANCED_SAFETY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>HandsFree Indicator Id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enhanced Driver Safety </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="60" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__hfp_1ga466b52580fad3ce00e47f6af49f65ef7" prot="public" static="no">
+        <name>WICED_BT_HFP_HF_IND_ID_BATTERY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Battery Level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="61" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This section describes the API&apos;s required to add Hands Free Profile to the user application. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The typical use case for this profile is, a headset wirelessly connected to a mobile phone enabling the user to perform telephone functions through the headset . This library can also connect to an AG supporting HSP only, if the application using this library supports HSP in the SDP. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

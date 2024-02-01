@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__hf__clip__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_hf_clip_data_t</compoundname>
+    <includes local="no">wiced_bt_hfp_hf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__clip__data__t_1a370435e39ec95ec4c5e1c4b7975e032a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1gab3c8daddf8f59cd6ea66e44f3819465f" kindref="member">wiced_bt_hfp_hf_caller_num_t</ref></type>
+        <definition>wiced_bt_hfp_hf_caller_num_t wiced_bt_hfp_hf_clip_data_t::caller_num</definition>
+        <argsstring></argsstring>
+        <name>caller_num</name>
+        <briefdescription>
+<para>Caller number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="274" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__clip__data__t_1a6c395c3a466dd8644cf6c546bedd1a68" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_clip_data_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Specify format of the caller number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="275" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clip event data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="273" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="272" bodyend="276"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__hf__clip__data__t_1a370435e39ec95ec4c5e1c4b7975e032a" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_clip_data_t</scope><name>caller_num</name></member>
+      <member refid="structwiced__bt__hfp__hf__clip__data__t_1a6c395c3a466dd8644cf6c546bedd1a68" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_clip_data_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__hf__at__result__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_hf_at_result_t</compoundname>
+    <includes local="no">wiced_bt_hfp_hf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__at__result__t_1a954ce9c28a0bbee916d890737d00a30d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1gac5d8d1e0a4813afc504792aaa919238b" kindref="member">wiced_bt_hfp_hf_at_result_code_t</ref></type>
+        <definition>wiced_bt_hfp_hf_at_result_code_t wiced_bt_hfp_hf_at_result_t::arg</definition>
+        <argsstring></argsstring>
+        <name>arg</name>
+        <briefdescription>
+<para>AT result arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="281" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__at__result__t_1a97844f7d7ad3ec6e55d01931344d00a4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_hfp_hf_at_result_t::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+<para>AT result number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="282" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__at__result__t_1aefa01107c0093a5dd3741501fbd69ecd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_at_result_t::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+<para>AT Event code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="283" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HF AT result. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="280" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="279" bodyend="284"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__hf__at__result__t_1a954ce9c28a0bbee916d890737d00a30d" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_at_result_t</scope><name>arg</name></member>
+      <member refid="structwiced__bt__hfp__hf__at__result__t_1aefa01107c0093a5dd3741501fbd69ecd" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_at_result_t</scope><name>event</name></member>
+      <member refid="structwiced__bt__hfp__hf__at__result__t_1a97844f7d7ad3ec6e55d01931344d00a4" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_at_result_t</scope><name>num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

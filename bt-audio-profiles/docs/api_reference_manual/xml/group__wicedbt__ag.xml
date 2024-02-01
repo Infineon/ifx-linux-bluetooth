@@ -1,0 +1,912 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wicedbt__ag" kind="group">
+    <compoundname>wicedbt_ag</compoundname>
+    <title>Hands Free Profile (HFP) Audio Gateway</title>
+    <innerclass refid="structwiced__bt__hfp__ag__session__cb__t" prot="public">wiced_bt_hfp_ag_session_cb_t</innerclass>
+    <innerclass refid="structwiced__bt__hci__control__ag__settings__t" prot="public">wiced_bt_hci_control_ag_settings_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__ag__open__t" prot="public">wiced_bt_hfp_ag_open_t</innerclass>
+    <innerclass refid="structwiced__bt__wiced__bt__hfp__ag__connect__t" prot="public">wiced_bt_wiced_bt_hfp_ag_connect_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__ag__at__cmd__t" prot="public">wiced_bt_hfp_ag_at_cmd_t</innerclass>
+    <innerclass refid="structwiced__bt__hfp__ag__audio__open__t" prot="public">wiced_bt_hfp_ag_audio_open_t</innerclass>
+    <innerclass refid="unionwiced__bt__hfp__ag__event__data__t" prot="public">wiced_bt_hfp_ag_event_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wicedbt__ag_1gac3bd6146a8fd56df23a2e18f811332a8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_hfp_ag_event_t</name>
+        <enumvalue id="group__wicedbt__ag_1ggac3bd6146a8fd56df23a2e18f811332a8a89b9b5ce884d288155c8d56ddafe48c0" prot="public">
+          <name>WICED_BT_HFP_AG_EVENT_OPEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__ag_1ggac3bd6146a8fd56df23a2e18f811332a8ad4c4b10c00540dc34e7986cca1002222" prot="public">
+          <name>WICED_BT_HFP_AG_EVENT_CLOSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__ag_1ggac3bd6146a8fd56df23a2e18f811332a8a7751d02f7d9b8a2ef8d627066814bdbb" prot="public">
+          <name>WICED_BT_HFP_AG_EVENT_CONNECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__ag_1ggac3bd6146a8fd56df23a2e18f811332a8a21c5fe288f273dafce65da69ce740c66" prot="public">
+          <name>WICED_BT_HFP_AG_EVENT_AUDIO_OPEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__ag_1ggac3bd6146a8fd56df23a2e18f811332a8ad8e3d114797f636849dfee52abe6eef4" prot="public">
+          <name>WICED_BT_HFP_AG_EVENT_AUDIO_CLOSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__ag_1ggac3bd6146a8fd56df23a2e18f811332a8ae0992f85f5b9b95a238f6e8d7638eac4" prot="public">
+          <name>WICED_BT_HFP_AG_EVENT_AT_CMD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__ag_1ggac3bd6146a8fd56df23a2e18f811332a8acc738ce3ca6ae67d548c0a8d262e228a" prot="public">
+          <name>WICED_BT_HFP_AG_EVENT_CLCC_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="195" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="194" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__ag_1ga6fd0a0bed9017e0bc66fc2be788b28ec" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_wiced_bt_hfp_ag_connection_status_t</name>
+        <enumvalue id="group__wicedbt__ag_1gga6fd0a0bed9017e0bc66fc2be788b28eca9a4c77660ea2ca78222f43bd159dfc2c" prot="public">
+          <name>WICED_BT_HFP_AG_STATUS_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__ag_1gga6fd0a0bed9017e0bc66fc2be788b28eca90946f8db6bb324bbe3cd13939c950f0" prot="public">
+          <name>WICED_BT_HFP_AG_STATUS_FAIL_SDP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__ag_1gga6fd0a0bed9017e0bc66fc2be788b28ecaea519a7d006ed28edacc00a24f77cc62" prot="public">
+          <name>WICED_BT_HFP_AG_STATUS_FAIL_RFCOMM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__ag_1gga6fd0a0bed9017e0bc66fc2be788b28eca26360e3986bac454ec8e37efc266cfc9" prot="public">
+          <name>WICED_BT_HFP_AG_STATUS_FAIL_CONN_TOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="206" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="205" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wicedbt__ag_1ga44b913c9ce885a7060121f9221596fbb" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_hfp_ag_hci_send_ag_event_cback_t) (wiced_bt_hfp_ag_event_t evt, uint16_t handle, wiced_bt_hfp_ag_event_data_t *p_data)</definition>
+        <argsstring>)(wiced_bt_hfp_ag_event_t evt, uint16_t handle, wiced_bt_hfp_ag_event_data_t *p_data)</argsstring>
+        <name>wiced_bt_hfp_ag_hci_send_ag_event_cback_t</name>
+        <briefdescription>
+<para>Callback for events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="214" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wicedbt__ag_1ga063b6e032a79b72aaad6f852414e238a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_startup</definition>
+        <argsstring>(wiced_bt_hfp_ag_session_cb_t *p_scb, uint8_t num_scb, uint32_t features, wiced_bt_hfp_ag_hci_send_ag_event_cback_t p_app_cback)</argsstring>
+        <name>wiced_bt_hfp_ag_startup</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__ag__session__cb__t" kindref="compound">wiced_bt_hfp_ag_session_cb_t</ref> *</type>
+          <declname>p_scb</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_scb</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>features</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wicedbt__ag_1ga44b913c9ce885a7060121f9221596fbb" kindref="member">wiced_bt_hfp_ag_hci_send_ag_event_cback_t</ref></type>
+          <declname>p_app_cback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga48f087d41fd605b0389d1e323da221db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_connect</definition>
+        <argsstring>(wiced_bt_device_address_t bd_addr)</argsstring>
+        <name>wiced_bt_hfp_ag_connect</name>
+        <param>
+          <type>wiced_bt_device_address_t</type>
+          <declname>bd_addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga015c1353fa41e03b8155e1bbf37108b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_disconnect</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_hfp_ag_disconnect</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga39e298f695f9fbedf27d89fc7e9a0e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_audio_open</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_hfp_ag_audio_open</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga21ade09710d171e4b6ebb3b394e9556a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_audio_close</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_hfp_ag_audio_close</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga5e8cdb2c34b90874c3a97c6da033c06f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_send_cmd_str</definition>
+        <argsstring>(uint16_t handle, uint8_t *data, uint8_t len)</argsstring>
+        <name>wiced_bt_hfp_ag_send_cmd_str</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1gace33c33d3ac4ac293d47ba75db653034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_sco_management_callback</definition>
+        <argsstring>(wiced_bt_management_evt_t event, wiced_bt_management_evt_data_t *p_event_data)</argsstring>
+        <name>wiced_bt_hfp_ag_sco_management_callback</name>
+        <param>
+          <type>wiced_bt_management_evt_t</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>wiced_bt_management_evt_data_t *</type>
+          <declname>p_event_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga9bf427f42bb5bf61e94996a4838f2da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_send_BCS_to_hf</definition>
+        <argsstring>(wiced_bt_hfp_ag_session_cb_t *p_scb)</argsstring>
+        <name>wiced_bt_hfp_ag_send_BCS_to_hf</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__ag__session__cb__t" kindref="compound">wiced_bt_hfp_ag_session_cb_t</ref> *</type>
+          <declname>p_scb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga301c7bb041c67dd11b1c7775e22d5ebf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_send_BVRA_to_hf</definition>
+        <argsstring>(wiced_bt_hfp_ag_session_cb_t *p_scb, wiced_bool_t b_is_active)</argsstring>
+        <name>wiced_bt_hfp_ag_send_BVRA_to_hf</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__ag__session__cb__t" kindref="compound">wiced_bt_hfp_ag_session_cb_t</ref> *</type>
+          <declname>p_scb</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>b_is_active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga7b1b457ee4fa28dce699ad67170283ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_send_RING_to_hf</definition>
+        <argsstring>(wiced_bt_hfp_ag_session_cb_t *p_scb)</argsstring>
+        <name>wiced_bt_hfp_ag_send_RING_to_hf</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__ag__session__cb__t" kindref="compound">wiced_bt_hfp_ag_session_cb_t</ref> *</type>
+          <declname>p_scb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga8f7bb753070863bf9ea77cd5bd081f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_ag_send_VGM_to_hf</definition>
+        <argsstring>(wiced_bt_hfp_ag_session_cb_t *p_scb, int16_t gain)</argsstring>
+        <name>wiced_bt_hfp_ag_send_VGM_to_hf</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__ag__session__cb__t" kindref="compound">wiced_bt_hfp_ag_session_cb_t</ref> *</type>
+          <declname>p_scb</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1gae5570dd09adda2c03584ac0861815fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_ag_send_VGS_to_hf</definition>
+        <argsstring>(wiced_bt_hfp_ag_session_cb_t *p_scb, int16_t gain)</argsstring>
+        <name>wiced_bt_hfp_ag_send_VGS_to_hf</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__ag__session__cb__t" kindref="compound">wiced_bt_hfp_ag_session_cb_t</ref> *</type>
+          <declname>p_scb</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga66be3b550d5055a26ade86134deaa9f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_ag_send_cmd_str_to_hf</definition>
+        <argsstring>(wiced_bt_hfp_ag_session_cb_t *p_scb, char *data)</argsstring>
+        <name>wiced_bt_hfp_ag_send_cmd_str_to_hf</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__ag__session__cb__t" kindref="compound">wiced_bt_hfp_ag_session_cb_t</ref> *</type>
+          <declname>p_scb</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1gaeb64a775de9e2269b6545940378ef31e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_send_OK_to_hf</definition>
+        <argsstring>(wiced_bt_hfp_ag_session_cb_t *p_scb)</argsstring>
+        <name>wiced_bt_hfp_ag_send_OK_to_hf</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__ag__session__cb__t" kindref="compound">wiced_bt_hfp_ag_session_cb_t</ref> *</type>
+          <declname>p_scb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga7ac123883d910f7426a9261a64815e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_set_cind</definition>
+        <argsstring>(char *cind_str, uint8_t length)</argsstring>
+        <name>wiced_bt_hfp_ag_set_cind</name>
+        <param>
+          <type>char *</type>
+          <declname>cind_str</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="271" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__ag_1ga7653ded36ef6f7f2589da242afa2537f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_hfp_ag_send_Error_to_hf</definition>
+        <argsstring>(wiced_bt_hfp_ag_session_cb_t *p_scb, int error_code)</argsstring>
+        <name>wiced_bt_hfp_ag_send_Error_to_hf</name>
+        <param>
+          <type><ref refid="structwiced__bt__hfp__ag__session__cb__t" kindref="compound">wiced_bt_hfp_ag_session_cb_t</ref> *</type>
+          <declname>p_scb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>error_code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="272" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wicedbt__ag_1gaea6b36e7c4c57a6478983d5e8dd34d92" prot="public" static="no">
+        <name>HFP_VERSION_1_5</name>
+        <initializer>0x0105</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="40" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga12cec5e5700b1b84d7bbaf154afef20a" prot="public" static="no">
+        <name>HFP_VERSION_1_6</name>
+        <initializer>0x0106</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="41" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga27f26b07188a700d9b66bffe2f8540f3" prot="public" static="no">
+        <name>HFP_VERSION_1_7</name>
+        <initializer>0x0107</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="42" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gafecf9573f13ffec0aa1550a5e091113e" prot="public" static="no">
+        <name>HFP_VERSION_1_8</name>
+        <initializer>0x0108</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="43" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gac625ea9ecec2925b1d0d7aae91c7f36a" prot="public" static="no">
+        <name>HFP_AG_VERSION</name>
+        <initializer>HFP_VERSION_1_8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="44" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gac54c8b701c3e98d571d4d6543ff8401c" prot="public" static="no">
+        <name>HFP_HF_FEAT_ECNR</name>
+        <initializer>0x00000001   /* Echo cancellation and/or noise reduction */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="47" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga097549af2bfcaedcc47d916c06b1c6df" prot="public" static="no">
+        <name>HFP_HF_FEAT_3WAY</name>
+        <initializer>0x00000002   /* Call waiting and three-way calling */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="48" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gaec34ced2be1acfac017fc1c3efcae5ac" prot="public" static="no">
+        <name>HFP_HF_FEAT_CLIP</name>
+        <initializer>0x00000004   /* Caller ID presentation capability  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="49" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga4048a26c09a48b48116a093c5e3459e6" prot="public" static="no">
+        <name>HFP_HF_FEAT_VREC</name>
+        <initializer>0x00000008   /* Voice recoginition activation capability  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="50" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga4ce6f2533a1f3b76d6cd694b3ff6146a" prot="public" static="no">
+        <name>HFP_HF_FEAT_RVOL</name>
+        <initializer>0x00000010   /* Remote volume control capability  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="51" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga6074ac36d5d3e90ef14d33cbad18ec2a" prot="public" static="no">
+        <name>HFP_HF_FEAT_ECS</name>
+        <initializer>0x00000020   /* Enhanced Call Status  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="52" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gab57d4207a4c981ff83c508247f535464" prot="public" static="no">
+        <name>HFP_HF_FEAT_ECC</name>
+        <initializer>0x00000040   /* Enhanced Call Control  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="53" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gaab847883a4df792a36b5cf999d57898c" prot="public" static="no">
+        <name>HFP_HF_FEAT_CODEC</name>
+        <initializer>0x00000080   /* Codec negotiation */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="54" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gabbfca76e4f943bf1fd4594e220acea60" prot="public" static="no">
+        <name>HFP_HF_FEAT_HF_IND</name>
+        <initializer>0x00000100   /* HF Indicators */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="55" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga0f4f9dc9b263c1955768e44acd7fd282" prot="public" static="no">
+        <name>HFP_HF_FEAT_ESCO</name>
+        <initializer>0x00000200   /* eSCO S4 ( and T2 ) setting supported */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="56" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga5b264474cbca3ca1a11436a86e9f2ef7" prot="public" static="no">
+        <name>HFP_AG_FEAT_3WAY</name>
+        <initializer>0x00000001   /* Three-way calling */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="59" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga8dbf4617d3aa27de3babd114d874a909" prot="public" static="no">
+        <name>HFP_AG_FEAT_ECNR</name>
+        <initializer>0x00000002   /* Echo cancellation and/or noise reduction */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="60" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gab9499fe76214be6e121078c1f5d85a44" prot="public" static="no">
+        <name>HFP_AG_FEAT_VREC</name>
+        <initializer>0x00000004   /* Voice recognition */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="61" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga919ca95e1dd6053ae9a79edc506e79d8" prot="public" static="no">
+        <name>HFP_AG_FEAT_INBAND</name>
+        <initializer>0x00000008   /* In-band ring tone */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="62" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga81bfaf060d66f416e880bbfe328df2e9" prot="public" static="no">
+        <name>HFP_AG_FEAT_VTAG</name>
+        <initializer>0x00000010   /* Attach a phone number to a voice tag */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="63" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga0a3a571a9291c2232bfdef17666048db" prot="public" static="no">
+        <name>HFP_AG_FEAT_REJECT</name>
+        <initializer>0x00000020   /* Ability to reject incoming call */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="64" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gabbe781d9f3f90e49455c48eb47b4440e" prot="public" static="no">
+        <name>HFP_AG_FEAT_ECS</name>
+        <initializer>0x00000040   /* Enhanced Call Status */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="65" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga7359227a11ac9c2350003e6cbf241a46" prot="public" static="no">
+        <name>HFP_AG_FEAT_ECC</name>
+        <initializer>0x00000080   /* Enhanced Call Control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="66" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga609bd440cd5e94af3afe5be7e818e523" prot="public" static="no">
+        <name>HFP_AG_FEAT_EXTERR</name>
+        <initializer>0x00000100   /* Extended error codes */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="67" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gafad355595995b535b014f24f78d781b4" prot="public" static="no">
+        <name>HFP_AG_FEAT_CODEC</name>
+        <initializer>0x00000200   /* Codec Negotiation */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="68" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gac0911761f763246bd0375d479a2c0d34" prot="public" static="no">
+        <name>HFP_AG_FEAT_HF_IND</name>
+        <initializer>0x00000400   /* HF Indicators */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="69" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga5653c4ce3a31505f7f542e3532923840" prot="public" static="no">
+        <name>HFP_AG_FEAT_ESCO</name>
+        <initializer>0x00000800   /* eSCO S4 ( and T2 ) setting supported */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="70" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga51c88c742cbd9381ac6a66f750374a1e" prot="public" static="no">
+        <name>HFP_CODEC_CVSD</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="73" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga5c85a4d0863c42be298a6327947ff25b" prot="public" static="no">
+        <name>HFP_CODEC_MSBC</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="74" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gae129bcca48dd25d088c44c84a69097a0" prot="public" static="no">
+        <name>HFP_AG_AT_MAX_LEN</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="77" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gabc90553f10ebff9b08015885439dc7db" prot="public" static="no">
+        <name>HFP_VGM_VGS_MAX</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="80" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga55d7dc71dd6250713dbe85debbbc6b2f" prot="public" static="no">
+        <name>HFP_VGM_VGS_MIN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="81" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga209f259e5d6f32669f7fbdffacaeee60" prot="public" static="no">
+        <name>BTM_WBS_INCLUDED</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="84" column="10" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga277d49ba57290425dbd4e11735cda0cc" prot="public" static="no">
+        <name>WICED_BT_HFP_AG_SDP_FEATURE_3WAY_CALLING</name>
+        <initializer>0x0001  /* Call waiting or three-way calling (yes:1, no:0) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="88" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga8ebc35ca55bcd0c75a87ca79285fe705" prot="public" static="no">
+        <name>WICED_BT_HFP_AG_SDP_FEATURE_ECNR</name>
+        <initializer>0x0002  /* EC and/or NR function (yes:1, no:0) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="89" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gaf40fe9580a69805d547f800b80fb1f88" prot="public" static="no">
+        <name>WICED_BT_HFP_AG_SDP_FEATURE_VRECG</name>
+        <initializer>0x0004  /* Voice recognition activation (yes:1, no:0) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="90" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gaeb6e0c3b242166243aa169d75bb18666" prot="public" static="no">
+        <name>WICED_BT_HFP_AG_SDP_FEATURE_INBAND</name>
+        <initializer>0x0008  /* Inband Ringtone (yes:1, no:0) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="91" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga274cb1a8eb413376bbe545ebabb7cb65" prot="public" static="no">
+        <name>WICED_BT_HFP_AG_SDP_FEATURE_VTAG</name>
+        <initializer>0x0010  /* Attach a phone number to a voice tag (yes:1, no:0) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="92" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gac3f47bbec2ce72b159f82c8794eb6cf2" prot="public" static="no">
+        <name>WICED_BT_HFP_AG_SDP_FEATURE_WIDEBAND_SPEECH</name>
+        <initializer>0x0020  /* Wide band speech (yes:1, no:0) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="93" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1ga91ad3bc7921839a12008710b39e1b9f6" prot="public" static="no">
+        <name>WICED_BT_HFP_AG_SDP_FEATURE_EVRS</name>
+        <initializer>0x0040  /* Enhanced Voice Recognition Status (yes/no, 1 = yes, 0 = no)  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="94" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__ag_1gadef57c1869ea756b48f5c2f487001b01" prot="public" static="no">
+        <name>WICED_BT_HFP_AG_SDP_FEATURE_VRC_TEXT</name>
+        <initializer>0x0080  /* Voice Recognition Text (yes/no, 1 = yes, 0 = no) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="95" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This section describes the API&apos;s required to add Hands Free Profile to the user application. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The typical use case for this profile is, a headset wirelessly connected to a mobile phone enabling the user to perform telephone functions through the headset . This library can also connect to an AG supporting HSP only, if the application using this library supports HSP in the SDP. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

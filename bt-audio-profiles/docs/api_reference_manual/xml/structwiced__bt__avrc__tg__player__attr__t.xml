@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__avrc__tg__player__attr__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_avrc_tg_player_attr_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__player__attr__t_1a684d72f3888c66ecf456ea26a8ff48f7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_avrc_tg_player_attr_t::attr_id</definition>
+        <argsstring></argsstring>
+        <name>attr_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="111" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__player__attr__t_1ae6ae9b5c6b1afa59fc0bdd13c0833286" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_avrc_tg_player_attr_t::num_val</definition>
+        <argsstring></argsstring>
+        <name>num_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="113" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__player__attr__t_1afbafe3185406b7ada48c177e0a035f33" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_avrc_tg_player_attr_t::vals[APP_AVRC_MAX_APP_ATTR_SIZE]</definition>
+        <argsstring>[APP_AVRC_MAX_APP_ATTR_SIZE]</argsstring>
+        <name>vals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="115" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__player__attr__t_1abad61ce6561d5dc42f65333e729fa128" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_avrc_tg_player_attr_t::curr_value</definition>
+        <argsstring></argsstring>
+        <name>curr_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="117" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="109" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="109" bodyend="118"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__avrc__tg__player__attr__t_1a684d72f3888c66ecf456ea26a8ff48f7" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_player_attr_t</scope><name>attr_id</name></member>
+      <member refid="structwiced__bt__avrc__tg__player__attr__t_1abad61ce6561d5dc42f65333e729fa128" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_player_attr_t</scope><name>curr_value</name></member>
+      <member refid="structwiced__bt__avrc__tg__player__attr__t_1ae6ae9b5c6b1afa59fc0bdd13c0833286" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_player_attr_t</scope><name>num_val</name></member>
+      <member refid="structwiced__bt__avrc__tg__player__attr__t_1afbafe3185406b7ada48c177e0a035f33" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_player_attr_t</scope><name>vals</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

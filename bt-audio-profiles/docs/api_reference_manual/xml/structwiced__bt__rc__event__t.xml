@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__rc__event__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_rc_event_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__rc__event__t_1a4f23c63e3681a11269d03883104e1093" prot="public" static="no" mutable="no">
+        <type>wiced_bt_device_address_t</type>
+        <definition>wiced_bt_device_address_t wiced_bt_rc_event_t::bd_addr</definition>
+        <argsstring></argsstring>
+        <name>bd_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="176" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__rc__event__t_1aba6569457882942fe96c81f32106ff40" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_rc_event_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="177" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__rc__event__t_1aaa03a9120b09195c6350c9dedb0b647c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_rc_event_t::setting_val</definition>
+        <argsstring></argsstring>
+        <name>setting_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="179" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__rc__event__t_1ae89d6fd449dad726027201d63a08a9e4" prot="public" static="no" mutable="no">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_rc_event_t::attribute_search_completed</definition>
+        <argsstring></argsstring>
+        <name>attribute_search_completed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="181" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__rc__event__t_1acbcddc0bfbe91fbadd3eb87204f47a2e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_rc_event_t::supported_features</definition>
+        <argsstring></argsstring>
+        <name>supported_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="182" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__rc__event__t_1af57944ce1ca6a2f0c6517567b95d3e3a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_rc_event_t::passthrough_response</definition>
+        <argsstring></argsstring>
+        <name>passthrough_response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="184" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__rc__event__t_1a9ac385a8cf36ae0068a01845cb2b8e1f" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__avrc__tg__passthrough__cmd__t" kindref="compound">wiced_bt_avrc_tg_passthrough_cmd_t</ref></type>
+        <definition>wiced_bt_avrc_tg_passthrough_cmd_t wiced_bt_rc_event_t::passthrough_command</definition>
+        <argsstring></argsstring>
+        <name>passthrough_command</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="186" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__rc__event__t_1aeb3034f4378fa89bc263e99895a7ee47" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__avrc__tg__absolute__volume__t" kindref="compound">wiced_bt_avrc_tg_absolute_volume_t</ref></type>
+        <definition>wiced_bt_avrc_tg_absolute_volume_t wiced_bt_rc_event_t::absolute_volume</definition>
+        <argsstring></argsstring>
+        <name>absolute_volume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="188" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="92">
+        <label>wiced_bt_avrc_tg_passthrough_cmd_t</label>
+        <link refid="structwiced__bt__avrc__tg__passthrough__cmd__t"/>
+      </node>
+      <node id="93">
+        <label>wiced_bt_avrc_tg_absolute_volume_t</label>
+        <link refid="structwiced__bt__avrc__tg__absolute__volume__t"/>
+      </node>
+      <node id="91">
+        <label>wiced_bt_rc_event_t</label>
+        <link refid="structwiced__bt__rc__event__t"/>
+        <childnode refid="92" relation="usage">
+          <edgelabel>passthrough_command</edgelabel>
+        </childnode>
+        <childnode refid="93" relation="usage">
+          <edgelabel>absolute_volume</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="174" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="174" bodyend="190"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__rc__event__t_1aeb3034f4378fa89bc263e99895a7ee47" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>absolute_volume</name></member>
+      <member refid="structwiced__bt__rc__event__t_1ae89d6fd449dad726027201d63a08a9e4" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>attribute_search_completed</name></member>
+      <member refid="structwiced__bt__rc__event__t_1a4f23c63e3681a11269d03883104e1093" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>bd_addr</name></member>
+      <member refid="structwiced__bt__rc__event__t_1aba6569457882942fe96c81f32106ff40" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>handle</name></member>
+      <member refid="structwiced__bt__rc__event__t_1a9ac385a8cf36ae0068a01845cb2b8e1f" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>passthrough_command</name></member>
+      <member refid="structwiced__bt__rc__event__t_1af57944ce1ca6a2f0c6517567b95d3e3a" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>passthrough_response</name></member>
+      <member refid="structwiced__bt__rc__event__t_1aaa03a9120b09195c6350c9dedb0b647c" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>setting_val</name></member>
+      <member refid="structwiced__bt__rc__event__t_1acbcddc0bfbe91fbadd3eb87204f47a2e" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>supported_features</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

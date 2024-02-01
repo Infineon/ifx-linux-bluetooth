@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__a2dp__source__config__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_a2dp_source_config_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__a2dp__source__config__data__t_1a5c19a069c8f70651761a6555eabe409d" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_source_feature_mask_t</type>
+        <definition>wiced_bt_a2dp_source_feature_mask_t wiced_bt_a2dp_source_config_data_t::feature_mask</definition>
+        <argsstring></argsstring>
+        <name>feature_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_source.h" line="89" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_source.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__a2dp__source__config__data__t_1a628d051548af901cb331830da2bc8a99" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__source__codec__info__list__t" kindref="compound">wiced_bt_a2dp_source_codec_info_list_t</ref></type>
+        <definition>wiced_bt_a2dp_source_codec_info_list_t wiced_bt_a2dp_source_config_data_t::codec_capabilities</definition>
+        <argsstring></argsstring>
+        <name>codec_capabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_source.h" line="90" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_source.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__a2dp__source__config__data__t_1a7af00c22bdfe48e52b50109398ef4012" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_codec_info_t</type>
+        <definition>wiced_bt_a2dp_codec_info_t wiced_bt_a2dp_source_config_data_t::default_codec_config</definition>
+        <argsstring></argsstring>
+        <name>default_codec_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_source.h" line="91" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_source.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="19">
+        <label>wiced_bt_a2dp_source_config_data_t</label>
+        <link refid="structwiced__bt__a2dp__source__config__data__t"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>codec_capabilities</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>wiced_bt_a2dp_source_codec_info_list_t</label>
+        <link refid="structwiced__bt__a2dp__source__codec__info__list__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_source.h" line="88" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_source.h" bodystart="87" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__a2dp__source__config__data__t_1a628d051548af901cb331830da2bc8a99" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_source_config_data_t</scope><name>codec_capabilities</name></member>
+      <member refid="structwiced__bt__a2dp__source__config__data__t_1a7af00c22bdfe48e52b50109398ef4012" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_source_config_data_t</scope><name>default_codec_config</name></member>
+      <member refid="structwiced__bt__a2dp__source__config__data__t_1a5c19a069c8f70651761a6555eabe409d" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_source_config_data_t</scope><name>feature_mask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

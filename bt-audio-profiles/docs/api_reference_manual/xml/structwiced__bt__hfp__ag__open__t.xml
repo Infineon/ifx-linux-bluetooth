@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__ag__open__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_ag_open_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__ag__open__t_1a1568c6b3e63646528ac19539d13f64ba" prot="public" static="no" mutable="no">
+        <type>wiced_bt_device_address_t</type>
+        <definition>wiced_bt_device_address_t wiced_bt_hfp_ag_open_t::bd_addr</definition>
+        <argsstring></argsstring>
+        <name>bd_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="162" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__ag__open__t_1ac3d79bec310a2235dd3cb5cc2f36c03d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_ag_open_t::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="163" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="161" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="160" bodyend="164"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__ag__open__t_1a1568c6b3e63646528ac19539d13f64ba" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_open_t</scope><name>bd_addr</name></member>
+      <member refid="structwiced__bt__hfp__ag__open__t_1ac3d79bec310a2235dd3cb5cc2f36c03d" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_open_t</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

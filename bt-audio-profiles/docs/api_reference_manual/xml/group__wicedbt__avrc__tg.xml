@@ -1,0 +1,595 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wicedbt__avrc__tg" kind="group">
+    <compoundname>wicedbt_avrc_tg</compoundname>
+    <title>Audio/Video Remote Control Profile  (AVRCP) Target</title>
+    <innerclass refid="structwiced__bt__avrc__tg__track__attr__t" prot="public">wiced_bt_avrc_tg_track_attr_t</innerclass>
+    <innerclass refid="structwiced__bt__avrc__tg__track__info__t" prot="public">wiced_bt_avrc_tg_track_info_t</innerclass>
+    <innerclass refid="structwiced__bt__avrc__tg__player__attr__t" prot="public">wiced_bt_avrc_tg_player_attr_t</innerclass>
+    <innerclass refid="structwiced__bt__avrc__tg__play__status__t" prot="public">wiced_bt_avrc_tg_play_status_t</innerclass>
+    <innerclass refid="structwiced__bt__avrc__tg__passthrough__cmd__t" prot="public">wiced_bt_avrc_tg_passthrough_cmd_t</innerclass>
+    <innerclass refid="structwiced__bt__avrc__tg__absolute__volume__t" prot="public">wiced_bt_avrc_tg_absolute_volume_t</innerclass>
+    <innerclass refid="structwiced__bt__rc__event__t" prot="public">wiced_bt_rc_event_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wicedbt__avrc__tg_1ga094dd60d1edeb4041622310d1390f8df" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() wiced_bt_avrc_tg_event_cback_t(uint8_t event_id, wiced_bt_rc_event_t *_event)</definition>
+        <argsstring>(uint8_t event_id, wiced_bt_rc_event_t *_event)</argsstring>
+        <name>wiced_bt_avrc_tg_event_cback_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="195" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga8fce3bc8d9cb7eb1467bc2d79216e24a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_avrc_tg_init</definition>
+        <argsstring>(wiced_bt_avrc_tg_event_cback_t *p_cb)</argsstring>
+        <name>wiced_bt_avrc_tg_init</name>
+        <param>
+          <type>wiced_bt_avrc_tg_event_cback_t *</type>
+          <declname>p_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga0a4467126358dacb15e85e464c824d4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_avrc_tg_deinit</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_avrc_tg_deinit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga738815d59d264c6eca5126528a3857c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_avrc_tg_register</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_avrc_tg_register</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga965eb3e9a8be5d4f4b4fdd5647d69fca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_avrc_tg_initiate_open</definition>
+        <argsstring>(wiced_bt_device_address_t peer_addr)</argsstring>
+        <name>wiced_bt_avrc_tg_initiate_open</name>
+        <param>
+          <type>wiced_bt_device_address_t</type>
+          <declname>peer_addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga13aa42a2bee250db50182df29c131544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_avrc_tg_initiate_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_avrc_tg_initiate_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1gad0b0e1918ca6d6625dd4330fa3c388fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_rc_set_track_info</definition>
+        <argsstring>(wiced_bt_avrc_tg_track_attr_t *p_track_attr)</argsstring>
+        <name>wiced_bt_rc_set_track_info</name>
+        <param>
+          <type><ref refid="structwiced__bt__avrc__tg__track__attr__t" kindref="compound">wiced_bt_avrc_tg_track_attr_t</ref> *</type>
+          <declname>p_track_attr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="246" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga390aee692d72207a9b02692df89bc9f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_rc_set_player_settings</definition>
+        <argsstring>(wiced_bt_avrc_tg_player_attr_t *p_info)</argsstring>
+        <name>wiced_bt_rc_set_player_settings</name>
+        <param>
+          <type><ref refid="structwiced__bt__avrc__tg__player__attr__t" kindref="compound">wiced_bt_avrc_tg_player_attr_t</ref> *</type>
+          <declname>p_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga43633a461fcf8ba901aaf670ed5b11e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_rc_player_setting_changed</definition>
+        <argsstring>(uint8_t attr_id, uint8_t value)</argsstring>
+        <name>wiced_bt_rc_player_setting_changed</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>attr_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1gab08455b5fb2088fc3998f440827ab97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_rc_set_player_status</definition>
+        <argsstring>(wiced_bt_avrc_tg_play_status_t *p_info)</argsstring>
+        <name>wiced_bt_rc_set_player_status</name>
+        <param>
+          <type><ref refid="structwiced__bt__avrc__tg__play__status__t" kindref="compound">wiced_bt_avrc_tg_play_status_t</ref> *</type>
+          <declname>p_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga505e315ecbc0b7faafe8c338aaae5efe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_rc_track_changed</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_rc_track_changed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function wiced_bt_rc_track_changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>             Called when current track is changed
+</verbatim></para>
+<para><simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1gabb6b0d93b5c3b64154d3f53905109242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_avrc_tg_register_absolute_volume_change</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_avrc_tg_register_absolute_volume_change</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function wiced_bt_avrc_tg_register_absolute_volume_change. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>             Register for absolute volume change notifications
+</verbatim></para>
+<para><simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga99b4aa830deca84a752c92b934af90e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_avrc_tg_absolute_volume_changed</definition>
+        <argsstring>(uint16_t handle, uint8_t volume)</argsstring>
+        <name>wiced_bt_avrc_tg_absolute_volume_changed</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Function wiced_bt_avrc_tg_absolute_volume_change. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>             Called when volume is changed, send Absolute volume request to peer
+</verbatim></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: handle of connection </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: volume set by application as a percentage</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga1d71803924f569d909e690a71571f3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_avrc_tg_is_peer_absolute_volume_capable</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_avrc_tg_is_peer_absolute_volume_capable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function wiced_bt_avrc_tg_is_peer_absolute_volume_capable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>             Return non zero if peer is absolute volume capable
+</verbatim></para>
+<para><simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="323" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga7b72787a10be74f34d4335d50d19744b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_avrc_tg_volume_button_press</definition>
+        <argsstring>(uint8_t op_id)</argsstring>
+        <name>wiced_bt_avrc_tg_volume_button_press</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>op_id</declname>
+        </param>
+        <briefdescription>
+<para>Function wiced_bt_avrc_tg_volume_button_press. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>             Called when volume up/down button is pressed
+</verbatim></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">op_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: operation ID AVRC_ID_VOL_UP or AVRC_ID_VOL_DOWN</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="335" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga4d62c217e0cc77a32a0ca8a2771f7789" prot="public" static="no">
+        <name>APP_AVRC_TRACK_INFO_SUPPORTED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="43" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga60182699684145057584f6712359fc1a" prot="public" static="no">
+        <name>APP_AVRC_PLAY_STATUS_SUPPORTED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="46" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga45ddd0f1de4e14a41ab0369ff27c0aeb" prot="public" static="no">
+        <name>APP_AVRC_SETTING_CHANGE_SUPPORTED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="49" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga7a53ef6a40cead30f764bd985e4825df" prot="public" static="no">
+        <name>APP_AVRC_TRACK_PLAY_POS_CHANGE_SUPPORTED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="53" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1gaf1e0145b18e89dc3012b36ebd43bf3bf" prot="public" static="no">
+        <name>MAX_AVRCP_VOLUME_LEVEL</name>
+        <initializer>0x7f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="65" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga165fd3d4f011690e18452c7296fc2b49" prot="public" static="no">
+        <name>APP_AVRC_MAX_ATTR</name>
+        <initializer>AVRC_MAX_NUM_MEDIA_ATTR_ID</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="74" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga79b1f4000d3e1327670840ab62c28a33" prot="public" static="no">
+        <name>APP_AVRC_MAX_ATTR_LEN</name>
+        <initializer>200</initializer>
+        <briefdescription>
+<para>Maximum length of the stored media attribute fields. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="77" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1gac752e521111581e59239decf6e89c059" prot="public" static="no">
+        <name>APP_AVRC_MAX_APP_ATTR_SIZE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="106" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1gad4cf91a8ac806788423b94a851143052" prot="public" static="no">
+        <name>AVRC_NUM_PLAYER_SUPPORTED</name>
+        <initializer>0x02 /* Number of player supported */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="136" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga06431ed116cd1fc83675aecf53b4ea34" prot="public" static="no">
+        <name>AVRC_MAX_FOLDER_DEPTH</name>
+        <initializer>0x03 /* Maximum folder depth for getfolderitems */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="137" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1gad047056689a725b37a3e28c9b5712172" prot="public" static="no">
+        <name>APP_AVRC_EVENT_DEVICE_CONNECTED</name>
+        <initializer>1  /* peer device connected */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="143" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1gaa8588be16283a4b5b752239796441dcb" prot="public" static="no">
+        <name>APP_AVRC_EVENT_REPEAT_SETTINGS_CHANGED</name>
+        <initializer>2  /* peer changed repeat settings */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="144" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga0a7d426bfd59d243f128e407d95ff137" prot="public" static="no">
+        <name>APP_AVRC_EVENT_SHUFFLE_SETTINGS_CHANGED</name>
+        <initializer>3  /* peer changed shuffle settings */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="145" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1gab4e1a65fc83cd8aa5f6a20688e391fe7" prot="public" static="no">
+        <name>APP_AVRC_EVENT_DEVICE_DISCONNECTED</name>
+        <initializer>4  /* peer device disconnected */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="146" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga8e144825346e854cc04aa04d065cc2b1" prot="public" static="no">
+        <name>APP_AVRC_EVENT_PASSTHROUGH_RESPONSE</name>
+        <initializer>5  /* passthrough command response from peer */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="147" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga72f23dc5abcc8c2f8de8d0038958223e" prot="public" static="no">
+        <name>APP_AVRC_EVENT_PASSTHROUGH_CMD</name>
+        <initializer>6  /* passthrough command response from peer */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="148" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1gad7f7de0443893a77b4feda5c116e9972" prot="public" static="no">
+        <name>APP_AVRC_EVENT_ABS_VOL_CHANGED</name>
+        <initializer>7  /* peer changed Absolute Volume */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="149" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga1587fd2e683dc8712e97b94486fe696d" prot="public" static="no">
+        <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_PLAY</name>
+        <initializer>1  /* Passthrough Command Play */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="152" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1gafd03520f405314853e13c8ab2530cf4c" prot="public" static="no">
+        <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_PAUSE</name>
+        <initializer>2  /* Passthrough Command Pause */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="153" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1gaa00b80a2fa24012702c54b779a1a5fdc" prot="public" static="no">
+        <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_STOP</name>
+        <initializer>3  /* Passthrough Command Stop */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="154" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga798656fdfe3874a46717b8158ea8b1d0" prot="public" static="no">
+        <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_NEXT_TRACK</name>
+        <initializer>4  /* Passthrough Command Next Track */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="155" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga20176b4d2d4b7e762e8d0f27ade2c022" prot="public" static="no">
+        <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_PREVIOUS_TRACK</name>
+        <initializer>5  /* Passthrough Command Previous Track */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="156" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga6e4ab3b98ea96a7f547dac5450e6bdde" prot="public" static="no">
+        <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_VOLUME_UP</name>
+        <initializer>6  /* Passthrough Command Volume Up */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="157" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga589ba8e467726fa30eac7e4eda841917" prot="public" static="no">
+        <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_VOLUME_DOWN</name>
+        <initializer>7  /* Passthrough Command Volume Down */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="158" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WICED Bluetooth AVRC Remote Control Functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

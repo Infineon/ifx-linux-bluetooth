@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__avrc__tg__passthrough__cmd__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_avrc_tg_passthrough_cmd_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__passthrough__cmd__t_1a4f2c6882e6eb1711f6521d02710a9649" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_avrc_tg_passthrough_cmd_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="163" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__passthrough__cmd__t_1a9c97aa582cb77bea884e667545fc73cd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_avrc_tg_passthrough_cmd_t::command</definition>
+        <argsstring></argsstring>
+        <name>command</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="164" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="162" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="162" bodyend="165"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__avrc__tg__passthrough__cmd__t_1a9c97aa582cb77bea884e667545fc73cd" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_passthrough_cmd_t</scope><name>command</name></member>
+      <member refid="structwiced__bt__avrc__tg__passthrough__cmd__t_1a4f2c6882e6eb1711f6521d02710a9649" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_passthrough_cmd_t</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

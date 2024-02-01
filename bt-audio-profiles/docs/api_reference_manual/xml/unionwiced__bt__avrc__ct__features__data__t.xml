@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__avrc__ct__features__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_avrc_ct_features_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group__wicedbt__avrc__ct_1ga0fef9fdbb50ef04ada367bf32951ea48" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__avrc__ct__features__abs__vol__t" kindref="compound">wiced_bt_avrc_ct_features_abs_vol_t</ref></type>
+        <definition>wiced_bt_avrc_ct_features_abs_vol_t wiced_bt_avrc_ct_features_data_t::abs_vol_supported</definition>
+        <argsstring></argsstring>
+        <name>abs_vol_supported</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_ct.h" line="84" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_ct.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="36">
+        <label>wiced_bt_avrc_ct_features_abs_vol_t</label>
+        <link refid="structwiced__bt__avrc__ct__features__abs__vol__t"/>
+      </node>
+      <node id="35">
+        <label>wiced_bt_avrc_ct_features_data_t</label>
+        <link refid="unionwiced__bt__avrc__ct__features__data__t"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>abs_vol_supported</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_ct.h" line="83" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_ct.h" bodystart="82" bodyend="85"/>
+    <listofallmembers>
+      <member refid="group__wicedbt__avrc__ct_1ga0fef9fdbb50ef04ada367bf32951ea48" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_ct_features_data_t</scope><name>abs_vol_supported</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

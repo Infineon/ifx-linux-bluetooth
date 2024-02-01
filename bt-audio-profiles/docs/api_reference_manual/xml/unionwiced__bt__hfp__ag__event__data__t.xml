@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__hfp__ag__event__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_ag_event_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__hfp__ag__event__data__t_1a534759282a00ec20057caaca8bfd37b4" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__ag__open__t" kindref="compound">wiced_bt_hfp_ag_open_t</ref></type>
+        <definition>wiced_bt_hfp_ag_open_t wiced_bt_hfp_ag_event_data_t::open</definition>
+        <argsstring></argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="188" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__hfp__ag__event__data__t_1a3d61ae4cc383e69faf5f4df1ba11d7b5" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__wiced__bt__hfp__ag__connect__t" kindref="compound">wiced_bt_wiced_bt_hfp_ag_connect_t</ref></type>
+        <definition>wiced_bt_wiced_bt_hfp_ag_connect_t wiced_bt_hfp_ag_event_data_t::conn</definition>
+        <argsstring></argsstring>
+        <name>conn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="189" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__hfp__ag__event__data__t_1a67a13c784bd590ec060bbb981606726a" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__ag__at__cmd__t" kindref="compound">wiced_bt_hfp_ag_at_cmd_t</ref></type>
+        <definition>wiced_bt_hfp_ag_at_cmd_t wiced_bt_hfp_ag_event_data_t::at_cmd</definition>
+        <argsstring></argsstring>
+        <name>at_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="190" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__hfp__ag__event__data__t_1a2ccb1e9e76f1068780c3f0c2987dec3f" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__ag__audio__open__t" kindref="compound">wiced_bt_hfp_ag_audio_open_t</ref></type>
+        <definition>wiced_bt_hfp_ag_audio_open_t wiced_bt_hfp_ag_event_data_t::audio_open</definition>
+        <argsstring></argsstring>
+        <name>audio_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="191" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="61">
+        <label>wiced_bt_hfp_ag_at_cmd_t</label>
+        <link refid="structwiced__bt__hfp__ag__at__cmd__t"/>
+      </node>
+      <node id="58">
+        <label>wiced_bt_hfp_ag_audio_open_t</label>
+        <link refid="structwiced__bt__hfp__ag__audio__open__t"/>
+      </node>
+      <node id="57">
+        <label>wiced_bt_hfp_ag_event_data_t</label>
+        <link refid="unionwiced__bt__hfp__ag__event__data__t"/>
+        <childnode refid="58" relation="usage">
+          <edgelabel>audio_open</edgelabel>
+        </childnode>
+        <childnode refid="59" relation="usage">
+          <edgelabel>conn</edgelabel>
+        </childnode>
+        <childnode refid="60" relation="usage">
+          <edgelabel>open</edgelabel>
+        </childnode>
+        <childnode refid="61" relation="usage">
+          <edgelabel>at_cmd</edgelabel>
+        </childnode>
+      </node>
+      <node id="59">
+        <label>wiced_bt_wiced_bt_hfp_ag_connect_t</label>
+        <link refid="structwiced__bt__wiced__bt__hfp__ag__connect__t"/>
+      </node>
+      <node id="60">
+        <label>wiced_bt_hfp_ag_open_t</label>
+        <link refid="structwiced__bt__hfp__ag__open__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="187" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="186" bodyend="192"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__hfp__ag__event__data__t_1a67a13c784bd590ec060bbb981606726a" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_event_data_t</scope><name>at_cmd</name></member>
+      <member refid="unionwiced__bt__hfp__ag__event__data__t_1a2ccb1e9e76f1068780c3f0c2987dec3f" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_event_data_t</scope><name>audio_open</name></member>
+      <member refid="unionwiced__bt__hfp__ag__event__data__t_1a3d61ae4cc383e69faf5f4df1ba11d7b5" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_event_data_t</scope><name>conn</name></member>
+      <member refid="unionwiced__bt__hfp__ag__event__data__t_1a534759282a00ec20057caaca8bfd37b4" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_event_data_t</scope><name>open</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

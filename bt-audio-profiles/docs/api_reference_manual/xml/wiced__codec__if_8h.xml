@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__codec__if_8h" kind="file" language="C++">
+    <compoundname>wiced_codec_if.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="yes">wiced_result.h</includes>
+    <incdepgraph>
+      <node id="44">
+        <label>stdint.h</label>
+      </node>
+      <node id="45">
+        <label>wiced_result.h</label>
+      </node>
+      <node id="43">
+        <label>wiced_codec_if.h</label>
+        <link refid="wiced__codec__if_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structwiced__codec__data__transfer__cb" prot="public">wiced_codec_data_transfer_cb</innerclass>
+    <innerclass refid="structwiced__codec__interface__t" prot="public">wiced_codec_interface_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wiced__codec__if_8h_1af6c04181e283f83080139ef57c161b52" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_codec_type_t</name>
+        <enumvalue id="wiced__codec__if_8h_1af6c04181e283f83080139ef57c161b52a58c9c9f769de7c98f6fdf7441d2f3711" prot="public">
+          <name>WICED_CODEC_SBC</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>SBC. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__codec__if_8h_1af6c04181e283f83080139ef57c161b52a45f12be66724d6471cc8d47ad2eef8a7" prot="public">
+          <name>WICED_CODEC_MAX</name>
+          <briefdescription>
+<para>CODEC_MAX. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Codec Ids NOTE: Add new codec definitions to this list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="44" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__codec__if_8h_1a69798d040ff145de874118e4c038e238" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_codec_channels_t</name>
+        <enumvalue id="wiced__codec__if_8h_1a69798d040ff145de874118e4c038e238a1ae241b86f64a2a6f658f8b3438ee815" prot="public">
+          <name>WICED_CODEC_CHANNEL_MONO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>MONO. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__codec__if_8h_1a69798d040ff145de874118e4c038e238a28edf9ae45a52c8d060ae8f3dae7644a" prot="public">
+          <name>WICED_CODEC_CHANNEL_STEREO</name>
+          <briefdescription>
+<para>STEREO. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__codec__if_8h_1a69798d040ff145de874118e4c038e238a84c77f641541dabb97377563b432cbb5" prot="public">
+          <name>WICED_CODEC_CHANNEL_JOINT_STEREO</name>
+          <briefdescription>
+<para>JOINT_STEREO. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__codec__if_8h_1a69798d040ff145de874118e4c038e238a2d439a562e99f5491d1ca3f8417f1a80" prot="public">
+          <name>WICED_CODEC_CHANNEL_DUAL_CHANNEL</name>
+          <briefdescription>
+<para>DUAL_CHANNEL. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__codec__if_8h_1a69798d040ff145de874118e4c038e238a55c51ebf1360bf2ea7590cec5e6c7f6b" prot="public">
+          <name>WICED_CODEC_CHANNEL_MAX_CHANNELS</name>
+          <briefdescription>
+<para>MAX_CHANNELS. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Number of channels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If more, then add to this list,preferably after DUAL_CHANNEL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="52" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="52" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__codec__if_8h_1a181075134ee83f0d27ed334bb3a43bc7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_codec_sampling_frequency_t</name>
+        <enumvalue id="wiced__codec__if_8h_1a181075134ee83f0d27ed334bb3a43bc7a904063e696992d384db2d4aefeebee43" prot="public">
+          <name>WICED_CODEC_SAMPLING_FREQUENCY_32K</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__codec__if_8h_1a181075134ee83f0d27ed334bb3a43bc7a4c424dc1ef35f9b1c5f415b3d4b70109" prot="public">
+          <name>WICED_CODEC_SAMPLING_FREQUENCY_44K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__codec__if_8h_1a181075134ee83f0d27ed334bb3a43bc7ab2d7a47e367159771121f0d9d62e4b75" prot="public">
+          <name>WICED_CODEC_SAMPLING_FREQUENCY_48K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__codec__if_8h_1a181075134ee83f0d27ed334bb3a43bc7a616c8bea17a2c1317c0201b9e168fcc2" prot="public">
+          <name>WICED_CODEC_SAMPLING_FREQUENCY_92K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__codec__if_8h_1a181075134ee83f0d27ed334bb3a43bc7ad192ed70da6786bee15812d845c9f553" prot="public">
+          <name>WICED_MAX_SAMPLING_FREQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="60" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="60" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a30cc2408a1b7ddcd0e0ce2cb5d5cf9f3" prot="public" static="no">
+        <type>wiced_result_t</type>
+        <definition>typedef wiced_result_t wiced_codec_status_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_codec_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="73" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a2c04040afc9241dfba7a9723291476e1" prot="public" static="no">
+        <type>wiced_codec_status_t(*</type>
+        <definition>codec_if_api_init</definition>
+        <argsstring>)(wiced_codec_data_transfer_api_t *data_transfer_methods, void *data)</argsstring>
+        <name>codec_if_api_init</name>
+        <briefdescription>
+<para>NOTE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The decoder/encoder in the following api list take no arguments. The flow is as follows.</para>
+<para><orderedlist>
+<listitem><para>Initialize using the init function, pass in a struct with pointers to functions that can allocate memory for output data.</para>
+</listitem><listitem><para>Get the capabilities of the codec using the get capabilities function implementation.</para>
+</listitem><listitem><para>Use the decode function for decoding data. 3.1 Use the codec_alloc_output_buffer_cb to allocate data for the output. This depends on the user of the API, as per platform programming requirements. 3.2 The decoder implementation must read in data (from for example, a queue) in the implementation of codec_read_encoded_data_cb by the api user. API user will not directly pass data to the decoder. 3.3 The decoder implementation writes decoded data (for example, to a queue) in the implementation of codec_write_decoded_data_cb. There is no direct retrieval of pcm data from the interface. Initialize the codec with mandatory memory management and data arguments. If the memory management parameter is not provided then the codec implementation will not fit into the rest of the platform structure. The memory management functions must fetch the raw/encoded data, allocate memory for the output as per platform specifications and provide the data to a location using the mechanism provided by the memory management function. This allows for maximum flexibility for the application developer.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transfer methods that need to be passed to the codec for platform/app specific memory management. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any data that a particular codec implementation might require. The interpretation of the data must be provided by the codec parameter file (wiced_codec_xxx_params.h) and must be shared between the codec implementation and the application. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_codec_status_t 0 if success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="109" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a75cfd8b460991f41fec3830d72dd4192" prot="public" static="no">
+        <type>wiced_codec_status_t(*</type>
+        <definition>codec_if_api_close</definition>
+        <argsstring>)(void)</argsstring>
+        <name>codec_if_api_close</name>
+        <briefdescription>
+<para>De-initialize the code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wiced_codec_status_t 0 if success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="118" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1af842bd3884920cf4c18769dcc156f912" prot="public" static="no">
+        <type>void(*</type>
+        <definition>codec_if_api_get_capabilities</definition>
+        <argsstring>)(void *codec_capabilities, void *codec_preferred_params)</argsstring>
+        <name>codec_if_api_get_capabilities</name>
+        <briefdescription>
+<para>Get the configurations supported by the implementation of the codec. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The exact form of the parameters must be provided in a global wiced_codec_xx_params.h file, and used in the application as well as the codec implementation.For example, look at the default platform provided file wiced_codec_sbc_params.h.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">codec_capabilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>All the capabilities supported by the codec. This is codec-dependent; the interpretation of this is as per the param file mentioned in the description above. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>[out</parametername>
+<parametername>optional]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>codec_preferred_params The codec parameters that indicate the preferred configuration of the codec. This is still a subset of the codec capabilities. Note that the interpretation of this struct is as per comment for codec_capabilities. This can be set to NULL if the user does not need the preferred subset of capabilities to be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="133" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a0118008728f3703f07558f9097f5e091" prot="public" static="no">
+        <type>wiced_codec_status_t(*</type>
+        <definition>typedef wiced_codec_status_t(* codec_if_api_set_configuration) (void *config)</definition>
+        <argsstring>)(void *config)</argsstring>
+        <name>codec_if_api_set_configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="145" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1aeb444e29e2b6fe4761ea83d8b2e5eb66" prot="public" static="no">
+        <type>wiced_codec_status_t(*</type>
+        <definition>codec_if_api_encode</definition>
+        <argsstring>)(void)</argsstring>
+        <name>codec_if_api_encode</name>
+        <briefdescription>
+<para>Encode the given data in pcm (length pcm_len). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Make sure that codec_init with the data transfer methods structure has been called before using this function. The encode function must use the data transfer methods to read the raw data, allocate space for the output and transfer the data to a system-specified location. The encoder implementation shall use the callbacks codec_alloc_output_buffer_cb, codec_read_encoded_data_cb and codec_write_decoded_data_cb respectively to allocate memory for the output buffer, reading pcm data into the codec and writing the encoded data. <simplesect kind="return"><para>wiced_codec_status_t 0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="159" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a1ceedeff341e8644a73f10aff67385ab" prot="public" static="no">
+        <type>wiced_codec_status_t(*</type>
+        <definition>codec_if_api_decode</definition>
+        <argsstring>)(void)</argsstring>
+        <name>codec_if_api_decode</name>
+        <briefdescription>
+<para>Decode the data in src. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Make sure that codec_init with the memory management structure has been called before using this function. The decode function must use the data transfer methods to read the encoded data, allocate space for the output and transfer the pcm data to a system-specified location.</para>
+<para>The decoder implementation shall use the callbacks codec_alloc_output_buffer_cb, codec_read_encoded_data_cb and codec_write_decoded_data_cb respectively to allocate memory for the output buffer, reading encoded data into the codec and writing the decoded data. <simplesect kind="return"><para>wiced_codec_status_t 0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="174" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a9323b820e93cc3ab786a508d5012ddfd" prot="public" static="no">
+        <type>unsigned short(*</type>
+        <definition>typedef unsigned short(* codec_alloc_output_buffer_cb) (int16_t **buffer, uint16_t length)</definition>
+        <argsstring>)(int16_t **buffer, uint16_t length)</argsstring>
+        <name>codec_alloc_output_buffer_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="188" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a1f3a4ed509d2a07ec07cbabbb047a2ef" prot="public" static="no">
+        <type>unsigned short(*</type>
+        <definition>typedef unsigned short(* codec_read_encoded_data_cb) (uint8_t *data, uint16_t bytes_count)</definition>
+        <argsstring>)(uint8_t *data, uint16_t bytes_count)</argsstring>
+        <name>codec_read_encoded_data_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="206" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a506d4e0121c74d153f23dc7c68ff8520" prot="public" static="no">
+        <type>unsigned short(*</type>
+        <definition>typedef unsigned short(* codec_write_decoded_data_cb) (int16_t *data, uint16_t pcm_samples_count)</definition>
+        <argsstring>)(int16_t *data, uint16_t pcm_samples_count)</argsstring>
+        <name>codec_write_decoded_data_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="220" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a0fbc1e9d13e2e14a5444264843e6ffec" prot="public" static="no">
+        <type>int32_t(*</type>
+        <definition>codec_if_get_decoded_output_size</definition>
+        <argsstring>)(void)</argsstring>
+        <name>codec_if_get_decoded_output_size</name>
+        <briefdescription>
+<para>For cbr codecs, get the number of bytes that would be needed for a single decoded pcm block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int32_t Number of bytes that are required for a single block of PCM decoded data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="227" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__codec__if_8h_1a05aca11fd196365b681cbb7a42b3aee4" prot="public" static="no">
+        <type>struct codec_interface *</type>
+        <definition>typedef struct codec_interface* wiced_codec_handle_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_codec_handle_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="338" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wiced__codec__if_8h_1aa077e35672f9d9f4e841d90129cc2490" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structwiced__codec__interface__t" kindref="compound">wiced_codec_interface_t</ref> *</type>
+        <definition>wiced_codec_interface_t* wiced_get_codec_by_type</definition>
+        <argsstring>(wiced_codec_type_t type)</argsstring>
+        <name>wiced_get_codec_by_type</name>
+        <param>
+          <type>wiced_codec_type_t</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="353" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The following code describes a generic codec interface so that any codec can be &quot;plugged into&quot; the system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This would cover both the encoders and decoders. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WICED_CODEC_IF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_CODEC_IF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_result.h&quot;</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">/******************************************************</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Forward<sp/>Declarations</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>******************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structwiced__codec__data__transfer__cb" kindref="compound">wiced_codec_data_transfer_cb</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structwiced__codec__data__transfer__cb" kindref="compound">wiced_codec_data_transfer_cb</ref><sp/>wiced_codec_data_transfer_api_t;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/******************************************************</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Macros</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>******************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/******************************************************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>******************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/******************************************************</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Enumerations</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>******************************************************/</highlight></codeline>
+<codeline lineno="44"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>WICED_CODEC_SBC<sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>WICED_CODEC_MAX</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><sp/>wiced_codec_type_t;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_CODEC_CHANNEL_MONO<sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_CODEC_CHANNEL_STEREO,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_CODEC_CHANNEL_JOINT_STEREO,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_CODEC_CHANNEL_DUAL_CHANNEL,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_CODEC_CHANNEL_MAX_CHANNELS<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/>wiced_codec_channels_t;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_CODEC_SAMPLING_FREQUENCY_32K<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_CODEC_SAMPLING_FREQUENCY_44K,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_CODEC_SAMPLING_FREQUENCY_48K,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_CODEC_SAMPLING_FREQUENCY_92K,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_MAX_SAMPLING_FREQ</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}<sp/>wiced_codec_sampling_frequency_t;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/******************************************************</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type<sp/>Definitions</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>******************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>remove<sp/>codec_status,<sp/>replace<sp/>by<sp/>result_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_result_t<sp/>wiced_codec_status_t<sp/>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_codec_status_t<sp/>(*codec_if_api_init)(wiced_codec_data_transfer_api_t*<sp/>data_transfer_methods,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_codec_status_t<sp/>(*codec_if_api_close)(void);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*codec_if_api_get_capabilities)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>codec_capabilities,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>codec_preferred_params);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_codec_status_t<sp/>(*codec_if_api_set_configuration)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>config);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_codec_status_t<sp/>(*codec_if_api_encode)(void);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_codec_status_t<sp/>(*codec_if_api_decode)(void);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>short<sp/>(*codec_alloc_output_buffer_cb)(int16_t**<sp/>buffer,<sp/>uint16_t<sp/>length);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>short<sp/>(*codec_read_encoded_data_cb)(uint8_t*<sp/>data,<sp/>uint16_t<sp/>bytes_count);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>short<sp/>(*codec_write_decoded_data_cb)(int16_t*<sp/>data,<sp/>uint16_t<sp/>pcm_samples_count);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/>(*codec_if_get_decoded_output_size)(void);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="comment">/******************************************************</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Structures</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>******************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="structwiced__codec__data__transfer__cb" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structwiced__codec__data__transfer__cb" kindref="compound">wiced_codec_data_transfer_cb</ref><sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>codec_alloc_output_buffer_cb<sp/><ref refid="structwiced__codec__data__transfer__cb_1aeeea617288c9007e54a874d77cccc593" kindref="member">alloc_output_buffer_fp</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>codec_read_encoded_data_cb<sp/><ref refid="structwiced__codec__data__transfer__cb_1af878985faeb98681bc6dc90e7fd201b4" kindref="member">read_encoded_data_fp</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>codec_write_decoded_data_cb<sp/><ref refid="structwiced__codec__data__transfer__cb_1aeb7577dd9bea816794b90fb83d522667" kindref="member">write_decoded_data_fp</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}<sp/>;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="structwiced__codec__interface__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">codec_interface</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version_major;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version_minor;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>configured;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_codec_type_t<sp/>type;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>codec_if_api_init<sp/>init;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>codec_if_api_close<sp/>close;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>codec_if_api_get_capabilities<sp/>get_capabilities;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>codec_if_api_set_configuration<sp/>set_configuration;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>codec_if_api_encode<sp/>encode;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>codec_if_api_decode<sp/>decode;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>codec_if_get_decoded_output_size<sp/>get_decoded_output_size;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}<sp/><ref refid="structwiced__codec__interface__t" kindref="compound">wiced_codec_interface_t</ref>;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">codec_interface*<sp/>wiced_codec_handle_t;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="comment">/******************************************************</highlight></codeline>
+<codeline lineno="342"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Codec<sp/>Factory<sp/>Function<sp/>Declarations</highlight></codeline>
+<codeline lineno="343"><highlight class="comment"><sp/>******************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><ref refid="structwiced__codec__interface__t" kindref="compound">wiced_codec_interface_t</ref>*<sp/>wiced_get_codec_by_type(wiced_codec_type_t<sp/>type);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h"/>
+  </compounddef>
+</doxygen>

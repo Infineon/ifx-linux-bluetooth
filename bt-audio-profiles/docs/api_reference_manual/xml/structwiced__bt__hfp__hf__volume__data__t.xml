@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__hf__volume__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_hf_volume_data_t</compoundname>
+    <includes local="no">wiced_bt_hfp_hf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__volume__data__t_1a9fcdb727eb6482b5ad2465605387c7fd" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1ga27a6ebcebe6385d6d89b5dcb8dd9f08c" kindref="member">wiced_bt_hfp_hf_volume_type_t</ref></type>
+        <definition>wiced_bt_hfp_hf_volume_type_t wiced_bt_hfp_hf_volume_data_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Whether HF volume change is being requested for mic or spkr. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="256" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__volume__data__t_1a81b23616bea7ba23a5c6922932878797" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_volume_data_t::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+<para>Volume level from 0 to 15. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="257" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Volume Change event data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="255" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="254" bodyend="258"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__hf__volume__data__t_1a81b23616bea7ba23a5c6922932878797" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_volume_data_t</scope><name>level</name></member>
+      <member refid="structwiced__bt__hfp__hf__volume__data__t_1a9fcdb727eb6482b5ad2465605387c7fd" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_volume_data_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

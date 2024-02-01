@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="mainpage_8md" kind="file" language="Markdown">
+    <compoundname>mainpage.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Overview</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Bluetooth<sp/>SIG<sp/>provides<sp/>profiles<sp/>specification<sp/>which<sp/>defines<sp/>functionality<sp/>to<sp/>Bluetooth<sp/>device<sp/>for<sp/>different<sp/>use<sp/>cases,<sp/>such<sp/>as<sp/>audio<sp/>streaming,<sp/>call<sp/>control<sp/>etc.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>All<sp/>the<sp/>profiles<sp/>interact<sp/>with<sp/>Bluetooth<sp/>protocol<sp/>layer,application<sp/>can<sp/>use<sp/>one<sp/>or<sp/>more<sp/>profile<sp/>libs<sp/>based<sp/>on<sp/>their<sp/>requirement<sp/>and<sp/>dependency.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Below<sp/>are<sp/>the<sp/>list<sp/>of<sp/>profiles<sp/>supported<sp/>and<sp/>their<sp/>version.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##A2DP</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Advanced<sp/>Audio<sp/>Distribution<sp/>Profile<sp/>is<sp/>a<sp/>profile<sp/>that<sp/>allows<sp/>streaming<sp/>audio<sp/>from<sp/>one<sp/>device<sp/>to<sp/>another.<sp/>A2dp<sp/>profile<sp/>defines<sp/>two<sp/>roles.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Source<sp/>(SRC)<sp/>–<sp/>A<sp/>device<sp/>is<sp/>the<sp/>SRC<sp/>when<sp/>it<sp/>acts<sp/>as<sp/>a<sp/>source<sp/>of<sp/>a<sp/>digital<sp/>audio<sp/>stream<sp/>that<sp/>is<sp/>delivered<sp/>to<sp/>the<sp/>SNK<sp/>device</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Sink<sp/>(SNK)<sp/>–<sp/>A<sp/>device<sp/>is<sp/>the<sp/>SNK<sp/>when<sp/>it<sp/>acts<sp/>as<sp/>a<sp/>sink<sp/>of<sp/>a<sp/>digital<sp/>audio<sp/>stream<sp/>delivered<sp/>from<sp/>the<sp/>SRC<sp/>device.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##HFP</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Hands-free<sp/>profile<sp/>provides<sp/>capabilty<sp/>to<sp/>the<sp/>device<sp/>to<sp/>transmit<sp/>voice<sp/>between<sp/>mobile<sp/>phone<sp/>and<sp/>wireless<sp/>headset<sp/>and<sp/>defines<sp/>two<sp/>roles</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Audio<sp/>Gateway<sp/>(AG)<sp/>–<sp/>This<sp/>is<sp/>the<sp/>device<sp/>that<sp/>is<sp/>the<sp/>gateway<sp/>of<sp/>the<sp/>audio,<sp/>both<sp/>for<sp/>input<sp/>and<sp/>output.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Typical<sp/>devices<sp/>acting<sp/>as<sp/>Audio<sp/>Gateways<sp/>are<sp/>cellular<sp/>phones.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Hands-Free<sp/>unit<sp/>(HF)<sp/>–<sp/>This<sp/>is<sp/>the<sp/>device<sp/>acting<sp/>as<sp/>the<sp/>Audio<sp/>Gateway’s<sp/>remote<sp/>audio<sp/>input<sp/>and<sp/>output</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mechanism.<sp/>It<sp/>also<sp/>provides<sp/>some<sp/>remote<sp/>control<sp/>means<sp/>to<sp/>phone<sp/>call<sp/>functionality.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>HFP<sp/>profile<sp/>library<sp/>supports<sp/>both<sp/>CVSD<sp/>and<sp/>Wide<sp/>band<sp/>speech(WBS)<sp/>codec<sp/><sp/>features.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##SPP</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>The<sp/>Serial<sp/>Port<sp/>Profile<sp/>defines<sp/>the<sp/>protocols<sp/>and<sp/>procedures<sp/>that<sp/>shall<sp/>be<sp/>used<sp/>by<sp/>devices<sp/>using<sp/>Bluetooth<sp/>for<sp/>RS232<sp/>(or<sp/>similar)<sp/>serial<sp/>cable<sp/>emulation.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/><sp/>defines<sp/>two<sp/>roles.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Device<sp/>A<sp/>(DevA)<sp/>–<sp/>This<sp/>is<sp/>the<sp/>device<sp/>that<sp/>takes<sp/>initiative<sp/>to<sp/>form<sp/>a<sp/>connection<sp/>to<sp/>another<sp/>device.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Device<sp/>B<sp/>(DevB)<sp/>–<sp/>This<sp/>is<sp/>the<sp/>device<sp/>that<sp/>waits<sp/>for<sp/>another<sp/>device<sp/>to<sp/>take<sp/>initiative<sp/>to<sp/>connect.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Typical<sp/>steps<sp/>in<sp/>using<sp/>BTSTACK<sp/>library<sp/>APIs<sp/>are<sp/>-</highlight></codeline>
+    </programlisting>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/docs/mainpage.md"/>
+  </compounddef>
+</doxygen>

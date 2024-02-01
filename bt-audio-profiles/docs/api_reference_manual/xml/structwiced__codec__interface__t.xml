@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__codec__interface__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_codec_interface_t</compoundname>
+    <includes local="no">wiced_codec_if.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1a9ed9be5cd52a25a40029f6fb010793c2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int wiced_codec_interface_t::version_major</definition>
+        <argsstring></argsstring>
+        <name>version_major</name>
+        <briefdescription>
+<para>The major version of the interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="270" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1a6457d1361e09abf2869d65400e535004" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int wiced_codec_interface_t::version_minor</definition>
+        <argsstring></argsstring>
+        <name>version_minor</name>
+        <briefdescription>
+<para>The minor version of the interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="276" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1a033e9c5e1b821a02003994b2dfb11c3d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int wiced_codec_interface_t::configured</definition>
+        <argsstring></argsstring>
+        <name>configured</name>
+        <briefdescription>
+<para>Indicates whether the interface implementation has been configured or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="282" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1a197af35e3e8a632fec09f966b786c704" prot="public" static="no" mutable="no">
+        <type>wiced_codec_type_t</type>
+        <definition>wiced_codec_type_t wiced_codec_interface_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Indicates the codec type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Should be filled by the codec. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="288" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1ab99f39a85cf7ed18acb73070d638bbdd" prot="public" static="no" mutable="no">
+        <type>codec_if_api_init</type>
+        <definition>wiced_codec_interface_t::init</definition>
+        <argsstring></argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Initialize the codec with the required parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="294" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1a24a8281e18ee965f874bacbacffed97a" prot="public" static="no" mutable="no">
+        <type>codec_if_api_close</type>
+        <definition>codec_if_api_close wiced_codec_interface_t::close</definition>
+        <argsstring></argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>@close De-initialize the codec. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="300" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1a2c4c70c3a31bfa32e5c014c7367ff66f" prot="public" static="no" mutable="no">
+        <type>codec_if_api_get_capabilities</type>
+        <definition>codec_if_api_get_capabilities wiced_codec_interface_t::get_capabilities</definition>
+        <argsstring></argsstring>
+        <name>get_capabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="308" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1ab1fdf51bc745532dc9d12901f00613ff" prot="public" static="no" mutable="no">
+        <type>codec_if_api_set_configuration</type>
+        <definition>codec_if_api_set_configuration wiced_codec_interface_t::set_configuration</definition>
+        <argsstring></argsstring>
+        <name>set_configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="315" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1a7ce8e483515951c6ae55fedbae71dd56" prot="public" static="no" mutable="no">
+        <type>codec_if_api_encode</type>
+        <definition>wiced_codec_interface_t::encode</definition>
+        <argsstring></argsstring>
+        <name>encode</name>
+        <briefdescription>
+<para>encode will encode the given audio samples and provide an encoded frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="321" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1afd21accc9ac0e4b763cddbf404656ed4" prot="public" static="no" mutable="no">
+        <type>codec_if_api_decode</type>
+        <definition>wiced_codec_interface_t::decode</definition>
+        <argsstring></argsstring>
+        <name>decode</name>
+        <briefdescription>
+<para>decode will convert an encoded audio frame and provide PCM samples. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="327" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__interface__t_1a32dd2ed3ad3df808c505e0f9eaee706d" prot="public" static="no" mutable="no">
+        <type>codec_if_get_decoded_output_size</type>
+        <definition>wiced_codec_interface_t::get_decoded_output_size</definition>
+        <argsstring></argsstring>
+        <name>get_decoded_output_size</name>
+        <briefdescription>
+<para>This returns the size of the array with decoded pcm samples from the decoder in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is required when the size of the output is required and the decoder cannot just yet be started after configuring the codec. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="335" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>codec_interface_t: each supported codec must provide this interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="266" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="265" bodyend="336"/>
+    <listofallmembers>
+      <member refid="structwiced__codec__interface__t_1a24a8281e18ee965f874bacbacffed97a" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>close</name></member>
+      <member refid="structwiced__codec__interface__t_1a033e9c5e1b821a02003994b2dfb11c3d" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>configured</name></member>
+      <member refid="structwiced__codec__interface__t_1afd21accc9ac0e4b763cddbf404656ed4" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>decode</name></member>
+      <member refid="structwiced__codec__interface__t_1a7ce8e483515951c6ae55fedbae71dd56" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>encode</name></member>
+      <member refid="structwiced__codec__interface__t_1a2c4c70c3a31bfa32e5c014c7367ff66f" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>get_capabilities</name></member>
+      <member refid="structwiced__codec__interface__t_1a32dd2ed3ad3df808c505e0f9eaee706d" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>get_decoded_output_size</name></member>
+      <member refid="structwiced__codec__interface__t_1ab99f39a85cf7ed18acb73070d638bbdd" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>init</name></member>
+      <member refid="structwiced__codec__interface__t_1ab1fdf51bc745532dc9d12901f00613ff" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>set_configuration</name></member>
+      <member refid="structwiced__codec__interface__t_1a197af35e3e8a632fec09f966b786c704" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>type</name></member>
+      <member refid="structwiced__codec__interface__t_1a9ed9be5cd52a25a40029f6fb010793c2" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>version_major</name></member>
+      <member refid="structwiced__codec__interface__t_1a6457d1361e09abf2869d65400e535004" prot="public" virt="non-virtual"><scope>wiced_codec_interface_t</scope><name>version_minor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

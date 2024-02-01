@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__hf__bind__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_hf_bind_data_t</compoundname>
+    <includes local="no">wiced_bt_hfp_hf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__bind__data__t_1ad302c1a39b2aa7bb60969a5c9f333cfc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_bind_data_t::ind_id</definition>
+        <argsstring></argsstring>
+        <name>ind_id</name>
+        <briefdescription>
+<para>Indicator id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="309" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__bind__data__t_1a6f0a604c1f04550a0f628a29383f3950" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_bind_data_t::ind_value</definition>
+        <argsstring></argsstring>
+        <name>ind_value</name>
+        <briefdescription>
+<para>Indicator Value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="310" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bind event data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="308" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="307" bodyend="311"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__hf__bind__data__t_1ad302c1a39b2aa7bb60969a5c9f333cfc" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_bind_data_t</scope><name>ind_id</name></member>
+      <member refid="structwiced__bt__hfp__hf__bind__data__t_1a6f0a604c1f04550a0f628a29383f3950" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_bind_data_t</scope><name>ind_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

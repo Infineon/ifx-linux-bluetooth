@@ -1,0 +1,4 @@
+https://gitlab.intra.infineon.com/repo-staging/bluetooth-linux.git#topic/hedorah-release
+https://gitlab.intra.infineon.com/repo-staging/btstack.git#btstack371
+bluetooth_apps/apps/unicast_sink#release-v4.2.1-tc6
+bluetooth_apps/libraries#release-v4.2.1-tc6

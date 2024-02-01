@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__a2dp__sink__event__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_a2dp_sink_event_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1a63d91ac547003f4de01288ab8f513676" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref></type>
+        <definition>wiced_bt_a2dp_sink_status_t wiced_bt_a2dp_sink_event_data_t::connect</definition>
+        <argsstring></argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="141" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1a65f5a1cddf299481660d5d8baf2ec435" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref></type>
+        <definition>wiced_bt_a2dp_sink_status_t wiced_bt_a2dp_sink_event_data_t::disconnect</definition>
+        <argsstring></argsstring>
+        <name>disconnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="142" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1ac0d4b9b0f2ec1e5a1e600f478738a1f8" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__sink__start__t" kindref="compound">wiced_bt_a2dp_sink_start_t</ref></type>
+        <definition>wiced_bt_a2dp_sink_start_t wiced_bt_a2dp_sink_event_data_t::start_ind</definition>
+        <argsstring></argsstring>
+        <name>start_ind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="143" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1abb98ad2774da539c990c8058bda1c251" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref></type>
+        <definition>wiced_bt_a2dp_sink_status_t wiced_bt_a2dp_sink_event_data_t::start_cfm</definition>
+        <argsstring></argsstring>
+        <name>start_cfm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="144" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1ae4574b1d0f1bb92f3ddaa426132d3af9" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref></type>
+        <definition>wiced_bt_a2dp_sink_status_t wiced_bt_a2dp_sink_event_data_t::suspend</definition>
+        <argsstring></argsstring>
+        <name>suspend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="145" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1a513c6d010fd06d0989778d2e8beb0340" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__sink__codec__config__t" kindref="compound">wiced_bt_a2dp_sink_codec_config_t</ref></type>
+        <definition>wiced_bt_a2dp_sink_codec_config_t wiced_bt_a2dp_sink_event_data_t::codec_config</definition>
+        <argsstring></argsstring>
+        <name>codec_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="146" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>wiced_bt_a2dp_sink_event_data_t</label>
+        <link refid="unionwiced__bt__a2dp__sink__event__data__t"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>codec_config</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>start_ind</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>start_cfm</edgelabel>
+          <edgelabel>disconnect</edgelabel>
+          <edgelabel>connect</edgelabel>
+          <edgelabel>suspend</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>wiced_bt_a2dp_sink_start_t</label>
+        <link refid="structwiced__bt__a2dp__sink__start__t"/>
+      </node>
+      <node id="9">
+        <label>wiced_bt_a2dp_sink_codec_config_t</label>
+        <link refid="structwiced__bt__a2dp__sink__codec__config__t"/>
+      </node>
+      <node id="11">
+        <label>wiced_bt_a2dp_sink_status_t</label>
+        <link refid="structwiced__bt__a2dp__sink__status__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="140" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="139" bodyend="147"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__a2dp__sink__event__data__t_1a513c6d010fd06d0989778d2e8beb0340" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_event_data_t</scope><name>codec_config</name></member>
+      <member refid="unionwiced__bt__a2dp__sink__event__data__t_1a63d91ac547003f4de01288ab8f513676" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_event_data_t</scope><name>connect</name></member>
+      <member refid="unionwiced__bt__a2dp__sink__event__data__t_1a65f5a1cddf299481660d5d8baf2ec435" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_event_data_t</scope><name>disconnect</name></member>
+      <member refid="unionwiced__bt__a2dp__sink__event__data__t_1abb98ad2774da539c990c8058bda1c251" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_event_data_t</scope><name>start_cfm</name></member>
+      <member refid="unionwiced__bt__a2dp__sink__event__data__t_1ac0d4b9b0f2ec1e5a1e600f478738a1f8" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_event_data_t</scope><name>start_ind</name></member>
+      <member refid="unionwiced__bt__a2dp__sink__event__data__t_1ae4574b1d0f1bb92f3ddaa426132d3af9" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_event_data_t</scope><name>suspend</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

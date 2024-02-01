@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__ag__audio__open__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_ag_audio_open_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__ag__audio__open__t_1a370de3d9dac1f435c22c455c44038dbc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_ag_audio_open_t::wbs_supported</definition>
+        <argsstring></argsstring>
+        <name>wbs_supported</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="182" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__ag__audio__open__t_1aa8fd35130e482fd3870662eaab5f225c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_ag_audio_open_t::wbs_used</definition>
+        <argsstring></argsstring>
+        <name>wbs_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="183" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="181" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="180" bodyend="184"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__ag__audio__open__t_1a370de3d9dac1f435c22c455c44038dbc" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_audio_open_t</scope><name>wbs_supported</name></member>
+      <member refid="structwiced__bt__hfp__ag__audio__open__t_1aa8fd35130e482fd3870662eaab5f225c" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_audio_open_t</scope><name>wbs_used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

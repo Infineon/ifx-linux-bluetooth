@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__hf__config__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_hf_config_data_t</compoundname>
+    <includes local="no">wiced_bt_hfp_hf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__config__data__t_1a4935fbf93fcc86524e0430529678d290" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_config_data_t::mic_volume</definition>
+        <argsstring></argsstring>
+        <name>mic_volume</name>
+        <briefdescription>
+<para>Default/initial mic volume level from 0 to 15. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="263" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__config__data__t_1a8384f6b7301d9a3b41a05894074c2a3e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_config_data_t::speaker_volume</definition>
+        <argsstring></argsstring>
+        <name>speaker_volume</name>
+        <briefdescription>
+<para>Default/initial speaker volume level from 0 to 15. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="264" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__config__data__t_1a51b79a9389dc0c3f9265b7fb8c259b6c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_hfp_hf_config_data_t::feature_mask</definition>
+        <argsstring></argsstring>
+        <name>feature_mask</name>
+        <briefdescription>
+<para>HFP HF features supported bitmask - A combination of wiced_bt_hfp_hf_supported_features_t values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="265" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__config__data__t_1a462f6bdc256f7ed43fa45b205a47fbf8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_config_data_t::num_server</definition>
+        <argsstring></argsstring>
+        <name>num_server</name>
+        <briefdescription>
+<para>Number of HFP+HSP HF servers to start during init. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="266" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__config__data__t_1a61c3d0fa418a1779470b4edd0cbb163c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_config_data_t::scn[WICED_BT_HFP_HF_MAX_CONN]</definition>
+        <argsstring>[WICED_BT_HFP_HF_MAX_CONN]</argsstring>
+        <name>scn</name>
+        <briefdescription>
+<para>Array of num_server HFP+HSP HF server channel number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This should be the same as configured in the SDP server </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="267" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__config__data__t_1ae49a74782d69f6af97b163cc0594a751" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_hfp_hf_config_data_t::uuid[WICED_BT_HFP_HF_MAX_CONN]</definition>
+        <argsstring>[WICED_BT_HFP_HF_MAX_CONN]</argsstring>
+        <name>uuid</name>
+        <briefdescription>
+<para>The UUID of the service corresponding to the SCN specified at nth index in scn[] above. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="268" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WICED HF config. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="262" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="261" bodyend="269"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__hf__config__data__t_1a51b79a9389dc0c3f9265b7fb8c259b6c" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_config_data_t</scope><name>feature_mask</name></member>
+      <member refid="structwiced__bt__hfp__hf__config__data__t_1a4935fbf93fcc86524e0430529678d290" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_config_data_t</scope><name>mic_volume</name></member>
+      <member refid="structwiced__bt__hfp__hf__config__data__t_1a462f6bdc256f7ed43fa45b205a47fbf8" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_config_data_t</scope><name>num_server</name></member>
+      <member refid="structwiced__bt__hfp__hf__config__data__t_1a61c3d0fa418a1779470b4edd0cbb163c" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_config_data_t</scope><name>scn</name></member>
+      <member refid="structwiced__bt__hfp__hf__config__data__t_1a8384f6b7301d9a3b41a05894074c2a3e" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_config_data_t</scope><name>speaker_volume</name></member>
+      <member refid="structwiced__bt__hfp__hf__config__data__t_1ae49a74782d69f6af97b163cc0594a751" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_config_data_t</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

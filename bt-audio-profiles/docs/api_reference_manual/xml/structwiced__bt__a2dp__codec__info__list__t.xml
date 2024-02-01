@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__a2dp__codec__info__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_a2dp_codec_info_list_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__a2dp__codec__info__list__t_1abe5ae844b353fc250d13886b317d61aa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_a2dp_codec_info_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="96" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__a2dp__codec__info__list__t_1a149860312476f05cd51e22d4eb94c585" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_codec_info_t *</type>
+        <definition>wiced_bt_a2dp_codec_info_t* wiced_bt_a2dp_codec_info_list_t::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="97" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="95" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="94" bodyend="98"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__a2dp__codec__info__list__t_1abe5ae844b353fc250d13886b317d61aa" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_codec_info_list_t</scope><name>count</name></member>
+      <member refid="structwiced__bt__a2dp__codec__info__list__t_1a149860312476f05cd51e22d4eb94c585" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_codec_info_list_t</scope><name>info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

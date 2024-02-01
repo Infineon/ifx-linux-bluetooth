@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__avrc__tg__absolute__volume__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_avrc_tg_absolute_volume_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__absolute__volume__t_1aed7de2a9066c0ee84cb826e9b0c14e35" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_avrc_tg_absolute_volume_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="169" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__absolute__volume__t_1a1bc53644494e61d4d56d5e789a6bda90" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_avrc_tg_absolute_volume_t::volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="170" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="168" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="168" bodyend="171"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__avrc__tg__absolute__volume__t_1aed7de2a9066c0ee84cb826e9b0c14e35" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_absolute_volume_t</scope><name>handle</name></member>
+      <member refid="structwiced__bt__avrc__tg__absolute__volume__t_1a1bc53644494e61d4d56d5e789a6bda90" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_absolute_volume_t</scope><name>volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

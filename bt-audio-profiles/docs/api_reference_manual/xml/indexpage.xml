@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Overview</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Bluetooth SIG provides profiles specification which defines functionality to Bluetooth device for different use cases, such as audio streaming, call control etc. All the profiles interact with Bluetooth protocol layer,application can use one or more profile libs based on their requirement and dependency. Below are the list of profiles supported and their version.</para>
+<para><heading level="2">A2DP</heading>
+</para>
+<para><itemizedlist>
+<listitem><para>Advanced Audio Distribution Profile is a profile that allows streaming audio from one device to another. A2dp profile defines two roles.<orderedlist>
+<listitem><para>Source (SRC) – A device is the SRC when it acts as a source of a digital audio stream that is delivered to the SNK device</para>
+</listitem><listitem><para>Sink (SNK) – A device is the SNK when it acts as a sink of a digital audio stream delivered from the SRC device.</para>
+</listitem></orderedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><heading level="2">HFP</heading>
+</para>
+<para><itemizedlist>
+<listitem><para>Hands-free profile provides capabilty to the device to transmit voice between mobile phone and wireless headset and defines two roles<orderedlist>
+<listitem><para>Audio Gateway (AG) – This is the device that is the gateway of the audio, both for input and output. Typical devices acting as Audio Gateways are cellular phones.</para>
+</listitem><listitem><para>Hands-Free unit (HF) – This is the device acting as the Audio Gateway’s remote audio input and output mechanism. It also provides some remote control means to phone call functionality.</para>
+</listitem></orderedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>HFP profile library supports both CVSD and Wide band speech(WBS) codec features.</para>
+<para><heading level="2">SPP</heading>
+</para>
+<para><itemizedlist>
+<listitem><para>The Serial Port Profile defines the protocols and procedures that shall be used by devices using Bluetooth for RS232 (or similar) serial cable emulation. it defines two roles.<orderedlist>
+<listitem><para>Device A (DevA) – This is the device that takes initiative to form a connection to another device.</para>
+</listitem><listitem><para>Device B (DevB) – This is the device that waits for another device to take initiative to connect. Typical steps in using BTSTACK library APIs are - </para>
+</listitem></orderedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

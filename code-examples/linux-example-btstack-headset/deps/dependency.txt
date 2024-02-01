@@ -1,0 +1,4 @@
+https://github.com/Infineon/btstack#release-v3.6.1
+https://github.com/Infineon/bt-audio-profiles#release-v1.0.0
+https://github.com/Infineon/bluetooth-linux#release-v2.0.0
+https://github.com/Infineon/btsdk-gfps#release-v3.3.0

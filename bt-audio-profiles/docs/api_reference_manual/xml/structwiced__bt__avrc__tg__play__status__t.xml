@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__avrc__tg__play__status__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_avrc_tg_play_status_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__play__status__t_1ae7a8d1b311e180172c963962bab615b4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_avrc_tg_play_status_t::song_len</definition>
+        <argsstring></argsstring>
+        <name>song_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="128" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__play__status__t_1a1b5aae63fdbeca6e3802240c025c6433" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_avrc_tg_play_status_t::song_pos</definition>
+        <argsstring></argsstring>
+        <name>song_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="130" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__avrc__tg__play__status__t_1af1ca3b4846557bbd2bf2a0d5fc3dc314" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_avrc_tg_play_status_t::play_state</definition>
+        <argsstring></argsstring>
+        <name>play_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="132" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="126" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="126" bodyend="133"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__avrc__tg__play__status__t_1af1ca3b4846557bbd2bf2a0d5fc3dc314" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_play_status_t</scope><name>play_state</name></member>
+      <member refid="structwiced__bt__avrc__tg__play__status__t_1ae7a8d1b311e180172c963962bab615b4" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_play_status_t</scope><name>song_len</name></member>
+      <member refid="structwiced__bt__avrc__tg__play__status__t_1a1b5aae63fdbeca6e3802240c025c6433" prot="public" virt="non-virtual"><scope>wiced_bt_avrc_tg_play_status_t</scope><name>song_pos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__codec__data__transfer__cb" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_codec_data_transfer_cb</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__codec__data__transfer__cb_1aeeea617288c9007e54a874d77cccc593" prot="public" static="no" mutable="no">
+        <type>codec_alloc_output_buffer_cb</type>
+        <definition>wiced_codec_data_transfer_api_t::alloc_output_buffer_fp</definition>
+        <argsstring></argsstring>
+        <name>alloc_output_buffer_fp</name>
+        <briefdescription>
+<para>alloc_buffer_fp is the playback system&apos;s output buffer allocation method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function must be typically provided by the underlying technology. For example, BT/A2DP will provide its own alloc_buffer_fp, while Airplay would have its own. This <linebreak/>
+must be provided when &lt;codec_if_instance&gt;-&gt;init() is invoked. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="241" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__data__transfer__cb_1af878985faeb98681bc6dc90e7fd201b4" prot="public" static="no" mutable="no">
+        <type>codec_read_encoded_data_cb</type>
+        <definition>wiced_codec_data_transfer_api_t::read_encoded_data_fp</definition>
+        <argsstring></argsstring>
+        <name>read_encoded_data_fp</name>
+        <briefdescription>
+<para>read_encoded_data_fp is used to read in encoded data from the input queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As in alloc_buffer_fp, this function <linebreak/>
+must be provided by the underlying playback system as an argument to &lt;codec_if_instance&gt; -&gt; init(). Note that the method name is from the viewpoint of the codec; the codec would need this function to read data from the system using the codec. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="250" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__codec__data__transfer__cb_1aeb7577dd9bea816794b90fb83d522667" prot="public" static="no" mutable="no">
+        <type>codec_write_decoded_data_cb</type>
+        <definition>wiced_codec_data_transfer_api_t::write_decoded_data_fp</definition>
+        <argsstring></argsstring>
+        <name>write_decoded_data_fp</name>
+        <briefdescription>
+<para>write_decoded_data_fp is used to write decoded data back to the playback system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As in alloc_buffer_fp, this function <linebreak/>
+must be provided by the underlying playback system in &lt;codec_if_instance&gt; -&gt; init(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="257" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="233" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="233" bodyend="258"/>
+    <listofallmembers>
+      <member refid="structwiced__codec__data__transfer__cb_1aeeea617288c9007e54a874d77cccc593" prot="public" virt="non-virtual"><scope>wiced_codec_data_transfer_cb</scope><name>alloc_output_buffer_fp</name></member>
+      <member refid="structwiced__codec__data__transfer__cb_1af878985faeb98681bc6dc90e7fd201b4" prot="public" virt="non-virtual"><scope>wiced_codec_data_transfer_cb</scope><name>read_encoded_data_fp</name></member>
+      <member refid="structwiced__codec__data__transfer__cb_1aeb7577dd9bea816794b90fb83d522667" prot="public" virt="non-virtual"><scope>wiced_codec_data_transfer_cb</scope><name>write_decoded_data_fp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

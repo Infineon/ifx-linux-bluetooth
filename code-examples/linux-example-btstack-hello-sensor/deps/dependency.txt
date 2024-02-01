@@ -1,0 +1,2 @@
+https://gitlab.intra.infineon.com/repo-staging/bluetooth-linux.git#Hedorah-TC1
+https://gitlab.intra.infineon.com/repo-staging/btstack.git#btstack371

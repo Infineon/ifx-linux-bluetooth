@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_d0df2a90c36ca602fe113008c985b401" kind="dir">
+    <compoundname>profiles_include</compoundname>
+    <innerfile refid="wiced__bt__a2dp__sink_8h">wiced_bt_a2dp_sink.h</innerfile>
+    <innerfile refid="wiced__bt__a2dp__source_8h">wiced_bt_a2dp_source.h</innerfile>
+    <innerfile refid="wiced__bt__avrc__ct_8h">wiced_bt_avrc_ct.h</innerfile>
+    <innerfile refid="wiced__bt__avrc__tg_8h">wiced_bt_avrc_tg.h</innerfile>
+    <innerfile refid="wiced__bt__hfp__ag_8h">wiced_bt_hfp_ag.h</innerfile>
+    <innerfile refid="wiced__bt__hfp__hf_8h">wiced_bt_hfp_hf.h</innerfile>
+    <innerfile refid="wiced__bt__spp_8h">wiced_bt_spp.h</innerfile>
+    <innerfile refid="wiced__codec__if_8h">wiced_codec_if.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/"/>
+  </compounddef>
+</doxygen>

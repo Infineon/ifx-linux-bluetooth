@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hci__control__ag__settings__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hci_control_ag_settings_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hci__control__ag__settings__t_1a5b1facc48f9896e7dc3c75ffdb5fed28" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hci_control_ag_settings_t::spk_vol</definition>
+        <argsstring></argsstring>
+        <name>spk_vol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="153" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hci__control__ag__settings__t_1a3dbe01e4cdb66e46dff806dee2ba0033" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hci_control_ag_settings_t::mic_vol</definition>
+        <argsstring></argsstring>
+        <name>mic_vol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="154" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hci__control__ag__settings__t_1a81a68791f3f690691d9c18b1d800cfdc" prot="public" static="no" mutable="no">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_hci_control_ag_settings_t::ecnr_enabled</definition>
+        <argsstring></argsstring>
+        <name>ecnr_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="155" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="152" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="151" bodyend="156"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hci__control__ag__settings__t_1a81a68791f3f690691d9c18b1d800cfdc" prot="public" virt="non-virtual"><scope>wiced_bt_hci_control_ag_settings_t</scope><name>ecnr_enabled</name></member>
+      <member refid="structwiced__bt__hci__control__ag__settings__t_1a3dbe01e4cdb66e46dff806dee2ba0033" prot="public" virt="non-virtual"><scope>wiced_bt_hci_control_ag_settings_t</scope><name>mic_vol</name></member>
+      <member refid="structwiced__bt__hci__control__ag__settings__t_1a5b1facc48f9896e7dc3c75ffdb5fed28" prot="public" virt="non-virtual"><scope>wiced_bt_hci_control_ag_settings_t</scope><name>spk_vol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

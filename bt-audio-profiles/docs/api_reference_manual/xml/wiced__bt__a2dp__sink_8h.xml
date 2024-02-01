@@ -1,0 +1,794 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__a2dp__sink_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_a2dp_sink.h</compoundname>
+    <includes local="yes">wiced_bt_types.h</includes>
+    <includes local="yes">wiced_result.h</includes>
+    <includes local="yes">wiced_bt_a2d.h</includes>
+    <includes local="yes">wiced_bt_a2d_sbc.h</includes>
+    <includes local="yes">wiced_bt_a2d_m12.h</includes>
+    <includes local="yes">wiced_bt_a2d_m24.h</includes>
+    <includes local="yes">wiced_bt_a2dp_defs.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>wiced_bt_types.h</label>
+      </node>
+      <node id="8">
+        <label>wiced_bt_a2d_m24.h</label>
+      </node>
+      <node id="2">
+        <label>wiced_bt_a2dp_sink.h</label>
+        <link refid="wiced__bt__a2dp__sink_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>wiced_bt_a2d.h</label>
+      </node>
+      <node id="7">
+        <label>wiced_bt_a2d_m12.h</label>
+      </node>
+      <node id="9">
+        <label>wiced_bt_a2dp_defs.h</label>
+      </node>
+      <node id="6">
+        <label>wiced_bt_a2d_sbc.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_result.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structwiced__bt__a2dp__codec__info__list__t" prot="public">wiced_bt_a2dp_codec_info_list_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__config__data__t" prot="public">wiced_bt_a2dp_config_data_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__sink__status__t" prot="public">wiced_bt_a2dp_sink_status_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__sink__start__t" prot="public">wiced_bt_a2dp_sink_start_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__sink__codec__config__t" prot="public">wiced_bt_a2dp_sink_codec_config_t</innerclass>
+    <innerclass refid="unionwiced__bt__a2dp__sink__event__data__t" prot="public">wiced_bt_a2dp_sink_event_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wicedbt__a2dp__snk_1ga37267e6370fe394c7b4b73b784839c25" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_a2dp_sink_event_t</name>
+        <enumvalue id="group__wicedbt__a2dp__snk_1gga37267e6370fe394c7b4b73b784839c25a727ce023169c312b73c5f0e9ed68b9bc" prot="public">
+          <name>WICED_BT_A2DP_SINK_CONNECT_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__snk_1gga37267e6370fe394c7b4b73b784839c25a95dc4f142653580512f3c5f1f8b566df" prot="public">
+          <name>WICED_BT_A2DP_SINK_DISCONNECT_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__snk_1gga37267e6370fe394c7b4b73b784839c25a326a44e218c71139f090bf7e64edafb3" prot="public">
+          <name>WICED_BT_A2DP_SINK_START_IND_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__snk_1gga37267e6370fe394c7b4b73b784839c25ae53eff4e80ef52bd625b01c5b602b531" prot="public">
+          <name>WICED_BT_A2DP_SINK_START_CFM_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__snk_1gga37267e6370fe394c7b4b73b784839c25aad4eb2336a7b88d26716cdca516ec9cf" prot="public">
+          <name>WICED_BT_A2DP_SINK_SUSPEND_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__snk_1gga37267e6370fe394c7b4b73b784839c25a58e21ec023504dd9d6f02dfc36eac3d8" prot="public">
+          <name>WICED_BT_A2DP_SINK_CODEC_CONFIG_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="67" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="66" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__a2dp__snk_1gaca8a4ead269e36a1c58c15c32d558628" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_a2dp_sink_feature_mask_t</name>
+        <enumvalue id="group__wicedbt__a2dp__snk_1ggaca8a4ead269e36a1c58c15c32d558628a2b67317a7bb2a1f094df52121ace5e51" prot="public">
+          <name>WICED_BT_A2DP_SINK_FEAT_PROTECT</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__snk_1ggaca8a4ead269e36a1c58c15c32d558628a5ff7aaa3a220a04dbb98a75a1eb9639c" prot="public">
+          <name>WICED_BT_A2DP_SINK_FEAT_DELAY_RPT</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="79" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="78" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wicedbt__a2dp__snk_1gac75ea75c21a20207bb33bbc29c6952eb" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_a2dp_sink_control_cb_t) (wiced_bt_a2dp_sink_event_t event, wiced_bt_a2dp_sink_event_data_t *p_data)</definition>
+        <argsstring>)(wiced_bt_a2dp_sink_event_t event, wiced_bt_a2dp_sink_event_data_t *p_data)</argsstring>
+        <name>wiced_bt_a2dp_sink_control_cb_t</name>
+        <briefdescription>
+<para>Function Name: The A2DP Control path callback type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application implements a callback of this type to receive A2DP control path events.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ID of an event being notified to the app. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: The pointer to data associated with the event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="164" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1gad0f5eef5828fe9b2641507b6e8852df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_init</definition>
+        <argsstring>(wiced_bt_a2dp_config_data_t *p_config_data, wiced_bt_a2dp_sink_control_cb_t control_cb)</argsstring>
+        <name>wiced_bt_a2dp_sink_init</name>
+        <param>
+          <type><ref refid="structwiced__bt__a2dp__config__data__t" kindref="compound">wiced_bt_a2dp_config_data_t</ref> *</type>
+          <declname>p_config_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wicedbt__a2dp__snk_1gac75ea75c21a20207bb33bbc29c6952eb" kindref="member">wiced_bt_a2dp_sink_control_cb_t</ref></type>
+          <declname>control_cb</declname>
+        </param>
+        <briefdescription>
+<para>Function Name: wiced_bt_a2dp_sink_init The API to initialize the A2DP SINK component and register with the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application before any other API is called.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_config_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: A2DP sink configuration parameters. This should remain valid until deinit is called because the pointer is stored and used inside the library. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">control_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Callback function for receiving sink events..</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1gae517c0643780262dcf401fdeb4585b57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_deinit</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_a2dp_sink_deinit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1ga8d87e924feaff67c2b1bde916f97bc72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_set_preferred_codec_config</definition>
+        <argsstring>(wiced_bt_a2dp_codec_info_t *codec_config)</argsstring>
+        <name>wiced_bt_a2dp_set_preferred_codec_config</name>
+        <param>
+          <type>wiced_bt_a2dp_codec_info_t *</type>
+          <declname>codec_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1gabd9b838fdf2bc172cadf53279c10c3b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_connect</definition>
+        <argsstring>(wiced_bt_device_address_t bd_address)</argsstring>
+        <name>wiced_bt_a2dp_sink_connect</name>
+        <param>
+          <type>wiced_bt_device_address_t</type>
+          <declname>bd_address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1ga0828c47a1dd8cb9780755839b0a75ccb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_disconnect</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_a2dp_sink_disconnect</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1ga5c3a9ef12c30d3ab765a6f2b2608bae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_start</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_a2dp_sink_start</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1gae2314335724d3a2cfc0b41da442eff1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_send_start_response</definition>
+        <argsstring>(uint16_t handle, uint8_t label, uint8_t status)</argsstring>
+        <name>wiced_bt_a2dp_sink_send_start_response</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1ga332a99805237dbd32105c9c59659312f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_suspend</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_a2dp_sink_suspend</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1gadb6c1854f777550c13d6841aa78a58a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_a2dp_sink_register_data_cback</definition>
+        <argsstring>(wiced_bt_a2dp_sink_data_cb_t p_cback)</argsstring>
+        <name>wiced_bt_a2dp_sink_register_data_cback</name>
+        <param>
+          <type>wiced_bt_a2dp_sink_data_cb_t</type>
+          <declname>p_cback</declname>
+        </param>
+        <briefdescription>
+<para>API used to register for data callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application provides the SINK configuration data to receive data packets.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_cback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function for receiving audio data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1ga4a730b06dd1986a0480b199f691f7eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_send_delay_report</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_a2dp_sink_send_delay_report</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1ga88234861ec64c0b7e1b7c9d6667a3ca8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_mute_audio</definition>
+        <argsstring>(wiced_bool_t enable, uint16_t ramp_ms)</argsstring>
+        <name>wiced_bt_a2dp_sink_mute_audio</name>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>ramp_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="332" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1ga922a31f344d5fcbbd6bcae8cc5e177f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_lrac_switch_get</definition>
+        <argsstring>(void *p_opaque, uint16_t *p_sync_data_len)</argsstring>
+        <name>wiced_bt_a2dp_sink_lrac_switch_get</name>
+        <param>
+          <type>void *</type>
+          <declname>p_opaque</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>p_sync_data_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="349" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__snk_1ga53363f0be0ad8a9b4dd0ca74aeaca40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_lrac_switch_set</definition>
+        <argsstring>(void *p_opaque, uint16_t sync_data_len)</argsstring>
+        <name>wiced_bt_a2dp_sink_lrac_switch_set</name>
+        <param>
+          <type>void *</type>
+          <declname>p_opaque</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>sync_data_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="366" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains A2DP Sink APIs and definitions. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_result.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2d.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2d_sbc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2d_m12.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2d_m24.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2dp_defs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(STACK_INSIDE_BT_CTRLR)<sp/>&amp;&amp;<sp/>(STACK_INSIDE_BT_CTRLR<sp/>==<sp/>TRUE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_audio_codec.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_audio_sink.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*<sp/>\addtogroup<sp/><sp/>wicedbt_a2dp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Advanced<sp/>Audio<sp/>Distribution<sp/>Profile<sp/>(A2DP)<sp/>Sink</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">*<sp/>\ingroup<sp/><sp/><sp/><sp/><sp/>wicedbt_av</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">*<sp/>Advanced<sp/>Audio<sp/>Distribution<sp/>Profile<sp/>Sink<sp/>interfaces</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">*<sp/>@{</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Macros</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Enumerations</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Events<sp/>in<sp/>wiced_bt_a2dp_sink_control_cb_t()<sp/>callback,</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/>for<sp/>payload,<sp/>see<sp/>wiced_bt_a2dp_sink_event_data_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SINK_CONNECT_EVT,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Connected<sp/>event,<sp/>received<sp/>on<sp/>establishing<sp/>connection<sp/>to<sp/>a<sp/>peer<sp/>device<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SINK_DISCONNECT_EVT,<sp/><sp/></highlight><highlight class="comment">/*<sp/>Disconnected<sp/>event,<sp/>received<sp/>on<sp/>disconnection<sp/>from<sp/>a<sp/>peer<sp/>device<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SINK_START_IND_EVT,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>stream<sp/>indication<sp/>event,<sp/>received<sp/>when<sp/>start<sp/>req<sp/>is<sp/>received<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SINK_START_CFM_EVT,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>stream<sp/>confirm<sp/>event,<sp/>received<sp/>when<sp/>start<sp/>req<sp/>is<sp/>sent<sp/>and<sp/>response<sp/>is<sp/>received<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SINK_SUSPEND_EVT,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Suspend<sp/>stream<sp/>event,<sp/>received<sp/>when<sp/>audio<sp/>streaming<sp/>is<sp/>suspended<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SINK_CODEC_CONFIG_EVT<sp/></highlight><highlight class="comment">/*<sp/>Codec<sp/>config<sp/>event,<sp/>received<sp/>when<sp/>codec<sp/>config<sp/>for<sp/>a<sp/>streaming<sp/>session<sp/>is<sp/>updated<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/>wiced_bt_a2dp_sink_event_t;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A2DP<sp/>Sink<sp/>features<sp/>masks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SINK_FEAT_PROTECT<sp/><sp/><sp/>=<sp/>0x0001,<sp/></highlight><highlight class="comment">/*<sp/>Streaming<sp/>media<sp/>content<sp/>protection<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SINK_FEAT_DELAY_RPT<sp/>=<sp/>0x0002,<sp/></highlight><highlight class="comment">/*<sp/>Use<sp/>delay<sp/>reporting<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/>wiced_bt_a2dp_sink_feature_mask_t;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="85"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type<sp/>Definitions</highlight></codeline>
+<codeline lineno="86"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="89"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Structures</highlight></codeline>
+<codeline lineno="90"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Codec<sp/>capability<sp/>information<sp/>list<sp/>structure,</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/>used<sp/>to<sp/>indicate<sp/>the<sp/>supported<sp/>codecs<sp/>and<sp/>their<sp/>capabilities<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="structwiced__bt__a2dp__codec__info__list__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count;<sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>codecs<sp/>present<sp/>in<sp/>the<sp/>list<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_codec_info_t*<sp/>info;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Codec<sp/>information<sp/>list<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__codec__info__list__t" kindref="compound">wiced_bt_a2dp_codec_info_list_t</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A2DP<sp/>sink<sp/>configuration<sp/>data<sp/>structure<sp/>*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/><sp/>NOTE<sp/>The<sp/>ext_codec<sp/>field<sp/>will<sp/>be<sp/>ignored<sp/>for<sp/>20706A2.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="structwiced__bt__a2dp__config__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_sink_feature_mask_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>feature_mask;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Supported<sp/>features<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__codec__info__list__t" kindref="compound">wiced_bt_a2dp_codec_info_list_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codec_capabilities;<sp/></highlight><highlight class="comment">/*<sp/>List<sp/>of<sp/>supported<sp/>codecs<sp/>and<sp/>their<sp/>capabilities<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(STACK_INSIDE_BT_CTRLR)<sp/>&amp;&amp;<sp/>(STACK_INSIDE_BT_CTRLR<sp/>==<sp/>TRUE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_sink_audio_tuning_params_t<sp/><sp/>p_param;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Audio<sp/>tuning<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_ext_codec_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ext_codec;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>External<sp/>Codec<sp/>information<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sink_delay;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__config__data__t" kindref="compound">wiced_bt_a2dp_config_data_t</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Generic<sp/>event<sp/>status<sp/>info<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="structwiced__bt__a2dp__sink__status__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_result_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Whether<sp/>the<sp/>event<sp/>indicates<sp/>failure<sp/>or<sp/>success,<sp/>WICED_BT_XXX<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_device_address_t<sp/>bd_addr;<sp/></highlight><highlight class="comment">/*<sp/>Peer<sp/>bluetooth<sp/>device<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Peer<sp/>connection<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="structwiced__bt__a2dp__sink__start__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_result_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Whether<sp/>the<sp/>event<sp/>indicates<sp/>failure<sp/>or<sp/>success,<sp/>WICED_BT_XXX<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Transaction<sp/>label<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Peer<sp/>connection<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_device_address_t<sp/><sp/><sp/>bdaddr;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Source<sp/>device&apos;s<sp/>BT<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__sink__start__t" kindref="compound">wiced_bt_a2dp_sink_start_t</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="structwiced__bt__a2dp__sink__codec__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_device_address_t<sp/><sp/><sp/>bd_addr;<sp/></highlight><highlight class="comment">/*<sp/>Peer<sp/>bluetooth<sp/>device<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Peer<sp/>connection<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_codec_info_t<sp/><sp/>codec;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configured<sp/>codec<sp/>params<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cp_type;<sp/></highlight><highlight class="comment">/*<sp/>Content<sp/>Protection<sp/>Type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__sink__codec__config__t" kindref="compound">wiced_bt_a2dp_sink_codec_config_t</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>callback<sp/>event<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="unionwiced__bt__a2dp__sink__event__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SINK_CONNECT_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>disconnect;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SINK_DISCONNECT_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__sink__start__t" kindref="compound">wiced_bt_a2dp_sink_start_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_ind;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SINK_START_IND_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_cfm;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SINK_START_CFM_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>suspend;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SINK_SUSPEND_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__sink__codec__config__t" kindref="compound">wiced_bt_a2dp_sink_codec_config_t</ref><sp/><sp/><sp/>codec_config;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SINK_CODEC_CONFIG_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__a2dp__sink__event__data__t" kindref="compound">wiced_bt_a2dp_sink_event_data_t</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Callback<sp/>Type<sp/>Definitions</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__wicedbt__a2dp__snk_1gac75ea75c21a20207bb33bbc29c6952eb" kindref="member">wiced_bt_a2dp_sink_control_cb_t</ref>)(<sp/>wiced_bt_a2dp_sink_event_t<sp/>event,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionwiced__bt__a2dp__sink__event__data__t" kindref="compound">wiced_bt_a2dp_sink_event_data_t</ref>*<sp/>p_data<sp/>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="168"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Function<sp/>Declarations</highlight></codeline>
+<codeline lineno="169"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__snk_1gad0f5eef5828fe9b2641507b6e8852df9" kindref="member">wiced_bt_a2dp_sink_init</ref>(<sp/><ref refid="structwiced__bt__a2dp__config__data__t" kindref="compound">wiced_bt_a2dp_config_data_t</ref>*<sp/>p_config_data,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__a2dp__snk_1gac75ea75c21a20207bb33bbc29c6952eb" kindref="member">wiced_bt_a2dp_sink_control_cb_t</ref><sp/>control_cb<sp/>);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="189"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="190"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>wiced_bt_a2dp_sink_deinit</highlight></codeline>
+<codeline lineno="191"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="192"><highlight class="comment">*<sp/>@brief<sp/>The<sp/>API<sp/>to<sp/>deregister<sp/>from<sp/>the<sp/>stack<sp/>and<sp/>to<sp/>clean<sp/>up<sp/>the<sp/>memory<sp/>of<sp/>the<sp/>A2DP<sp/>sink<sp/>component.</highlight></codeline>
+<codeline lineno="193"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>application<sp/>when<sp/>the<sp/>A2DP<sp/>sink<sp/>component<sp/>is<sp/>no<sp/>longer<sp/>needed<sp/>by<sp/>it.</highlight></codeline>
+<codeline lineno="194"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="195"><highlight class="comment">*<sp/><sp/>\param<sp/>channel<sp/><sp/>Media<sp/>type<sp/>to<sp/>be<sp/>handled<sp/>by<sp/>the<sp/>sink.</highlight></codeline>
+<codeline lineno="196"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="197"><highlight class="comment">*<sp/><sp/>\return<sp/>wiced_result_t<sp/>(WICED_BT_XXX)</highlight></codeline>
+<codeline lineno="198"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="199"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_sink_deinit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="204"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>set_preferred_codec_config</highlight></codeline>
+<codeline lineno="205"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="206"><highlight class="comment">*<sp/>@brief<sp/>The<sp/>API<sp/>to<sp/>configure<sp/>the<sp/>preferred<sp/>codec<sp/>parameters</highlight></codeline>
+<codeline lineno="207"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="208"><highlight class="comment">*<sp/><sp/>\param<sp/>wiced_bt_a2dp_codec_info_t</highlight></codeline>
+<codeline lineno="209"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="210"><highlight class="comment">*<sp/><sp/>\return<sp/>wiced_result_t<sp/>(WICED_BT_XXX)</highlight></codeline>
+<codeline lineno="211"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="212"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_set_preferred_codec_config(wiced_bt_a2dp_codec_info_t*<sp/>codec_config);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="217"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="218"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>wiced_bt_a2dp_sink_connect</highlight></codeline>
+<codeline lineno="219"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="220"><highlight class="comment">*<sp/>@brief<sp/>The<sp/>API<sp/>to<sp/>connect<sp/>to<sp/>a<sp/>peer<sp/>device.</highlight></codeline>
+<codeline lineno="221"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>app<sp/>to<sp/>establish<sp/>an<sp/>A2DP<sp/>connection<sp/>with<sp/>a<sp/>peer<sp/>device.</highlight></codeline>
+<codeline lineno="222"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="223"><highlight class="comment">*<sp/><sp/>\param<sp/>bd_address<sp/><sp/><sp/><sp/>The<sp/>Bluetooth<sp/>device<sp/>address<sp/>of<sp/>the<sp/>device<sp/>to<sp/>which<sp/>connection<sp/>is<sp/>requested.</highlight></codeline>
+<codeline lineno="224"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="225"><highlight class="comment">*<sp/><sp/>\return<sp/>wiced_result_t<sp/>(WICED_BT_XXX)</highlight></codeline>
+<codeline lineno="226"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="227"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_sink_connect(<sp/>wiced_bt_device_address_t<sp/>bd_address<sp/>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="231"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="232"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>wiced_bt_a2dp_sink_disconnect</highlight></codeline>
+<codeline lineno="233"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="234"><highlight class="comment">*<sp/>@brief<sp/>The<sp/>API<sp/>to<sp/>disconnect<sp/>the<sp/>connection<sp/>from<sp/>a<sp/>connected<sp/>peer<sp/>device.</highlight></codeline>
+<codeline lineno="235"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>application<sp/>to<sp/>disconnected<sp/>from<sp/>a<sp/>connected<sp/>A2DP<sp/>source.</highlight></codeline>
+<codeline lineno="236"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="237"><highlight class="comment">*<sp/><sp/>\param<sp/>handle<sp/><sp/><sp/><sp/>Connection<sp/>handle<sp/>corresponding<sp/>to<sp/>the<sp/>peer<sp/>device<sp/>to<sp/>disconnect<sp/>from.</highlight></codeline>
+<codeline lineno="238"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="239"><highlight class="comment">*<sp/><sp/>\return<sp/>wiced_result_t<sp/>(WICED_BT_XXX)</highlight></codeline>
+<codeline lineno="240"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="241"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_sink_disconnect(<sp/>uint16_t<sp/>handle<sp/>);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="246"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="247"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>wiced_bt_a2dp_sink_start</highlight></codeline>
+<codeline lineno="248"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="249"><highlight class="comment">*<sp/>@brief<sp/>The<sp/>API<sp/>to<sp/>start<sp/>streaming.</highlight></codeline>
+<codeline lineno="250"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>application<sp/>when<sp/>it<sp/>wants<sp/>to<sp/>indicate<sp/>the<sp/>peer<sp/>to<sp/>start<sp/>streaming.</highlight></codeline>
+<codeline lineno="251"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="252"><highlight class="comment">*<sp/><sp/>\param<sp/>handle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Connection<sp/>handle<sp/>corresponding<sp/>to<sp/>the<sp/>peer<sp/>device.</highlight></codeline>
+<codeline lineno="253"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>create<sp/>a<sp/>streaming<sp/>connection.</highlight></codeline>
+<codeline lineno="254"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="255"><highlight class="comment">*<sp/><sp/>\return<sp/>wiced_result_t<sp/>(WICED_BT_XXX)</highlight></codeline>
+<codeline lineno="256"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="257"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_sink_start(<sp/>uint16_t<sp/>handle<sp/>);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="261"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="262"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>wiced_bt_a2dp_sink_send_start_response</highlight></codeline>
+<codeline lineno="263"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="264"><highlight class="comment">*<sp/>@brief<sp/>The<sp/>API<sp/>to<sp/>send<sp/>a<sp/>start<sp/>response<sp/>on<sp/>receiving<sp/>a<sp/>start<sp/>request<sp/>from<sp/>the<sp/>peer.</highlight></codeline>
+<codeline lineno="265"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>application<sp/>when<sp/>it<sp/>wants<sp/>to<sp/>indicate<sp/>the<sp/>peer<sp/>that<sp/>it<sp/>is<sp/>ready<sp/>to<sp/>start<sp/>streaming.</highlight></codeline>
+<codeline lineno="266"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="267"><highlight class="comment">*<sp/><sp/>\param<sp/>handle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Connection<sp/>handle<sp/>corresponding<sp/>to<sp/>peer<sp/>device.</highlight></codeline>
+<codeline lineno="268"><highlight class="comment">*<sp/><sp/>\param<sp/>label<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Transaction<sp/>label.</highlight></codeline>
+<codeline lineno="269"><highlight class="comment">*<sp/><sp/>\param<sp/>status<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Indicates<sp/>if<sp/>start<sp/>request<sp/>is<sp/>accepted(AVDT_SUCCESS)<sp/>or<sp/>rejected(AVDT<sp/>Error<sp/>codes).</highlight></codeline>
+<codeline lineno="270"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="271"><highlight class="comment">*<sp/><sp/>\return<sp/>wiced_result_t<sp/>(WICED_BT_XXX)</highlight></codeline>
+<codeline lineno="272"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="273"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_sink_send_start_response(<sp/>uint16_t<sp/>handle,<sp/>uint8_t<sp/>label,<sp/>uint8_t<sp/>status<sp/>);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="278"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="279"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>wiced_bt_a2dp_sink_suspend</highlight></codeline>
+<codeline lineno="280"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="281"><highlight class="comment">*<sp/>@brief<sp/>The<sp/>API<sp/>to<sp/>suspend<sp/>streaming.</highlight></codeline>
+<codeline lineno="282"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>application<sp/>when<sp/>the<sp/>streaming<sp/>is<sp/>to<sp/>be<sp/>suspended.</highlight></codeline>
+<codeline lineno="283"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="284"><highlight class="comment">*<sp/><sp/>\param<sp/>handle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Connection<sp/>handle<sp/>corresponding<sp/>to<sp/>the<sp/>peer<sp/>device.</highlight></codeline>
+<codeline lineno="285"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>which<sp/>streaming<sp/>is<sp/>suspended.</highlight></codeline>
+<codeline lineno="286"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="287"><highlight class="comment">*<sp/><sp/>\return<sp/>wiced_result_t<sp/>(WICED_BT_XXX)</highlight></codeline>
+<codeline lineno="288"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="289"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_sink_suspend(<sp/>uint16_t<sp/>handle<sp/>);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wicedbt__a2dp__snk_1gadb6c1854f777550c13d6841aa78a58a0" kindref="member">wiced_bt_a2dp_sink_register_data_cback</ref>(wiced_bt_a2dp_sink_data_cb_t<sp/>p_cback);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="303"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="304"><highlight class="comment">*<sp/>API<sp/>to<sp/>send<sp/>sink<sp/>delay<sp/>report<sp/>to<sp/>the<sp/>peer.</highlight></codeline>
+<codeline lineno="305"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>app<sp/>if<sp/>it<sp/>supports<sp/>the<sp/>sink<sp/>delay<sp/>report<sp/>to<sp/>report<sp/>the</highlight></codeline>
+<codeline lineno="306"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>latency<sp/>of<sp/>the<sp/>audio<sp/>rendering<sp/>path.</highlight></codeline>
+<codeline lineno="307"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="308"><highlight class="comment">*<sp/>\param<sp/>handle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Connection<sp/>handle<sp/>corresponding<sp/>to<sp/>peer<sp/>device</highlight></codeline>
+<codeline lineno="309"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>which<sp/>the<sp/>delay<sp/>report<sp/>is<sp/>to<sp/>be<sp/>sent.</highlight></codeline>
+<codeline lineno="310"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="311"><highlight class="comment">*<sp/>\return<sp/>wiced_result_t<sp/>(WICED_BT_XXX)</highlight></codeline>
+<codeline lineno="312"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="313"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_sink_send_delay_report(uint16_t<sp/>handle);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="317"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="318"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>wiced_bt_a2dp_sink_mute_audio</highlight></codeline>
+<codeline lineno="319"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="320"><highlight class="comment">*<sp/>@brief<sp/>To<sp/>mute/unmute<sp/>the<sp/>audio<sp/>while<sp/>streaming.</highlight></codeline>
+<codeline lineno="321"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>application<sp/>to<sp/>mute<sp/>an<sp/>audio<sp/>when<sp/>playing<sp/>music.</highlight></codeline>
+<codeline lineno="322"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>application<sp/>sets<sp/>this<sp/>function<sp/>to<sp/>unmute,<sp/>to<sp/>restart<sp/>playing<sp/>music.</highlight></codeline>
+<codeline lineno="323"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>api<sp/>is<sp/>supported<sp/>only<sp/>(in<sp/>Embedded<sp/>mode)<sp/>when<sp/>app<sp/>and<sp/>profile<sp/>are<sp/>running<sp/>on<sp/>an<sp/>Infineon<sp/>BT<sp/>chip<sp/>such<sp/>as<sp/>20721.</highlight></codeline>
+<codeline lineno="324"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="325"><highlight class="comment">*<sp/><sp/>\param<sp/>enable<sp/><sp/><sp/><sp/>1<sp/>to<sp/>mute,<sp/>0<sp/>to<sp/>unmute</highlight></codeline>
+<codeline lineno="326"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="327"><highlight class="comment">*<sp/><sp/>\param<sp/>ramp_ms<sp/><sp/><sp/><sp/>ramp<sp/>up/down<sp/>time<sp/>in<sp/>milli<sp/>seconds</highlight></codeline>
+<codeline lineno="328"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="329"><highlight class="comment">*<sp/><sp/>\return<sp/>wiced_result_t<sp/>(WICED_BT_XXX)</highlight></codeline>
+<codeline lineno="330"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="331"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal">wiced_result_t<sp/><sp/>wiced_bt_a2dp_sink_mute_audio(<sp/>wiced_bool_t<sp/>enable,<sp/>uint16_t<sp/>ramp_ms<sp/>);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="335"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="336"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>wiced_bt_a2dp_sink_lrac_switch_get</highlight></codeline>
+<codeline lineno="337"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="338"><highlight class="comment">*<sp/>@brief<sp/>The<sp/>API<sp/>to<sp/>get<sp/>LRAC<sp/>switch<sp/>data.</highlight></codeline>
+<codeline lineno="339"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>application<sp/>to<sp/>get<sp/>LRAC<sp/>switch<sp/>data.</highlight></codeline>
+<codeline lineno="340"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>api<sp/>is<sp/>supported<sp/>only<sp/>(in<sp/>Embedded<sp/>mode)<sp/>when<sp/>app<sp/>and<sp/>profile<sp/>are<sp/>running<sp/>on<sp/>an<sp/>Infineon<sp/>BT<sp/>chip<sp/>such<sp/>as<sp/>20721.</highlight></codeline>
+<codeline lineno="341"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="342"><highlight class="comment">*<sp/><sp/>\param<sp/>p_opaque<sp/><sp/><sp/><sp/><sp/>The<sp/>pointer<sp/>to<sp/>a<sp/>buffer<sp/>which<sp/>to<sp/>be<sp/>filled<sp/>with<sp/>LRAC<sp/>Switch<sp/>data<sp/>(current</highlight></codeline>
+<codeline lineno="343"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A2DP<sp/>Sink<sp/>State).</highlight></codeline>
+<codeline lineno="344"><highlight class="comment">*<sp/><sp/>\param<sp/>p_opaque<sp/><sp/><sp/><sp/><sp/>The<sp/>size<sp/>of<sp/>the<sp/>buffer<sp/>(IN),<sp/>size<sp/>filled<sp/>(OUT).</highlight></codeline>
+<codeline lineno="345"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="346"><highlight class="comment">*<sp/><sp/>\return<sp/>None.</highlight></codeline>
+<codeline lineno="347"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="348"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_sink_lrac_switch_get(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_opaque,<sp/>uint16_t<sp/>*p_sync_data_len);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="352"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="353"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>wiced_bt_a2dp_sink_lrac_switch_set</highlight></codeline>
+<codeline lineno="354"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="355"><highlight class="comment">*<sp/>@brief<sp/>The<sp/>API<sp/>to<sp/>set<sp/>LRAC<sp/>switch<sp/>data.</highlight></codeline>
+<codeline lineno="356"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Called<sp/>by<sp/>the<sp/>application<sp/>to<sp/>set<sp/>LRAC<sp/>Switch<sp/>Data.</highlight></codeline>
+<codeline lineno="357"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>api<sp/>is<sp/>supported<sp/>only<sp/>(in<sp/>Embedded<sp/>mode)<sp/>when<sp/>app<sp/>and<sp/>profile<sp/>are<sp/>running<sp/>on<sp/>an<sp/>Infineon<sp/>BT<sp/>chip<sp/>such<sp/>as<sp/>20721.</highlight></codeline>
+<codeline lineno="358"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="359"><highlight class="comment">*<sp/><sp/>\param<sp/>p_opaque<sp/><sp/><sp/><sp/><sp/>The<sp/>pointer<sp/>to<sp/>a<sp/>buffer<sp/>that<sp/>contains<sp/>LRAC<sp/>switch<sp/>data<sp/>(new</highlight></codeline>
+<codeline lineno="360"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A2DP<sp/>Sink<sp/>State).</highlight></codeline>
+<codeline lineno="361"><highlight class="comment">*<sp/><sp/>\param<sp/>p_opaque<sp/><sp/><sp/><sp/><sp/>The<sp/>size<sp/>of<sp/>the<sp/>buffer<sp/>(IN).</highlight></codeline>
+<codeline lineno="362"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="363"><highlight class="comment">*<sp/><sp/>\return<sp/>None.</highlight></codeline>
+<codeline lineno="364"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="365"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal">wiced_result_t<sp/>wiced_bt_a2dp_sink_lrac_switch_set(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_opaque,<sp/>uint16_t<sp/>sync_data_len);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_WICED_BT_A2DP_SINK_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h"/>
+  </compounddef>
+</doxygen>

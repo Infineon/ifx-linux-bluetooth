@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__hf__call__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_hf_call_data_t</compoundname>
+    <includes local="no">wiced_bt_hfp_hf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__call__data__t_1adf2faf72891153b006ca8ca867900622" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1ga1a6a3f746c4ba8c515caf93a03ea91ef" kindref="member">wiced_bt_hfp_hf_callsetup_state_t</ref></type>
+        <definition>wiced_bt_hfp_hf_callsetup_state_t wiced_bt_hfp_hf_call_data_t::setup_state</definition>
+        <argsstring></argsstring>
+        <name>setup_state</name>
+        <briefdescription>
+<para>Call setup progress indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="248" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__call__data__t_1ab4224631db5af2717af525a7486a39c4" prot="public" static="no" mutable="no">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_hfp_hf_call_data_t::held_call_present</definition>
+        <argsstring></argsstring>
+        <name>held_call_present</name>
+        <briefdescription>
+<para>TRUE if a held call is present, else FALSE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="249" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__call__data__t_1afa891334e7db40c7054b1b5ce7f96ea8" prot="public" static="no" mutable="no">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_hfp_hf_call_data_t::active_call_present</definition>
+        <argsstring></argsstring>
+        <name>active_call_present</name>
+        <briefdescription>
+<para>TRUE if an active call is present, else FALSE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="250" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Call State event data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="247" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="246" bodyend="251"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__hf__call__data__t_1afa891334e7db40c7054b1b5ce7f96ea8" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_call_data_t</scope><name>active_call_present</name></member>
+      <member refid="structwiced__bt__hfp__hf__call__data__t_1ab4224631db5af2717af525a7486a39c4" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_call_data_t</scope><name>held_call_present</name></member>
+      <member refid="structwiced__bt__hfp__hf__call__data__t_1adf2faf72891153b006ca8ca867900622" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_call_data_t</scope><name>setup_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
