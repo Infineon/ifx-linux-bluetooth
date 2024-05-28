@@ -1,6 +1,6 @@
-# AIROC&trade; CYW5557x: Bluetooth&reg; LE Find Me Target (Linux)
+# AIROC™ BTSTACK: Bluetooth&reg; LE Find Me Target (Linux)
 
-This code example demonstrates Bluetooth&reg; LE Find Me Target using AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip on the Linux platform.
+This code example demonstrates Bluetooth&reg; LE Find Me Target using AIROC™ Wi-Fi & Bluetooth® combo chips on the Linux platform.
 
 ## Requirements
 
@@ -10,7 +10,13 @@ This code example demonstrates Bluetooth&reg; LE Find Me Target using AIROC™ C
   2. IMX8-NANO embeddedartists board
   3. Jetson Xavier NX board
 - AIROC™ BTSTACK library and Linux porting layer source code
-- Associated parts: [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/cyw5557x)
+
+## Supported AIROC™ Wi-Fi & Bluetooth® combo chip
+
+- [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
+
+- [AIROC™ CYW43022 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw43022/)
+
 
 
 ## Supported toolchains (make variable 'TOOLCHAIN')

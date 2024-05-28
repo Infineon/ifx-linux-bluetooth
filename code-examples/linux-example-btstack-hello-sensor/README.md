@@ -27,6 +27,8 @@ The application demonstrates a LE vendor-specific device. During initialization,
 
 - [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
 
+- [AIROC™ CYW43022 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw43022/)
+
 ## Hardware setup
 
 Set up the hardware according to **Figure 1**:

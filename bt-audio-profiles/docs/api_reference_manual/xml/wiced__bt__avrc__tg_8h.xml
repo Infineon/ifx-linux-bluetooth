@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="43" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="43" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="43" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga60182699684145057584f6712359fc1a" prot="public" static="no">
         <name>APP_AVRC_PLAY_STATUS_SUPPORTED</name>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="46" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="46" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="46" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga45ddd0f1de4e14a41ab0369ff27c0aeb" prot="public" static="no">
         <name>APP_AVRC_SETTING_CHANGE_SUPPORTED</name>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="49" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="49" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="49" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga7a53ef6a40cead30f764bd985e4825df" prot="public" static="no">
         <name>APP_AVRC_TRACK_PLAY_POS_CHANGE_SUPPORTED</name>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="53" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="53" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="53" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1gaf1e0145b18e89dc3012b36ebd43bf3bf" prot="public" static="no">
         <name>MAX_AVRCP_VOLUME_LEVEL</name>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="65" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="65" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="65" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga165fd3d4f011690e18452c7296fc2b49" prot="public" static="no">
         <name>APP_AVRC_MAX_ATTR</name>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="74" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="74" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="74" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga79b1f4000d3e1327670840ab62c28a33" prot="public" static="no">
         <name>APP_AVRC_MAX_ATTR_LEN</name>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="77" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="77" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="77" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1gac752e521111581e59239decf6e89c059" prot="public" static="no">
         <name>APP_AVRC_MAX_APP_ATTR_SIZE</name>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="106" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="106" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="106" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1gad4cf91a8ac806788423b94a851143052" prot="public" static="no">
         <name>AVRC_NUM_PLAYER_SUPPORTED</name>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="136" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="136" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="136" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga06431ed116cd1fc83675aecf53b4ea34" prot="public" static="no">
         <name>AVRC_MAX_FOLDER_DEPTH</name>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="137" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="137" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="137" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1gad047056689a725b37a3e28c9b5712172" prot="public" static="no">
         <name>APP_AVRC_EVENT_DEVICE_CONNECTED</name>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="143" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="143" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="143" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1gaa8588be16283a4b5b752239796441dcb" prot="public" static="no">
         <name>APP_AVRC_EVENT_REPEAT_SETTINGS_CHANGED</name>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="144" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="144" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="144" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga0a7d426bfd59d243f128e407d95ff137" prot="public" static="no">
         <name>APP_AVRC_EVENT_SHUFFLE_SETTINGS_CHANGED</name>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="145" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="145" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="145" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1gab4e1a65fc83cd8aa5f6a20688e391fe7" prot="public" static="no">
         <name>APP_AVRC_EVENT_DEVICE_DISCONNECTED</name>
@@ -177,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="146" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="146" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="146" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga8e144825346e854cc04aa04d065cc2b1" prot="public" static="no">
         <name>APP_AVRC_EVENT_PASSTHROUGH_RESPONSE</name>
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="147" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="147" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="147" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga72f23dc5abcc8c2f8de8d0038958223e" prot="public" static="no">
         <name>APP_AVRC_EVENT_PASSTHROUGH_CMD</name>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="148" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="148" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="148" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1gad7f7de0443893a77b4feda5c116e9972" prot="public" static="no">
         <name>APP_AVRC_EVENT_ABS_VOL_CHANGED</name>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="149" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="149" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="149" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga1587fd2e683dc8712e97b94486fe696d" prot="public" static="no">
         <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_PLAY</name>
@@ -221,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="152" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="152" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="152" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1gafd03520f405314853e13c8ab2530cf4c" prot="public" static="no">
         <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_PAUSE</name>
@@ -232,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="153" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="153" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="153" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1gaa00b80a2fa24012702c54b779a1a5fdc" prot="public" static="no">
         <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_STOP</name>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="154" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="154" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="154" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga798656fdfe3874a46717b8158ea8b1d0" prot="public" static="no">
         <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_NEXT_TRACK</name>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="155" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="155" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="155" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="155" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga20176b4d2d4b7e762e8d0f27ade2c022" prot="public" static="no">
         <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_PREVIOUS_TRACK</name>
@@ -265,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="156" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="156" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="156" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga6e4ab3b98ea96a7f547dac5450e6bdde" prot="public" static="no">
         <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_VOLUME_UP</name>
@@ -276,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="157" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="157" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="157" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="157" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__avrc__tg_1ga589ba8e467726fa30eac7e4eda841917" prot="public" static="no">
         <name>APP_AVRC_EVENT_PASSTHROUGH_CMD_VOLUME_DOWN</name>
@@ -287,7 +287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="158" column="9" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="158" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="158" column="9" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="195" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="195" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="195" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" bodystart="195" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -321,7 +321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="207" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="207" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga0a4467126358dacb15e85e464c824d4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -337,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="216" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="216" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga738815d59d264c6eca5126528a3857c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -353,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="224" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="224" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga965eb3e9a8be5d4f4b4fdd5647d69fca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -370,7 +370,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="231" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="231" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga13aa42a2bee250db50182df29c131544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -386,7 +386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="238" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="238" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1gad0b0e1918ca6d6625dd4330fa3c388fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -403,7 +403,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="246" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="246" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga390aee692d72207a9b02692df89bc9f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -420,7 +420,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="255" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="255" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga43633a461fcf8ba901aaf670ed5b11e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -441,7 +441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="265" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="265" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1gab08455b5fb2088fc3998f440827ab97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -458,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="275" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="275" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga505e315ecbc0b7faafe8c338aaae5efe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -480,7 +480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="288" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="288" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1gabb6b0d93b5c3b64154d3f53905109242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -502,7 +502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="299" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="299" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga99b4aa830deca84a752c92b934af90e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -546,7 +546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="313" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="313" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga1d71803924f569d909e690a71571f3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -568,7 +568,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="323" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="323" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__avrc__tg_1ga7b72787a10be74f34d4335d50d19744b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -600,7 +600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="335" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h" line="335" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -889,6 +889,6 @@
 <codeline lineno="344"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="345"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_RC_TG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h"/>
+    <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_avrc_tg.h"/>
   </compounddef>
 </doxygen>

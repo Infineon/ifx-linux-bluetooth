@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2022, Cypress Semiconductor Corporation (an Infineon company) or
+ * Copyright 2016-2024, Cypress Semiconductor Corporation (an Infineon company) or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -49,6 +49,10 @@
 #include "wiced_hal_rand.h"
 #include "wiced_timer.h"
 #include "wiced_bt_trace.h"
+#ifdef LINUX_PLATFORM
+#include "wiced_hal_memory.h"
+#include "wiced_hal_utils.h"
+#endif
 
 #define GFPS_DEBUG_ENABLE   0
 
@@ -80,14 +84,14 @@
                                             (WICED_BT_GFPS_ACCOUNT_KEY_SIZE_MAX * 2 / 10) + \
                                             3
 
-/* Definition used for BLE Advertisement Data. */
+/* Definition used for LE Advertisement Data. */
 #define GFPS_ACCOUNT_KEY_DATA_RANDOM_SALT_FIELD_LEN             sizeof(uint8_t) + sizeof(uint8_t)
 #define GFPS_ACCOUNT_KEY_DATA_ACCOUNT_KEY_FILTER_FIELD_LEN_MAX  GFPS_ACCOUNT_KEY_FILTER_LEN_MAX + sizeof(uint8_t)
 #define GFPS_ACCOUNT_KEY_DATA_LEN_MAX                           GFPS_ACCOUNT_KEY_DATA_ACCOUNT_KEY_FILTER_FIELD_LEN_MAX + \
                                                                 GFPS_ACCOUNT_KEY_DATA_RANDOM_SALT_FIELD_LEN
 #define GFPS_ACCOUNT_DATA_LEN_MAX                               GFPS_ACCOUNT_KEY_DATA_LEN_MAX + sizeof(uint8_t)
 
-#define GFPS_BLE_ADV_DATA_LEN_MAX           31  // maximum BLE advertisement data length
+#define GFPS_BLE_ADV_DATA_LEN_MAX           31  // maximum LE advertisement data length
 
 /* Maximum decrypt failure count for provider. */
 #define GFPS_PROVIDER_DECRYPT_FAILURE_COUNT_MAX             10
@@ -196,7 +200,7 @@ typedef struct GFPS_CB
     wiced_bool_t                discoverable;           // device discoverability
     wiced_bt_link_key_t         anti_spoofing_aes_key;  // Calculated ANTI-SPOOFING AES KEY
     wiced_bt_device_address_t   seeker_addr;            // Seeker Address
-    uint16_t                    conn_id;                // BLE connection ID used for seeker
+    uint16_t                    conn_id;                // LE connection ID used for seeker
     uint32_t                    seeker_passkey;
     uint8_t                     random_salt;            // Random Salt number
 
@@ -577,6 +581,7 @@ static wiced_bool_t gfps_provider_advertisement_data_init(void)
     p_elem->len         = sizeof(uint8_t);
     p_elem->p_data      = &gfps_provider_cb.adv_data.discoverable.flag;
 
+#if BTSTACK_VER < 0x03000001
     // user appended data
     p_elem              = gfps_provider_cb.adv_data.discoverable.p_elem +
                           GFPS_PROVIDER_ADV_DATA_DISC_ELEM_IDX_MAX;
@@ -584,6 +589,7 @@ static wiced_bool_t gfps_provider_advertisement_data_init(void)
     memcpy((void *) p_elem,
            (void *) gfps_provider_cb.conf.appended_adv_data.p_elem,
            gfps_provider_cb.conf.appended_adv_data.elem_num * sizeof(wiced_bt_ble_advert_elem_t));
+#endif
 
     /* Not discoverable advertisement data. */
     // Tx Power level
@@ -620,6 +626,7 @@ static wiced_bool_t gfps_provider_advertisement_data_init(void)
     p_elem->len         = sizeof(uint8_t);
     p_elem->p_data      = &gfps_provider_cb.adv_data.not_discoverable.flag;
 
+#if BTSTACK_VER < 0x03000001
     // user appended data
     p_elem              = gfps_provider_cb.adv_data.not_discoverable.p_elem +
                           GFPS_PROVIDER_ADV_DATA_NOT_DISC_ELEM_IDX_MAX;
@@ -627,6 +634,7 @@ static wiced_bool_t gfps_provider_advertisement_data_init(void)
     memcpy((void *) p_elem,
            (void *) gfps_provider_cb.conf.appended_adv_data.p_elem,
            gfps_provider_cb.conf.appended_adv_data.elem_num * sizeof(wiced_bt_ble_advert_elem_t));
+#endif
 
     return WICED_TRUE;
 
@@ -653,7 +661,7 @@ static void gfps_provider_gatt_event_connection_status(wiced_bt_gatt_event_data_
                p_event_data->connection_status.connected);
 
     if (p_event_data->connection_status.connected)
-    {   // BLE is connected
+    {   // LE is connected
         /* We do NOT need to stop the advertisement since the advertisement will be stopped
          * automatically (refer to the description for wiced_bt_start_advertisements()). */
         /* Save information. */
@@ -666,7 +674,7 @@ static void gfps_provider_gatt_event_connection_status(wiced_bt_gatt_event_data_
         gfps_provider_cb.conn_id = p_event_data->connection_status.conn_id;
     }
     else
-    {   // BLE is disconnected
+    {   // LE is disconnected
         gfps_provider_cb.conn_id = 0;
         gfps_provider_cb.pairing_started = WICED_FALSE;
 
@@ -782,7 +790,7 @@ static wiced_bool_t gfps_provider_gatt_event_attribute_request_handler_write_key
     uint8_t *p_index = (uint8_t *) &gfps_provider_cb.gatt.keybase_pairing_data;
     wiced_bool_t public_key_present = WICED_FALSE;
     wiced_bool_t decrypt_result = WICED_FALSE;
-    gfps_raw_request_t decrypted_raw_request;
+    gfps_raw_request_t decrypted_raw_request = {0};
     uint8_t i;
     wiced_bt_gfps_account_key_t *p_account_key = NULL;
 
@@ -1188,7 +1196,7 @@ static wiced_bool_t gfps_provider_gatt_event_attribute_request_handler_write(wic
 static wiced_bool_t gfps_provider_gatt_event_attribute_request_handler(wiced_bt_gatt_event_data_t *p_event_data, wiced_bt_gatt_status_t *p_result)
 {
 #if BTSTACK_VER >= 0x03000001
-    wiced_bool_t ret;
+    wiced_bool_t ret = WICED_FALSE;
 
     GFPS_TRACE("gfps_provider_gatt_event_attribute_request_handler (opcode: %d)\n",
                p_event_data->attribute_request.opcode);
@@ -1355,6 +1363,22 @@ void wiced_bt_gfps_provider_advertisement_start(uint8_t discoverability)
 
         wiced_bt_ble_set_raw_advertisement_data(gfps_provider_cb.adv_data.not_discoverable.elem_num,
                                                 gfps_provider_cb.adv_data.not_discoverable.p_elem);
+#if BTSTACK_VER >= 0x03000001
+        /* In newer BTSTACK, it had been updated to use new HCI command set of
+         * extended advertisement in all related WICED APIs. Per spec,
+         * SCAN_RESP data is mandotary for HCI_LE_Set_Extended_Advertising_Enable
+         * with scannable advertising and it's uncompatible with original
+         * HCI_LE_Set_Advertising_Enable.
+         * To keep backward compatibility, here we set user appended data as
+         * SCAN_RESP data. This method here only works if user appended data
+         * is not empty.
+         * NOTE: set SCAN_RESP data is required to be done after
+         * wiced_bt_ble_set_raw_advertisement_data
+         */
+        wiced_bt_ble_set_raw_scan_response_data(
+                gfps_provider_cb.conf.appended_adv_data.elem_num,
+                gfps_provider_cb.conf.appended_adv_data.p_elem);
+#endif
 
         wiced_bt_start_advertisements(BTM_BLE_ADVERT_UNDIRECTED_LOW, 0, NULL);
     }
@@ -1368,7 +1392,7 @@ static wiced_bt_gatt_status_t gfps_provider_raw_response_send( uint8_t *aes_key 
     uint32_t rand_val;
     uint8_t i;
 
-    /* Acquire local BT device address. */
+    /* Acquire local Bluetooth device address. */
     wiced_bt_dev_read_local_addr(local_bt_addr);
 
     /* produce raw response */
@@ -1455,7 +1479,7 @@ static wiced_bool_t gfps_provider_account_data_fill(void *p_account_data, uint8_
     wiced_bt_gfps_account_key_t *p_account_key = NULL;
     uint8_t i, j;
     uint8_t *p_index = p_account_data;
-    uint8_t sha_source[sizeof(wiced_bt_link_key_t) + sizeof(wiced_bt_device_address_t)];
+    uint8_t sha_source[sizeof(wiced_bt_link_key_t) + sizeof(wiced_bt_device_address_t)] = {0};
     uint8_t sha_result[32] = {0};
     uint8_t sha_source_len;
     uint32_t X[8] = {0};
@@ -1474,7 +1498,7 @@ static wiced_bool_t gfps_provider_account_data_fill(void *p_account_data, uint8_
                                sizeof(uint8_t);         // Salt
     }
     else
-    {   // BLE RPA is used as the Salt
+    {   // LE RPA is used as the Salt
         account_key_data_len = sizeof(uint8_t) +        // Field length and type for Account Key Filter
                                account_key_filter_len;
     }
@@ -1518,7 +1542,7 @@ static wiced_bool_t gfps_provider_account_data_fill(void *p_account_data, uint8_
                 sha_source_len += sizeof(uint8_t);
             }
             else
-            {   // BLE RPA is used as the Salt
+            {   // LE RPA is used as the Salt
                 memcpy((void *) &sha_source[sha_source_len],
                        (void *) local_rpa,
                        sizeof(wiced_bt_device_address_t));
@@ -1866,7 +1890,7 @@ static wiced_bool_t gfps_provider_raw_request_content_check(gfps_raw_request_t *
     if (memcmp(p_raw_request->provider_addr, local_addr, sizeof(wiced_bt_device_address_t)) != 0)
     {
         wiced_bt_dev_read_local_addr(local_addr);
-        GFPS_TRACE("Local BT Addr: %B\n", local_addr);
+        GFPS_TRACE("Local Bluetooth Addr: %B\n", local_addr);
 
         if (memcmp(p_raw_request->provider_addr, local_addr, sizeof(wiced_bt_device_address_t)) != 0)
         {
@@ -1878,7 +1902,7 @@ static wiced_bool_t gfps_provider_raw_request_content_check(gfps_raw_request_t *
 }
 
 /*
- * Acquire current BLE Advertisement Data used for Fast Pair Service
+ * Acquire current LE Advertisement Data used for Fast Pair Service
  *
  * Note that the Advertisement Data used for Google Fast Pair Service is different between
  * discoverable and not discoverable modes.
@@ -1900,7 +1924,7 @@ uint8_t wiced_bt_gfps_provider_advertisement_data_get(wiced_bt_ble_advert_elem_t
 }
 
 /*
- * Update user appended BLE advertisement data
+ * Update user appended LE advertisement data
  */
 wiced_bool_t wiced_bt_gfps_provider_advertisement_data_appended_data_update(wiced_bt_ble_advert_elem_t *p_elem, uint8_t elem_num)
 {
@@ -1943,7 +1967,7 @@ wiced_bool_t wiced_bt_gfps_provider_advertisement_data_appended_data_update(wice
 }
 
 /*
- * Update BLE advertisement data
+ * Update LE advertisement data
  *
  * Note: This utility ONLY updates the advertisement data which is set by configuration while
  *       initializing the GFPS provider module.
@@ -2129,11 +2153,11 @@ wiced_bool_t wiced_bt_gfps_provider_discoverability_get(void)
  * the provider module for some reasons.
  *
  * By calling this utility, the provider module will:
- * 1. Update the BLE advertisement data (including the discoverable and the not discoverable data).
- * 2. Start the BLE advertisement again
+ * 1. Update the LE advertisement data (including the discoverable and the not discoverable data).
+ * 2. Start the LE advertisement again
  *
  * Note:
- * 1. The BLE advertisement will be set to not-discoverable mode. User application shall
+ * 1. The LE advertisement will be set to not-discoverable mode. User application shall
  *    use wiced_bt_gfps_provider_discoverability_set() to switch to discoverable mode if
  *    application wants to switch to discoverable mode after enabling.
  */
@@ -2144,7 +2168,7 @@ void wiced_bt_gfps_provider_enable(void)
         return;
     }
 
-    /* Update the BLE advertisement data. */
+    /* Update the LE advertisement data. */
     // Update the random salt number.
     if (gfps_provider_cb.conf.account_key_filter_generate_random)
     {
@@ -2163,7 +2187,7 @@ void wiced_bt_gfps_provider_enable(void)
                           GFPS_PROVIDER_RANDOM_SALT_UPDATE_TIME);
     }
 
-    /* Start the BLE advertisement. */
+    /* Start the LE advertisement. */
     wiced_bt_gfps_provider_advertisement_start((uint8_t) gfps_provider_cb.discoverable);
 
     /* Set the enabled flag. */
@@ -2219,8 +2243,8 @@ WICED_BT_GFPS_PROVIDER_INIT_FAIL:
  * Disable Google Fast Pair Service provider module.
  *
  * By calling this utility, the following capabilities will be terminated:
- * 1. BLE advertisement
- * 2. Existent BLE connection for Google Fast Pair Service
+ * 1. LE advertisement
+ * 2. Existent LE connection for Google Fast Pair Service
  */
 void wiced_bt_gfps_provider_disable(void)
 {
@@ -2229,10 +2253,10 @@ void wiced_bt_gfps_provider_disable(void)
         return;
     }
 
-    /* Stop BLE advertisement. */
+    /* Stop LE advertisement. */
     wiced_bt_start_advertisements(BTM_BLE_ADVERT_OFF, 0, NULL);
 
-    /* Terminate BLE connection with GFPS Seeker. */
+    /* Terminate LE connection with GFPS Seeker. */
     if (gfps_provider_cb.conn_id)
     {
         wiced_bt_gatt_disconnect(gfps_provider_cb.conn_id);
@@ -2262,7 +2286,7 @@ void wiced_bt_gfps_provider_disable(void)
 
     /* Set flag to bypass the GATT events.
      * Note here we don't de-register the GATT callback since the GFPS Provider service
-     * cares only the BLE connection with Seeker. The other BLE connections shall be handled
+     * cares only the LE connection with Seeker. The other LE connections shall be handled
      * by application or other modules those are enabled by application. */
     gfps_provider_cb.enabled = WICED_FALSE;
 }

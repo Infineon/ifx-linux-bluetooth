@@ -1,4 +1,4 @@
-app_list=(linux-example-btstack-broadcast-sink linux-example-btstack-broadcast-source linux-example-btstack-findme linux-example-btstack-headset linux-example-btstack-hello-sensor linux-example-btstack-spp linux-example-btstack-unicast-sink linux-example-btstack-unicast-source linux-example-btstack-wifi-onboarding)
+app_list=(linux-example-btstack-broadcast-sink linux-example-btstack-broadcast-source linux-example-btstack-findme linux-example-btstack-headset linux-example-btstack-hello-sensor linux-example-btstack-spp linux-example-btstack-unicast-sink linux-example-btstack-unicast-source linux-example-btstack-wifi-onboarding linux-example-btstack-wakeonle)
 rm -rf deploy
 mkdir deploy
 
@@ -34,6 +34,7 @@ cp -r ./le-audio-profiles-linux/COMPONENT_le_audio_profiles_linux/COMPONENT_ARMv
 cp -r ./le-audio-profiles-linux/COMPONENT_gatt_interface_linux/COMPONENT_ARMv8_LINUX/COMPONENT_GCC/libgatt_interface.so ./deploy
 cp -r ./bt-audio-profiles/sbc/COMPONENT_ARMv8_LINUX/COMPONENT_GCC/libsbc.so ./deploy
 cp -r ./code-examples/linux-example-btstack-wifi-onboarding/Wi-Fi_interface_RPI ./deploy 
+cp -r ./code-examples/linux-example-btstack-wakeonle/lib/libwiced_exp.so ./deploy
 cp -r ./fw/* ./deploy/
 zip -rmT linux_apps.zip deploy
 exit 0

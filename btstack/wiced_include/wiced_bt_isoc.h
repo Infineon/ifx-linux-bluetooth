@@ -1,5 +1,5 @@
 /*
- * Copyright 2021-2023, Cypress Semiconductor Corporation or
+ * Copyright 2021-2024, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -81,7 +81,7 @@ typedef enum
     WICED_BLE_ISOC_DPD_UNUSED = 0,
     WICED_BLE_ISOC_DPD_INPUT_BIT = 1,
     WICED_BLE_ISOC_DPD_OUTPUT_BIT = 2,
-    WICED_BLE_ISOC_DPD_INPUT_OUTPUT_BIT = WICED_BLE_ISOC_DPD_INPUT_BIT & WICED_BLE_ISOC_DPD_OUTPUT_BIT,
+    WICED_BLE_ISOC_DPD_INPUT_OUTPUT_BIT = WICED_BLE_ISOC_DPD_INPUT_BIT | WICED_BLE_ISOC_DPD_OUTPUT_BIT,
     WICED_BLE_ISOC_DPD_RESERVED
 } wiced_bt_isoc_data_path_bit_t;
 
@@ -352,6 +352,16 @@ typedef struct
     uint8_t *bis_idx_list;
 } wiced_bt_isoc_big_create_sync_t;
 
+
+typedef struct
+{
+    uint8_t status;         /**< status of Read Tx Sync command, Refer Core Spec v5.4 [Vol 1] Part F, Controller Error Codes */
+    uint16_t conn_hdl;      /**< CIS/BIS Connection Handle  */
+    uint16_t psn;           /**< Packet sequence number of an SDU  */
+    uint32_t tx_timestamp;  /**< The CIG reference point or BIG anchor point of a transmitted SDU (in microseconds) */
+    uint32_t time_offset;   /**< Time offset that is associated with a transmitted SDU (in microseconds) */
+} wiced_bt_isoc_read_tx_sync_complete_t;
+
 /** ISOC Data callbacks */
 /**
 * Callback for receiving ISOC data
@@ -393,6 +403,8 @@ extern "C" {
  * @return Status of event handling
 */
 typedef void wiced_bt_isoc_cback_t(wiced_bt_isoc_event_t event, wiced_bt_isoc_event_data_t *p_event_data);
+
+typedef void (wiced_bt_isoc_read_tx_sync_complete_cback_t)(wiced_bt_isoc_read_tx_sync_complete_t *p_event_data);
 
 /** @} wicedbt_isoc_defs         */
 
@@ -533,7 +545,9 @@ wiced_result_t wiced_bt_isoc_peripheral_reject_cis(uint16_t cis_handle, uint8_t 
  * Function         wiced_bt_isoc_peripheral_remove_cig
  *
  *                  Remove CIG (Connected Isochronous Group)
- *                  Slave should call this API on receiving WICED_BLE_ISOC_CIS_DISCONNECTED event in registered application callback and if ASCS State is Releasing
+ *                  Slave should call this API in below cases
+ *                  1. On receiving WICED_BLE_ISOC_CIS_DISCONNECTED event in registered application callback and if ASCS State is Releasing
+ *                  2. On not receiving WICED_SUCCESS status in WICED_BLE_ISOC_CIS_ESTABLISHED event in registered application callabck
  *
  * @param[in]       cig_id  : CIG ID
  *
@@ -736,6 +750,19 @@ wiced_bool_t wiced_bt_isoc_setup_data_path(uint16_t conn_hdl,
 
  uint16_t wiced_bt_isoc_get_max_data_pkt_len(void);
 
+ /**
+  * @brief This function is used to read TX Timestamp and Time offset of a transmitted
+  * SDU identified by the packet sequence number on the Central or Peripheral.
+  *
+  * @param conn_hdl     : CIS/BIS Connection handle
+  * @param is_cis       : TRUE if CIS connection handle is provided
+  * @param p_cback      : Callabck for receiving return parameters
+  *
+  * @return             : WICED_SUCCESS if successful
+  */
+ wiced_result_t wiced_bt_isoc_read_tx_sync(uint16_t conn_hdl,
+                                           wiced_bool_t is_cis,
+                                           wiced_bt_isoc_read_tx_sync_complete_cback_t *p_cback);
 
 /**@} wicedbt_isoc_functions */
 

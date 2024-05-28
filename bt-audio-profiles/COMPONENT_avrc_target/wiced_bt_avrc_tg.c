@@ -35,6 +35,7 @@
 
 #define APP_AVRC_TEMP_BUF           128
 #define GET_ELMENT_ATTR_HDR         8 /* Attr_id(4)+ charsetID(2) +attr_len(2) */
+#define GET_ITEM_ATTR_HDR           5  /* pdu_id (1)|len(2bytes)|status(1)|no_of_Attr(1) */
 #define BTAVRCP_TRACE_DEBUG
 #define AVRC_TG_PLAYER_ID           1
 #define AVRC_TG_PLAYER_NAME "Player"
@@ -2071,7 +2072,6 @@ void wiced_bt_avrc_tg_handle_change_path(uint8_t handle, uint8_t label, wiced_bt
 {
      WICED_BTAVRCP_TRACE("[%s] wiced_bt_avrc_tg_handle_change_path : response not handled", __FUNCTION__);
 }
-
 void wiced_bt_avrc_tg_handle_get_item_attributes(uint8_t handle, uint8_t label, wiced_bt_avrc_browse_get_item_attrs_cmd_t * p_command, wiced_bt_avrc_xmit_buf_t **p_rsp )
     {
 
@@ -2082,6 +2082,8 @@ void wiced_bt_avrc_tg_handle_get_item_attributes(uint8_t handle, uint8_t label, 
     wiced_bt_avrc_sts_t avrc_status = AVRC_STS_NO_ERROR;
     uint8_t num_attr = 0;
     uint8_t *p_data, *p_start,*p_num, *p_len;
+     /*|pdu_id (1)|len(2bytes)|status(1)|no_of_Attr(1)|attr_id (4)|char_SetID(2)|attrVallen(2)|AttrValue|....... */
+    uint16_t total_len = GET_ITEM_ATTR_HDR;
     memset(&att_entry, 0, sizeof(wiced_bt_avrc_attr_entry_t));
     
     WICED_BTAVRCP_TRACE("[%s] ", __FUNCTION__);
@@ -2089,10 +2091,22 @@ void wiced_bt_avrc_tg_handle_get_item_attributes(uint8_t handle, uint8_t label, 
     {
         avrc_rsp.pdu_id = AVRC_PDU_GET_ITEM_ATTRIBUTES;
         avrc_rsp.status =  AVRC_STS_NO_ERROR;
-        avrc_status = wiced_bt_avrc_build_browse_rsp(&avrc_rsp, p_rsp);
-        if (avrc_status != AVRC_STS_NO_ERROR)
+        total_len += wiced_bt_get_track_info_size();
+
+        if ((*p_rsp = (wiced_bt_avrc_xmit_buf_t *)wiced_bt_get_buffer (total_len + WICED_AVRC_XMIT_BUF_OVERHEAD)) == NULL)
             return;
-        if(p_rsp)
+
+        (*p_rsp)->buffer_size = total_len;
+
+        avrc_status = wiced_bt_avrc_bld_browse_response((wiced_bt_avrc_browse_rsp_t *)&avrc_rsp, *p_rsp);
+
+        if (avrc_status != AVRC_STS_NO_ERROR)
+        {
+            wiced_bt_free_buffer (*p_rsp);
+            *p_rsp = NULL;
+            return;
+        }
+        if(*p_rsp)
         {
             p_start = p_data = (*p_rsp)->payload;
             UINT8_TO_STREAM(p_data, AVRC_PDU_GET_ITEM_ATTRIBUTES);      /* PDU ID      */

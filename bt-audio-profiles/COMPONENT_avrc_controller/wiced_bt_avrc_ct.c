@@ -26,6 +26,7 @@
 #include "string.h"
 #include "wiced_memory.h"
 #include "wiced_bt_avrc.h"
+#include "wiced_timer.h"
 
 
 #define CASE_RETURN_STR(const) case const: return #const;
@@ -333,6 +334,7 @@ typedef struct
 **  Static variables
 ******************************************************************************/
 static rcc_cb_t rcc_cb;
+wiced_timer_t discovery_timer;
 
 #ifdef CT_HANDLE_PASSTHROUGH_COMMANDS
 static wiced_bt_avrc_ct_pt_evt_cback_t wiced_bt_avrc_ct_pt_evt_cback = NULL;
@@ -649,29 +651,27 @@ wiced_bt_avrc_sts_t wiced_avrc_build_metadata_rsp (void *p_rsp, wiced_bt_avrc_xm
    return (avrc_status);
 }
 
-
-    wiced_bt_avrc_sts_t wiced_avrc_build_and_send_metadata_rsp (void *p_rsp, uint8_t ctype, uint8_t handle, uint8_t label)
-    {
-        wiced_bt_avrc_sts_t         avrc_status;
-        wiced_bt_avrc_xmit_buf_t    *p_rspbuf;
-
-        if ((p_rspbuf = (wiced_bt_avrc_xmit_buf_t *)wiced_bt_get_buffer (DEFAULT_METADATA_RSP_SIZE + WICED_AVRC_XMIT_BUF_OVERHEAD)) == NULL)
-            return (AVRC_STS_NO_RESOURCES);
-
-        p_rspbuf->buffer_size = WICED_AVRC_XMIT_BUF_OVERHEAD;
-
-        avrc_status = wiced_avrc_build_metadata_rsp (p_rsp, &p_rspbuf);
-
-        if (avrc_status == AVRC_STS_NO_ERROR)
+wiced_bt_avrc_sts_t wiced_avrc_build_and_send_metadata_rsp (void *p_rsp, uint8_t ctype, uint8_t handle, uint8_t label)
 {
-            wiced_avrc_send_or_enqueue (handle, label, ctype, p_rspbuf);
-        }
-        else
+    wiced_bt_avrc_sts_t         avrc_status;
+    wiced_bt_avrc_xmit_buf_t    *p_rspbuf;
+
+    avrc_status = wiced_avrc_build_metadata_rsp (p_rsp, &p_rspbuf);
+
+    if (avrc_status == AVRC_STS_NO_ERROR)
     {
-            wiced_bt_free_buffer (p_rspbuf);
+        wiced_avrc_send_or_enqueue (handle, label, ctype, p_rspbuf);
     }
 
-        return (avrc_status);
+    return (avrc_status);
+}
+
+void start_discovery_timeout(WICED_TIMER_PARAM_TYPE arg)
+{
+    rcc_device_t* rcc_device  = (rcc_device_t* )arg;
+
+    wiced_bt_avrc_ct_start_discovery(rcc_device->peer_bda);
+
 }
 
     /******************************************************
@@ -746,8 +746,9 @@ wiced_bt_avrc_sts_t wiced_avrc_build_metadata_rsp (void *p_rsp, wiced_bt_avrc_xm
             }
             else
             {
-                wiced_bt_avrc_ct_start_discovery(peer_addr);
-            }
+                wiced_init_timer(&discovery_timer, start_discovery_timeout, prcc_dev, WICED_MILLI_SECONDS_TIMER);
+                wiced_start_timer(&discovery_timer, 200);
+           }
             if (rcc_cb.connection_cb)
             {
                 (rcc_cb.connection_cb)(handle, peer_addr,

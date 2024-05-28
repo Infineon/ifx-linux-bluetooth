@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="92" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="92" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="92" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__spp__reg__t_1a92daf0bc7d15fd24c4efe4146a2176aa" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="95" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="95" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="95" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__spp__reg__t_1aa40d679aab0e0a0cd52f5f29e1e33c37" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__spp__api__functions_1ga28b74d5af2e83136a4b6c9f3b7d913e9" kindref="member">wiced_bt_spp_connection_up_callback_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="96" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="96" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="96" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__spp__reg__t_1a2925719c94689bfd3e62f6395c1f5b5b" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__spp__api__functions_1ga86db1546d7e60994f0029304d099ee24" kindref="member">wiced_bt_spp_connection_failed_callback_t</ref></type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="97" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="97" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="97" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__spp__reg__t_1a4c999236f38544495d79150be8e53753" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__spp__api__functions_1gaba5ea8fdb0ce445ec840d9b20c34314e" kindref="member">wiced_bt_spp_service_not_found_callback_t</ref></type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="98" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="98" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="98" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__spp__reg__t_1aaf17b281e21a1f28e1dda0dc8b193fde" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__spp__api__functions_1ga334da3c6df8de8a50d1197a40aff77e4" kindref="member">wiced_bt_spp_connection_down_callback_t</ref></type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="99" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="99" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="99" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__spp__reg__t_1acba3088b3a141410c6d8eea3a18ac2a6" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__spp__api__functions_1ga5eed11f54cb1c5066649ca372f28ab58" kindref="member">wiced_bt_spp_rx_data_callback_t</ref></type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="100" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="100" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="100" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -108,7 +108,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="91" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="90" bodyend="102"/>
+    <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" line="91" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_spp.h" bodystart="90" bodyend="102"/>
     <listofallmembers>
       <member refid="structwiced__bt__spp__reg__t_1aaf17b281e21a1f28e1dda0dc8b193fde" prot="public" virt="non-virtual"><scope>wiced_bt_spp_reg_t</scope><name>p_connection_down_callback</name></member>
       <member refid="structwiced__bt__spp__reg__t_1a2925719c94689bfd3e62f6395c1f5b5b" prot="public" virt="non-virtual"><scope>wiced_bt_spp_reg_t</scope><name>p_connection_failed_callback</name></member>
