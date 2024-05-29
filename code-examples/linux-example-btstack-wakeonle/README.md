@@ -2,7 +2,11 @@
 
 This code example demonstrates the Bluetooth® Low Energy WakeOnLE functionality with the AIROC™ Wi-Fi & Bluetooth® combo chip using Embedded Linux platforms (Arm® Cortex®-A Class processors).
 
-The application demonstrates a LE vendor-specific device. After initialization of AIROC™ BTSTACK, set a specific UUID or UUID + Manufacture Data to the controller to wake up the controller and host when the controller receives the specific advertisement with a UUID or UUID + Manufacture Data. Use GPIO DEV-WAKE for the host to control the controller to enter sleep mode and wake up, another GPIO HOST-WAKE for the controller to notify the host.
+The application demonstrates a LE vendor-specific device. After initialization of AIROC™ BTSTACK,
+1. Set a specific UUID or UUID + Manufacture Data to the controller to wake up the controller and host when the controller receives the specific advertisement with a UUID or UUID + Manufacture Data. OR
+2. Add peer BLE device address to the whitelist and wake up the host when a LE connection request is received from the provided matching BLE address.
+
+Use GPIO DEV-WAKE for the host to control the controller to enter sleep mode and wake up, another GPIO HOST-WAKE for the controller to notify the host.
 In this code example only demonstrates how the working flow between Linux host side and BT controller side, but not actually enter sleep mode in Linux host side.
 
 [View this README on GitHub.](https://github.com/Infineon/linux-example-btstack-wakeonle)
