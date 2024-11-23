@@ -21,7 +21,7 @@ typedef enum
 
 typedef struct
 {
-    uint8_t     data[2000];
+    uint8_t     data[1024];
     eRX_STATE   state;       // State of the receiver
     uint8_t     type;        // Type of the packet being received
     uint16_t    len;

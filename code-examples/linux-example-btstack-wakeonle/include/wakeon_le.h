@@ -64,6 +64,7 @@ void app_enable_wake_on_le();
 void app_enable_wake_on_le_uuid();
 void app_enable_wake_on_le_uuid_manu();
 void app_enable_wake_on_connection();
+void app_start_new_connection(void);
 
 /* BT LE configuration settings */     
 extern const  wiced_bt_cfg_settings_t wiced_bt_cfg_settings;

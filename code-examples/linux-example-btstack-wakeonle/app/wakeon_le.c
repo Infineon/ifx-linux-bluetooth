@@ -69,8 +69,8 @@
 typedef enum {
     NONE,
     WAKE_ON_UUID,
+    NEW_CONNECTION,
     WAKE_ON_CONNECTION
-
 } APP_MODE;
 
 APP_MODE current_mode;
@@ -80,10 +80,40 @@ APP_MODE current_mode;
 *******************************************************************************/
 #define BT_STACK_HEAP_SIZE          (0xF000)
 
+#define APP_VS_ID                        WICED_NVRAM_VSID_START
+#define APP_LOCAL_KEYS_VS_ID           ( WICED_NVRAM_VSID_START + 1 )
+#define APP_PAIRED_KEYS_VS_ID          ( WICED_NVRAM_VSID_START + 2 )
+
+#ifndef PACKED
+#define PACKED
+#endif
+
 /*******************************************************************************
 *       STRUCTURES AND ENUMERATIONS
 *******************************************************************************/
 wiced_bt_device_address_t bt_device_address = {0x11, 0x22, 0x33, 0x44, 0x55, 0x66};
+
+#pragma pack(1)
+/* Host information saved in  NVRAM */
+typedef PACKED struct
+{
+    wiced_bt_device_address_t  bdaddr;                                /* BD address of the bonded host */
+    wiced_bt_ble_address_type_t addr_type;
+    uint8_t paired;
+} host_info_t;
+#pragma pack()
+
+/******************************************************************************
+ *                                Structures
+ ******************************************************************************/
+typedef struct
+{
+    wiced_bt_device_address_t remote_addr;  /* remote peer device address */
+    wiced_bt_ble_address_type_t addr_type;
+    uint16_t  conn_id;                  /* connection ID referenced by the stack */
+    uint16_t  peer_mtu;                 /* peer MTU */
+
+} app_state_t;
 
 /*******************************************************************************
 *       VARIABLE DEFINITIONS
@@ -100,6 +130,10 @@ uint8_t pattern[LE_PCF_MANUFACTURE_DATA_PATTERN_LEN_MAX] = {0};
 uint8_t pattern_mask[LE_PCF_MANUFACTURE_DATA_PATTERN_LEN_MAX] = {0};
 uint8_t apcf_filter_idx =  WICED_LE_ADV_PCF_FILTER_INDEX_START;
 BOOL32 app_ready = WICED_FALSE;
+host_info_t app_host_info;
+app_state_t app_state;
+
+extern const wiced_bt_cfg_ble_t cy_bt_cfg_ble;
 
 /*******************************************************************************
 *       FUNCTION DECLARATIONS
@@ -119,7 +153,10 @@ static wiced_bt_gatt_status_t app_gatts_callback(wiced_bt_gatt_evt_t event, wice
 static wiced_bt_gatt_status_t app_gatts_conn_status_cb(wiced_bt_gatt_connection_status_t* p_status);
 static wiced_bt_gatt_status_t app_gatts_connection_up(wiced_bt_gatt_connection_status_t* p_status);
 static wiced_bt_gatt_status_t app_gatts_connection_down(wiced_bt_gatt_connection_status_t* p_status);
-
+static wiced_bt_gatt_status_t app_gatts_req_cb(wiced_bt_gatt_attribute_request_t* p_data);
+static void app_load_keys_for_address_resolution(void);
+static void app_smp_bond_result(uint8_t result);
+static void app_clear_bond_info(void);
 
 /*******************************************************************************
 *       FUNCTION DEFINITION
@@ -188,6 +225,12 @@ static wiced_result_t app_bt_management_callback(wiced_bt_management_evt_t event
     wiced_result_t result = WICED_BT_SUCCESS;
     wiced_bt_device_address_t bda = { 0 };
     wiced_bt_ble_advert_mode_t *p_mode = NULL;
+    wiced_bt_dev_ble_pairing_info_t* p_info;
+    wiced_bt_device_link_keys_t* p_keys;
+    wiced_bt_dev_encryption_status_t* p_status;
+
+    uint16_t  read_bytes = 0;
+
     const uint8_t *link_key;
 
     TRACE_LOG( "event 0x%x \n", event );
@@ -216,6 +259,91 @@ static wiced_result_t app_bt_management_callback(wiced_bt_management_evt_t event
 
     case BTM_DISABLED_EVT:
         TRACE_LOG( "Bluetooth Disabled \n" );
+        break;
+
+    case BTM_USER_CONFIRMATION_REQUEST_EVT:
+        TRACE_LOG("Numeric_value: %d \n", p_event_data->user_confirmation_request.numeric_value);
+        wiced_bt_dev_confirm_req_reply(WICED_BT_SUCCESS, p_event_data->user_confirmation_request.bd_addr);
+        break;
+
+    case BTM_PASSKEY_NOTIFICATION_EVT:
+        TRACE_LOG("PassKey Notification. BDA: ");
+        print_bd_address(p_event_data->user_passkey_notification.bd_addr);
+        TRACE_LOG("PassKey Notification.  Key %d \n", p_event_data->user_passkey_notification.passkey);
+        wiced_bt_dev_confirm_req_reply(WICED_BT_SUCCESS, p_event_data->user_passkey_notification.bd_addr);
+        break;
+
+    case BTM_PAIRING_IO_CAPABILITIES_BLE_REQUEST_EVT:
+        p_event_data->pairing_io_capabilities_ble_request.local_io_cap = BTM_IO_CAPABILITIES_NONE;
+        p_event_data->pairing_io_capabilities_ble_request.oob_data = BTM_OOB_NONE;
+        p_event_data->pairing_io_capabilities_ble_request.auth_req = BTM_LE_AUTH_REQ_SC_MITM_BOND;
+        p_event_data->pairing_io_capabilities_ble_request.max_key_size = 0x10;
+        p_event_data->pairing_io_capabilities_ble_request.init_keys = BTM_LE_KEY_PENC | BTM_LE_KEY_PID | BTM_LE_KEY_PCSRK | BTM_LE_KEY_LENC;
+        p_event_data->pairing_io_capabilities_ble_request.resp_keys = BTM_LE_KEY_PENC | BTM_LE_KEY_PID | BTM_LE_KEY_PCSRK | BTM_LE_KEY_LENC;
+        break;
+
+    case BTM_PAIRING_COMPLETE_EVT:
+        p_info = &p_event_data->pairing_complete.pairing_complete_info.ble;
+        TRACE_LOG("Pairing Complete: 0x%x ", p_info->reason);
+        break;
+
+    case BTM_PAIRED_DEVICE_LINK_KEYS_UPDATE_EVT:
+        /* save keys to NVRAM */
+        p_keys = &p_event_data->paired_device_link_keys_update;
+
+        wiced_hal_write_nvram(APP_PAIRED_KEYS_VS_ID, sizeof(wiced_bt_device_link_keys_t), (uint8_t*)p_keys, &result);
+
+        TRACE_LOG("Keys saved to NVRAM result: %d\n ", result);
+        break;
+
+    case  BTM_PAIRED_DEVICE_LINK_KEYS_REQUEST_EVT:
+    {
+        p_keys = &p_event_data->paired_device_link_keys_request;
+        read_bytes = wiced_hal_read_nvram(APP_PAIRED_KEYS_VS_ID,
+            sizeof(wiced_bt_device_link_keys_t),
+            (uint8_t*)p_keys,
+            &result);
+
+        /* Break if link key retrieval is failed or link key is not available. */
+        if (result != WICED_BT_SUCCESS)
+        {
+            result = WICED_BT_ERROR;
+            app_host_info.paired = 0;
+            TRACE_LOG("\n Reading keys from NVRAM failed or link key not available.");
+            break;
+        }
+
+        TRACE_LOG("keys read from NVRAM result:%d\n", result);
+
+    }
+    break;
+
+    case BTM_LOCAL_IDENTITY_KEYS_UPDATE_EVT:
+        /* save keys to NVRAM */
+    {
+        wiced_bt_local_identity_keys_t* p_ikeys = &p_event_data->local_identity_keys_update;
+        wiced_hal_write_nvram(APP_LOCAL_KEYS_VS_ID, sizeof(wiced_bt_local_identity_keys_t), (uint8_t*)p_ikeys, &result);
+        TRACE_LOG("local keys save to NVRAM result: %d\n ", result);
+    }
+    break;
+
+    case  BTM_LOCAL_IDENTITY_KEYS_REQUEST_EVT:
+        /* read keys from NVRAM */
+    {
+        wiced_bt_local_identity_keys_t* p_ikeys = &p_event_data->local_identity_keys_request;
+        wiced_hal_read_nvram(APP_LOCAL_KEYS_VS_ID, sizeof(wiced_bt_local_identity_keys_t), (uint8_t*)p_ikeys, &result);
+        TRACE_LOG("local keys read from NVRAM result:%d\n", result);
+    }
+    break;
+
+    case BTM_ENCRYPTION_STATUS_EVT:
+        p_status = &p_event_data->encryption_status;
+        TRACE_LOG("Encryption Status Event:  res %d\n", p_status->result);
+        app_smp_bond_result(p_status->result);
+        break;
+
+    case BTM_SECURITY_REQUEST_EVT:
+        wiced_bt_ble_security_grant(p_event_data->security_request.bd_addr, WICED_BT_SUCCESS);
         break;
 
     case BTM_BLE_ADVERT_STATE_CHANGED_EVT:
@@ -260,12 +388,48 @@ static void app_init(void)
     {
         TRACE_ERR("DEV-WAKE ASSERT Failed\n");
     }
+
+    /* Load previous paired keys for address resolution */
+    app_load_keys_for_address_resolution();
+
+    /* Allow peer to pair */
+    wiced_bt_set_pairable_mode(WICED_TRUE, 0);
     app_ready = WICED_TRUE;
     /* Register with stack to receive GATT callback */
     gatt_status = wiced_bt_gatt_register(app_gatts_callback);
     TRACE_MSG("wiced_bt_gatt_register: %d\n", gatt_status);
 
     current_mode = NONE;
+}
+
+/******************************************************************************
+ * Function Name: app_load_keys_for_address_resolution
+ *******************************************************************************
+ * Summary: This function read the saving link_key, and write to stack for
+ *          bd address resolution
+ *
+ * Parameters:
+ *  None
+ *
+ * Return:
+ *  None
+ *
+ ******************************************************************************/
+static void app_load_keys_for_address_resolution(void)
+{
+    wiced_bt_device_link_keys_t link_keys;
+    wiced_result_t              result = WICED_ERROR;
+    uint8_t* p;
+
+    memset(&link_keys, 0, sizeof(wiced_bt_device_link_keys_t));
+    p = (uint8_t*)&link_keys;
+    wiced_hal_read_nvram(APP_PAIRED_KEYS_VS_ID, sizeof(wiced_bt_device_link_keys_t), p, &result);
+
+    if (result == WICED_BT_SUCCESS)
+    {
+        result = wiced_bt_dev_add_device_to_address_resolution_db(&link_keys);
+    }
+    TRACE_LOG("app_load_keys_for_address_resolution result:%d\n", result);
 }
 
 static wiced_bt_gatt_status_t app_gatts_callback(wiced_bt_gatt_evt_t event, wiced_bt_gatt_event_data_t* p_data)
@@ -277,8 +441,55 @@ static wiced_bt_gatt_status_t app_gatts_callback(wiced_bt_gatt_evt_t event, wice
     case GATT_CONNECTION_STATUS_EVT:
         result = app_gatts_conn_status_cb(&p_data->connection_status);
         break;
+
+    case GATT_ATTRIBUTE_REQUEST_EVT:
+        result = app_gatts_req_cb(&p_data->attribute_request);
+        break;
     default:
         break;
+    }
+}
+
+/*
+ */
+ /******************************************************************************
+  * Function Name: app_smp_bond_result
+  *******************************************************************************
+  * Summary:
+  *      Process SMP bonding result. If we successfully paired with the
+  *      central device, save its BDADDR in the NVRAM and initialize
+  *      associated data
+  *
+  * Parameters:
+  *  uint8_t result
+  *
+  * Return:
+  *  None
+  *
+  ******************************************************************************/
+static void app_smp_bond_result(uint8_t result)
+{
+    wiced_result_t status;
+    uint8_t written_byte = 0;
+    TRACE_LOG("\n app_smp_bond_result, bond result: %d\n", result);
+
+    /* Bonding success */
+    if (result == WICED_BT_SUCCESS)
+    {
+        /* Pack the data to be stored into the hostinfo structure */
+        memcpy(app_host_info.bdaddr, app_state.remote_addr, sizeof(wiced_bt_device_address_t));
+        app_host_info.addr_type = app_state.addr_type;
+        app_host_info.paired = 1;
+
+        TRACE_LOG("ADDR saved to NVRAM: %x %x %x %x %x %x ", app_host_info.bdaddr[0], app_host_info.bdaddr[1], \
+            app_host_info.bdaddr[2], app_host_info.bdaddr[3], app_host_info.bdaddr[4], app_host_info.bdaddr[5]);
+
+        TRACE_LOG("ADDR Type: %x ", app_host_info.addr_type);
+        TRACE_LOG("Paired: %x ", app_host_info.paired);
+
+        /* Write to NVRAM */
+        written_byte = wiced_hal_write_nvram(APP_VS_ID, sizeof(app_host_info), (uint8_t*)&app_host_info, &status);
+        TRACE_LOG("\n NVRAM write: %d\n", written_byte);
     }
 }
 
@@ -300,14 +511,46 @@ static wiced_bt_gatt_status_t app_gatts_connection_up(wiced_bt_gatt_connection_s
     TRACE_MSG("BD ADDR");
     print_bd_address(p_status->bd_addr);
     TRACE_MSG("ADDR_TYPE: %d", p_status->addr_type);
+
+    app_state.conn_id = p_status->conn_id;
+    memcpy(app_state.remote_addr, p_status->bd_addr, sizeof(wiced_bt_device_address_t));
+    app_state.addr_type = p_status->addr_type;
+
+    /* Saving host info in NVRAM */
+    memcpy(app_host_info.bdaddr, p_status->bd_addr, BD_ADDR_LEN);
+    app_host_info.addr_type = p_status->addr_type;
+
+    wiced_hal_write_nvram(APP_VS_ID, sizeof(app_host_info), (uint8_t*)&app_host_info, &result);
+    TRACE_LOG("NVRAM write %d\n", result);
   
     current_mode = NONE;
 }
 
 static wiced_bt_gatt_status_t app_gatts_connection_down(wiced_bt_gatt_connection_status_t* p_status)
 {
+    /* Resetting the device info */
+    memset(app_state.remote_addr, 0, 6);
+    app_state.conn_id = 0;
     //do nothing , wait for user input on what to do next?
     TRACE_MSG("LE Disconnected\n");
+}
+
+static wiced_bt_gatt_status_t app_gatts_req_cb(wiced_bt_gatt_attribute_request_t* p_data)
+{
+    wiced_bt_gatt_status_t result = WICED_BT_SUCCESS;
+   
+    switch (p_data->opcode)
+    {
+        case GATT_REQ_MTU:
+            TRACE_LOG("req_mtu: %d\n", p_data->data.remote_mtu);
+            result = wiced_bt_gatt_server_send_mtu_rsp(p_data->conn_id, p_data->data.remote_mtu, cy_bt_cfg_ble.ble_max_rx_pdu_size);
+            break;
+        default:
+            TRACE_LOG("Unhandled Opcode %x", p_data->opcode);
+        break;
+    }
+
+    return result;
 }
 
 
@@ -603,13 +846,48 @@ void app_enable_wake_on_le_uuid()
     TRACE_LOG("success\n");
 }
 
+void app_start_new_connection(void)
+{
+    wiced_result_t result;
+    wiced_bt_ble_advert_mode_t advert_mode = BTM_BLE_ADVERT_UNDIRECTED_HIGH;
+    current_mode = NEW_CONNECTION;
+
+    /* Accept connection request from any peer */
+    if((wiced_btm_ble_update_advertisement_filter_policy(BTM_BLE_ADV_POLICY_ACCEPT_CONN_AND_SCAN)) != WICED_TRUE)
+        TRACE_MSG("wiced_btm_ble_update_advertisement_filter_policy failed ");
+
+    /* Clear all previously available bond data and devices */
+    app_clear_bond_info();
+
+    /* Set Advertisement Data */
+    app_set_adv_data();
+
+    /* Start advertisement */
+    result = wiced_bt_start_advertisements(advert_mode, BLE_ADDR_PUBLIC, NULL);
+    TRACE_MSG("wiced_bt_start_advertisements %d", result);
+    TRACE_LOG("success\n");
+}
+
+static void app_clear_bond_info(void)
+{
+    TRACE_MSG("Clear previously connected devices if available");
+    wiced_result_t status = WICED_SUCCESS;
+    memset(&app_host_info, 0, sizeof(host_info_t));
+
+    wiced_hal_delete_nvram(APP_VS_ID, &status);
+    wiced_hal_delete_nvram(APP_PAIRED_KEYS_VS_ID, &status);
+}
+
 
 void app_enable_wake_on_connection()
 {
     wiced_result_t result;
     uint8_t peer_addr[BD_ADDR_LEN];
-    wiced_bt_ble_address_type_t peer_addr_type = BLE_ADDR_PUBLIC;
+    wiced_bt_ble_address_type_t peer_addr_type;
     wiced_bt_ble_advert_mode_t advert_mode = BTM_BLE_ADVERT_UNDIRECTED_HIGH;
+    wiced_bt_device_link_keys_t p_keys;
+    host_info_t host_data;
+    uint16_t read_bytes = 0;
 
     current_mode = WAKE_ON_CONNECTION;
 
@@ -617,11 +895,56 @@ void app_enable_wake_on_connection()
     if (wiced_btm_ble_update_advertisement_filter_policy(BTM_BLE_ADV_POLICY_FILTER_CONN_ACCEPT_SCAN) != WICED_TRUE)
         TRACE_MSG("wiced_btm_ble_update_advertisement_filter_policy failed ");
 
-    /* Add peer device to the allow list */
-    if (wiced_bt_ble_update_advertising_filter_accept_list(WICED_TRUE, BLE_ADDR_PUBLIC, peer_BDAddr) == WICED_TRUE)
+    /* Read host info */
+    read_bytes = wiced_hal_read_nvram(APP_VS_ID,
+        sizeof(host_info_t),
+        (uint8_t*)&host_data,
+        &result);
+
+    /* Return if no peer info available */
+    if (result != WICED_BT_SUCCESS)
     {
-        TRACE_MSG("Peer device %x %x %x %x %x %x added to Whitelist\n", peer_BDAddr[0], peer_BDAddr[1], \
-            peer_BDAddr[2], peer_BDAddr[3], peer_BDAddr[4], peer_BDAddr[5]);
+        TRACE_LOG("\n No previous connected device found. Initiate new connection first using option 6");
+        return;
+    }
+
+    /* Check if device is previously paired */
+    if (host_data.paired)
+    {
+        TRACE_LOG("Device previously paired");
+        /* Retrieve public ID address */
+        read_bytes = wiced_hal_read_nvram(APP_PAIRED_KEYS_VS_ID,
+            sizeof(wiced_bt_device_link_keys_t),
+            (uint8_t*)&p_keys,
+            &result);
+
+        if (result == WICED_BT_SUCCESS)
+        {
+            /* Previous paired device found, add Public ID to the accept list */
+            memcpy(peer_addr, p_keys.bd_addr, 6);
+            peer_addr_type = BLE_ADDR_PUBLIC_ID;
+        }
+        else
+        {
+            TRACE_LOG("Paired key missing: Error!");
+            return;
+        }
+    }
+    else
+    {
+        /* If not paired, add previous connection address to whitelist */
+        memcpy(peer_addr, host_data.bdaddr, sizeof(wiced_bt_device_address_t));
+        peer_addr_type = host_data.addr_type;
+    }
+
+    /* Clear existing devices from the accept list */
+    wiced_bt_ble_clear_filter_accept_list();
+
+    /* Add peer device to the allow list */
+    if (wiced_bt_ble_update_advertising_filter_accept_list(WICED_TRUE, peer_addr_type, peer_addr) == WICED_TRUE)
+    {
+        TRACE_MSG("Peer device %x %x %x %x %x %x added to Whitelist\n", peer_addr[0], peer_addr[1], \
+            peer_addr[2], peer_addr[3], peer_addr[4], peer_addr[5]);
     }
     else
     {

@@ -803,8 +803,23 @@ static void broadcast_sink_bis_menu_ext_adv_scan_cback(wiced_bt_ble_scan_results
  ******************************************************************************/
 void broadcast_sink_bis_menu_discover_sources(bool start)
 {
+    broadcast_sink_cb_t *p_big = NULL;
+    uint8_t lc3_index[2] = {0};
+    
     if (start)
     {
+        for (size_t i = 0; i < MAX_BIG; i++)
+        {
+            if (g_broadcast_sink_cb[i].in_use == TRUE)
+            {
+                p_big = &g_broadcast_sink_cb[i];
+                
+                wiced_bool_t res = wiced_bt_isoc_peripheral_big_terminate_sync(p_big->big_handle);
+                wiced_bt_ble_terminate_sync_to_periodic_adv(p_big->sync_handle);
+                iso_audio_remove_data_path(p_big->bis_conn_id_list[0], WICED_BLE_ISOC_DPD_OUTPUT_BIT, lc3_index);
+                broadcast_sink_bis_free_big(p_big);
+            }
+        }    
         broadcast_sink_clear_data();
     }
 

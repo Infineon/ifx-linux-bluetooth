@@ -24,6 +24,11 @@ This code example demonstrates the implementation of a Bluetooth® headset with 
 ## Supported AIROC™ Wi-Fi & Bluetooth® combo chip
 
   - [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
+- [AIROC™ CYW5551x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
+- [AIROC™ CYW54591 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw54591/)
+- [AIROC™ CYW43439 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43439/)
+- [AIROC™ CYW43012 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43012/)
+
 
 
 ## Hardware setup
@@ -60,19 +65,8 @@ Do the following on the Linux host PC to compile the code example:
    **Note:** Replace *Linux_CE* with a directory of your choice.
 
 2. Fetch the code example source code using the following command:
-   ```bash
-   git clone https://gitlab.intra.infineon.com/tbst/linux_bt_ce/linux-example-btstack-headset.git --branch develop
-   ```
-
-3. Clone the code example dependencies (BTSTACK library and Linux porting layer source code) using the following commands:
-   ```bash
-   git clone https://github.com/Infineon/btstack --branch release-v3.7.1
-   git clone https://gitlab.intra.infineon.com/repo-staging/bt-audio-profiles --branch 1.0.3743
-   git clone https://gitlab.intra.infineon.com/repo-staging/bluetooth-linux.git --branch Hedorah-TC1
-   git clone https://gitlab.intra.infineon.com/repo-staging/btsdk-gfps --branch develop
-   ```
-
-   Four different directories are created after cloning the code example and its dependencies - see the following example:
+   git clone https://github.com/Infineon/ifx-linux-bluetooth.git
+    ```
 
    **Figure 2. Code example directory structure**
 
@@ -86,9 +80,8 @@ Do the following on the Linux host PC to compile the code example:
 
 5. Create the build folder under the code example source folder and build the code example using the following commands:
    ```
-   cd $HOME/Linux_CE/linux-example-btstack-headset
-   mkdir build && cd build
-   cmake -DCMAKE_C_COMPILER:PATH=<GCC_CROSS_COMPILER> ../ && make
+   cd $HOME/Linux_CE/ifx-linux-bluetooth/code-examples/linux-example-btstack-headset
+   ./build.sh
    ```
    Where,
    - `GCC_CROSS_COMPILER` is the target cross compiler for GCC (generally */usr/bin/aarch64-linux-gnu-gcc* for ARM64-based targets)

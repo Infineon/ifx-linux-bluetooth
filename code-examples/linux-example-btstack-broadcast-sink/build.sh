@@ -8,6 +8,3 @@ export GCC_CROSS_COMPILER=/usr/bin/aarch64-linux-gnu-gcc
 cmake -DLC3CODEC=$1 -DCMAKE_C_COMPILER:PATH=$GCC_CROSS_COMPILER ../
 make
 
-cp ./linux-example-btstack-broadcast-sink ../artifacts
-cd ../
-rm -rf build

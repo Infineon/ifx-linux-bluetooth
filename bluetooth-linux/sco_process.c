@@ -12,7 +12,8 @@
  *****************************************************/
 static wiced_bt_pool_t* sco_pool;
 static wiced_bt_lock_t sco_pool_lock;
-static pthread_mutex_t sco_pool_mutex = PTHREAD_MUTEX_INITIALIZER;
+static pthread_mutex_t sco_pool_mutex;
+static pthread_mutexattr_t sco_pool_attr;
 
 static wiced_bt_buffer_q_t sco_queue;
 static wiced_bt_lock_t sco_qlock;
@@ -91,6 +92,11 @@ BOOL32 init_sco_queue(void)
     TRACE_LOG("init\n");
 
     sem_init(&sco_sem, 0, 0);
+
+    /* Init rx_pool_attr */
+    pthread_mutexattr_init(&sco_pool_attr);
+    pthread_mutexattr_settype(&sco_pool_attr, PTHREAD_MUTEX_RECURSIVE);
+    pthread_mutex_init(&sco_pool_mutex, &sco_pool_attr);
 
     //init sco heap
     sco_pool_lock.p_lock_context = (void*)&sco_pool_mutex;
@@ -182,15 +188,42 @@ static void* scoRcvd (void *p)
  ** Returns
  **     void
  *******************************************************************************/
+uint8_t debug_count = 0;
 void sco_enqueue(tUART_RX* p_sco_pkt)
 {
+    wiced_bt_pool_statistics_t  stats = {0};
+
+    sco_mutex_lock(&sco_pool_mutex);
+#ifdef DEBUG_SCO_POOL
+    if (debug_count % 254 == 0)
+    {
+        wiced_bt_get_pool_statistics(sco_pool, &stats);
+        TRACE_LOG("pool_size:%d, pool_count:%d, current_allocated_count:%d, max_allocated_count:%d",
+                    stats.pool_size, stats.pool_count, stats.current_allocated_count, stats.max_allocated_count);
+        debug_count = 1;
+    }
+    else
+    {
+        debug_count++;
+    }
+#endif
+    if (wiced_bt_get_pool_free_count(sco_pool) <= 1)
+    {
+        wiced_bt_get_pool_statistics(sco_pool, &stats);
+        TRACE_LOG("pool_size:%d, pool_count:%d, current_allocated_count:%d, max_allocated_count:%d",
+                    stats.pool_size, stats.pool_count, stats.current_allocated_count, stats.max_allocated_count);
+    }
+
     if (wiced_bt_get_pool_free_count(sco_pool) == 0)
     {
         TRACE_LOG("!!! No Free Pool, Skip SCO\n");
+        sco_mutex_unlock(&sco_pool_mutex);
         return;
     }
 
     wiced_bt_buffer_t* p_sco_queue_pkt = wiced_bt_get_buffer_from_pool(sco_pool);
+
+    sco_mutex_unlock(&sco_pool_mutex);
 
     memcpy(p_sco_queue_pkt, p_sco_pkt, sizeof(tUART_RX));
 
@@ -221,7 +254,9 @@ static void sco_dequeue(wiced_bt_buffer_t* p_sco_buffer)
 
     memcpy(p_sco_buffer, p_sco_queue_pkt, sizeof(tUART_RX));
 
+    sco_mutex_lock(&sco_pool_mutex);
     wiced_bt_free_buffer(p_sco_queue_pkt);
+    sco_mutex_unlock(&sco_pool_mutex);
 }
 
 

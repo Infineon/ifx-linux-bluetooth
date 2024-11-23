@@ -30,7 +30,9 @@ In this code example only demonstrates how the working flow between Linux host s
 
 ## Supported AIROC™ Wi-Fi & Bluetooth® combo chip
 
-- [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
+- [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/cyw55573/)
+- [AIROC™ CYW5551x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/cyw55513)
+- [AIROC™ CYW43022 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw43022/)
 - [AIROC™ CYW54591 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw54591/)
 - [AIROC™ CYW43439 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43439/)
 - [AIROC™ CYW43012 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43012/)
@@ -110,7 +112,7 @@ Do the following on the Linux host PC to compile the code example:
 - 32-bit UUID setting for wake up
 - 32-bit UUID + Manufacture Data settings for wake up
 - Disable wake-up functionality
-- Wake on LE Connection (Peripheral mode) (Tested only for CYW5557x target)
+- Wake on LE Connection (Peripheral mode) (Tested only for CYW5557x and CYW5551X targets)
 - Reset to LE Legacy Only
 - Reset to Default
 - Check LE EXT ADV Support or Legacy Only
@@ -293,19 +295,21 @@ The following two devices are required to demonstrate this application:
    5. Enable advertiser in nRFConnect APP from Android Phone to advertise the ADV which have the specific UUID, eg: "11 22"
    6. When you see "HOST WAKE ASSERT" in CE program, means Controller already receive this ADV and notify host through Host-Wake.
    7. In Menu option 5: 32 bit UUID and MANUFACTURE DATA. the MANUFACTURE DATA have 2 part, the first part is COMPANY_ID. It define in include/wakeon_le.h
-	```
+```
    #define COMPANY_ID				   0x0009
-	```
+```
    0x0009 is Infineon's company ID, change it to what you need.
    8. the second part of manufacture data is the data pattern.
 
    **For Wake-on-LE Connection testing:**
 
-   1. Press 6 on the keyboard and press Enter, to enable wakeonLe by peer connection event.
-   2. Follow the instruction and enter the 6 byte Public BD address of the peer device and press enter
-   3. After the Enter key is pressed, the device will add the peer device to the whitelist and starts advertising. Also it will enter sleep mode.
-   4. Send a connection request from the peer device to the AIROC device.
-   5. If the peer device address matches the address added to the whitelist, the AIROC device will wake the host device through Host-Wake. This is seen through the application meesage HOST WAKE ASSERT and LE connection event.
+   1. Press 6 on the keyboard and press Enter, to create a new connection with the peer device.
+   2. From an Android phone use the AIROC Bluetooth Connect APP to create a LE connection to the DUT, also pair with the DUT.
+   3. Once connection is successful, disconnect the LE connection from the phone 
+   4. Enter 7 on the keyboard and press Enter, to add the previously connected device to the whitelist.
+   5. After the Enter key is pressed, the device will add the peer device to the whitelist and starts advertising. Also it will enter sleep mode.
+   6. Send a connection request from the peer device to the AIROC device.
+   7. If the peer device address matches the address added to the whitelist, the AIROC device will wake the host device through Host-Wake. This is seen through the application meesage HOST WAKE ASSERT and LE connection event.
 
 ## Debugging
 
@@ -374,7 +378,7 @@ This code example does the following:
 
 Resources  | Links
 -----------|----------------------------------
-Device documentation | [AIROC™ CYW5557x Wi-Fi 6E tri-band Wi-Fi and Bluetooth® 5.2 SoC](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/cyw5557x/) <br> [AIROC™ CYW54591 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw54591/) <br> [AIROC™ CYW43439 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43439/) <br> [AIROC™ CYW43012 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43012/)
+Device documentation | [AIROC™ CYW5551x Wi-Fi 6E tri-band Wi-Fi and Bluetooth® 5.4 SoC](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/cyw55513/) <br> [AIROC™ CYW5557x Wi-Fi 6E tri-band Wi-Fi and Bluetooth® 5.2 SoC](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/cyw55573/) [AIROC™ CYW43022 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw43022/) <br> [AIROC™ CYW54591 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw54591/) <br> [AIROC™ CYW43439 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43439/) <br> [AIROC™ CYW43012 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43012/)
 Libraries and middleware | [AIROC™ BTSTACK library](https://github.com/Infineon/btstack/tree/release-v3.6.1) <br> [Linux porting layer source code](https://github.com/Infineon/bluetooth-linux)
 
 
@@ -389,7 +393,8 @@ Document title: *CE237650* – *AIROC™ BTSTACK: Bluetooth® WakeOnLE for Linux
  Version | Description of change
  ------- | ---------------------
  1.0.0   | New code example
-
+ 1.1.0   | Add support for CYW5551x devices <br> Added support to add paired devices to whitelist for wake on le connection
+ 1.2.0   | Add support for CYW43022 devices
 
 ---------------------------------------------------------
 

@@ -130,10 +130,11 @@ void print_menu(void)
     debug_Printf("\t3.  Enable WakeOnLE with 16bit UUID \n");
     debug_Printf("\t4.  Enable WakeOnLE with 32bit UUID \n");
     debug_Printf("\t5.  Enable WakeOnLE with 32bit UUID AND MANUFACTURE DATA \n");
-    debug_Printf("\t6.  Enable WakeOnLE Connection \n");
-	debug_Printf("\t7.  Reset to Le Legacy Only \n");
-	debug_Printf("\t8.  Reset to Default \n");
-	debug_Printf("\t9.  Is Ext Adv Support \n");
+    debug_Printf("\t6.  New Connection without whitelist \n");
+    debug_Printf("\t7.  Enable WakeOnLE Connection \n");
+	debug_Printf("\t8.  Reset to Le Legacy Only \n");
+	debug_Printf("\t9.  Reset to Default \n");
+	debug_Printf("\t10.  Is Ext Adv Support \n");
     debug_Printf("\tChoose option -> ");
     fflush(stdin);
 }
@@ -429,29 +430,24 @@ int main( int argc, char* argv[] )
 
         case 6:
         {
-            
-            TRACE_MSG("Wake ON LE Connection from particular LE ADDR");
-            unsigned int read;
+            TRACE_MSG("Start Advertisement to start new connection");
             if (inSleep == TRUE)
             {
                 TRACE_MSG("In Sleep MODE\n");
                 break;
             }
-            TRACE_MSG("Enter Address of device to add in Hex: eg: 11 22 33 44 55 66");
 
-            for (int i = 0; i < 6; i++)
-            {
-                ret = scanf("%x", &peer_BDAddr[i]);
-                if (error_check(ret) == WICED_FALSE)
-                {
-                    goto INPUT_ERROR;
-                }
-            }
+            app_start_new_connection();
+            break;
+        }
 
+        case 7:
+        {
+            TRACE_MSG("Add previously connected/paired devices to whitelist and start advertisement");
             app_enable_wake_on_connection();
             break;
         }
-		       case 7:
+        case 8:
 #ifdef WAKEONLE
             if (wiced_exp_isExtAdvSupported())
                 wiced_exp_reset_to_le_legacy(NULL);
@@ -462,11 +458,11 @@ int main( int argc, char* argv[] )
             TRACE_ERR("No define WAKEONLE\n");
 #endif
             break;
-        case 8:
+        case 9:
             wiced_exp_reset(NULL);
             app_ready = WICED_FALSE;
             break;
-        case 9:
+        case 10:
             TRACE_LOG("is Ext support:%s\n", wiced_exp_isExtAdvSupported() ? "Ext Adv Supported" : "Legacy Adv Only");
             break;
             default:

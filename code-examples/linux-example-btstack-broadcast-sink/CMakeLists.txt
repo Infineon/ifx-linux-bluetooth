@@ -11,7 +11,7 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 set (BUILD_SHARED_LIBS ON)
 
 # add_definitions(-DLINUX_PLATFORM -DHCI_RX_QUEUE -DRX_PKT_NUM=30)
-add_definitions(-DLINUX_PLATFORM -DHCI_RX_QUEUE -DRX_PKT_NUM=30 -DENABLE_SCO_QUEUE -DSCO_PKT_NUM=10)
+add_definitions(-DLINUX_PLATFORM -DHCI_RX_QUEUE -DRX_PKT_NUM=30 -DENABLE_SCO_QUEUE -DSCO_PKT_NUM=60)
 
 
 set (ARM_GCC_PATH               "COMPONENT_ARM_LINUX/COMPONENT_GCC/")
@@ -45,8 +45,10 @@ set (LC3_CODEC_COMPONENT        ${CMAKE_CURRENT_SOURCE_DIR}/COMPONENT_LC3_CODEC)
 #set (LC3CODEC                  "ittiam")
 
 if(LC3CODEC STREQUAL "ittiam")
+    add_definitions(-DITTIAM_LC3)
     set (ITTIAMLC3                  "ittiam_lc3")
 else()
+    add_definitions(-DGOOGLE_LC3)
     set (GOOGLELC3                  "google_lc3")
 endif()
 

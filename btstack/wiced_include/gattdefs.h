@@ -33,7 +33,7 @@
 
 /** @file
  *
- *  WICED Generic Attribute (GATT) Application Programming Interface definitions
+ *  AIROC Generic Attribute (GATT) Application Programming Interface definitions
  */
 
 #ifndef  _GATTDEFS_H
@@ -158,12 +158,6 @@
 #define GATT_UUID_SCAN_REFRESH           UUID_CHARACTERISTIC_SCAN_REFRESH
 
 
-/**
- * GATT appearance definitions
- *
- * @ingroup wicedbt_gatt
- *
- */
 enum gatt_appearance_e
 {
     APPEARANCE_GENERIC_PHONE                    = 64,

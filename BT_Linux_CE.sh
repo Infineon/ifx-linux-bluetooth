@@ -6,22 +6,27 @@ app_baudrate=3000000
 fw_baudrate=115200
 bd_addr=112233445566
 is_le_supported_chip=1
-fw_file=CYW55560A1_001.002.087.0283.0000_Generic_UART_37_4MHz_fcbga_iPA_sLNA_ANT0.hcd
+fw_file=CYW55560A1_001.002.087.0318.0000_Generic_UART_37_4MHz_fcbga_iPA_sLNA_ANT0.hcd
 cyw43022=0
+cyw5551x=0
 
 if [ "$1" = "CYW4373" ]; then
     is_le_supported_chip=0
-    fw_file=CYW4373A0_001.001.025.0120.0000_Generic_UART_37_4MHz_fcbga_BU_sLNA.hcd
+    fw_file=CYW4373A0_001.001.025.0123.0000_Generic_UART_37_4MHz_fcbga_BU_sLNA.hcd
 elif [ "$1" = "CYW43439" ]; then
     is_le_supported_chip=0
-    fw_file=CYW4343A2_001.003.016.0068.0000_Generic_UART_26MHz_wlbga_BU_dl_signed.hcd
+    fw_file=CYW4343A2_001.003.016.0070.0000_Generic_UART_26MHz_wlbga_BU_dl_signed.hcd
 elif [ "$1" = "CYW5557X" ]; then
     is_le_supported_chip=1
-    fw_file=CYW55560A1_001.002.087.0283.0000_Generic_UART_37_4MHz_fcbga_iPA_sLNA_ANT0.hcd
+    fw_file=CYW55560A1_001.002.087.0318.0000_Generic_UART_37_4MHz_fcbga_iPA_sLNA_ANT0.hcd
 elif [ "$1" = "CYW43022" ]; then
     is_le_supported_chip=0
-    fw_file=CYW43012C1_003.002.024.0035.0000_Generic_UART_37_4MHz_wlbga_ref3_sLNA_dl_signed.hcd
+    fw_file=CYW43022_003.002.024.0038.0000_Generic_UART_37_4MHz_wlbga_ref3_sLNA_dl_signed.hcd
     cyw43022=1
+elif [ "$1" = "CYW5551X" ]; then
+    is_le_supported_chip=1
+    fw_file=CYW55500A1_001.002.032.0135.0000_Generic_UART_37_4MHz_wlbga_iPA_sLNA_ANT0.hcd
+    cyw5551x=1
 else
     echo "Unknown Chip ID : $1"
     echo "Valid options:"
@@ -29,6 +34,7 @@ else
     echo "./BT_Linux_CE.sh CYW43439"
     echo "./BT_Linux_CE.sh CYW43022"
     echo "./BT_Linux_CE.sh CYW5557X"
+    echo "./BT_Linux_CE.sh CYW5551X"
     exit 1
 fi
 sudo apt-get install git cmake gcc-aarch64-linux-gnu build-essential -y
@@ -134,7 +140,9 @@ handle_selection() {
             echo "Skip Cloning Google LC3 as it already exist!"
         else
             echo "Cloning Google LC3"
+            cd ..
             git clone https://github.com/google/liblc3 --branch v1.0.3
+            cd bt-linux
         fi
         cd code-examples/$example_code/COMPONENT_LC3_CODEC/google_lc3
         sudo chmod 777 ./build_google_lc3.sh
@@ -172,7 +180,7 @@ handle_selection() {
     echo "===Executing "$example_code"==="
     echo "============================"
     echo "============================"
-    if [ $cyw43022 -eq 1 ]; then
+    if [ $cyw43022 -eq 1 ] || [ $cyw5551x -eq 1 ]; then
         . $cwd/cts_pin_control.sh
     fi
     if [ $example_code = "linux-example-btstack-wakeonle" ]; then

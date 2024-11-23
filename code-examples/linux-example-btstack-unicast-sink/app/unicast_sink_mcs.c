@@ -41,6 +41,8 @@
 #include "wiced_bt_gatt.h"
 #include "wiced_bt_trace.h"
 
+wiced_bt_ga_media_control_state_t media_state;
+
 /******************************************************************************
  * Function Name: unicast_sink_mcs_play_pause( 
  ******************************************************************************
@@ -120,6 +122,7 @@ wiced_result_t unicast_sink_mcs_callback(uint16_t conn_id,
         case MCS_MEDIA_STATE_CHARACTERISTIC:
             WICED_BT_TRACE("Media State %d \n", p_event_data->media_state);
             p_clcb->mcs_data.media_state = p_event_data->media_state;
+            media_state = p_clcb->mcs_data.media_state;
             unicast_sink_rpc_send_play_status(conn_id, p_event_data->media_state);
             break;
         case MCS_MEDIA_CONTROL_POINT_CHARACTERISTIC:
@@ -173,4 +176,9 @@ wiced_result_t unicast_sink_mcs_callback(uint16_t conn_id,
     }
 
     return WICED_BT_SUCCESS;
+}
+
+uint8_t unicast_sink_mcs_playing(void)
+{
+    return media_state == WICED_BT_GA_MCS_MEDIA_PLAYING ? WICED_TRUE : WICED_FALSE;
 }
