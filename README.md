@@ -33,15 +33,3 @@ https://github.com/Infineon/linux-example-btstack-alert-client
 
 https://github.com/Infineon/linux-example-btstack-alert-server
 
-# Trouble shooting
-Build failed under Infineon Network
-
-If you are facing build error under Infineon Network
-
-1. sudo systemctl start NetworkManager
-2. Connect with mobile USB hotspot tethering
-3. run the CE command
-4. sudo ./BT_Linux_CE.sh CYW5551X 
-5. Once cmake is install and build success
-6. Exit app
-7. sudo systemctl stop NetworkManager
