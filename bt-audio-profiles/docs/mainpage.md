@@ -8,6 +8,15 @@
 		1. Source (SRC) – A device is the SRC when it acts as a source of a digital audio stream that is delivered to the SNK device
 		2. Sink (SNK) – A device is the SNK when it acts as a sink of a digital audio stream delivered from the SRC device.
 
+##AVRCP
+	- Audio/Video remote control profile library allows Bluetooth enabled device to control audio streaming remotely, it supports two roles
+
+		1. Controller (CT)  –  It is a device that initiates a transaction by sending a command frame to a target.
+            Examples for CT are a personal computer, a PDA, a mobile phone, a remote controller or an AV device
+            (such as an in car system, headphone, player/recorder, timer, tuner, monitor etc.).
+		2. Target (TG)   – Target device receives a command frame and accordingly generates a response frame. Examples for TG are an audio player/recorder,
+            a video player/recorder, a TV, a tuner, an amplifier or a headphone.
+
 ##HFP
 	- Hands-free profile provides capabilty to the device to transmit voice between mobile phone and wireless headset and defines two roles
 		1. Audio Gateway (AG) – This is the device that is the gateway of the audio, both for input and output.

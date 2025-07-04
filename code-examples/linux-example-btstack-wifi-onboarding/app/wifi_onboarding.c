@@ -69,6 +69,7 @@
 #define WIFI_STATE_CONNECTING   (2u)
 #define GET_STATUS_PERIOD       (3u)
 #define TIMEOUT_PERIODS         (15u)
+#define BUFFER_SIZE             (1024)
 
 /*******************************************************************************
 *       STRUCTURES AND ENUMERATIONS
@@ -99,6 +100,12 @@ typedef struct
     tAppBtAdvConnMode           app_bt_adv_conn_state;
 } iwos_state_t;
 
+typedef struct {
+    char *buf;
+    size_t buffer_length;
+    FILE *fp;
+} thread_args_t;
+
 /*******************************************************************************
 *       VARIABLE DEFINITIONS
 *******************************************************************************/
@@ -110,6 +117,8 @@ static tAppBtAdvConnMode app_bt_adv_conn_state = APP_BT_ADV_OFF_CONN_OFF;
 host_info_t   iwos_hostinfo;
 
 iwos_state_t iwos_state;
+
+pthread_t thread;
 
 static bool has_subscribed = false;
 static char buf_notify[NOTIFY_BUFFER_LENGTH] = {0};
@@ -219,20 +228,53 @@ static int security_parser(char* str_sec)
 * Function Name: is_process_ok
 ********************************************************************************
 * Summary:
-*   Print result of executed process, and check if it is exactly "OK"
+*   Check the process and print result of executed process
 *
 * Return:
-*   True  : If result is exactly "OK"
-*   False : If result is not "OK"
-*
+*   none
+*   
 *******************************************************************************/
-static bool is_process_ok(char* buf, int buf_size, FILE* fp)
+static void *is_process_ok(void *arg)
 {
-    while (fgets(buf, buf_size, fp) != NULL)
+    thread_args_t *args = (thread_args_t *)arg;
+    size_t buffer_length = args->buffer_length;
+    char *buf = args->buf;
+    FILE *fp = args->fp;
+    while (fgets(buf, buffer_length, fp) != NULL) 
     {
-        TRACE_LOG("%s", buf);
+        TRACE_LOG("%s", buf);  // Assuming TRACE_LOG is a macro for logging
     }
-    return buf[0] == 'O' && buf[1] == 'K';
+
+    if (wifi_connected_state == WIFI_STATE_CONNECTING) 
+    {
+        TRACE_LOG("state\n");
+    }
+    if (args->fp == NULL)
+    {
+         TRACE_ERR("open fail\n");
+	 printf("Failed to open file\n");
+    }
+
+    free(args->buf);
+    free(args);
+    pclose(fp);
+    return (void *)(buf[0] == 'O' && buf[1] == 'K');
+}
+
+static void *check_process_thread(void *args)
+{
+    if (args == NULL || ((thread_args_t *)args)->buf == NULL) 
+    {
+        return NULL;  
+    }
+
+    pthread_t thread;
+    int result = pthread_create(&thread, NULL, is_process_ok, args);
+    if (result != 0) 
+    {
+	return NULL; // Thread creation failed
+    }
+    return NULL; 
 }
 
 /*******************************************************************************
@@ -353,15 +395,16 @@ void *wifi_tracker(void *arg)
         /* LE connected */
         if(iwos_state.conn_id != 0)
         {
+            TRACE_LOG("LE connect");
             /* Display */
             switch (wifi_connected_state)
             {
             case WIFI_STATE_CONNECTED:
-                TRACE_LOG("Wi-Fi: Connected, ipv4: %s\r\n", have_ip);
+                TRACE_LOG("Wi-Fi: Connected, ipv4: %s", have_ip);
                 break;
 
             case WIFI_STATE_DISCONNECTED:
-                TRACE_LOG("Wi-Fi: Disconnected, ipv4: %s\r\n", have_ip);
+                TRACE_LOG("Wi-Fi: Disconnected, ipv4: %s", have_ip);
                 break;
 
             default:
@@ -371,6 +414,7 @@ void *wifi_tracker(void *arg)
             /* Send notification */
             if(has_subscribed)
             {
+                TRACE_LOG("subscribed and sent notification\n");
                 if(wifi_connected_state == WIFI_STATE_CONNECTED)
                 {
                     snprintf(buffer_notification, 30, "%s:%s", "Connected", have_ip);
@@ -404,6 +448,7 @@ void *wifi_tracker(void *arg)
         }
         pclose(fp);
         last_wifi_connected_state = wifi_connected_state;
+        TRACE_LOG("state sync");
         sleep(GET_STATUS_PERIOD);
     }
     return NULL;
@@ -656,13 +701,13 @@ static void le_app_init(void)
     system("bash wlan_init.sh");
     sync_wifi_state(WIFI_STATE_DISCONNECTED);
 
-    TRACE_LOG("*********************************************************\n");
-    TRACE_LOG("*********************************************************\n");
-    TRACE_LOG("***                                                   ***\n");
-    TRACE_LOG("***   Welcome Infinon Wi-Fi onboarding Code Example   ***\n");
-    TRACE_LOG("***                                                   ***\n");
-    TRACE_LOG("*********************************************************\n");
-    TRACE_LOG("*********************************************************\n");
+    TRACE_LOG("**********************************************************\n");
+    TRACE_LOG("**********************************************************\n");
+    TRACE_LOG("***                                                    ***\n");
+    TRACE_LOG("***   Welcome Infineon Wi-Fi onboarding Code Example   ***\n");
+    TRACE_LOG("***                                                    ***\n");
+    TRACE_LOG("**********************************************************\n");
+    TRACE_LOG("**********************************************************\n");
     TRACE_LOG("\n");
     TRACE_LOG("=>   Discover device with \"bleProv\" name\n");
     TRACE_LOG("=>   Discover device with \"bleProv\" name\n");
@@ -943,7 +988,12 @@ static wiced_bt_gatt_status_t le_app_write_handler(uint16_t conn_id,
         if (WIFI_CONTROL_CONNECT == app_custom_service_wifi_control[0])
         {
             TRACE_LOG("WIFI_CONTROL_CONNECT\n");
-            puAttribute = le_app_find_by_handle(HDLC_CUSTOM_SERVICE_WIFI_PASSWORD_VALUE);
+            if (wifi_connected_state == WIFI_STATE_CONNECTING)
+            {
+                break;
+            }
+
+	    puAttribute = le_app_find_by_handle(HDLC_CUSTOM_SERVICE_WIFI_PASSWORD_VALUE);
             if(puAttribute->cur_len == 0)
             {
                 /* Configuration for OPEN Wi-Fi access point which has no need of password */
@@ -958,6 +1008,7 @@ static wiced_bt_gatt_status_t le_app_write_handler(uint16_t conn_id,
             strcat(linux_cmd, "\" \"");
             strcat(linux_cmd, app_custom_service_wifi_password);
             strcat(linux_cmd, "\"");
+            strcat(linux_cmd, " &");
             TRACE_LOG("Wi-Fi connect command: %s\n", linux_cmd);
             fp = popen(linux_cmd, "r");
             if (fp == NULL)
@@ -966,23 +1017,33 @@ static wiced_bt_gatt_status_t le_app_write_handler(uint16_t conn_id,
                 gatt_status = WICED_BT_GATT_ERROR;
                 break;
             }
-            if(!is_process_ok(buf, SCAN_BUFFER_LENGTH, fp))
-            {
-                TRACE_ERR("Wi-Fi connect command result is not \"OK\", kindly check your Wi-Fi information, especially the length of PASSWORD.\n");
-                gatt_status = WICED_BT_GATT_ERROR;
-                sync_wifi_state(WIFI_STATE_DISCONNECTED);
-                pclose(fp);
-                break;
-            }
             wifi_connected_state = WIFI_STATE_CONNECTING;
-            pclose(fp);
+	    
+	    thread_args_t *args = malloc(sizeof(thread_args_t));
+            args->buf = malloc(BUFFER_SIZE);  // Assuming buffer size is 1024
+            args->buffer_length = BUFFER_SIZE;
+            args->fp = fp; 
+            if (args->fp == NULL) 
+	    {
+		TRACE_ERR("open fail\n");
+                printf("Failed to open file\n");
+                free(args->buf);
+                free(args);
+                return -1;
+             }
+	    check_process_thread((void *)args);
+            wifi_connected_state = WIFI_STATE_CONNECTING;
         }
         /* Disconnect command */
         else if(WIFI_CONTROL_DISCONNECT == app_custom_service_wifi_control[0])
         {
             /* To disconnect from Wi-Fi access point via Wi-Fi interface */
             TRACE_LOG("WIFI_CONTROL_DISCONNECT\n");
-            system("bash wlan_remove_network.sh");
+            int result = system("bash wlan_remove_network.sh");
+            if (result == 0)
+            {
+                TRACE_LOG("Remove_network is done.\n");
+            }
             sync_wifi_state(WIFI_STATE_DISCONNECTED);
         }
         /* Scan command */
@@ -998,13 +1059,8 @@ static wiced_bt_gatt_status_t le_app_write_handler(uint16_t conn_id,
                 gatt_status = WICED_BT_GATT_ERROR;
                 break;
             }
-            if(!is_process_ok(buf, SCAN_BUFFER_LENGTH, fp))
-            {
-                TRACE_ERR("Wi-Fi Scan status is not OK\n");
-                gatt_status = WICED_BT_GATT_ERROR;
-                pclose(fp);
-                break;
-            }
+	    thread_args_t *args = malloc(sizeof(thread_args_t));
+	    args->buf = malloc(BUFFER_SIZE);  // Allocate memory for the buffer
             pclose(fp);
 
             /* Get scan results cur_buf */
@@ -1086,9 +1142,11 @@ static wiced_bt_gatt_status_t le_app_write_handler(uint16_t conn_id,
                 TRACE_ERR("Failed to run command connect\n" );
                 gatt_status = WICED_BT_GATT_ERROR;
                 break;
-            }
-            if(!is_process_ok(buf, SCAN_BUFFER_LENGTH, fp))
-            {
+	    }
+            thread_args_t *args = malloc(sizeof(thread_args_t));
+            args->buf = malloc(BUFFER_SIZE);  // Allocate memory for the buffer
+	    if (check_process_thread((void *)args) == NULL)
+	    {
                 TRACE_ERR("Wi-Fi connect command result is not \"OK\", kindly check your Wi-Fi information, especially the length of PASSWORD.\n");
                 gatt_status = WICED_BT_GATT_ERROR;
                 sync_wifi_state(WIFI_STATE_DISCONNECTED);
@@ -1117,8 +1175,8 @@ static wiced_bt_gatt_status_t le_app_write_handler(uint16_t conn_id,
         gatt_status = WICED_BT_GATT_INVALID_HANDLE;
         break;
     }
-
     return (gatt_status);
+
 }
 
 /*******************************************************************************
@@ -1297,9 +1355,11 @@ static wiced_bt_gatt_status_t le_app_server_handler (wiced_bt_gatt_attribute_req
         case GATT_REQ_WRITE:
         case GATT_CMD_WRITE:
         case GATT_CMD_SIGNED_WRITE:
+
              gatt_status = le_app_write_handler(p_attr_req->conn_id, p_attr_req->opcode,
                                            &p_attr_req->data.write_req,
                                            p_attr_req->len_requested );
+	     TRACE_LOG("gatt_status:%d", gatt_status);
             if ( (p_attr_req->opcode == GATT_REQ_WRITE) &&  (gatt_status == WICED_BT_GATT_SUCCESS))
             {
                 wiced_bt_gatt_write_req_t   *p_write_request = &p_attr_req->data.write_req;

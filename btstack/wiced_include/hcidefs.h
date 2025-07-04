@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2023, Cypress Semiconductor Corporation or
+ * Copyright 2019-2024, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -43,18 +43,18 @@
 /*
 **  Definitions for HCI protocol versions
 */
-#define HCI_PROTO_VERSION     0x01      /* Version for BT spec 1.1          */
-#define HCI_PROTO_VERSION_1_2 0x02      /* Version for BT spec 1.2          */
-#define HCI_PROTO_VERSION_2_0 0x03      /* Version for BT spec 2.0          */
-#define HCI_PROTO_VERSION_2_1 0x04      /* Version for BT spec 2.1 [Lisbon] */
-#define HCI_PROTO_VERSION_3_0 0x05      /* Version for BT spec 3.0          */
-#define HCI_PROTO_VERSION_4_0 0x06      /* Version for BT spec 4.0 [LE]     */
-#define HCI_PROTO_VERSION_4_1 0x07      /* Version for BT spec 4.1          */
-#define HCI_PROTO_VERSION_4_2 0x08      /* Version for BT spec 4.2          */
-#define HCI_PROTO_VERSION_5_0 0x09      /* Version for BT spec 5.0          */
-#define HCI_PROTO_VERSION_5_1 0x0A      /* Version for BT spec 5.1          */
-#define HCI_PROTO_VERSION_5_2 0x0B      /* Version for BT spec 5.2          */
-#define HCI_PROTO_VERSION_5_3 0x0C      /* Version for BT spec 5.3          */
+#define HCI_PROTO_VERSION     0x01      /* Version for Bluetooth spec 1.1          */
+#define HCI_PROTO_VERSION_1_2 0x02      /* Version for Bluetooth spec 1.2          */
+#define HCI_PROTO_VERSION_2_0 0x03      /* Version for Bluetooth spec 2.0          */
+#define HCI_PROTO_VERSION_2_1 0x04      /* Version for Bluetooth spec 2.1 [Lisbon] */
+#define HCI_PROTO_VERSION_3_0 0x05      /* Version for Bluetooth spec 3.0          */
+#define HCI_PROTO_VERSION_4_0 0x06      /* Version for Bluetooth spec 4.0 [LE]     */
+#define HCI_PROTO_VERSION_4_1 0x07      /* Version for Bluetooth spec 4.1          */
+#define HCI_PROTO_VERSION_4_2 0x08      /* Version for Bluetooth spec 4.2          */
+#define HCI_PROTO_VERSION_5_0 0x09      /* Version for Bluetooth spec 5.0          */
+#define HCI_PROTO_VERSION_5_1 0x0A      /* Version for Bluetooth spec 5.1          */
+#define HCI_PROTO_VERSION_5_2 0x0B      /* Version for Bluetooth spec 5.2          */
+#define HCI_PROTO_VERSION_5_3 0x0C      /* Version for Bluetooth spec 5.3          */
 
 /*
 **  Definitions for HCI groups
@@ -343,9 +343,9 @@
 #define HCI_VSC_MULTI_AV_HANDLE         0x0AAA
 #define HCI_VSC_BURST_MODE_HANDLE       0x0BBB
 
-/* BLE HCI */
+/* LE HCI */
 #define HCI_GRP_BLE_CMDS                (0x08 << 10) /* 0x2000*/
-/* Commands of BLE Controller setup and configuration */
+/* Commands of LE Controller setup and configuration */
 #define HCI_BLE_SET_EVENT_MASK          (0x0001 | HCI_GRP_BLE_CMDS) /* 0x2001 */
 #define HCI_BLE_READ_BUFFER_SIZE        (0x0002 | HCI_GRP_BLE_CMDS) /* 0x2002 */
 #define HCI_BLE_READ_LOCAL_SPT_FEAT (0x0003 | HCI_GRP_BLE_CMDS) /* 0x2003 */
@@ -435,7 +435,8 @@
 #define HCI_BLE_SET_PAWR_SUBEVENT_IND_DATA  (0x0082 | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_SET_PAWR_SUBEVENT_RSP_DATA  (0x0083 | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_SET_PAWR_SYNC_SUBEVENT      (0x0084 | HCI_GRP_BLE_CMDS)
-#define HCI_BLE_SET_PAWR_PARAMS             (0x0086 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_SET_PERIODIC_ADV_PARAMS_V2  (0x0086 | HCI_GRP_BLE_CMDS)
+
 
 /* LE ISOC */
 #define HCI_BLE_ISOC_READ_TX_SYNC           (0x0061 | HCI_GRP_BLE_CMDS)
@@ -456,6 +457,8 @@
 #define HCI_BLE_ISOC_SETUP_DATA_PATH        (0x006E | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_ISOC_REMOVE_DATA_PATH       (0x006F | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_SET_HOST_FEATURE            (0x0074 | HCI_GRP_BLE_CMDS)
+#define HCI_CONFIGURE_DATA_PATH             (0X083 | HCI_GRP_HOST_CONT_BASEBAND_CMDS)
+
 
 #define HCI_LE_ENHANCED_READ_TRANSMIT_POWER_LEVEL           ( 0x76  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_READ_REMOTE_TRANSMIT_POWER_LEVEL             ( 0x77  | HCI_GRP_BLE_CMDS)
@@ -464,15 +467,15 @@
 #define HCI_LE_SET_TRANSMIT_POWER_REPORTING_ENABLE          ( 0x7A  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_TRANSMITTER_TEST_V4                          ( 0x7B  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_DATA_RELATED_ADDRESS_CHANGES             ( 0x7C  | HCI_GRP_BLE_CMDS)
-#define HCI_LE_SET_DEFAULT_SUBRATE                          ( 0x7D  | HCI_GRP_BLE_CMDS)
-#define HCI_LE_SUBRATE_REQUEST                              ( 0x7E  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_DEFAULT_SUBRATE_REQUEST                  ( 0x7D  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_SUBRATE_REQUEST                          ( 0x7E  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_EXTENDED_ADVERTISING_PARAMETERS_V2       ( 0x7F  | HCI_GRP_BLE_CMDS)
 
 
 #define HCI_LE_SET_PERIODIC_ADVERTISING_SUBEVENT_DATA       ( 0x82  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_PERIODIC_ADVERTISING_RESPONSE_DATA       ( 0x83  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_PERIODIC_SYNC_SUBEVENT                   ( 0x84  | HCI_GRP_BLE_CMDS)
-#define HCI_LE_EXTENDED_CREATE_CONNECTION_V5                ( 0x85  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_EXTENDED_CREATE_CONNECTION_V2                ( 0x85  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_PERIODIC_ADVERTISING_PARAMETERS_V2       ( 0x86  | HCI_GRP_BLE_CMDS)
 
 
@@ -500,7 +503,7 @@
 #define HCI_SUPP_LE_STATES_NON_CONN_ADV_OFF           0
 #define HCI_LE_STATES_NON_CONN_ADV_SUPPORTED(x)      ((x)[HCI_SUPP_LE_STATES_NON_CONN_ADV_OFF] & HCI_SUPP_LE_STATES_NON_CONN_ADV_MASK)
 
-/*Scanneable Connectable Adv state  is supported. 0x0000000000000002 */
+/*Scannable Connectable Adv state  is supported. 0x0000000000000002 */
 #define HCI_SUPP_LE_STATES_SCAN_ADV_MASK          0x02
 #define HCI_SUPP_LE_STATESSCAN_ADV_OFF           0
 #define HCI_LE_STATES_SCAN_ADV_SUPPORTED(x)      ((x)[HCI_SUPP_LE_STATESSCAN_ADV_OFF] & HCI_SUPP_LE_STATES_SCAN_ADV_MASK)
@@ -530,7 +533,7 @@
 #define HCI_SUPP_LE_STATES_ACTIVE_SCAN_OFF           0
 #define HCI_LE_STATES_ACTIVE_SCAN_SUPPORTED(x)      ((x)[HCI_SUPP_LE_STATES_ACTIVE_SCAN_OFF] & HCI_SUPP_LE_STATES_ACTIVE_SCAN_MASK)
 
-/* Initiating state is supported. 0x0000000000000040 (or connection state in master role is also supported) */
+/* Initiating state is supported. 0x0000000000000040 (or connection state in Central Role is also supported) */
 #define HCI_SUPP_LE_STATES_INIT_MASK          0x40
 #define HCI_SUPP_LE_STATES_INIT_OFF           0
 #define HCI_LE_STATES_INIT_SUPPORTED(x)      ((x)[HCI_SUPP_LE_STATES_INIT_OFF] & HCI_SUPP_LE_STATES_INIT_MASK)
@@ -817,12 +820,15 @@
 #define HCI_BLE_ISOC_BIG_SYNC_LOST_EVT              0x1E
 #define HCI_BLE_ISOC_PEER_SCA_COMPLETE_EVT          0x1F
 #define HCI_BLE_BIGINFO_ADV_REPORT_EVT              0x22
+#define HCI_BLE_SUBRATE_CHANGE_EVT                  0x23
 
 /* PAWR */
 #define HCI_BLE_PAWR_SYNC_ESTABLISHED_EVT           0x24
 #define HCI_BLE_PAWR_IND_REPORT_EVT                 0x25
 #define HCI_BLE_PAWR_SUBEVENT_DATA_REQ_EVT          0x27
 #define HCI_BLE_PAWR_RSP_REPORT_EVT                 0x28
+#define HCI_BLE_ENHANCED_CONN_COMPLETE_V2_EVT       0x29
+
 
 /* ConnectionLess Broadcast events */
 #define HCI_SYNC_TRAIN_COMP_EVT             0x4F
@@ -1064,14 +1070,14 @@
     33     LE BIGInfo Advertising Report event
 */
 #if BTM_BLE_PRIVACY_SPT == TRUE
-/* BLE event mask */
+/* LE event mask */
 #define HCI_BLE_EVENT_MASK_DEF "\x00\x00\x00\xFA\x7f\x8f\xff\xff"
 #else
 #define HCI_BLE_EVENT_MASK_DEF "\x00\x00\x00\xFA\x7F\x8f\xff\x7f"
 #endif
 
 /*
-** Definitions for packet type masks (BT1.2 and BT2.0 definitions)
+** Definitions for packet type masks (Bluetooth 1.2 and Bluetooth 2.0 definitions)
 */
 #define HCI_PKT_TYPES_MASK_NO_2_DH1         0x0002
 #define HCI_PKT_TYPES_MASK_NO_3_DH1         0x0004
@@ -1120,7 +1126,7 @@
                                               |  HCI_PKT_TYPES_MASK_DH5)) != 0))
 
 /*
-** Definitions for eSCO packet type masks (BT1.2 and BT2.0 definitions)
+** Definitions for eSCO packet type masks (Bluetooth 1.2 and Bluetooth 2.0 definitions)
 */
 #define HCI_ESCO_PKT_TYPES_MASK_HV1         0x0001
 #define HCI_ESCO_PKT_TYPES_MASK_HV2         0x0002
@@ -1401,7 +1407,7 @@
 #define HCI_A_LAW_SUPPORTED(x)      (((x) & HCI_AIR_CODING_FORMAT_MASK) == HCI_AIR_CODING_FORMAT_A_LAW)
 #define HCI_TRANSPNT_SUPPORTED(x)   (((x) & HCI_AIR_CODING_FORMAT_MASK) == HCI_AIR_CODING_FORMAT_TRANSPNT)
 
-/* Coding Formats (BT 4.1 or later Assigned numbers) */
+/* Coding Formats (Bluetooth 4.1 or later Assigned numbers) */
 #define HCI_CODING_FORMAT_ULAW      ((uint8_t) 0x00)  /* u-Law log    */
 #define HCI_CODING_FORMAT_ALAW      ((uint8_t) 0x01)  /* A-Law log    */
 #define HCI_CODING_FORMAT_CVSD      ((uint8_t) 0x02)  /* CVSD         */
@@ -1410,14 +1416,14 @@
 #define HCI_CODING_FORMAT_MSBC      ((uint8_t) 0x05)  /* MSBC PCM   */
 #define HCI_CODING_FORMAT_VS        ((uint8_t) 0xFF)  /* Specifies VSC used */
 
-/* PCM Data Formats (BT 4.1 or later Assigned numbers) */
+/* PCM Data Formats (Bluetooth 4.1 or later Assigned numbers) */
 #define HCI_PCM_DATA_FORMAT_NA      ((uint8_t) 0x00)  /* N/A to coding format in use */
 #define HCI_PCM_DATA_FORMAT_1_COMP  ((uint8_t) 0x01)  /* 1's complement   */
 #define HCI_PCM_DATA_FORMAT_2_COMP  ((uint8_t) 0x02)  /* 2's complement   */
 #define HCI_PCM_DATA_FORMAT_SIGN    ((uint8_t) 0x03)  /* Sign-magnitude   */
 #define HCI_PCM_DATA_FORMAT_UNSIGN  ((uint8_t) 0x04)  /* Unsigned         */
 
-/* Data Path (BT 4.1 or later Assigned numbers) */
+/* Data Path (Bluetooth 4.1 or later Assigned numbers) */
 #define HCI_DATA_PATH_HCI           ((uint8_t) 0x00)  /* HCI-0, 0x01-0xFE (PCM Chan) */
 #define HCI_DATA_PATH_TEST           ((uint8_t) 0xFF)  /* 0xFF-Audio Test */
 
@@ -2104,8 +2110,8 @@ typedef struct
 #define HCI_LE_FEATURE_PERIODIC_ADV_SYNC_RX_BIT_POS         25      /**< Periodic Advertising Sync Transfer -Recipient */
 #define HCI_LE_FEATURE_SLEEP_CLK_ACCURACY_UPDATE_BIT_POS    26      /**< Sleep Clock Accuracy Updates */
 #define HCI_LE_FEATURE_RMT_PUB_KEY_VALIDATE_BIT_POS         27      /**< Remote Public Key Validation */
-#define HCI_LE_FEATURE_CIS_CENTRAL_BIT_POS                  28      /**< Connected Isochronous Stream – Central */
-#define HCI_LE_FEATURE_CIS_PERIPHERAL_BIT_POS               29      /**< Connected Isochronous Stream – Peripheral */
+#define HCI_LE_FEATURE_CIS_CENTRAL_BIT_POS                  28      /**< Connected Isochronous Stream - Central */
+#define HCI_LE_FEATURE_CIS_PERIPHERAL_BIT_POS               29      /**< Connected Isochronous Stream - Peripheral */
 #define HCI_LE_FEATURE_ISOC_BROADCASTER_BIT_POS             30      /**< Isochronous Broadcaster */
 #define HCI_LE_FEATURE_SYNC_RX_BIT_POS                      31      /**< Synchronized Receiver */
 #define HCI_LE_FEATURE_ISOC_CHNL_BIT_POS                    32      /**< Isochronous Channels (Host Support) */
@@ -2199,6 +2205,17 @@ typedef uint8_t wiced_bt_ble_feature_bit_t; /**< LE supported feature bits */
 #define HCI_LE_FEATURE_PERIODIC_ADVERTISING_OFF         1
 #define HCI_LE_PERIODIC_ADVERTISING_SUPPORTED(x) ((x)[ HCI_LE_FEATURE_PERIODIC_ADVERTISING_OFF] & HCI_LE_FEATURE_PERIODIC_ADVERTISING_MASK)
 
+/* LE Periodic Advertising with Responses -Advertiser bit 43 */
+#define HCI_LE_FEATURE_PAWR_ADVERTISER_MASK        0x08
+#define HCI_LE_FEATURE_PAWR_ADVERTISER_OFF         5
+#define HCI_LE_FEATURE_PAWR_ADVERTISER_SUPPORTED(x) ((x)[ HCI_LE_FEATURE_PAWR_ADVERTISER_OFF] & HCI_LE_FEATURE_PAWR_ADVERTISER_MASK)
+
+/* LE Periodic Advertising with Responses -Scanner bit 44 */
+#define HCI_LE_FEATURE_PAWR_SCANNER_MASK        0x10
+#define HCI_LE_FEATURE_PAWR_SCANNER_OFF         5
+#define HCI_LE_FEATURE_PAWR_SCANNER_SUPPORTED(x) ((x)[ HCI_LE_FEATURE_PAWR_SCANNER_OFF] & HCI_LE_FEATURE_PAWR_SCANNER_MASK)
+
+
 /* Connected Isochronous Stream: bit 28 and 29 */
 #define HCI_LE_FEATURE_ISOC_CHANNELS_MASK        0x30
 #define HCI_LE_FEATURE_ISOC_CHANNELS_OFF         3
@@ -2218,11 +2235,23 @@ typedef uint8_t wiced_bt_ble_feature_bit_t; /**< LE supported feature bits */
 /* Minimum Number of Used Channels Procedure feature: bit 16*/
 //Todo
 
+/* LE Channel Classification: bit 39 */
+#define HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_MASK (0x80)
+#define HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_OFF 4
+#define HCI_LE_FEATURE_CHANNEL_CLASSIFICATION(x)                                                                 \
+    ((x)[HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_OFF] & HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_MASK)
+
 /* LE Advertising Coding Selection: bit 40 */
 #define HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_MASK (1)
 #define HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_OFF 5
 #define HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION(x)                                                                              \
     ((x)[HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_OFF] & HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_MASK)
+
+/* LE Connection Subrating : bit 37 */
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_MASK (0x20)
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_OFF  (4)
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_SUPPORTED(x)                         \
+    ((x)[HCI_LE_FEATURE_CONNECTION_SUBRATING_OFF] & HCI_LE_FEATURE_CONNECTION_SUBRATING_MASK)
 
 /*
 **   Local Supported Commands encoding
@@ -3185,6 +3214,19 @@ typedef uint8_t wiced_bt_ble_feature_bit_t; /**< LE supported feature bits */
 #define HCI_SUPP_COMMANDS_LE_RC_CONN_PARAM_UPD_NEG_RPY_OFF           33
 #define HCI_LE_RC_CONN_PARAM_UPD_NEG_RPY_SUPPORTED(x)      ((x)[HCI_SUPP_COMMANDS_LE_RC_CONN_PARAM_UPD_NEG_RPY_OFF] & HCI_SUPP_COMMANDS_RLE_RC_CONN_PARAM_UPD_NEG_RPY_MASK)
 
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_MASK 0x80
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_OFF 37
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_SUPPORTED(x)   ((x)[HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_OFF] & HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_MASK)
+
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_MASK 0x01
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_OFF 47
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_SUPPORTED(x)   ((x)[HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_OFF] & HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_MASK)
+
+#define HCI_SUPP_COMMANDS_LE_SET_PERIODIC_ADV_PARAM_V2_MASK          0x02
+#define HCI_SUPP_COMMANDS_LE_SET_PERIODIC_ADV_PARAM_V2_OFF           47
+#define HCI_LE_COMMAND_SET_PERIODIC_ADV_PARAM_V2_SUPPORTED(x)      ((x)[HCI_SUPP_COMMANDS_LE_SET_PERIODIC_ADV_PARAM_V2_OFF] & HCI_SUPP_COMMANDS_LE_SET_PERIODIC_ADV_PARAM_V2_MASK)
+
+
 #if defined(MPAF_ZIGBEE)
 #define HCI_BRCM_I15DOT4_COMMAND            (0x0177 | HCI_GRP_VENDOR_SPECIFIC)
 #endif
@@ -3262,3 +3304,6 @@ Commands of HCI_GRP_VENDOR_SPECIFIC group for WIDCOMM SW LM Simulator
 #define HCI_BRCM_LQ_LE_STATS           (0x00ED | HCI_GRP_VENDOR_SPECIFIC)
 #define HCI_BRCM_LQ_BREDR_STATS        (0x01CE | HCI_GRP_VENDOR_SPECIFIC)
 #endif
+
+/* VSC for setting HID Over ISOC Config (latency) */
+#define HCI_VSC_SET_HOI_CONFIG         (0x01EF | HCI_GRP_VENDOR_SPECIFIC)

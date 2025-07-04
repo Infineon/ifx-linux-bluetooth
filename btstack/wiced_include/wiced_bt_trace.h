@@ -1,5 +1,5 @@
 /*
-* Copyright 2020-2023, Cypress Semiconductor Corporation or
+* Copyright 2020-2024, Cypress Semiconductor Corporation or
 * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
 *
 * This software, including source code, documentation and related
@@ -32,6 +32,9 @@
 */
 // Trace definitions for script application.
 //
+#ifndef __WICED_BT_TRACE__
+#define __WICED_BT_TRACE__
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -52,6 +55,6 @@ extern "C" {
 
 /** Debug trace array macro */
 #define WICED_BT_TRACE_ARRAY(ptr,len,string)     WICED_BT_TRACE("%s %A",string,ptr,len);
-
 /** Error trace array macro */
 #define WICED_BT_TRACE_CRIT     BTU_trace_error
+#endif

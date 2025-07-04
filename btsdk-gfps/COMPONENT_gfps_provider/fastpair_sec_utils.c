@@ -40,6 +40,9 @@
 #include <stdlib.h>
 #include "wiced_bt_trace.h"
 #include "wiced_memory.h"
+#ifdef LINUX_PLATFORM
+#include "wiced_hal_memory.h"
+#endif
 
 //SHA-256 declaration
 typedef struct
@@ -106,7 +109,7 @@ void reverse_input(uint8_t *in, uint16_t in_len, uint8_t *out)
 {
     uint8_t *temp;
     uint16_t i;
-    temp = wiced_memory_allocate(in_len);
+    temp = (uint8_t *)wiced_memory_allocate(in_len);
     if (temp == NULL)
         return;
     memcpy(temp, in, in_len);
@@ -121,7 +124,7 @@ void fastpair_sec_sha256(uint8_t *p_in, uint16_t in_len, uint8_t *p_out)
     sha256_context_t    context;
     uint8_t *p_new_in;
 
-    p_new_in = wiced_memory_allocate(in_len);
+    p_new_in = (uint8_t *)wiced_memory_allocate(in_len);
     if (p_new_in == NULL)
         return;
     reverse_input(p_in, in_len, p_new_in);

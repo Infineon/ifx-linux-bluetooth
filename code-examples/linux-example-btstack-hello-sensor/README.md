@@ -26,6 +26,10 @@ The application demonstrates a LE vendor-specific device. During initialization,
 ## Supported AIROC™ Wi-Fi & Bluetooth® combo chip
 
 - [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
+- [AIROC™ CYW5551x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
+- [AIROC™ CYW54591 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw54591/)
+- [AIROC™ CYW43439 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43439/)
+- [AIROC™ CYW43012 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43012/)
 
 ## Hardware setup
 
@@ -57,17 +61,9 @@ Do the following on the Linux host PC to compile the code example:
    ```
 
 2. Fetch the code example source code from GitHub.
-   ```bash
-   git clone https://github.com/Infineon/linux-example-btstack-hello-sensor
+  ```bash
+   git clone https://github.com/Infineon/ifx-linux-bluetooth.git
    ```
-
-3. Clone the code example dependencies (BTSTACK library and Linux porting layer source code) using the following commands:
-   ```bash
-   git clone https://github.com/Infineon/btstack.git --branch release-v3.6.0
-   git clone https://github.com/Infineon/bluetooth-linux.git --branch release-v1.0.0
-   ```
-
-   Three different directories are created after cloning the code example and its dependencies as shown in the **Figure 2**.
 
    **Figure 2. Code example directory structure**
 
@@ -80,9 +76,8 @@ Do the following on the Linux host PC to compile the code example:
    User can choose appropriate Bluetooth® firmware for particular AIROC™ Wi-Fi & Bluetooth® combo chip from cloned "combo-bluetooth-firmware" directory.
 5. Create the build folder under the code example source folder and build the code example using the following commands:
    ```
-   cd $HOME/Linux_CE/linux-example-btstack-hello-sensor
-   mkdir build && cd build
-   cmake -DCMAKE_C_COMPILER:PATH=<GCC_CROSS_COMPILER> ../ && make
+   cd $HOME/Linux_CE/ifx-linux-bluetooth/code-examples/linux-example-btstack-hello-sensor
+   ./build.sh
    ```
    Where,
    - `GCC_CROSS_COMPILER` is the target cross compiler for GCC (generally */usr/bin/aarch64-linux-gnu-gcc* for ARM64-based targets)

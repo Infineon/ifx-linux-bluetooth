@@ -27,6 +27,43 @@ This code example demonstrates the Bluetooth® Wi-Fi Onboarding using the AIROC�
 - [AIROC™ CYW54591 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw54591/)
 - [AIROC™ CYW43439 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43439/)
 - [AIROC™ CYW43012 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43012/)
+- [AIROC™ CYW4373  Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw4373/)
+
+# Only for RPI kernel 6.6.31
+Prerequirements: 
+   Refer to the PDF: Infineon-CYW5557x-RPi-CM4-v6.6.31-Bring-up-Reference and follow the steps to bring up wlan driver.
+
+Step1:
+   Follow 1 (Page2-10) in the PDF to "Set up USDK platform at First Time".
+   Download the new image into SD card on "Ubuntu 22.04" using Raspberry Pi Imager v1.8.5.
+   
+   Imager File: https://iot-webserver.aus.cypress.com/projects/wlan_builds/release/rpi-release-fmac/v6.6.31-rpi-2024_1108_v6.6.31/2024.11.07.0/rpi-v6.6.31-customer_patch/kernel/rpi_jaculus_img.img.xz
+
+Step2:
+   Follow 2 (Page11-13) in the PDF to "Bring up FMAC"
+
+Step3: (After cloning the code example and its dependencies in the "Using the code example" section below)
+   Because the newest kernel version(6.6.31) has to use the customized Wifi wpa_supplicant and wpa_cli, please update the new software package.
+   Put the wpa_supplicant and wpa_cli on the $HOME/Linux_CE/bt-linux/code-examples/linux-example-btstack-wifi-onboarding.
+
+```bash
+   cd $HOME/Verification
+   cp wpa_supplicant $HOME/Linux_CE/bt-linux/code-examples/linux-example-btstack-wifi-onboarding
+   cp wpa_cli $HOME/Linux_CE/bt-linux/code-examples/linux-example-btstack-wifi-onboarding
+```
+
+Step4: (After the section of "Take SSH console of target platform.")
+```bash
+   cd $HOME/Linux_CE/bt-linux/code-examples/linux-example-btstack-wifi-onboarding
+   scp Wi-Fi_interface_RPI_6.6.31/* <TARGET_USER>@<TARGET_IP>:<TARGET_PATH>/
+```
+
+   Where,
+   - `TARGET_USER` is the user name of the target platform.
+   - `TARGET_IP` is the IP address of the target platform.
+   - `TARGET_PATH` is the path of the target platform.
+
+
 
 ## Hardware setup
 
@@ -91,41 +128,11 @@ Set up a cross compiler according to the target platform along with CMake on the
 
 ## Using the code example
 
-Do the following on the Linux host PC to compile the code example:
-
-1. Create a directory under `$HOME` on the Linux host PC and switch to the created directory. Use the following commands, for example:
-   ```bash
-   mkdir $HOME/Linux_CE
-   cd $HOME/Linux_CE
-   ```
-   **Note:** Replace *Linux_CE* with a directory of your choice.
-
-2. Fetch the code example source code using the following command:
-   ```bash
-   git clone https://github.com/Infineon/linux-example-btstack-wifi-onboarding.git
-   ```
-
-3. Clone the code example dependencies (BTSTACK library and Linux porting layer source code) using the following commands:
-   ```bash
-   git clone https://github.com/Infineon/btstack.git -b release-v3.6.1
-   git clone https://github.com/Infineon/bluetooth-linux.git -b release-v2.0.0
-   ```
-
-   Three different directories are created after cloning the code example and its dependencies - see the following example:
-
    **Figure 2. Code example directory structure**
 
    ![](images/directory_structure.png)
-
-4. Clone the Bluetooth® firmware using following command.
-   ```bash
-   git clone https://github.com/Infineon/combo-bluetooth-firmware.git
    ```
-   User can choose appropriate Bluetooth® firmware for particular AIROC™ Wi-Fi & Bluetooth® combo chip from cloned "combo-bluetooth-firmware" directory.
-
-5. Create the build folder under the code example source folder and build the code example using the following commands:
-   ```
-   cd $HOME/Linux_CE/linux-example-btstack-wifi-onboarding
+   cd $HOME/Linux_CE/bt-linux/code-examples/linux-example-btstack-wifi-onboarding
    mkdir build && cd build
    cmake -DCMAKE_C_COMPILER:PATH=<GCC_CROSS_COMPILER> ../ && make
    ```
@@ -134,7 +141,7 @@ Do the following on the Linux host PC to compile the code example:
 
    The code example executable is generated under the *build* folder with the same name of code example.
 
-   For example, in this project, the "linux-example-btstack-wifi-onboarding" executable is generated at */home/$USER/Linux_CE/linux-example-btstack-wifi-onboarding/build*.
+   For example, in this project, the "linux-example-btstack-wifi-onboarding" executable is generated at */home/$USER/Linux_CE/bt-linux/code-examples/linux-example-btstack-wifi-onboarding*.
 
 # Operation
 
@@ -148,9 +155,9 @@ Do the following on the Linux host PC to compile the code example:
 
 1. Copy the code example executable and AIROC™ BTSTACK library from the Linux host PC to the target platform. For an example, use the following commands [SCP](https://help.ubuntu.com/community/SSH/TransferFiles):
    ```bash
-   cd $HOME/Linux_CE/linux-example-btstack-wifi-onboarding/build
+   cd $HOME/Linux_CE/bt-linux/code-examples/linux-example-btstack-wifi-onboarding
    scp linux-example-btstack-wifi-onboarding <TARGET_USER>@<TARGET_IP>:<TARGET_PATH>/.
-   cd $HOME/Linux_CE/linuxbt/btstack/stack/COMPONENT_WICED_DUALMODE/COMPONENT_ARMv8_LINUX/COMPONENT_GCC
+   cd $HOME/Linux_CE/bt-linux/btstack/stack/COMPONENT_WICED_DUALMODE/COMPONENT_ARMv8_LINUX/COMPONENT_GCC
    scp libbtstack.so <TARGET_USER>@<TARGET_IP>:<TARGET_PATH>/.
    scp <FW_FILE.hcd> <TARGET_USER>@<TARGET_IP>:<TARGET_PATH>/.
    ```
@@ -166,12 +173,13 @@ Do the following on the Linux host PC to compile the code example:
    ```
 
 3. Copy scripts under */linux-example-btstack-wifi-onboarding/Wi-Fi_interface_<TARGET_PLATFORM>*.
+   If the RPI verison is 6.6.31, please ignore this copy part and follow the above section(Only for RPI kernel 6.6.31) to copy scripts!!
    ```bash
-   cd $HOME/Linux_CE/linux-example-btstack-wifi-onboarding/
+   cd $HOME/Linux_CE/bt-linux/code-examples/linux-example-btstack-wifi-onboarding
    scp Wi-Fi_interface_<TARGET_PLATFORM>/* <TARGET_USER>@<TARGET_IP>:<TARGET_PATH>/
    ```
    Where,
-   - `TARGET_PLATFORM` is "RPI" for RPICM4 and "iMX8" for iMX8Nano
+   - `TARGET_PLATFORM` is "RPI" for RPICM4 and "iMX8" for iMX8Nano 
    - `TARGET_USER` is the user name of the target platform.
    - `TARGET_IP` is the IP address of the target platform.
    - `TARGET_PATH` is the path of the target platform.
@@ -464,9 +472,8 @@ This section explains the Bluetooth® Configurator software resources and their 
 
 Resources  | Links
 -----------|----------------------------------
-Device documentation | [AIROC™ CYW5557x Wi-Fi 6E tri-band Wi-Fi and Bluetooth® 5.2 SoC](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/cyw5557x/) <br> [AIROC™ CYW54591 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw54591/) <br> [AIROC™ CYW43439 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43439/) <br> [AIROC™ CYW43012 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43012/)
-Libraries and middleware | [AIROC™ BTSTACK library](https://github.com/Infineon/btstack/tree/release-v3.6.1) <br> [BT Audio profile layer](https://github.com/Infineon/bt-audio-profiles/tree/release-v1.0.0) <br> [Linux porting layer source code](https://github.com/Infineon/bluetooth-linux)
-
+Device documentation | [AIROC™ CYW5557x Wi-Fi 6E tri-band Wi-Fi and Bluetooth® 5.2 SoC](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/cyw5557x/) <br> [AIROC™ CYW54591 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw54591/) <br> [AIROC™ CYW43439 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43439/) <br> [AIROC™ CYW43012 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43012/) <br> [AIROC™ CYW4373 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw4373/)
+Libraries and middleware | [AIROC™ BTSTACK library](https://github.com/Infineon/btstack/tree/release-v3.8.2) <br> [BT Audio profile layer](https://github.com/Infineon/bt-audio-profiles/tree/release-v1.0.0) <br> [Linux porting layer source code](https://github.com/Infineon/bluetooth-linux)
 
 ## Other resources
 

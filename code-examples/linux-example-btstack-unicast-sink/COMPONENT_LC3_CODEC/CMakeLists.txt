@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 
 #set the project name
 project(lc3_codec)
-set (BASE_LIB_DIR_PATH          ${CMAKE_CURRENT_SOURCE_DIR}/../../../)
-set (BTSTACK_INCLUDE            ${BASE_LIB_DIR_PATH}/btstack/wiced_include)
-set (PORTING_LAYER_INCLUDE      ${BASE_LIB_DIR_PATH}/bluetooth-linux)
+set (BASE_LIB_DIR_PATH          ${CMAKE_CURRENT_SOURCE_DIR}/../../../../)
+set (BTSTACK_INCLUDE            ${BASE_LIB_DIR_PATH}/bt-linux/btstack/wiced_include)
+set (PORTING_LAYER_INCLUDE      ${BASE_LIB_DIR_PATH}/bt-linux/bluetooth-linux)
 
 include_directories(${BTSTACK_INCLUDE})
 include_directories(${PORTING_LAYER_INCLUDE})

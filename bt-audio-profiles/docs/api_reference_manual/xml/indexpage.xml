@@ -17,6 +17,16 @@
 </para>
 </listitem></itemizedlist>
 </para>
+<para><heading level="2">AVRCP</heading>
+</para>
+<para><itemizedlist>
+<listitem><para>Audio/Video remote control profile library allows Bluetooth enabled device to control audio streaming remotely, it supports two roles<orderedlist>
+<listitem><para>Controller (CT) – It is a device that initiates a transaction by sending a command frame to a target. Examples for CT are a personal computer, a PDA, a mobile phone, a remote controller or an AV device (such as an in car system, headphone, player/recorder, timer, tuner, monitor etc.).</para>
+</listitem><listitem><para>Target (TG) – Target device receives a command frame and accordingly generates a response frame. Examples for TG are an audio player/recorder, a video player/recorder, a TV, a tuner, an amplifier or a headphone.</para>
+</listitem></orderedlist>
+</para>
+</listitem></itemizedlist>
+</para>
 <para><heading level="2">HFP</heading>
 </para>
 <para><itemizedlist>

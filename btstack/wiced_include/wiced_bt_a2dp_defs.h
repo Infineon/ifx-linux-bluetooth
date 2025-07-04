@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2023, Cypress Semiconductor Corporation or
+ * Copyright 2016-2024, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -31,7 +31,9 @@
  * so agrees to indemnify Cypress against all liability.
  */
 
-#pragma once
+#ifndef __WICED_BT_A2DP_DEFS_H__
+#define __WICED_BT_A2DP_DEFS_H__
+
 
 #ifdef __cplusplus
 extern "C"
@@ -107,3 +109,5 @@ typedef struct
 #ifdef __cplusplus
 } /*extern "C" */
 #endif
+
+#endif //__WICED_BT_A2DP_DEFS_H__

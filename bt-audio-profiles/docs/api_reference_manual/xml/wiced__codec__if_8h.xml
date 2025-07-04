@@ -8,9 +8,6 @@
       <node id="44">
         <label>stdint.h</label>
       </node>
-      <node id="45">
-        <label>wiced_result.h</label>
-      </node>
       <node id="43">
         <label>wiced_codec_if.h</label>
         <link refid="wiced__codec__if_8h"/>
@@ -18,6 +15,9 @@
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
+      </node>
+      <node id="45">
+        <label>wiced_result.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="structwiced__codec__data__transfer__cb" prot="public">wiced_codec_data_transfer_cb</innerclass>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="44" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="44" bodyend="47"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="44" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="44" bodyend="47"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__codec__if_8h_1a69798d040ff145de874118e4c038e238" prot="public" static="no" strong="no">
         <type></type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="52" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="52" bodyend="58"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="52" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="52" bodyend="58"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__codec__if_8h_1a181075134ee83f0d27ed334bb3a43bc7" prot="public" static="no" strong="no">
         <type></type>
@@ -151,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="60" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="60" bodyend="66"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="60" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="60" bodyend="66"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="73" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="73" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="73" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1a2c04040afc9241dfba7a9723291476e1" prot="public" static="no">
         <type>wiced_codec_status_t(*</type>
@@ -207,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="109" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="109" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="109" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1a75cfd8b460991f41fec3830d72dd4192" prot="public" static="no">
         <type>wiced_codec_status_t(*</type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="118" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="118" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="118" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1af842bd3884920cf4c18769dcc156f912" prot="public" static="no">
         <type>void(*</type>
@@ -258,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="133" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="133" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="133" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1a0118008728f3703f07558f9097f5e091" prot="public" static="no">
         <type>wiced_codec_status_t(*</type>
@@ -271,7 +271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="145" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="145" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="145" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1aeb444e29e2b6fe4761ea83d8b2e5eb66" prot="public" static="no">
         <type>wiced_codec_status_t(*</type>
@@ -288,7 +288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="159" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="159" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="159" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1a1ceedeff341e8644a73f10aff67385ab" prot="public" static="no">
         <type>wiced_codec_status_t(*</type>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="174" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="174" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="174" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1a9323b820e93cc3ab786a508d5012ddfd" prot="public" static="no">
         <type>unsigned short(*</type>
@@ -319,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="188" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="188" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="188" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1a1f3a4ed509d2a07ec07cbabbb047a2ef" prot="public" static="no">
         <type>unsigned short(*</type>
@@ -332,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="206" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="206" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="206" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1a506d4e0121c74d153f23dc7c68ff8520" prot="public" static="no">
         <type>unsigned short(*</type>
@@ -345,7 +345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="220" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="220" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="220" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1a0fbc1e9d13e2e14a5444264843e6ffec" prot="public" static="no">
         <type>int32_t(*</type>
@@ -362,7 +362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="227" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="227" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="227" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="227" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__codec__if_8h_1a05aca11fd196365b681cbb7a42b3aee4" prot="public" static="no">
         <type>struct codec_interface *</type>
@@ -375,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="338" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="338" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="338" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" bodystart="338" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -394,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="353" column="1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h" line="353" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -546,6 +546,6 @@
 <codeline lineno="357"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h"/>
+    <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_codec_if.h"/>
   </compounddef>
 </doxygen>

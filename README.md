@@ -1,10 +1,10 @@
 # Linux Bluetooth® SDK package 
 
-This contains all the required files (including AIROC™ Bluetooth® stack for ARMv8 Linux, BT porting layer, sample code examples with profiles) to evaluate and test Bluetooth® Classic and Low Energy on AIROC™ combo chip (CYW4373, CYW43439, CYW5557X).
-Also CYW5557X capable of LE Audio in hosted mode.
+This contains all the required files (including AIROC™ Bluetooth® stack for ARMv8 Linux, BT porting layer, sample code examples with profiles) to evaluate and test Bluetooth® Classic and Low Energy on AIROC™ combo chip (CYW4373, CYW43439, CYW5557X, CYW5551X).
+Also CYW5557X and CYW5551X are capable of LE Audio in hosted mode.
 
 # Build, Download and running the application
-Download the zip file, extract and run the BT_Linux_CE.sh with AIROC™ combo chip (CYW4373/CYW43439/CYW5557X) as argument to compile, build and run the required application.
+Download the zip file, extract and run the BT_Linux_CE.sh with AIROC™ combo chip (CYW4373/CYW43439/CYW5557X/CYW5551X) as argument to compile, build and run the required application.
 
 Example:
 Run "sudo ./BT_Linux_CE.sh CYW5557X" on RPI CM4 host machine and select the application from the menu:
@@ -14,7 +14,7 @@ For example, to compile, build and run Hello Sensor application select option 1 
 ![](images/code_build.png)
 
 Please refer individual code example Readme.md  files for experimenting with applications
-	
+
 Other code examples can be found here, that can be ported to the SDK (currently not tested as part of this release)
 
 https://github.com/Infineon/linux-example-btstack-a2dp-source
@@ -32,3 +32,16 @@ https://github.com/Infineon/linux-example-btstack-bas
 https://github.com/Infineon/linux-example-btstack-alert-client
 
 https://github.com/Infineon/linux-example-btstack-alert-server
+
+# Trouble shooting
+Build failed under Infineon Network
+
+If you are facing build error under Infineon Network
+
+1. sudo systemctl start NetworkManager
+2. Connect with mobile USB hotspot tethering
+3. run the CE command
+4. sudo ./BT_Linux_CE.sh CYW5551X 
+5. Once cmake is install and build success
+6. Exit app
+7. sudo systemctl stop NetworkManager

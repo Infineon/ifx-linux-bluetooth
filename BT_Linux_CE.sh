@@ -6,22 +6,35 @@ app_baudrate=3000000
 fw_baudrate=115200
 bd_addr=112233445566
 is_le_supported_chip=1
-fw_file=CYW55560A1_001.002.087.0254.0000_Generic_UART_37_4MHz_fcbga_iPA_dLNA_ANT0.hcd
+fw_file=CYW55560A1_001.002.087.0318.0000_Generic_UART_37_4MHz_fcbga_iPA_sLNA_ANT0.hcd
+cyw43022=0
+cyw5551x=0
+
 if [ "$1" = "CYW4373" ]; then
     is_le_supported_chip=0
-    fw_file=CYW4373A0_001.001.025.0118.0000_Generic_UART_37_4MHz_wlbga_BU_dLNA.hcd
+    fw_file=CYW4373A0_001.001.025.0130.0000_Generic_UART_37_4MHz_fcbga_BU_sLNA.hcd
 elif [ "$1" = "CYW43439" ]; then
     is_le_supported_chip=0
-    fw_file=CYW4343A2_001.003.016.0063.0000_Generic_UART_26MHz_wlbga_BU_Audio_dl_signed.hcd
+    fw_file=CYW4343A2_001.003.016.0072.0000_Generic_UART_26MHz_wlbga_BU_dl_signed.hcd
 elif [ "$1" = "CYW5557X" ]; then
     is_le_supported_chip=1
-    fw_file=CYW55560A1_001.002.087.0254.0000_Generic_UART_37_4MHz_fcbga_iPA_dLNA_ANT0.hcd
+    fw_file=CYW55560A1_001.002.087.0356.0000_Generic_UART_37_4MHz_fcbga_iPA_sLNA_ANT0.hcd
+elif [ "$1" = "CYW43022" ]; then
+    is_le_supported_chip=0
+    fw_file=CYW43022_003.002.024.0040.0000_Generic_UART_37_4MHz_wlbga_ref3_sLNA_dl_signed.hcd
+    cyw43022=1
+elif [ "$1" = "CYW5551X" ]; then
+    is_le_supported_chip=1
+    fw_file=CYW55500A1_001.002.032.0180.0000_Generic_UART_37_4MHz_wlbga_iPA_sLNA_ANT0.hcd
+    cyw5551x=1
 else
     echo "Unknown Chip ID : $1"
     echo "Valid options:"
     echo "./BT_Linux_CE.sh CYW4373"
     echo "./BT_Linux_CE.sh CYW43439"
+    echo "./BT_Linux_CE.sh CYW43022"
     echo "./BT_Linux_CE.sh CYW5557X"
+    echo "./BT_Linux_CE.sh CYW5551X"
     exit 1
 fi
 sudo apt-get install git cmake gcc-aarch64-linux-gnu build-essential -y
@@ -35,11 +48,11 @@ display_content_full() {
     echo "       3.  Headset"
     echo "       4.  Find Me Target"
     echo "       5.  Wifi-Onboarding"
-    echo "       6.  LE Audio CIS source"
-    echo "       7.  LE Audio CIS sink"
-    echo "       8.  LE Audio BIS Source"
-    echo "       9.  LE Audio BIS Sink"
-
+    echo "       6.  Wake on LE"
+    echo "       7.  LE Audio CIS source"
+    echo "       8.  LE Audio CIS sink"
+    echo "       9.  LE Audio BIS Source"
+    echo "       10.  LE Audio BIS Sink"
 }
 display_content() {
     echo "//=====BT Linux Code Examples=====//"
@@ -48,6 +61,7 @@ display_content() {
     echo "       3.  Headset"
     echo "       4.  Find Me Target"
     echo "       5.  Wifi-Onboarding"
+    echo "       6.  Wake on LE"
 }
 handle_selection() {
     cd $cwd
@@ -56,6 +70,7 @@ handle_selection() {
     is_src=0
     is_br_edr_audio=0
     is_wifi_app=0
+    wakeonle=0
     rm -rf build
     mkdir build
     read -p "Enter your choice: " choice
@@ -83,24 +98,29 @@ handle_selection() {
             is_wifi_app=1
             ;;
         6)
+            echo "Wake on LE"
+            example_code=linux-example-btstack-wakeonle
+            is_le_audio=0
+            wakeonle=1
+            ;;
+        7)
             echo "LE Audio CIS Source"
             example_code=linux-example-btstack-unicast-source
             is_le_audio=1
             is_src=1
            ;;
-        7)
+        8)
             echo "LE Audio CIS Sink"
             example_code=linux-example-btstack-unicast-sink
             is_le_audio=1
             ;;
-        8)
-            
+        9)  
             echo "LE Audio BIS Source"
             example_code=linux-example-btstack-broadcast-source
             is_le_audio=1
             is_src=1
             ;;
-        9)
+        10)
             echo "LE Audio BIS Sink"
             example_code=linux-example-btstack-broadcast-sink
             is_le_audio=1
@@ -116,12 +136,15 @@ handle_selection() {
             echo "Invalid choice. Please try again."
             handle_selection
         fi
+        cd $cwd/..
         if [ -d "liblc3" ]; then
             echo "Skip Cloning Google LC3 as it already exist!"
         else
             echo "Cloning Google LC3"
+            
             git clone https://github.com/google/liblc3 --branch v1.0.3
-        fi
+        fi 
+        cd -
         cd code-examples/$example_code/COMPONENT_LC3_CODEC/google_lc3
         sudo chmod 777 ./build_google_lc3.sh
         ./build_google_lc3.sh
@@ -136,7 +159,15 @@ handle_selection() {
         cp -r $PWD/bt-audio-profiles/sbc/COMPONENT_ARMv8_LINUX/COMPONENT_GCC/libsbc.so $PWD/build
     fi
     if [ $is_wifi_app -eq 1 ]; then
-        cp -r $PWD/code-examples/$example_code/Wi-Fi_interface_RPI $PWD/build 
+        cp -r $PWD/code-examples/$example_code/Wi-Fi_interface_RPI_6.6.31/* $PWD/build/.
+        cp -r /home/utftw/Verification/wpa_cli $PWD/build
+        cp -r /home/utftw/Verification/wpa_supplicant $PWD/build
+        chmod +x /etc/wpa_supplicant/wpa_supplicant.conf	
+        chmod +x $PWD/build/wpa_cli
+        chmod +x $PWD/build/wpa_supplicant
+    fi
+    if [ $wakeonle -eq 1 ]; then
+        cp -r $PWD/code-examples/linux-example-btstack-wakeonle/lib/libwiced_exp.so $PWD/build
     fi
     #Build application
     cd code-examples/$example_code
@@ -155,7 +186,14 @@ handle_selection() {
     echo "===Executing "$example_code"==="
     echo "============================"
     echo "============================"
-    sudo ./$example_code -c $uart_port -b $app_baudrate -r gpiochip0 3 -f $fw_baudrate -p $fw_file -d $bd_addr
+    if [ $cyw43022 -eq 1 ] || [ $cyw5551x -eq 1 ]; then
+        sudo $cwd/cts_pin_control.sh
+    fi
+    if [ $example_code = "linux-example-btstack-wakeonle" ]; then
+        sudo ./$example_code -c $uart_port -b $app_baudrate -r gpiochip0 3 -f $fw_baudrate -n -p $fw_file -d $bd_addr -w gpiochip0 4 -h gpiochip0 12
+    else
+        ./$example_code -c $uart_port -b $app_baudrate -r gpiochip0 3 -f $fw_baudrate -n -p $fw_file -d $bd_addr
+    fi
 }
 
 # Main script

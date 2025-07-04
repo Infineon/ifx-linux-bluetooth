@@ -1,6 +1,6 @@
-# AIROC&trade; CYW5557x: Bluetooth&reg; LE Find Me Target (Linux)
+# AIROC™ BTSTACK: Bluetooth&reg; LE Find Me Target (Linux)
 
-This code example demonstrates Bluetooth&reg; LE Find Me Target using AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip on the Linux platform.
+This code example demonstrates Bluetooth&reg; LE Find Me Target using AIROC™ Wi-Fi & Bluetooth® combo chips on the Linux platform.
 
 ## Requirements
 
@@ -10,7 +10,15 @@ This code example demonstrates Bluetooth&reg; LE Find Me Target using AIROC™ C
   2. IMX8-NANO embeddedartists board
   3. Jetson Xavier NX board
 - AIROC™ BTSTACK library and Linux porting layer source code
-- Associated parts: [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/cyw5557x)
+
+## Supported AIROC™ Wi-Fi & Bluetooth® combo chip
+
+-  [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
+- [AIROC™ CYW5551x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
+- [AIROC™ CYW54591 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-5-802.11ac/cyw54591/)
+- [AIROC™ CYW43439 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43439/)
+- [AIROC™ CYW43012 Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-4-802.11n/cyw43012/)
+
 
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
@@ -61,19 +69,9 @@ Do the following on the Host PC to compile the code example:
    **Note:** Replace *Linux_CE* with a directory of your choice.
 
 2. Fetch the code example source code using the following command:
+   ```bash
+   git clone https://github.com/Infineon/ifx-linux-bluetooth.git
    ```
-   git clone http://devops-git.aus.cypress.com/wpp/ce/linux/linux-example-btstack-findme.git --branch topic/linux_ce_findme_v1.0.0
-   ```
-   <mark> Above link is of internal repo as of now but it needs to be updated with public repo while releasing the code example to customer.
-
-3. Clone the code example dependencies (BTSTACK library and Linux porting layer source code) using the following commands:
-   ```
-   git clone https://gitlab.auc.infineon.com/repo-staging/btstack.git --branch btstack360
-   git clone https://gitlab.intra.infineon.com/repo-staging/bluetooth-linux --branch 3.6.0.12
-   ```
-   <mark> Above link is of internal repo as of now but it needs to be updated with public repo while releasing the code example to customer.
-
-   Three different directories are created after cloning the code example and its dependencies - see the following example:
 
    **Figure 2. Code example directory structure**
 
@@ -81,9 +79,8 @@ Do the following on the Host PC to compile the code example:
 
 4. Create the build folder under the code example source folder and build the code example using the following commands:
    ```
-   cd $HOME/Linux_CE/linux-example-btstack-findme
-   mkdir build && cd build
-   cmake -DCMAKE_C_COMPILER:PATH=<GCC_CROSS_COMPILER> ../ && make
+   cd $HOME/Linux_CE/ifx-linux-bluetooth/code-examples/linux-example-btstack-findme
+   ./build.sh
    ```
    Where,
    - `GCC_CROSS_COMPILER` is the target cross compiler for GCC (generally */usr/bin/aarch64-linux-gnu-gcc* for ARM64-based targets)

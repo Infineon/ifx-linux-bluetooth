@@ -141,7 +141,7 @@ int main(int argc, char* argv[])
     uint8_t btspy_is_tcp_socket = 0;
     pthread_t thid = 0;
 
-        /* Audobaud configuration GPIO bank and pin */
+    /* Autobaud configuration GPIO bank and pin */
     cybt_controller_autobaud_config_t autobaud = {0};
 
     if ( PARSE_ERROR == arg_parser_get_args( argc,
@@ -158,6 +158,9 @@ int main(int argc, char* argv[])
     {
         return EXIT_FAILURE;
     }
+
+    /* Init BTSPY */
+    cy_bt_spy_comm_init(btspy_is_tcp_socket, btspy_inst, peer_ip_addr);
 
     cy_platform_bluetooth_init( fw_patch_file, hci_port, hci_baudrate,patch_baudrate, &gpio_cfg.autobaud_cfg );
 

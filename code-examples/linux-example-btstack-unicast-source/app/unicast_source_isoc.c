@@ -263,7 +263,7 @@ wiced_result_t iso_audio_setup_data_path(uint16_t conn_hdl, uint16_t direction, 
     codec_config.sampleWidthInBits = 16;
 
     // setup ISO data path and LC3 codec for INPUT from controller or OUTPUT to controller
-    if (!wiced_bt_isoc_setup_data_path(conn_hdl, is_cis, data_path_dir, WICED_BLE_ISOC_DPID_HCI, 0)) {
+    if (!wiced_bt_isoc_setup_data_path(conn_hdl, is_cis, data_path_dir, WICED_BLE_ISOC_DPID_HCI, 0, 0, NULL)) {
         return WICED_ERROR;
     }
 

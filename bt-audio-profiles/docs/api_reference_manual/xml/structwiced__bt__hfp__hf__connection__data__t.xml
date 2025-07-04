@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="289" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="289" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="289" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="289" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__hfp__hf__connection__data__t_1aab5c90ae3031eb29238e9ba85c90c64a" prot="public" static="no" mutable="no">
         <type><ref refid="group__wicedbt__hfp_1gace33c1c1188090c4d1ece1ce9123a1c7" kindref="member">wiced_bt_hfp_hf_connection_state_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="290" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="290" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="290" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="290" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__hfp__hf__connection__data__t_1ac636e815273883d0af1a5976e91a4158" prot="public" static="no" mutable="no">
         <type><ref refid="group__wicedbt__hfp_1gaa75ffb28d6cac2b6c831b02849eb0068" kindref="member">wiced_bt_profile_type_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="291" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="291" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="291" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="291" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -52,7 +52,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="288" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="287" bodyend="292"/>
+    <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" line="288" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_hf.h" bodystart="287" bodyend="292"/>
     <listofallmembers>
       <member refid="structwiced__bt__hfp__hf__connection__data__t_1aab5c90ae3031eb29238e9ba85c90c64a" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_connection_data_t</scope><name>conn_state</name></member>
       <member refid="structwiced__bt__hfp__hf__connection__data__t_1ac636e815273883d0af1a5976e91a4158" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_connection_data_t</scope><name>connected_profile</name></member>

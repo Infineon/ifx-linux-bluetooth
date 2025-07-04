@@ -35,7 +35,7 @@ The function includes:
 ## Supported AIROC™ Wi-Fi & Bluetooth® combo chip
 
 - [AIROC™ CYW5557x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
-
+- [AIROC™ CYW5551x Wi-Fi & Bluetooth® combo chip](https://www.infineon.com/cms/en/product/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e-802.11ax/)
 ## Hardware setup
 
 Set up the hardware according to **Figure 1**:
@@ -66,20 +66,9 @@ Do the following on the Linux host PC to compile the code example:
    ```
 
 2. Fetch the code example source code from GitHub.
-   ```bash
-   git clone https://gitlab.intra.infineon.com/tbst/linux_bt_ce/le-audio/linux-example-btstack-unicast-source.git
-
+  ```bash
+   git clone https://github.com/Infineon/ifx-linux-bluetooth.git
    ```
-
-3. Clone the code example dependencies (BTSTACK library and Linux porting layer source code) using the following commands:
-   ```bash
-   git clone https://github.com/Infineon/btstack.git --branch release-v3.7.1
-   git clone https://gitlab.intra.infineon.com/repo-staging/bluetooth-linux.git --branch Hedorah-TC2 
-   git clone https://gitlab.intra.infineon.com/repo-staging/le-audio-profiles-linux.git --branch 1.0.1.3790
-   git clone https://github.com/google/liblc3 --branch v1.0.3
-   ```
-
-   Three different directories are created after cloning the code example and its dependencies as shown in the **Figure 2**.
 
    **Figure 2. Code example directory structure**
 
@@ -94,13 +83,12 @@ Do the following on the Linux host PC to compile the code example:
 5. Create the build folder under the code example source folder and build the code example using the following commands:
    build google lc3 library first
    ```
-   cd $HOME/Linux_CE/linux-example-btstack-unicast-source/COMPONENT_LC3_CODEC/google_lc3
+   cd $HOME/Linux_CE/ifx-linux-bluetooth/code-examples/linux-example-btstack-unicast-source/COMPONENT_LC3_CODEC/google_lc3
    ./build_google_lc3.sh
    ```
    ```
-   cd $HOME/Linux_CE/linux-example-btstack-unicast-source
-   mkdir build && cd build
-   cmake -DCMAKE_C_COMPILER:PATH=<GCC_CROSS_COMPILER> ../ && make
+   cd $HOME/Linux_CE/ifx-linux-bluetooth/code-examples/linux-example-btstack-unicast-source
+   ./build.sh
    ```
    Where,
    - `GCC_CROSS_COMPILER` is the target cross compiler for GCC (generally */usr/bin/aarch64-linux-gnu-gcc* for ARM64-based targets)

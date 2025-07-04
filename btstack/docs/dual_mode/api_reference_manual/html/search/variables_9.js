@@ -7,10 +7,19 @@ var searchData=
   ['immediate_5frepetition_5fcount',['immediate_repetition_count',['../structwiced__bt__ble__biginfo__adv__report__t.html#a60f733503c6680e7b0c8f57953fa747d',1,'wiced_bt_ble_biginfo_adv_report_t']]],
   ['in_5fuse',['in_use',['../structwiced__bt__avdt__sep__info__t.html#af6b6fd8966e7d5d5524f9e8b36b2a5fc',1,'wiced_bt_avdt_sep_info_t']]],
   ['included_5fservice_5ftype',['included_service_type',['../unionwiced__bt__gatt__discovery__data__t.html#ab513b62d6cffb56b3e11c9715986e660',1,'wiced_bt_gatt_discovery_data_t']]],
+  ['ind_5fdata',['ind_data',['../structwiced__bt__ble__pawr__subevent__ind__data__t.html#a1f161de740dc7a5f5dff9dcdeaa77536',1,'wiced_bt_ble_pawr_subevent_ind_data_t']]],
+  ['ind_5fdata_5flength',['ind_data_length',['../structwiced__bt__ble__pawr__subevent__ind__data__t.html#af067a35bc90d06ddc2fe7c54cc1ea285',1,'wiced_bt_ble_pawr_subevent_ind_data_t']]],
   ['inform_5fbattery_5fstatus',['inform_battery_status',['../structwiced__bt__avrc__metadata__cmd__t.html#a8e38e40e532d4fe956c4fce772b77172',1,'wiced_bt_avrc_metadata_cmd_t']]],
   ['inform_5fcharset',['inform_charset',['../structwiced__bt__avrc__metadata__cmd__t.html#aacd667bafcccc5c694729eebf62d9cb3',1,'wiced_bt_avrc_metadata_cmd_t']]],
   ['init_5fkeys',['init_keys',['../structwiced__bt__dev__ble__io__caps__req__t.html#aca827eb0788362f017340effb7613b09',1,'wiced_bt_dev_ble_io_caps_req_t']]],
   ['initiating_5fphys',['initiating_phys',['../structwiced__bt__ble__ext__conn__cfg__t.html#a7ced4554dd87cc10a92daafb5ab0c370',1,'wiced_bt_ble_ext_conn_cfg_t']]],
+  ['input_5fbandwidth',['input_bandwidth',['../structwiced__bt__enh__esco__params__t.html#abc93d7b80a0673fa47ed566789e83074',1,'wiced_bt_enh_esco_params_t']]],
+  ['input_5fcf',['input_cf',['../structwiced__bt__enh__esco__params__t.html#a8d32f008a4d7c98becfa4ed756a05b6d',1,'wiced_bt_enh_esco_params_t']]],
+  ['input_5fcoded_5fdata_5fsize',['input_coded_data_size',['../structwiced__bt__enh__esco__params__t.html#a3c5969caecc4d0b657d01e854e1d91b7',1,'wiced_bt_enh_esco_params_t']]],
+  ['input_5fdata_5fpath',['input_data_path',['../structwiced__bt__enh__esco__params__t.html#a847c1e215c901d25fe7cb34a8ed74ff6',1,'wiced_bt_enh_esco_params_t']]],
+  ['input_5fpcm_5fdata_5fformat',['input_pcm_data_format',['../structwiced__bt__enh__esco__params__t.html#a4e2c8b4950fb7709aa22d30ef65a5fd4',1,'wiced_bt_enh_esco_params_t']]],
+  ['input_5fpcm_5fpayload_5fmsb_5fposition',['input_pcm_payload_msb_position',['../structwiced__bt__enh__esco__params__t.html#a07b9e673331f28dc32dadf2d6823132f',1,'wiced_bt_enh_esco_params_t']]],
+  ['input_5ftransport_5funit_5fsize',['input_transport_unit_size',['../structwiced__bt__enh__esco__params__t.html#a74444d9adb7ef3f5e108d43358a3364c',1,'wiced_bt_enh_esco_params_t']]],
   ['int_5fseid',['int_seid',['../structwiced__bt__avdt__setconfig__t.html#a4fc3ca15f9ed1f987726e3fc10f06610',1,'wiced_bt_avdt_setconfig_t']]],
   ['io_5fcap',['io_cap',['../structwiced__bt__dev__bredr__io__caps__rsp__t.html#adcee4eb9bed391cc9114b2be90ab5481',1,'wiced_bt_dev_bredr_io_caps_rsp_t']]],
   ['ir',['ir',['../structwiced__bt__local__id__keys.html#a656358b2f6ae702a75cc5f155dd90ac2',1,'wiced_bt_local_id_keys']]],
@@ -28,5 +37,6 @@ var searchData=
   ['item_5fcount',['item_count',['../structwiced__bt__avrc__browse__get__items__rsp__t.html#ac3b8b7e0a366ba555793035885b6a655',1,'wiced_bt_avrc_browse_get_items_rsp_t']]],
   ['item_5flength',['item_length',['../structwiced__bt__avrc__item__t.html#af81410851b21cdbe7c7eb1be539ad7dc',1,'wiced_bt_avrc_item_t']]],
   ['item_5flist',['item_list',['../structwiced__bt__avrc__browse__get__items__rsp__t.html#a17cd20421d1ac20e82ba7873dae10fee',1,'wiced_bt_avrc_browse_get_items_rsp_t']]],
-  ['item_5ftype',['item_type',['../structwiced__bt__avrc__item__t.html#ae06b2bba361b6a915f360a6b4fb9dfca',1,'wiced_bt_avrc_item_t']]]
+  ['item_5ftype',['item_type',['../structwiced__bt__avrc__item__t.html#ae06b2bba361b6a915f360a6b4fb9dfca',1,'wiced_bt_avrc_item_t']]],
+  ['iv',['iv',['../structwiced__bt__ble__key__material__t.html#ad412c598ac240009457301635e53434b',1,'wiced_bt_ble_key_material_t']]]
 ];

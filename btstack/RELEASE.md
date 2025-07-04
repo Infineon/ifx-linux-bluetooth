@@ -8,6 +8,50 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.9.2
+BTSTACK3.9.2 is a patch release with following enhancements -
+ - Modified wiced_bt_dev_read_tx_power() to send HCI_Read_Transmit_Power_Level HCI command
+
+## V3.9.1
+BTSTACK3.9.1 is a patch release with following enhancements -
+ - Improved Doxygen API content and formatting
+
+## V3.9.0
+BTSTACK3.9 contains following enhancements and fixes -
+ - Added a new wiced API, wiced_bt_set_transmit_power_range() (See API documentation for details)
+ - Added a fix to disallow signed write command on EATT channel as per BT Core Spec
+
+## V3.8.2
+BTSTACK3.8.2 is a patch release with following enhancement -
+ - Added a new wiced API, wiced_bt_ble_set_data_packet_length(), to set maximum transmission payload size and maximum packet transmission time to be used for LL DATA PDUs on a given connection
+
+## V3.8.1
+BTSTACK3.8.1 is a patch release with following enhancements and fixes -
+ - Added new wiced API, wiced_bt_isoc_read_tx_sync(), to send HCI_LE_Read_ISO_TX_Sync HCI command
+ - Fixed the issue in AIROC™ BT/BLE stack deinitialization
+ - Properly set maximum transmission payload size to be used for LL data PDUs
+ - Changes to stop PAwR extended connection when Enhanced connection complete error is received
+ - Corrected enum value of WICED_BLE_ISOC_DPD_INPUT_OUTPUT_BIT
+ - Changes for optimization of acl link allocation in stack
+ - Updated wiced_memory_get_free_bytes() and wiced_bt_ble_cache_ext_conn_config() API documentation
+ - Added support to configure input and output coding format for SCO connection using newly added wiced_bt_read_esco_parameters() and wiced_bt_config_esco_parameters() APIs
+
+## V3.8.0
+BTSTACK3.8 is BT5.4 certified. QDID: 219623.
+This release contains bug fixes and and an enhancement listed below.
+ - Support for PAwR added, refer to wiced_bt_ble.h for details of interfaces
+ - Added utility functions for Advertisement encryption and decryption, see wiced_bt_ble_encrypt_adv_packet and wiced_bt_ble_decrypt_adv_packet
+ - Implementation of BT Core spec erratum 22240
+ - Added API wiced_bt_app_serialize_function that can be called by applications to serialize the execution of an application function in the BT stack context
+ - Updates to optimize the code size for Dual-mode stack
+ - Support for connection subrate request procedure, added the API wiced_bt_l2cap_subrate_request and related events
+ - Added API wiced_bt_ble_notify_on_device_address_change to notify the application on device address change via BTM_BLE_DEVICE_ADDRESS_UPDATE_EVENT event.
+ - Other bug fixes and documentation enhancements.
+
+## V3.7.2
+BTSTACK3.7.2 is a patch release with following fix -
+ - Fix an issue where GATT congestion release notification was not sent by Server side
+
 ## V3.7.1
 BTSTACK3.7.1 is a patch release with following enhancements -
  - Add v2 support for HCI_LE_Set_Extended_Advertising_Parameters present in BT Core Spec 5.4

@@ -624,6 +624,8 @@ static void bt_hs_spk_audio_a2dp_sink_cb_connect(bt_hs_spk_audio_context_t *p_ct
 
     if (p_data->connect.result == WICED_SUCCESS)
     {
+        wiced_bt_hfp_hf_connect(p_data->connect.bd_addr);
+
 	hci_control_audio_sink_send_connect_complete(p_data->connect.bd_addr, 0x00, p_data->connect.handle);
         /* Save A2DP handle. */
         p_ctx->a2dp.handle = p_data->connect.handle;
@@ -2220,6 +2222,8 @@ static void bt_hs_spk_audio_avrc_connection_state_cb(uint8_t handle, wiced_bt_de
                 bt_hs_spk_control_reconnect();
             }
         }
+
+        wiced_bt_a2dp_sink_connect(remote_addr);
         break;
     case REMOTE_CONTROL_INITIALIZED:
         /* Find out what app controls the player has to offer. */

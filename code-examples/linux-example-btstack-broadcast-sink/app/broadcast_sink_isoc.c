@@ -181,7 +181,7 @@ wiced_result_t iso_audio_setup_data_path(uint16_t conn_hdl, uint16_t direction, 
     codec_config.sampleWidthInBits = 16;
 
     // setup ISO data path and LC3 codec for INPUT from controller or OUTPUT to controller
-    if (!wiced_bt_isoc_setup_data_path(conn_hdl, 0, data_path_dir, WICED_BLE_ISOC_DPID_HCI, 0))
+    if (!wiced_bt_isoc_setup_data_path(conn_hdl, 0, data_path_dir, WICED_BLE_ISOC_DPID_HCI, 0, 0, NULL))
     {
         return WICED_ERROR;
     }
@@ -204,7 +204,9 @@ wiced_result_t iso_audio_setup_data_path(uint16_t conn_hdl, uint16_t direction, 
         p_csc->frame_duration,
         numOfChannels, bis_count);
 
+
     audio_driver_init(direction, numOfChannels, codec_config.sampleRate, LINUX_ALSA_LATENCY);
+
 
     return WICED_SUCCESS;
 }
@@ -247,6 +249,58 @@ static void rx_handler(uint16_t conn_hdl, uint8_t* p_data, uint32_t length)
             (p_stream_info->octets_per_frame * num_channels),
             length,
             num_channels);
+#ifdef ITTIAM_LC3 
+        WICED_BT_TRACE("ITTIAM PLC enable");
+        lc3_codec_Decode(0,
+                         2,     //DHMULP_ISOC_PS_LOST_SDU
+                         p_data,
+                         p_stream_info->octets_per_frame,
+                         lc3_data_l,
+                         decoded_data_size * sample_width_in_bytes);
+
+        if (p_stream_info->num_bis == 1)
+        {
+            if (2 == num_channels)
+            {
+                lc3_codec_Decode(1,
+                                2,
+                                p_data,
+                                p_stream_info->octets_per_frame,
+                                lc3_data_r,
+                                decoded_data_size * sample_width_in_bytes);
+            }
+        }
+#elif GOOGLE_LC3
+
+        lc3_codec_Decode(0,
+                         0,
+                         NULL,
+                         p_stream_info->octets_per_frame,
+                         lc3_data_l,
+                         decoded_data_size * sample_width_in_bytes);
+
+        if (p_stream_info->num_bis == 1)
+        {
+            if (2 == num_channels)
+            {
+                lc3_codec_Decode(1,
+                                0,
+                                NULL,
+                                p_stream_info->octets_per_frame,
+                                lc3_data_r,
+                                decoded_data_size * sample_width_in_bytes);
+            }
+        }
+#else
+        TRACE_ERR("Something wrong");
+        return;
+#endif
+
+        audio_driver_write_non_interleaved_data(lc3_data_l,
+                                                (2 == num_channels) ? lc3_data_r : NULL,
+                                                sample_width_in_bytes,
+                                                decoded_data_size * num_channels);
+
         return;
     }
 

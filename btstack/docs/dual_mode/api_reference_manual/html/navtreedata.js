@@ -32,21 +32,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "group___result.html",
-"group__btm__ble__api__functions.html#ga701fee231d79e37bfc459434fc980228",
-"group__btm__ble__sec__api__functions.html#gad2329674370e66e66d197356a835d9eb",
-"group__rfcomm__api__functions.html#gga919c228fbe128a196f66f0569ff3c1eeaadaeb45047fa16f70517bfe3382263a6",
-"group__wiced__bt__cfg.html#ggabc9b4dbc8e43ce6442971e2804d1aca5ac37a6789b7228dc28f64813c23490274",
-"group__wicedbt___device_management.html#gga8a46ed3147b4b1dc48b67a34b75c8baba4ea4193a3f5d7952d0ee74c0b6a5bbdd",
-"group__wicedbt__avdt.html",
-"group__wicedbt__avrc.html#ga2c7519575ae8093701610cdc4f0aac82",
-"group__wicedbt__avrc.html#ga97284bfc4d55b30e630fadbcbf1575dd",
-"group__wicedbt__avrc.html#gaf7829af4119885c4c2469882f86d3b38",
-"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a77054e40ff77d1fa3fb25de3b5d91be2",
-"structwiced__bt__avrc__browse__num__of__items__rsp__t.html#add5d83554f4ea268c653b7e3109d235c",
-"structwiced__bt__ble__channel__sel__algo__event__data__t.html",
-"structwiced__bt__dev__ble__io__caps__req__t.html",
-"structwiced__bt__gatt__read__multiple__req__t.html",
-"structwiced__timer__t.html#a39374022d2b551da2f287b642a42bfbb"
+"group__btm__ble__conn__filter__accept__list__functions.html#ga3e8e35f3b362c07a9c329b06579be3f1",
+"group__sco.html#gacb5ee4295683cb8f50b496318011841f",
+"group__wicedbt__a2dp__mpeg__2__4.html#gab10369f6b984750d924c0baadcc3bf07",
+"group__wicedbt__avrc.html#ga004c0e41cee6b14575f54a4fe20f9294",
+"group__wicedbt__avrc.html#ga68412b17e8ee30cf8683d5c381184073",
+"group__wicedbt__avrc.html#gad270b18f6db1cf1cafd1599b2d66f38e",
+"structwiced__bt__avdt__report__blk__t.html#a1db87772f806eb7dfa0655b1b9b651f5",
+"structwiced__bt__avrc__metadata__rsp__t.html#abe0c236909765b4eb217b98d34190d8c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -619,13 +619,10 @@ void headset_send_at_command (uint16_t handle, uint8_t command, int num, uint8_t
 *******************************************************************************/
 void handset_handle_BREDR_connect (wiced_bt_device_address_t peer_bd_addr){
     set_skip_find_pairing_key();
-    //connect GATT
-    wiced_bt_gatt_bredr_connect(peer_bd_addr);
-    //connect HFP
-    wiced_bt_hfp_hf_connect(peer_bd_addr);
-    //connect A2DP Sink
-    wiced_bt_a2dp_sink_connect(peer_bd_addr);
-    //connect AVRCP
+
+    // Connect AVRCP -> A2DP -> HFP
+    // To shorten the latency during sequence which is from peer phone trying to initiate AVRC connection 
+    // right after other profile has been established.
     wiced_bt_avrc_ct_connect(peer_bd_addr);
 }
 

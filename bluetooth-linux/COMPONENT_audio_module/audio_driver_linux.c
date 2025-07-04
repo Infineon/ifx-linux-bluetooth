@@ -38,6 +38,13 @@ static snd_mixer_elem_t *snd_mixer_elem = NULL;
 static snd_mixer_t *snd_mixer_handle = NULL;
 static snd_mixer_selem_id_t *snd_sid = NULL;
 static long vol_max;
+static int alsa_set_hwparams(snd_pcm_t           *handle,
+                             snd_pcm_hw_params_t *params,
+                             uint8_t             num_of_channels,
+                             uint32_t            sample_rate, 
+                             uint8_t             frame_duration,
+                             uint16_t            alsa_cfg_latency_ms);
+
 
 // ========================== ALSA Volume ==========================
 
@@ -188,12 +195,13 @@ int wiced_get_audio_data_form_mic(uint8_t *l_data, uint8_t *r_data)
 static void alsa_audio_init(uint8_t num_of_channels, uint32_t sample_rate, uint16_t alsa_cfg_latency_ms)
 {
     snd_pcm_uframes_t buffer_size = 0;
+    uint8_t mode = SND_PCM_NONBLOCK; //0 is BLOCKING MODE
 
     TRACE_LOG("num_of_channels:%d, sample_rate:%d, alsa_cfg_latency_ms:%d\n", num_of_channels, sample_rate, alsa_cfg_latency_ms);
 
     int status =
-        snd_pcm_open(&(p_alsa_handle), alsa_device, SND_PCM_STREAM_PLAYBACK, 0); /* Mode = 0 for blocking mode*/
-    WICED_BT_TRACE("snd_pcm_open\n");
+        snd_pcm_open(&(p_alsa_handle), alsa_device, SND_PCM_STREAM_PLAYBACK, mode);
+    WICED_BT_TRACE("snd_pcm_open:%s\n", mode == SND_PCM_NONBLOCK ? "SND_PCM_NONBLOCK":"BLOCK MODE");
 
     if (status < 0)
     {
@@ -202,6 +210,7 @@ static void alsa_audio_init(uint8_t num_of_channels, uint32_t sample_rate, uint1
     }
 
     /* Configure ALSA driver with PCM parameters */
+#ifndef ALSA_SETUP_PERIODSIZE   //setup param auto
     status = snd_pcm_set_params(p_alsa_handle,
                                 SND_PCM_FORMAT_S16_LE,
                                 SND_PCM_ACCESS_RW_INTERLEAVED,
@@ -210,14 +219,21 @@ static void alsa_audio_init(uint8_t num_of_channels, uint32_t sample_rate, uint1
                                 1,
                                 alsa_cfg_latency_ms * 1000);
 
+#else   //setup param for period size
+    snd_pcm_hw_params_t *hwparams = {0};
+    snd_pcm_hw_params_alloca(&hwparams);
+    status = alsa_set_hwparams(p_alsa_handle, hwparams, num_of_channels, sample_rate, 10, alsa_cfg_latency_ms);
+#endif
+
     if (status < 0)
     {
         WICED_BT_TRACE("snd_pcm_set_params failed: %s\n", snd_strerror(status));
     }
 
+    snd_pcm_prepare(p_alsa_handle);
+
     snd_pcm_get_params(p_alsa_handle, &buffer_size, &period_size);
     WICED_BT_TRACE("snd_pcm_get_params buffersize %lu frames, periodsize %lu frames\n", buffer_size, period_size);
-    WICED_BT_TRACE("snd_pcm_get_params periodsize %lu bytes\n", period_size * 4 /*NUM_CHANNELS*SAMPLE_SIZE*/);
 }
 
 static void alsa_write_data(uint8_t *p_rx_media, uint32_t data_size)
@@ -233,6 +249,13 @@ static void alsa_write_data(uint8_t *p_rx_media, uint32_t data_size)
     ret = snd_pcm_writei(p_alsa_handle, (uint16_t *)p_rx_media, data_size);
     if (ret < 0)
     {
+        //NONBLOCK MODE ONLY
+        if (ret == -EAGAIN) {
+            // Buffer is full; handle this case (e.g., wait or skip)
+            //TRACE_ERR("buffer is full");
+            return;
+        }
+
         if (ret == -EPIPE)
         {
             ret = snd_pcm_recover(p_alsa_handle, ret, 0);
@@ -374,7 +397,7 @@ void audio_driver_deinit(uint8_t direction)
     if (p_alsa_handle != NULL)
     {
         WICED_BT_TRACE("snd_pcm_close\n");
-        snd_pcm_drain(p_alsa_handle);
+        snd_pcm_drop(p_alsa_handle);
         snd_pcm_close(p_alsa_handle);
         p_alsa_handle = NULL;
     }
@@ -382,7 +405,7 @@ void audio_driver_deinit(uint8_t direction)
     if(p_alsa_mic_handle)
     {
         WICED_BT_TRACE("snd_pcm_close p_alsa_mic_handle\n");
-        snd_pcm_drain(p_alsa_mic_handle);
+        snd_pcm_drop(p_alsa_mic_handle);
         snd_pcm_close(p_alsa_mic_handle);
         p_alsa_mic_handle = NULL;
     }
@@ -429,4 +452,98 @@ void audio_driver_write_non_interleaved_data(uint8_t *p_left_data,
         alsa_write_data(p_left_data, data_size);
         write_to_audio_dump_file(rx_audio_file_ptr, p_left_data, data_size * bit_width_in_bytes);
     }
+}
+
+static unsigned int buffer_time = 500000;       /* ring buffer length in us */
+static unsigned int period_time = 100000;       /* period time in us */
+static int alsa_set_hwparams(snd_pcm_t           *handle,
+                             snd_pcm_hw_params_t *params,
+                             uint8_t             num_of_channels,
+                             uint32_t            sample_rate, 
+                             uint8_t             frame_duration,
+                             uint16_t            alsa_cfg_latency_ms)
+{
+    unsigned int    rrate;
+    snd_pcm_uframes_t size;
+    int             err = 0, dir = 0;
+
+    buffer_time = alsa_cfg_latency_ms * 1000;
+    period_time = buffer_time / 4; //TBD: small period_time is better for low latency 
+
+    TRACE_LOG("\n");
+    /* choose all parameters */
+    err = snd_pcm_hw_params_any(handle, params);
+    if (err < 0) {
+        printf("Broken configuration for playback: no configurations available: %s\n", snd_strerror(err));
+        return err;
+    }
+    /* set hardware resampling */
+    err = snd_pcm_hw_params_set_rate_resample(handle, params, 1);
+    if (err < 0) {
+        printf("Resampling setup failed for playback: %s\n", snd_strerror(err));
+        return err;
+    }
+    /* set the interleaved read/write format */
+    err = snd_pcm_hw_params_set_access(handle, params, SND_PCM_ACCESS_RW_INTERLEAVED);
+    if (err < 0) {
+        printf("Access type not available for playback: %s\n", snd_strerror(err));
+        return err;
+    }
+    /* set the sample format */
+	err = snd_pcm_hw_params_set_format(handle, params, SND_PCM_FORMAT_S16_LE);
+    if (err < 0) {
+        printf("Sample format not available for playback: %s\n", snd_strerror(err));
+        return err;
+    }
+    /* set the count of channels */
+    err = snd_pcm_hw_params_set_channels(handle, params, num_of_channels);
+    if (err < 0) {
+        printf("Channels count (%u) not available for playbacks: %s\n", num_of_channels, snd_strerror(err));
+        return err;
+    }
+    /* set the stream rate */
+    rrate = sample_rate;
+    err = snd_pcm_hw_params_set_rate_near(handle, params, &rrate, 0);
+    if (err < 0) {
+        printf("Rate %uHz not available for playback: %s\n", sample_rate, snd_strerror(err));
+        return err;
+    }
+    if (rrate != sample_rate) {
+        printf("Rate doesn't match (requested %uHz, get %iHz)\n", sample_rate, err);
+        return -EINVAL;
+    }
+    /* set the buffer time */
+    err = snd_pcm_hw_params_set_buffer_time_near(handle, params, &buffer_time, &dir);
+    if (err < 0) {
+        printf("Unable to set buffer time %u for playback: %s\n", buffer_time, snd_strerror(err));
+        return err;
+    }
+    err = snd_pcm_hw_params_get_buffer_size(params, &size);
+    if (err < 0) {
+        printf("Unable to get buffer size for playback: %s\n", snd_strerror(err));
+        return err;
+    }
+    /* set the period time */
+    err = snd_pcm_hw_params_set_period_time_near(handle, params, &period_time, &dir);
+    if (err < 0) {
+        printf("Unable to set period time %u for playback: %s\n", period_time, snd_strerror(err));
+        return err;
+    }
+    err = snd_pcm_hw_params_get_period_size(params, &size, &dir);
+    if (err < 0) {
+        printf("Unable to get period size for playback: %s\n", snd_strerror(err));
+        return err;
+    }
+    period_size = size;
+    TRACE_LOG("size:%lu, period_size:%lu\n", size, period_size);
+
+    /* write the parameters to device */
+    err = snd_pcm_hw_params(handle, params);
+    if (err < 0) {
+        printf("Unable to set hw params for playback: %s\n", snd_strerror(err));
+        return err;
+    }
+
+    TRACE_LOG("done\n");
+    return 0;
 }

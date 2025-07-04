@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="141" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="141" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="141" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1a65f5a1cddf299481660d5d8baf2ec435" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref></type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="142" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="142" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="142" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1ac0d4b9b0f2ec1e5a1e600f478738a1f8" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__a2dp__sink__start__t" kindref="compound">wiced_bt_a2dp_sink_start_t</ref></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="143" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="143" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="143" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1abb98ad2774da539c990c8058bda1c251" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="144" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="144" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="144" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1ae4574b1d0f1bb92f3ddaa426132d3af9" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__a2dp__sink__status__t" kindref="compound">wiced_bt_a2dp_sink_status_t</ref></type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="145" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="145" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="145" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__a2dp__sink__event__data__t_1a513c6d010fd06d0989778d2e8beb0340" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__a2dp__sink__codec__config__t" kindref="compound">wiced_bt_a2dp_sink_codec_config_t</ref></type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="146" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="146" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="146" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -116,7 +116,7 @@
         <link refid="structwiced__bt__a2dp__sink__status__t"/>
       </node>
     </collaborationgraph>
-    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="140" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="139" bodyend="147"/>
+    <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" line="140" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_a2dp_sink.h" bodystart="139" bodyend="147"/>
     <listofallmembers>
       <member refid="unionwiced__bt__a2dp__sink__event__data__t_1a513c6d010fd06d0989778d2e8beb0340" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_event_data_t</scope><name>codec_config</name></member>
       <member refid="unionwiced__bt__a2dp__sink__event__data__t_1a63d91ac547003f4de01288ab8f513676" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_event_data_t</scope><name>connect</name></member>

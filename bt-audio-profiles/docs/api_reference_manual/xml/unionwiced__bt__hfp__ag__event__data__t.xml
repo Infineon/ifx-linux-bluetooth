@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="188" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="188" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="188" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__hfp__ag__event__data__t_1a3d61ae4cc383e69faf5f4df1ba11d7b5" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__wiced__bt__hfp__ag__connect__t" kindref="compound">wiced_bt_wiced_bt_hfp_ag_connect_t</ref></type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="189" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="189" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="189" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__hfp__ag__event__data__t_1a67a13c784bd590ec060bbb981606726a" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__hfp__ag__at__cmd__t" kindref="compound">wiced_bt_hfp_ag_at_cmd_t</ref></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="190" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="190" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="190" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="190" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__hfp__ag__event__data__t_1a2ccb1e9e76f1068780c3f0c2987dec3f" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__hfp__ag__audio__open__t" kindref="compound">wiced_bt_hfp_ag_audio_open_t</ref></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="191" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="191" bodyend="-1"/>
+        <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="191" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="191" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -94,7 +94,7 @@
         <link refid="structwiced__bt__hfp__ag__open__t"/>
       </node>
     </collaborationgraph>
-    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="187" column="1" bodyfile="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="186" bodyend="192"/>
+    <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" line="187" column="1" bodyfile="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/libraries/profiles_include/wiced_bt_hfp_ag.h" bodystart="186" bodyend="192"/>
     <listofallmembers>
       <member refid="unionwiced__bt__hfp__ag__event__data__t_1a67a13c784bd590ec060bbb981606726a" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_event_data_t</scope><name>at_cmd</name></member>
       <member refid="unionwiced__bt__hfp__ag__event__data__t_1a2ccb1e9e76f1068780c3f0c2987dec3f" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_event_data_t</scope><name>audio_open</name></member>

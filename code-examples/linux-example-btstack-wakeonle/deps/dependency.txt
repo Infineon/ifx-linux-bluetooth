@@ -1,0 +1,2 @@
+https://github.com/Infineon/btstack.git#release-v3.8.2
+https://github.com/Infineon/bluetooth-linux.git#release-v3.6.0

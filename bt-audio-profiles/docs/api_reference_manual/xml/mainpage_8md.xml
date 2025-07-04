@@ -17,6 +17,15 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Source<sp/>(SRC)<sp/>–<sp/>A<sp/>device<sp/>is<sp/>the<sp/>SRC<sp/>when<sp/>it<sp/>acts<sp/>as<sp/>a<sp/>source<sp/>of<sp/>a<sp/>digital<sp/>audio<sp/>stream<sp/>that<sp/>is<sp/>delivered<sp/>to<sp/>the<sp/>SNK<sp/>device</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Sink<sp/>(SNK)<sp/>–<sp/>A<sp/>device<sp/>is<sp/>the<sp/>SNK<sp/>when<sp/>it<sp/>acts<sp/>as<sp/>a<sp/>sink<sp/>of<sp/>a<sp/>digital<sp/>audio<sp/>stream<sp/>delivered<sp/>from<sp/>the<sp/>SRC<sp/>device.</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">##AVRCP</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Audio/Video<sp/>remote<sp/>control<sp/>profile<sp/>library<sp/>allows<sp/>Bluetooth<sp/>enabled<sp/>device<sp/>to<sp/>control<sp/>audio<sp/>streaming<sp/>remotely,<sp/>it<sp/>supports<sp/>two<sp/>roles</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Controller<sp/>(CT)<sp/><sp/>–<sp/><sp/>It<sp/>is<sp/>a<sp/>device<sp/>that<sp/>initiates<sp/>a<sp/>transaction<sp/>by<sp/>sending<sp/>a<sp/>command<sp/>frame<sp/>to<sp/>a<sp/>target.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Examples<sp/>for<sp/>CT<sp/>are<sp/>a<sp/>personal<sp/>computer,<sp/>a<sp/>PDA,<sp/>a<sp/>mobile<sp/>phone,<sp/>a<sp/>remote<sp/>controller<sp/>or<sp/>an<sp/>AV<sp/>device</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(such<sp/>as<sp/>an<sp/>in<sp/>car<sp/>system,<sp/>headphone,<sp/>player/recorder,<sp/>timer,<sp/>tuner,<sp/>monitor<sp/>etc.).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Target<sp/>(TG)<sp/><sp/><sp/>–<sp/>Target<sp/>device<sp/>receives<sp/>a<sp/>command<sp/>frame<sp/>and<sp/>accordingly<sp/>generates<sp/>a<sp/>response<sp/>frame.<sp/>Examples<sp/>for<sp/>TG<sp/>are<sp/>an<sp/>audio<sp/>player/recorder,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>video<sp/>player/recorder,<sp/>a<sp/>TV,<sp/>a<sp/>tuner,<sp/>an<sp/>amplifier<sp/>or<sp/>a<sp/>headphone.</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">##HFP</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Hands-free<sp/>profile<sp/>provides<sp/>capabilty<sp/>to<sp/>the<sp/>device<sp/>to<sp/>transmit<sp/>voice<sp/>between<sp/>mobile<sp/>phone<sp/>and<sp/>wireless<sp/>headset<sp/>and<sp/>defines<sp/>two<sp/>roles</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Audio<sp/>Gateway<sp/>(AG)<sp/>–<sp/>This<sp/>is<sp/>the<sp/>device<sp/>that<sp/>is<sp/>the<sp/>gateway<sp/>of<sp/>the<sp/>audio,<sp/>both<sp/>for<sp/>input<sp/>and<sp/>output.</highlight></codeline>
@@ -33,6 +42,6 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Device<sp/>B<sp/>(DevB)<sp/>–<sp/>This<sp/>is<sp/>the<sp/>device<sp/>that<sp/>waits<sp/>for<sp/>another<sp/>device<sp/>to<sp/>take<sp/>initiative<sp/>to<sp/>connect.</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Typical<sp/>steps<sp/>in<sp/>using<sp/>BTSTACK<sp/>library<sp/>APIs<sp/>are<sp/>-</highlight></codeline>
     </programlisting>
-    <location file="c:/r1/builds/HxwzuyEz/0/repo/bluetooth_apps/docs/mainpage.md"/>
+    <location file="D:/glb/MgpsR6tb/0/repo/bluetooth_apps/docs/mainpage.md"/>
   </compounddef>
 </doxygen>
