@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="csis__psri__key_8h" kind="file" language="C++">
+    <compoundname>csis_psri_key.h</compoundname>
+    <includes local="yes">wiced_bt_dev.h</includes>
+    <includes refid="wiced__bt__ga__csis_8h" local="yes">wiced_bt_ga_csis.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>csis_psri_key.h</label>
+        <link refid="csis__psri__key_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>wiced_bt_dev.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="csis__psri__key_8h_1a57e1dd9947a4f00c8f320811d8395a09" prot="public" static="no">
+        <name>CSIS_KEY_LEN</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="11" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="csis__psri__key_8h_1a9eb21a777e180f499ef5bfcbb97a97d3" prot="public" static="no">
+        <name>CSIS_R_LEN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="12" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="csis__psri__key_8h_1a3ef1bc3e63edf3a579dc845f0ad88221" prot="public" static="no">
+        <name>CSIS_HASH_LEN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="13" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="csis__psri__key_8h_1a93274bdfae1e0fced27796cbc34ed2fd" prot="public" static="no">
+        <name>CSIS_PRAND_LEN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="14" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="csis__psri__key_8h_1add1a85c3c6c9ce412c1a7cedb8bc043f" prot="public" static="no">
+        <name>CSIS_PADDING_LEN</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="15" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="csis__psri__key_8h_1a49cf574d9968ca4400acfcd3880c4f89" prot="public" static="no">
+        <name>CSIS_HASH_VAL</name>
+        <initializer>16777216 /*2^24 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="16" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="csis__psri__key_8h_1ab6269adabb431ec6fa2c30cd6edda0fc" prot="public" static="no">
+        <name>CSIS_PRAND_MAX_RANDOM</name>
+        <initializer>4194304 /*2^22*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="17" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="csis__psri__key_8h_1a7bbecee4de0a6ede52753d036d7735f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ga_csis_calc_hash</definition>
+        <argsstring>(uint8_t *k, uint8_t *r, uint8_t *h)</argsstring>
+        <name>ga_csis_calc_hash</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="csis__psri__key_8h_1a6278d31a93ce3079080e94d6a74b05c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ga_csis_generate_prand</definition>
+        <argsstring>(uint8_t *p_prand)</argsstring>
+        <name>ga_csis_generate_prand</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_prand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="csis__psri__key_8h_1ad4129ad16866b51c0ce3ee8a15f31fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" kindref="member">PSRI</ref> *</type>
+        <definition>PSRI* ga_csis_generate_psri</definition>
+        <argsstring>(SIRK *sirk)</argsstring>
+        <name>ga_csis_generate_psri</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref> *</type>
+          <declname>sirk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="csis__psri__key_8h_1a12f8bfd2d54358611f58a887b28326f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ga_csis_sirk_encyption_func</definition>
+        <argsstring>(SIRK *sirk_plain_text, wiced_bt_device_link_keys_t *link_keys, SIRK *sirk_encr)</argsstring>
+        <name>ga_csis_sirk_encyption_func</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref> *</type>
+          <declname>sirk_plain_text</declname>
+        </param>
+        <param>
+          <type>wiced_bt_device_link_keys_t *</type>
+          <declname>link_keys</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref> *</type>
+          <declname>sirk_encr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="csis__psri__key_8h_1a99fedbe452156ac887d7c77f9f612035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ga_csis_sirk_decryption_func</definition>
+        <argsstring>(SIRK *sirk_enc, wiced_bt_device_link_keys_t *link_keys, SIRK *sirk_plain_text)</argsstring>
+        <name>ga_csis_sirk_decryption_func</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref> *</type>
+          <declname>sirk_enc</declname>
+        </param>
+        <param>
+          <type>wiced_bt_device_link_keys_t *</type>
+          <declname>link_keys</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref> *</type>
+          <declname>sirk_plain_text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h" line="24" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CSIS_PSRI_KEY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSIS_PSRI_KEY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_dev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_csis.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSIS_KEY_LEN<sp/><sp/><sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSIS_R_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSIS_HASH_LEN<sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSIS_PRAND_LEN<sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSIS_PADDING_LEN<sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSIS_HASH_VAL<sp/><sp/><sp/><sp/><sp/>16777216<sp/></highlight><highlight class="comment">/*2^24<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSIS_PRAND_MAX_RANDOM<sp/><sp/><sp/><sp/>4194304<sp/></highlight><highlight class="comment">/*2^22*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ga_csis_calc_hash(uint8_t*<sp/>k,<sp/>uint8_t*<sp/>r,<sp/>uint8_t*<sp/>h);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ga_csis_generate_prand(uint8_t*<sp/>p_prand);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" kindref="member">PSRI</ref>*<sp/>ga_csis_generate_psri(<ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref>*<sp/>sirk);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ga_csis_sirk_encyption_func(<ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref>*<sp/>sirk_plain_text,<sp/>wiced_bt_device_link_keys_t*<sp/>link_keys,<sp/><ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref>*<sp/>sirk_encr);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ga_csis_sirk_decryption_func(<ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref>*<sp/>sirk_enc,<sp/>wiced_bt_device_link_keys_t*<sp/>link_keys,<sp/><ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref>*<sp/>sirk_plain_text);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CSIS_PSRI_KEY_H</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/csis_psri_key.h"/>
+  </compounddef>
+</doxygen>

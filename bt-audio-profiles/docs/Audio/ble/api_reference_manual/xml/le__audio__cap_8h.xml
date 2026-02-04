@@ -1,0 +1,1724 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="le__audio__cap_8h" kind="file" language="C++">
+    <compoundname>le_audio_cap.h</compoundname>
+    <includes local="yes">wiced_bt_isoc.h</includes>
+    <includes local="yes">wiced_bt_types.h</includes>
+    <includes refid="wiced__bt__ga__ascs_8h" local="yes">wiced_bt_ga_ascs.h</includes>
+    <includes refid="wiced__bt__ga__bap_8h" local="yes">wiced_bt_ga_bap.h</includes>
+    <includes refid="le__audio__bap__broadcast_8h" local="yes">le_audio_bap_broadcast.h</includes>
+    <includes refid="wiced__bt__ga__mics_8h" local="yes">wiced_bt_ga_mics.h</includes>
+    <includes refid="wiced__bt__ga__pacs_8h" local="yes">wiced_bt_ga_pacs.h</includes>
+    <includes refid="wiced__bt__ga__vcs_8h" local="yes">wiced_bt_ga_vcs.h</includes>
+    <includes refid="wiced__bt__ga__bass_8h" local="yes">wiced_bt_ga_bass.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>wiced_bt_types.h</label>
+      </node>
+      <node id="11">
+        <label>wiced_bt_isoc.h</label>
+      </node>
+      <node id="10">
+        <label>le_audio_cap.h</label>
+        <link refid="le__audio__cap_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structle__audio__cap__device__data__t" prot="public">le_audio_cap_device_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__app__data__t" prot="public">le_audio_cap_app_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__req__profile__data__t" prot="public">le_audio_cap_req_profile_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__event__data__t" prot="public">le_audio_cap_event_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__start__unicast__param__t" prot="public">le_audio_cap_start_unicast_param_t</innerclass>
+    <innerclass refid="structle__audio__cap__codec__param__t" prot="public">le_audio_cap_codec_param_t</innerclass>
+    <innerclass refid="structle__audio__cap__broadcast__app__data__t" prot="public">le_audio_cap_broadcast_app_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__start__broadcast__param__t" prot="public">le_audio_cap_start_broadcast_param_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga0fdf5076d5712e14cc05efa0de31384d" prot="public" static="no">
+        <name>WICED_BT_CAP_DIRECTION_SOURCE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>The device is acting in source role. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="29" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1gaa75cc727ea3c51efbf5bbdf48854e88e" prot="public" static="no">
+        <name>WICED_BT_CAP_DIRECTION_SINK</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>The device is acting in sink role. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="30" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga671b2ca079d4d5fd7db21843f07e081e" prot="public" static="no">
+        <name>MAX_NUM_ASE_ID</name>
+        <initializer>5</initializer>
+        <briefdescription>
+<para>Maximum number of ASEs supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="32" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga5830cdfaac08407f6d92681e0531c8e1" prot="public" static="no">
+        <name>CAP_TRACE</name>
+        <param><defname>...</defname></param>
+        <initializer>WICED_BT_TRACE(__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>Enable this to get CAP library traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="34" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga896e3433f62fb89f9d6133a7d63520b4" prot="public" static="no">
+        <name>CAP_TRACE_CRIT</name>
+        <param><defname>...</defname></param>
+        <initializer>WICED_BT_TRACE(__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>Enable this to get CAP library traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="35" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__cap_1gaee2ae8284a72f214c5db20cb772e9f3c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>le_audio_cap_event_t</name>
+        <enumvalue id="group__wiced__bt__ga__cap_1ggaee2ae8284a72f214c5db20cb772e9f3cae53a431ce52a2a6026c35b8e38f4cad8" prot="public">
+          <name>WICED_BT_GA_CAP_STATE_CHANGED_EVENT</name>
+          <briefdescription>
+<para>CAP ASE State. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__cap_1ggaee2ae8284a72f214c5db20cb772e9f3caa5382f997834ba652a118287f4175e47" prot="public">
+          <name>WICED_BT_GA_CAP_ERROR_EVENT</name>
+          <briefdescription>
+<para>CAP Error Event. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>CAP Events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="41" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__ga__cap_1gaf632c0f72e1538e1e36fe678c0bccd3d" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t le_audio_cap_event_t</definition>
+        <argsstring></argsstring>
+        <name>le_audio_cap_event_t</name>
+        <briefdescription>
+<para>CAP Events (see <ref refid="group__wiced__bt__ga__cap_1gaee2ae8284a72f214c5db20cb772e9f3c" kindref="member">le_audio_cap_event_t</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="46" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__cap_1gacdc5e30c66939214ab97d740ab67fc88" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void le_audio_cap_cback_t(uint16_t conn_id, le_audio_cap_event_t event, le_audio_cap_event_data_t *p_event_data)</definition>
+        <argsstring>(uint16_t conn_id, le_audio_cap_event_t event, le_audio_cap_event_data_t *p_event_data)</argsstring>
+        <name>le_audio_cap_cback_t</name>
+        <briefdescription>
+<para>CAP event callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback for CAP event notification Registered using <ref refid="group__wiced__bt__ga__cap_1ga16b628f125b0393f766475062b4c130e" kindref="member">le_audio_cap_register_cb</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT connection id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_event_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="155" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga16b628f125b0393f766475062b4c130e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_cap_register_cb</definition>
+        <argsstring>(le_audio_cap_cback_t *cb_ptr)</argsstring>
+        <name>le_audio_cap_register_cb</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__cap_1gacdc5e30c66939214ab97d740ab67fc88" kindref="member">le_audio_cap_cback_t</ref> *</type>
+          <declname>cb_ptr</declname>
+        </param>
+        <briefdescription>
+<para>: CAP Register event callback handler </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cb_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: CAP event callback</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaa32d4598314d5949f149268640bca6d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_start_unicast_streaming</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, le_audio_cap_start_unicast_param_t *params)</argsstring>
+        <name>le_audio_cap_start_unicast_streaming</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>CAP Start Unicast Streaming procedure The ASEs go to the <ref refid="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50a1fd9ee8b4b39db38d27367a87e8abcb3" kindref="member">WICED_BT_GA_ASCS_STATE_ENABLING</ref> state on successful completion the procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>State Transition: Current State -----------------<mdash/>&gt; Final State Idle-&gt;CODEC_Configured-&gt;QoS_Configured-&gt;Enabling</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: start unicast param data pointer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gabc65947482723662cdb92cbb9e308166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_update_streaming</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, le_audio_cap_start_unicast_param_t *unicast_param, wiced_bt_ga_bap_context_type_t context_type, wiced_bt_ga_bap_metadata_t *metadata)</argsstring>
+        <name>le_audio_cap_update_streaming</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref> *</type>
+          <declname>unicast_param</declname>
+        </param>
+        <param>
+          <type><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref></type>
+          <declname>context_type</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>CAP Update Unicast Streaming procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">unicast_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: unicast params to be used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Context type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Metadata</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga6775544502e8248e7a75290d0d6becde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_disable_stream</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_disable_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>CAP Stop Unicast Streaming procedure The stream reverts to the <ref refid="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50a14e359af9294ea81c0571ab31f0b5ab8" kindref="member">WICED_BT_GA_ASCS_STATE_QOS_CONFIGURED</ref> state on successful completion of the procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>State Transitions: Current State -----<mdash/>&gt; Final State Enabling-&gt;Disabling-&gt;QoS_Configured Streaming-&gt;Disabling-&gt;QoS_Configured</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga382b368d8dbac029020ccb767fb0e872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_release_stream</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_release_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>CAP Stop Unicast Streaming procedure The stream reverts to the <ref refid="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50af21fa87a32ebddc700a9e2c482259980" kindref="member">WICED_BT_GA_ASCS_STATE_IDLE</ref> state on successful completion of the procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>State Transitions: Current State -----<mdash/>&gt; Final State Streaming-&gt;Releasing-&gt;Idle Enabling-&gt;Releasing-&gt;Idle QoS_Configured-&gt;Releasing-&gt;Idle Codec_Configured-&gt;Releasing-&gt;Codec_Configured</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gac54654dcde8007158c2a3fca3c134f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_volume</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, volume_control_opcodes_t opcode, uint8_t abs_vol)</argsstring>
+        <name>le_audio_cap_set_volume</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__vcs_1gaac1329051f85c4a8ca2fb622486ab326" kindref="member">volume_control_opcodes_t</ref></type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>abs_vol</declname>
+        </param>
+        <briefdescription>
+<para>CAP Set Absolute Volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: volume control point opcode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">abs_vol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Volume (Range 0-255)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga6aea91721237e3f65a239b8c65d685a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_volume_mute_state</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, wiced_bt_ga_mute_val_t mute_state)</argsstring>
+        <name>le_audio_cap_set_volume_mute_state</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+          <declname>mute_state</declname>
+        </param>
+        <briefdescription>
+<para>Set absolute volume on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mute_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Mute State</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga8a3002049d56210ed9d75070be3042de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_volume_offset</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, int16_t volume_offset)</argsstring>
+        <name>le_audio_cap_set_volume_offset</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>volume_offset</declname>
+        </param>
+        <briefdescription>
+<para>Set volume offset on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">volume_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Volume offset</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="273" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga52e326e7d5c45c62bbf935b8a7aca017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_mics_mute_state</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, wiced_bt_ga_mute_val_t mute_state)</argsstring>
+        <name>le_audio_cap_set_mics_mute_state</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+          <declname>mute_state</declname>
+        </param>
+        <briefdescription>
+<para>Set Mute State on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mute_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Mute State</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="285" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gabfa5dfb5d1d86b9c1f0430678d4f0964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_mics_aics_mute_state</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, uint32_t instance, wiced_bt_ga_mute_val_t mute_state)</argsstring>
+        <name>le_audio_cap_set_mics_aics_mute_state</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+          <declname>mute_state</declname>
+        </param>
+        <briefdescription>
+<para>Set MICS Input Gain on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Included servive instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mute_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Mute State</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga9134b417c1742334d73b65cb0a38fa48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_mics_aics_gain</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, uint32_t instance, int8_t gain)</argsstring>
+        <name>le_audio_cap_set_mics_aics_gain</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+<para>Set MICS Input Gain on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Included servive instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Gain in dB</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gad4ecf2a7f67e5e955d484fc980fc1602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_vcs_update_event</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, uint16_t conn_id, wiced_bt_gatt_status_t status, uint32_t evt_type, gatt_intf_attribute_t *p_char, void *p_data, int len)</argsstring>
+        <name>le_audio_cap_vcs_update_event</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>wiced_bt_gatt_status_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>evt_type</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This API should be invoked from VCS registered callback on receiving notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT connection id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT operation status </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evt_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event type, refer gatt_interface_events_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Characteristic for which the event has occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data len </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="330" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga3dc441e2b869a24647398f86c63184cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_mics_update_event</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, uint16_t conn_id, wiced_bt_gatt_status_t status, uint32_t evt_type, gatt_intf_attribute_t *p_char, void *p_data, int len)</argsstring>
+        <name>le_audio_cap_mics_update_event</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>wiced_bt_gatt_status_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>evt_type</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This API should be invoked from MICS registered callback on receiving notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT connection id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT operation status </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evt_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event type, refer gatt_interface_events_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Characteristic for which the event has occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data len</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="353" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga468ebc2ebd245bb3afc0efd1393b2bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_ascs_update_event</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, le_audio_cap_start_unicast_param_t *unicast_param, uint16_t conn_id, wiced_bt_gatt_status_t status, uint32_t evt_type, gatt_intf_attribute_t *p_char, void *p_data, int len)</argsstring>
+        <name>le_audio_cap_ascs_update_event</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref> *</type>
+          <declname>unicast_param</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>wiced_bt_gatt_status_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>evt_type</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This API acts on ASCS notification with respect to CAP procedure and should be invoked from ASCS registered callback on receiving notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unicast_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: unicast param values </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT connection id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT operation status </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evt_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event type, refer gatt_interface_events_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Characteristic for which the event has occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data len </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_resut_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="376" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaa724caa1254b4781b5fd0ec9ca408314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_configure_stream</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_broadcast_configure_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>Configure Broadcast Stream and starts Broadcast &amp; Basic audio announcements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="394" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga63bec4d6fae8b357c42a7cbbd5ae9902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_start_stream</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data, le_audio_cap_start_broadcast_param_t *start_param)</argsstring>
+        <name>le_audio_cap_broadcast_start_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__start__broadcast__param__t" kindref="compound">le_audio_cap_start_broadcast_param_t</ref> *</type>
+          <declname>start_param</declname>
+        </param>
+        <briefdescription>
+<para>Start Broadcast Stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast Start param </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="405" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga63d92238de0f82d9205ee0a2e347d721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_disable_stream</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data, uint8_t reason)</argsstring>
+        <name>le_audio_cap_broadcast_disable_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Disable Broadcast Stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Disable reason code. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="417" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga88be8d0ac98333b153c78e5520ef4d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_release_stream</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_broadcast_release_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>Release Broadcast Stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="426" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaeaa69076e7194dcdc67b23c436a2d381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_update_stream_metadata</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_broadcast_update_stream_metadata</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>CAP Update Broadcast Streaming procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaf8ce26116612b7edf2b0aecfe6c0a2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_cap_mutiplex_audio_supported</definition>
+        <argsstring>(wiced_bt_ga_ascs_config_codec_args_t *p_codec_param, wiced_bt_ga_pacs_data_t *p_pacs_data)</argsstring>
+        <name>le_audio_cap_mutiplex_audio_supported</name>
+        <param>
+          <type><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref> *</type>
+          <declname>p_codec_param</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref> *</type>
+          <declname>p_pacs_data</declname>
+        </param>
+        <briefdescription>
+<para>check if app supports multiplex audio </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_codec_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: requested codec config param </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_pacs_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: app supported pacs </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint8_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="448" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga0c4d4279a6c8e880eccf84f0e50a20d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t le_audio_cap_verify_codec</definition>
+        <argsstring>(uint8_t dir, wiced_bt_ga_ascs_config_codec_args_t *p_codec_config, wiced_bt_ga_pacs_data_t *p_pacs_data, uint8_t is_server)</argsstring>
+        <name>le_audio_cap_verify_codec</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref> *</type>
+          <declname>p_codec_config</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref> *</type>
+          <declname>p_pacs_data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>is_server</declname>
+        </param>
+        <briefdescription>
+<para>verify requested codec config param </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: direction of stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_codec_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: requested codec config param </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_pacs_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: app supported pacs </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bool_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="460" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga8a093580cc84d584ddf9f469bb1f5f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t le_audio_cap_fill_metadata</definition>
+        <argsstring>(uint8_t ccid_count, uint8_t *ccid_list, wiced_bt_ga_bap_context_type_t context_type, wiced_bt_ga_bap_metadata_t *metadata)</argsstring>
+        <name>le_audio_cap_fill_metadata</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>ccid_count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ccid_list</declname>
+        </param>
+        <param>
+          <type><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref></type>
+          <declname>context_type</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>Fill given metadata based on provided ccid params. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ccid_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: CCID count </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ccid_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: List of CCIDs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Audio Context type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Metadata</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bool_t</para>
+</simplesect>
+Note : User should allocate (ccid_count + 2) bytes and update pointer metadata-&gt;p_upper_layer_data and metadata-&gt;upper_layer_data_length This API will use this memory and will update the data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="479" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gae924cd3eef04a284603ffa37209bd00c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_bass_operation</definition>
+        <argsstring>(le_audio_cap_app_data_t *cap_app_data, wiced_bt_ga_bass_operation_t *bass_operation_data)</argsstring>
+        <name>le_audio_cap_bass_operation</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>cap_app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref> *</type>
+          <declname>bass_operation_data</declname>
+        </param>
+        <briefdescription>
+<para>Handle CAP Control point operations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cap_app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cap application data to be used for the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bass_operation_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: information about the bass operation to be performed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="494" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga736758fec97e65efd017dbaed64a90c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_unicast_to_broadcast_handover</definition>
+        <argsstring>(wiced_bt_ga_bap_metadata_t *unicast_metadata, le_audio_cap_broadcast_app_data_t *p_cap_br_data, le_audio_cap_app_data_t *app_data, wiced_bt_ga_bass_operation_t *bass_operation_data)</argsstring>
+        <name>le_audio_cap_unicast_to_broadcast_handover</name>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>unicast_metadata</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>p_cap_br_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref> *</type>
+          <declname>bass_operation_data</declname>
+        </param>
+        <briefdescription>
+<para>Handle Unicast to Broadcast data Handover, The API expects the caller to have stopped the unicast stream before calling the API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">unicast_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: metadata used for unicast </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_cap_br_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the broadcast data which will be used for broadcast stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cap application data to be used for the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bass_operation_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BASS operation data to be performed after the handover</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="509" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga1ad02667a5586ddf817feca927bc011a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_to_unicast_handover</definition>
+        <argsstring>(wiced_bt_ga_bap_metadata_t *unicast_metadata, wiced_bt_ga_bap_metadata_t *br_metadata, le_audio_cap_app_data_t *app_data, wiced_bt_ga_bass_operation_t *bass_operation_data)</argsstring>
+        <name>le_audio_cap_broadcast_to_unicast_handover</name>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>unicast_metadata</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>br_metadata</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref> *</type>
+          <declname>bass_operation_data</declname>
+        </param>
+        <briefdescription>
+<para>Handle Broadcast to Unicast data Handover, The API expects the caller to have stopped the Broadcast stream before calling the API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">unicast_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: metadata which will be used for unicast stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">br_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the broadcast metadata to be used for the handover </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cap application data to be used for the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bass_operation_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BASS operation data to be performed after the handover</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="526" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>2022-YEAR<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_CAP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_CAP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_isoc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_ascs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_bap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;le_audio_bap_broadcast.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_mics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_pacs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_vcs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_bass.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor">#define<sp/>WICED_BT_CAP_DIRECTION_SOURCE<sp/>1<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor">#define<sp/>WICED_BT_CAP_DIRECTION_SINK<sp/>2<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#define<sp/>MAX_NUM_ASE_ID<sp/>5<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#define<sp/>CAP_TRACE(...)<sp/>WICED_BT_TRACE(__VA_ARGS__)<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor">#define<sp/>CAP_TRACE_CRIT(...)<sp/>WICED_BT_TRACE(__VA_ARGS__)<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor">enum<sp/>le_audio_cap_event_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__cap_1ggaee2ae8284a72f214c5db20cb772e9f3cae53a431ce52a2a6026c35b8e38f4cad8" kindref="member">WICED_BT_GA_CAP_STATE_CHANGED_EVENT</ref>,<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__cap_1ggaee2ae8284a72f214c5db20cb772e9f3caa5382f997834ba652a118287f4175e47" kindref="member">WICED_BT_GA_CAP_ERROR_EVENT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group__wiced__bt__ga__cap_1gaee2ae8284a72f214c5db20cb772e9f3c" kindref="member">le_audio_cap_event_t</ref>;<sp/></highlight></codeline>
+<codeline lineno="51" refid="structle__audio__cap__device__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>conn_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref><sp/>*p_pacs_data;<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>num_ase;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ase_notification_count;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__ase__t" kindref="compound">wiced_bt_ga_ascs_ase_t</ref><sp/>*ascs_data[<ref refid="group__wiced__bt__ga__cap_1ga671b2ca079d4d5fd7db21843f07e081e" kindref="member">MAX_NUM_ASE_ID</ref>];<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__vcs__volume__state__t" kindref="compound">wiced_bt_ga_vcs_volume_state_t</ref><sp/>*vcs_data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref><sp/>mics_mute_val;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/><ref refid="structle__audio__cap__device__data__t" kindref="compound">le_audio_cap_device_data_t</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="structle__audio__cap__app__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/>is_bonded;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>num_devices;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__audio__cap__device__data__t" kindref="compound">le_audio_cap_device_data_t</ref><sp/>*device_info_list;<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/>is_disconnecting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/>is_disabling;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="structle__audio__cap__req__profile__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>conn_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>gatt_intf_attribute_t<sp/>*p_char;<sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/><ref refid="structle__audio__cap__req__profile__data__t" kindref="compound">le_audio_cap_req_profile_data_t</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structle__audio__cap__event__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*p_app_data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ga12d57a5be6ea0bd2a9a392f5581e353d" kindref="member">wiced_bt_ga_ascs_state_t</ref><sp/>group_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}<sp/><ref refid="structle__audio__cap__event__data__t" kindref="compound">le_audio_cap_event_data_t</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="structle__audio__cap__start__unicast__param__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref><sp/>context_type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>metadata;<sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dir;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>num_of_cis;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref><sp/>*p_codec_configuration;<sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__config__qos__args__t" kindref="compound">wiced_bt_ga_ascs_config_qos_args_t</ref><sp/>*p_qos_configuration;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="structle__audio__cap__codec__param__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>min_data_per_frame;<sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>max_data_per_frame;<sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>sf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>frame_duration;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>audio_ch_count;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>frame_per_sdu;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>octet_per_frame;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>blocks_per_sdu;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}<sp/><ref refid="structle__audio__cap__codec__param__t" kindref="compound">le_audio_cap_codec_param_t</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="structle__audio__cap__broadcast__app__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>adv_handle;<sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>big_handle;<sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>bis_conn_id_count;<sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>bis_conn_id_list[<ref refid="group__wiced__bt__ga__bap__broadcast_1ga1e36bf5987c14347309287fd7984ffa2" kindref="member">BROADCAST_MAX_BIS_PER_SUB_GROUP</ref><sp/>*<sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1gac931cd8be37d91ea425170a560c803bf" kindref="member">BROADCAST_MAX_SUB_GROUP</ref>];<sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref><sp/>*p_base;<sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}<sp/><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="structle__audio__cap__start__broadcast__param__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_ble_isoc_phy_t<sp/>phy;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_ble_isoc_packing_t<sp/>packing;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_ble_isoc_framing_t<sp/>framing;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_ble_isoc_encryption_t<sp/>encrypt;<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>max_transport_latency;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>rtn;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sdu_interval;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>max_sdu;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*broadcast_code;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}<sp/><ref refid="structle__audio__cap__start__broadcast__param__t" kindref="compound">le_audio_cap_start_broadcast_param_t</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__cap_1gacdc5e30c66939214ab97d740ab67fc88" kindref="member">le_audio_cap_cback_t</ref>(uint16_t<sp/>conn_id,<sp/><ref refid="group__wiced__bt__ga__cap_1gaee2ae8284a72f214c5db20cb772e9f3c" kindref="member">le_audio_cap_event_t</ref><sp/>event,<sp/><ref refid="structle__audio__cap__event__data__t" kindref="compound">le_audio_cap_event_data_t</ref><sp/>*p_event_data);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__cap_1ga16b628f125b0393f766475062b4c130e" kindref="member">le_audio_cap_register_cb</ref>(<ref refid="group__wiced__bt__ga__cap_1gacdc5e30c66939214ab97d740ab67fc88" kindref="member">le_audio_cap_cback_t</ref><sp/>*cb_ptr);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1gaa32d4598314d5949f149268640bca6d5" kindref="member">le_audio_cap_start_unicast_streaming</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1gabc65947482723662cdb92cbb9e308166" kindref="member">le_audio_cap_update_streaming</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref><sp/>*unicast_param,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref><sp/>context_type,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>*metadata);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga6775544502e8248e7a75290d0d6becde" kindref="member">le_audio_cap_disable_stream</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga382b368d8dbac029020ccb767fb0e872" kindref="member">le_audio_cap_release_stream</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1gac54654dcde8007158c2a3fca3c134f23" kindref="member">le_audio_cap_set_volume</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__vcs_1gaac1329051f85c4a8ca2fb622486ab326" kindref="member">volume_control_opcodes_t</ref><sp/>opcode,</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>abs_vol);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga6aea91721237e3f65a239b8c65d685a2" kindref="member">le_audio_cap_set_volume_mute_state</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref><sp/>mute_state);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga8a3002049d56210ed9d75070be3042de" kindref="member">le_audio_cap_set_volume_offset</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,<sp/>int16_t<sp/>volume_offset);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga52e326e7d5c45c62bbf935b8a7aca017" kindref="member">le_audio_cap_set_mics_mute_state</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref><sp/>mute_state);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1gabfa5dfb5d1d86b9c1f0430678d4f0964" kindref="member">le_audio_cap_set_mics_aics_mute_state</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>instance,</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref><sp/>mute_state);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga9134b417c1742334d73b65cb0a38fa48" kindref="member">le_audio_cap_set_mics_aics_gain</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,<sp/>uint32_t<sp/>instance,<sp/>int8_t<sp/>gain);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1gad4ecf2a7f67e5e955d484fc980fc1602" kindref="member">le_audio_cap_vcs_update_event</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wiced_bt_gatt_status_t<sp/>status,</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>evt_type,</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_attribute_t<sp/>*p_char,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_data,</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga3dc441e2b869a24647398f86c63184cb" kindref="member">le_audio_cap_mics_update_event</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wiced_bt_gatt_status_t<sp/>status,</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>evt_type,</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_attribute_t<sp/>*p_char,</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_data,</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga468ebc2ebd245bb3afc0efd1393b2bad" kindref="member">le_audio_cap_ascs_update_event</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref><sp/>*unicast_param,</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wiced_bt_gatt_status_t<sp/>status,</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>evt_type,</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_attribute_t<sp/>*p_char,</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_data,</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1gaa724caa1254b4781b5fd0ec9ca408314" kindref="member">le_audio_cap_broadcast_configure_stream</ref>(<ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref><sp/>*app_data);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga63bec4d6fae8b357c42a7cbbd5ae9902" kindref="member">le_audio_cap_broadcast_start_stream</ref>(<ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__cap__start__broadcast__param__t" kindref="compound">le_audio_cap_start_broadcast_param_t</ref><sp/>*start_param);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga63d92238de0f82d9205ee0a2e347d721" kindref="member">le_audio_cap_broadcast_disable_stream</ref>(<ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref><sp/>*app_data,<sp/>uint8_t<sp/>reason);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga88be8d0ac98333b153c78e5520ef4d25" kindref="member">le_audio_cap_broadcast_release_stream</ref>(<ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref><sp/>*app_data);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1gaeaa69076e7194dcdc67b23c436a2d381" kindref="member">le_audio_cap_broadcast_update_stream_metadata</ref>(<ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref><sp/>*app_data);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal">uint8_t<sp/><ref refid="group__wiced__bt__ga__cap_1gaf8ce26116612b7edf2b0aecfe6c0a2b2" kindref="member">le_audio_cap_mutiplex_audio_supported</ref>(<ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref><sp/>*p_codec_param,</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref><sp/>*p_pacs_data);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal">wiced_bool_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga0c4d4279a6c8e880eccf84f0e50a20d2" kindref="member">le_audio_cap_verify_codec</ref>(uint8_t<sp/>dir,</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref><sp/>*p_codec_config,</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref><sp/>*p_pacs_data,</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>is_server);</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal">wiced_bool_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga8a093580cc84d584ddf9f469bb1f5f09" kindref="member">le_audio_cap_fill_metadata</ref>(uint8_t<sp/>ccid_count,</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*ccid_list,</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref><sp/>context_type,</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>*metadata);</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1gae924cd3eef04a284603ffa37209bd00c" kindref="member">le_audio_cap_bass_operation</ref>(<ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*cap_app_data,</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref><sp/>*bass_operation_data);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga736758fec97e65efd017dbaed64a90c0" kindref="member">le_audio_cap_unicast_to_broadcast_handover</ref>(<ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>*unicast_metadata,</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref><sp/>*p_cap_br_data,</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref><sp/>*bass_operation_data);</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__cap_1ga1ad02667a5586ddf817feca927bc011a" kindref="member">le_audio_cap_broadcast_to_unicast_handover</ref>(<ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>*unicast_metadata,</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>*br_metadata,</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref><sp/>*app_data,</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref><sp/>*bass_operation_data);</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_CAP_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h"/>
+  </compounddef>
+</doxygen>

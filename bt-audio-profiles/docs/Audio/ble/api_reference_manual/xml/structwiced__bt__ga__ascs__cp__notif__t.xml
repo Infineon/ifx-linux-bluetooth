@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__ascs__cp__notif__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_ascs_cp_notif_t</compoundname>
+    <includes local="no">wiced_bt_ga_ascs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__notif__t_1a35d9c745113b08e4d2dc249ea3a0e04e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__ascs_1gaaa5b3519831930b34fad38da9974c4a0" kindref="member">wiced_bt_ga_ascs_opcode_t</ref></type>
+        <definition>wiced_bt_ga_ascs_opcode_t wiced_bt_ga_ascs_cp_notif_t::opcode</definition>
+        <argsstring></argsstring>
+        <name>opcode</name>
+        <briefdescription>
+<para>Opcode of control point notification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="225" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__notif__t_1a4aa8e8eb9e5f86d3c9fcba2e05b7a5f5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_cp_notif_t::num_of_ase</definition>
+        <argsstring></argsstring>
+        <name>num_of_ase</name>
+        <briefdescription>
+<para>Number of ASE considered in this notification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="226" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__notif__t_1a9cd7a6767bf335e87a5ccc6f78757753" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__ascs__cp__cmd__sts__t" kindref="compound">wiced_bt_ga_ascs_cp_cmd_sts_t</ref> *</type>
+        <definition>wiced_bt_ga_ascs_cp_cmd_sts_t* wiced_bt_ga_ascs_cp_notif_t::p_status</definition>
+        <argsstring></argsstring>
+        <name>p_status</name>
+        <briefdescription>
+<para>Status of the control point operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="227" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ASCS CP notification. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="151">
+        <label>wiced_bt_ga_ascs_cp_notif_t</label>
+        <link refid="structwiced__bt__ga__ascs__cp__notif__t"/>
+        <childnode refid="152" relation="usage">
+          <edgelabel>p_status</edgelabel>
+        </childnode>
+      </node>
+      <node id="152">
+        <label>wiced_bt_ga_ascs_cp_cmd_sts_t</label>
+        <link refid="structwiced__bt__ga__ascs__cp__cmd__sts__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="224" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="223" bodyend="228"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__ascs__cp__notif__t_1a4aa8e8eb9e5f86d3c9fcba2e05b7a5f5" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_notif_t</scope><name>num_of_ase</name></member>
+      <member refid="structwiced__bt__ga__ascs__cp__notif__t_1a35d9c745113b08e4d2dc249ea3a0e04e" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_notif_t</scope><name>opcode</name></member>
+      <member refid="structwiced__bt__ga__ascs__cp__notif__t_1a9cd7a6767bf335e87a5ccc6f78757753" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_notif_t</scope><name>p_status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

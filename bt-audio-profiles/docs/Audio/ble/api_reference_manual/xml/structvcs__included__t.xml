@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structvcs__included__t" kind="struct" language="C++" prot="public">
+    <compoundname>vcs_included_t</compoundname>
+    <includes local="no">wiced_bt_ga_vcs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvcs__included__t_1aae5aa2e2328141068f4923c16be28926" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t vcs_included_t::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+<para>index of the included service viz, vocs or aics </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="81" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvcs__included__t_1a7cd837c55aaec79ab7df3a8a0bfc99e7" prot="public" static="no" mutable="no">
+        <type><ref refid="unionwiced__bt__ga__vocs__data__t" kindref="compound">wiced_bt_ga_vocs_data_t</ref> *</type>
+        <definition>wiced_bt_ga_vocs_data_t* vcs_included_t::p_vocs</definition>
+        <argsstring></argsstring>
+        <name>p_vocs</name>
+        <briefdescription>
+<para>vocs data </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="83" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvcs__included__t_1a39415c6814ee29c825adae8c0ad458fc" prot="public" static="no" mutable="no">
+        <type><ref refid="unionwiced__bt__ga__aics__data__t" kindref="compound">wiced_bt_ga_aics_data_t</ref> *</type>
+        <definition>wiced_bt_ga_aics_data_t* vcs_included_t::p_aics</definition>
+        <argsstring></argsstring>
+        <name>p_aics</name>
+        <briefdescription>
+<para>aics data </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="84" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvcs__included__t_1af66ea612547b1c98ef0f84570e59f5a9" prot="public" static="no" mutable="no">
+        <type>union vcs_included_t::@26</type>
+        <definition>union vcs_included_t::@26 vcs_included_t::@27</definition>
+        <argsstring></argsstring>
+        <name>@27</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="85" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Volume service included service data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="105">
+        <label>vocs_opcode_t</label>
+        <link refid="structvocs__opcode__t"/>
+      </node>
+      <node id="103">
+        <label>wiced_bt_ga_aics_gain_settings_params_t</label>
+        <link refid="structwiced__bt__ga__aics__gain__settings__params__t"/>
+      </node>
+      <node id="99">
+        <label>vcs_included_t</label>
+        <link refid="structvcs__included__t"/>
+        <childnode refid="100" relation="usage">
+          <edgelabel>p_aics</edgelabel>
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>p_vocs</edgelabel>
+        </childnode>
+      </node>
+      <node id="100">
+        <label>wiced_bt_ga_aics_data_t</label>
+        <link refid="unionwiced__bt__ga__aics__data__t"/>
+        <childnode refid="101" relation="usage">
+          <edgelabel>control_point</edgelabel>
+        </childnode>
+        <childnode refid="102" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+        <childnode refid="103" relation="usage">
+          <edgelabel>gain_setting</edgelabel>
+        </childnode>
+      </node>
+      <node id="104">
+        <label>wiced_bt_ga_vocs_data_t</label>
+        <link refid="unionwiced__bt__ga__vocs__data__t"/>
+        <childnode refid="105" relation="usage">
+          <edgelabel>control_point</edgelabel>
+        </childnode>
+      </node>
+      <node id="102">
+        <label>wiced_bt_ga_aics_input_state_t</label>
+        <link refid="structwiced__bt__ga__aics__input__state__t"/>
+      </node>
+      <node id="101">
+        <label>wiced_bt_ga_aics_control_point_t</label>
+        <link refid="structwiced__bt__ga__aics__control__point__t"/>
+        <childnode refid="102" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="80" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="80" bodyend="86"/>
+    <listofallmembers>
+      <member refid="structvcs__included__t_1aae5aa2e2328141068f4923c16be28926" prot="public" virt="non-virtual"><scope>vcs_included_t</scope><name>index</name></member>
+      <member refid="structvcs__included__t_1a39415c6814ee29c825adae8c0ad458fc" prot="public" virt="non-virtual"><scope>vcs_included_t</scope><name>p_aics</name></member>
+      <member refid="structvcs__included__t_1a7cd837c55aaec79ab7df3a8a0bfc99e7" prot="public" virt="non-virtual"><scope>vcs_included_t</scope><name>p_vocs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

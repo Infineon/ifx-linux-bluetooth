@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__ga__has__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_has_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__ga__has__data__t_1ab0ed1b5b58869a43998d5eb8d6364f3a" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__has__evt__data__t" kindref="compound">wiced_bt_ga_has_evt_data_t</ref></type>
+        <definition>wiced_bt_ga_has_evt_data_t wiced_bt_ga_has_data_t::evt_data</definition>
+        <argsstring></argsstring>
+        <name>evt_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="105" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__has__data__t_1a26130aa56e96c8b2a37352f3d81717fd" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__has__control__point__t" kindref="compound">wiced_bt_ga_has_control_point_t</ref></type>
+        <definition>wiced_bt_ga_has_control_point_t wiced_bt_ga_has_data_t::has_cp_cmd</definition>
+        <argsstring></argsstring>
+        <name>has_cp_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="106" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="234">
+        <label>wiced_bt_ga_has_cp_read_preset_t</label>
+        <link refid="structwiced__bt__ga__has__cp__read__preset__t"/>
+      </node>
+      <node id="231">
+        <label>wiced_bt_ga_has_data_t</label>
+        <link refid="unionwiced__bt__ga__has__data__t"/>
+        <childnode refid="232" relation="usage">
+          <edgelabel>has_cp_cmd</edgelabel>
+        </childnode>
+        <childnode refid="235" relation="usage">
+          <edgelabel>evt_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="236">
+        <label>wiced_bt_ga_has_cp_rsp_preset_changed_t</label>
+        <link refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t"/>
+        <childnode refid="233" relation="usage">
+          <edgelabel>preset_rec</edgelabel>
+        </childnode>
+      </node>
+      <node id="232">
+        <label>wiced_bt_ga_has_control_point_t</label>
+        <link refid="structwiced__bt__ga__has__control__point__t"/>
+        <childnode refid="233" relation="usage">
+          <edgelabel>preset_rec</edgelabel>
+        </childnode>
+        <childnode refid="234" relation="usage">
+          <edgelabel>read_preset</edgelabel>
+        </childnode>
+      </node>
+      <node id="235">
+        <label>wiced_bt_ga_has_evt_data_t</label>
+        <link refid="structwiced__bt__ga__has__evt__data__t"/>
+        <childnode refid="236" relation="usage">
+          <edgelabel>preset_changed</edgelabel>
+        </childnode>
+        <childnode refid="233" relation="usage">
+          <edgelabel>read_rsp_prest</edgelabel>
+        </childnode>
+      </node>
+      <node id="233">
+        <label>wiced_bt_ga_has_preset_records_t</label>
+        <link refid="structwiced__bt__ga__has__preset__records__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="104" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="104" bodyend="107"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__ga__has__data__t_1ab0ed1b5b58869a43998d5eb8d6364f3a" prot="public" virt="non-virtual"><scope>wiced_bt_ga_has_data_t</scope><name>evt_data</name></member>
+      <member refid="unionwiced__bt__ga__has__data__t_1a26130aa56e96c8b2a37352f3d81717fd" prot="public" virt="non-virtual"><scope>wiced_bt_ga_has_data_t</scope><name>has_cp_cmd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__ag__audio__open__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_ag_audio_open_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__ag__audio__open__t_1a27f06f282adb49ce89050ddd99773609" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_ag_audio_open_t::peer_supported_codecs</definition>
+        <argsstring></argsstring>
+        <name>peer_supported_codecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_ag.h" line="214" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_ag.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__ag__audio__open__t_1accfd51a996b3736499953af3350df08f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_ag_audio_open_t::local_selected_codec</definition>
+        <argsstring></argsstring>
+        <name>local_selected_codec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_ag.h" line="215" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_ag.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_ag.h" line="213" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_ag.h" bodystart="212" bodyend="216"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__ag__audio__open__t_1accfd51a996b3736499953af3350df08f" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_audio_open_t</scope><name>local_selected_codec</name></member>
+      <member refid="structwiced__bt__hfp__ag__audio__open__t_1a27f06f282adb49ce89050ddd99773609" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_ag_audio_open_t</scope><name>peer_supported_codecs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

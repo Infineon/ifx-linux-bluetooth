@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__ga__mics" kind="group">
+    <compoundname>Wiced_bt_ga_mics</compoundname>
+    <title>Wiced_bt_ga_mics</title>
+    <innerclass refid="structmics__included__t" prot="public">mics_included_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__mics__data__t" prot="public">wiced_bt_ga_mics_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__microphone__state__data__t" prot="public">wiced_bt_ga_microphone_state_data_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__microphone__control__client__status__data__t" prot="public">wiced_bt_ga_microphone_control_client_status_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__mics__init__data__t" prot="public">wiced_bt_ga_mics_init_data_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__mics_1ga2bbcf7a629aaff09417c2f628667f5f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_mics_init</definition>
+        <argsstring>(uint8_t num_instances, wiced_bt_ga_mics_init_data_t *p_ini)</argsstring>
+        <name>wiced_bt_ga_mics_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__mics__init__data__t" kindref="compound">wiced_bt_ga_mics_init_data_t</ref> *</type>
+          <declname>p_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the MICS service/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Number of instances </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see <ref refid="structwiced__bt__ga__mics__init__data__t" kindref="compound">wiced_bt_ga_mics_init_data_t</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>result of the init operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__mics_1gaf7beefe84ac29d210bf337d10009f1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_mics_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_mics_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable MICS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__mics_1ga51c0fc2ce8f39cc6f752b96eec433f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_mics_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_mics_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable MICS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="88" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MICS is declared on devices that can control the mute state of a microphone’s audio. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Only one instance of MICS is allowed. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

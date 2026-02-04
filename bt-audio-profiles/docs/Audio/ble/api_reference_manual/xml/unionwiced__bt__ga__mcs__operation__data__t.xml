@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__ga__mcs__operation__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_mcs_operation_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_mcs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__ga__mcs__operation__data__t_1a9abea412badd2c3ca415373e11f7c228" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t wiced_bt_ga_mcs_operation_data_t::move_relative_offset</definition>
+        <argsstring></argsstring>
+        <name>move_relative_offset</name>
+        <briefdescription>
+<para>Move Relative Offset in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="183" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__mcs__operation__data__t_1a0e35dcdba569cc7736fa160b53222cab" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t wiced_bt_ga_mcs_operation_data_t::track_number</definition>
+        <argsstring></argsstring>
+        <name>track_number</name>
+        <briefdescription>
+<para>Track number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="184" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__mcs__operation__data__t_1af2fb72f59fbd723df2131880e45c20c9" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t wiced_bt_ga_mcs_operation_data_t::segment_number</definition>
+        <argsstring></argsstring>
+        <name>segment_number</name>
+        <briefdescription>
+<para>segment number </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="185" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__mcs__operation__data__t_1a5c8500d2132fdcf428854f65802fdce2" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t wiced_bt_ga_mcs_operation_data_t::group_number</definition>
+        <argsstring></argsstring>
+        <name>group_number</name>
+        <briefdescription>
+<para>group number </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="186" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Media Control Opcode Data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="182" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="181" bodyend="187"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__ga__mcs__operation__data__t_1a5c8500d2132fdcf428854f65802fdce2" prot="public" virt="non-virtual"><scope>wiced_bt_ga_mcs_operation_data_t</scope><name>group_number</name></member>
+      <member refid="unionwiced__bt__ga__mcs__operation__data__t_1a9abea412badd2c3ca415373e11f7c228" prot="public" virt="non-virtual"><scope>wiced_bt_ga_mcs_operation_data_t</scope><name>move_relative_offset</name></member>
+      <member refid="unionwiced__bt__ga__mcs__operation__data__t_1af2fb72f59fbd723df2131880e45c20c9" prot="public" virt="non-virtual"><scope>wiced_bt_ga_mcs_operation_data_t</scope><name>segment_number</name></member>
+      <member refid="unionwiced__bt__ga__mcs__operation__data__t_1a0e35dcdba569cc7736fa160b53222cab" prot="public" virt="non-virtual"><scope>wiced_bt_ga_mcs_operation_data_t</scope><name>track_number</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

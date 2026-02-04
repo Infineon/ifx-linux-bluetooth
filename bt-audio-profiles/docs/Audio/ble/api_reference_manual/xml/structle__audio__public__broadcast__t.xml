@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structle__audio__public__broadcast__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_audio_public_broadcast_t</compoundname>
+    <includes local="no">le_audio_pbp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1a253e9c1cf203a858f0e8b8374f3959fd" prot="public" static="no" mutable="no">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t le_audio_public_broadcast_t::encryption</definition>
+        <argsstring></argsstring>
+        <name>encryption</name>
+        <briefdescription>
+<para>true If BIG is encrypted </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="35" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1a7dbade1eca5ddd8389a17cf3e6e371b1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_audio_public_broadcast_t::sampling_frequency</definition>
+        <argsstring></argsstring>
+        <name>sampling_frequency</name>
+        <briefdescription>
+<para>Sampling frequency of the broadcast stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="36" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1ab245a2139c8bed68dc643fdc97131062" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_audio_public_broadcast_t::frame_duration</definition>
+        <argsstring></argsstring>
+        <name>frame_duration</name>
+        <briefdescription>
+<para>Frame duration of the broadcast stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="37" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1aa5e60726fec6ac0e5d832da2b3880aa4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_public_broadcast_t::metadata_length</definition>
+        <argsstring></argsstring>
+        <name>metadata_length</name>
+        <briefdescription>
+<para>Length of the Metadata field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="38" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1aea17c86f1636b79a5c8d50c8e588841c" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* le_audio_public_broadcast_t::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <briefdescription>
+<para>Metadata in LTV format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="39" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1aee6c78c8e831d65c60b4c3123f6ac66c" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* le_audio_public_broadcast_t::broadcast_name</definition>
+        <argsstring></argsstring>
+        <name>broadcast_name</name>
+        <briefdescription>
+<para>Userfriendly name of the Broadcast stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="40" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1ae820d9e245b694a996a29833f18a656c" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t le_audio_public_broadcast_t::name_length</definition>
+        <argsstring></argsstring>
+        <name>name_length</name>
+        <briefdescription>
+<para>Length of the name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="41" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1ae72ff65957ce18646c137b2ab097e70c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_audio_public_broadcast_t::appearance_value</definition>
+        <argsstring></argsstring>
+        <name>appearance_value</name>
+        <briefdescription>
+<para>appearance value from the assigned number spec </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="42" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1a0c4ee81f86953c464fb9266b53c7e8b9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_public_broadcast_t::program_info_size</definition>
+        <argsstring></argsstring>
+        <name>program_info_size</name>
+        <briefdescription>
+<para>Program Info Size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="43" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__public__broadcast__t_1a77d04a0700751eb7abc991d8adc3fab5" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* le_audio_public_broadcast_t::program_info</definition>
+        <argsstring></argsstring>
+        <name>program_info</name>
+        <briefdescription>
+<para>Program_Info length-type-value (LTV) structure metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="44" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Public broadcast structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="34" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="34" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structle__audio__public__broadcast__t_1ae72ff65957ce18646c137b2ab097e70c" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>appearance_value</name></member>
+      <member refid="structle__audio__public__broadcast__t_1aee6c78c8e831d65c60b4c3123f6ac66c" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>broadcast_name</name></member>
+      <member refid="structle__audio__public__broadcast__t_1a253e9c1cf203a858f0e8b8374f3959fd" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>encryption</name></member>
+      <member refid="structle__audio__public__broadcast__t_1ab245a2139c8bed68dc643fdc97131062" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>frame_duration</name></member>
+      <member refid="structle__audio__public__broadcast__t_1aea17c86f1636b79a5c8d50c8e588841c" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>metadata</name></member>
+      <member refid="structle__audio__public__broadcast__t_1aa5e60726fec6ac0e5d832da2b3880aa4" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>metadata_length</name></member>
+      <member refid="structle__audio__public__broadcast__t_1ae820d9e245b694a996a29833f18a656c" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>name_length</name></member>
+      <member refid="structle__audio__public__broadcast__t_1a77d04a0700751eb7abc991d8adc3fab5" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>program_info</name></member>
+      <member refid="structle__audio__public__broadcast__t_1a0c4ee81f86953c464fb9266b53c7e8b9" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>program_info_size</name></member>
+      <member refid="structle__audio__public__broadcast__t_1a7dbade1eca5ddd8389a17cf3e6e371b1" prot="public" virt="non-virtual"><scope>le_audio_public_broadcast_t</scope><name>sampling_frequency</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

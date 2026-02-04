@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__tbs__call__operation__response__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_tbs_call_operation_response_t</compoundname>
+    <includes local="no">wiced_bt_ga_tbs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__operation__response__t_1aceb42a16c8a4b801470dceab4a726b71" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_tbs_call_operation_response_t::call_id</definition>
+        <argsstring></argsstring>
+        <name>call_id</name>
+        <briefdescription>
+<para>call id of the call </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="207" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__operation__response__t_1a39b2ffb6e8b33703026fa783d7117e2b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_tbs_call_operation_response_t::requested_opcode</definition>
+        <argsstring></argsstring>
+        <name>requested_opcode</name>
+        <briefdescription>
+<para>callopertaion to be performed(accept,join...) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="208" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__operation__response__t_1aefc8e72a05a39546377c30e4582da80f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___telephone___bearer___service___a_p_is_1gac31fc1e7325b84d740709aa6210bdf3e" kindref="member">wiced_bt_ga_tbs_call_operation_result_t</ref></type>
+        <definition>wiced_bt_ga_tbs_call_operation_result_t wiced_bt_ga_tbs_call_operation_response_t::call_operation_result</definition>
+        <argsstring></argsstring>
+        <name>call_operation_result</name>
+        <briefdescription>
+<para>result of the call operation performde </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="209" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>call operation response data after call action is performed </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="206" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="205" bodyend="210"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__tbs__call__operation__response__t_1aceb42a16c8a4b801470dceab4a726b71" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_operation_response_t</scope><name>call_id</name></member>
+      <member refid="structwiced__bt__ga__tbs__call__operation__response__t_1aefc8e72a05a39546377c30e4582da80f" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_operation_response_t</scope><name>call_operation_result</name></member>
+      <member refid="structwiced__bt__ga__tbs__call__operation__response__t_1a39b2ffb6e8b33703026fa783d7117e2b" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_operation_response_t</scope><name>requested_opcode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,74 @@
+variables:
+    # Specify the porting layer version. This version is used for tagging the staging repository.
+    CE_REL_VERSION: release-v3.0.0
+
+stages:
+  - build
+  - pack
+  - deploy
+  - staging
+
+before_script:
+  - set
+  - bash -c pwd
+  - whoami
+  - rm -rf deploy
+  - mkdir deploy
+
+dev-build:
+  stage: build
+  tags:
+    - ifx-linux-container
+  script:
+    - echo $CI_COMMIT_BRANCH
+
+converity:
+    stage: build
+    tags:
+        - ifx-linux-container
+    only:
+        - develop
+    script:
+        - bash -ex runcoverity.sh
+    artifacts:
+        paths:
+           - _coverity_ 
+
+pack_release:
+    stage: pack
+    only:
+        - develop
+    tags:
+        - icp-devops-linux
+    artifacts:
+        paths:
+           - deploy_fd
+    script:
+        - mkdir deploy_fd
+        - bash -ex deploy_pack_rel.sh
+
+deploy_assets:
+    stage: deploy
+    before_script:
+        - mkdir -p deploy
+    tags:
+        - devops-assets
+    only:
+        - develop
+    dependencies:
+        - pack_release
+    script:
+        - cp -pfr deploy_fd/. deploy
+        - zip -j deploy/bluetooth-linux.zip devops_scripts/LICENSE.txt
+        - bash -e devops_scripts/job_deploy_to_assets.sh
+
+mbed_deploy_staging_repo:
+    stage: staging
+    before_script:
+        - rm -rf devops_scripts
+    tags:
+        - devops-assets
+    script:
+        - bash -ex deploy_staging_repo.sh
+    only:
+        - develop

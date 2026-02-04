@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__pacs__char__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_pacs_char_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_pacs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__pacs__char__data__t_1a56ba967238e01523fdfad3eaf41f0a84" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_pacs_char_data_t::num_of_records</definition>
+        <argsstring></argsstring>
+        <name>num_of_records</name>
+        <briefdescription>
+<para>Number of PACS records. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="53" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__pacs__char__data__t_1accf9fb7758ec4e3e5348701951182b70" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__pacs__record__t" kindref="compound">wiced_bt_ga_pacs_record_t</ref> *</type>
+        <definition>wiced_bt_ga_pacs_record_t* wiced_bt_ga_pacs_char_data_t::record_list</definition>
+        <argsstring></argsstring>
+        <name>record_list</name>
+        <briefdescription>
+<para>List of PACS records. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="54" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PACS characteristic data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="274">
+        <label>wiced_bt_ga_pacs_char_data_t</label>
+        <link refid="structwiced__bt__ga__pacs__char__data__t"/>
+        <childnode refid="275" relation="usage">
+          <edgelabel>record_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="276">
+        <label>wiced_bt_ga_pacs_codec_id_t</label>
+        <link refid="structwiced__bt__ga__pacs__codec__id__t"/>
+      </node>
+      <node id="275">
+        <label>wiced_bt_ga_pacs_record_t</label>
+        <link refid="structwiced__bt__ga__pacs__record__t"/>
+        <childnode refid="276" relation="usage">
+          <edgelabel>codec_id</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="52" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="51" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__pacs__char__data__t_1a56ba967238e01523fdfad3eaf41f0a84" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_char_data_t</scope><name>num_of_records</name></member>
+      <member refid="structwiced__bt__ga__pacs__char__data__t_1accf9fb7758ec4e3e5348701951182b70" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_char_data_t</scope><name>record_list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

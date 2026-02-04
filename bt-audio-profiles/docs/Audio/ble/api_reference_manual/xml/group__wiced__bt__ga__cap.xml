@@ -1,0 +1,1495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__ga__cap" kind="group">
+    <compoundname>Wiced_bt_ga_cap</compoundname>
+    <title>Wiced_bt_ga_cap</title>
+    <innerclass refid="structle__audio__cap__device__data__t" prot="public">le_audio_cap_device_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__app__data__t" prot="public">le_audio_cap_app_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__req__profile__data__t" prot="public">le_audio_cap_req_profile_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__event__data__t" prot="public">le_audio_cap_event_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__start__unicast__param__t" prot="public">le_audio_cap_start_unicast_param_t</innerclass>
+    <innerclass refid="structle__audio__cap__codec__param__t" prot="public">le_audio_cap_codec_param_t</innerclass>
+    <innerclass refid="structle__audio__cap__broadcast__app__data__t" prot="public">le_audio_cap_broadcast_app_data_t</innerclass>
+    <innerclass refid="structle__audio__cap__start__broadcast__param__t" prot="public">le_audio_cap_start_broadcast_param_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__cap_1gaee2ae8284a72f214c5db20cb772e9f3c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>le_audio_cap_event_t</name>
+        <enumvalue id="group__wiced__bt__ga__cap_1ggaee2ae8284a72f214c5db20cb772e9f3cae53a431ce52a2a6026c35b8e38f4cad8" prot="public">
+          <name>WICED_BT_GA_CAP_STATE_CHANGED_EVENT</name>
+          <briefdescription>
+<para>CAP ASE State. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__cap_1ggaee2ae8284a72f214c5db20cb772e9f3caa5382f997834ba652a118287f4175e47" prot="public">
+          <name>WICED_BT_GA_CAP_ERROR_EVENT</name>
+          <briefdescription>
+<para>CAP Error Event. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>CAP Events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="41" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__ga__cap_1gaf632c0f72e1538e1e36fe678c0bccd3d" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t le_audio_cap_event_t</definition>
+        <argsstring></argsstring>
+        <name>le_audio_cap_event_t</name>
+        <briefdescription>
+<para>CAP Events (see <ref refid="group__wiced__bt__ga__cap_1gaee2ae8284a72f214c5db20cb772e9f3c" kindref="member">le_audio_cap_event_t</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="46" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__cap_1gacdc5e30c66939214ab97d740ab67fc88" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void le_audio_cap_cback_t(uint16_t conn_id, le_audio_cap_event_t event, le_audio_cap_event_data_t *p_event_data)</definition>
+        <argsstring>(uint16_t conn_id, le_audio_cap_event_t event, le_audio_cap_event_data_t *p_event_data)</argsstring>
+        <name>le_audio_cap_cback_t</name>
+        <briefdescription>
+<para>CAP event callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback for CAP event notification Registered using <ref refid="group__wiced__bt__ga__cap_1ga16b628f125b0393f766475062b4c130e" kindref="member">le_audio_cap_register_cb</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT connection id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_event_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="155" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga16b628f125b0393f766475062b4c130e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_cap_register_cb</definition>
+        <argsstring>(le_audio_cap_cback_t *cb_ptr)</argsstring>
+        <name>le_audio_cap_register_cb</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__cap_1gacdc5e30c66939214ab97d740ab67fc88" kindref="member">le_audio_cap_cback_t</ref> *</type>
+          <declname>cb_ptr</declname>
+        </param>
+        <briefdescription>
+<para>: CAP Register event callback handler </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cb_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: CAP event callback</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaa32d4598314d5949f149268640bca6d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_start_unicast_streaming</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, le_audio_cap_start_unicast_param_t *params)</argsstring>
+        <name>le_audio_cap_start_unicast_streaming</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>CAP Start Unicast Streaming procedure The ASEs go to the <ref refid="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50a1fd9ee8b4b39db38d27367a87e8abcb3" kindref="member">WICED_BT_GA_ASCS_STATE_ENABLING</ref> state on successful completion the procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>State Transition: Current State -----------------<mdash/>&gt; Final State Idle-&gt;CODEC_Configured-&gt;QoS_Configured-&gt;Enabling</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: start unicast param data pointer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gabc65947482723662cdb92cbb9e308166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_update_streaming</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, le_audio_cap_start_unicast_param_t *unicast_param, wiced_bt_ga_bap_context_type_t context_type, wiced_bt_ga_bap_metadata_t *metadata)</argsstring>
+        <name>le_audio_cap_update_streaming</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref> *</type>
+          <declname>unicast_param</declname>
+        </param>
+        <param>
+          <type><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref></type>
+          <declname>context_type</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>CAP Update Unicast Streaming procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">unicast_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: unicast params to be used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Context type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Metadata</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga6775544502e8248e7a75290d0d6becde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_disable_stream</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_disable_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>CAP Stop Unicast Streaming procedure The stream reverts to the <ref refid="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50a14e359af9294ea81c0571ab31f0b5ab8" kindref="member">WICED_BT_GA_ASCS_STATE_QOS_CONFIGURED</ref> state on successful completion of the procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>State Transitions: Current State -----<mdash/>&gt; Final State Enabling-&gt;Disabling-&gt;QoS_Configured Streaming-&gt;Disabling-&gt;QoS_Configured</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga382b368d8dbac029020ccb767fb0e872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_release_stream</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_release_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>CAP Stop Unicast Streaming procedure The stream reverts to the <ref refid="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50af21fa87a32ebddc700a9e2c482259980" kindref="member">WICED_BT_GA_ASCS_STATE_IDLE</ref> state on successful completion of the procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>State Transitions: Current State -----<mdash/>&gt; Final State Streaming-&gt;Releasing-&gt;Idle Enabling-&gt;Releasing-&gt;Idle QoS_Configured-&gt;Releasing-&gt;Idle Codec_Configured-&gt;Releasing-&gt;Codec_Configured</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gac54654dcde8007158c2a3fca3c134f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_volume</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, volume_control_opcodes_t opcode, uint8_t abs_vol)</argsstring>
+        <name>le_audio_cap_set_volume</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__vcs_1gaac1329051f85c4a8ca2fb622486ab326" kindref="member">volume_control_opcodes_t</ref></type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>abs_vol</declname>
+        </param>
+        <briefdescription>
+<para>CAP Set Absolute Volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: volume control point opcode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">abs_vol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Volume (Range 0-255)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga6aea91721237e3f65a239b8c65d685a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_volume_mute_state</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, wiced_bt_ga_mute_val_t mute_state)</argsstring>
+        <name>le_audio_cap_set_volume_mute_state</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+          <declname>mute_state</declname>
+        </param>
+        <briefdescription>
+<para>Set absolute volume on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mute_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Mute State</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga8a3002049d56210ed9d75070be3042de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_volume_offset</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, int16_t volume_offset)</argsstring>
+        <name>le_audio_cap_set_volume_offset</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>volume_offset</declname>
+        </param>
+        <briefdescription>
+<para>Set volume offset on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">volume_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Volume offset</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="273" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga52e326e7d5c45c62bbf935b8a7aca017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_mics_mute_state</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, wiced_bt_ga_mute_val_t mute_state)</argsstring>
+        <name>le_audio_cap_set_mics_mute_state</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+          <declname>mute_state</declname>
+        </param>
+        <briefdescription>
+<para>Set Mute State on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mute_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Mute State</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="285" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gabfa5dfb5d1d86b9c1f0430678d4f0964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_mics_aics_mute_state</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, uint32_t instance, wiced_bt_ga_mute_val_t mute_state)</argsstring>
+        <name>le_audio_cap_set_mics_aics_mute_state</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+          <declname>mute_state</declname>
+        </param>
+        <briefdescription>
+<para>Set MICS Input Gain on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Included servive instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mute_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Mute State</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga9134b417c1742334d73b65cb0a38fa48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_set_mics_aics_gain</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, uint32_t instance, int8_t gain)</argsstring>
+        <name>le_audio_cap_set_mics_aics_gain</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+<para>Set MICS Input Gain on all the devices mentioned in device_info_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Included servive instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Gain in dB</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gad4ecf2a7f67e5e955d484fc980fc1602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_vcs_update_event</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, uint16_t conn_id, wiced_bt_gatt_status_t status, uint32_t evt_type, gatt_intf_attribute_t *p_char, void *p_data, int len)</argsstring>
+        <name>le_audio_cap_vcs_update_event</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>wiced_bt_gatt_status_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>evt_type</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This API should be invoked from VCS registered callback on receiving notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT connection id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT operation status </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evt_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event type, refer gatt_interface_events_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Characteristic for which the event has occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data len </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="330" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga3dc441e2b869a24647398f86c63184cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_mics_update_event</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, uint16_t conn_id, wiced_bt_gatt_status_t status, uint32_t evt_type, gatt_intf_attribute_t *p_char, void *p_data, int len)</argsstring>
+        <name>le_audio_cap_mics_update_event</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>wiced_bt_gatt_status_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>evt_type</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This API should be invoked from MICS registered callback on receiving notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT connection id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT operation status </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evt_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event type, refer gatt_interface_events_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Characteristic for which the event has occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data len</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="353" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga468ebc2ebd245bb3afc0efd1393b2bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_ascs_update_event</definition>
+        <argsstring>(le_audio_cap_app_data_t *app_data, le_audio_cap_start_unicast_param_t *unicast_param, uint16_t conn_id, wiced_bt_gatt_status_t status, uint32_t evt_type, gatt_intf_attribute_t *p_char, void *p_data, int len)</argsstring>
+        <name>le_audio_cap_ascs_update_event</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__start__unicast__param__t" kindref="compound">le_audio_cap_start_unicast_param_t</ref> *</type>
+          <declname>unicast_param</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>wiced_bt_gatt_status_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>evt_type</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This API acts on ASCS notification with respect to CAP procedure and should be invoked from ASCS registered callback on receiving notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: App device list info data pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unicast_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: unicast param values </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT connection id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT operation status </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evt_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event type, refer gatt_interface_events_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Characteristic for which the event has occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Event Data len </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_resut_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="376" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaa724caa1254b4781b5fd0ec9ca408314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_configure_stream</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_broadcast_configure_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>Configure Broadcast Stream and starts Broadcast &amp; Basic audio announcements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="394" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga63bec4d6fae8b357c42a7cbbd5ae9902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_start_stream</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data, le_audio_cap_start_broadcast_param_t *start_param)</argsstring>
+        <name>le_audio_cap_broadcast_start_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__start__broadcast__param__t" kindref="compound">le_audio_cap_start_broadcast_param_t</ref> *</type>
+          <declname>start_param</declname>
+        </param>
+        <briefdescription>
+<para>Start Broadcast Stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast Start param </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="405" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga63d92238de0f82d9205ee0a2e347d721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_disable_stream</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data, uint8_t reason)</argsstring>
+        <name>le_audio_cap_broadcast_disable_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Disable Broadcast Stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Disable reason code. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="417" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga88be8d0ac98333b153c78e5520ef4d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_release_stream</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_broadcast_release_stream</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>Release Broadcast Stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="426" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaeaa69076e7194dcdc67b23c436a2d381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_update_stream_metadata</definition>
+        <argsstring>(le_audio_cap_broadcast_app_data_t *app_data)</argsstring>
+        <name>le_audio_cap_broadcast_update_stream_metadata</name>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <briefdescription>
+<para>CAP Update Broadcast Streaming procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast App Data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaf8ce26116612b7edf2b0aecfe6c0a2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_cap_mutiplex_audio_supported</definition>
+        <argsstring>(wiced_bt_ga_ascs_config_codec_args_t *p_codec_param, wiced_bt_ga_pacs_data_t *p_pacs_data)</argsstring>
+        <name>le_audio_cap_mutiplex_audio_supported</name>
+        <param>
+          <type><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref> *</type>
+          <declname>p_codec_param</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref> *</type>
+          <declname>p_pacs_data</declname>
+        </param>
+        <briefdescription>
+<para>check if app supports multiplex audio </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_codec_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: requested codec config param </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_pacs_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: app supported pacs </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint8_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="448" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga0c4d4279a6c8e880eccf84f0e50a20d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t le_audio_cap_verify_codec</definition>
+        <argsstring>(uint8_t dir, wiced_bt_ga_ascs_config_codec_args_t *p_codec_config, wiced_bt_ga_pacs_data_t *p_pacs_data, uint8_t is_server)</argsstring>
+        <name>le_audio_cap_verify_codec</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref> *</type>
+          <declname>p_codec_config</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref> *</type>
+          <declname>p_pacs_data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>is_server</declname>
+        </param>
+        <briefdescription>
+<para>verify requested codec config param </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: direction of stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_codec_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: requested codec config param </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_pacs_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: app supported pacs </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bool_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="460" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga8a093580cc84d584ddf9f469bb1f5f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t le_audio_cap_fill_metadata</definition>
+        <argsstring>(uint8_t ccid_count, uint8_t *ccid_list, wiced_bt_ga_bap_context_type_t context_type, wiced_bt_ga_bap_metadata_t *metadata)</argsstring>
+        <name>le_audio_cap_fill_metadata</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>ccid_count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ccid_list</declname>
+        </param>
+        <param>
+          <type><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref></type>
+          <declname>context_type</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>Fill given metadata based on provided ccid params. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ccid_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: CCID count </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ccid_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: List of CCIDs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Audio Context type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Metadata</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bool_t</para>
+</simplesect>
+Note : User should allocate (ccid_count + 2) bytes and update pointer metadata-&gt;p_upper_layer_data and metadata-&gt;upper_layer_data_length This API will use this memory and will update the data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="479" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1gae924cd3eef04a284603ffa37209bd00c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_bass_operation</definition>
+        <argsstring>(le_audio_cap_app_data_t *cap_app_data, wiced_bt_ga_bass_operation_t *bass_operation_data)</argsstring>
+        <name>le_audio_cap_bass_operation</name>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>cap_app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref> *</type>
+          <declname>bass_operation_data</declname>
+        </param>
+        <briefdescription>
+<para>Handle CAP Control point operations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cap_app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cap application data to be used for the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bass_operation_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: information about the bass operation to be performed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="494" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga736758fec97e65efd017dbaed64a90c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_unicast_to_broadcast_handover</definition>
+        <argsstring>(wiced_bt_ga_bap_metadata_t *unicast_metadata, le_audio_cap_broadcast_app_data_t *p_cap_br_data, le_audio_cap_app_data_t *app_data, wiced_bt_ga_bass_operation_t *bass_operation_data)</argsstring>
+        <name>le_audio_cap_unicast_to_broadcast_handover</name>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>unicast_metadata</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__broadcast__app__data__t" kindref="compound">le_audio_cap_broadcast_app_data_t</ref> *</type>
+          <declname>p_cap_br_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref> *</type>
+          <declname>bass_operation_data</declname>
+        </param>
+        <briefdescription>
+<para>Handle Unicast to Broadcast data Handover, The API expects the caller to have stopped the unicast stream before calling the API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">unicast_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: metadata used for unicast </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_cap_br_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the broadcast data which will be used for broadcast stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cap application data to be used for the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bass_operation_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BASS operation data to be performed after the handover</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="509" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga1ad02667a5586ddf817feca927bc011a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_cap_broadcast_to_unicast_handover</definition>
+        <argsstring>(wiced_bt_ga_bap_metadata_t *unicast_metadata, wiced_bt_ga_bap_metadata_t *br_metadata, le_audio_cap_app_data_t *app_data, wiced_bt_ga_bass_operation_t *bass_operation_data)</argsstring>
+        <name>le_audio_cap_broadcast_to_unicast_handover</name>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>unicast_metadata</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>br_metadata</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__cap__app__data__t" kindref="compound">le_audio_cap_app_data_t</ref> *</type>
+          <declname>app_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref> *</type>
+          <declname>bass_operation_data</declname>
+        </param>
+        <briefdescription>
+<para>Handle Broadcast to Unicast data Handover, The API expects the caller to have stopped the Broadcast stream before calling the API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">unicast_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: metadata which will be used for unicast stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">br_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the broadcast metadata to be used for the handover </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">app_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cap application data to be used for the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bass_operation_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BASS operation data to be performed after the handover</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="526" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga0fdf5076d5712e14cc05efa0de31384d" prot="public" static="no">
+        <name>WICED_BT_CAP_DIRECTION_SOURCE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>The device is acting in source role. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="29" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1gaa75cc727ea3c51efbf5bbdf48854e88e" prot="public" static="no">
+        <name>WICED_BT_CAP_DIRECTION_SINK</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>The device is acting in sink role. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="30" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga671b2ca079d4d5fd7db21843f07e081e" prot="public" static="no">
+        <name>MAX_NUM_ASE_ID</name>
+        <initializer>5</initializer>
+        <briefdescription>
+<para>Maximum number of ASEs supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="32" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga5830cdfaac08407f6d92681e0531c8e1" prot="public" static="no">
+        <name>CAP_TRACE</name>
+        <param><defname>...</defname></param>
+        <initializer>WICED_BT_TRACE(__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>Enable this to get CAP library traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="34" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga896e3433f62fb89f9d6133a7d63520b4" prot="public" static="no">
+        <name>CAP_TRACE_CRIT</name>
+        <param><defname>...</defname></param>
+        <initializer>WICED_BT_TRACE(__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>Enable this to get CAP library traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="35" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

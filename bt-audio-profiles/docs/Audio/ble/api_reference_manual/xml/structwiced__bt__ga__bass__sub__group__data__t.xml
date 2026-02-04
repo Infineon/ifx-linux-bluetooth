@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__bass__sub__group__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_bass_sub_group_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_bass.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__sub__group__data__t_1a56a5669525705ce92b26e6db3f12a8e2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_bass_sub_group_data_t::bis_sync_state</definition>
+        <argsstring></argsstring>
+        <name>bis_sync_state</name>
+        <briefdescription>
+<para>BIG Sync State. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit 0-30 = BIS_index[1-31] 0b0 = Not synchronized to BIS 0b1 = Synchronized to BIS </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="83" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__sub__group__data__t_1a5bec04eff8dee6ede707abb2187abcbd" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref></type>
+        <definition>wiced_bt_ga_bap_metadata_t wiced_bt_ga_bass_sub_group_data_t::meta_data</definition>
+        <argsstring></argsstring>
+        <name>meta_data</name>
+        <briefdescription>
+<para>LTV-formatted Metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="86" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Broadcast Subgroup data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>BASS Control Point Opcode. Refer BASS SPEC Broadcast Audio Scan Control Point Characteristic Section 3.1 </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="210">
+        <label>wiced_bt_ga_bass_sub_group_data_t</label>
+        <link refid="structwiced__bt__ga__bass__sub__group__data__t"/>
+        <childnode refid="211" relation="usage">
+          <edgelabel>meta_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="211">
+        <label>wiced_bt_ga_bap_metadata_t</label>
+        <link refid="structwiced__bt__ga__bap__metadata__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="82" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="81" bodyend="87"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__bass__sub__group__data__t_1a56a5669525705ce92b26e6db3f12a8e2" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_sub_group_data_t</scope><name>bis_sync_state</name></member>
+      <member refid="structwiced__bt__ga__bass__sub__group__data__t_1a5bec04eff8dee6ede707abb2187abcbd" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_sub_group_data_t</scope><name>meta_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

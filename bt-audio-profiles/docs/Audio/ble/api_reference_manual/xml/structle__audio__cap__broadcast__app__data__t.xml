@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structle__audio__cap__broadcast__app__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_audio_cap_broadcast_app_data_t</compoundname>
+    <includes local="no">le_audio_cap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__audio__cap__broadcast__app__data__t_1a671156a158f1ee18981b6944329cc1f5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_cap_broadcast_app_data_t::adv_handle</definition>
+        <argsstring></argsstring>
+        <name>adv_handle</name>
+        <briefdescription>
+<para>Adv Handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="122" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__broadcast__app__data__t_1a7dc0cbff33a74f37c1e88c3522c5fb8f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_cap_broadcast_app_data_t::big_handle</definition>
+        <argsstring></argsstring>
+        <name>big_handle</name>
+        <briefdescription>
+<para>BIG Handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="123" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__broadcast__app__data__t_1af0ea7b636a085363e6f038e1b407c810" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_audio_cap_broadcast_app_data_t::bis_conn_id_count</definition>
+        <argsstring></argsstring>
+        <name>bis_conn_id_count</name>
+        <briefdescription>
+<para>Number of Bis connection ids in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="124" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__broadcast__app__data__t_1a5620e1f8cc35dcfc76df0e6a357ac7b9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_audio_cap_broadcast_app_data_t::bis_conn_id_list[BROADCAST_MAX_BIS_PER_SUB_GROUP *BROADCAST_MAX_SUB_GROUP]</definition>
+        <argsstring>[BROADCAST_MAX_BIS_PER_SUB_GROUP *BROADCAST_MAX_SUB_GROUP]</argsstring>
+        <name>bis_conn_id_list</name>
+        <briefdescription>
+<para>BIS connection ID list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="125" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__broadcast__app__data__t_1af0036ed1add4f8f968352f0ad5289fc6" prot="public" static="no" mutable="no">
+        <type><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref> *</type>
+        <definition>le_audio_bap_broadcast_base_t* le_audio_cap_broadcast_app_data_t::p_base</definition>
+        <argsstring></argsstring>
+        <name>p_base</name>
+        <briefdescription>
+<para>BASE Data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="126" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CAP APP Broadcast data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="38">
+        <label>wiced_bt_ga_bap_csc_t</label>
+        <link refid="structwiced__bt__ga__bap__csc__t"/>
+      </node>
+      <node id="40">
+        <label>wiced_bt_ga_bap_codec_id_t</label>
+        <link refid="structwiced__bt__ga__bap__codec__id__t"/>
+      </node>
+      <node id="39">
+        <label>le_audio_bap_broadcast_bis_group_t</label>
+        <link refid="structle__audio__bap__broadcast__bis__group__t"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>bis_csc</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>le_audio_bap_broadcast_sub_group_t</label>
+        <link refid="structle__audio__bap__broadcast__sub__group__t"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>csc</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>bis_config</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>codec_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>le_audio_bap_broadcast_base_t</label>
+        <link refid="structle__audio__bap__broadcast__base__t"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>sub_group</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>le_audio_cap_broadcast_app_data_t</label>
+        <link refid="structle__audio__cap__broadcast__app__data__t"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>p_base</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>wiced_bt_ga_bap_metadata_t</label>
+        <link refid="structwiced__bt__ga__bap__metadata__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="121" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="120" bodyend="127"/>
+    <listofallmembers>
+      <member refid="structle__audio__cap__broadcast__app__data__t_1a671156a158f1ee18981b6944329cc1f5" prot="public" virt="non-virtual"><scope>le_audio_cap_broadcast_app_data_t</scope><name>adv_handle</name></member>
+      <member refid="structle__audio__cap__broadcast__app__data__t_1a7dc0cbff33a74f37c1e88c3522c5fb8f" prot="public" virt="non-virtual"><scope>le_audio_cap_broadcast_app_data_t</scope><name>big_handle</name></member>
+      <member refid="structle__audio__cap__broadcast__app__data__t_1af0ea7b636a085363e6f038e1b407c810" prot="public" virt="non-virtual"><scope>le_audio_cap_broadcast_app_data_t</scope><name>bis_conn_id_count</name></member>
+      <member refid="structle__audio__cap__broadcast__app__data__t_1a5620e1f8cc35dcfc76df0e6a357ac7b9" prot="public" virt="non-virtual"><scope>le_audio_cap_broadcast_app_data_t</scope><name>bis_conn_id_list</name></member>
+      <member refid="structle__audio__cap__broadcast__app__data__t_1af0036ed1add4f8f968352f0ad5289fc6" prot="public" virt="non-virtual"><scope>le_audio_cap_broadcast_app_data_t</scope><name>p_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

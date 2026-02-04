@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___coordinate___set___a_p_is" kind="group">
+    <compoundname>Coordinate_Set_APIs</compoundname>
+    <title>Coordinate_Set_APIs</title>
+    <innergroup refid="group__wiced__bt__ga__csip">Wiced_bt_ga_csip</innergroup>
+    <innergroup refid="group__wiced__bt__ga__csis">Wiced_bt_ga_csis</innergroup>
+    <innergroup refid="group__wiced__bt__ga__csis__common">Wiced_bt_ga_csis_common</innergroup>
+    <briefdescription>
+<para>The Coordinated Set Identification Service (CSIS) can be used by devices to be discovered as part of a Coordinated Set. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A Coordinated Set is defined as a group of devices that are configured to support a specific scenario.<itemizedlist>
+<listitem><para>Examples of Coordinated Sets include a pair of hearing aids, a pair of earbuds, or a speaker set that receives multi-channel audio and that reacts to control commands in a coordinated way (e.g., volume up and volume down).</para>
+</listitem><listitem><para>CSIS is agnostic to the actual features and functions of the devices. The purpose of CSIS is to specify how a device can be discovered as part of a Coordinated Set and how to grant a client exclusive access to the Coordinated Set to avoid race conditions when multiple clients want to access the Coordinated Set at the same time. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__tbs__call__control__point__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_tbs_call_control_point_t</compoundname>
+    <includes local="no">wiced_bt_ga_tbs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__control__point__t_1aae47555d2fd855ef849a3a2f97f57aac" prot="public" static="no" mutable="no">
+        <type><ref refid="group___telephone___bearer___service___a_p_is_1ga16fcba56a3b5a3a1eb6a79d29ad5e2c4" kindref="member">wiced_bt_ga_tbs_call_action_t</ref></type>
+        <definition>wiced_bt_ga_tbs_call_action_t wiced_bt_ga_tbs_call_control_point_t::opcode</definition>
+        <argsstring></argsstring>
+        <name>opcode</name>
+        <briefdescription>
+<para>TBS control point opcode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="250" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__control__point__t_1ac4f43df230e54f8e11f4b8258a5fc8af" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_tbs_call_control_point_t::call_id</definition>
+        <argsstring></argsstring>
+        <name>call_id</name>
+        <briefdescription>
+<para>Call ID in case of WICED_BT_GA_CCP_ACTION_ACCEPT_CALL, WICED_BT_GA_CCP_ACTION_TERMINATE_CALL, WICED_BT_GA_CCP_ACTION_HOLD_CALL, WICED_BT_GA_CCP_ACTION_RETRIEVE_CALL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="252" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__control__point__t_1a32a68a98f07de73dab667aeaa25ed719" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__tbs__join__call__data__t" kindref="compound">wiced_bt_ga_tbs_join_call_data_t</ref></type>
+        <definition>wiced_bt_ga_tbs_join_call_data_t wiced_bt_ga_tbs_call_control_point_t::join_call_data</definition>
+        <argsstring></argsstring>
+        <name>join_call_data</name>
+        <briefdescription>
+<para>Join call data in case the operation is join calls in case of WICED_BT_GA_CCP_ACTION_JOIN_CALL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="253" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__control__point__t_1ad20dcd53d7406af7de7e4fbe496fcd48" prot="public" static="no" mutable="no">
+        <type><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref></type>
+        <definition>wiced_bt_ga_string_t wiced_bt_ga_tbs_call_control_point_t::place_call_uri</definition>
+        <argsstring></argsstring>
+        <name>place_call_uri</name>
+        <briefdescription>
+<para>Call URI string in case of WICED_BT_GA_CCP_ACTION_ORIGINATE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="254" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__control__point__t_1a83396d61d62bcac66f55a012f7083bcc" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__tbs__call__operation__response__t" kindref="compound">wiced_bt_ga_tbs_call_operation_response_t</ref></type>
+        <definition>wiced_bt_ga_tbs_call_operation_response_t wiced_bt_ga_tbs_call_control_point_t::call_op_resp</definition>
+        <argsstring></argsstring>
+        <name>call_op_resp</name>
+        <briefdescription>
+<para>Result of the call control operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="255" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__control__point__t_1ad5804f4c6ce1e9e32357d92c6e40f7b5" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__tbs__call__termination__reason__data__t" kindref="compound">wiced_bt_ga_tbs_call_termination_reason_data_t</ref></type>
+        <definition>wiced_bt_ga_tbs_call_termination_reason_data_t wiced_bt_ga_tbs_call_control_point_t::termination_data</definition>
+        <argsstring></argsstring>
+        <name>termination_data</name>
+        <briefdescription>
+<para>Reason for termination of the call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="256" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__control__point__t_1afb154dbb3fba23f493aeff5087510c21" prot="public" static="no" mutable="no">
+        <type>union wiced_bt_ga_tbs_call_control_point_t::@24</type>
+        <definition>union wiced_bt_ga_tbs_call_control_point_t::@24 wiced_bt_ga_tbs_call_control_point_t::@25</definition>
+        <argsstring></argsstring>
+        <name>@25</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="257" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Telephone bearer service control point data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="293">
+        <label>wiced_bt_ga_tbs_join_call_data_t</label>
+        <link refid="structwiced__bt__ga__tbs__join__call__data__t"/>
+      </node>
+      <node id="291">
+        <label>wiced_bt_ga_tbs_call_control_point_t</label>
+        <link refid="structwiced__bt__ga__tbs__call__control__point__t"/>
+        <childnode refid="292" relation="usage">
+          <edgelabel>termination_data</edgelabel>
+        </childnode>
+        <childnode refid="293" relation="usage">
+          <edgelabel>join_call_data</edgelabel>
+        </childnode>
+        <childnode refid="294" relation="usage">
+          <edgelabel>call_op_resp</edgelabel>
+        </childnode>
+      </node>
+      <node id="292">
+        <label>wiced_bt_ga_tbs_call_termination_reason_data_t</label>
+        <link refid="structwiced__bt__ga__tbs__call__termination__reason__data__t"/>
+      </node>
+      <node id="294">
+        <label>wiced_bt_ga_tbs_call_operation_response_t</label>
+        <link refid="structwiced__bt__ga__tbs__call__operation__response__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="249" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="248" bodyend="258"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__tbs__call__control__point__t_1ac4f43df230e54f8e11f4b8258a5fc8af" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_control_point_t</scope><name>call_id</name></member>
+      <member refid="structwiced__bt__ga__tbs__call__control__point__t_1a83396d61d62bcac66f55a012f7083bcc" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_control_point_t</scope><name>call_op_resp</name></member>
+      <member refid="structwiced__bt__ga__tbs__call__control__point__t_1a32a68a98f07de73dab667aeaa25ed719" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_control_point_t</scope><name>join_call_data</name></member>
+      <member refid="structwiced__bt__ga__tbs__call__control__point__t_1aae47555d2fd855ef849a3a2f97f57aac" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_control_point_t</scope><name>opcode</name></member>
+      <member refid="structwiced__bt__ga__tbs__call__control__point__t_1ad20dcd53d7406af7de7e4fbe496fcd48" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_control_point_t</scope><name>place_call_uri</name></member>
+      <member refid="structwiced__bt__ga__tbs__call__control__point__t_1ad5804f4c6ce1e9e32357d92c6e40f7b5" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_control_point_t</scope><name>termination_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

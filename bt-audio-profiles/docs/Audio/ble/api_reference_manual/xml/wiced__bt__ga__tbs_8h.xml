@@ -1,0 +1,1348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__ga__tbs_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_ga_tbs.h</compoundname>
+    <includes local="yes">wiced_bt_dev.h</includes>
+    <includes local="yes">wiced_bt_ble.h</includes>
+    <includes local="yes">wiced_bt_gatt.h</includes>
+    <includes local="yes">gatt_interface.h</includes>
+    <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
+    <incdepgraph>
+      <node id="104">
+        <label>wiced_bt_ga_tbs.h</label>
+        <link refid="wiced__bt__ga__tbs_8h"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="107">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="106">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="105">
+        <label>wiced_bt_dev.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structwiced__bt__ga__tbs__user__friendly__call__data__t" prot="public">wiced_bt_ga_tbs_user_friendly_call_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__incoming__call__t" prot="public">wiced_bt_ga_tbs_incoming_call_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t" prot="public">wiced_bt_ga_tbs_incoming_tg_bearer_uri_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__call__state__data__t" prot="public">wiced_bt_ga_tbs_call_state_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__call__state__list__t" prot="public">wiced_bt_ga_tbs_call_state_list_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__call__termination__reason__data__t" prot="public">wiced_bt_ga_tbs_call_termination_reason_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__call__operation__response__t" prot="public">wiced_bt_ga_tbs_call_operation_response_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__current__call__t" prot="public">wiced_bt_ga_tbs_current_call_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__current__call__list__t" prot="public">wiced_bt_ga_tbs_current_call_list_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__join__call__data__t" prot="public">wiced_bt_ga_tbs_join_call_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__tbs__call__control__point__t" prot="public">wiced_bt_ga_tbs_call_control_point_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__tbs__data__t" prot="public">wiced_bt_ga_tbs_data_t</innerclass>
+      <sectiondef kind="user-defined">
+      <header>TBS feature bit values</header>
+      <description><para><anchor id="group___telephone___bearer___service___a_p_is_1TBS_FEATURE_BIT"/></para>
+</description>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga5156be2df198c66d80dd8f6622caf072" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_FEATURE_BIT_INBAND_RINGTONE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>inband ringtone: 0 = disabled, 1 = enabled </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="36" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga467ee605490237b5817781b8a0bcc519" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_FEATURE_BIT_SILENT_MODE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>silent_mode: 0 = not in silent mode, 1 = in silent mode </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="37" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>TBS controlpoint optional opcodes</header>
+      <description><para><anchor id="group___telephone___bearer___service___a_p_is_1TBS_CONTROL_POINT_OPTIONAL_OPCODES"/></para>
+</description>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga07d832c1d7663bcb8a6745f2dbb8ec62" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_FEATURE_BIT_JOIN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Join Call Control Point Opcode: 0 = not supported, 1 = supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="44" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gaaf43f4e8e41b1ded7bb268faae03bd1d" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_FEATURE_BIT_LOCAL_HOLD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Local Hold and Local Retrieve: 0 = not supported 1 = supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="45" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>TBS max supported len</header>
+      <description><para><anchor id="group___telephone___bearer___service___a_p_is_1TBS_MAX_SUPPORTED_LEN"/></para>
+</description>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gaa161dd225e683ad4e79c121ff1763b14" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_BEARER_NAME_MAX_SIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Max Bearer name size supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="52" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gadf6139761b756ee111f3a80bb99c1986" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_BEARER_UCI_MAX_SIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Max Uniform Caller Identifier size supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="53" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gacdf101e52baa893a00307840f9ebcf3e" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_BEARER_URI_MAX_SIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Max Uniform Resource Intentifier size supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="54" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga0c00a96baa89438d6b732b92a1ba11b9" prot="public" static="no">
+        <name>MAX_DATA_LEN</name>
+        <initializer>100</initializer>
+        <briefdescription>
+<para>Max data length supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="55" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gab64d04e3e6f989d9e9fa3e1f6845b111" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_RM_CALLERID_MAX_SIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Max size of uri prefix and remote caller id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="56" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gac1e1eb345d917305e935de9d73782fa5" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_TG_CALLERID_MAX_SIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Max size of target caller id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="57" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gac59512db441edddea2959bfff23932a7" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_FRIENDLY_NAME_MAX_SIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Max size of call friendly name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="58" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gae61889dcb0504fb7b2712f9555097e93" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_BEARER_MAX_CALL_COUNT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+<para>Max call count suppoorted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="59" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>TBS param length</header>
+      <description><para><anchor id="group___telephone___bearer___service___a_p_is_1TBS_PARAM_LEN"/></para>
+</description>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gaa74983b72b1b6d22f12d0536e06a95f1" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_BEARER_TECHNOLOGY_LEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Bearer technology length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="66" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gaa481bf068213b88678586a9408b7f0cd" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_SIGNAL_STRENGTH_LEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Signal strength length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="67" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gadc5c623b24b447f0382d94398f8d58b3" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_SIGNAL_STRENGTH_REPORTING_INTERVAL_LEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Signal strength reporting interval length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="68" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gaf20613e6286e9235d94b968cb7a98b42" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_CONTENT_CONTROL_ID_LEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Content control ID length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="69" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga12975bb0122c3c625de63f5caa92927b" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_CCP_SUPPORTED_OPCODE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>CCP Supported opcode length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="70" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga1a8240cbd38420ac44f33663bd0ab6f1" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_BEARER_STATUS_FLAG_LEN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Status flag length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="71" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gaccb23bcc28603e948b83b44dde87800b" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_OPTIONAL_OPCODE_LEN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>TBS optional opcode length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="72" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga481bd7a90b20312582eb3ce9d7e4d4b6" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_CALL_STATE_LEN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Call state length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="73" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga85d72ee8b660e02506f9b6f1896a7ac7" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_CALL_ACTION_RESP_LEN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>Call action response length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="74" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Call flag values</header>
+      <description><para><anchor id="group___telephone___bearer___service___a_p_is_1CALL_FLAG"/></para>
+</description>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga4332148f81917b38ecb61a2c749cc73e" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_INCOMING_CALL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Call flag value for incoming call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="81" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gabf81ee02c52184cf1335696d44daa4f0" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_OUTGOING_CALL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Call flag value for outgoing call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="82" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga039ba52b8dd576d66ea4684b74c7a73d" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_INFO_PROVIDED_BY_SERVER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Call flag value information provided by server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="83" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1ga05ad14773d9a4e31045a61f62a64f549" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_INFO_WITHHELD_BY_SERVER</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Call flag value information withheld by server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="84" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gae60bd0250256eff3c6f4d2d9636d5887" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_INFO_PROVIDED_BY_NETWORK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Call flag value information provided by network. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="85" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___telephone___bearer___service___a_p_is_1gada754d5a201dfd6a52bf4a309a92e416" prot="public" static="no">
+        <name>WICED_BT_GA_TBS_INFO_WITHHELD_BY_NETWORK</name>
+        <initializer>4</initializer>
+        <briefdescription>
+<para>Call flag value information withheld by network. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="86" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___telephone___bearer___service___a_p_is_1gad46695a559dc54c9b77c24088428e822" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_tbs_call_termination_reason_e</name>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a5c378e34e9c83b9d16c196bdbafc8e8e" prot="public">
+          <name>WICED_BT_GA_TBS_IMPROPER_REMOTE_CALLER_ID</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>remote Caller ID value used to place a call was formed improperly. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822ac6c316bd7905bff026f0fdc6b1665aa4" prot="public">
+          <name>WICED_BT_GA_TBS_CALL_FAIL</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>unable to make the call </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a60c7b1eed84ca7526809b94b7302a9ee" prot="public">
+          <name>WICED_BT_GA_TBS_REMOTE_CALL_END</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>remote party ended the call </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822adf742710836b64589e4fe28c5cbbe7dd" prot="public">
+          <name>WICED_BT_GA_TBS_SERVER_CALL_END</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>call ended from the server </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a612db959bc68f6b4a881b14ed7a1bf10" prot="public">
+          <name>WICED_BT_GA_TBS_LINE_BUSY</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>line busy </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a87583027441201847250420a787ad34e" prot="public">
+          <name>WICED_BT_GA_TBS_NETWORK_CONGESTION</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>network congestion </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822ab67ac5f09e9f31ded3d4b81a7f7fa2d1" prot="public">
+          <name>WICED_BT_GA_TBS_CLIENT_TERMINATED</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>client terminated the call </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822ad27752ffca1c8da077555a7907b1111b" prot="public">
+          <name>WICED_BT_GA_TBS_NO_SERVICE</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>No service. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822ae16694dab79df82bd372930c22ce18bc" prot="public">
+          <name>WICED_BT_GA_TBS_NO_ANSWER</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>No answer. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a4a24f2c906f870992263a48297125db1" prot="public">
+          <name>WICED_BT_GA_TBS_UNSPECIFIED</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+<para>Reason is not specified. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>All posible termination reason. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="91" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="90" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___telephone___bearer___service___a_p_is_1ga644c83fc2b6c5436d2d55e429a668a53" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_tbs_bearer_technology_e</name>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a17b99acfe5ba142dbd28e52e786df328" prot="public">
+          <name>WICED_BT_GA_TBS_3G_TECHNOLOGY</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>bearer supports 3G technology . </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a1491faab6c6a8b8d70afd106d6e3e98f" prot="public">
+          <name>WICED_BT_GA_TBS_4G_TECHNOLOGY</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>bearer supports 4G technology. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53ab2635f6c82e8f56bc6b38c8938f39908" prot="public">
+          <name>WICED_BT_GA_TBS_LTE_TECHNOLOGY</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>bearer supports LTE technology. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a98c342e5f6a6f5090bb6eb7c0d8b8de3" prot="public">
+          <name>WICED_BT_GA_TBS_WIFI_TECHNOLOGY</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>bearer supports WIFI technology. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53aa59e2afe3aebbe541236e98cb9450d19" prot="public">
+          <name>WICED_BT_GA_TBS_5G_TECHNOLOGY</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>bearer supports 5G technology. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53af266dd2df186dc1c1e0b2d7040390e17" prot="public">
+          <name>WICED_BT_GA_TBS_GSM_TECHNOLOGY</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>bearer supports GSM technology. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53ab84e9269f854fb875f511cabd6c5d3ad" prot="public">
+          <name>WICED_BT_GA_TBS_CDMA_TECHNOLOGY</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>bearer supports CDMA technology. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a751222cf39f1216410215e708d0c4ea9" prot="public">
+          <name>WICED_BT_GA_TBS_2G_TECHNOLOGY</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>bearer supports 2G technology. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a8f04e77b4bf8e05369b99fbc437c4d7e" prot="public">
+          <name>WICED_BT_GA_TBS_WCDMA_TECHNOLOGY</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+<para>bearer supports WCDMA technology. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a56cd64c8c63d2669ff5b272a5dcf4630" prot="public">
+          <name>WICED_BT_GA_TBS_IP_TECHNOLOGY</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+<para>bearer supports IP technology. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Bearer technology values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="107" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="106" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___telephone___bearer___service___a_p_is_1ga342778346628989a1d1b6346c25b79dd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_tbs_call_state_e</name>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda679f5ab245cf457643fa508ec7d584fe" prot="public">
+          <name>WICED_BT_GA_TBS_CALL_STATE_INCOMING</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>A remote party is calling (incoming call). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda7b1d1619d4d99c096b353c0534dc26ec" prot="public">
+          <name>WICED_BT_GA_TBS_CALL_STATE_DIALING</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>The process to call the remote party has started but the remote party is not being alerted (outgoing call). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79ddaa4d3336f3646c1905c8755e7407cd145" prot="public">
+          <name>WICED_BT_GA_TBS_CALL_STATE_ALERTING</name>
+          <initializer>= 0X02</initializer>
+          <briefdescription>
+<para>A remote party is being alerted (outgoing call). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda67926000666d3f86486b4ff0fb2c9952" prot="public">
+          <name>WICED_BT_GA_TBS_CALL_STATE_ACTIVE</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>The call is in an active conversation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda331f9f93498937cf8f2ef15cee6461de" prot="public">
+          <name>WICED_BT_GA_TBS_CALL_STATE_LOCALLY_HELD</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>The call is connected but held locally with no audio communicated in either direction. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Either server/client can control the state </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda66da0aeb62b73b98b458e25ab6926d02" prot="public">
+          <name>WICED_BT_GA_TBS_CALL_STATE_REMOTELY_HELD</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>The call is connected but held remotely with no audio communicated in either direction. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Call state can be controlled by the remote party of the call. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda557942425b5c7ec8433052216370c44c" prot="public">
+          <name>WICED_BT_GA_TBS_CALL_STATE_LOCALLY_AND_REMOTELY_HELD</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>The call is connected but held both locally and remotely with no audio communicated in either direction. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>All possible call state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="123" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="122" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___telephone___bearer___service___a_p_is_1ga4605c933590e8e9c93eb6f26d8bfe2ee" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_tbs_call_operation_result_e</name>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea0a845ef743cf58f1784f2dcd98172c46" prot="public">
+          <name>WICED_BT_CALL_SUCCESS</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>Opcode write was successful. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea520962b2bf2e8b0c2ba4564d38710999" prot="public">
+          <name>WICED_BT_CALL_OPCODE_NOT_SUPPORTED</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>An invalid opcode was used for the Call Control Point write. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eeacebd0f607d3c6c5721348cf2cf2d0df5" prot="public">
+          <name>WICED_BT_CALL_OPERATION_NOT_POSSIBLE</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>The tbs server does not currently support joining of calls. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea69c3f063f717cd291b7a58c80a6c16e3" prot="public">
+          <name>WICED_BT_CALL_INVALID_CALL_ID</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>The Call Control Point write is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eeac05a40cb0c7d8890cfe28998996179dd" prot="public">
+          <name>WICED_BT_CALL_STATE_MISMATCH</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>Opcode written in an unexpected call state. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea18c008078ad7fd3191d175a510b35149" prot="public">
+          <name>WICED_BT_CALL_LACK_OF_RESOURCES</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>resources to complete the requested action </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea8ee955057e98c6e303c0890777a745f1" prot="public">
+          <name>WICED_BT_CALL_INVALID_URI</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>outgoing caller id is incorrect </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>call action notification event after a call action is performed </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="137" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="136" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___telephone___bearer___service___a_p_is_1gacb11d496f45ca4cb83fda20eb085eb7c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_tbs_call_action_e</name>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca368a57b3a164930f5d40b393c53772dd" prot="public">
+          <name>WICED_BT_GA_CCP_ACTION_ACCEPT_CALL</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>Answer the incoming call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca2ba208eccf871a1da1599af5fc0e23b8" prot="public">
+          <name>WICED_BT_GA_CCP_ACTION_TERMINATE_CALL</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>End the currently active/outgoing/held call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7cae5c20dbbf9b3f9c81106483639fb18f4" prot="public">
+          <name>WICED_BT_GA_CCP_ACTION_HOLD_CALL</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>Place the currently active or alerting call on local hold. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca37385d7e6e09def7b5b2941266b16e41" prot="public">
+          <name>WICED_BT_GA_CCP_ACTION_RETRIEVE_CALL</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>Move a locally held call to an active call. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Move a locally and remotely held call to a remotely held call </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca2b174cf3fa816f2bbc3f33f03c8a5e4c" prot="public">
+          <name>WICED_BT_GA_CCP_ACTION_ORIGINATE</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>Place a call. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca0b620c5546162ff2547c0805b5ded780" prot="public">
+          <name>WICED_BT_GA_CCP_ACTION_JOIN_CALL</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>Put a call to the active state and join all calls that are in the active state. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Call action values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="150" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="149" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___telephone___bearer___service___a_p_is_1ga457dc8408da042c06c5c098acd071acf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_ccp_bearer_property_t</name>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfada82513e0c55cafeba8a7c44d32ebdee" prot="public">
+          <name>TBS_BEARER_PROVIDER_NAME</name>
+          <briefdescription>
+<para>telephone bearer provider name value </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfa4acddab301fa1d250d68ed5dad476199" prot="public">
+          <name>TBS_BEARER_UCI</name>
+          <briefdescription>
+<para>telephone bearer supported uci </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfa11c9d102ab3599d6edff1ac98105b265" prot="public">
+          <name>TBS_BEARER_TECHNOLOGY</name>
+          <briefdescription>
+<para>telephone bearer supported technology </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfa3aa5b47e4caf3c4697414d4e4257c292" prot="public">
+          <name>BEARER_URI_PREFIX_SUPPORTED_LIST</name>
+          <briefdescription>
+<para>telephone bearer supported uri </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfa1810f94444872b1a559eea1c004505c7" prot="public">
+          <name>TBS_BEARER_SIGNAL_STRENGTH</name>
+          <briefdescription>
+<para>telephone bearer signal strength </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfaef9b80ab93a0d6db2b2d6964bd1c5c05" prot="public">
+          <name>TBS_BEARER_SIGNAL_STRENGTH_REPORTING_INTERVAL</name>
+          <briefdescription>
+<para>telephone bearer signal strength reporting interval </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>list of bearer properties that is read from the app </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="237" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="236" bodyend="244"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___telephone___bearer___service___a_p_is_1ga36b26977c1678cab45894f4469ace2f7" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_tbs_call_termination_reason_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_tbs_call_termination_reason_t</name>
+        <briefdescription>
+<para>Termination reason (see <ref refid="group___telephone___bearer___service___a_p_is_1gad46695a559dc54c9b77c24088428e822" kindref="member">wiced_bt_ga_tbs_call_termination_reason_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="103" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___telephone___bearer___service___a_p_is_1gac34cc00e308b72e9c487946b50b96830" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_tbs_bearer_technology_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_tbs_bearer_technology_t</name>
+        <briefdescription>
+<para>TBS bearer technology (see <ref refid="group___telephone___bearer___service___a_p_is_1ga644c83fc2b6c5436d2d55e429a668a53" kindref="member">wiced_bt_ga_tbs_bearer_technology_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="119" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___telephone___bearer___service___a_p_is_1gaa2ea235d1463252aeab0ff249b41b3bf" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_tbs_call_state_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_tbs_call_state_t</name>
+        <briefdescription>
+<para>TBS call state (see <ref refid="group___telephone___bearer___service___a_p_is_1ga342778346628989a1d1b6346c25b79dd" kindref="member">wiced_bt_ga_tbs_call_state_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="133" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___telephone___bearer___service___a_p_is_1gac31fc1e7325b84d740709aa6210bdf3e" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_tbs_call_operation_result_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_tbs_call_operation_result_t</name>
+        <briefdescription>
+<para>see <ref refid="group___telephone___bearer___service___a_p_is_1ga4605c933590e8e9c93eb6f26d8bfe2ee" kindref="member">wiced_bt_ga_tbs_call_operation_result_e</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="146" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___telephone___bearer___service___a_p_is_1ga16fcba56a3b5a3a1eb6a79d29ad5e2c4" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_tbs_call_action_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_tbs_call_action_t</name>
+        <briefdescription>
+<para>TBS call action (see <ref refid="group___telephone___bearer___service___a_p_is_1gacb11d496f45ca4cb83fda20eb085eb7c" kindref="member">wiced_bt_ga_tbs_call_action_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="159" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___telephone___bearer___service___a_p_is_1gae5d4a7ef4fab922fea98a603f179da30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_gtbs_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_gtbs_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the GTBS service/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Number of instances </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>result of the init operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___telephone___bearer___service___a_p_is_1ga3928ec77b06569ed8c7f6319c49465c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_tbs_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_tbs_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the TBS service/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Number of instances </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>result of the init operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="297" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___telephone___bearer___service___a_p_is_1gabd9e7799fd68c69cc9be83f0e427c067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_tbs_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_tbs_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable TBS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___telephone___bearer___service___a_p_is_1gacbfc806c5d90a7b11b9e9ca1d3bdd254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_tbs_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_tbs_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable TBS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="303" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___telephone___bearer___service___a_p_is_1gafdafbb92da043844690ec6d13fb9087d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_gtbs_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_gtbs_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable GTBS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="306" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___telephone___bearer___service___a_p_is_1ga41ad1a81f4673d9673bdec9195f8a010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_gtbs_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_gtbs_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable GTBS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="309" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Telephone Bearer Service (TBS) Application Programming Interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_TBS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_TBS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_dev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gatt_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_FEATURE_BIT_INBAND_RINGTONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_FEATURE_BIT_SILENT_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_FEATURE_BIT_JOIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_FEATURE_BIT_LOCAL_HOLD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_BEARER_NAME_MAX_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_BEARER_UCI_MAX_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_BEARER_URI_MAX_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor">#define<sp/>MAX_DATA_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_RM_CALLERID_MAX_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_TG_CALLERID_MAX_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_FRIENDLY_NAME_MAX_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_BEARER_MAX_CALL_COUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10<sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_BEARER_TECHNOLOGY_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_SIGNAL_STRENGTH_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_SIGNAL_STRENGTH_REPORTING_INTERVAL_LEN<sp/>1<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_CONTENT_CONTROL_ID_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_CCP_SUPPORTED_OPCODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_BEARER_STATUS_FLAG_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_OPTIONAL_OPCODE_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_CALL_STATE_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_CALL_ACTION_RESP_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_INCOMING_CALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_OUTGOING_CALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_INFO_PROVIDED_BY_SERVER<sp/><sp/><sp/><sp/><sp/>0<sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_INFO_WITHHELD_BY_SERVER<sp/><sp/><sp/><sp/><sp/>2<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_INFO_PROVIDED_BY_NETWORK<sp/><sp/><sp/><sp/>0<sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_TBS_INFO_WITHHELD_BY_NETWORK<sp/><sp/><sp/><sp/>4<sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/>enum<sp/>wiced_bt_ga_tbs_call_termination_reason_e</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a5c378e34e9c83b9d16c196bdbafc8e8e" kindref="member">WICED_BT_GA_TBS_IMPROPER_REMOTE_CALLER_ID</ref><sp/><sp/><sp/>=<sp/>0x00,<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822ac6c316bd7905bff026f0fdc6b1665aa4" kindref="member">WICED_BT_GA_TBS_CALL_FAIL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a60c7b1eed84ca7526809b94b7302a9ee" kindref="member">WICED_BT_GA_TBS_REMOTE_CALL_END</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,<sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822adf742710836b64589e4fe28c5cbbe7dd" kindref="member">WICED_BT_GA_TBS_SERVER_CALL_END</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x03,<sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a612db959bc68f6b4a881b14ed7a1bf10" kindref="member">WICED_BT_GA_TBS_LINE_BUSY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a87583027441201847250420a787ad34e" kindref="member">WICED_BT_GA_TBS_NETWORK_CONGESTION</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x05,<sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822ab67ac5f09e9f31ded3d4b81a7f7fa2d1" kindref="member">WICED_BT_GA_TBS_CLIENT_TERMINATED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x06,<sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822ad27752ffca1c8da077555a7907b1111b" kindref="member">WICED_BT_GA_TBS_NO_SERVICE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x07,<sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822ae16694dab79df82bd372930c22ce18bc" kindref="member">WICED_BT_GA_TBS_NO_ANSWER</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x08,<sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggad46695a559dc54c9b77c24088428e822a4a24f2c906f870992263a48297125db1" kindref="member">WICED_BT_GA_TBS_UNSPECIFIED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x09,<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga36b26977c1678cab45894f4469ace2f7" kindref="member">wiced_bt_ga_tbs_call_termination_reason_t</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga644c83fc2b6c5436d2d55e429a668a53" kindref="member">wiced_bt_ga_tbs_bearer_technology_e</ref></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a17b99acfe5ba142dbd28e52e786df328" kindref="member">WICED_BT_GA_TBS_3G_TECHNOLOGY</ref><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a1491faab6c6a8b8d70afd106d6e3e98f" kindref="member">WICED_BT_GA_TBS_4G_TECHNOLOGY</ref><sp/><sp/><sp/><sp/>=<sp/>0x02,<sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53ab2635f6c82e8f56bc6b38c8938f39908" kindref="member">WICED_BT_GA_TBS_LTE_TECHNOLOGY</ref><sp/><sp/><sp/>=<sp/>0x03,<sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a98c342e5f6a6f5090bb6eb7c0d8b8de3" kindref="member">WICED_BT_GA_TBS_WIFI_TECHNOLOGY</ref><sp/><sp/>=<sp/>0x04,<sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53aa59e2afe3aebbe541236e98cb9450d19" kindref="member">WICED_BT_GA_TBS_5G_TECHNOLOGY</ref><sp/><sp/><sp/><sp/>=<sp/>0x05,<sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53af266dd2df186dc1c1e0b2d7040390e17" kindref="member">WICED_BT_GA_TBS_GSM_TECHNOLOGY</ref><sp/><sp/><sp/>=<sp/>0x06,<sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53ab84e9269f854fb875f511cabd6c5d3ad" kindref="member">WICED_BT_GA_TBS_CDMA_TECHNOLOGY</ref><sp/><sp/>=<sp/>0x07,<sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a751222cf39f1216410215e708d0c4ea9" kindref="member">WICED_BT_GA_TBS_2G_TECHNOLOGY</ref><sp/><sp/><sp/><sp/>=<sp/>0x08,<sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a8f04e77b4bf8e05369b99fbc437c4d7e" kindref="member">WICED_BT_GA_TBS_WCDMA_TECHNOLOGY</ref><sp/>=<sp/>0x09,<sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga644c83fc2b6c5436d2d55e429a668a53a56cd64c8c63d2669ff5b272a5dcf4630" kindref="member">WICED_BT_GA_TBS_IP_TECHNOLOGY</ref><sp/><sp/><sp/><sp/>=<sp/>0x0A,<sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group___telephone___bearer___service___a_p_is_1gac34cc00e308b72e9c487946b50b96830" kindref="member">wiced_bt_ga_tbs_bearer_technology_t</ref>;<sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga342778346628989a1d1b6346c25b79dd" kindref="member">wiced_bt_ga_tbs_call_state_e</ref></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda679f5ab245cf457643fa508ec7d584fe" kindref="member">WICED_BT_GA_TBS_CALL_STATE_INCOMING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda7b1d1619d4d99c096b353c0534dc26ec" kindref="member">WICED_BT_GA_TBS_CALL_STATE_DIALING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79ddaa4d3336f3646c1905c8755e7407cd145" kindref="member">WICED_BT_GA_TBS_CALL_STATE_ALERTING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0X02,<sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda67926000666d3f86486b4ff0fb2c9952" kindref="member">WICED_BT_GA_TBS_CALL_STATE_ACTIVE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x03,<sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda331f9f93498937cf8f2ef15cee6461de" kindref="member">WICED_BT_GA_TBS_CALL_STATE_LOCALLY_HELD</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,<sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda66da0aeb62b73b98b458e25ab6926d02" kindref="member">WICED_BT_GA_TBS_CALL_STATE_REMOTELY_HELD</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x05,<sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga342778346628989a1d1b6346c25b79dda557942425b5c7ec8433052216370c44c" kindref="member">WICED_BT_GA_TBS_CALL_STATE_LOCALLY_AND_REMOTELY_HELD</ref><sp/>=<sp/>0x06,<sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group___telephone___bearer___service___a_p_is_1gaa2ea235d1463252aeab0ff249b41b3bf" kindref="member">wiced_bt_ga_tbs_call_state_t</ref>;<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga4605c933590e8e9c93eb6f26d8bfe2ee" kindref="member">wiced_bt_ga_tbs_call_operation_result_e</ref></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea0a845ef743cf58f1784f2dcd98172c46" kindref="member">WICED_BT_CALL_SUCCESS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea520962b2bf2e8b0c2ba4564d38710999" kindref="member">WICED_BT_CALL_OPCODE_NOT_SUPPORTED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eeacebd0f607d3c6c5721348cf2cf2d0df5" kindref="member">WICED_BT_CALL_OPERATION_NOT_POSSIBLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,<sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea69c3f063f717cd291b7a58c80a6c16e3" kindref="member">WICED_BT_CALL_INVALID_CALL_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x03,<sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eeac05a40cb0c7d8890cfe28998996179dd" kindref="member">WICED_BT_CALL_STATE_MISMATCH</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,<sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea18c008078ad7fd3191d175a510b35149" kindref="member">WICED_BT_CALL_LACK_OF_RESOURCES</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x05,<sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga4605c933590e8e9c93eb6f26d8bfe2eea8ee955057e98c6e303c0890777a745f1" kindref="member">WICED_BT_CALL_INVALID_URI</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x06<sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/>}<sp/>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group___telephone___bearer___service___a_p_is_1gac31fc1e7325b84d740709aa6210bdf3e" kindref="member">wiced_bt_ga_tbs_call_operation_result_t</ref>;<sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gacb11d496f45ca4cb83fda20eb085eb7c" kindref="member">wiced_bt_ga_tbs_call_action_e</ref></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca368a57b3a164930f5d40b393c53772dd" kindref="member">WICED_BT_GA_CCP_ACTION_ACCEPT_CALL</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca2ba208eccf871a1da1599af5fc0e23b8" kindref="member">WICED_BT_GA_CCP_ACTION_TERMINATE_CALL</ref><sp/><sp/>=<sp/>0x01,<sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7cae5c20dbbf9b3f9c81106483639fb18f4" kindref="member">WICED_BT_GA_CCP_ACTION_HOLD_CALL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,<sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca37385d7e6e09def7b5b2941266b16e41" kindref="member">WICED_BT_GA_CCP_ACTION_RETRIEVE_CALL</ref><sp/><sp/><sp/>=<sp/>0x03,<sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca2b174cf3fa816f2bbc3f33f03c8a5e4c" kindref="member">WICED_BT_GA_CCP_ACTION_ORIGINATE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,<sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ggacb11d496f45ca4cb83fda20eb085eb7ca0b620c5546162ff2547c0805b5ded780" kindref="member">WICED_BT_GA_CCP_ACTION_JOIN_CALL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x05,<sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga16fcba56a3b5a3a1eb6a79d29ad5e2c4" kindref="member">wiced_bt_ga_tbs_call_action_t</ref>;<sp/></highlight></codeline>
+<codeline lineno="162" refid="structwiced__bt__ga__tbs__user__friendly__call__data__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_id;<sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/><sp/><sp/><sp/>name;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__user__friendly__call__data__t" kindref="compound">wiced_bt_ga_tbs_user_friendly_call_data_t</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="structwiced__bt__ga__tbs__incoming__call__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>call_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/>URI;<sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__incoming__call__t" kindref="compound">wiced_bt_ga_tbs_incoming_call_t</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>call_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/>target_caller_id;<sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t" kindref="compound">wiced_bt_ga_tbs_incoming_tg_bearer_uri_t</ref>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="structwiced__bt__ga__tbs__call__state__data__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>call_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gaa2ea235d1463252aeab0ff249b41b3bf" kindref="member">wiced_bt_ga_tbs_call_state_t</ref><sp/>call_state;<sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>call_flags;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__call__state__data__t" kindref="compound">wiced_bt_ga_tbs_call_state_data_t</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="structwiced__bt__ga__tbs__call__state__list__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_calls;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__call__state__data__t" kindref="compound">wiced_bt_ga_tbs_call_state_data_t</ref><sp/>call_state[<ref refid="group___telephone___bearer___service___a_p_is_1gae61889dcb0504fb7b2712f9555097e93" kindref="member">WICED_BT_GA_TBS_BEARER_MAX_CALL_COUNT</ref>];<sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__call__state__list__t" kindref="compound">wiced_bt_ga_tbs_call_state_list_t</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="structwiced__bt__ga__tbs__call__termination__reason__data__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga36b26977c1678cab45894f4469ace2f7" kindref="member">wiced_bt_ga_tbs_call_termination_reason_t</ref><sp/>termination_reason;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__call__termination__reason__data__t" kindref="compound">wiced_bt_ga_tbs_call_termination_reason_data_t</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="structwiced__bt__ga__tbs__call__operation__response__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>call_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>requested_opcode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gac31fc1e7325b84d740709aa6210bdf3e" kindref="member">wiced_bt_ga_tbs_call_operation_result_t</ref><sp/>call_operation_result;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__call__operation__response__t" kindref="compound">wiced_bt_ga_tbs_call_operation_response_t</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="structwiced__bt__ga__tbs__current__call__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_id;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gaa2ea235d1463252aeab0ff249b41b3bf" kindref="member">wiced_bt_ga_tbs_call_state_t</ref><sp/><sp/>call_state;<sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_flags;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remote_caller_id;<sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__current__call__t" kindref="compound">wiced_bt_ga_tbs_current_call_t</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="structwiced__bt__ga__tbs__current__call__list__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_calls;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__current__call__t" kindref="compound">wiced_bt_ga_tbs_current_call_t</ref><sp/>call_data[<ref refid="group___telephone___bearer___service___a_p_is_1gae61889dcb0504fb7b2712f9555097e93" kindref="member">WICED_BT_GA_TBS_BEARER_MAX_CALL_COUNT</ref>];<sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__current__call__list__t" kindref="compound">wiced_bt_ga_tbs_current_call_list_t</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="structwiced__bt__ga__tbs__join__call__data__t" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_call_ids;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_ids[<ref refid="group___telephone___bearer___service___a_p_is_1gae61889dcb0504fb7b2712f9555097e93" kindref="member">WICED_BT_GA_TBS_BEARER_MAX_CALL_COUNT</ref>];<sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/>}<sp/><ref refid="structwiced__bt__ga__tbs__join__call__data__t" kindref="compound">wiced_bt_ga_tbs_join_call_data_t</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfada82513e0c55cafeba8a7c44d32ebdee" kindref="member">TBS_BEARER_PROVIDER_NAME</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfa4acddab301fa1d250d68ed5dad476199" kindref="member">TBS_BEARER_UCI</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfa11c9d102ab3599d6edff1ac98105b265" kindref="member">TBS_BEARER_TECHNOLOGY</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfa3aa5b47e4caf3c4697414d4e4257c292" kindref="member">BEARER_URI_PREFIX_SUPPORTED_LIST</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfa1810f94444872b1a559eea1c004505c7" kindref="member">TBS_BEARER_SIGNAL_STRENGTH</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gga457dc8408da042c06c5c098acd071acfaef9b80ab93a0d6db2b2d6964bd1c5c05" kindref="member">TBS_BEARER_SIGNAL_STRENGTH_REPORTING_INTERVAL</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}<sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga457dc8408da042c06c5c098acd071acf" kindref="member">wiced_bt_ga_ccp_bearer_property_t</ref>;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="structwiced__bt__ga__tbs__call__control__point__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga16fcba56a3b5a3a1eb6a79d29ad5e2c4" kindref="member">wiced_bt_ga_tbs_call_action_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>opcode;<sp/></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_id;<sp/><sp/></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__join__call__data__t" kindref="compound">wiced_bt_ga_tbs_join_call_data_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>join_call_data;<sp/></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_call_uri;<sp/></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__call__operation__response__t" kindref="compound">wiced_bt_ga_tbs_call_operation_response_t</ref><sp/><sp/><sp/>call_op_resp;<sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__call__termination__reason__data__t" kindref="compound">wiced_bt_ga_tbs_call_termination_reason_data_t</ref><sp/>termination_data;<sp/></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__tbs__call__control__point__t" kindref="compound">wiced_bt_ga_tbs_call_control_point_t</ref>;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="unionwiced__bt__ga__tbs__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bearer_provider_name;<sp/></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bearer_UCI;<sp/></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gac34cc00e308b72e9c487946b50b96830" kindref="member">wiced_bt_ga_tbs_bearer_technology_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bearer_technology;<sp/></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bearer_URI_supported_schemes_list;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bearer_signal_strength;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bearer_signal_strength_reporting_interval;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status_flag;<sp/></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__call__state__list__t" kindref="compound">wiced_bt_ga_tbs_call_state_list_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_state_list;<sp/></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content_control_id;<sp/></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__call__termination__reason__data__t" kindref="compound">wiced_bt_ga_tbs_call_termination_reason_data_t</ref><sp/><sp/><sp/><sp/>call_termination_reason;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__incoming__call__t" kindref="compound">wiced_bt_ga_tbs_incoming_call_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>incoming_call;<sp/></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t" kindref="compound">wiced_bt_ga_tbs_incoming_tg_bearer_uri_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>incoming_tg_caller_id;<sp/></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__current__call__list__t" kindref="compound">wiced_bt_ga_tbs_current_call_list_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_call_list;<sp/></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__call__control__point__t" kindref="compound">wiced_bt_ga_tbs_call_control_point_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_action;<sp/></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ccp_supported_opcode;<sp/></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__tbs__user__friendly__call__data__t" kindref="compound">wiced_bt_ga_tbs_user_friendly_call_data_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_friendly_name;<sp/></highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__ga__tbs__data__t" kindref="compound">wiced_bt_ga_tbs_data_t</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal">wiced_result_t<sp/><ref refid="group___telephone___bearer___service___a_p_is_1gae5d4a7ef4fab922fea98a603f179da30" kindref="member">wiced_bt_ga_gtbs_init</ref>(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal">wiced_result_t<sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga3928ec77b06569ed8c7f6319c49465c6" kindref="member">wiced_bt_ga_tbs_init</ref>(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gabd9e7799fd68c69cc9be83f0e427c067" kindref="member">wiced_bt_ga_tbs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gacbfc806c5d90a7b11b9e9ca1d3bdd254" kindref="member">wiced_bt_ga_tbs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___telephone___bearer___service___a_p_is_1gafdafbb92da043844690ec6d13fb9087d" kindref="member">wiced_bt_ga_gtbs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___telephone___bearer___service___a_p_is_1ga41ad1a81f4673d9673bdec9195f8a010" kindref="member">wiced_bt_ga_gtbs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_TBS_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h"/>
+  </compounddef>
+</doxygen>

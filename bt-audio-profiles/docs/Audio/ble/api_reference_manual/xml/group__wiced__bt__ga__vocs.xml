@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__ga__vocs" kind="group">
+    <compoundname>Wiced_bt_ga_vocs</compoundname>
+    <title>Wiced_bt_ga_vocs</title>
+    <innerclass refid="structvocs__opcode__t" prot="public">vocs_opcode_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__vocs__data__t" prot="public">wiced_bt_ga_vocs_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__vocs_1ga59814e2e50ea309ef56dd83c044447e5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_vocs_opcode_t</name>
+        <enumvalue id="group__wiced__bt__ga__vocs_1gga59814e2e50ea309ef56dd83c044447e5ab4310fd6fde0648dd4a21b6d9506d31a" prot="public">
+          <name>WICED_BT_GA_VOCS_OPCODE_SET_VOLUME_OFFSET</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Set Volume Offset. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Volume Offset Control Service opcodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="31" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="31" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__wiced__bt__ga__vocs_1ga242ae62612826525c74b76cc5980600f" prot="public" static="no" mutable="no">
+        <type>gatt_intf_service_methods_t</type>
+        <definition>gatt_intf_service_methods_t vocs_methods</definition>
+        <argsstring></argsstring>
+        <name>vocs_methods</name>
+        <briefdescription>
+<para>Volume offset related methods defined in the init file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1gab1d975515a3afaa7d6d5a3d9b74959d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t vocs_notify</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, gatt_intf_attribute_t *p_char, void *p_n)</argsstring>
+        <name>vocs_notify</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_n</declname>
+        </param>
+        <briefdescription>
+<para>VOCS API to notify characteristic data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: VOCS service object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic to be notified </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic data to be notified </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1gaacb691f77667fde13a9c1fbce8ae49b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t vocs_write_remote_attribute</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, gatt_intf_attribute_t *p_char, void *p_n)</argsstring>
+        <name>vocs_write_remote_attribute</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_n</declname>
+        </param>
+        <briefdescription>
+<para>VOCS API to write characteristic data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: VOCS service object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic to be written </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic data to be written </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1gac23501468259a7b45931942bbac5dec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_vocs_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_vocs_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>VOCS init. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Number of VOCS instances for the application </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1ga45eb8d6267fd0f2df6c0daa24e442d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_vocs_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_vocs_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable VOCS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1ga7eea18d8ca74f2ef4cbd03187c693623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_vocs_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_vocs_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable VOCS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="86" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exposes the offset level and location of an audio output such as a speaker. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__ga__vcs" kind="group">
+    <compoundname>Wiced_bt_ga_vcs</compoundname>
+    <title>Wiced_bt_ga_vcs</title>
+    <innerclass refid="structwiced__bt__ga__vcs__volume__state__t" prot="public">wiced_bt_ga_vcs_volume_state_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__vcs__control__point__t" prot="public">wiced_bt_ga_vcs_control_point_t</innerclass>
+    <innerclass refid="structvcs__included__t" prot="public">vcs_included_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__vcs__data__t" prot="public">wiced_bt_ga_vcs_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__vcs__init__data__t" prot="public">wiced_bt_ga_vcs_init_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__vcs_1ga3a3ccbdcb3adc274d360133d9c088601" prot="public" static="no" strong="no">
+        <type></type>
+        <name>volume_control_opcodes_e</name>
+        <enumvalue id="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601aba612f125f702b634a487eef927b0332" prot="public">
+          <name>VOLUME_CONTROL_OPCODE_RELATIVE_VOLUME_DOWN</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>Relative volume down. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601a65d84b2a1098cb9b863f8cba0eec7427" prot="public">
+          <name>VOLUME_CONTROL_OPCODE_RELATIVE_VOLUME_UP</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>Relative volume up. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601a9ff727671cebc663dd92c7553ce3a969" prot="public">
+          <name>VOLUME_CONTROL_OPCODE_UNMUTE_RELATIVE_VOLUME_DOWN</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>Unmute and relative volume down. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601a958e49cdf3d698ee1dd5fb713d6815dc" prot="public">
+          <name>VOLUME_CONTROL_OPCODE_UNMUTE_RELATIVE_VOLUME_UP</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>Unmute and relative volume up. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601a8c47ca82af5ab617e3649c35f3b15126" prot="public">
+          <name>VOLUME_CONTROL_OPCODE_SET_ABSOLUTE_VOLUME</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>Set Absolute volume. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601a586a9aa6fa01d3c0782f0afe1344351f" prot="public">
+          <name>VOLUME_CONTROL_OPCODE_UNMUTE</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>Unmute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601afb53cf216115a0df5764d901a5b95a86" prot="public">
+          <name>VOLUME_CONTROL_OPCODE_MUTE</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>Mute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Volume profile opcode codes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="53" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="52" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__ga__vcs_1gaac1329051f85c4a8ca2fb622486ab326" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t volume_control_opcodes_t</definition>
+        <argsstring></argsstring>
+        <name>volume_control_opcodes_t</name>
+        <briefdescription>
+<para>VCS opcodes (see <ref refid="group__wiced__bt__ga__vcs_1ga3a3ccbdcb3adc274d360133d9c088601" kindref="member">volume_control_opcodes_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="63" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__vcs_1ga008f6d1fc9260862cee48b67fce0e93c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_vcs_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_vcs_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the VCS service_type/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of VCS instances to be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see <ref refid="structwiced__bt__ga__vcs__init__data__t" kindref="compound">wiced_bt_ga_vcs_init_data_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcs_1ga03ce05ac4d15fca03e6cbdcef046ac51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_vcs_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_vcs_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable VCS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcs_1gaff37c14ee16a9a0eb9ae143dc46a5416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_vcs_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_vcs_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable VCS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="115" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__ga__vcs_1ga25a2b307ea70323ba5d048a06ca19a26" prot="public" static="no">
+        <name>WICED_BT_GA_VCS_MINIMUM_VOLUME</name>
+        <initializer>0x0</initializer>
+        <briefdescription>
+<para>VCS minimum volume. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="40" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__vcs_1ga3c3adc823a58e852a0dd539900fe44d7" prot="public" static="no">
+        <name>WICED_BT_GA_VCS_MAXIMUM_VOLUME</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+<para>VCS maximum volume. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="43" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__vcs_1ga164e1918889d940e0686e18415621341" prot="public" static="no">
+        <name>WICED_BT_GA_VCS_MUTED</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+<para>VCS muted state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="46" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__vcs_1ga2ab9b2d7570be6a77c6cd6379c082f41" prot="public" static="no">
+        <name>WICED_BT_GA_VCS_NOT_MUTED</name>
+        <initializer>0x0</initializer>
+        <briefdescription>
+<para>VCS unmuted state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="49" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

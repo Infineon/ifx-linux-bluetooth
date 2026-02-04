@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structle__audio__cap__req__profile__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_audio_cap_req_profile_data_t</compoundname>
+    <includes local="no">le_audio_cap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__audio__cap__req__profile__data__t_1a5f296b84a6dcbb79a402206c9e0dcf87" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_audio_cap_req_profile_data_t::conn_id</definition>
+        <argsstring></argsstring>
+        <name>conn_id</name>
+        <briefdescription>
+<para>Connection Id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="79" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__req__profile__data__t_1adc6ebd9c1c137aa654cabf72b0b24fd8" prot="public" static="no" mutable="no">
+        <type>gatt_intf_attribute_t *</type>
+        <definition>gatt_intf_attribute_t* le_audio_cap_req_profile_data_t::p_char</definition>
+        <argsstring></argsstring>
+        <name>p_char</name>
+        <briefdescription>
+<para>Char pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="80" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CAP Profile data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="78" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="77" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structle__audio__cap__req__profile__data__t_1a5f296b84a6dcbb79a402206c9e0dcf87" prot="public" virt="non-virtual"><scope>le_audio_cap_req_profile_data_t</scope><name>conn_id</name></member>
+      <member refid="structle__audio__cap__req__profile__data__t_1adc6ebd9c1c137aa654cabf72b0b24fd8" prot="public" virt="non-virtual"><scope>le_audio_cap_req_profile_data_t</scope><name>p_char</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

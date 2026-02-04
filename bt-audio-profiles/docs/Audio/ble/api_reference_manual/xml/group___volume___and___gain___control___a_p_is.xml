@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___volume___and___gain___control___a_p_is" kind="group">
+    <compoundname>Volume_And_Gain_Control_APIs</compoundname>
+    <title>Volume_And_Gain_Control_APIs</title>
+    <innergroup refid="group__wiced__bt__ga__aics">Wiced_bt_ga_aics</innergroup>
+    <innergroup refid="group__wiced__bt__ga__mics">Wiced_bt_ga_mics</innergroup>
+    <innergroup refid="group__wiced__bt__ga__vcp">Wiced_bt_ga_vcp</innergroup>
+    <innergroup refid="group__wiced__bt__ga__vcs">Wiced_bt_ga_vcs</innergroup>
+    <innergroup refid="group__wiced__bt__ga__vocs">Wiced_bt_ga_vocs</innergroup>
+    <briefdescription>
+<para>This profile enables a device to expose the controls and state of a device that can control the volume of an audio output such as one or more speakers and Control the peer device audio output as a client. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>VCS may include zero or more instances of VOCS, AICS. VCP which is the client side of the volume Control Service consists of APIs to control volume and gain of a peer device. It acts as client for VCS, VOCS and AICS </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__bass__add__source__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_bass_add_source_t</compoundname>
+    <includes local="no">wiced_bt_ga_bass.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__add__source__t_1aee4202fd5f39fa8f7abf0da9140d6600" prot="public" static="no" mutable="no">
+        <type>wiced_bt_ble_address_t</type>
+        <definition>wiced_bt_ble_address_t wiced_bt_ga_bass_add_source_t::source_addr</definition>
+        <argsstring></argsstring>
+        <name>source_addr</name>
+        <briefdescription>
+<para>Broadcast Source address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="101" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__add__source__t_1a6cd02c83faa19f4bd73ee03954972c29" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bass_add_source_t::adv_sid</definition>
+        <argsstring></argsstring>
+        <name>adv_sid</name>
+        <briefdescription>
+<para>Advertising_SID subfield of the ADI field of the AUX_ADV_IND PDU or the LL_PERIODIC_SYNC_IND containing the SyncInfo that points to the PA transmitted by the Broadcast Source. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="102" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__add__source__t_1af1d877967a3abba58bfc3932ade690d6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_bass_add_source_t::broadcast_id</definition>
+        <argsstring></argsstring>
+        <name>broadcast_id</name>
+        <briefdescription>
+<para>Broadcast ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="104" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__add__source__t_1a6925545a80a6c1fe33ed2cb8e3f23223" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__bass__common__source__data__t" kindref="compound">wiced_bt_ga_bass_common_source_data_t</ref></type>
+        <definition>wiced_bt_ga_bass_common_source_data_t wiced_bt_ga_bass_add_source_t::src_data</definition>
+        <argsstring></argsstring>
+        <name>src_data</name>
+        <briefdescription>
+<para>Broadcast Source Data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="105" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BASS Add Source Operation parameter. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="173">
+        <label>wiced_bt_ga_bass_sub_group_data_t</label>
+        <link refid="structwiced__bt__ga__bass__sub__group__data__t"/>
+        <childnode refid="174" relation="usage">
+          <edgelabel>meta_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="172">
+        <label>wiced_bt_ga_bass_common_source_data_t</label>
+        <link refid="structwiced__bt__ga__bass__common__source__data__t"/>
+        <childnode refid="173" relation="usage">
+          <edgelabel>sub_group_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="171">
+        <label>wiced_bt_ga_bass_add_source_t</label>
+        <link refid="structwiced__bt__ga__bass__add__source__t"/>
+        <childnode refid="172" relation="usage">
+          <edgelabel>src_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="174">
+        <label>wiced_bt_ga_bap_metadata_t</label>
+        <link refid="structwiced__bt__ga__bap__metadata__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="100" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="99" bodyend="106"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__bass__add__source__t_1a6cd02c83faa19f4bd73ee03954972c29" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_add_source_t</scope><name>adv_sid</name></member>
+      <member refid="structwiced__bt__ga__bass__add__source__t_1af1d877967a3abba58bfc3932ade690d6" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_add_source_t</scope><name>broadcast_id</name></member>
+      <member refid="structwiced__bt__ga__bass__add__source__t_1aee4202fd5f39fa8f7abf0da9140d6600" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_add_source_t</scope><name>source_addr</name></member>
+      <member refid="structwiced__bt__ga__bass__add__source__t_1a6925545a80a6c1fe33ed2cb8e3f23223" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_add_source_t</scope><name>src_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

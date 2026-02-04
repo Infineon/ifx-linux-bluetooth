@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__ascs__ase__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_ascs_ase_info_t</compoundname>
+    <includes local="no">wiced_bt_ga_ascs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__info__t_1aa4b098a2135bd5a65fa58d52c61d4e52" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_ase_info_t::ase_id</definition>
+        <argsstring></argsstring>
+        <name>ase_id</name>
+        <briefdescription>
+<para>Unique identifier for the ASE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="252" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__info__t_1a5c8c6081b435b917c39f684fc51f32d7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_ase_info_t::ase_type</definition>
+        <argsstring></argsstring>
+        <name>ase_type</name>
+        <briefdescription>
+<para>ASE type : Source or Sink. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="253" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__info__t_1a5b4b7e72df1de55d239c25d61aab9bea" prot="public" static="no" mutable="no">
+        <type>wiced_ble_isoc_data_path_direction_t</type>
+        <definition>wiced_ble_isoc_data_path_direction_t wiced_bt_ga_ascs_ase_info_t::data_path_dir</definition>
+        <argsstring></argsstring>
+        <name>data_path_dir</name>
+        <briefdescription>
+<para>ASE data direction, Host to Controller(0), Controller to Host(1) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="254" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__info__t_1ab04780c1752821bd9d1683e2ac0e20b3" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__ascs__ase__preferences__t" kindref="compound">wiced_bt_ga_ascs_ase_preferences_t</ref></type>
+        <definition>wiced_bt_ga_ascs_ase_preferences_t wiced_bt_ga_ascs_ase_info_t::ascs_data</definition>
+        <argsstring></argsstring>
+        <name>ascs_data</name>
+        <briefdescription>
+<para>ASE configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="255" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ASE Info data structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="121">
+        <label>wiced_bt_ga_ascs_ase_info_t</label>
+        <link refid="structwiced__bt__ga__ascs__ase__info__t"/>
+        <childnode refid="122" relation="usage">
+          <edgelabel>ascs_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="122">
+        <label>wiced_bt_ga_ascs_ase_preferences_t</label>
+        <link refid="structwiced__bt__ga__ascs__ase__preferences__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="251" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="250" bodyend="256"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__ascs__ase__info__t_1ab04780c1752821bd9d1683e2ac0e20b3" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_info_t</scope><name>ascs_data</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__info__t_1aa4b098a2135bd5a65fa58d52c61d4e52" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_info_t</scope><name>ase_id</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__info__t_1a5c8c6081b435b917c39f684fc51f32d7" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_info_t</scope><name>ase_type</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__info__t_1a5b4b7e72df1de55d239c25d61aab9bea" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_info_t</scope><name>data_path_dir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

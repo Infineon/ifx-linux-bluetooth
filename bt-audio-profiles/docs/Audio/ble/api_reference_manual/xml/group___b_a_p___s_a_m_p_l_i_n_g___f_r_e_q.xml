@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q" kind="group">
+    <compoundname>BAP_SAMPLING_FREQ</compoundname>
+    <title>BAP_SAMPLING_FREQ</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gaec3a7f0b39f8acee6a9c31a4fe73adc4" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_8_KHz</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+<para>8000Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="151" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga65252d54bd05577c2d06222567ec9bb4" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_11_025_KHz</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+<para>11025 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="152" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga883fd97e93aa3376d5bf046c899dfe07" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_16_KHz</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+<para>16000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="153" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gadf9e793d4bd0845a10a5eee26a6cbc94" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_22_050_KHz</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+<para>22050 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="154" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gada16eace15da58833d21c69f934903d8" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_24_KHz</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+<para>24000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="155" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gaf8df855ec37d015fdbaf547b0db5f069" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_32_KHz</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+<para>32000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="156" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gaeeee56b2013296e149e4b98d2d579ebb" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_44_1_KHz</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+<para>44100 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="157" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga8469df5e0c8db805fc3b5f587561a61b" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_48_KHz</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+<para>48000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="158" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga28c8e9967cb5a5e6e68623861a4fa030" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_88_2_KHz</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+<para>88200 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="159" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga1c3831f581a216ae3dcb46b7cc1830f9" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_96_KHz</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+<para>96000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="160" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga9634174badf4c570e64706b86be39c77" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_176_4_KHz</name>
+        <initializer>0x0B</initializer>
+        <briefdescription>
+<para>176400 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="161" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gae32419a062627520de83841bd6daf795" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_192_KHz</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+<para>192000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="162" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga5c769ff9624a4f64f1396c85d9817d54" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_384_KHz</name>
+        <initializer>0x0D</initializer>
+        <briefdescription>
+<para>384000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="163" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of Sampling frequency values from Assigned numbers which can be used. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

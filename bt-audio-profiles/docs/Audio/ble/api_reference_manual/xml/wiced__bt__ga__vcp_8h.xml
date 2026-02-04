@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__ga__vcp_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_ga_vcp.h</compoundname>
+    <includes local="yes">wiced_bt_dev.h</includes>
+    <includes local="yes">wiced_bt_ble.h</includes>
+    <includes local="yes">wiced_bt_gatt.h</includes>
+    <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
+    <includes refid="wiced__bt__ga__aics_8h" local="yes">wiced_bt_ga_aics.h</includes>
+    <incdepgraph>
+      <node id="116">
+        <label>wiced_bt_ga_vcp.h</label>
+        <link refid="wiced__bt__ga__vcp_8h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="118">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="117">
+        <label>wiced_bt_dev.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__wiced__bt__ga__vcp_1ga13ac194dc71c2f8bb09afda6ebf5c461" prot="public" static="no" mutable="no">
+        <type>gatt_intf_service_methods_t</type>
+        <definition>gatt_intf_service_methods_t vcs_methods</definition>
+        <argsstring></argsstring>
+        <name>vcs_methods</name>
+        <briefdescription>
+<para>VCS Structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga1bd74aabb4d6d6a4b50254675a56eb12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_vcp_set_change_counter</definition>
+        <argsstring>(gatt_intf_service_object_t *p_service, uint8_t change_counter)</argsstring>
+        <name>wiced_bt_ga_vcp_set_change_counter</name>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>change_counter</declname>
+        </param>
+        <briefdescription>
+<para>Change local change_counter value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the local change counter value</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">change_counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Change counter for VCS </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga373e4a0b7678105ae5855dfcd3bd7837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_vcp_vocs_set_change_counter</definition>
+        <argsstring>(gatt_intf_service_object_t *p_service, uint8_t vocs_index, uint8_t change_counter)</argsstring>
+        <name>wiced_bt_ga_vcp_vocs_set_change_counter</name>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>vocs_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>change_counter</declname>
+        </param>
+        <briefdescription>
+<para>Change vocs change_counter value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the vocs change counter value</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vocs_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the instance of Volume offset control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">change_counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Change counter for VCS </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gadcf90178b8a408f97f6049bdf32ce042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_vcp_set_volume_offset</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, uint8_t vocs_index, int16_t volume_offset)</argsstring>
+        <name>wiced_bt_ga_vcp_set_volume_offset</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>vocs_index</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>volume_offset</declname>
+        </param>
+        <briefdescription>
+<para>Set the volume offset value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the volume offset value of the volume offset control service</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vocs_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the instance of Volume offset control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">volume_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: new volume offset value to be set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the write operation. In case the operation is not successful due to invalid change counter value or invalid opcode an WICED_BT_VCP_ERROR event will be sent to the registered application callback with appropriate error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga22627da6d680b2eb06b43cbb4b3a9a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_vcp_set_audio_location</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, uint8_t vocs_index, wiced_bt_ga_volume_audio_location_t audio_location)</argsstring>
+        <name>wiced_bt_ga_vcp_set_audio_location</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>vocs_index</declname>
+        </param>
+        <param>
+          <type><ref refid="group___generic___structures_1gaa08a0dc01fc672434c2bb387b2b621b2" kindref="member">wiced_bt_ga_volume_audio_location_t</ref></type>
+          <declname>audio_location</declname>
+        </param>
+        <briefdescription>
+<para>Set the audio location of the device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the audio location of the volume offset control service</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vocs_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the instance of Volume offset control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">audio_location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: audio location value to be set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the write operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga3884d688f45641044eed759dca049969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_vcp_set_audio_output_description</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, uint8_t vocs_index, char *description)</argsstring>
+        <name>wiced_bt_ga_vcp_set_audio_output_description</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>vocs_index</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+<para>Set the audio output description of the device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the audio output description of the volume offset control service</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vocs_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the instance of Volume offset control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: volume output description value to be set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the write operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gacb234ccce1db7cbd300da89751da675f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_vcp_set_gain_setting</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, uint8_t aics_index, int8_t gain_val)</argsstring>
+        <name>wiced_bt_ga_vcp_set_gain_setting</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>aics_index</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>gain_val</declname>
+        </param>
+        <briefdescription>
+<para>Change gain setting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>changes the gain setting of the Audio input control service</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">aics_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: AICS instance id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">gain_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Desired Gain value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the write operation. In case the operation is not successful due to invalid change counter value or invalid opcode or value out of range an WICED_BT_AICS_ERROR event will be sent to the registered application callback with appropriate error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gac236f1f5aabf2df3d030b1c6514b3ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_vcp_set_mute_mode</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, uint8_t aics_index, wiced_bt_ga_aics_mute_t mute_mode)</argsstring>
+        <name>wiced_bt_ga_vcp_set_mute_mode</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>aics_index</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__aics_1ga47ea2366abaae05a06b80e13509cf259" kindref="member">wiced_bt_ga_aics_mute_t</ref></type>
+          <declname>mute_mode</declname>
+        </param>
+        <briefdescription>
+<para>Change the mute mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>changes the mute mode of the Audio input control service</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">aics_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: AICS instance id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mute_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Desired mute mode (WICED_BT_GA_AICS_UNMUTE or WICED_BT_GA_AICS_MUTE)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the write operation. In case the operation is not successful due to invalid change counter value or invalid opcode an WICED_BT_INTERNAL_ERROR_INVALID_CHANGE_COUNTER or WICED_BT_AICS_ERROR event respectively will be sent to the registered application callback with appropriate error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gac4db587ae1562875a9fe722bb19c5438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_vcp_set_gain_mode</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, uint8_t aics_index, wiced_bt_ga_aics_gain_mode_t gain_mode)</argsstring>
+        <name>wiced_bt_ga_vcp_set_gain_mode</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>aics_index</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__aics_1gadfb91edbc7ad523454a00232570f4679" kindref="member">wiced_bt_ga_aics_gain_mode_t</ref></type>
+          <declname>gain_mode</declname>
+        </param>
+        <briefdescription>
+<para>Change the gain mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>changes the gain mode of the Audio input control service</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">aics_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: AICS instance id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">gain_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Desired gain mode (WICED_BT_GA_AICS_GAIN_MODE_MANUAL or WICED_BT_GA_AICS_GAIN_MODE_AUTO)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the write operation. In case the operation is not successful due to invalid change counter value or invalid opcode an WICED_BT_INTERNAL_ERROR_INVALID_CHANGE_COUNTER or WICED_BT_AICS_ERROR event respectively will be sent to the registered application callback with appropriate error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga5836b767f7814510d7b2da86dc3c1a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_vcp_set_audio_description</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, uint8_t aics_index, char *audio_desc)</argsstring>
+        <name>wiced_bt_ga_vcp_set_audio_description</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>aics_index</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>audio_desc</declname>
+        </param>
+        <briefdescription>
+<para>Set the audio input description of the device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the audio input description of the Audio Input Control Service</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">aics_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the instance of Audio Input control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">audio_desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Audio Description</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the write operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gae6386cfb4ba5eeb168e4b7d8dc377b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_vcp_aics_set_change_counter</definition>
+        <argsstring>(gatt_intf_service_object_t *p_service, uint8_t aics_index, uint8_t change_counter)</argsstring>
+        <name>wiced_bt_ga_vcp_aics_set_change_counter</name>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>aics_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>change_counter</declname>
+        </param>
+        <briefdescription>
+<para>Change AICS change_counter value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the aics change counter value</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the volume control client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">aics_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the instance of AICS </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">change_counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Change counter value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="160" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Volume Control Profile (VCP) Application Programming Interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_VCP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_VCP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_dev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_aics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gatt_intf_service_methods_t<sp/><ref refid="group__wiced__bt__ga__vcp_1ga13ac194dc71c2f8bb09afda6ebf5c461" kindref="member">vcs_methods</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcp_1ga1bd74aabb4d6d6a4b50254675a56eb12" kindref="member">wiced_bt_ga_vcp_set_change_counter</ref><sp/>(gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>change_counter);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcp_1ga373e4a0b7678105ae5855dfcd3bd7837" kindref="member">wiced_bt_ga_vcp_vocs_set_change_counter</ref>(gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>vocs_index,<sp/>uint8_t<sp/>change_counter);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vcp_1gadcf90178b8a408f97f6049bdf32ce042" kindref="member">wiced_bt_ga_vcp_set_volume_offset</ref><sp/>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>vocs_index,<sp/>int16_t<sp/>volume_offset);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vcp_1ga22627da6d680b2eb06b43cbb4b3a9a2d" kindref="member">wiced_bt_ga_vcp_set_audio_location</ref><sp/>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>vocs_index,<sp/><ref refid="group___generic___structures_1gaa08a0dc01fc672434c2bb387b2b621b2" kindref="member">wiced_bt_ga_volume_audio_location_t</ref><sp/>audio_location);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vcp_1ga3884d688f45641044eed759dca049969" kindref="member">wiced_bt_ga_vcp_set_audio_output_description</ref><sp/>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>vocs_index,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*description);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vcp_1gacb234ccce1db7cbd300da89751da675f" kindref="member">wiced_bt_ga_vcp_set_gain_setting</ref>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>aics_index,<sp/>int8_t<sp/>gain_val);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vcp_1gac236f1f5aabf2df3d030b1c6514b3ba9" kindref="member">wiced_bt_ga_vcp_set_mute_mode</ref>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>aics_index,<sp/><ref refid="group__wiced__bt__ga__aics_1ga47ea2366abaae05a06b80e13509cf259" kindref="member">wiced_bt_ga_aics_mute_t</ref><sp/>mute_mode);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vcp_1gac4db587ae1562875a9fe722bb19c5438" kindref="member">wiced_bt_ga_vcp_set_gain_mode</ref>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>aics_index,<sp/><ref refid="group__wiced__bt__ga__aics_1gadfb91edbc7ad523454a00232570f4679" kindref="member">wiced_bt_ga_aics_gain_mode_t</ref><sp/>gain_mode);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vcp_1ga5836b767f7814510d7b2da86dc3c1a1e" kindref="member">wiced_bt_ga_vcp_set_audio_description</ref>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>aics_index,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*audio_desc);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcp_1gae6386cfb4ba5eeb168e4b7d8dc377b8e" kindref="member">wiced_bt_ga_vcp_aics_set_change_counter</ref>(gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>aics_index,<sp/>uint8_t<sp/>change_counter);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_VCP_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h"/>
+  </compounddef>
+</doxygen>

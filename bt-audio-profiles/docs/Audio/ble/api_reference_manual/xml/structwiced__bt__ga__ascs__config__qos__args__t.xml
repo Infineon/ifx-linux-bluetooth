@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__ascs__config__qos__args__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_ascs_config_qos_args_t</compoundname>
+    <includes local="no">wiced_bt_ga_ascs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__config__qos__args__t_1affe226ec6072fe7885ae10169c6c62c9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_config_qos_args_t::cig_id</definition>
+        <argsstring></argsstring>
+        <name>cig_id</name>
+        <briefdescription>
+<para>CIG ID set by the central. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="174" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__config__qos__args__t_1ad7d7a06154af65d541a59519fb346d22" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_config_qos_args_t::cis_id</definition>
+        <argsstring></argsstring>
+        <name>cis_id</name>
+        <briefdescription>
+<para>CIS ID set by the central. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="175" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__config__qos__args__t_1a6a87b0c3c0e6b578b504f5613b99ca43" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_ascs_config_qos_args_t::sdu_interval</definition>
+        <argsstring></argsstring>
+        <name>sdu_interval</name>
+        <briefdescription>
+<para>SDU_Interval written by the client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="176" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__config__qos__args__t_1a2e0c1839daf4ce2a95f00ce54384780f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_config_qos_args_t::framing</definition>
+        <argsstring></argsstring>
+        <name>framing</name>
+        <briefdescription>
+<para>Framing written by the client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="177" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__config__qos__args__t_1a31e23e41372931f3fa08ba2f1ad866b5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_config_qos_args_t::phy</definition>
+        <argsstring></argsstring>
+        <name>phy</name>
+        <briefdescription>
+<para>PHY written by the client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="178" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__config__qos__args__t_1a9fb55b37dfb02b1c52f594e756598939" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_ga_ascs_config_qos_args_t::max_sdu</definition>
+        <argsstring></argsstring>
+        <name>max_sdu</name>
+        <briefdescription>
+<para>Max_SDU written by the client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="179" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__config__qos__args__t_1ac75ad322e38093654250abf8c8eb0950" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_config_qos_args_t::retransmission_number</definition>
+        <argsstring></argsstring>
+        <name>retransmission_number</name>
+        <briefdescription>
+<para>Retransmission_Number written by the client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="180" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__config__qos__args__t_1ade2576e82818018811fb454b8a55f3a5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_ga_ascs_config_qos_args_t::max_transport_latency</definition>
+        <argsstring></argsstring>
+        <name>max_transport_latency</name>
+        <briefdescription>
+<para>Max_Transport_Latency written by the client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="181" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__config__qos__args__t_1af22f3391254f1965bc50bea442952121" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_ascs_config_qos_args_t::presentation_delay</definition>
+        <argsstring></argsstring>
+        <name>presentation_delay</name>
+        <briefdescription>
+<para>Presentation_Delay written by the client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="182" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>defines the QoS info 1) received through config QoS command 2) to be exposed to peer upon accepting config qos from client </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="173" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="172" bodyend="183"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__ascs__config__qos__args__t_1affe226ec6072fe7885ae10169c6c62c9" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_config_qos_args_t</scope><name>cig_id</name></member>
+      <member refid="structwiced__bt__ga__ascs__config__qos__args__t_1ad7d7a06154af65d541a59519fb346d22" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_config_qos_args_t</scope><name>cis_id</name></member>
+      <member refid="structwiced__bt__ga__ascs__config__qos__args__t_1a2e0c1839daf4ce2a95f00ce54384780f" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_config_qos_args_t</scope><name>framing</name></member>
+      <member refid="structwiced__bt__ga__ascs__config__qos__args__t_1a9fb55b37dfb02b1c52f594e756598939" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_config_qos_args_t</scope><name>max_sdu</name></member>
+      <member refid="structwiced__bt__ga__ascs__config__qos__args__t_1ade2576e82818018811fb454b8a55f3a5" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_config_qos_args_t</scope><name>max_transport_latency</name></member>
+      <member refid="structwiced__bt__ga__ascs__config__qos__args__t_1a31e23e41372931f3fa08ba2f1ad866b5" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_config_qos_args_t</scope><name>phy</name></member>
+      <member refid="structwiced__bt__ga__ascs__config__qos__args__t_1af22f3391254f1965bc50bea442952121" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_config_qos_args_t</scope><name>presentation_delay</name></member>
+      <member refid="structwiced__bt__ga__ascs__config__qos__args__t_1ac75ad322e38093654250abf8c8eb0950" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_config_qos_args_t</scope><name>retransmission_number</name></member>
+      <member refid="structwiced__bt__ga__ascs__config__qos__args__t_1a6a87b0c3c0e6b578b504f5613b99ca43" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_config_qos_args_t</scope><name>sdu_interval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

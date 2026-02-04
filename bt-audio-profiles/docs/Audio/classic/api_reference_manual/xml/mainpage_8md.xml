@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="mainpage_8md" kind="file" language="Markdown">
+    <compoundname>mainpage.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Overview</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Bluetooth<sp/>SIG<sp/>provides<sp/>profiles<sp/>specification<sp/>that<sp/>defines<sp/>the<sp/>functionality<sp/>of<sp/>a<sp/>Bluetooth<sp/>device<sp/>for<sp/>different<sp/>use<sp/>cases,<sp/>such<sp/>as<sp/>audio<sp/>streaming,<sp/>call<sp/>control<sp/>etc.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>All<sp/>the<sp/>profiles<sp/>interact<sp/>with<sp/>Bluetooth<sp/>protocol<sp/>layer,<sp/>application<sp/>can<sp/>use<sp/>one<sp/>or<sp/>more<sp/>profile<sp/>libs<sp/>based<sp/>on<sp/>their<sp/>requirement<sp/>and<sp/>dependency.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Below<sp/>are<sp/>the<sp/>list<sp/>of<sp/>profiles<sp/>supported.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##A2DP</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>###Advanced<sp/>Audio<sp/>Distribution<sp/>Profile<sp/>is<sp/>a<sp/>profile<sp/>that<sp/>allows<sp/>streaming<sp/>audio<sp/>from<sp/>one<sp/>device<sp/>to<sp/>another.<sp/>A2DP<sp/>profile<sp/>defines<sp/>two<sp/>roles.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Source<sp/>(SRC)<sp/>–<sp/>A<sp/>device<sp/>is<sp/>the<sp/>SRC<sp/>when<sp/>it<sp/>acts<sp/>as<sp/>a<sp/>source<sp/>of<sp/>a<sp/>digital<sp/>audio<sp/>stream<sp/>that<sp/>is<sp/>delivered<sp/>to<sp/>the<sp/>SNK<sp/>device</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Sink<sp/>(SNK)<sp/>–<sp/>A<sp/>device<sp/>is<sp/>the<sp/>SNK<sp/>when<sp/>it<sp/>acts<sp/>as<sp/>a<sp/>sink<sp/>of<sp/>a<sp/>digital<sp/>audio<sp/>stream<sp/>delivered<sp/>from<sp/>the<sp/>SRC<sp/>device.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##AVRCP</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>###Audio/Video<sp/>remote<sp/>control<sp/>profile<sp/>library<sp/>allows<sp/>Bluetooth<sp/>enabled<sp/>device<sp/>to<sp/>control<sp/>audio<sp/>streaming<sp/>remotely,<sp/>it<sp/>supports<sp/>two<sp/>roles</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Controller<sp/>(CT)<sp/><sp/>–<sp/><sp/>It<sp/>is<sp/>a<sp/>device<sp/>that<sp/>initiates<sp/>a<sp/>transaction<sp/>by<sp/>sending<sp/>a<sp/>command<sp/>frame<sp/>to<sp/>a<sp/>target.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Examples<sp/>for<sp/>CT<sp/>are<sp/>a<sp/>personal<sp/>computer,<sp/>a<sp/>PDA,<sp/>a<sp/>mobile<sp/>phone,<sp/>a<sp/>remote<sp/>controller<sp/>or<sp/>an<sp/>AV<sp/>device</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(such<sp/>as<sp/>an<sp/>in<sp/>car<sp/>system,<sp/>headphone,<sp/>player/recorder,<sp/>timer,<sp/>tuner,<sp/>monitor<sp/>etc.).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Target<sp/>(TG)<sp/><sp/><sp/>–<sp/>Target<sp/>device<sp/>receives<sp/>a<sp/>command<sp/>frame<sp/>and<sp/>accordingly<sp/>generates<sp/>a<sp/>response<sp/>frame.<sp/>Examples<sp/>for<sp/>TG<sp/>are<sp/>an<sp/>audio<sp/>player/recorder,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>video<sp/>player/recorder,<sp/>a<sp/>TV,<sp/>a<sp/>tuner,<sp/>an<sp/>amplifier<sp/>or<sp/>a<sp/>headphone.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##HFP</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>###Hands-free<sp/>profile<sp/>provides<sp/>capability<sp/>to<sp/>the<sp/>device<sp/>to<sp/>transmit<sp/>voice<sp/>between<sp/>mobile<sp/>phone<sp/>and<sp/>wireless<sp/>headset<sp/>and<sp/>defines<sp/>two<sp/>roles</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Audio<sp/>Gateway<sp/>(AG)<sp/>–<sp/>This<sp/>is<sp/>the<sp/>device<sp/>that<sp/>is<sp/>the<sp/>gateway<sp/>of<sp/>the<sp/>audio,<sp/>both<sp/>for<sp/>input<sp/>and<sp/>output.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Typical<sp/>devices<sp/>acting<sp/>as<sp/>Audio<sp/>Gateways<sp/>are<sp/>cellular<sp/>phones.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Hands-Free<sp/>unit<sp/>(HF)<sp/>–<sp/>This<sp/>is<sp/>the<sp/>device<sp/>acting<sp/>as<sp/>the<sp/>Audio<sp/>Gateway’s<sp/>remote<sp/>audio<sp/>input<sp/>and<sp/>output</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mechanism.<sp/>It<sp/>also<sp/>provides<sp/>some<sp/>remote<sp/>control<sp/>means<sp/>to<sp/>phone<sp/>call<sp/>functionality.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>HFP<sp/>profile<sp/>library<sp/>CVSD,<sp/>Wide<sp/>band<sp/>speech<sp/>(WBS)<sp/>as<sp/>well<sp/>as<sp/>SWB<sp/>(Super<sp/>Wide<sp/>Band)<sp/>codec.</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/docs/Audio/classic/mainpage.md"/>
+  </compounddef>
+</doxygen>

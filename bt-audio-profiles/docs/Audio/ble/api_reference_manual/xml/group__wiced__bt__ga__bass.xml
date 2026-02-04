@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__ga__bass" kind="group">
+    <compoundname>Wiced_bt_ga_bass</compoundname>
+    <title>Wiced_bt_ga_bass</title>
+    <innerclass refid="structwiced__bt__ga__bass__sub__group__data__t" prot="public">wiced_bt_ga_bass_sub_group_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bass__common__source__data__t" prot="public">wiced_bt_ga_bass_common_source_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bass__add__source__t" prot="public">wiced_bt_ga_bass_add_source_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bass__modify__source__t" prot="public">wiced_bt_ga_bass_modify_source_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bass__set__broadcast__code__t" prot="public">wiced_bt_ga_bass_set_broadcast_code_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__bass__operation__data__t" prot="public">wiced_bt_ga_bass_operation_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bass__receive__state__t" prot="public">wiced_bt_ga_bass_receive_state_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bass__operation__t" prot="public">wiced_bt_ga_bass_operation_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bass__init__data__t" prot="public">wiced_bt_ga_bass_init_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__bass_1gaafd0ca787e3ac9d4d7185923a7225f74" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_bass_pa_sync_state_e</name>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaafd0ca787e3ac9d4d7185923a7225f74a2c1f8c6495bfad0bbebc0863f7fed786" prot="public">
+          <name>WICED_BT_GA_BASS_PA_NOT_SYNC</name>
+          <briefdescription>
+<para>Not synchronized to PA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaafd0ca787e3ac9d4d7185923a7225f74a806250443ae1fad2f866ed7d92eed2fc" prot="public">
+          <name>WICED_BT_GA_BASS_PA_SYNC_INFO_REQUEST</name>
+          <briefdescription>
+<para>SyncInfo Request. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaafd0ca787e3ac9d4d7185923a7225f74ac06aa3242eb9043e73ec02f4eae74436" prot="public">
+          <name>WICED_BT_GA_BASS_PA_SYNC</name>
+          <briefdescription>
+<para>Synchronized to PA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaafd0ca787e3ac9d4d7185923a7225f74a6400f718b7754960b1d15d6bde2506a3" prot="public">
+          <name>WICED_BT_GA_BASS_PA_FAILED_SYNC</name>
+          <briefdescription>
+<para>Failed to synchronize to PA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaafd0ca787e3ac9d4d7185923a7225f74a99ac3c7d424ba11e7991f4cb3e7131df" prot="public">
+          <name>WICED_BT_GA_BASS_PA_NO_PAST</name>
+          <briefdescription>
+<para>No PAST. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>PA Sync State. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Refer BASS SPEC Broadcast Receive State Characteristic Section 3.2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="40" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__bass_1gaac65496034f82f9f90eb0860beb1b88d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_bass_pa_sync_param_e</name>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaac65496034f82f9f90eb0860beb1b88dace788eee0e7273dca28aaa609c6a54df" prot="public">
+          <name>WICED_BT_GA_BASS_PA_NO_SYNC</name>
+          <briefdescription>
+<para>Do not synchronize to PA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaac65496034f82f9f90eb0860beb1b88da5b46b598b6d04d514b8d2fc8b555baa0" prot="public">
+          <name>WICED_BT_GA_BASS_PA_SYNC_USING_PAST</name>
+          <briefdescription>
+<para>Synchronize to PA, PAST available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaac65496034f82f9f90eb0860beb1b88da87d2e1bbf1f2d379c9f228e36b1251d3" prot="public">
+          <name>WICED_BT_GA_BASS_PA_SYNC_NO_PAST</name>
+          <briefdescription>
+<para>Synchronize to PA, PAST not available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>PA Sync PARAM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Refer BASS SPEC Section 3.1.1.4 Add Source operation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="51" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__bass_1gab4a507404744a61f6f13330d8d23d6db" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_bass_big_encryption_state_e</name>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggab4a507404744a61f6f13330d8d23d6dba7cca949f5c146803ff0c06b0ebe66c4a" prot="public">
+          <name>WICED_BT_GA_BASS_BIG_NOT_ENCRYPTED</name>
+          <briefdescription>
+<para>Not encrypted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggab4a507404744a61f6f13330d8d23d6dbaeece7e5f3c312b4d44ec77f0ab920e72" prot="public">
+          <name>WICED_BT_GA_BASS_BIG_BROADCAST_CODE_REQUIRED</name>
+          <briefdescription>
+<para>Broadcast_Code required. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggab4a507404744a61f6f13330d8d23d6dba59a69b65a70e33f085dd1c82eec8794f" prot="public">
+          <name>WICED_BT_GA_BASS_BIG_DECRPTING</name>
+          <briefdescription>
+<para>Decrypting. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggab4a507404744a61f6f13330d8d23d6dba38798017c08b9cec07666b3a1e42c8a8" prot="public">
+          <name>WICED_BT_GA_BASS_BIG_BAD_BROADCAST_CODE</name>
+          <briefdescription>
+<para>Bad_Code (incorrect encryption key) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>BIG Encryption state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Refer BASS SPEC Broadcast Receive State Characteristic Section 3.2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="60" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__bass_1gaee85239a9af35ddf1d9cfbddbb4c1d73" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_bass_opcode_e</name>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaee85239a9af35ddf1d9cfbddbb4c1d73aa7a55b5d38704d37503f4f3473c18c9f" prot="public">
+          <name>WICED_BT_GA_BASS_OP_REMOTE_SCAN_STOPPED</name>
+          <briefdescription>
+<para>Informs the server that the client is not scanning for Broadcast Sources on behalf of the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaee85239a9af35ddf1d9cfbddbb4c1d73a9ffbcd629645dcef939a6bb51088f4a6" prot="public">
+          <name>WICED_BT_GA_BASS_OP_REMOTE_SCAN_STARTED</name>
+          <briefdescription>
+<para>Informs the server that the client is scanning for Broadcast Sources on behalf of the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaee85239a9af35ddf1d9cfbddbb4c1d73a3061b7ac23c01ca21ca2c511f3e052e4" prot="public">
+          <name>WICED_BT_GA_BASS_OP_ADD_SOURCE</name>
+          <briefdescription>
+<para>Requests the server to add information including Metadata for a Broadcast Source, and requests the server to synchronize to a PA and/or BIS transmitted by the Broadcast Source. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaee85239a9af35ddf1d9cfbddbb4c1d73a50db838254a318fe4a349e21ae91f280" prot="public">
+          <name>WICED_BT_GA_BASS_OP_MODIFY_SOURCE</name>
+          <briefdescription>
+<para>Requests the server to update Metadata, to synchronize to, or to stop synchronizing to a PA and/or BIS transmitted by the Broadcast Source identified by the Source_ID. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaee85239a9af35ddf1d9cfbddbb4c1d73a0f573b1c121be7af09a526ca970e396d" prot="public">
+          <name>WICED_BT_GA_BASS_OP_SET_BROADCAST_CODE</name>
+          <briefdescription>
+<para>Provides the server with the Broadcast_Code to decrypt a BIS transmitted by a Broadcast Source identified by the Source_ID. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bass_1ggaee85239a9af35ddf1d9cfbddbb4c1d73a76677ff6b5372e91e7650aaa31218dbf" prot="public">
+          <name>WICED_BT_GA_BASS_OP_REMOVE_SOURCE</name>
+          <briefdescription>
+<para>Requests the server to remove all information for a Broadcast Source identified by the Source_ID. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>BASS Control Point Opcode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Refer BASS SPEC Broadcast Audio Scan Control Point Characteristic Section 3.1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="70" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="69" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__ga__bass_1gae039096b1c5e4f0ca43370c270997b2c" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_bass_pa_sync_state_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_bass_pa_sync_state_t</name>
+        <briefdescription>
+<para>PA Sync states (see <ref refid="group__wiced__bt__ga__bass_1gaafd0ca787e3ac9d4d7185923a7225f74" kindref="member">wiced_bt_ga_bass_pa_sync_state_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="47" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__bass_1ga1b2ba9bfe67278a99ce1599235f7e8d7" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_bass_pa_sync_param_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_bass_pa_sync_param_t</name>
+        <briefdescription>
+<para>PA Sync param (see <ref refid="group__wiced__bt__ga__bass_1gaac65496034f82f9f90eb0860beb1b88d" kindref="member">wiced_bt_ga_bass_pa_sync_param_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="56" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__bass_1ga44349982cefd9c4293658285efaf1faa" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_bass_big_encryption_state_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_bass_big_encryption_state_t</name>
+        <briefdescription>
+<para>BIG encryption states (see <ref refid="group__wiced__bt__ga__bass_1gaac65496034f82f9f90eb0860beb1b88d" kindref="member">wiced_bt_ga_bass_pa_sync_param_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="66" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__bass_1ga8d384ab35d921f4279a49c3144c6b904" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_bass_opcode_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_bass_opcode_t</name>
+        <briefdescription>
+<para>BASS Opcodes (see <ref refid="group__wiced__bt__ga__bass_1gaee85239a9af35ddf1d9cfbddbb4c1d73" kindref="member">wiced_bt_ga_bass_opcode_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="78" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__bass_1gae366625975b7b721cd8126c6d60bea7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_bass_init</definition>
+        <argsstring>(uint8_t num_instances, wiced_bt_ga_bass_init_data_t *pv_ini)</argsstring>
+        <name>wiced_bt_ga_bass_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__init__data__t" kindref="compound">wiced_bt_ga_bass_init_data_t</ref> *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the BASS service_type/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of BASS instances to be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see <ref refid="structwiced__bt__ga__bass__init__data__t" kindref="compound">wiced_bt_ga_bass_init_data_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bass_1ga4a9be92845594304582f86ef9a8661d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_bass_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_bass_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable BASS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bass_1ga4ca790ecadccbf5047c574465594ea95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_bass_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_bass_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable BASS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bass_1ga7d2570dbc250c2345d8b1ad1d9be9b37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_bass_enable_notifications_all</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service)</argsstring>
+        <name>wiced_bt_ga_bass_enable_notifications_all</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to all characteristics of bass server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the bass </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bass_1gaba8d1e672a33909c8aef291fa078927b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_ga_bass_discovery_in_progress</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_bass_discovery_in_progress</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check if BASS discovery is in progress. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>status true or false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="188" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bass_1ga0a75b7d4a4839021cd4a86deacca810d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bass_parse_receive_state_char_header</definition>
+        <argsstring>(uint8_t *p_data, wiced_bt_ga_bass_receive_state_t *p_recv_state)</argsstring>
+        <name>wiced_bt_ga_bass_parse_receive_state_char_header</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__receive__state__t" kindref="compound">wiced_bt_ga_bass_receive_state_t</ref> *</type>
+          <declname>p_recv_state</declname>
+        </param>
+        <briefdescription>
+<para>Get bass receive state values from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Stream received from the peer device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_recv_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: values of the receive state characteristic after parsing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bass_1ga329c72c88f757dcde9e2080512728eb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bass_parse_sub_group_data</definition>
+        <argsstring>(uint8_t *p_data, wiced_bt_ga_bass_sub_group_data_t *sub_group_data)</argsstring>
+        <name>wiced_bt_ga_bass_parse_sub_group_data</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__sub__group__data__t" kindref="compound">wiced_bt_ga_bass_sub_group_data_t</ref> *</type>
+          <declname>sub_group_data</declname>
+        </param>
+        <briefdescription>
+<para>Get subgroup data from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Stream received from the peer device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">sub_group_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: values of the subgroup after parsing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bass_1ga97751bff5f7b506a91fc077b87d5260a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_bass_parse_control_point_data</definition>
+        <argsstring>(uint8_t *p_data, uint16_t total_len, wiced_bt_ga_bass_operation_t *p_operation_data)</argsstring>
+        <name>wiced_bt_ga_bass_parse_control_point_data</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>total_len</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bass__operation__t" kindref="compound">wiced_bt_ga_bass_operation_t</ref> *</type>
+          <declname>p_operation_data</declname>
+        </param>
+        <briefdescription>
+<para>Get control point data from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Stream received from the peer device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">total_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: lenght of the stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_operation_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: control point data after parsing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status status of parsing </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bass_1gabdc4bac24b631858700c87851ff48b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_ga_bass_broadcast_is_solicitation_request</definition>
+        <argsstring>(uint16_t adv_len, uint8_t *p_adv_data)</argsstring>
+        <name>wiced_bt_ga_bass_broadcast_is_solicitation_request</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>adv_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_adv_data</declname>
+        </param>
+        <briefdescription>
+<para>Check if peer device is scan delegator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: adv received from the peer device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if peer device is scan delegator false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="226" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__ga__bass_1ga209010bb283ed951cc89ad7f078ce8bc" prot="public" static="no">
+        <name>WICED_BT_GA_BASS_MAX_SUBGROUP_COUNT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+<para>Max subgroups possible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="30" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bass_1gae812f5ca5acf6258eab1d803157b7079" prot="public" static="no">
+        <name>WICED_BT_GA_BASS_MEDATA_MAX_LEN</name>
+        <initializer>255</initializer>
+        <briefdescription>
+<para>Max len of metadata allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="31" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bass_1ga0d9206a0e4d947b7bb0053b77dc59b24" prot="public" static="no">
+        <name>WICED_BT_GA_BASS_ADV_DATA_SIZE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+<para>BASS adv data length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="32" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bass_1ga9939a899763770b576fc4768d0f0c381" prot="public" static="no">
+        <name>WICED_BT_GA_BASS_SYNC_EST_MASK</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+<para>BASS sync establishment mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="33" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bass_1gad7844fac36b1a50ac3fe51711f1eb910" prot="public" static="no">
+        <name>WICED_BT_GA_BASS_SYNC_LOST_MASK</name>
+        <initializer>(~1)</initializer>
+        <briefdescription>
+<para>BASS sync lost mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="34" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bass_1ga74b6e8654f216266287796582e246d59" prot="public" static="no">
+        <name>WICED_BT_GA_BASS_MAX_ADV_SID</name>
+        <initializer>0x0F</initializer>
+        <briefdescription>
+<para>MAX adv sid value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="35" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bass_1ga8b4d06553293117bd0992e691bdaddd6" prot="public" static="no">
+        <name>WICED_BT_GA_BASS_BIS_INDEX_MASK</name>
+        <initializer>0x7FFF</initializer>
+        <briefdescription>
+<para>BIS index mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="36" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><itemizedlist>
+<listitem><para>BASS can be instantiated on servers to solicit for clients to scan on behalf of the server for broadcast Audio Streams and associated data that are transmitted by Broadcast Sources. </para>
+</listitem></itemizedlist>
+</para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Clients scanning on behalf of the server can help reduce the need to scan by the server and reduce power consumption on the server.</para>
+</listitem><listitem><para>Servers can receive information from clients that is associated with broadcast Audio Streams, including decryption keys known as Broadcast_Codes necessary to decrypt encrypted BISes. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,731 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="le__audio__rpc_8h" kind="file" language="C++">
+    <compoundname>le_audio_rpc.h</compoundname>
+    <includes local="yes">wiced_data_types.h</includes>
+    <includes local="yes">hci_control_api.h</includes>
+    <includes local="yes">wiced_bt_ble.h</includes>
+    <includes local="yes">wiced_bt_gatt.h</includes>
+    <includes local="yes">gatt_interface.h</includes>
+    <includes refid="wiced__bt__ga__aics_8h" local="yes">wiced_bt_ga_aics.h</includes>
+    <incdepgraph>
+      <node id="22">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="19">
+        <label>hci_control_api.h</label>
+      </node>
+      <node id="18">
+        <label>wiced_data_types.h</label>
+      </node>
+      <node id="17">
+        <label>le_audio_rpc.h</label>
+        <link refid="le__audio__rpc_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="20">
+        <label>wiced_bt_ble.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="le__audio__rpc_8h_1a1b7339faef253dd4c592e98d31737e1d" prot="public" static="no">
+        <type>wiced_bool_t(*</type>
+        <definition>typedef wiced_bool_t(* le_audio_rpc_cback_t) (uint16_t opcode, uint8_t *p_data, uint32_t data_len)</definition>
+        <argsstring>)(uint16_t opcode, uint8_t *p_data, uint32_t data_len)</argsstring>
+        <name>le_audio_rpc_cback_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="15" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="le__audio__rpc_8h_1ad1f81f6e993d0584e41f6f34e8cc0ae1" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* route_data_to_client_control_t) (uint8_t type, uint8_t *buffer, uint16_t length, uint8_t spy_instance)</definition>
+        <argsstring>)(uint8_t type, uint8_t *buffer, uint16_t length, uint8_t spy_instance)</argsstring>
+        <name>route_data_to_client_control_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="18" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="le__audio__rpc_8h_1a7eff4aa80dc9ea82e301d0604767c430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_init</definition>
+        <argsstring>(int host_instance, le_audio_rpc_cback_t le_audio_rpc_cback, wiced_bool_t b_route_traces_to_CC)</argsstring>
+        <name>le_audio_rpc_init</name>
+        <param>
+          <type>int</type>
+          <declname>host_instance</declname>
+        </param>
+        <param>
+          <type>le_audio_rpc_cback_t</type>
+          <declname>le_audio_rpc_cback</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>b_route_traces_to_CC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1ad3b955d6f79b4d06e46a69060b33ce2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_data</definition>
+        <argsstring>(int type, uint8_t *p_data, uint16_t data_size)</argsstring>
+        <name>le_audio_rpc_send_data</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a5181e1c3561e188c978a933f82ac3ae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_misc_event</definition>
+        <argsstring>(uint32_t chip, uint8_t group)</argsstring>
+        <name>le_audio_rpc_send_misc_event</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>chip</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a46fb7d241dc6b1183d308bd81dfe4415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_dev_role</definition>
+        <argsstring>(uint32_t dev_role)</argsstring>
+        <name>le_audio_rpc_send_dev_role</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>dev_role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1aae9ee72592b718b9d788e8aaa73d102b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_broadcast_status_update</definition>
+        <argsstring>(uint32_t status)</argsstring>
+        <name>le_audio_rpc_send_broadcast_status_update</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a2bfd6d224aa635fb9ab33043f1f01e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_vcs_state_update</definition>
+        <argsstring>(uint16_t conn_id, uint8_t volume_setting, uint8_t mute_state, uint8_t which_vcs_data)</argsstring>
+        <name>le_audio_rpc_send_vcs_state_update</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>volume_setting</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mute_state</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>which_vcs_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a0315646521a12c57e089e724aec34d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_update_call_state</definition>
+        <argsstring>(uint16_t conn_id, uint8_t call_id, wiced_bt_ga_string_t *p_call_URI, uint8_t call_state)</argsstring>
+        <name>le_audio_rpc_update_call_state</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>call_id</declname>
+        </param>
+        <param>
+          <type><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref> *</type>
+          <declname>p_call_URI</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>call_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a5bdff9deb1ed24501733b09832b6e11f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_call_terminated_event</definition>
+        <argsstring>(uint16_t conn_id, uint8_t call_id, uint8_t termination_reason)</argsstring>
+        <name>le_audio_rpc_send_call_terminated_event</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>call_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>termination_reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a85ed45a040153a693818ded5019b5aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_micp_aics_description</definition>
+        <argsstring>(uint16_t conn_id, uint32_t instance, gatt_intf_string_t *p_desc)</argsstring>
+        <name>le_audio_rpc_send_micp_aics_description</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type>gatt_intf_string_t *</type>
+          <declname>p_desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a803ee2299bb2efc5805f598e446ecef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_micp_mute_state</definition>
+        <argsstring>(uint16_t conn_id, uint8_t mute_state)</argsstring>
+        <name>le_audio_rpc_send_micp_mute_state</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mute_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1abcae2be3ad3203e67555d02b33643296" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_micp_aics_input_state</definition>
+        <argsstring>(uint16_t conn_id, uint32_t instance, wiced_bt_ga_aics_input_state_t *p_input_state)</argsstring>
+        <name>le_audio_rpc_send_micp_aics_input_state</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__aics__input__state__t" kindref="compound">wiced_bt_ga_aics_input_state_t</ref> *</type>
+          <declname>p_input_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1ac6ec259f8524bbad1fa17d002c12c6bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_preset_record</definition>
+        <argsstring>(uint16_t conn_id, uint8_t preset_index, wiced_bt_ga_string_t *p_name)</argsstring>
+        <name>le_audio_rpc_send_preset_record</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>preset_index</declname>
+        </param>
+        <param>
+          <type><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref> *</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a74dc353eb2ecd557a0f01b0e7aefb8fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_update_active_preset</definition>
+        <argsstring>(uint16_t conn_id, uint8_t preset_index)</argsstring>
+        <name>le_audio_rpc_update_active_preset</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>preset_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a89c379ade23110e3d11bfe5c26cc122a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_mcs_state_update</definition>
+        <argsstring>(uint16_t conn_id, uint8_t state)</argsstring>
+        <name>le_audio_rpc_send_mcs_state_update</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a5fce1e145a1d7dc63f2cfbb19669ec74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_mic_state_update</definition>
+        <argsstring>(uint16_t conn_id, uint8_t state)</argsstring>
+        <name>le_audio_rpc_send_mic_state_update</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a812799a7c279c199c84c1f522ac29ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_convo_stream_state_update</definition>
+        <argsstring>(uint16_t conn_id, uint8_t state)</argsstring>
+        <name>le_audio_rpc_send_convo_stream_state_update</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a6e9cc653faf95ff1648a9479ff713b41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_connect_event</definition>
+        <argsstring>(wiced_bt_gatt_connection_status_t *p_status)</argsstring>
+        <name>le_audio_rpc_send_connect_event</name>
+        <param>
+          <type>wiced_bt_gatt_connection_status_t *</type>
+          <declname>p_status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a196bf6706fb1b697dce2e04d4b013ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_disconnect_evt</definition>
+        <argsstring>(wiced_bt_gatt_connection_status_t *p_status)</argsstring>
+        <name>le_audio_rpc_send_disconnect_evt</name>
+        <param>
+          <type>wiced_bt_gatt_connection_status_t *</type>
+          <declname>p_status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1ace87b4970393857a1152341627671547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_scan_res_event</definition>
+        <argsstring>(wiced_ble_ext_scan_results_t *p_scr, uint8_t *p_adv_data)</argsstring>
+        <name>le_audio_rpc_send_scan_res_event</name>
+        <param>
+          <type>wiced_ble_ext_scan_results_t *</type>
+          <declname>p_scr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_adv_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a620153ca45252a1c3751d75ec760078b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_app_status</definition>
+        <argsstring>(uint16_t conn_id, uint32_t init_state, uint32_t sub_state)</argsstring>
+        <name>le_audio_rpc_send_app_status</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>init_state</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>sub_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a9e4e2a966bb22210bb5d32aceb0032c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_app_sub_status</definition>
+        <argsstring>(uint16_t conn_id, uint32_t init_state, uint32_t sub_state, const wiced_bt_uuid_t *p_uuid)</argsstring>
+        <name>le_audio_rpc_send_app_sub_status</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>init_state</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>sub_state</declname>
+        </param>
+        <param>
+          <type>const wiced_bt_uuid_t *</type>
+          <declname>p_uuid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1acda5dbce58bbbb016b6cc6059e809f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_app_operation_status</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, gatt_intf_operation_t operation)</argsstring>
+        <name>le_audio_rpc_send_app_operation_status</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>gatt_intf_operation_t</type>
+          <declname>operation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a0684c29de4208b1ae12f27f7608046a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hci_control_le_send_advertisement_state_event</definition>
+        <argsstring>(uint8_t state)</argsstring>
+        <name>hci_control_le_send_advertisement_state_event</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a641bdb215bfa4def7c1724b02ca9cdb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_audio_rpc_send_advertisement_state</definition>
+        <argsstring>(uint32_t state)</argsstring>
+        <name>le_audio_rpc_send_advertisement_state</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a57c910e95c2f29f55bf14833f47850ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t nvram_memory_read</definition>
+        <argsstring>(uint16_t id, uint16_t buf_len, uint8_t *p_buf)</argsstring>
+        <name>nvram_memory_read</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>buf_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="le__audio__rpc_8h_1a91f6163b469375cafad1376a83f0f4ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t nvram_memory_write</definition>
+        <argsstring>(uint16_t id, uint16_t data_len, const uint8_t *p_data)</argsstring>
+        <name>nvram_memory_write</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__LE_AUDIO_RPC_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__LE_AUDIO_RPC_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_data_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_control_api.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gatt_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_aics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_bool_t<sp/>(*le_audio_rpc_cback_t)(uint16_t<sp/>opcode,<sp/>uint8_t<sp/>*p_data,<sp/>uint32_t<sp/>data_len);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_init(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>host_instance,<sp/>le_audio_rpc_cback_t<sp/>le_audio_rpc_cback,<sp/>wiced_bool_t<sp/>b_route_traces_to_CC);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*route_data_to_client_control_t)(uint8_t<sp/>type,<sp/>uint8_t<sp/>*buffer,<sp/>uint16_t<sp/>length,<sp/>uint8_t<sp/>spy_instance);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_data(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_size);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_misc_event(uint32_t<sp/>chip,<sp/>uint8_t<sp/>group);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_dev_role(uint32_t<sp/>dev_role);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_broadcast_status_update(uint32_t<sp/>status);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_vcs_state_update(uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>volume_setting,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>mute_state,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>which_vcs_data);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_update_call_state(uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>call_id,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/>*p_call_URI,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>call_state);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_call_terminated_event(uint16_t<sp/>conn_id,<sp/>uint8_t<sp/>call_id,<sp/>uint8_t<sp/>termination_reason);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_micp_aics_description(uint16_t<sp/>conn_id,<sp/>uint32_t<sp/>instance,<sp/>gatt_intf_string_t<sp/>*p_desc);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_micp_mute_state(uint16_t<sp/>conn_id,<sp/>uint8_t<sp/>mute_state);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_micp_aics_input_state(uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>instance,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__aics__input__state__t" kindref="compound">wiced_bt_ga_aics_input_state_t</ref><sp/>*p_input_state);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_preset_record(uint16_t<sp/>conn_id,<sp/>uint8_t<sp/>preset_index,<sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/>*p_name);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_update_active_preset(uint16_t<sp/>conn_id,<sp/>uint8_t<sp/>preset_index);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_mcs_state_update(uint16_t<sp/>conn_id,<sp/>uint8_t<sp/>state);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_mic_state_update(uint16_t<sp/>conn_id,<sp/>uint8_t<sp/>state);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_convo_stream_state_update(uint16_t<sp/>conn_id,<sp/>uint8_t<sp/>state);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_connect_event(wiced_bt_gatt_connection_status_t<sp/>*p_status);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_disconnect_evt(wiced_bt_gatt_connection_status_t<sp/>*p_status);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_scan_res_event(wiced_ble_ext_scan_results_t<sp/>*p_scr,<sp/>uint8_t<sp/>*p_adv_data);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_app_status(uint16_t<sp/>conn_id,<sp/>uint32_t<sp/>init_state,<sp/>uint32_t<sp/>sub_state);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_app_sub_status(uint16_t<sp/>conn_id,<sp/>uint32_t<sp/>init_state,<sp/>uint32_t<sp/>sub_state,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>*p_uuid);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_app_operation_status(uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_service_object_t<sp/>*p_service,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_operation_t<sp/>operation);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>hci_control_le_send_advertisement_state_event(uint8_t<sp/>state);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>le_audio_rpc_send_advertisement_state(uint32_t<sp/>state);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">uint16_t<sp/>nvram_memory_read(uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>uint16_t<sp/>buf_len,<sp/>uint8_t<sp/>*p_buf);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">uint16_t<sp/>nvram_memory_write(uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>uint16_t<sp/>data_len,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*p_data);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_rpc.h"/>
+  </compounddef>
+</doxygen>

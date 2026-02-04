@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__ga__aics_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_ga_aics.h</compoundname>
+    <includes local="yes">wiced_bt_dev.h</includes>
+    <includes local="yes">wiced_bt_ble.h</includes>
+    <includes local="yes">wiced_bt_gatt.h</includes>
+    <includes local="yes">gatt_interface.h</includes>
+    <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
+    <includedby refid="wiced__bt__ga__mics_8h" local="yes">wiced_bt_ga_mics.h</includedby>
+    <includedby refid="wiced__bt__ga__vcs_8h" local="yes">wiced_bt_ga_vcs.h</includedby>
+    <includedby refid="le__audio__rpc_8h" local="yes">le_audio_rpc.h</includedby>
+    <includedby refid="wiced__bt__ga__vcp_8h" local="yes">wiced_bt_ga_vcp.h</includedby>
+    <incdepgraph>
+      <node id="33">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="29">
+        <label>wiced_bt_ga_aics.h</label>
+        <link refid="wiced__bt__ga__aics_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="31">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="30">
+        <label>wiced_bt_dev.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structwiced__bt__ga__aics__gain__settings__params__t" prot="public">wiced_bt_ga_aics_gain_settings_params_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__aics__input__state__t" prot="public">wiced_bt_ga_aics_input_state_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__aics__control__point__t" prot="public">wiced_bt_ga_aics_control_point_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__aics__data__t" prot="public">wiced_bt_ga_aics_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__aics_1ga22a93e5c7ea79911e3d2e37062bf45cd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_aics_opcode_t</name>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda193e33eadfa9558b59bf4220f04e2552" prot="public">
+          <name>WICED_BT_GA_AICS_OPCODE_SET_GAIN_SETTINGS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Set gain setting. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda1cf99790c3099ee6d86469b400f51cba" prot="public">
+          <name>WICED_BT_GA_AICS_OPCODE_SET_UNMUTE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Set mute state to unmute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda6166e60350e8f68bcf07f23aa1361885" prot="public">
+          <name>WICED_BT_GA_AICS_OPCODE_SET_MUTE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Set mute state to mute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda8496e776d93735bde0b904c84d15a330" prot="public">
+          <name>WICED_BT_GA_AICS_OPCODE_SET_MANUAL_GAIN_MODE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Set gain mode to manual. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda6990775807f3a0b2d7c7b41869aae32d" prot="public">
+          <name>WICED_BT_GA_AICS_OPCODE_SET_AUTO_GAIN_MODE</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Set gain mode to auto. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Audio Input Control Service opcodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="33" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="33" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__aics_1ga47ea2366abaae05a06b80e13509cf259" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_aics_mute_t</name>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga47ea2366abaae05a06b80e13509cf259a6a2c203bac6f4a44ba2dfadd63af1759" prot="public">
+          <name>WICED_BT_GA_AICS_UNMUTE</name>
+          <briefdescription>
+<para>UnMuted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga47ea2366abaae05a06b80e13509cf259a00911ab8eb04cb2e98a2e4fbb4393d95" prot="public">
+          <name>WICED_BT_GA_AICS_MUTE</name>
+          <briefdescription>
+<para>Muted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga47ea2366abaae05a06b80e13509cf259afff9bcafb5e4602a70479a656e36d47a" prot="public">
+          <name>WICED_BT_GA_AICS_MUTE_DISABLED</name>
+          <briefdescription>
+<para>Mute Disabled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AICS Mute mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="43" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__aics_1gadfb91edbc7ad523454a00232570f4679" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_aics_gain_mode_t</name>
+        <enumvalue id="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679a1059afb277e575fd357efa82f3dd771d" prot="public">
+          <name>WICED_BT_GA_AICS_GAIN_MODE_MANUAL_ONLY</name>
+          <briefdescription>
+<para>Manual only. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679afb19e9eb01bffc766338a6f768f1216b" prot="public">
+          <name>WICED_BT_GA_AICS_GAIN_MODE_AUTO_ONLY</name>
+          <briefdescription>
+<para>Automatic only. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679a2d13c1481ff7372848b58988d3e3751e" prot="public">
+          <name>WICED_BT_GA_AICS_GAIN_MODE_MANUAL</name>
+          <briefdescription>
+<para>Manual Gain Mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679af4ecc1a56946434267b22ae3c249d971" prot="public">
+          <name>WICED_BT_GA_AICS_GAIN_MODE_AUTO</name>
+          <briefdescription>
+<para>Auto Gain Mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AICS Gain Mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="51" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__aics_1ga9a38bda1f6509159385a04c56a243302" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_aics_input_type_t</name>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a27318acf25f0b9b4146347835c27446d" prot="public">
+          <name>WICED_BT_GA_AICS_INPUT_TYPE_UNSPECIFIED</name>
+          <briefdescription>
+<para>Unspecified input. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a8112c56e26407d2294b70463b89cf358" prot="public">
+          <name>WICED_BT_GA_AICS_INPUT_TYPE_BLUETOOTH</name>
+          <briefdescription>
+<para>Bluetooth audio stream. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302aac5c2768eed2f858df3a82b2d8ec150c" prot="public">
+          <name>WICED_BT_GA_AICS_INPUT_TYPE_MICROPHONE</name>
+          <briefdescription>
+<para>Microphone. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302ae2b9757119468cf6bbe2a3d47bcc7840" prot="public">
+          <name>WICED_BT_GA_AICS_INPUT_TYPE_ANALOG</name>
+          <briefdescription>
+<para>Analog interface. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a7670eb49d472a8febc14fe878c365c03" prot="public">
+          <name>WICED_BT_GA_AICS_INPUT_TYPE_DIGITAL</name>
+          <briefdescription>
+<para>Digital interface. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a0a01c0e8251e6b190fbb6a17f6de813e" prot="public">
+          <name>WICED_BT_GA_AICS_INPUT_TYPE_RADIO</name>
+          <briefdescription>
+<para>AM / FM / XM / etc. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a792f940ada2692417fcb1ed5f3ad49f6" prot="public">
+          <name>WICED_BT_GA_AICS_INPUT_TYPE_STREAMING</name>
+          <briefdescription>
+<para>Streaming audio source. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AICS Input Type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="60" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="59" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__aics_1ga4bdd0e4f2d1444c05980d894de77eb6a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_aics_input_status_t</name>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga4bdd0e4f2d1444c05980d894de77eb6aa7d3013e0f939a8628f1d8c3b035b31fe" prot="public">
+          <name>WICED_BT_GA_AICS_INPUT_STATUS_INACTIVE</name>
+          <briefdescription>
+<para>Input Status Inactive. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__aics_1gga4bdd0e4f2d1444c05980d894de77eb6aa3bd542adfbfc9096ba9e7e2b022b0d42" prot="public">
+          <name>WICED_BT_GA_AICS_INPUT_STATUS_ACTIVE</name>
+          <briefdescription>
+<para>Input Status Active. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AICS Input Status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="72" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="71" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__ga__aics_1gac58b5a2ad8fce5ab4ed5b6affd05d033" prot="public" static="no">
+        <type>struct aics_t_</type>
+        <definition>typedef struct aics_t_ wiced_bt_ga_aics_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_aics_t</name>
+        <briefdescription>
+<para>AICS Structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="216" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__aics_1ga23ea54b4bb747a70c369d0433b19c11a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t aics_notify</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, gatt_intf_attribute_t *p_char, void *p_data)</argsstring>
+        <name>aics_notify</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>Notify AICS Input State change event to all the subscribed clients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>On any change in the Input State, Application is expected to send notify Input State change api with all the connection ids of the clients. AICS library sends notification to all subscribed clients</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: AICS service object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic to be notified </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic data to be notified </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__aics_1ga6b9d7cda08593f715725eb440ddfd986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t aics_write_remote_attribute</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, gatt_intf_attribute_t *p_char, void *p_data)</argsstring>
+        <name>aics_write_remote_attribute</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>AICS API to write characteristic data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: AICS service object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic to be written </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic data to be written </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__aics_1gad07a610eaeb51a5576b5e98a6a4b8df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_aics_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_aics_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>AICS init. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Number of AICS instances for the application </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__aics_1ga20bbcca569df6b52e3246a9965206b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_aics_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_aics_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable AICS server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__aics_1gafe4abe5a7e16fa650bfe7eca67b63566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_aics_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_aics_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable AICS client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="147" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Audio Input Control Service (AICS) Application Programming Interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_AICS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_AICS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_dev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gatt_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight></codeline>
+<codeline lineno="30"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">aics_t_<sp/><ref refid="group__wiced__bt__ga__aics_1gac58b5a2ad8fce5ab4ed5b6affd05d033" kindref="member">wiced_bt_ga_aics_t</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda193e33eadfa9558b59bf4220f04e2552" kindref="member">WICED_BT_GA_AICS_OPCODE_SET_GAIN_SETTINGS</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda1cf99790c3099ee6d86469b400f51cba" kindref="member">WICED_BT_GA_AICS_OPCODE_SET_UNMUTE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda6166e60350e8f68bcf07f23aa1361885" kindref="member">WICED_BT_GA_AICS_OPCODE_SET_MUTE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda8496e776d93735bde0b904c84d15a330" kindref="member">WICED_BT_GA_AICS_OPCODE_SET_MANUAL_GAIN_MODE</ref><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda6990775807f3a0b2d7c7b41869aae32d" kindref="member">WICED_BT_GA_AICS_OPCODE_SET_AUTO_GAIN_MODE</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1ga22a93e5c7ea79911e3d2e37062bf45cd" kindref="member">wiced_bt_ga_aics_opcode_t</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga47ea2366abaae05a06b80e13509cf259a6a2c203bac6f4a44ba2dfadd63af1759" kindref="member">WICED_BT_GA_AICS_UNMUTE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga47ea2366abaae05a06b80e13509cf259a00911ab8eb04cb2e98a2e4fbb4393d95" kindref="member">WICED_BT_GA_AICS_MUTE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga47ea2366abaae05a06b80e13509cf259afff9bcafb5e4602a70479a656e36d47a" kindref="member">WICED_BT_GA_AICS_MUTE_DISABLED</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1ga47ea2366abaae05a06b80e13509cf259" kindref="member">wiced_bt_ga_aics_mute_t</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679a1059afb277e575fd357efa82f3dd771d" kindref="member">WICED_BT_GA_AICS_GAIN_MODE_MANUAL_ONLY</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679afb19e9eb01bffc766338a6f768f1216b" kindref="member">WICED_BT_GA_AICS_GAIN_MODE_AUTO_ONLY</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679a2d13c1481ff7372848b58988d3e3751e" kindref="member">WICED_BT_GA_AICS_GAIN_MODE_MANUAL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679af4ecc1a56946434267b22ae3c249d971" kindref="member">WICED_BT_GA_AICS_GAIN_MODE_AUTO</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1gadfb91edbc7ad523454a00232570f4679" kindref="member">wiced_bt_ga_aics_gain_mode_t</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a27318acf25f0b9b4146347835c27446d" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_UNSPECIFIED</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a8112c56e26407d2294b70463b89cf358" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_BLUETOOTH</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302aac5c2768eed2f858df3a82b2d8ec150c" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_MICROPHONE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302ae2b9757119468cf6bbe2a3d47bcc7840" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_ANALOG</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a7670eb49d472a8febc14fe878c365c03" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_DIGITAL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a0a01c0e8251e6b190fbb6a17f6de813e" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_RADIO</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a792f940ada2692417fcb1ed5f3ad49f6" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_STREAMING</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1ga9a38bda1f6509159385a04c56a243302" kindref="member">wiced_bt_ga_aics_input_type_t</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga4bdd0e4f2d1444c05980d894de77eb6aa7d3013e0f939a8628f1d8c3b035b31fe" kindref="member">WICED_BT_GA_AICS_INPUT_STATUS_INACTIVE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga4bdd0e4f2d1444c05980d894de77eb6aa3bd542adfbfc9096ba9e7e2b022b0d42" kindref="member">WICED_BT_GA_AICS_INPUT_STATUS_ACTIVE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1ga4bdd0e4f2d1444c05980d894de77eb6a" kindref="member">wiced_bt_ga_aics_input_status_t</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structwiced__bt__ga__aics__gain__settings__params__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/>gain_setting_units;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/>max_gain_setting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/>min_gain_setting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__aics__gain__settings__params__t" kindref="compound">wiced_bt_ga_aics_gain_settings_params_t</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="structwiced__bt__ga__aics__input__state__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gain_setting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ga47ea2366abaae05a06b80e13509cf259" kindref="member">wiced_bt_ga_aics_mute_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mute_mode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gadfb91edbc7ad523454a00232570f4679" kindref="member">wiced_bt_ga_aics_gain_mode_t</ref><sp/><sp/><sp/>gain_mode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__aics__input__state__t" kindref="compound">wiced_bt_ga_aics_input_state_t</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structwiced__bt__ga__aics__control__point__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ga22a93e5c7ea79911e3d2e37062bf45cd" kindref="member">wiced_bt_ga_aics_opcode_t</ref><sp/><sp/>opcode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__aics__input__state__t" kindref="compound">wiced_bt_ga_aics_input_state_t</ref><sp/>input_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__aics__control__point__t" kindref="compound">wiced_bt_ga_aics_control_point_t</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="unionwiced__bt__ga__aics__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__aics__input__state__t" kindref="compound">wiced_bt_ga_aics_input_state_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__aics__gain__settings__params__t" kindref="compound">wiced_bt_ga_aics_gain_settings_params_t</ref><sp/>gain_setting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input_type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ga4bdd0e4f2d1444c05980d894de77eb6a" kindref="member">wiced_bt_ga_aics_input_status_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input_status;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__aics__control__point__t" kindref="compound">wiced_bt_ga_aics_control_point_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>control_point;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__ga__aics__data__t" kindref="compound">wiced_bt_ga_aics_data_t</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__aics_1ga23ea54b4bb747a70c369d0433b19c11a" kindref="member">aics_notify</ref>(uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_service_object_t<sp/>*p_service,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_attribute_t<sp/>*p_char,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_data);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__aics_1ga6b9d7cda08593f715725eb440ddfd986" kindref="member">aics_write_remote_attribute</ref>(uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_service_object_t<sp/>*p_service,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_attribute_t<sp/>*p_char,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_data);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__aics_1gad07a610eaeb51a5576b5e98a6a4b8df5" kindref="member">wiced_bt_ga_aics_init</ref>(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__aics_1ga20bbcca569df6b52e3246a9965206b75" kindref="member">wiced_bt_ga_aics_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__aics_1gafe4abe5a7e16fa650bfe7eca67b63566" kindref="member">wiced_bt_ga_aics_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_AICS_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h"/>
+  </compounddef>
+</doxygen>

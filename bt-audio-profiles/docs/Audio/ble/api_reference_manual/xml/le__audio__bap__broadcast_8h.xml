@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="le__audio__bap__broadcast_8h" kind="file" language="C++">
+    <compoundname>le_audio_bap_broadcast.h</compoundname>
+    <includes refid="wiced__bt__ga__bap_8h" local="yes">wiced_bt_ga_bap.h</includes>
+    <includes local="yes">wiced_data_types.h</includes>
+    <includes refid="le__audio__pbp_8h" local="yes">le_audio_pbp.h</includes>
+    <includedby refid="le__audio__cap_8h" local="yes">le_audio_cap.h</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>wiced_data_types.h</label>
+      </node>
+      <node id="7">
+        <label>le_audio_bap_broadcast.h</label>
+        <link refid="le__audio__bap__broadcast_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structle__audio__bap__broadcast__bis__group__t" prot="public">le_audio_bap_broadcast_bis_group_t</innerclass>
+    <innerclass refid="structle__audio__bap__broadcast__sub__group__t" prot="public">le_audio_bap_broadcast_sub_group_t</innerclass>
+    <innerclass refid="structle__audio__bap__broadcast__base__t" prot="public">le_audio_bap_broadcast_base_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__ga__bap__broadcast_1gac931cd8be37d91ea425170a560c803bf" prot="public" static="no">
+        <name>BROADCAST_MAX_SUB_GROUP</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Max subgroups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="23" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap__broadcast_1ga1e36bf5987c14347309287fd7984ffa2" prot="public" static="no">
+        <name>BROADCAST_MAX_BIS_PER_SUB_GROUP</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Max BIS per sub group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="24" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap__broadcast_1ga0541a76f547883603d58893dda67d798" prot="public" static="no">
+        <name>BROADCAST_AUDIO_ANNOUNCEMENT_SIZE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+<para>Size of Broadcast Announcement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="25" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap__broadcast_1gae7b26c9b620cd1ec3070088c72e30aec" prot="public" static="no">
+        <name>SOLICITATION_REQ_SIZE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>Size of Solicitation request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="26" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap__broadcast_1ga08100f864fc71ef444a1b3546c969447" prot="public" static="no">
+        <name>BAP_BROADCAST_TRACE</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+<para>Enable this to get BAP Broadcast traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="28" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap__broadcast_1gac9ee6b09bdbe46c543abdfbb98eba599" prot="public" static="no">
+        <name>BAP_BROADCAST_TRACE_CRIT</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+<para>Enable this to get BAP Broadcast traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="29" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__bap__broadcast_1ga28eb47f382086bc9788de69633bd43d1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>le_audio_bap_broadcast_state_t</name>
+        <enumvalue id="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1aef5294324435782ee93a10802cec9715" prot="public">
+          <name>BAP_BROADCAST_STATE_IDLE</name>
+          <briefdescription>
+<para>Broadcast Source is in idle state. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1a3ba583f41aaa27f05c4650e12bbc6199" prot="public">
+          <name>BAP_BROADCAST_STATE_CONFIGURED</name>
+          <briefdescription>
+<para>Broadcast Source is in configured state. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1a3257c89bfc79dab86e4be7e64073f933" prot="public">
+          <name>BAP_BROADCAST_STATE_STREAMING</name>
+          <briefdescription>
+<para>Broadcast Source is in Streaming state. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Broadcast States. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="35" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="34" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__bap__broadcast_1ga2d6319c4935f8c9544c41ef1dab09d99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t le_audio_bap_broadcast_is_broadcast_announcement</definition>
+        <argsstring>(uint16_t adv_len, uint8_t *p_adv_data, uint32_t *p_br_id)</argsstring>
+        <name>le_audio_bap_broadcast_is_broadcast_announcement</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>adv_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_adv_data</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>p_br_id</declname>
+        </param>
+        <briefdescription>
+<para>Check if Advertisement has Broadcast audio announcement information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of the advertisement report in <computeroutput>p_adv_data</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Adv data received from peer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_br_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Broadcast ID from the advertisement </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status true or false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap__broadcast_1gabc5f0ef429b76129873884363c7b22f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_bap_broadcast_configure</definition>
+        <argsstring>(uint8_t adv_sid, le_audio_bap_broadcast_base_t *p_base, uint8_t *p_ext_adv, uint8_t adv_len)</argsstring>
+        <name>le_audio_bap_broadcast_configure</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>adv_sid</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref> *</type>
+          <declname>p_base</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_ext_adv</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>adv_len</declname>
+        </param>
+        <briefdescription>
+<para>Configure broadcast stream and start extended adv and periodic adv. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_sid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ADV sid value to be used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: base information to be used in adv </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_ext_adv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: extended adv data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of the extended adv data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status true or false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap__broadcast_1ga77312fdfb5eb4891fd7b1feb1f70a17e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* le_audio_bap_broadcast_is_basic_announcement</definition>
+        <argsstring>(uint8_t *p_adv_data, uint16_t adv_len, uint8_t *p_base_len)</argsstring>
+        <name>le_audio_bap_broadcast_is_basic_announcement</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_adv_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>adv_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_base_len</declname>
+        </param>
+        <briefdescription>
+<para>Check if Advertisement has Basic audio announcement information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Adv data received from peer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of p_adv_data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_base_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the base adv in p_adv_data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to start of basic announcement of length in p_base_len, else NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap__broadcast_1ga3d0a9bdd83774b90be933a8c29d90ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_bap_broadcast_parse_base_info</definition>
+        <argsstring>(uint8_t *p_adv_data, uint8_t adv_data_len, le_audio_bap_broadcast_base_t *p_base)</argsstring>
+        <name>le_audio_bap_broadcast_parse_base_info</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_adv_data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>adv_data_len</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref> *</type>
+          <declname>p_base</declname>
+        </param>
+        <briefdescription>
+<para>Parse Broadcast base information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Adv data received from peer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of the base information </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Parsed BASE data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status of the parsing operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap__broadcast_1gabf73098b81c4ce62816ba7352622ef40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_bap_broadcast_reconfigure</definition>
+        <argsstring>(uint8_t adv_sid, le_audio_bap_broadcast_base_t *p_base)</argsstring>
+        <name>le_audio_bap_broadcast_reconfigure</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>adv_sid</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref> *</type>
+          <declname>p_base</declname>
+        </param>
+        <briefdescription>
+<para>Reconfigure basic audio announcements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_sid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Adv set ID to indicate the corresponding Periodic Adv train </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: base information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status of the reconfiguration </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap__broadcast_1ga099e14d3624a0cf50d3e663658784ff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_bap_broadcast_update_metadata</definition>
+        <argsstring>(uint8_t adv_sid, le_audio_bap_broadcast_base_t *p_base)</argsstring>
+        <name>le_audio_bap_broadcast_update_metadata</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>adv_sid</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref> *</type>
+          <declname>p_base</declname>
+        </param>
+        <briefdescription>
+<para>Only Metadata can be updated in the Streaming state (Upper layer should ensure that only Metadata is modified in the BASE data) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adv_sid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adv. set ID to indicate the corresponding Periodic Adv train </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BASE information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t WICED_SUCCESS if successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap__broadcast_1gab31bd2ff89c583c7f2a3ccd5c114da48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_bap_broadcast_start_solicitation_requests</definition>
+        <argsstring>(uint8_t adv_sid, char *dev_name, uint8_t name_length)</argsstring>
+        <name>le_audio_bap_broadcast_start_solicitation_requests</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>adv_sid</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>dev_name</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>name_length</declname>
+        </param>
+        <briefdescription>
+<para>Reconfigure basic audio announcements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_sid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Adv set ID to indicate the corresponding Periodic Adv train </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: device name to be used in solicitation request as a scan delegator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of device name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status of the request </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap__broadcast_1ga141dd204f648687ab64d7e1db7aaa123" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_bap_build_broadcast_annoncement_adv_data</definition>
+        <argsstring>(uint8_t *p_data, uint8_t *len, uint32_t broadcast_id)</argsstring>
+        <name>le_audio_bap_build_broadcast_annoncement_adv_data</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>broadcast_id</declname>
+        </param>
+        <briefdescription>
+<para>Build broadcast announcement adv data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: buffer where the adv data is stored after building, allocation has to be done before calling </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of the adv data after building </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">broadcast_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: broadcast ID of the stream </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status of the request </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap__broadcast_1ga5005b20b3429aa7b8516d816886b3f26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_bap_build_base_data</definition>
+        <argsstring>(le_audio_bap_broadcast_base_t *p_base, uint8_t *p_dst, uint32_t dst_len)</argsstring>
+        <name>le_audio_bap_build_base_data</name>
+        <param>
+          <type><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref> *</type>
+          <declname>p_base</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dst_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="165" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_BROADCAST_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_BROADCAST_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_bap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_data_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;le_audio_pbp.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor">#define<sp/>BROADCAST_MAX_SUB_GROUP<sp/>2<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#define<sp/>BROADCAST_MAX_BIS_PER_SUB_GROUP<sp/>2<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor">#define<sp/>BROADCAST_AUDIO_ANNOUNCEMENT_SIZE<sp/>6<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#define<sp/>SOLICITATION_REQ_SIZE<sp/>3<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#define<sp/>BAP_BROADCAST_TRACE(...)<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor">#define<sp/>BAP_BROADCAST_TRACE_CRIT(...)<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">typedef<sp/>enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1aef5294324435782ee93a10802cec9715" kindref="member">BAP_BROADCAST_STATE_IDLE</ref>,<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1a3ba583f41aaa27f05c4650e12bbc6199" kindref="member">BAP_BROADCAST_STATE_CONFIGURED</ref>,<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1a3257c89bfc79dab86e4be7e64073f933" kindref="member">BAP_BROADCAST_STATE_STREAMING</ref>,<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1ga28eb47f382086bc9788de69633bd43d1" kindref="member">le_audio_bap_broadcast_state_t</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structle__audio__bap__broadcast__bis__group__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>bis_idx;<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/>b_bis_data_path_setup;<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__csc__t" kindref="compound">wiced_bt_ga_bap_csc_t</ref><sp/>bis_csc;<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/><ref refid="structle__audio__bap__broadcast__bis__group__t" kindref="compound">le_audio_bap_broadcast_bis_group_t</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structle__audio__bap__broadcast__sub__group__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__codec__id__t" kindref="compound">wiced_bt_ga_bap_codec_id_t</ref><sp/>codec_id;<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__csc__t" kindref="compound">wiced_bt_ga_bap_csc_t</ref><sp/>csc;<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>metadata;<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>bis_cnt;<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__audio__bap__broadcast__bis__group__t" kindref="compound">le_audio_bap_broadcast_bis_group_t</ref><sp/>bis_config[<ref refid="group__wiced__bt__ga__bap__broadcast_1ga1e36bf5987c14347309287fd7984ffa2" kindref="member">BROADCAST_MAX_BIS_PER_SUB_GROUP</ref>];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}<sp/><ref refid="structle__audio__bap__broadcast__sub__group__t" kindref="compound">le_audio_bap_broadcast_sub_group_t</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structle__audio__bap__broadcast__base__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>broadcast_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>presentation_delay;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__audio__bap__broadcast__sub__group__t" kindref="compound">le_audio_bap_broadcast_sub_group_t</ref><sp/>sub_group[<ref refid="group__wiced__bt__ga__bap__broadcast_1gac931cd8be37d91ea425170a560c803bf" kindref="member">BROADCAST_MAX_SUB_GROUP</ref>];<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1ga28eb47f382086bc9788de69633bd43d1" kindref="member">le_audio_bap_broadcast_state_t</ref><sp/>state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>sub_group_cnt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">wiced_bool_t<sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1ga2d6319c4935f8c9544c41ef1dab09d99" kindref="member">le_audio_bap_broadcast_is_broadcast_announcement</ref>(uint16_t<sp/>adv_len,<sp/>uint8_t<sp/>*p_adv_data,<sp/>uint32_t<sp/>*p_br_id);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1gabc5f0ef429b76129873884363c7b22f2" kindref="member">le_audio_bap_broadcast_configure</ref>(uint8_t<sp/>adv_sid,<sp/><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref><sp/>*p_base,<sp/>uint8_t<sp/>*p_ext_adv,<sp/>uint8_t<sp/>adv_len);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">uint8_t<sp/>*<ref refid="group__wiced__bt__ga__bap__broadcast_1ga77312fdfb5eb4891fd7b1feb1f70a17e" kindref="member">le_audio_bap_broadcast_is_basic_announcement</ref>(uint8_t<sp/>*p_adv_data,<sp/>uint16_t<sp/>adv_len,<sp/>uint8_t<sp/>*p_base_len);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1ga3d0a9bdd83774b90be933a8c29d90ffd" kindref="member">le_audio_bap_broadcast_parse_base_info</ref>(uint8_t<sp/>*p_adv_data,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>adv_data_len,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref><sp/>*p_base);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1gabf73098b81c4ce62816ba7352622ef40" kindref="member">le_audio_bap_broadcast_reconfigure</ref>(uint8_t<sp/>adv_sid,<sp/><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref><sp/>*p_base);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1ga099e14d3624a0cf50d3e663658784ff7" kindref="member">le_audio_bap_broadcast_update_metadata</ref>(uint8_t<sp/>adv_sid,<sp/><ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref><sp/>*p_base);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1gab31bd2ff89c583c7f2a3ccd5c114da48" kindref="member">le_audio_bap_broadcast_start_solicitation_requests</ref>(uint8_t<sp/>adv_sid,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dev_name,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>name_length);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap__broadcast_1ga141dd204f648687ab64d7e1db7aaa123" kindref="member">le_audio_bap_build_broadcast_annoncement_adv_data</ref>(uint8_t<sp/>*p_data,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*len,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>broadcast_id);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">uint8_t<sp/>le_audio_bap_build_base_data(<ref refid="structle__audio__bap__broadcast__base__t" kindref="compound">le_audio_bap_broadcast_base_t</ref><sp/>*p_base,<sp/>uint8_t<sp/>*p_dst,<sp/>uint32_t<sp/>dst_len);</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_BROADCAST_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h"/>
+  </compounddef>
+</doxygen>

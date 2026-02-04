@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__ga__bass__operation__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_bass_operation_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_bass.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__ga__bass__operation__data__t_1a539431c824f8c57944090c55bae78cbc" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__bass__add__source__t" kindref="compound">wiced_bt_ga_bass_add_source_t</ref></type>
+        <definition>wiced_bt_ga_bass_add_source_t wiced_bt_ga_bass_operation_data_t::add_source_param</definition>
+        <argsstring></argsstring>
+        <name>add_source_param</name>
+        <briefdescription>
+<para>Add Source Parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="126" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__bass__operation__data__t_1aa63d25ca72abb0fcc2a2e350fcf7f3b3" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__bass__modify__source__t" kindref="compound">wiced_bt_ga_bass_modify_source_t</ref></type>
+        <definition>wiced_bt_ga_bass_modify_source_t wiced_bt_ga_bass_operation_data_t::modify_source_param</definition>
+        <argsstring></argsstring>
+        <name>modify_source_param</name>
+        <briefdescription>
+<para>Modifu Source Parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="127" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__bass__operation__data__t_1a4edf75509bee14149ccedad6fa4ed06a" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__bass__set__broadcast__code__t" kindref="compound">wiced_bt_ga_bass_set_broadcast_code_t</ref></type>
+        <definition>wiced_bt_ga_bass_set_broadcast_code_t wiced_bt_ga_bass_operation_data_t::set_broadcast_param</definition>
+        <argsstring></argsstring>
+        <name>set_broadcast_param</name>
+        <briefdescription>
+<para>Set Broadcast Code Parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="128" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__bass__operation__data__t_1a4d51edcad8f192a6ba44c2bcf30f15af" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bass_operation_data_t::remove_source_id</definition>
+        <argsstring></argsstring>
+        <name>remove_source_id</name>
+        <briefdescription>
+<para>Source_ID assigned by the server to a Broadcast Receive State characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="129" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BASS Operation data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="189">
+        <label>wiced_bt_ga_bass_modify_source_t</label>
+        <link refid="structwiced__bt__ga__bass__modify__source__t"/>
+        <childnode refid="190" relation="usage">
+          <edgelabel>src_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="187">
+        <label>wiced_bt_ga_bass_operation_data_t</label>
+        <link refid="unionwiced__bt__ga__bass__operation__data__t"/>
+        <childnode refid="188" relation="usage">
+          <edgelabel>set_broadcast_param</edgelabel>
+        </childnode>
+        <childnode refid="189" relation="usage">
+          <edgelabel>modify_source_param</edgelabel>
+        </childnode>
+        <childnode refid="193" relation="usage">
+          <edgelabel>add_source_param</edgelabel>
+        </childnode>
+      </node>
+      <node id="191">
+        <label>wiced_bt_ga_bass_sub_group_data_t</label>
+        <link refid="structwiced__bt__ga__bass__sub__group__data__t"/>
+        <childnode refid="192" relation="usage">
+          <edgelabel>meta_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="188">
+        <label>wiced_bt_ga_bass_set_broadcast_code_t</label>
+        <link refid="structwiced__bt__ga__bass__set__broadcast__code__t"/>
+      </node>
+      <node id="190">
+        <label>wiced_bt_ga_bass_common_source_data_t</label>
+        <link refid="structwiced__bt__ga__bass__common__source__data__t"/>
+        <childnode refid="191" relation="usage">
+          <edgelabel>sub_group_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="193">
+        <label>wiced_bt_ga_bass_add_source_t</label>
+        <link refid="structwiced__bt__ga__bass__add__source__t"/>
+        <childnode refid="190" relation="usage">
+          <edgelabel>src_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="192">
+        <label>wiced_bt_ga_bap_metadata_t</label>
+        <link refid="structwiced__bt__ga__bap__metadata__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="125" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="124" bodyend="130"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__ga__bass__operation__data__t_1a539431c824f8c57944090c55bae78cbc" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_operation_data_t</scope><name>add_source_param</name></member>
+      <member refid="unionwiced__bt__ga__bass__operation__data__t_1aa63d25ca72abb0fcc2a2e350fcf7f3b3" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_operation_data_t</scope><name>modify_source_param</name></member>
+      <member refid="unionwiced__bt__ga__bass__operation__data__t_1a4d51edcad8f192a6ba44c2bcf30f15af" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_operation_data_t</scope><name>remove_source_id</name></member>
+      <member refid="unionwiced__bt__ga__bass__operation__data__t_1a4edf75509bee14149ccedad6fa4ed06a" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_operation_data_t</scope><name>set_broadcast_param</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

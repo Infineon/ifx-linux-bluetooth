@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e" kind="group">
+    <compoundname>BAP_CONTEXT_TYPE</compoundname>
+    <title>BAP_CONTEXT_TYPE</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t wiced_bt_ga_bap_context_type_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_bap_context_type_t</name>
+        <briefdescription>
+<para>BAP audio context types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="72" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga735405d7ab557cce7fbe564180109f2c" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_PROHIBITED</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+<para>Prohibited. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="54" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga72e3a138e047869b01875018d106136d" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_UNSPECIFIED</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+<para>Unspecified Matches any audio context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="55" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga8fa88704bee9efbf4101bbcd3d5ba86d" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_CONVERSATIONAL</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+<para>Conversation between humans, for example, in telephony or video calls, including traditional cellular as well as VoIP and Push-to-Talk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="56" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gaf49b35532ed53c781d96b3c6785703b8" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_MEDIA</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+<para>Media, for example, music playback, radio, podcast or movie soundtrack, or tv audio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="57" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga547997ee0f2bff9e7673413e5ce1cfda" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_GAME</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+<para>Audio associated with video gaming, for example gaming media; gaming effects; music and in-game voice chat between participants; or a mix of all the above. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="58" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gafdacf0042a52c6082c267172688236e1" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_INSTRUCTIONAL</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+<para>Instructional audio, for example, in navigation, announcements, or user guidance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="59" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga18152e6c8b23925e3be3d03f5a8565a9" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_VOICE_ASSISTANTS</name>
+        <initializer>0x0020</initializer>
+        <briefdescription>
+<para>Man-machine communication, for example, with voice recognition or virtual assistants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="60" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga8ba714a7fbad1c900459f7eed6311696" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_LIVE</name>
+        <initializer>0x0040</initializer>
+        <briefdescription>
+<para>Live audio, for example, from a microphone where audio is perceived both through a direct acoustic path and through an LE Audio Stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="61" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga25d09157e49e34c6a807558b95587749" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_SOUND_EFFECT</name>
+        <initializer>0x0080</initializer>
+        <briefdescription>
+<para>Sound effects including keyboard and touch feedback; menu and user interface sounds; and other system sounds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="62" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga30dac2f47e6dcee5341296368bd826a2" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_NOTIFICATIONS</name>
+        <initializer>0x100</initializer>
+        <briefdescription>
+<para>Notification and reminder sounds; attention-seeking audio, for example, in beeps signaling the arrival of a message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="63" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gaef14316e1c7e468acf4dfcabf4ce7f73" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_RINGTONE</name>
+        <initializer>0x0200</initializer>
+        <briefdescription>
+<para>Alerts the user to an incoming call, for example, an incoming telephony or video call, including traditional cellular as well as VoIP and Push-to-Talk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="64" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gacf14ad934bb05e93038e34acb27ba2ee" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_ALERTS</name>
+        <initializer>0x0400</initializer>
+        <briefdescription>
+<para>Alarms and timers; immediate alerts, for example, in a critical battery alarm, timer expiry or alarm clock, toaster, cooker, kettle, microwave, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="65" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga86c6f06871326083a16292e9fe2cfd56" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_EMERGENCY_ALARM</name>
+        <initializer>0x0800</initializer>
+        <briefdescription>
+<para>Emergency sounds, for example, fire alarms or other urgent alerts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="66" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga2dc64fc704394416e71dcf7415af394e" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_TV</name>
+        <initializer>0x0200</initializer>
+        <briefdescription>
+<para>Metadata conforming to the Bluetooth Broadcast TV profile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="67" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gaa07b88a6637b305d145a6572e788d283" prot="public" static="no">
+        <name>VALID_CONTEXT_TYPE_MASK</name>
+        <initializer>0x0FFF</initializer>
+        <briefdescription>
+<para>Mask for valid context types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="69" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga8ecea6b8ba858be0caabea55f1a21815" prot="public" static="no">
+        <name>INVALID_CONTEXT_TYPE_MASK</name>
+        <initializer>0xF000</initializer>
+        <briefdescription>
+<para>Mask for invalid context types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="70" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of Context type values which can be used. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__ga__tmap_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_ga_tmap.h</compoundname>
+    <includes local="yes">wiced_bt_dev.h</includes>
+    <includes local="yes">wiced_bt_ble.h</includes>
+    <includes local="yes">wiced_bt_gatt.h</includes>
+    <includes local="yes">gatt_interface.h</includes>
+    <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
+    <incdepgraph>
+      <node id="114">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="113">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="112">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="111">
+        <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="110">
+        <label>wiced_bt_ga_tmap.h</label>
+        <link refid="wiced__bt__ga__tmap_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="unionwiced__bt__ga__tmap__data__t" prot="public">wiced_bt_ga_tmap_data_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1ab5dfc122e937ad34cc53cafe3863fcb3" prot="public" static="no">
+        <name>TMAP_ROLE_CALL_GATEWAY</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+<para>Call gateway. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="14" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1a767709635189cf4d32760b8098058b4d" prot="public" static="no">
+        <name>TMAP_ROLE_CALL_TERMINAL</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+<para>Call terminal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="15" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1a3c5b199670825df3c1581518405382d5" prot="public" static="no">
+        <name>TMAP_ROLE_UNICAST_MEDIA_SENDER</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+<para>Unicast media sender. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="16" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1a02bacce87b5d66ac89960602019f252f" prot="public" static="no">
+        <name>TMAP_ROLE_UNICAST_MEDIA_RECEIVER</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+<para>Unicast media receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="17" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1a2ae2f5f6bea903194f2ad91ea5e16f13" prot="public" static="no">
+        <name>TMAP_ROLE_BROADCAST_MEDIA_SENDER</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+<para>Broadcast media sender. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="18" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1abb3d9015730b1dd1f07e50e459b1b2f3" prot="public" static="no">
+        <name>TMAP_ROLE_BROADCAST_MEDIA_RECEIVER</name>
+        <initializer>(1 &lt;&lt; 5)</initializer>
+        <briefdescription>
+<para>Broadcast media receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="19" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wiced__bt__ga__tmap_8h_1ab6482b1088185a0e2e37e76da394d0a2" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t tmap_role_t</definition>
+        <argsstring></argsstring>
+        <name>tmap_role_t</name>
+        <briefdescription>
+<para>TMAP role. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="21" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wiced__bt__ga__tmap_8h_1a52246face0c733d7845db2a926248f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_tmap_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_tmap_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the TMAP service_type/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of TMAP instances to be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wiced__bt__ga__tmap_8h_1aca5c95d3a5a33e523d7b17ad198c9dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_tmap_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_tmap_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable TMAP server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wiced__bt__ga__tmap_8h_1a3f95d8d8cf093d2e9f78e0f46a4f6d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_tmap_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_tmap_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable TMAP client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="43" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_TMAS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_TMAS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_dev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gatt_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMAP_ROLE_CALL_GATEWAY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor">#define<sp/>TMAP_ROLE_CALL_TERMINAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#define<sp/>TMAP_ROLE_UNICAST_MEDIA_SENDER<sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#define<sp/>TMAP_ROLE_UNICAST_MEDIA_RECEIVER<sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>3)<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#define<sp/>TMAP_ROLE_BROADCAST_MEDIA_SENDER<sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>4)<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor">#define<sp/>TMAP_ROLE_BROADCAST_MEDIA_RECEIVER<sp/>(1<sp/>&lt;&lt;<sp/>5)<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor">typedef<sp/>uint16_t<sp/>tmap_role_t;<sp/></highlight></codeline>
+<codeline lineno="24" refid="unionwiced__bt__ga__tmap__data__t" refkind="compound"><highlight class="preprocessor">typedef<sp/>union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>tmap_role_t<sp/>tmap_role;<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__ga__tmap__data__t" kindref="compound">wiced_bt_ga_tmap_data_t</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">wiced_result_t<sp/>wiced_bt_ga_tmap_init(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_ga_tmap_enable_server(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_ga_tmap_enable_client(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__WICED_BT_GA_TMAS_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h"/>
+  </compounddef>
+</doxygen>

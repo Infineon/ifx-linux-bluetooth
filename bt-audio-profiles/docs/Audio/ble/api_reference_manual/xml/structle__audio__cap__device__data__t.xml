@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structle__audio__cap__device__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_audio_cap_device_data_t</compoundname>
+    <includes local="no">le_audio_cap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__audio__cap__device__data__t_1a97ba8a78a76697fa3c69397717538e78" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_audio_cap_device_data_t::conn_id</definition>
+        <argsstring></argsstring>
+        <name>conn_id</name>
+        <briefdescription>
+<para>Connection Id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="53" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__device__data__t_1a51f571c5ca542ed324b18fbb61a377ce" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref> *</type>
+        <definition>wiced_bt_ga_pacs_data_t* le_audio_cap_device_data_t::p_pacs_data</definition>
+        <argsstring></argsstring>
+        <name>p_pacs_data</name>
+        <briefdescription>
+<para>PACS Data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="54" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__device__data__t_1a95c4c6e3c59b83c3865e265205c2aef1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_cap_device_data_t::num_ase</definition>
+        <argsstring></argsstring>
+        <name>num_ase</name>
+        <briefdescription>
+<para>Number of ASE ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="55" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__device__data__t_1a77c00d29425025c48f75da5cb79281f2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_cap_device_data_t::ase_notification_count</definition>
+        <argsstring></argsstring>
+        <name>ase_notification_count</name>
+        <briefdescription>
+<para>Number of Notifications which has been sent to ASEs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="56" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__device__data__t_1a90a618de41a73ca933f3d79bd1d6903f" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__ascs__ase__t" kindref="compound">wiced_bt_ga_ascs_ase_t</ref> *</type>
+        <definition>wiced_bt_ga_ascs_ase_t* le_audio_cap_device_data_t::ascs_data[MAX_NUM_ASE_ID]</definition>
+        <argsstring>[MAX_NUM_ASE_ID]</argsstring>
+        <name>ascs_data</name>
+        <briefdescription>
+<para>ASCS Data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="57" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__device__data__t_1a11a6223a0e96734a59d2d5ea144f0b50" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__vcs__volume__state__t" kindref="compound">wiced_bt_ga_vcs_volume_state_t</ref> *</type>
+        <definition>wiced_bt_ga_vcs_volume_state_t* le_audio_cap_device_data_t::vcs_data</definition>
+        <argsstring></argsstring>
+        <name>vcs_data</name>
+        <briefdescription>
+<para>VCS Data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="58" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__device__data__t_1ac57b49a5187fee408d41650ead002a12" prot="public" static="no" mutable="no">
+        <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+        <definition>wiced_bt_ga_mute_val_t le_audio_cap_device_data_t::mics_mute_val</definition>
+        <argsstring></argsstring>
+        <name>mics_mute_val</name>
+        <briefdescription>
+<para>MICS Mute State. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="59" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CAP Device data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="57">
+        <label>wiced_bt_ga_ascs_config_qos_args_t</label>
+        <link refid="structwiced__bt__ga__ascs__config__qos__args__t"/>
+      </node>
+      <node id="46">
+        <label>wiced_bt_ga_pacs_char_data_t</label>
+        <link refid="structwiced__bt__ga__pacs__char__data__t"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>record_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="55">
+        <label>wiced_bt_ga_ascs_ase_info_t</label>
+        <link refid="structwiced__bt__ga__ascs__ase__info__t"/>
+        <childnode refid="56" relation="usage">
+          <edgelabel>ascs_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>wiced_bt_ga_ascs_ase_t</label>
+        <link refid="structwiced__bt__ga__ascs__ase__t"/>
+        <childnode refid="51" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>codec_configured</edgelabel>
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>p_ase_info</edgelabel>
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>qos_configured</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>wiced_bt_ga_pacs_data_t</label>
+        <link refid="structwiced__bt__ga__pacs__data__t"/>
+        <childnode refid="46" relation="usage">
+          <edgelabel>sink_pac_list</edgelabel>
+          <edgelabel>source_pac_list</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>available</edgelabel>
+          <edgelabel>supported</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>wiced_bt_ga_bap_csc_t</label>
+        <link refid="structwiced__bt__ga__bap__csc__t"/>
+      </node>
+      <node id="54">
+        <label>wiced_bt_ga_bap_codec_id_t</label>
+        <link refid="structwiced__bt__ga__bap__codec__id__t"/>
+      </node>
+      <node id="58">
+        <label>wiced_bt_ga_vcs_volume_state_t</label>
+        <link refid="structwiced__bt__ga__vcs__volume__state__t"/>
+      </node>
+      <node id="49">
+        <label>wiced_bt_ga_pacs_audio_contexts_t</label>
+        <link refid="structwiced__bt__ga__pacs__audio__contexts__t"/>
+      </node>
+      <node id="56">
+        <label>wiced_bt_ga_ascs_ase_preferences_t</label>
+        <link refid="structwiced__bt__ga__ascs__ase__preferences__t"/>
+      </node>
+      <node id="48">
+        <label>wiced_bt_ga_pacs_codec_id_t</label>
+        <link refid="structwiced__bt__ga__pacs__codec__id__t"/>
+      </node>
+      <node id="47">
+        <label>wiced_bt_ga_pacs_record_t</label>
+        <link refid="structwiced__bt__ga__pacs__record__t"/>
+        <childnode refid="48" relation="usage">
+          <edgelabel>codec_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="51">
+        <label>wiced_bt_ga_bap_metadata_t</label>
+        <link refid="structwiced__bt__ga__bap__metadata__t"/>
+      </node>
+      <node id="52">
+        <label>wiced_bt_ga_ascs_config_codec_args_t</label>
+        <link refid="structwiced__bt__ga__ascs__config__codec__args__t"/>
+        <childnode refid="53" relation="usage">
+          <edgelabel>csc</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>codec_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>le_audio_cap_device_data_t</label>
+        <link refid="structle__audio__cap__device__data__t"/>
+        <childnode refid="45" relation="usage">
+          <edgelabel>p_pacs_data</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>ascs_data</edgelabel>
+        </childnode>
+        <childnode refid="58" relation="usage">
+          <edgelabel>vcs_data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="52" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="51" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structle__audio__cap__device__data__t_1a90a618de41a73ca933f3d79bd1d6903f" prot="public" virt="non-virtual"><scope>le_audio_cap_device_data_t</scope><name>ascs_data</name></member>
+      <member refid="structle__audio__cap__device__data__t_1a77c00d29425025c48f75da5cb79281f2" prot="public" virt="non-virtual"><scope>le_audio_cap_device_data_t</scope><name>ase_notification_count</name></member>
+      <member refid="structle__audio__cap__device__data__t_1a97ba8a78a76697fa3c69397717538e78" prot="public" virt="non-virtual"><scope>le_audio_cap_device_data_t</scope><name>conn_id</name></member>
+      <member refid="structle__audio__cap__device__data__t_1ac57b49a5187fee408d41650ead002a12" prot="public" virt="non-virtual"><scope>le_audio_cap_device_data_t</scope><name>mics_mute_val</name></member>
+      <member refid="structle__audio__cap__device__data__t_1a95c4c6e3c59b83c3865e265205c2aef1" prot="public" virt="non-virtual"><scope>le_audio_cap_device_data_t</scope><name>num_ase</name></member>
+      <member refid="structle__audio__cap__device__data__t_1a51f571c5ca542ed324b18fbb61a377ce" prot="public" virt="non-virtual"><scope>le_audio_cap_device_data_t</scope><name>p_pacs_data</name></member>
+      <member refid="structle__audio__cap__device__data__t_1a11a6223a0e96734a59d2d5ea144f0b50" prot="public" virt="non-virtual"><scope>le_audio_cap_device_data_t</scope><name>vcs_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___stream___control___a_p_is" kind="group">
+    <compoundname>Stream_Control_APIs</compoundname>
+    <title>Stream_Control_APIs</title>
+    <innergroup refid="group__wiced__bt__ga__bap__broadcast">Wiced_bt_ga_bap_broadcast</innergroup>
+    <innergroup refid="group__wiced__bt__ga__cap">Wiced_bt_ga_cap</innergroup>
+    <innergroup refid="group__wiced__bt__ga__ascs">Wiced_bt_ga_ascs</innergroup>
+    <innergroup refid="group__wiced__bt__ga__bap">Wiced_bt_ga_bap</innergroup>
+    <innergroup refid="group__wiced__bt__ga__bass">Wiced_bt_ga_bass</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___generic___structures" kind="group">
+    <compoundname>Generic_Structures</compoundname>
+    <title>Generic_Structures</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___generic___structures_1ga895bef5a533a2af99414edb765c61d4e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_mute_val_e</name>
+        <enumvalue id="group___generic___structures_1gga895bef5a533a2af99414edb765c61d4ea9132ca0722019e71dd26642b89af6acc" prot="public">
+          <name>WICED_BT_MUTE_STATE_MUTED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Set mute state to mute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga895bef5a533a2af99414edb765c61d4ea12e38bb5f85d52c4d1f2ec730275f6dc" prot="public">
+          <name>WICED_BT_MUTE_STATE_NOT_MUTED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Set mute state to unmute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga895bef5a533a2af99414edb765c61d4eaaf786ec270800266f3926d12f8aff716" prot="public">
+          <name>WICED_BT_MUTE_STATE_DISABLED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Set mute state to unmute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Mute state values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="45" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1ga586763db26059b7048666921829f9b59" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_volume_flag_val_t</name>
+        <enumvalue id="group___generic___structures_1gga586763db26059b7048666921829f9b59ab4d92e91caa33a2874837f44248d43b3" prot="public">
+          <name>WICED_BT_VOLUME_FLAG_VOLUME_SETTING_NOT_PERSISTED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Set volume flag state to volume setting not persisted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga586763db26059b7048666921829f9b59a8fd743066d92c632be48c566321d9a40" prot="public">
+          <name>WICED_BT_VOLUME_FLAG_VOLUME_SETTING_PERSISTED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Set volume flag state to volume setting persisted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Volume Flag values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="57" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1ga25b76b699caf55503a6b44f7cdcbad74" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_mics_error_code_t</name>
+        <enumvalue id="group___generic___structures_1gga25b76b699caf55503a6b44f7cdcbad74a96c4c137800bdee953bd5147640f6a2c" prot="public">
+          <name>WICED_BT_GA_MICS_ERROR_MUTE_DISABLED</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>Mute disabled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MICS error code values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="66" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1ga80df462fd91dde0b40b5977e63ae5069" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_vocs_error_code_t</name>
+        <enumvalue id="group___generic___structures_1gga80df462fd91dde0b40b5977e63ae5069a14aa10d0f4c9f6548a547361f9de2e92" prot="public">
+          <name>WICED_BT_GA_VOCS_ERROR_INVALID_CHANGE_COUNTER</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>Change counter value is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga80df462fd91dde0b40b5977e63ae5069af39790722477dfdb6107b2e73b1deb18" prot="public">
+          <name>WICED_BT_GA_VOCS_ERROR_OPCODE_NOT_SUPPORTED</name>
+          <initializer>= 0x81</initializer>
+          <briefdescription>
+<para>Opcode is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga80df462fd91dde0b40b5977e63ae5069acd4a947602e3bb246dd7bcef1e1c252a" prot="public">
+          <name>WICED_BT_GA_VOCS_ERROR_VALUE_OUT_OF_RANGE</name>
+          <initializer>= 0x82</initializer>
+          <briefdescription>
+<para>Change counter value is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>VOCS error code values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="74" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="73" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1gad07f96da287438a6fbf64c6c613194e9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_aics_error_code_t</name>
+        <enumvalue id="group___generic___structures_1ggad07f96da287438a6fbf64c6c613194e9ace4626610de6f98416b414c41b75e0cf" prot="public">
+          <name>WICED_BT_GA_AICS_ERROR_INVALID_CHANGE_COUNTER</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>Change counter value is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1ggad07f96da287438a6fbf64c6c613194e9a7b44eb294f226b2df24c8fe09cd8d448" prot="public">
+          <name>WICED_BT_GA_AICS_ERROR_OPCODE_NOT_SUPPORTED</name>
+          <initializer>= 0x81</initializer>
+          <briefdescription>
+<para>Opcode is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1ggad07f96da287438a6fbf64c6c613194e9aafa0dd159d98243613c8accb3cd18e0b" prot="public">
+          <name>WICED_BT_GA_AICS_ERROR_MUTE_DISABLED</name>
+          <initializer>= 0x82</initializer>
+          <briefdescription>
+<para>Mute Disabled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1ggad07f96da287438a6fbf64c6c613194e9ab4190abc6e47e394022a82b868c927a7" prot="public">
+          <name>WICED_BT_GA_AICS_ERROR_VALUE_OUT_OF_RANGE</name>
+          <initializer>= 0x83</initializer>
+          <briefdescription>
+<para>Gain setting valus is out of range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1ggad07f96da287438a6fbf64c6c613194e9a4bbebdaa2258cebf14475e2539106050" prot="public">
+          <name>WICED_BT_GA_AICS_GAIN_MODE_CHANGE_NOT_ALLOWED</name>
+          <initializer>= 0x84</initializer>
+          <briefdescription>
+<para>Gain Mode Change Not allowed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AICS error code values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="85" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="84" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1ga1e80ff79214b2494cc79e45be659dde3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_tbs_error_code_t</name>
+        <enumvalue id="group___generic___structures_1gga1e80ff79214b2494cc79e45be659dde3a509fd4cdd0db2f08c5e040f5a5daa0eb" prot="public">
+          <name>WICED_BT_GA_TBS_ERROR_VALUE_CHANGED_READ_LONG</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>Value Changed during read long. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>TBS error code values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="97" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1gab793a2871a0c73c467fbbfc5d7df90cc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_mcs_error_code_t</name>
+        <enumvalue id="group___generic___structures_1ggab793a2871a0c73c467fbbfc5d7df90cca800041d455595fe75f745523c2b5de6b" prot="public">
+          <name>WICED_BT_GA_MCS_ERROR_VALUE_CHANGED_READ_LONG</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>Value Changed during read long. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MCS error code values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="105" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1ga872d745ab4842e20784827d71d851ae3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_bass_error_code_t</name>
+        <enumvalue id="group___generic___structures_1gga872d745ab4842e20784827d71d851ae3a80d37491c3f40481ae93bd00acd3974b" prot="public">
+          <name>WICED_BT_GA_BASS_ERROR_OPCODE_NOT_SUPPORTED</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>Opcode is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga872d745ab4842e20784827d71d851ae3ae2964fd422a6dcc52ecc3aee1c093053" prot="public">
+          <name>WICED_BT_GA_BASS_ERROR_INVALID_SOURCE_ID</name>
+          <initializer>= 0x81</initializer>
+          <briefdescription>
+<para>Invalid Source ID. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>BASS error code values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="113" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="112" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1ga0276499579f38e70989ea893dd86f0e8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_vcs_error_code_t</name>
+        <enumvalue id="group___generic___structures_1gga0276499579f38e70989ea893dd86f0e8ac884eafb8a8e8f00b26eb3ccefda7c6b" prot="public">
+          <name>WICED_BT_GA_VCS_ERROR_INVALID_CHANGE_COUNTER</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>Change counter value is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga0276499579f38e70989ea893dd86f0e8a75db5c57269f0efd74207c955ffcafce" prot="public">
+          <name>WICED_BT_GA_VCS_ERROR_OPCODE_NOT_SUPPORTED</name>
+          <initializer>= 0x81</initializer>
+          <briefdescription>
+<para>Opcode is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>VCS error code values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="122" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1ga3d0f74d63cbffe23692d5d7813cec4ce" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_csis_error_codes_t</name>
+        <enumvalue id="group___generic___structures_1gga3d0f74d63cbffe23692d5d7813cec4cea1192e6604114031270fc206504e7bd9d" prot="public">
+          <name>WICED_BT_GA_CSIS_ERROR_LOCK_DENIED</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>error Lock denied </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga3d0f74d63cbffe23692d5d7813cec4cea32e8cb84f2ed74559319aed3d7912eb3" prot="public">
+          <name>WICED_BT_GA_CSIS_ERROR_LOCK_RELEASE_NOT_ALLOWED</name>
+          <briefdescription>
+<para>error Lock release not allowed </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga3d0f74d63cbffe23692d5d7813cec4cea1a34f0ce81981bbbb833d6216c3b701b" prot="public">
+          <name>WICED_BT_GA_CSIS_ERROR_INVALID_LOCK_VALUE</name>
+          <briefdescription>
+<para>error invalid lock value </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga3d0f74d63cbffe23692d5d7813cec4cea3eb3d4ecb946ac1b97c3249d2a97f22e" prot="public">
+          <name>WICED_BT_GA_CSIS_ERROR_OOB_SIRK_ONLY</name>
+          <briefdescription>
+<para>error when server supports SIRK only through OOB </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1gga3d0f74d63cbffe23692d5d7813cec4ceabf8babd53bbd47604da17f6bdaff8da8" prot="public">
+          <name>WICED_BT_GA_CSIS_ERROR_LOCK_ALREADY_GRANTED</name>
+          <briefdescription>
+<para>error when the requester is already owning the lock </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Definition for application error codes which can be sent by CSIS profile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="131" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="130" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1gafc2b0a339744d2b3f115bca3d4daf2bd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_has_error_codes_t</name>
+        <enumvalue id="group___generic___structures_1ggafc2b0a339744d2b3f115bca3d4daf2bdaef02325a1322eeaa3d0bcf6dd40340ec" prot="public">
+          <name>WICED_BT_GA_HAS_ERROR_INVALID_OPCODE</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1ggafc2b0a339744d2b3f115bca3d4daf2bda7a7c95b58b41e531d5836eba9ff475b6" prot="public">
+          <name>WICED_BT_GA_HAS_ERROR_WRITE_NAME_NOT_ALLOWED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1ggafc2b0a339744d2b3f115bca3d4daf2bda66ae0c504ed2ccd19fa3567884dafb41" prot="public">
+          <name>WICED_BT_GA_HAS_ERROR_PRESET_SYNCHRONIZATION_NOT_SUPPORTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1ggafc2b0a339744d2b3f115bca3d4daf2bda141b9e9218c25180c1ba4f310c2c5171" prot="public">
+          <name>WICED_BT_GA_HAS_ERROR_PRESET_OPERATION_NOT_POSSIBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1ggafc2b0a339744d2b3f115bca3d4daf2bda4652ab0ba71474aaf3cad5b1b8cb65e3" prot="public">
+          <name>WICED_BT_GA_HAS_ERROR_INVALID_PARAMETERS_LENGTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="140" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="139" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___generic___structures_1gaa08a0dc01fc672434c2bb387b2b621b2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_volume_audio_location_t</name>
+        <enumvalue id="group___generic___structures_1ggaa08a0dc01fc672434c2bb387b2b621b2a9f575e8a6f7db39648b563e1de1ee78c" prot="public">
+          <name>WICED_BT_VOCS_LEFT_AUDIO</name>
+          <briefdescription>
+<para>Left Audio Location. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___generic___structures_1ggaa08a0dc01fc672434c2bb387b2b621b2a9c14c0b523cc835621d5240918ad5771" prot="public">
+          <name>WICED_BT_VOCS_RIGHT_AUDIO</name>
+          <briefdescription>
+<para>Right Audio Location. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Definition for application error codes which can be sent by Audio Location profile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="152" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="151" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" prot="public" static="no">
+        <type>gatt_intf_string_t</type>
+        <definition>typedef gatt_intf_string_t wiced_bt_ga_string_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_string_t</name>
+        <briefdescription>
+<para>String structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="36" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_mute_val_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_mute_val_t</name>
+        <briefdescription>
+<para>Mute values (see <ref refid="group___generic___structures_1ga895bef5a533a2af99414edb765c61d4e" kindref="member">wiced_bt_ga_mute_val_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="51" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___generic___structures_1ga2ed523aca7f3fe9301ac3833dc6e0613" prot="public" static="no">
+        <name>VOLUME_OFFSET_MIN_VALUE</name>
+        <initializer>-255</initializer>
+        <briefdescription>
+<para>MIN Volume offset value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="38" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___generic___structures_1gaad2fb12745945ea5352e3aa5e82636f7" prot="public" static="no">
+        <name>VOLUME_OFFSET_MAX_VALUE</name>
+        <initializer>255</initializer>
+        <briefdescription>
+<para>MAX Volume offset value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" line="39" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_common.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

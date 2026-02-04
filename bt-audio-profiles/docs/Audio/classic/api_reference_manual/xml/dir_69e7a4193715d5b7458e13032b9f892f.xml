@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_69e7a4193715d5b7458e13032b9f892f" kind="dir">
+    <compoundname>temp_include_dir</compoundname>
+    <innerfile refid="wiced__bt__a2dp__sink_8h">wiced_bt_a2dp_sink.h</innerfile>
+    <innerfile refid="wiced__bt__a2dp__source_8h">wiced_bt_a2dp_source.h</innerfile>
+    <innerfile refid="wiced__bt__avrc__ct_8h">wiced_bt_avrc_ct.h</innerfile>
+    <innerfile refid="wiced__bt__avrc__tg_8h">wiced_bt_avrc_tg.h</innerfile>
+    <innerfile refid="wiced__bt__hfp__ag_8h">wiced_bt_hfp_ag.h</innerfile>
+    <innerfile refid="wiced__bt__hfp__hf_8h">wiced_bt_hfp_hf.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/"/>
+  </compounddef>
+</doxygen>

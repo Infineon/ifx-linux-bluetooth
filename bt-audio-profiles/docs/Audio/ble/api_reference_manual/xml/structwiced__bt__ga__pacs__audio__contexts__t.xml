@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__pacs__audio__contexts__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_pacs_audio_contexts_t</compoundname>
+    <includes local="no">wiced_bt_ga_pacs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__pacs__audio__contexts__t_1a64f769afba07bb68ff000c22a8f10f16" prot="public" static="no" mutable="no">
+        <type><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref></type>
+        <definition>wiced_bt_ga_bap_context_type_t wiced_bt_ga_pacs_audio_contexts_t::source_contexts</definition>
+        <argsstring></argsstring>
+        <name>source_contexts</name>
+        <briefdescription>
+<para>Source audio contexts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="63" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__pacs__audio__contexts__t_1addf26eca39a3808b8abe27e8fb5b2702" prot="public" static="no" mutable="no">
+        <type><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref></type>
+        <definition>wiced_bt_ga_bap_context_type_t wiced_bt_ga_pacs_audio_contexts_t::sink_contexts</definition>
+        <argsstring></argsstring>
+        <name>sink_contexts</name>
+        <briefdescription>
+<para>Sink audio contexts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="64" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PACS audio context information. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="62" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="61" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__pacs__audio__contexts__t_1addf26eca39a3808b8abe27e8fb5b2702" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_audio_contexts_t</scope><name>sink_contexts</name></member>
+      <member refid="structwiced__bt__ga__pacs__audio__contexts__t_1a64f769afba07bb68ff000c22a8f10f16" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_audio_contexts_t</scope><name>source_contexts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

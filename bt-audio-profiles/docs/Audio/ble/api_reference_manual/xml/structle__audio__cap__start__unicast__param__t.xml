@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structle__audio__cap__start__unicast__param__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_audio_cap_start_unicast_param_t</compoundname>
+    <includes local="no">le_audio_cap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__audio__cap__start__unicast__param__t_1aa3e44099b859c7e7ba729d41dedee40f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref></type>
+        <definition>wiced_bt_ga_bap_context_type_t le_audio_cap_start_unicast_param_t::context_type</definition>
+        <argsstring></argsstring>
+        <name>context_type</name>
+        <briefdescription>
+<para>Targeted Context Type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="96" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__start__unicast__param__t_1ae52a38f36255e557e2e0d274e2bec331" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref></type>
+        <definition>wiced_bt_ga_bap_metadata_t le_audio_cap_start_unicast_param_t::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <briefdescription>
+<para>Metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="97" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__start__unicast__param__t_1acb2e98a9e916179c37e39a59c5ee207b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_cap_start_unicast_param_t::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+<para>Direction of the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="98" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__start__unicast__param__t_1a248efcdf07165906eb7e175222a0620f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_cap_start_unicast_param_t::num_of_cis</definition>
+        <argsstring></argsstring>
+        <name>num_of_cis</name>
+        <briefdescription>
+<para>Number of CIS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="99" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__start__unicast__param__t_1ab5903daac50abd32b2db381ced6e592d" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref> *</type>
+        <definition>wiced_bt_ga_ascs_config_codec_args_t* le_audio_cap_start_unicast_param_t::p_codec_configuration</definition>
+        <argsstring></argsstring>
+        <name>p_codec_configuration</name>
+        <briefdescription>
+<para>Targeted Codec Configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="100" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__cap__start__unicast__param__t_1a86468dcf34dc6da23117ab9ae87c5a5a" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__ascs__config__qos__args__t" kindref="compound">wiced_bt_ga_ascs_config_qos_args_t</ref> *</type>
+        <definition>wiced_bt_ga_ascs_config_qos_args_t* le_audio_cap_start_unicast_param_t::p_qos_configuration</definition>
+        <argsstring></argsstring>
+        <name>p_qos_configuration</name>
+        <briefdescription>
+<para>Targeted QOS Configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="101" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CAP Start Unicast Streaming Data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="87">
+        <label>wiced_bt_ga_ascs_config_qos_args_t</label>
+        <link refid="structwiced__bt__ga__ascs__config__qos__args__t"/>
+      </node>
+      <node id="85">
+        <label>wiced_bt_ga_bap_csc_t</label>
+        <link refid="structwiced__bt__ga__bap__csc__t"/>
+      </node>
+      <node id="86">
+        <label>wiced_bt_ga_bap_codec_id_t</label>
+        <link refid="structwiced__bt__ga__bap__codec__id__t"/>
+      </node>
+      <node id="82">
+        <label>le_audio_cap_start_unicast_param_t</label>
+        <link refid="structle__audio__cap__start__unicast__param__t"/>
+        <childnode refid="83" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+        <childnode refid="84" relation="usage">
+          <edgelabel>p_codec_configuration</edgelabel>
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>p_qos_configuration</edgelabel>
+        </childnode>
+      </node>
+      <node id="83">
+        <label>wiced_bt_ga_bap_metadata_t</label>
+        <link refid="structwiced__bt__ga__bap__metadata__t"/>
+      </node>
+      <node id="84">
+        <label>wiced_bt_ga_ascs_config_codec_args_t</label>
+        <link refid="structwiced__bt__ga__ascs__config__codec__args__t"/>
+        <childnode refid="85" relation="usage">
+          <edgelabel>csc</edgelabel>
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>codec_id</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="95" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="94" bodyend="102"/>
+    <listofallmembers>
+      <member refid="structle__audio__cap__start__unicast__param__t_1aa3e44099b859c7e7ba729d41dedee40f" prot="public" virt="non-virtual"><scope>le_audio_cap_start_unicast_param_t</scope><name>context_type</name></member>
+      <member refid="structle__audio__cap__start__unicast__param__t_1acb2e98a9e916179c37e39a59c5ee207b" prot="public" virt="non-virtual"><scope>le_audio_cap_start_unicast_param_t</scope><name>dir</name></member>
+      <member refid="structle__audio__cap__start__unicast__param__t_1ae52a38f36255e557e2e0d274e2bec331" prot="public" virt="non-virtual"><scope>le_audio_cap_start_unicast_param_t</scope><name>metadata</name></member>
+      <member refid="structle__audio__cap__start__unicast__param__t_1a248efcdf07165906eb7e175222a0620f" prot="public" virt="non-virtual"><scope>le_audio_cap_start_unicast_param_t</scope><name>num_of_cis</name></member>
+      <member refid="structle__audio__cap__start__unicast__param__t_1ab5903daac50abd32b2db381ced6e592d" prot="public" virt="non-virtual"><scope>le_audio_cap_start_unicast_param_t</scope><name>p_codec_configuration</name></member>
+      <member refid="structle__audio__cap__start__unicast__param__t_1a86468dcf34dc6da23117ab9ae87c5a5a" prot="public" virt="non-virtual"><scope>le_audio_cap_start_unicast_param_t</scope><name>p_qos_configuration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

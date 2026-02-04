@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__ga__mics__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_mics_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_mics.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__ga__mics__data__t_1a4b42dbdbd7f77f2fd285102b94921a15" prot="public" static="no" mutable="no">
+        <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+        <definition>wiced_bt_ga_mute_val_t wiced_bt_ga_mics_data_t::mute_val</definition>
+        <argsstring></argsstring>
+        <name>mute_val</name>
+        <briefdescription>
+<para>mute state </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="45" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__mics__data__t_1a249477069c7582138f7bf114235fb534" prot="public" static="no" mutable="no">
+        <type><ref refid="structmics__included__t" kindref="compound">mics_included_t</ref></type>
+        <definition>mics_included_t wiced_bt_ga_mics_data_t::mics_included</definition>
+        <argsstring></argsstring>
+        <name>mics_included</name>
+        <briefdescription>
+<para>volume included service data </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="46" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MICS data structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="268">
+        <label>wiced_bt_ga_aics_gain_settings_params_t</label>
+        <link refid="structwiced__bt__ga__aics__gain__settings__params__t"/>
+      </node>
+      <node id="265">
+        <label>wiced_bt_ga_aics_data_t</label>
+        <link refid="unionwiced__bt__ga__aics__data__t"/>
+        <childnode refid="266" relation="usage">
+          <edgelabel>control_point</edgelabel>
+        </childnode>
+        <childnode refid="267" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+        <childnode refid="268" relation="usage">
+          <edgelabel>gain_setting</edgelabel>
+        </childnode>
+      </node>
+      <node id="267">
+        <label>wiced_bt_ga_aics_input_state_t</label>
+        <link refid="structwiced__bt__ga__aics__input__state__t"/>
+      </node>
+      <node id="266">
+        <label>wiced_bt_ga_aics_control_point_t</label>
+        <link refid="structwiced__bt__ga__aics__control__point__t"/>
+        <childnode refid="267" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="264">
+        <label>mics_included_t</label>
+        <link refid="structmics__included__t"/>
+        <childnode refid="265" relation="usage">
+          <edgelabel>p_aics</edgelabel>
+        </childnode>
+      </node>
+      <node id="263">
+        <label>wiced_bt_ga_mics_data_t</label>
+        <link refid="unionwiced__bt__ga__mics__data__t"/>
+        <childnode refid="264" relation="usage">
+          <edgelabel>mics_included</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="44" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" bodystart="44" bodyend="47"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__ga__mics__data__t_1a249477069c7582138f7bf114235fb534" prot="public" virt="non-virtual"><scope>wiced_bt_ga_mics_data_t</scope><name>mics_included</name></member>
+      <member refid="unionwiced__bt__ga__mics__data__t_1a4b42dbdbd7f77f2fd285102b94921a15" prot="public" virt="non-virtual"><scope>wiced_bt_ga_mics_data_t</scope><name>mute_val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

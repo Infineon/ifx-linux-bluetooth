@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__ga__tmap__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_tmap_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_tmap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__ga__tmap__data__t_1ab894702abd0cce2a0eb27239ebe7012c" prot="public" static="no" mutable="no">
+        <type>tmap_role_t</type>
+        <definition>tmap_role_t wiced_bt_ga_tmap_data_t::tmap_role</definition>
+        <argsstring></argsstring>
+        <name>tmap_role</name>
+        <briefdescription>
+<para>Supported TMAP roles defined in tmap_role_t. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="26" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Audio Input Control Service event data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="25" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="24" bodyend="28"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__ga__tmap__data__t_1ab894702abd0cce2a0eb27239ebe7012c" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tmap_data_t</scope><name>tmap_role</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structle__audio__bap__broadcast__bis__group__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_audio_bap_broadcast_bis_group_t</compoundname>
+    <includes local="no">le_audio_bap_broadcast.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__audio__bap__broadcast__bis__group__t_1a78ed896170ba705924a261c21f321e6e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_audio_bap_broadcast_bis_group_t::bis_idx</definition>
+        <argsstring></argsstring>
+        <name>bis_idx</name>
+        <briefdescription>
+<para>Index of the bis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="46" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__bap__broadcast__bis__group__t_1a19acf17cbd9db08822a3205a8b2c3629" prot="public" static="no" mutable="no">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t le_audio_bap_broadcast_bis_group_t::b_bis_data_path_setup</definition>
+        <argsstring></argsstring>
+        <name>b_bis_data_path_setup</name>
+        <briefdescription>
+<para>is datapath setup </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="47" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__audio__bap__broadcast__bis__group__t_1a1d89a8a2b81c849e7ff1b0d43d3af2c6" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__bap__csc__t" kindref="compound">wiced_bt_ga_bap_csc_t</ref></type>
+        <definition>wiced_bt_ga_bap_csc_t le_audio_bap_broadcast_bis_group_t::bis_csc</definition>
+        <argsstring></argsstring>
+        <name>bis_csc</name>
+        <briefdescription>
+<para>BIS codec specific configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="48" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Broadcast BIS information. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>wiced_bt_ga_bap_csc_t</label>
+        <link refid="structwiced__bt__ga__bap__csc__t"/>
+      </node>
+      <node id="8">
+        <label>le_audio_bap_broadcast_bis_group_t</label>
+        <link refid="structle__audio__bap__broadcast__bis__group__t"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>bis_csc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" line="45" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_bap_broadcast.h" bodystart="44" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structle__audio__bap__broadcast__bis__group__t_1a19acf17cbd9db08822a3205a8b2c3629" prot="public" virt="non-virtual"><scope>le_audio_bap_broadcast_bis_group_t</scope><name>b_bis_data_path_setup</name></member>
+      <member refid="structle__audio__bap__broadcast__bis__group__t_1a1d89a8a2b81c849e7ff1b0d43d3af2c6" prot="public" virt="non-virtual"><scope>le_audio_bap_broadcast_bis_group_t</scope><name>bis_csc</name></member>
+      <member refid="structle__audio__bap__broadcast__bis__group__t_1a78ed896170ba705924a261c21f321e6e" prot="public" virt="non-virtual"><scope>le_audio_bap_broadcast_bis_group_t</scope><name>bis_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

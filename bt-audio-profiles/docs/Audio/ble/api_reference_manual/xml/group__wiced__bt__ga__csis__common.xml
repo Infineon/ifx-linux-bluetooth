@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__ga__csis__common" kind="group">
+    <compoundname>Wiced_bt_ga_csis_common</compoundname>
+    <title>Wiced_bt_ga_csis_common</title>
+    <innerclass refid="structwiced__bt__ga__csis__sirk__data__t" prot="public">wiced_bt_ga_csis_sirk_data_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__csis__data__t" prot="public">wiced_bt_ga_csis_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__csis__common_1ga259e18b167793b1775559e69af6d51aa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_csis_lock_val_e</name>
+        <enumvalue id="group__wiced__bt__ga__csis__common_1gga259e18b167793b1775559e69af6d51aaa93d242c5ec33c9404ce1281b7f207b18" prot="public">
+          <name>WICED_BT_GA_CSIS_UNLOCKED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Lock value unlocked. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__csis__common_1gga259e18b167793b1775559e69af6d51aaa013f5301bc626d06e2ec66c96d2d5161" prot="public">
+          <name>WICED_BT_GA_CSIS_LOCKED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Lock value locked. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Definition for lock values which can be set by application. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="41" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__csis__common_1ga3c6de46358aed03138b8f36312a2f26f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_csis_sirk_type_e</name>
+        <enumvalue id="group__wiced__bt__ga__csis__common_1gga3c6de46358aed03138b8f36312a2f26faac7e5a3ae8459ce91391e8936b391db4" prot="public">
+          <name>WICED_BT_GA_CSIS_SIRK_ENCR</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>SIRK in encypted format. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__csis__common_1gga3c6de46358aed03138b8f36312a2f26fa289ba0fe5cbc08bae77ded854533a27f" prot="public">
+          <name>WICED_BT_GA_CSIS_SIRK_PLAIN</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>SIRK in plain text. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Definition for SIRK types which can be set by application. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="52" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="51" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__ga__csis__common_1gab1c5c9794ac90947a2b292ac4189a3f3" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_csis_sirk_t[WICED_BT_GA_CSIS_SET_IDENTITY_RESOLVING_KEY_LEN]</definition>
+        <argsstring>[WICED_BT_GA_CSIS_SET_IDENTITY_RESOLVING_KEY_LEN]</argsstring>
+        <name>wiced_bt_ga_csis_sirk_t</name>
+        <briefdescription>
+<para>Device address length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="31" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__csis__common_1ga8eae2ee0178d1734895d2deb7bfe7b4e" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_csis_psri_t[WICED_BT_GA_CSIS_PRIVATE_SET_RANDOM_IDENTIFIER_LEN]</definition>
+        <argsstring>[WICED_BT_GA_CSIS_PRIVATE_SET_RANDOM_IDENTIFIER_LEN]</argsstring>
+        <name>wiced_bt_ga_csis_psri_t</name>
+        <briefdescription>
+<para>Device address length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="32" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__csis__common_1ga1710461f12a7630b4f5667924addc423" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_csis_lock_val_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_csis_lock_val_t</name>
+        <briefdescription>
+<para>CSIS lock values (see <ref refid="group__wiced__bt__ga__csis__common_1ga259e18b167793b1775559e69af6d51aa" kindref="member">wiced_bt_ga_csis_lock_val_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="46" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__csis__common_1ga7d33adfe1e48b4c3a812c1330d09b119" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_csis_sirk_type_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_csis_sirk_type_t</name>
+        <briefdescription>
+<para>CSIS SIRK values (see <ref refid="group__wiced__bt__ga__csis__common_1ga3c6de46358aed03138b8f36312a2f26f" kindref="member">wiced_bt_ga_csis_sirk_type_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="57" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__ga__csis__common_1ga483554f41b204fea12ff2d0972e5d9d7" prot="public" static="no">
+        <name>WICED_BT_GA_CSIS_SET_IDENTITY_RESOLVING_KEY_LEN</name>
+        <initializer>16</initializer>
+        <briefdescription>
+<para>Length of SIRK. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="28" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__csis__common_1gae23be20a0216b63bc9961f18b4e17cc2" prot="public" static="no">
+        <name>WICED_BT_GA_CSIS_PRIVATE_SET_RANDOM_IDENTIFIER_LEN</name>
+        <initializer>6</initializer>
+        <briefdescription>
+<para>Length of PSRI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="29" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" prot="public" static="no">
+        <name>SIRK</name>
+        <initializer><ref refid="group__wiced__bt__ga__csis__common_1gab1c5c9794ac90947a2b292ac4189a3f3" kindref="member">wiced_bt_ga_csis_sirk_t</ref></initializer>
+        <briefdescription>
+<para>SIRK. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="34" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" prot="public" static="no">
+        <name>PSRI</name>
+        <initializer><ref refid="group__wiced__bt__ga__csis__common_1ga8eae2ee0178d1734895d2deb7bfe7b4e" kindref="member">wiced_bt_ga_csis_psri_t</ref></initializer>
+        <briefdescription>
+<para>PSRI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="35" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

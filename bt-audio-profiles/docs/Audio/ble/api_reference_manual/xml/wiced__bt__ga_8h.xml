@@ -1,0 +1,1466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__ga_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_ga.h</compoundname>
+    <includes local="yes">gatt_interface.h</includes>
+    <includedby refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includedby>
+    <includedby refid="wiced__bt__ga__bap_8h" local="yes">wiced_bt_ga_bap.h</includedby>
+    <includedby refid="wiced__bt__ga__has_8h" local="yes">wiced_bt_ga_has.h</includedby>
+    <incdepgraph>
+      <node id="27">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="26">
+        <label>wiced_bt_ga.h</label>
+        <link refid="wiced__bt__ga_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wiced__bt__ga_8h_1a4d544bb9b33b0298f36408f470878ee6" prot="public" static="no">
+        <name>INCLUDED_SERVICE_NONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="40" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="wiced__bt__ga_8h_1a06fc87d81c62e9abb8790b6e5713c55ba2d71fd688f20857cafccbfe9590d7ed3" prot="public">
+          <name>AICS_INPUT_STATE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a06fc87d81c62e9abb8790b6e5713c55baef85b14b1f6ddae7413abecaf34428f1" prot="public">
+          <name>AICS_GAIN_SETTING_PROPERTIES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a06fc87d81c62e9abb8790b6e5713c55ba2f9725a964a1a47c4f3e35a0be7a740c" prot="public">
+          <name>AICS_INPUT_TYPE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a06fc87d81c62e9abb8790b6e5713c55bae19e228cd401b1661809d96ece1c28ad" prot="public">
+          <name>AICS_INPUT_STATUS_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a06fc87d81c62e9abb8790b6e5713c55ba27d1cc9ebd66302c0182378e7b658b37" prot="public">
+          <name>AICS_INPUT_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a06fc87d81c62e9abb8790b6e5713c55ba51238f9feb9498eac33434f88970c95a" prot="public">
+          <name>AICS_INPUT_DESCRIPTION_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a06fc87d81c62e9abb8790b6e5713c55ba152f5c41ce904cd844cfa9433d9f7699" prot="public">
+          <name>AICS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="18" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1adf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="wiced__bt__ga_8h_1adf764cbdea00d65edcd07bb9953ad2b7a2b8aca069fe4d018527a2976269e08c1" prot="public">
+          <name>VOCS_OFFSET_STATE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adf764cbdea00d65edcd07bb9953ad2b7a52dfbaa02952f2673aecf890ac42996e" prot="public">
+          <name>VOCS_AUDIO_LOCATION_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adf764cbdea00d65edcd07bb9953ad2b7afdc93d7df5754ebb6491907cca14bd1b" prot="public">
+          <name>VOCS_VOLUME_OFFSET_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adf764cbdea00d65edcd07bb9953ad2b7ad4d0ab24df0d7cbd2c485e7cb9da9c34" prot="public">
+          <name>VOCS_AUDIO_DESCRIPTION_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae97406f62055283333e3159c2d1caa13" prot="public">
+          <name>VOCS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="31" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1a99fb83031ce9923c84392b4e92f956b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@2</name>
+        <enumvalue id="wiced__bt__ga_8h_1a99fb83031ce9923c84392b4e92f956b5a6734a54028857a5cfcee813f0d2e7dfb" prot="public">
+          <name>VCS_VOLUME_STATE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a99fb83031ce9923c84392b4e92f956b5a9da379c4967797185b860d457a3dfec6" prot="public">
+          <name>VCS_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a99fb83031ce9923c84392b4e92f956b5ac7eae966d8023bb9fac18527abf6db8f" prot="public">
+          <name>VCS_VOLUME_FLAG_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a99fb83031ce9923c84392b4e92f956b5a78286de069a0bdb2d3b9c6b33744eb27" prot="public">
+          <name>VCS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="43" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1abc6126af1d45847bc59afa0aa3216b04" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@3</name>
+        <enumvalue id="wiced__bt__ga_8h_1abc6126af1d45847bc59afa0aa3216b04acd6dbaa1b0b3539ed5c59651cbc766cf" prot="public">
+          <name>MICS_MUTE_STATE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1abc6126af1d45847bc59afa0aa3216b04a0552a0ff99321b7b3115837c845e0a77" prot="public">
+          <name>MICS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="52" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@4</name>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca056e738a75312e14773fa12a7955d3ca" prot="public">
+          <name>MCS_MEDIA_PLAYER_NAME_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06cad2b9db6dd7d050f42a021cddabe380a6" prot="public">
+          <name>MCS_MEDIA_TRACK_CHANGED_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca1d34d5fd159aa2d5559de8599bbd8bec" prot="public">
+          <name>MCS_MEDIA_TRACK_TITLE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca48dce8043f4eba9c6e96b07a89551612" prot="public">
+          <name>MCS_MEDIA_TRACK_DURATION_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca08a0432c7d84fcc8a679e4f642799b29" prot="public">
+          <name>MCS_MEDIA_TRACK_POSITION_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06cad3d87df62150bc4b3a7ee2cea7b9dc16" prot="public">
+          <name>MCS_MEDIA_PLAYBACK_SPEED_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca7f326f78d36ec49736dc7004381a290d" prot="public">
+          <name>MCS_MEDIA_SEEKING_SPEED_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca910b231c37b879cdcb22143a149fc3ae" prot="public">
+          <name>MCS_MEDIA_PLAYING_ORDER_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca528fbf07f9f7d36bda8b4d2b29ca7e97" prot="public">
+          <name>MCS_MEDIA_PLAYING_ORDER_SUPPORTED_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca77c7bc02284e72343368293570425832" prot="public">
+          <name>MCS_MEDIA_STATE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06cadd248389b2446291d46ae5a0223c50e8" prot="public">
+          <name>MCS_MEDIA_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca9bdb846f291e3d57437e403260737456" prot="public">
+          <name>MCS_MEDIA_OPCODE_SUPPORTED_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca8f3ca3e01f5057357613e0b5c85c5da0" prot="public">
+          <name>MCS_CONTENT_CONTROL_ID_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca804d0267ce38785c876c100ecb8384ad" prot="public">
+          <name>MCS_MEDIA_ICON_OBJECT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06caa6a711add5b06ee88339eba9863577ac" prot="public">
+          <name>MCS_MEDIA_ICON_URI_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca73d088aaa0f9006b5568a865668e37dc" prot="public">
+          <name>MCS_MEDIA_TRACK_SEGMENT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca18a6c80f5cd4f7afc96af757d2ab7da5" prot="public">
+          <name>MCS_MEDIA_CURRENT_TRACK_OBJ_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca91dde95db9006ced5c35413872c3c7f8" prot="public">
+          <name>MCS_MEDIA_NEXT_TRACK_OBJ_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06caf3c9ed39d7565c91b4c3444b0280e693" prot="public">
+          <name>MCS_MEDIA_PARENT_GROUP_OBJ_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca076b8547fc1eaeccbab639be6b058b86" prot="public">
+          <name>MCS_MEDIA_CURRENT_GROUP_OBJ_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca22b97cba0d87587ab40e89dca1b0cf5d" prot="public">
+          <name>MCS_MEDIA_SEARCH_RESULTS_OBJ_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca38f1cc56d7a070614c12915afdb20440" prot="public">
+          <name>MCS_MEDIA_SEARCH_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06ca09934734da4c3a2abd102752c78169b1" prot="public">
+          <name>MCS_MEDIA_CONTENT_CONTROL_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06cad6a07b2b4c296d6b6d75ebf4a9f74a40" prot="public">
+          <name>MCS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="58" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="58" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@5</name>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9eac31aa39473f3da0e770c2713d8c2c9f4" prot="public">
+          <name>TBS_BEARER_PROVIDER_NAME_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9eae0e92633010deecbf4aa0039b8c158ef" prot="public">
+          <name>TBS_BEARER_UCI_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9ea9ebe33cc6284870b140e8cbfafd52a02" prot="public">
+          <name>TBS_BEARER_TECHNOLOGY_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9eab8fe6d3b1c47a9caf236cd4aeb6f967d" prot="public">
+          <name>TBS_BEARER_URI_SUPPORTED_SCHEMES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9eae7953ad5c58b30299f44a79e693c9ab8" prot="public">
+          <name>TBS_BEARER_SIGNAL_STRENGTH_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9ea535d446f7cc000f30f25976a8fc25147" prot="public">
+          <name>TBS_BEARER_SIGNAL_STRENGTH_REPORTING_INTERVAL_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9ea19e7e1a7c002ecb1d206b4445ed092bb" prot="public">
+          <name>TBS_BEARER_LIST_CURRENT_CALLS_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9eab6217dbcc8dae2fa7af9394cbe97103d" prot="public">
+          <name>TBS_CONTENT_CONTROL_ID_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9eac4289aeacb4b32b8136d0fdfb6743eec" prot="public">
+          <name>TBS_INCOMING_CALL_TG_BEARER_URI_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9ea9bf5a04df49638c1d711ba3e38bc6b45" prot="public">
+          <name>TBS_STATUS_FLAGS_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9ea65dae273e98abd4631610781659d08ad" prot="public">
+          <name>TBS_CALL_STATE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9ea4a26801fb1082ad0bc0a85261c5cf845" prot="public">
+          <name>TBS_CALL_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9ea791e95e15960e85700f0dfb457996ec0" prot="public">
+          <name>TBS_CALL_CONTROL_POINT_OPTIONAL_OPCODE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9ea9d730f10798f28e1d92973be2f895aa8" prot="public">
+          <name>TBS_CALL_TERMINATION_REASON_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9eace3bd51d22137af304b7d9e12f084b06" prot="public">
+          <name>TBS_INCOMING_CALL_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9eaa90d4732a4abe7e0dd63241c3399840e" prot="public">
+          <name>TBS_CALL_FRIENDLY_NAME_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9ea04849f594aa6a96e2ef27eccb3818b65" prot="public">
+          <name>TBS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="87" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="86" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1a726ca809ffd3d67ab4b8476646f26635" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@6</name>
+        <enumvalue id="wiced__bt__ga_8h_1a726ca809ffd3d67ab4b8476646f26635afcbee75b5209810d5b767a152574e9d9" prot="public">
+          <name>CSIS_SIRK_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a726ca809ffd3d67ab4b8476646f26635a3fb8c0ecf40d71b01d2a401b3f7226c0" prot="public">
+          <name>CSIS_SIZE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a726ca809ffd3d67ab4b8476646f26635a99070731584f36ed21782e413487e809" prot="public">
+          <name>CSIS_LOCK_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a726ca809ffd3d67ab4b8476646f26635af2d535bf9199544840590825ae0c5d76" prot="public">
+          <name>CSIS_RANK_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a726ca809ffd3d67ab4b8476646f26635a207916eed66ec48e3612e7cc045e0257" prot="public">
+          <name>CSIS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="109" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="108" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1a0411cd49bb5b71852cecd93bcbf0ca2d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@7</name>
+        <enumvalue id="wiced__bt__ga_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da1d972f4b2b6f0221b346805a8f464ed3" prot="public">
+          <name>WICED_BT_GA_RAAS_SELECTABLE_AREP_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da09124655c10e051d4a500a4595e81681" prot="public">
+          <name>WICED_BT_GA_RAAS_CFG_AUDIO_ROUTE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da0c2bffe7d75d42a94128bf8b13e12b8e" prot="public">
+          <name>WICED_BT_GA_RAAS_CFG_AUDIO_ROUTE_CONTENT_TYPE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da49ee3641f2fda524041739695776869d" prot="public">
+          <name>WICED_BT_GA_RAAS_MODIFY_AUDIO_ROUTE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a0411cd49bb5b71852cecd93bcbf0ca2dab36841af614168c3a0e21d07759a985e" prot="public">
+          <name>WICED_BT_GA_RAAS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="119" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="118" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1abed82baf7f470b522273a3e37c24c600" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@8</name>
+        <enumvalue id="wiced__bt__ga_8h_1abed82baf7f470b522273a3e37c24c600a6139b779ceab1db69fe1fb223b29d419" prot="public">
+          <name>ASCS_ASE_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1abed82baf7f470b522273a3e37c24c600a386ce5fb4647806bd4ed44b608033f98" prot="public">
+          <name>ASCS_MAX_UNIQUE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1abed82baf7f470b522273a3e37c24c600acd841a06c79efaf8b6d6eea06a2c4205" prot="public">
+          <name>ASCS_SINK_ASE_CHARACTERISTIC</name>
+          <initializer>= ASCS_MAX_UNIQUE_CHARACTERISTIC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1abed82baf7f470b522273a3e37c24c600ae2172ae8c9df7d060b271f9ee068197f" prot="public">
+          <name>ASCS_SOURCE_ASE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1abed82baf7f470b522273a3e37c24c600ad2a5699df37172ecf67217b58a5b7fec" prot="public">
+          <name>ASCS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="129" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="128" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@9</name>
+        <enumvalue id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57a565237c0116c93ae96db38645a51a013" prot="public">
+          <name>PACS_AVAILABILE_AUDIO_CONTEXTS_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57aa2e50f39372becb6b21313d86d1760cb" prot="public">
+          <name>PACS_SUPPORTED_AUDIO_CONTEXTS_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57a081cf80427b8ba9d96bc3ee1532bf6cc" prot="public">
+          <name>PACS_SINK_AUDIO_LOCATIONS_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57a504d5c88b07792b21f4f1c6057b2aac4" prot="public">
+          <name>PACS_SOURCE_AUDIO_LOCATIONS_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57abca71f56d7bdaecb6bed4c87e358c5f3" prot="public">
+          <name>PACS_MAX_UNIQUE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57aacfd643722c5c9fb416ff9c6ddff3869" prot="public">
+          <name>PACS_SINK_CAPABILITY_CHARACTERISTIC</name>
+          <initializer>= PACS_MAX_UNIQUE_CHARACTERISTIC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57a0aafa7d5fef9b9ac39f3073defc3f844" prot="public">
+          <name>PACS_SOURCE_CAPABILITY_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57ac3a4ab35b5863e27e55dcf29269ff558" prot="public">
+          <name>PACS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="139" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="138" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1a385c44f6fb256e5716a2302a5b940388" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@10</name>
+        <enumvalue id="wiced__bt__ga_8h_1a385c44f6fb256e5716a2302a5b940388aeb42f8835330b1de8541f83e831186d0" prot="public">
+          <name>BASS_BROADCAST_AUDIO_SCAN_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a385c44f6fb256e5716a2302a5b940388adf50f629ff66346dbc17e0ed96c59751" prot="public">
+          <name>BASS_MAX_UNIQUE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a385c44f6fb256e5716a2302a5b940388a304764e578feef079fd41cfedbf15b81" prot="public">
+          <name>BASS_BROADCAST_RECEIVE_STATE_CHARACTERISTIC</name>
+          <initializer>= BASS_MAX_UNIQUE_CHARACTERISTIC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a385c44f6fb256e5716a2302a5b940388a9478c23f4cd5a03cd2285e8852532d4a" prot="public">
+          <name>BASS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="152" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="151" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1abc5c98fcc1211af2b80116dd6e0a035d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@11</name>
+        <enumvalue id="wiced__bt__ga_8h_1abc5c98fcc1211af2b80116dd6e0a035daec653acb628c56ef7f8d51994e782507" prot="public">
+          <name>TMAP_ROLE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1abc5c98fcc1211af2b80116dd6e0a035da0c32ac0cf8e4bb6aa9e72282c19f22f7" prot="public">
+          <name>TMAP_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="161" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="160" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1ac36f475ca5b446f4fde4c9b90bec77c8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@12</name>
+        <enumvalue id="wiced__bt__ga_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a0032900e10255cace9fccf26a41c0664" prot="public">
+          <name>HAS_HEARING_AID_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a0cc8711664e5097c5f1ea7ee558334df" prot="public">
+          <name>HAS_HEARING_AID_PRESET_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a8659d08394c1d8989f237528b4af3d45" prot="public">
+          <name>HAS_ACTIVE_PRESET_INDEX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a1a61c25ad66a969d38a70a58984e8e19" prot="public">
+          <name>HAS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="168" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="167" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1a05589fbab0657f08285ebdfe93f5ec9e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@13</name>
+        <enumvalue id="wiced__bt__ga_8h_1a05589fbab0657f08285ebdfe93f5ec9ea3b39dbaa5a8ff7f318e3d462fda32d0b" prot="public">
+          <name>IAS_ALERT_LEVEL_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a05589fbab0657f08285ebdfe93f5ec9eaeb406a7dc5842f01fcf1fa182724cb2f" prot="public">
+          <name>IAS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="177" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="176" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@14</name>
+        <enumvalue id="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4da3e388e213682de4dd5a6e28e0019d2e5" prot="public">
+          <name>RAS_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4dac4a8055bbfb6a0d334332ff71a016ea2" prot="public">
+          <name>RAS_REAL_TIME_RANGING_DATA_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4da49cb3178383253e839170d3d9c8f5819" prot="public">
+          <name>RAS_ON_DEMAND_RANGING_DATA_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4da183ebabda78b9faf9f57c967943f695e" prot="public">
+          <name>RAS_CONTROL_POINT_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4da98c61cbba515a968a9e823a3d48caec4" prot="public">
+          <name>RAS_RANGING_DATA_READY_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4da9da52d10093137b9163d236744f633ca" prot="public">
+          <name>RAS_RANGING_DATA_OVERWRITTEN_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4da40099e97a7d1e48d6c0c16dc88613a10" prot="public">
+          <name>RAS_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="184" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="183" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@15</name>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a4454ec5c8397d4842586ab5973040083" prot="public">
+          <name>GMAP_ROLE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a8b74f98ffde8ff901df4ca553e61f995" prot="public">
+          <name>GMAP_UGG_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25aa3524ce2b9e8a8090c5921fefb8e1dd8" prot="public">
+          <name>GMAP_UGT_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25abb578d97a4426f43f9a0bd483d99bb23" prot="public">
+          <name>GMAP_BGS_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a840bcd0f1ab97c4388c24033ec052e01" prot="public">
+          <name>GMAP_BGR_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a6c27e0287b9ae48017a1c4481594b002" prot="public">
+          <name>GMAP_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="196" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="195" bodyend="203"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1ace369eb47e61b850c5979dcaa1f4dda4" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t aics_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>aics_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="27" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1afcf4e009f88def1eb905beed714de284" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t vocs_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>vocs_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="38" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a5f33c67ff7dacd98af33f16855ddcf5d" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t vcs_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>vcs_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="49" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a7286a1bff7c144b1f38738aaaed79a3d" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t mics_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>mics_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="56" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1aa980a94d752f75bb4fa2a8ea5311f3f9" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t mcs_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>mcs_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="84" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a12a75a79b3c8e44000b3658a08db1520" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t tbs_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>tbs_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="106" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a3214cd561945a2fc0283c1bc4800023b" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t csis_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>csis_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="116" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a1a7e64aafe0a3d6573083439fe62ad30" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_raas_server_handle_list_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_raas_server_handle_list_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="126" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1aca8d3c41b2af7b2a9a7c603eefb298a3" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t ascs_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>ascs_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="136" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a2cedcd0e1fbf5ce3b375157a0d0e1e18" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t pacs_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>pacs_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="149" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a3d3a718a15feef78724dc3c09ed1e2e8" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t bass_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>bass_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="158" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a0577a3674f8308f1121cacfbed74db14" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t tmap_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>tmap_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="165" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a79dbe6998c7e25043acb571825a934fc" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t has_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>has_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="174" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a262597fe04a7a2b40a5cf86d29fd1848" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t ias_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>ias_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="181" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1a0c193e452ce6958ed9f1bbe837d75d90" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t ras_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>ras_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="193" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1ae960f9ab789d90dda6a7cc1065c594cf" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t gmap_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>gmap_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="204" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="wiced__bt__ga_8h_1aff58dadc158c0920c2ed59df2a3fd150" prot="public" static="no" mutable="no">
+        <type>const wiced_bt_uuid_t</type>
+        <definition>const wiced_bt_uuid_t ga_service_uuid_vcs</definition>
+        <argsstring></argsstring>
+        <name>ga_service_uuid_vcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__ga_8h_1a234a33af23a42bef55d3bc8f2e564c52" prot="public" static="no" mutable="no">
+        <type>const wiced_bt_uuid_t</type>
+        <definition>const wiced_bt_uuid_t ga_service_uuid_mics</definition>
+        <argsstring></argsstring>
+        <name>ga_service_uuid_mics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__ga_8h_1ab5716504592c4d959ade916716c6deb2" prot="public" static="no" mutable="no">
+        <type>const wiced_bt_uuid_t</type>
+        <definition>const wiced_bt_uuid_t ga_service_uuid_ascs</definition>
+        <argsstring></argsstring>
+        <name>ga_service_uuid_ascs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__ga_8h_1a693b592f22a2df2beb7622d172ef255a" prot="public" static="no" mutable="no">
+        <type>const wiced_bt_uuid_t</type>
+        <definition>const wiced_bt_uuid_t ga_service_uuid_bass</definition>
+        <argsstring></argsstring>
+        <name>ga_service_uuid_bass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__ga_8h_1a52d1d3b0ff4d5e33263dd60413a815e2" prot="public" static="no" mutable="no">
+        <type>const wiced_bt_uuid_t</type>
+        <definition>const wiced_bt_uuid_t ga_service_uuid_csis</definition>
+        <argsstring></argsstring>
+        <name>ga_service_uuid_csis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="216" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Definitions for interface between WICED BT GA libraries and applications </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gatt_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>AICS_INPUT_STATE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0<sp/>RWN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>AICS_GAIN_SETTING_PROPERTIES_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>AICS_INPUT_TYPE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>AICS_INPUT_STATUS_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>AICS_INPUT_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>AICS_INPUT_DESCRIPTION_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>AICS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>aics_characteristics_t;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>VOCS<sp/>Characteristic<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>VOCS_OFFSET_STATE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>VOCS_AUDIO_LOCATION_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>VOCS_VOLUME_OFFSET_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>VOCS_AUDIO_DESCRIPTION_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>VOCS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>vocs_characteristics_t;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_SERVICE_NONE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>VCS_VOLUME_STATE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>VCS_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>VCS_VOLUME_FLAG_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>VCS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>vcs_characteristics_t;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>MICS_MUTE_STATE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>MICS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>mics_characteristics_t;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_PLAYER_NAME_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_TRACK_CHANGED_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_TRACK_TITLE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_TRACK_DURATION_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_TRACK_POSITION_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_PLAYBACK_SPEED_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_SEEKING_SPEED_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_PLAYING_ORDER_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_PLAYING_ORDER_SUPPORTED_CHARACTERISTIC,<sp/><sp/><sp/></highlight><highlight class="comment">//8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_STATE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_OPCODE_SUPPORTED_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_CONTENT_CONTROL_ID_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_ICON_OBJECT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_ICON_URI_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_TRACK_SEGMENT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_CURRENT_TRACK_OBJ_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_NEXT_TRACK_OBJ_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_PARENT_GROUP_OBJ_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_CURRENT_GROUP_OBJ_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_SEARCH_RESULTS_OBJ_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_SEARCH_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MEDIA_CONTENT_CONTROL_ID,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>mcs_characteristics_t;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_BEARER_PROVIDER_NAME_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_BEARER_UCI_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_BEARER_TECHNOLOGY_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_BEARER_URI_SUPPORTED_SCHEMES_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_BEARER_SIGNAL_STRENGTH_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_BEARER_SIGNAL_STRENGTH_REPORTING_INTERVAL_CHARACTERISTIC,<sp/></highlight><highlight class="comment">//5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_BEARER_LIST_CURRENT_CALLS_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_CONTENT_CONTROL_ID_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_INCOMING_CALL_TG_BEARER_URI_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_STATUS_FLAGS_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_CALL_STATE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_CALL_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_CALL_CONTROL_POINT_OPTIONAL_OPCODE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_CALL_TERMINATION_REASON_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_INCOMING_CALL_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_CALL_FRIENDLY_NAME_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>TBS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>tbs_characteristics_t;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>CSIS_SIRK_CHARACTERISTIC,<sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>CSIS_SIZE_CHARACTERISTIC,<sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>CSIS_LOCK_CHARACTERISTIC,<sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>CSIS_RANK_CHARACTERISTIC,<sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>CSIS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>csis_characteristics_t;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_RAAS_SELECTABLE_AREP_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_RAAS_CFG_AUDIO_ROUTE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_RAAS_CFG_AUDIO_ROUTE_CONTENT_TYPE_CHARACTERISTIC,<sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_RAAS_MODIFY_AUDIO_ROUTE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_RAAS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>wiced_bt_ga_raas_server_handle_list_t;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>ASCS_ASE_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>ASCS_MAX_UNIQUE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>ASCS_SINK_ASE_CHARACTERISTIC<sp/>=<sp/>ASCS_MAX_UNIQUE_CHARACTERISTIC,<sp/></highlight><highlight class="comment">//<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>ASCS_SOURCE_ASE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>ASCS_MAX_CHARACTERISTIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>ascs_characteristics_t;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>PACS_AVAILABILE_AUDIO_CONTEXTS_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>PACS_SUPPORTED_AUDIO_CONTEXTS_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>PACS_SINK_AUDIO_LOCATIONS_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>PACS_SOURCE_AUDIO_LOCATIONS_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>PACS_MAX_UNIQUE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>PACS_SINK_CAPABILITY_CHARACTERISTIC<sp/>=<sp/>PACS_MAX_UNIQUE_CHARACTERISTIC,<sp/></highlight><highlight class="comment">//<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>PACS_SOURCE_CAPABILITY_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>PACS_MAX_CHARACTERISTIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>pacs_characteristics_t;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>BASS_BROADCAST_AUDIO_SCAN_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>BASS_MAX_UNIQUE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>BASS_BROADCAST_RECEIVE_STATE_CHARACTERISTIC<sp/>=<sp/>BASS_MAX_UNIQUE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>BASS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>bass_characteristics_t;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>TMAP_ROLE_CHARACTERISTIC,<sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>TMAP_MAX_CHARACTERISTIC,<sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>tmap_characteristics_t;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_HEARING_AID_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_HEARING_AID_PRESET_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_ACTIVE_PRESET_INDEX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>has_characteristics_t;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>IAS_ALERT_LEVEL_CHARACTERISTIC,<sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>IAS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>ias_characteristics_t;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_REAL_TIME_RANGING_DATA_CHARACTERISTIC,<sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_ON_DEMAND_RANGING_DATA_CHARACTERISTIC,<sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_RANGING_DATA_READY_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_RANGING_DATA_OVERWRITTEN_CHARACTERISTIC,<sp/></highlight><highlight class="comment">//5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>ras_characteristics_t;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_ROLE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_UGG_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_UGT_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_BGS_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_BGR_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>gmap_characteristics_t;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_vcs;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_mcs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_mics;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_tbs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_gtbs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_mcs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_gmcs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_pacs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_ascs;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_bass;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_csis;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_tmap;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_has;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_ias;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_ras;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h"/>
+  </compounddef>
+</doxygen>

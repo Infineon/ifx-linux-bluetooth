@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__ga__aics__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_aics_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_aics.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__ga__aics__data__t_1a11b2d9e8f8555c3c8d88fc6024ce8427" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__aics__input__state__t" kindref="compound">wiced_bt_ga_aics_input_state_t</ref></type>
+        <definition>wiced_bt_ga_aics_input_state_t wiced_bt_ga_aics_data_t::input_state</definition>
+        <argsstring></argsstring>
+        <name>input_state</name>
+        <briefdescription>
+<para>Audio Input State. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="99" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__aics__data__t_1a36984dce1f24a2e37ce937c853cbab54" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__aics__gain__settings__params__t" kindref="compound">wiced_bt_ga_aics_gain_settings_params_t</ref></type>
+        <definition>wiced_bt_ga_aics_gain_settings_params_t wiced_bt_ga_aics_data_t::gain_setting</definition>
+        <argsstring></argsstring>
+        <name>gain_setting</name>
+        <briefdescription>
+<para>Audio Input Gain setting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="100" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__aics__data__t_1a7f6073490da7c6bd2496bb6d1365d9bd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_aics_data_t::input_type</definition>
+        <argsstring></argsstring>
+        <name>input_type</name>
+        <briefdescription>
+<para>Audio Input Type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="101" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__aics__data__t_1a53c3cae8dea3df003ba0c9fcc2b9296c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__aics_1ga4bdd0e4f2d1444c05980d894de77eb6a" kindref="member">wiced_bt_ga_aics_input_status_t</ref></type>
+        <definition>wiced_bt_ga_aics_input_status_t wiced_bt_ga_aics_data_t::input_status</definition>
+        <argsstring></argsstring>
+        <name>input_status</name>
+        <briefdescription>
+<para>Audio Input Status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="102" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__aics__data__t_1a2a96a484099a543293f466c75cd6337c" prot="public" static="no" mutable="no">
+        <type><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref></type>
+        <definition>wiced_bt_ga_string_t wiced_bt_ga_aics_data_t::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>Audio Input descritpion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="103" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__aics__data__t_1ab7bedb5a7632aee5ae7dc7ebd15a1a7f" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__aics__control__point__t" kindref="compound">wiced_bt_ga_aics_control_point_t</ref></type>
+        <definition>wiced_bt_ga_aics_control_point_t wiced_bt_ga_aics_data_t::control_point</definition>
+        <argsstring></argsstring>
+        <name>control_point</name>
+        <briefdescription>
+<para>Audio control point data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="104" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AICS data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="115">
+        <label>wiced_bt_ga_aics_gain_settings_params_t</label>
+        <link refid="structwiced__bt__ga__aics__gain__settings__params__t"/>
+      </node>
+      <node id="112">
+        <label>wiced_bt_ga_aics_data_t</label>
+        <link refid="unionwiced__bt__ga__aics__data__t"/>
+        <childnode refid="113" relation="usage">
+          <edgelabel>control_point</edgelabel>
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+        <childnode refid="115" relation="usage">
+          <edgelabel>gain_setting</edgelabel>
+        </childnode>
+      </node>
+      <node id="114">
+        <label>wiced_bt_ga_aics_input_state_t</label>
+        <link refid="structwiced__bt__ga__aics__input__state__t"/>
+      </node>
+      <node id="113">
+        <label>wiced_bt_ga_aics_control_point_t</label>
+        <link refid="structwiced__bt__ga__aics__control__point__t"/>
+        <childnode refid="114" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="98" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="98" bodyend="105"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__ga__aics__data__t_1ab7bedb5a7632aee5ae7dc7ebd15a1a7f" prot="public" virt="non-virtual"><scope>wiced_bt_ga_aics_data_t</scope><name>control_point</name></member>
+      <member refid="unionwiced__bt__ga__aics__data__t_1a2a96a484099a543293f466c75cd6337c" prot="public" virt="non-virtual"><scope>wiced_bt_ga_aics_data_t</scope><name>description</name></member>
+      <member refid="unionwiced__bt__ga__aics__data__t_1a36984dce1f24a2e37ce937c853cbab54" prot="public" virt="non-virtual"><scope>wiced_bt_ga_aics_data_t</scope><name>gain_setting</name></member>
+      <member refid="unionwiced__bt__ga__aics__data__t_1a11b2d9e8f8555c3c8d88fc6024ce8427" prot="public" virt="non-virtual"><scope>wiced_bt_ga_aics_data_t</scope><name>input_state</name></member>
+      <member refid="unionwiced__bt__ga__aics__data__t_1a53c3cae8dea3df003ba0c9fcc2b9296c" prot="public" virt="non-virtual"><scope>wiced_bt_ga_aics_data_t</scope><name>input_status</name></member>
+      <member refid="unionwiced__bt__ga__aics__data__t_1a7f6073490da7c6bd2496bb6d1365d9bd" prot="public" virt="non-virtual"><scope>wiced_bt_ga_aics_data_t</scope><name>input_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

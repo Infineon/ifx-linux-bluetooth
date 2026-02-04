@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__ga__csis" kind="group">
+    <compoundname>Wiced_bt_ga_csis</compoundname>
+    <title>Wiced_bt_ga_csis</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__csis_1ga92814a4aed200728adff74e7563e4009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" kindref="member">PSRI</ref> *</type>
+        <definition>PSRI* wiced_bt_ga_csis_generate_psri</definition>
+        <argsstring>(SIRK *sirk)</argsstring>
+        <name>wiced_bt_ga_csis_generate_psri</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref> *</type>
+          <declname>sirk</declname>
+        </param>
+        <briefdescription>
+<para>Generate PSRI valiue using the SIRK of the coordinated set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PSRI value will be used during advertisement procedure to inform the clients regarding the specific set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sirk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SIRK value to be used for the specific coordinated set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>PSRI PSRI value generated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csis_1ga5b0e0141e9270b6bd93b883c4c8a225e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_csis_get_adv_data</definition>
+        <argsstring>(PSRI *psri, wiced_bt_ble_advert_elem_t *adv_elem)</argsstring>
+        <name>wiced_bt_ga_csis_get_adv_data</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" kindref="member">PSRI</ref> *</type>
+          <declname>psri</declname>
+        </param>
+        <param>
+          <type>wiced_bt_ble_advert_elem_t *</type>
+          <declname>adv_elem</declname>
+        </param>
+        <briefdescription>
+<para>Set PSRI adv data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application use this api to advertise the set members coordinate set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">psri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>psri value to be set in the advertisement </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory in which the advertisement data has to be filled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csis_1gae6357ccc8389ffa9cb62c4284e38cb9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_csis_set_lock_timeout_value</definition>
+        <argsstring>(gatt_intf_service_object_t *p_service, uint8_t timeout_in_sec)</argsstring>
+        <name>wiced_bt_ga_csis_set_lock_timeout_value</name>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>timeout_in_sec</declname>
+        </param>
+        <briefdescription>
+<para>Set Lock timeout in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Higher layer profile can set timeout value in seconds, it is by default set to 60 seconds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instance of the coordinated set identification service </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout_in_sec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout value in seconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE is operation is successful otherwise WICED_FALSE. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csis_1gada435c588af01e18910bf3928acca1e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_ga_csis_is_operation_allowed</definition>
+        <argsstring>(uint16_t conn_id)</argsstring>
+        <name>wiced_bt_ga_csis_is_operation_allowed</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <briefdescription>
+<para>wiced_bt_ga_csis_is_operation_allowed </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Other profile should invoke this API to check whether operation is allowed or not for given connection id.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE is operation is allowed otherwise WICED_FALSE. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csis_1gaadbddb91b44efdb86f03ef1258d54b1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_csis_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_csis_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the CSIS service_type/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of csis instances to be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csis_1gad5cf3fe1b8e4e80fe0fd307f30675eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_csis_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_csis_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable CSIS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csis_1ga3af7c32f13471fee0b4499e683e202bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_csis_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_csis_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable CSIS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="86" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

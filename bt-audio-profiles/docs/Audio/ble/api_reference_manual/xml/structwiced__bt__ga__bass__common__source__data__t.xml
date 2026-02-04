@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__bass__common__source__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_bass_common_source_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_bass.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__common__source__data__t_1ac9157cc7f0667fa8eea0915003cd7f5d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__bass_1ga1b2ba9bfe67278a99ce1599235f7e8d7" kindref="member">wiced_bt_ga_bass_pa_sync_param_t</ref></type>
+        <definition>wiced_bt_ga_bass_pa_sync_param_t wiced_bt_ga_bass_common_source_data_t::pa_sync_param</definition>
+        <argsstring></argsstring>
+        <name>pa_sync_param</name>
+        <briefdescription>
+<para>PA Sync Parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="92" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__common__source__data__t_1acd8129ecd20723efeed0b97f725f2a6d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_ga_bass_common_source_data_t::pa_interval</definition>
+        <argsstring></argsstring>
+        <name>pa_interval</name>
+        <briefdescription>
+<para>SyncInfo field Interval parameter value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0xFFFF: PA_Interval unknown </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="93" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__common__source__data__t_1a5dd26a8a741ba656e73cc59502c4741b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bass_common_source_data_t::num_subgroup</definition>
+        <argsstring></argsstring>
+        <name>num_subgroup</name>
+        <briefdescription>
+<para>Number of subgroups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="94" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__common__source__data__t_1a587dba187051f6be3a409bc2a34c3918" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__bass__sub__group__data__t" kindref="compound">wiced_bt_ga_bass_sub_group_data_t</ref></type>
+        <definition>wiced_bt_ga_bass_sub_group_data_t wiced_bt_ga_bass_common_source_data_t::sub_group_data[WICED_BT_GA_BASS_MAX_SUBGROUP_COUNT]</definition>
+        <argsstring>[WICED_BT_GA_BASS_MAX_SUBGROUP_COUNT]</argsstring>
+        <name>sub_group_data</name>
+        <briefdescription>
+<para>Subgroup data array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="95" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BASS Common Source Data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="177">
+        <label>wiced_bt_ga_bass_sub_group_data_t</label>
+        <link refid="structwiced__bt__ga__bass__sub__group__data__t"/>
+        <childnode refid="178" relation="usage">
+          <edgelabel>meta_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="176">
+        <label>wiced_bt_ga_bass_common_source_data_t</label>
+        <link refid="structwiced__bt__ga__bass__common__source__data__t"/>
+        <childnode refid="177" relation="usage">
+          <edgelabel>sub_group_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="178">
+        <label>wiced_bt_ga_bap_metadata_t</label>
+        <link refid="structwiced__bt__ga__bap__metadata__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="91" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="90" bodyend="96"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__bass__common__source__data__t_1a5dd26a8a741ba656e73cc59502c4741b" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_common_source_data_t</scope><name>num_subgroup</name></member>
+      <member refid="structwiced__bt__ga__bass__common__source__data__t_1acd8129ecd20723efeed0b97f725f2a6d" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_common_source_data_t</scope><name>pa_interval</name></member>
+      <member refid="structwiced__bt__ga__bass__common__source__data__t_1ac9157cc7f0667fa8eea0915003cd7f5d" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_common_source_data_t</scope><name>pa_sync_param</name></member>
+      <member refid="structwiced__bt__ga__bass__common__source__data__t_1a587dba187051f6be3a409bc2a34c3918" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_common_source_data_t</scope><name>sub_group_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

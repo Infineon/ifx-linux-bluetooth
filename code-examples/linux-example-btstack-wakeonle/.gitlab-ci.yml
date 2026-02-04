@@ -1,0 +1,36 @@
+# Refer to the memo SRDS-392 for details on how to use this template.
+variables:
+  # Specify the code example version. This version is used for tagging the staging repository.
+  CE_REL_VERSION: 2.0.0
+
+  # Specify the code example author's Cypress initials/username. This will be used in CX survey URL generation and to automatically assign regression JIRA tickets.
+  CE_AUTHOR_NAME: "Yason Wang"
+
+  # Specify the code example author's Infineon username. This will be used in to automatically assign regression JIRA tickets.
+  CE_AUTHOR_USERNAME: "Yason Wang"
+
+  # Specify the code example author's Infineon email address. This will be used in CX survey URL generation.
+  CE_AUTHOR_EMAIL: "Yason.Wang@infineon.com"
+
+  # Specify the code example Spec/ECN category - Division. E.g. MCD, MS
+  CE_SPEC_DIVISION: "MCD"
+
+  # Specify the code example Spec/ECN category - Business Unit. E.g. ICW, WIRED, AUTO
+  CE_SPEC_BIZ_UNIT: "ICW"
+
+  # Specify the code example Spec/ECN category - Product Family. E.g. AIROC, PSOC, WIFI, BTABLE
+  CE_SPEC_PROD_FAMILY: "AIROC"
+
+  # Specify the supported targets, separated by spaces. E.g. XAVIER RASPBERRY-PI
+  CE_TARGET_LIST: "XAVIER"
+  
+  #Specify the supported radio modules, seperated by spaces. E.g. Hatchet2, 54591
+  CE_RADIO_LIST: "HATCHET2"
+
+### DO NOT EDIT THE SECTIONS BELOW ###
+#
+
+include:
+  - project: "TBST/linux_bt_ce/linux_bt_ce_cicd"
+    ref: develop
+    file: 'templates/YAML/linux_bt_ce.yml'

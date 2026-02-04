@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__ias__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_ias_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_ias.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__ias__data__t_1a02f99144131040b74da9a5696fa08b2d" prot="public" static="no" mutable="no">
+        <type>wiced_bt_ga_ias_alert_level_t</type>
+        <definition>wiced_bt_ga_ias_alert_level_t wiced_bt_ga_ias_data_t::alert_level</definition>
+        <argsstring></argsstring>
+        <name>alert_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ias.h" line="27" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ias.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>IAS data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ias.h" line="26" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ias.h" bodystart="25" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__ias__data__t_1a02f99144131040b74da9a5696fa08b2d" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ias_data_t</scope><name>alert_level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

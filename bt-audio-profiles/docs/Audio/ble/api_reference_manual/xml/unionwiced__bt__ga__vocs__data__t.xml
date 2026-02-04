@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__ga__vocs__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_vocs_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_vocs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__ga__vocs__data__t_1a52d3c29257385c43c5c4823778e72867" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t wiced_bt_ga_vocs_data_t::volume_offset</definition>
+        <argsstring></argsstring>
+        <name>volume_offset</name>
+        <briefdescription>
+<para>VOCS offset value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="43" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__vocs__data__t_1a167981b967c7db9d5397c987f6540a91" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_vocs_data_t::audio_location</definition>
+        <argsstring></argsstring>
+        <name>audio_location</name>
+        <briefdescription>
+<para>Audio location value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="44" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__vocs__data__t_1a8d59cdc947ba3438fde8680b9397d571" prot="public" static="no" mutable="no">
+        <type><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref></type>
+        <definition>wiced_bt_ga_string_t wiced_bt_ga_vocs_data_t::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>VOCS offset value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="45" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__vocs__data__t_1abc46320a2f65cdd9a0aa7379351b6fa5" prot="public" static="no" mutable="no">
+        <type><ref refid="structvocs__opcode__t" kindref="compound">vocs_opcode_t</ref></type>
+        <definition>vocs_opcode_t wiced_bt_ga_vocs_data_t::control_point</definition>
+        <argsstring></argsstring>
+        <name>control_point</name>
+        <briefdescription>
+<para>VOCS control point data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="46" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Volume offset data which is passed between application and profile. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="352">
+        <label>vocs_opcode_t</label>
+        <link refid="structvocs__opcode__t"/>
+      </node>
+      <node id="351">
+        <label>wiced_bt_ga_vocs_data_t</label>
+        <link refid="unionwiced__bt__ga__vocs__data__t"/>
+        <childnode refid="352" relation="usage">
+          <edgelabel>control_point</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="42" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="42" bodyend="47"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__ga__vocs__data__t_1a167981b967c7db9d5397c987f6540a91" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vocs_data_t</scope><name>audio_location</name></member>
+      <member refid="unionwiced__bt__ga__vocs__data__t_1abc46320a2f65cdd9a0aa7379351b6fa5" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vocs_data_t</scope><name>control_point</name></member>
+      <member refid="unionwiced__bt__ga__vocs__data__t_1a8d59cdc947ba3438fde8680b9397d571" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vocs_data_t</scope><name>description</name></member>
+      <member refid="unionwiced__bt__ga__vocs__data__t_1a52d3c29257385c43c5c4823778e72867" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vocs_data_t</scope><name>volume_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

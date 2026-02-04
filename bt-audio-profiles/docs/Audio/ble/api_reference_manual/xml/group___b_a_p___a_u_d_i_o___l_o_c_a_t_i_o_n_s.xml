@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s" kind="group">
+    <compoundname>BAP_AUDIO_LOCATIONS</compoundname>
+    <title>BAP_AUDIO_LOCATIONS</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga60815dcdb71650bf2fb61e1d0f41f939" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_NOT_ALLOWED</name>
+        <initializer>0X00000000</initializer>
+        <briefdescription>
+<para>This audio location value is not allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="82" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga9155a26b8c6958cd385b195334a2e076" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_LEFT</name>
+        <initializer>0X00000001</initializer>
+        <briefdescription>
+<para>Audio location value for Front Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="83" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga8bbf10be0076ffe5e2737ddb1ab08c13" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_RIGHT</name>
+        <initializer>0X00000002</initializer>
+        <briefdescription>
+<para>Audio location value for Front Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="84" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga802a794eefc36a6ca220546b23af754a" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_CENTER</name>
+        <initializer>0X00000004</initializer>
+        <briefdescription>
+<para>Audio location value for Front Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="85" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga99ee6d22b6702016ab5865c985d9177d" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_LOW_FREQUENCY_EFFECTS_1</name>
+        <initializer>0X00000008</initializer>
+        <briefdescription>
+<para>Audio location value for Low Frequency effect 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="86" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaca42e407c0fa9e306af313dfb8d00f90" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BACK_LEFT</name>
+        <initializer>0X00000010</initializer>
+        <briefdescription>
+<para>Audio location value for Back Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="87" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga1d7eff7549e7839a2537bfec664f12e0" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BACK_RIGHT</name>
+        <initializer>0X00000020</initializer>
+        <briefdescription>
+<para>Audio location value for Back Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="88" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gabef61a713f60b8589a383b1962ecef71" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_LEFT_OF_CENTER</name>
+        <initializer>0X00000040</initializer>
+        <briefdescription>
+<para>Audio location value for Front Left of Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="89" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gabe7d712f49298465188a1b7dd9220db5" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_RIGHT_OF_CENTER</name>
+        <initializer>0X00000080</initializer>
+        <briefdescription>
+<para>Audio location value for Front Right of Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="90" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga8f6f783bc2564b8afa493157e0ef9cd5" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BACK_CENTER</name>
+        <initializer>0X00000100</initializer>
+        <briefdescription>
+<para>Audio location value for BAck Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="91" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga57d9d0bbdc66aecdb5c04adff6aae47f" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_LOW_FREQUENCY_EFFECTS_2</name>
+        <initializer>0X00000200</initializer>
+        <briefdescription>
+<para>Audio location value for Low Frequency effect 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="92" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga2f5e3220bf89e9f71bbf9fed2b846872" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_SIDE_LEFT</name>
+        <initializer>0X00000400</initializer>
+        <briefdescription>
+<para>Audio location value for Side Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="93" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga4fcb0ded92eadd7145ed46a9f1460d52" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_SIDE_RIGHT</name>
+        <initializer>0X00000800</initializer>
+        <briefdescription>
+<para>Audio location value for Side Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="94" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga920a807e106bd1176f1d4975d762d625" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_FRONT_LEFT</name>
+        <initializer>0X00001000</initializer>
+        <briefdescription>
+<para>Audio location value for Top Front Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="95" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga0b0b27c745ff9934a5d2d012d2690fa9" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_FRONT_RIGHT</name>
+        <initializer>0X00002000</initializer>
+        <briefdescription>
+<para>Audio location value for Top Front Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="96" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga35b10599d31e0f10c49f74e146dc1f5b" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_FRONT_CENTER</name>
+        <initializer>0X00004000</initializer>
+        <briefdescription>
+<para>Audio location value for Front Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="97" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga87d561f73096bab27b9432108d00e8d5" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_CENTER</name>
+        <initializer>0X00008000</initializer>
+        <briefdescription>
+<para>Audio location value for Top Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="98" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaf5bc15141c210d033b184592ef29d816" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_BACK_LEFT</name>
+        <initializer>0X00010000</initializer>
+        <briefdescription>
+<para>Audio location value for Back Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="99" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga062b76a597c7fbbd3b422f6f99012a0b" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_BACK_RIGHT</name>
+        <initializer>0X00020000</initializer>
+        <briefdescription>
+<para>Audio location value for Back Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="100" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga929cca262c32816969d1773d88db22dc" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_SIDE_LEFT</name>
+        <initializer>0X00040000</initializer>
+        <briefdescription>
+<para>Audio location value for Side Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="101" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaa058c7137b4abc07e702b1a4bf68a52f" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_SIDE_RIGHT</name>
+        <initializer>0X00080000</initializer>
+        <briefdescription>
+<para>Audio location value for Side Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="102" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga6b98e527c15c9696b31b1caef73e6739" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_BACK_CENTER</name>
+        <initializer>0X00100000</initializer>
+        <briefdescription>
+<para>Audio location value for Back Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="103" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaf76981876ab68248d5763e0695a20a7d" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BOTTOM_FRONT_CENTER</name>
+        <initializer>0X00200000</initializer>
+        <briefdescription>
+<para>Audio location value for Bottom Front Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="104" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gae2c18a688a4fb9b00bc7089231a7f115" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BOTTOM_FRONT_LEFT</name>
+        <initializer>0X00400000</initializer>
+        <briefdescription>
+<para>Audio location value for Bottom Front Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="105" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga0f35b39e7a85354376ef86c0e2bb6b12" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BOTTOM_FRONT_RIGHT</name>
+        <initializer>0X00800000</initializer>
+        <briefdescription>
+<para>Audio location value for Bottom Front Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="106" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gad5bd1d931e58b7f1dcaafd8a36a922c3" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_LEFT_WIDE</name>
+        <initializer>0X01000000</initializer>
+        <briefdescription>
+<para>Audio location value for Front Left Wide. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="107" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga25c85d87f52beb42c7143a15de5ae7a2" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_RIGHT_WIDE</name>
+        <initializer>0X02000000</initializer>
+        <briefdescription>
+<para>Audio location value for Front Right Wide. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="108" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga29b9cbbe6215bdcc0e9b0e85d1b7e17a" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_LEFT_SURROUND</name>
+        <initializer>0X04000000</initializer>
+        <briefdescription>
+<para>Audio location value for Left Surround. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="109" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaeda905b00c73d365a923837fac388940" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_RIGHT_SURROUND</name>
+        <initializer>0X08000000</initializer>
+        <briefdescription>
+<para>Audio location value for Right Surround. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="110" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gad18d30fc1cd9471e200569490e5578f7" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_INVALID_MASK</name>
+        <initializer>0xF0000000</initializer>
+        <briefdescription>
+<para>Invalid Mask for audio location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="111" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of Audio location values which can be used. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

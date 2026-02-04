@@ -1,0 +1,11 @@
+deps
+libs
+.cmakeignore
+internal.mk
+.cyignore
+makefile
+./app/unicast_sink_main_ROM.c
+./app/unicast_sink_main_windows.c
+./app/unicast_sink_isoc_offload.c
+./app/unicast_sink_audio_driver_ROM.c
+./app/unicast_sink_rpc_wiced_hci.c

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_tbs_incoming_tg_bearer_uri_t</compoundname>
+    <includes local="no">wiced_bt_ga_tbs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t_1afcb323aecfb3f60e930901a90601d528" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_tbs_incoming_tg_bearer_uri_t::call_id</definition>
+        <argsstring></argsstring>
+        <name>call_id</name>
+        <briefdescription>
+<para>Call id of the call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="178" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t_1a362884e979473cc313a5db34f6852a80" prot="public" static="no" mutable="no">
+        <type><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref></type>
+        <definition>wiced_bt_ga_string_t wiced_bt_ga_tbs_incoming_tg_bearer_uri_t::target_caller_id</definition>
+        <argsstring></argsstring>
+        <name>target_caller_id</name>
+        <briefdescription>
+<para>remote caller id consisting of uri prefix and caller id </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="179" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>incoming call target caller ID at the bearer </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="177" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="176" bodyend="180"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t_1afcb323aecfb3f60e930901a90601d528" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_incoming_tg_bearer_uri_t</scope><name>call_id</name></member>
+      <member refid="structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t_1a362884e979473cc313a5db34f6852a80" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_incoming_tg_bearer_uri_t</scope><name>target_caller_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

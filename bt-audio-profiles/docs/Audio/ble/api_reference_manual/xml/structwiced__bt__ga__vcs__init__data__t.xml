@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__vcs__init__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_vcs_init_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_vcs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__vcs__init__data__t_1ae3b224c8541ef7c73ecd3d9a44ce9411" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_vcs_init_data_t::max_aics</definition>
+        <argsstring></argsstring>
+        <name>max_aics</name>
+        <briefdescription>
+<para>MAX VCS AICS instances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="98" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__vcs__init__data__t_1a9cec0572f107b4e34721ef8b5c573c24" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_vcs_init_data_t::max_vocs</definition>
+        <argsstring></argsstring>
+        <name>max_vocs</name>
+        <briefdescription>
+<para>Max VCS VOCS instances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="99" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__vcs__init__data__t_1a3e4cdcb072dfb64f6f156cd54e40d230" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_vcs_init_data_t::step_size</definition>
+        <argsstring></argsstring>
+        <name>step_size</name>
+        <briefdescription>
+<para>VCS, volume step size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="100" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>VCS initialization data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="97" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="96" bodyend="101"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__vcs__init__data__t_1ae3b224c8541ef7c73ecd3d9a44ce9411" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vcs_init_data_t</scope><name>max_aics</name></member>
+      <member refid="structwiced__bt__ga__vcs__init__data__t_1a9cec0572f107b4e34721ef8b5c573c24" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vcs_init_data_t</scope><name>max_vocs</name></member>
+      <member refid="structwiced__bt__ga__vcs__init__data__t_1a3e4cdcb072dfb64f6f156cd54e40d230" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vcs_init_data_t</scope><name>step_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

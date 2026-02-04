@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__tbs__call__state__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_tbs_call_state_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_tbs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__state__data__t_1ab2c226f9bfbdaeb6fa971981c3f01d3f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_tbs_call_state_data_t::call_id</definition>
+        <argsstring></argsstring>
+        <name>call_id</name>
+        <briefdescription>
+<para>call id of the call </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="185" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__state__data__t_1ae521c893c3e16a9a8831a2ab88124f39" prot="public" static="no" mutable="no">
+        <type><ref refid="group___telephone___bearer___service___a_p_is_1gaa2ea235d1463252aeab0ff249b41b3bf" kindref="member">wiced_bt_ga_tbs_call_state_t</ref></type>
+        <definition>wiced_bt_ga_tbs_call_state_t wiced_bt_ga_tbs_call_state_data_t::call_state</definition>
+        <argsstring></argsstring>
+        <name>call_state</name>
+        <briefdescription>
+<para>call state of the call </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="186" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__call__state__data__t_1ac60a61714c4c8dcd1f256e61ffa1f48f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_tbs_call_state_data_t::call_flags</definition>
+        <argsstring></argsstring>
+        <name>call_flags</name>
+        <briefdescription>
+<para>call flag bit field of the call </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="187" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>call state data </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="184" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="183" bodyend="188"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__tbs__call__state__data__t_1ac60a61714c4c8dcd1f256e61ffa1f48f" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_state_data_t</scope><name>call_flags</name></member>
+      <member refid="structwiced__bt__ga__tbs__call__state__data__t_1ab2c226f9bfbdaeb6fa971981c3f01d3f" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_state_data_t</scope><name>call_id</name></member>
+      <member refid="structwiced__bt__ga__tbs__call__state__data__t_1ae521c893c3e16a9a8831a2ab88124f39" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_call_state_data_t</scope><name>call_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__tbs__join__call__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_tbs_join_call_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_tbs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__join__call__data__t_1a39d94860faf0300109912cbc38358bd8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_tbs_join_call_data_t::num_call_ids</definition>
+        <argsstring></argsstring>
+        <name>num_call_ids</name>
+        <briefdescription>
+<para>call id of the call </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="231" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__tbs__join__call__data__t_1ad7041b3ba311fa0f5e6b87ef79685a05" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_tbs_join_call_data_t::call_ids[WICED_BT_GA_TBS_BEARER_MAX_CALL_COUNT]</definition>
+        <argsstring>[WICED_BT_GA_TBS_BEARER_MAX_CALL_COUNT]</argsstring>
+        <name>call_ids</name>
+        <briefdescription>
+<para>call ids </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="232" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Join call param. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" line="230" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tbs.h" bodystart="229" bodyend="233"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__tbs__join__call__data__t_1ad7041b3ba311fa0f5e6b87ef79685a05" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_join_call_data_t</scope><name>call_ids</name></member>
+      <member refid="structwiced__bt__ga__tbs__join__call__data__t_1a39d94860faf0300109912cbc38358bd8" prot="public" virt="non-virtual"><scope>wiced_bt_ga_tbs_join_call_data_t</scope><name>num_call_ids</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

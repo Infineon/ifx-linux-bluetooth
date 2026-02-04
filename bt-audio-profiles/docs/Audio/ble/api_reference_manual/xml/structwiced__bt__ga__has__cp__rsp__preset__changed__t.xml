@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__has__cp__rsp__preset__changed__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_has_cp_rsp_preset_changed_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1aab261650a5054d6a097aa32614875412" prot="public" static="no" mutable="no">
+        <type>wiced_bt_ga_has_preset_change_id_t</type>
+        <definition>wiced_bt_ga_has_preset_change_id_t wiced_bt_ga_has_cp_rsp_preset_changed_t::change_id</definition>
+        <argsstring></argsstring>
+        <name>change_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="76" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1a0d73b508d740009a5cbaabcc703fca3f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_has_cp_rsp_preset_changed_t::is_last</definition>
+        <argsstring></argsstring>
+        <name>is_last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="77" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1a04708be69087fdf3f3828893b111896b" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__has__preset__records__t" kindref="compound">wiced_bt_ga_has_preset_records_t</ref></type>
+        <definition>wiced_bt_ga_has_preset_records_t wiced_bt_ga_has_cp_rsp_preset_changed_t::preset_rec</definition>
+        <argsstring></argsstring>
+        <name>preset_rec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="78" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1a11c14642360e1441f7c6709c7538d66f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_has_cp_rsp_preset_changed_t::prev_index</definition>
+        <argsstring></argsstring>
+        <name>prev_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="79" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1ac1da4a9ed32d01b6bdd2cb3c2ead025f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_has_cp_rsp_preset_changed_t::preset_index</definition>
+        <argsstring></argsstring>
+        <name>preset_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="80" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="228">
+        <label>wiced_bt_ga_has_cp_rsp_preset_changed_t</label>
+        <link refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t"/>
+        <childnode refid="229" relation="usage">
+          <edgelabel>preset_rec</edgelabel>
+        </childnode>
+      </node>
+      <node id="229">
+        <label>wiced_bt_ga_has_preset_records_t</label>
+        <link refid="structwiced__bt__ga__has__preset__records__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="75" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="74" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1aab261650a5054d6a097aa32614875412" prot="public" virt="non-virtual"><scope>wiced_bt_ga_has_cp_rsp_preset_changed_t</scope><name>change_id</name></member>
+      <member refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1a0d73b508d740009a5cbaabcc703fca3f" prot="public" virt="non-virtual"><scope>wiced_bt_ga_has_cp_rsp_preset_changed_t</scope><name>is_last</name></member>
+      <member refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1ac1da4a9ed32d01b6bdd2cb3c2ead025f" prot="public" virt="non-virtual"><scope>wiced_bt_ga_has_cp_rsp_preset_changed_t</scope><name>preset_index</name></member>
+      <member refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1a04708be69087fdf3f3828893b111896b" prot="public" virt="non-virtual"><scope>wiced_bt_ga_has_cp_rsp_preset_changed_t</scope><name>preset_rec</name></member>
+      <member refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t_1a11c14642360e1441f7c6709c7538d66f" prot="public" virt="non-virtual"><scope>wiced_bt_ga_has_cp_rsp_preset_changed_t</scope><name>prev_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

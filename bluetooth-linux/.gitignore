@@ -1,0 +1,9 @@
+# add the file name to ignore
+# vi swap file
+*.swp
+
+#ctags
+tags
+
+#cscope
+cscope.*

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__csis__sirk__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_csis_sirk_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_csis_common.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__csis__sirk__data__t_1ae1281c9f8e0553718b33e63c0d382c51" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__csis__common_1gab1c5c9794ac90947a2b292ac4189a3f3" kindref="member">wiced_bt_ga_csis_sirk_t</ref></type>
+        <definition>wiced_bt_ga_csis_sirk_t wiced_bt_ga_csis_sirk_data_t::sirk</definition>
+        <argsstring></argsstring>
+        <name>sirk</name>
+        <briefdescription>
+<para>SIRK key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="63" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__csis__sirk__data__t_1a57a7fe06b3fea8db199bdd6fbbaaa266" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__csis__common_1ga7d33adfe1e48b4c3a812c1330d09b119" kindref="member">wiced_bt_ga_csis_sirk_type_t</ref></type>
+        <definition>wiced_bt_ga_csis_sirk_type_t wiced_bt_ga_csis_sirk_data_t::sirk_type</definition>
+        <argsstring></argsstring>
+        <name>sirk_type</name>
+        <briefdescription>
+<para>SIRK type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="64" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__csis__sirk__data__t_1a6e8f09e85a68786743728c73209e8751" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_csis_sirk_data_t::is_oob</definition>
+        <argsstring></argsstring>
+        <name>is_oob</name>
+        <briefdescription>
+<para>is SIRK to be obtained via OOB methods </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="65" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SIRK Data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="62" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="61" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__csis__sirk__data__t_1a6e8f09e85a68786743728c73209e8751" prot="public" virt="non-virtual"><scope>wiced_bt_ga_csis_sirk_data_t</scope><name>is_oob</name></member>
+      <member refid="structwiced__bt__ga__csis__sirk__data__t_1ae1281c9f8e0553718b33e63c0d382c51" prot="public" virt="non-virtual"><scope>wiced_bt_ga_csis_sirk_data_t</scope><name>sirk</name></member>
+      <member refid="structwiced__bt__ga__csis__sirk__data__t_1a57a7fe06b3fea8db199bdd6fbbaaa266" prot="public" virt="non-virtual"><scope>wiced_bt_ga_csis_sirk_data_t</scope><name>sirk_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

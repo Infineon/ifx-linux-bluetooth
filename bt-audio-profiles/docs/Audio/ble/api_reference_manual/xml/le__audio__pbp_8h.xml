@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="le__audio__pbp_8h" kind="file" language="C++">
+    <compoundname>le_audio_pbp.h</compoundname>
+    <includes local="yes">wiced_result.h</includes>
+    <includedby refid="le__audio__bap__broadcast_8h" local="yes">le_audio_bap_broadcast.h</includedby>
+    <incdepgraph>
+      <node id="14">
+        <label>le_audio_pbp.h</label>
+        <link refid="le__audio__pbp_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>wiced_result.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structle__audio__public__broadcast__t" prot="public">le_audio_public_broadcast_t</innerclass>
+    <innerclass refid="structle__audio__rcv__public__broadcast__t" prot="public">le_audio_rcv_public_broadcast_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="le__audio__pbp_8h_1a671beb1ef7baa0f148fbfef4eeb15b43" prot="public" static="no">
+        <name>__WICED_BT_GA_PBP_H__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="7" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1gabc1afa415227e5335ea80b4f67ed0f47" prot="public" static="no">
+        <name>PBP_BROADCAST_TRACE</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+<para>Enable this for getting PBP library traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="20" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1gad9a72bb497bf7f059a622de782d06b06" prot="public" static="no">
+        <name>PBP_BROADCAST_TRACE_CRIT</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+<para>Enable this for getting PBP library traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="21" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1gad31650d8adc57575cc7d13e02e191abf" prot="public" static="no">
+        <name>WICED_BT_GA_PBP_TYPE_BROADCAST_NAME</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+<para>adv type: BTM_BLE_ADVERT_TYPE_BROADCAST_NAME </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="23" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1ga79739d16af3cef60ad2fc4798af9f7f8" prot="public" static="no">
+        <name>MAX_BROADCAST_NAME_ADV_SIZE</name>
+        <initializer>32</initializer>
+        <briefdescription>
+<para>MAX size of Broadcast name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="24" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1ga54adbb6e8d65a4c6f3bdfe89fe12cb88" prot="public" static="no">
+        <name>PBP_METADATA_PROGRAM_INFO_TYPE</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+<para>Program info metadata type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="25" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1ga8f90efe3cd744c7ff8b6282df406d173" prot="public" static="no">
+        <name>APPEARANCE_VALUE_AD_SIZE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>Size of appearance value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="26" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1gaed3a2cd004bd7373ece7fb13680be2d9" prot="public" static="no">
+        <name>MAX_PROGRAM_INFO_SIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Max size of Program info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="27" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1ga8f9509cf4540049a8120f93a89d0df42" prot="public" static="no">
+        <name>MAX_METADATA_LEN</name>
+        <initializer>100</initializer>
+        <briefdescription>
+<para>Max len of metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="28" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___public___broadcast___profile_1ga10cf7da36049730145265b2f051c80dc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>le_audio_pbp_audio_config_t</name>
+        <enumvalue id="group___public___broadcast___profile_1gga10cf7da36049730145265b2f051c80dca5ebfaa3fd841064e71c9bc317c66bd7f" prot="public">
+          <name>WICED_BT_GA_PBP_GENERIC_CODEC_PUBLIC_BROADCAST_AUDIO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Generic Codec Broadcast Audio config. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___public___broadcast___profile_1gga10cf7da36049730145265b2f051c80dcafdb6123abf08d42af0d50ebc58b46ca7" prot="public">
+          <name>WICED_BT_GA_PBP_STANDARD_QUALITY_PUBLIC_BROADCAST_AUDIO</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Standard Quality Broadcast Audio config. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___public___broadcast___profile_1gga10cf7da36049730145265b2f051c80dca84ba764e6b9bb681121d113eef27c1f6" prot="public">
+          <name>WICED_BT_GA_PBP_HIGH_QUALITY_PUBLIC_BROADCAST_AUDIO</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>High Quality Broadcast Audio config. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Public broadcast Audio Stream Config. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="51" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___public___broadcast___profile_1ga43800184956695e02f8b2e90d83d9cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t le_audio_pbp_is_public_broadcast</definition>
+        <argsstring>(uint16_t adv_len, uint8_t *p_adv_data, le_audio_rcv_public_broadcast_t *p_public_rcv_br)</argsstring>
+        <name>le_audio_pbp_is_public_broadcast</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>adv_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_adv_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__rcv__public__broadcast__t" kindref="compound">le_audio_rcv_public_broadcast_t</ref> *</type>
+          <declname>p_public_rcv_br</declname>
+        </param>
+        <briefdescription>
+<para>Check if Peer adv data has public broadcast info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Peer device adv data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_public_rcv_br</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Broadcast details parsed from adv data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bool_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___public___broadcast___profile_1ga0aa0b94120aa3eeda9ffeeeb1a53f193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_pbp_build_adv_data</definition>
+        <argsstring>(uint8_t *p_data, uint32_t offset, le_audio_public_broadcast_t *public_broadcast, uint32_t *len)</argsstring>
+        <name>le_audio_pbp_build_adv_data</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__public__broadcast__t" kindref="compound">le_audio_public_broadcast_t</ref> *</type>
+          <declname>public_broadcast</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Build public broadcast adv data from the configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Adv data to be filled after building. Caller has to allocate enough memory </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset for extended adv to be considered before building </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">public_broadcast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Broadcast data to be considered for filling adv data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of the adv data after building </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bool_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="96" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_PBP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_PBP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_result.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor">#define<sp/>PBP_BROADCAST_TRACE(...)<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor">#define<sp/>PBP_BROADCAST_TRACE_CRIT(...)<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_PBP_TYPE_BROADCAST_NAME<sp/>0x30<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#define<sp/>MAX_BROADCAST_NAME_ADV_SIZE<sp/>32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor">#define<sp/>PBP_METADATA_PROGRAM_INFO_TYPE<sp/>0x03<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#define<sp/>APPEARANCE_VALUE_AD_SIZE<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#define<sp/>MAX_PROGRAM_INFO_SIZE<sp/>50<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#define<sp/>MAX_METADATA_LEN<sp/>100<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="structle__audio__public__broadcast__t" refkind="compound"><highlight class="preprocessor">typedef<sp/>struct<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/>encryption;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sampling_frequency;<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>frame_duration;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>metadata_length;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*metadata;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*broadcast_name;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>name_length;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>appearance_value;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>program_info_size;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*program_info;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}<sp/><ref refid="structle__audio__public__broadcast__t" kindref="compound">le_audio_public_broadcast_t</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___public___broadcast___profile_1gga10cf7da36049730145265b2f051c80dca5ebfaa3fd841064e71c9bc317c66bd7f" kindref="member">WICED_BT_GA_PBP_GENERIC_CODEC_PUBLIC_BROADCAST_AUDIO</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___public___broadcast___profile_1gga10cf7da36049730145265b2f051c80dcafdb6123abf08d42af0d50ebc58b46ca7" kindref="member">WICED_BT_GA_PBP_STANDARD_QUALITY_PUBLIC_BROADCAST_AUDIO</ref><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___public___broadcast___profile_1gga10cf7da36049730145265b2f051c80dca84ba764e6b9bb681121d113eef27c1f6" kindref="member">WICED_BT_GA_PBP_HIGH_QUALITY_PUBLIC_BROADCAST_AUDIO</ref><sp/>=<sp/>4,<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/><ref refid="group___public___broadcast___profile_1ga10cf7da36049730145265b2f051c80dc" kindref="member">le_audio_pbp_audio_config_t</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="structle__audio__rcv__public__broadcast__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/>encryption;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___public___broadcast___profile_1ga10cf7da36049730145265b2f051c80dc" kindref="member">le_audio_pbp_audio_config_t</ref><sp/>audio_config;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>public_broadcast_feature;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>metadata_length;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>metadata[<ref refid="group___public___broadcast___profile_1gaed3a2cd004bd7373ece7fb13680be2d9" kindref="member">MAX_PROGRAM_INFO_SIZE</ref><sp/>+<sp/><ref refid="group___public___broadcast___profile_1ga8f9509cf4540049a8120f93a89d0df42" kindref="member">MAX_METADATA_LEN</ref><sp/>+<sp/>2];<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>broadcast_name[<ref refid="group___public___broadcast___profile_1ga79739d16af3cef60ad2fc4798af9f7f8" kindref="member">MAX_BROADCAST_NAME_ADV_SIZE</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>source_appearance_value;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}<sp/><ref refid="structle__audio__rcv__public__broadcast__t" kindref="compound">le_audio_rcv_public_broadcast_t</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">wiced_bool_t<sp/><ref refid="group___public___broadcast___profile_1ga43800184956695e02f8b2e90d83d9cdf" kindref="member">le_audio_pbp_is_public_broadcast</ref>(uint16_t<sp/>adv_len,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*p_adv_data,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__rcv__public__broadcast__t" kindref="compound">le_audio_rcv_public_broadcast_t</ref><sp/>*p_public_rcv_br);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/>wiced_result_t<sp/><ref refid="group___public___broadcast___profile_1ga0aa0b94120aa3eeda9ffeeeb1a53f193" kindref="member">le_audio_pbp_build_adv_data</ref>(uint8_t<sp/>*p_data,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>offset,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__audio__public__broadcast__t" kindref="compound">le_audio_public_broadcast_t</ref><sp/>*public_broadcast,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>*len);</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_PBP_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h"/>
+  </compounddef>
+</doxygen>

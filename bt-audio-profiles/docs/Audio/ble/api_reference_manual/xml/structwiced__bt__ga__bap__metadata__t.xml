@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__bap__metadata__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_bap_metadata_t</compoundname>
+    <includes local="no">wiced_bt_ga_bap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__metadata__t_1afd9f00c8434206609d7eaf47b6757f29" prot="public" static="no" mutable="no">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_ga_bap_metadata_t::metadata_present</definition>
+        <argsstring></argsstring>
+        <name>metadata_present</name>
+        <briefdescription>
+<para>true if metadata is present </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="243" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__metadata__t_1a8562432deb52b05c4386dad6a3e81028" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_ga_bap_metadata_t::preferred_audio_ctx</definition>
+        <argsstring></argsstring>
+        <name>preferred_audio_ctx</name>
+        <briefdescription>
+<para>prefered audio context </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="244" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__metadata__t_1ad4cb29319daf895c032a9362d8982207" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_ga_bap_metadata_t::streaming_audio_ctx</definition>
+        <argsstring></argsstring>
+        <name>streaming_audio_ctx</name>
+        <briefdescription>
+<para>streaming audio context </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="245" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__metadata__t_1ad3c3c56ed1193c3e82599ca478365d01" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bap_metadata_t::vendor_specific_data_length</definition>
+        <argsstring></argsstring>
+        <name>vendor_specific_data_length</name>
+        <briefdescription>
+<para>vendor specifc data length if vendor data is present else 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="246" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__metadata__t_1a4595fc868452d7c6a8a84c5611cb24b3" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* wiced_bt_ga_bap_metadata_t::p_vendor_specific_data</definition>
+        <argsstring></argsstring>
+        <name>p_vendor_specific_data</name>
+        <briefdescription>
+<para>vendor specifc data </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="247" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__metadata__t_1a0d9bfaa05931a0c72bd94a42a9614770" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bap_metadata_t::upper_layer_data_length</definition>
+        <argsstring></argsstring>
+        <name>upper_layer_data_length</name>
+        <briefdescription>
+<para>upper layer data length if upper layer data is present else 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="248" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__metadata__t_1a28848a99af78f43c5d5140eb85413c32" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* wiced_bt_ga_bap_metadata_t::p_upper_layer_data</definition>
+        <argsstring></argsstring>
+        <name>p_upper_layer_data</name>
+        <briefdescription>
+<para>upper layer data </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="249" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__metadata__t_1aeb6fa17a968d3a9bfae3ffeac8f43f49" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bap_metadata_t::program_info_len</definition>
+        <argsstring></argsstring>
+        <name>program_info_len</name>
+        <briefdescription>
+<para>program info length if program info is present else 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="250" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__metadata__t_1abacf9c4b6139339b4685eb5323c7d362" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* wiced_bt_ga_bap_metadata_t::program_info</definition>
+        <argsstring></argsstring>
+        <name>program_info</name>
+        <briefdescription>
+<para>program info </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="251" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Metadata information. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="242" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="241" bodyend="252"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__bap__metadata__t_1afd9f00c8434206609d7eaf47b6757f29" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_metadata_t</scope><name>metadata_present</name></member>
+      <member refid="structwiced__bt__ga__bap__metadata__t_1a28848a99af78f43c5d5140eb85413c32" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_metadata_t</scope><name>p_upper_layer_data</name></member>
+      <member refid="structwiced__bt__ga__bap__metadata__t_1a4595fc868452d7c6a8a84c5611cb24b3" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_metadata_t</scope><name>p_vendor_specific_data</name></member>
+      <member refid="structwiced__bt__ga__bap__metadata__t_1a8562432deb52b05c4386dad6a3e81028" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_metadata_t</scope><name>preferred_audio_ctx</name></member>
+      <member refid="structwiced__bt__ga__bap__metadata__t_1abacf9c4b6139339b4685eb5323c7d362" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_metadata_t</scope><name>program_info</name></member>
+      <member refid="structwiced__bt__ga__bap__metadata__t_1aeb6fa17a968d3a9bfae3ffeac8f43f49" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_metadata_t</scope><name>program_info_len</name></member>
+      <member refid="structwiced__bt__ga__bap__metadata__t_1ad4cb29319daf895c032a9362d8982207" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_metadata_t</scope><name>streaming_audio_ctx</name></member>
+      <member refid="structwiced__bt__ga__bap__metadata__t_1a0d9bfaa05931a0c72bd94a42a9614770" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_metadata_t</scope><name>upper_layer_data_length</name></member>
+      <member refid="structwiced__bt__ga__bap__metadata__t_1ad3c3c56ed1193c3e82599ca478365d01" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_metadata_t</scope><name>vendor_specific_data_length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

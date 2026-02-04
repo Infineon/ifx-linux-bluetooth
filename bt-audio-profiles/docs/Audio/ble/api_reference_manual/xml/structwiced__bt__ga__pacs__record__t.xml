@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__pacs__record__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_pacs_record_t</compoundname>
+    <includes local="no">wiced_bt_ga_pacs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__pacs__record__t_1aee1e66d6085c75211b6454af15f14b73" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__pacs__codec__id__t" kindref="compound">wiced_bt_ga_pacs_codec_id_t</ref></type>
+        <definition>wiced_bt_ga_pacs_codec_id_t wiced_bt_ga_pacs_record_t::codec_id</definition>
+        <argsstring></argsstring>
+        <name>codec_id</name>
+        <briefdescription>
+<para>codec id information for the pac record </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="40" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__pacs__record__t_1afc953d1c0fcad595af3077088c2760b4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_pacs_record_t::codec_specific_capabilities_length</definition>
+        <argsstring></argsstring>
+        <name>codec_specific_capabilities_length</name>
+        <briefdescription>
+<para>Length of the codec specific capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="41" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__pacs__record__t_1a735a9d3839c8682c78bb9ee7580c1ee8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_pacs_record_t::codec_specific_capabilities[MAX_CODEC_SPECIFIC_CAPABILITIES_LENGTH]</definition>
+        <argsstring>[MAX_CODEC_SPECIFIC_CAPABILITIES_LENGTH]</argsstring>
+        <name>codec_specific_capabilities</name>
+        <briefdescription>
+<para>Codec specific capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="42" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__pacs__record__t_1a8753e121eb1da2a073732206fe55a804" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_pacs_record_t::metadata_length</definition>
+        <argsstring></argsstring>
+        <name>metadata_length</name>
+        <briefdescription>
+<para>Length of the metadata information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="43" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__pacs__record__t_1a514e5df707a665ccee74ff96c7792786" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_pacs_record_t::metadata[MAX_METADATA_LENGTH]</definition>
+        <argsstring>[MAX_METADATA_LENGTH]</argsstring>
+        <name>metadata</name>
+        <briefdescription>
+<para>Metadata for the pacs record. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="44" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines PAC record. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="289">
+        <label>wiced_bt_ga_pacs_codec_id_t</label>
+        <link refid="structwiced__bt__ga__pacs__codec__id__t"/>
+      </node>
+      <node id="288">
+        <label>wiced_bt_ga_pacs_record_t</label>
+        <link refid="structwiced__bt__ga__pacs__record__t"/>
+        <childnode refid="289" relation="usage">
+          <edgelabel>codec_id</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="39" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="38" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__pacs__record__t_1aee1e66d6085c75211b6454af15f14b73" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_record_t</scope><name>codec_id</name></member>
+      <member refid="structwiced__bt__ga__pacs__record__t_1a735a9d3839c8682c78bb9ee7580c1ee8" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_record_t</scope><name>codec_specific_capabilities</name></member>
+      <member refid="structwiced__bt__ga__pacs__record__t_1afc953d1c0fcad595af3077088c2760b4" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_record_t</scope><name>codec_specific_capabilities_length</name></member>
+      <member refid="structwiced__bt__ga__pacs__record__t_1a514e5df707a665ccee74ff96c7792786" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_record_t</scope><name>metadata</name></member>
+      <member refid="structwiced__bt__ga__pacs__record__t_1a8753e121eb1da2a073732206fe55a804" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_record_t</scope><name>metadata_length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

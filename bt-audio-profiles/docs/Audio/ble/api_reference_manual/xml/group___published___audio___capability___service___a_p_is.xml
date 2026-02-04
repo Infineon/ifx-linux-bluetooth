@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___published___audio___capability___service___a_p_is" kind="group">
+    <compoundname>Published_Audio_Capability_Service_APIs</compoundname>
+    <title>Published_Audio_Capability_Service_APIs</title>
+    <innerclass refid="structwiced__bt__ga__pacs__codec__id__t" prot="public">wiced_bt_ga_pacs_codec_id_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__pacs__record__t" prot="public">wiced_bt_ga_pacs_record_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__pacs__char__data__t" prot="public">wiced_bt_ga_pacs_char_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__pacs__audio__contexts__t" prot="public">wiced_bt_ga_pacs_audio_contexts_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__pacs__data__t" prot="public">wiced_bt_ga_pacs_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__pacs__init__data__t" prot="public">wiced_bt_ga_pacs_init_data_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___published___audio___capability___service___a_p_is_1ga70772385e966cd83b7c59d342d5ca176" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t wiced_bt_ga_pacs_audio_location_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_pacs_audio_location_t</name>
+        <briefdescription>
+<para>Device-wide bitmap of supported Audio Location values for all PAC records. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="68" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___published___audio___capability___service___a_p_is_1ga8425069839f885e7ba3019e44ef5ade5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_pacs_init</definition>
+        <argsstring>(uint8_t num_instances, wiced_bt_ga_pacs_init_data_t *p_ini)</argsstring>
+        <name>wiced_bt_ga_pacs_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__pacs__init__data__t" kindref="compound">wiced_bt_ga_pacs_init_data_t</ref> *</type>
+          <declname>p_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the PACS service/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Number of instances </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see <ref refid="structwiced__bt__ga__pacs__init__data__t" kindref="compound">wiced_bt_ga_pacs_init_data_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>result of the init operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___published___audio___capability___service___a_p_is_1gabe420ed21acf9abf16301ae0c374b6a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_pacs_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_pacs_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable PACS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___published___audio___capability___service___a_p_is_1ga307d9bc665da399be8c591eee3c8b753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_pacs_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_pacs_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable PACS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___published___audio___capability___service___a_p_is_1ga0e0bd2f5814a3b35627011cfcd4ef0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_pacs_notify_all_characteristics</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, wiced_bt_ga_pacs_data_t *p_notification)</argsstring>
+        <name>wiced_bt_ga_pacs_notify_all_characteristics</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref> *</type>
+          <declname>p_notification</declname>
+        </param>
+        <briefdescription>
+<para>Notify all the PACS characteristic values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: PACS service object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_notification</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Notification data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="115" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___published___audio___capability___service___a_p_is_1gab9c2c8f9fe4dcdad36e678d0585913a4" prot="public" static="no">
+        <name>MAX_CODEC_SPECIFIC_CAPABILITIES_LENGTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+<para>Length of codec specific capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="19" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___published___audio___capability___service___a_p_is_1ga23d487dc4e491206cc10e9151b7f2c10" prot="public" static="no">
+        <name>MAX_METADATA_LENGTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+<para>Maximum length for metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="20" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PACS can be instantiated on devices that can accept the establishment of unicast Audio Streams or devices that can receive broadcast Audio Streams. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Examples of such devices are speakers, headsets, hearing aids, and microphones.<itemizedlist>
+<listitem><para>Servers expose one or more sets of audio capabilities and audio availability. Sets of audio capabilities,known as Published Audio Capability (PAC) records, are exposed by using either the Sink PAC characteristic or Source PAC characteristic. Clients can discover and read these characteristics, and servers can notify these characteristics. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

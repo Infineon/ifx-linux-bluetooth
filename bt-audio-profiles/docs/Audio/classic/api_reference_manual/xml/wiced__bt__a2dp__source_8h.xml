@@ -1,0 +1,838 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__a2dp__source_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_a2dp_source.h</compoundname>
+    <includes local="yes">wiced_bt_types.h</includes>
+    <includes local="yes">wiced_result.h</includes>
+    <includes local="yes">wiced_bt_a2d.h</includes>
+    <includes local="yes">wiced_bt_a2d_sbc.h</includes>
+    <includes local="yes">wiced_bt_a2d_m12.h</includes>
+    <includes local="yes">wiced_bt_a2d_m24.h</includes>
+    <includes local="yes">wiced_bt_a2dp_defs.h</includes>
+    <includes local="yes">wiced_memory.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>wiced_bt_types.h</label>
+      </node>
+      <node id="17">
+        <label>wiced_bt_a2d_m24.h</label>
+      </node>
+      <node id="19">
+        <label>wiced_memory.h</label>
+      </node>
+      <node id="14">
+        <label>wiced_bt_a2d.h</label>
+      </node>
+      <node id="16">
+        <label>wiced_bt_a2d_m12.h</label>
+      </node>
+      <node id="18">
+        <label>wiced_bt_a2dp_defs.h</label>
+      </node>
+      <node id="11">
+        <label>wiced_bt_a2dp_source.h</label>
+        <link refid="wiced__bt__a2dp__source_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>wiced_bt_a2d_sbc.h</label>
+      </node>
+      <node id="13">
+        <label>wiced_result.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structwiced__bt__a2dp__source__codec__info__list__t" prot="public">wiced_bt_a2dp_source_codec_info_list_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__config__data__t" prot="public">wiced_bt_a2dp_source_config_data_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__config__data__ext__t" prot="public">wiced_bt_a2dp_source_config_data_ext_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__status__t" prot="public">wiced_bt_a2dp_source_status_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__start__t" prot="public">wiced_bt_a2dp_source_start_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__config__t" prot="public">wiced_bt_a2dp_source_config_t</innerclass>
+    <innerclass refid="unionwiced__bt__a2dp__source__event__data__t" prot="public">wiced_bt_a2dp_source_event_data_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wicedbt__a2dp__src_1ga42d679bbdbba668cbd6703cfecf3ee01" prot="public" static="no">
+        <name>WICED_BT_A2DP_SOURCE_NUM_CODECS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="76" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__a2dp__src_1ga28113bee5470bcff086d9c02325b6d3a" prot="public" static="no">
+        <name>WICED_BT_A2DP_SOURCE_NUM_SEPS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="85" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wicedbt__a2dp__src_1ga5fd2aac50304a14f4f2c8740c721bfab" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_a2dp_source_event_t</name>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfababe0327c10e4a0610a4d8481c2f286371" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_CONNECT_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfabae73d2fd68adf35b21a89a985f9a01696" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_DISCONNECT_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba584bf5af7cfb810f09ec43a1e538fac4" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_START_IND_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba2077d7b7fda3a7783ac107bc9b60bc44" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_START_CFM_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfabafa168914df247001b48066a9d4a08090" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_SUSPEND_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba6626614fa7bf09d2cb41699b24af49b2" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_CONFIGURE_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba32c11d3ca08054c2119894721bafb7d2" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_WRITE_CFM_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba7ca9f5f38cfd59e2ed04a633a4b2586d" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_DELAY_RPT_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="95" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="94" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__a2dp__src_1ga2b2ea8e292c6162dbece732d060c1e07" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_a2dp_source_feature_mask_t</name>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga2b2ea8e292c6162dbece732d060c1e07aa1d66047d783eac57e73844ee2f85627" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_FEAT_PROTECT</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga2b2ea8e292c6162dbece732d060c1e07a2560ffa4a5c0739fc79a15caea490097" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_FEAT_DELAY_RPT</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="109" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="108" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_a2dp_source_control_cb_t) (wiced_bt_a2dp_source_event_t event, wiced_bt_a2dp_source_event_data_t *p_data)</definition>
+        <argsstring>)(wiced_bt_a2dp_source_event_t event, wiced_bt_a2dp_source_event_data_t *p_data)</argsstring>
+        <name>wiced_bt_a2dp_source_control_cb_t</name>
+        <briefdescription>
+<para>The A2DP Control path callback type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application implements a callback of this type to receive A2DP control path events. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of event being notified to app. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to data associated with the event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="198" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga64e646849124fda257b1e142df1ec59d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_init</definition>
+        <argsstring>(wiced_bt_a2dp_source_config_data_t *p_config_data, wiced_bt_a2dp_source_control_cb_t control_cb, wiced_bt_heap_t *heap)</argsstring>
+        <name>wiced_bt_a2dp_source_init</name>
+        <param>
+          <type><ref refid="structwiced__bt__a2dp__source__config__data__t" kindref="compound">wiced_bt_a2dp_source_config_data_t</ref> *</type>
+          <declname>p_config_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kindref="member">wiced_bt_a2dp_source_control_cb_t</ref></type>
+          <declname>control_cb</declname>
+        </param>
+        <param>
+          <type>wiced_bt_heap_t *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+<para>API to initialize the A2DP SOURCE component and register with the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>[Deprecated]</para>
+<para>Called by the application before any other API is called. The application provides source configuration data and control and data callbacks to receive control events and data packets, respectively. Replaced with wiced_bt_a2dp_source_init_ext. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_config_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A2DP source configuration parameters. This should remain valid until deinit is called as the pointer is stored and used inside the library. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">control_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function for receiving source events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">heap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wiced_bt_heap_t pointer to be used in A2dp source profile library </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1gaf76285c3f3c36bea183f2cd05d343b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_init_ext</definition>
+        <argsstring>(wiced_bt_a2dp_source_config_data_ext_t *p_config_data, wiced_bt_a2dp_source_control_cb_t control_cb, wiced_bt_heap_t *heap)</argsstring>
+        <name>wiced_bt_a2dp_source_init_ext</name>
+        <param>
+          <type><ref refid="structwiced__bt__a2dp__source__config__data__ext__t" kindref="compound">wiced_bt_a2dp_source_config_data_ext_t</ref> *</type>
+          <declname>p_config_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kindref="member">wiced_bt_a2dp_source_control_cb_t</ref></type>
+          <declname>control_cb</declname>
+        </param>
+        <param>
+          <type>wiced_bt_heap_t *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+<para>API to initialize the A2DP SOURCE component and register with the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application before any other API is called. The application provides source configuration data and control and data callbacks to receive control events and data packets, respectively. The order of codecs in codec_capabilities is important. This is used to decide which peer sep we open stream on. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_config_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A2DP source configuration parameters. This should remain valid until deinit is called as the pointer is stored and used inside the library. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">control_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function for receiving source events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">heap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wiced_bt_heap_t pointer to be used in A2dp source profile library </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1gae424889596c4bf6ecba3e9719669c35e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_deinit</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_a2dp_source_deinit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>The API to deregister from the stack and to clean up the memory of A2DP source component. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application when A2DP source component is no longer needed by it. <simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga484c0b6eaa8b1e4bf73b4e131d89eeb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_connect</definition>
+        <argsstring>(wiced_bt_device_address_t bd_address)</argsstring>
+        <name>wiced_bt_a2dp_source_connect</name>
+        <param>
+          <type>wiced_bt_device_address_t</type>
+          <declname>bd_address</declname>
+        </param>
+        <briefdescription>
+<para>The API to connect to a peer device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the app to establish A2DP connection with a peer device. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bd_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Bluetooth device address of the device to which connection is requested. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1gadbd6a259d7be9441f3385e432ad1d75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_disconnect</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_a2dp_source_disconnect</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>The API to disconnect the connection from a connected peer device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application to disconnect from a connected A2DP source. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to the peer device to disconnect from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga39b26b04f3ace9751414828fe5c202cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_start</definition>
+        <argsstring>(uint16_t handle, wiced_bt_a2dp_codec_info_t *codec_info)</argsstring>
+        <name>wiced_bt_a2dp_source_start</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>wiced_bt_a2dp_codec_info_t *</type>
+          <declname>codec_info</declname>
+        </param>
+        <briefdescription>
+<para>The API to start streaming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application when it wants to indicate the peer to start streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to peer device to create a streaming connection. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">codec_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Codec configuration structure pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga22bbe0c4cc3a5bc2ed0e67f17e76b383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_send_start_response</definition>
+        <argsstring>(uint16_t handle, uint8_t label, uint8_t status)</argsstring>
+        <name>wiced_bt_a2dp_source_send_start_response</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>The API to send a start response on receiving a start request from the peer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application when it wants to indicate the peer that it is ready to start streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to peer device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transaction label </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates if a start request is accepted(AVDT_SUCCESS) or rejected(AVDT Error codes) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga3e06972c21d81492d1f12f003cecfbe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_suspend</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_a2dp_source_suspend</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>The API to suspend streaming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application when the streaming is to be suspended. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to peer device for which streaming is suspended. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="292" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga83372db916adc5b4fbef423a844bc8fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_start_streaming</definition>
+        <argsstring>(uint8_t handle, uint8_t *p_media_buf, uint16_t buf_len, uint32_t time_stamp, uint8_t m_pt)</argsstring>
+        <name>wiced_bt_a2dp_source_start_streaming</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_media_buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>buf_len</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>time_stamp</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>m_pt</declname>
+        </param>
+        <briefdescription>
+<para>The API to send media data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application after streaming is started. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to peer device for which streaming is suspended. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_media_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the media buffer to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_stamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time stamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">m_pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Marker and payload byte </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="305" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains A2DP Source APIs and definitions. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>Copyright<sp/>2025,<sp/>Cypress<sp/>Semiconductor<sp/>Corporation<sp/>(an<sp/>Infineon<sp/>company)<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*<sp/>an<sp/>affiliate<sp/>of<sp/>Cypress<sp/>Semiconductor<sp/>Corporation.<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/>This<sp/>software,<sp/>including<sp/>source<sp/>code,<sp/>documentation<sp/>and<sp/>related</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/>materials<sp/>(&quot;Software&quot;)<sp/>is<sp/>owned<sp/>by<sp/>Cypress<sp/>Semiconductor<sp/>Corporation</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/>or<sp/>one<sp/>of<sp/>its<sp/>affiliates<sp/>(&quot;Cypress&quot;)<sp/>and<sp/>is<sp/>protected<sp/>by<sp/>and<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*<sp/>worldwide<sp/>patent<sp/>protection<sp/>(United<sp/>States<sp/>and<sp/>foreign),</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/>United<sp/>States<sp/>copyright<sp/>laws<sp/>and<sp/>international<sp/>treaty<sp/>provisions.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/>Therefore,<sp/>you<sp/>may<sp/>use<sp/>this<sp/>Software<sp/>only<sp/>as<sp/>provided<sp/>in<sp/>the<sp/>license</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*<sp/>agreement<sp/>accompanying<sp/>the<sp/>software<sp/>package<sp/>from<sp/>which<sp/>you</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*<sp/>obtained<sp/>this<sp/>Software<sp/>(&quot;EULA&quot;).</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*<sp/>If<sp/>no<sp/>EULA<sp/>applies,<sp/>Cypress<sp/>hereby<sp/>grants<sp/>you<sp/>a<sp/>personal,<sp/>non-exclusive,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*<sp/>non-transferable<sp/>license<sp/>to<sp/>copy,<sp/>modify,<sp/>and<sp/>compile<sp/>the<sp/>Software</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">*<sp/>source<sp/>code<sp/>solely<sp/>for<sp/>use<sp/>in<sp/>connection<sp/>with<sp/>Cypress&apos;s</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">*<sp/>integrated<sp/>circuit<sp/>products.<sp/><sp/>Any<sp/>reproduction,<sp/>modification,<sp/>translation,</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*<sp/>compilation,<sp/>or<sp/>representation<sp/>of<sp/>this<sp/>Software<sp/>except<sp/>as<sp/>specified</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">*<sp/>above<sp/>is<sp/>prohibited<sp/>without<sp/>the<sp/>express<sp/>written<sp/>permission<sp/>of<sp/>Cypress.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">*<sp/>Disclaimer:<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>AS-IS,<sp/>WITH<sp/>NO<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>NONINFRINGEMENT,<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>Cypress</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">*<sp/>reserves<sp/>the<sp/>right<sp/>to<sp/>make<sp/>changes<sp/>to<sp/>the<sp/>Software<sp/>without<sp/>notice.<sp/>Cypress</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">*<sp/>does<sp/>not<sp/>assume<sp/>any<sp/>liability<sp/>arising<sp/>out<sp/>of<sp/>the<sp/>application<sp/>or<sp/>use<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">*<sp/>Software<sp/>or<sp/>any<sp/>product<sp/>or<sp/>circuit<sp/>described<sp/>in<sp/>the<sp/>Software.<sp/>Cypress<sp/>does</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">*<sp/>not<sp/>authorize<sp/>its<sp/>products<sp/>for<sp/>use<sp/>in<sp/>any<sp/>products<sp/>where<sp/>a<sp/>malfunction<sp/>or</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">*<sp/>failure<sp/>of<sp/>the<sp/>Cypress<sp/>product<sp/>may<sp/>reasonably<sp/>be<sp/>expected<sp/>to<sp/>result<sp/>in</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">*<sp/>significant<sp/>property<sp/>damage,<sp/>injury<sp/>or<sp/>death<sp/>(&quot;High<sp/>Risk<sp/>Product&quot;).<sp/>By</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">*<sp/>including<sp/>Cypress&apos;s<sp/>product<sp/>in<sp/>a<sp/>High<sp/>Risk<sp/>Product,<sp/>the<sp/>manufacturer</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">*<sp/>of<sp/>such<sp/>system<sp/>or<sp/>application<sp/>assumes<sp/>all<sp/>risk<sp/>of<sp/>such<sp/>use<sp/>and<sp/>in<sp/>doing</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">*<sp/>so<sp/>agrees<sp/>to<sp/>indemnify<sp/>Cypress<sp/>against<sp/>all<sp/>liability.</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_result.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2d.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2d_sbc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2d_m12.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2d_m24.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_a2dp_defs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_memory.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>Number<sp/>of<sp/>codecs<sp/>supported<sp/>by<sp/>local<sp/>device.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/>If<sp/>supporting<sp/>only<sp/>SBC,<sp/>set<sp/>this<sp/>to<sp/>1.</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>If<sp/>supporting<sp/>&gt;1<sp/>codecs,<sp/>set<sp/>this<sp/>equal<sp/>to<sp/>count<sp/>in<sp/>codec<sp/>capabilities</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WICED_BT_A2DP_SOURCE_NUM_CODECS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_A2DP_SOURCE_NUM_CODECS<sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//WICED_BT_A2DP_SOURCE_NUM_CODECS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>Maximum<sp/>number<sp/>of<sp/>Remote<sp/>SEPS<sp/>in<sp/>stream<sp/>discovery<sp/>results.</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>If<sp/>local<sp/>device<sp/>supports<sp/>only<sp/>SBC,<sp/>then<sp/>a<sp/>good<sp/>value<sp/>for<sp/>this<sp/>is<sp/>2-3</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/>If<sp/>local<sp/>device<sp/>supports<sp/>MPEG,<sp/>it<sp/>makes<sp/>sense<sp/>to<sp/>set<sp/>this<sp/>to<sp/>a<sp/>higher<sp/>value<sp/>4-5</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WICED_BT_A2DP_SOURCE_NUM_SEPS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_A2DP_SOURCE_NUM_SEPS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//WICED_BT_A2DP_SOURCE_NUM_SEPS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="89"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Enumerations</highlight></codeline>
+<codeline lineno="90"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Events<sp/>in<sp/>wiced_bt_a2dp_source_control_cb_t()<sp/>callback,</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/>for<sp/>payload<sp/>see<sp/>wiced_bt_a2dp_source_event_data_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_CONNECT_EVT,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Connected<sp/>event,<sp/>received<sp/>on<sp/>establishing<sp/>connection<sp/>to<sp/>a<sp/>peer<sp/>device<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_DISCONNECT_EVT,<sp/><sp/></highlight><highlight class="comment">/*<sp/>Disconnected<sp/>event,<sp/>received<sp/>on<sp/>disconnection<sp/>from<sp/>a<sp/>peer<sp/>device<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_START_IND_EVT,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>stream<sp/>indication<sp/>event,<sp/>received<sp/>when<sp/>start<sp/>req<sp/>is<sp/>received<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_START_CFM_EVT,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>stream<sp/>confirm<sp/>event,<sp/>received<sp/>when<sp/>start<sp/>req<sp/>is<sp/>sent<sp/>and<sp/>response<sp/>is<sp/>received<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_SUSPEND_EVT,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Suspend<sp/>stream<sp/>event,<sp/>received<sp/>when<sp/>audio<sp/>streaming<sp/>is<sp/>suspended<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_CONFIGURE_EVT,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>stream<sp/>event,<sp/>received<sp/>when<sp/>streaming<sp/>configuration<sp/>completed*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_WRITE_CFM_EVT,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>confirm<sp/>event,<sp/>received<sp/>when<sp/>AVDT<sp/>has<sp/>completed<sp/>writing<sp/>the<sp/>given<sp/>buffer*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_DELAY_RPT_EVT,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Delay<sp/>report<sp/>command<sp/>received<sp/>from<sp/>SINK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/>wiced_bt_a2dp_source_event_t;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A2DP<sp/>Source<sp/>features<sp/>masks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_FEAT_PROTECT<sp/><sp/><sp/>=<sp/>0x0001,<sp/></highlight><highlight class="comment">/*<sp/>Streaming<sp/>media<sp/>content<sp/>protection<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_A2DP_SOURCE_FEAT_DELAY_RPT<sp/>=<sp/>0x0002,<sp/></highlight><highlight class="comment">/*<sp/>Use<sp/>delay<sp/>reporting<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}<sp/>wiced_bt_a2dp_source_feature_mask_t;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="116"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type<sp/>Definitions</highlight></codeline>
+<codeline lineno="117"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="120"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Structures</highlight></codeline>
+<codeline lineno="121"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Codec<sp/>capability<sp/>information<sp/>list<sp/>structure,</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/>used<sp/>to<sp/>indicate<sp/>the<sp/>supported<sp/>codecs<sp/>and<sp/>their<sp/>capabilities<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="structwiced__bt__a2dp__source__codec__info__list__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count;<sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>codecs<sp/>present<sp/>in<sp/>the<sp/>list<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_codec_info_t*<sp/>info;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Codec<sp/>information<sp/>list<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__source__codec__info__list__t" kindref="compound">wiced_bt_a2dp_source_codec_info_list_t</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A2DP<sp/>source<sp/>configuration<sp/>data<sp/>structure<sp/>[Deprecated]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="structwiced__bt__a2dp__source__config__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_source_feature_mask_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>feature_mask;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Supported<sp/>features<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__source__codec__info__list__t" kindref="compound">wiced_bt_a2dp_source_codec_info_list_t</ref><sp/><sp/><sp/><sp/><sp/><sp/>codec_capabilities;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>List<sp/>of<sp/>supported<sp/>codecs<sp/>and<sp/>their<sp/>capabilities<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_codec_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default_codec_config;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Default<sp/>codec<sp/>config<sp/>Assumed<sp/>to<sp/>be<sp/>SBC<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__source__config__data__t" kindref="compound">wiced_bt_a2dp_source_config_data_t</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="structwiced__bt__a2dp__source__config__data__ext__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_source_feature_mask_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>feature_mask;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Supported<sp/>features<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__source__codec__info__list__t" kindref="compound">wiced_bt_a2dp_source_codec_info_list_t</ref><sp/><sp/><sp/><sp/><sp/><sp/>*codec_capabilities;<sp/></highlight><highlight class="comment">/*<sp/>List<sp/>of<sp/>supported<sp/>codecs<sp/>and<sp/>their<sp/>capabilities<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_codec_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*default_codec_config;<sp/></highlight><highlight class="comment">/*<sp/>Default<sp/>codec<sp/>config<sp/>per<sp/>codec<sp/>in<sp/>codec_capabilities.<sp/>num<sp/>ele<sp/>must<sp/>be<sp/>equal<sp/>to<sp/>count*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__source__config__data__ext__t" kindref="compound">wiced_bt_a2dp_source_config_data_ext_t</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Generic<sp/>event<sp/>status<sp/>info<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="structwiced__bt__a2dp__source__status__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_result_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Whether<sp/>the<sp/>event<sp/>indicates<sp/>failure<sp/>or<sp/>success,<sp/>WICED_BT_XXX<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_device_address_t<sp/>bd_addr;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Peer<sp/>bluetooth<sp/>device<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Peer<sp/>connection<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lcid;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Local<sp/>identifier<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is_accepter;<sp/><sp/></highlight><highlight class="comment">/*<sp/>True<sp/>if<sp/>device<sp/>is<sp/>accepter,<sp/>otherwise<sp/>false<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__source__status__t" kindref="compound">wiced_bt_a2dp_source_status_t</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A2DP<sp/>Start<sp/>event<sp/>data<sp/>structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="structwiced__bt__a2dp__source__start__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_result_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Whether<sp/>the<sp/>event<sp/>indicates<sp/>failure<sp/>or<sp/>success,<sp/>WICED_BT_XXX<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Transaction<sp/>label<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Peer<sp/>connection<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__source__start__t" kindref="compound">wiced_bt_a2dp_source_start_t</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A2DP<sp/>Set<sp/>config<sp/>event<sp/>data<sp/>structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="structwiced__bt__a2dp__source__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_result_t<sp/>result;<sp/></highlight><highlight class="comment">/*<sp/>Whether<sp/>the<sp/>event<sp/>indicates<sp/>failure<sp/>or<sp/>success,<sp/>WICED_BT_XXX<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>handle;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Peer<sp/>connection<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>cp_type;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Content<sp/>protection<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_a2dp_codec_info_t<sp/>*codec_config;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>stream_mtu;<sp/></highlight><highlight class="comment">/*<sp/>MTU<sp/>of<sp/>stream<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}<sp/><ref refid="structwiced__bt__a2dp__source__config__t" kindref="compound">wiced_bt_a2dp_source_config_t</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>callback<sp/>event<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="unionwiced__bt__a2dp__source__event__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__source__status__t" kindref="compound">wiced_bt_a2dp_source_status_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SOURCE_CONNECT_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__source__status__t" kindref="compound">wiced_bt_a2dp_source_status_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>disconnect;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SOURCE_DISCONNECT_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__source__start__t" kindref="compound">wiced_bt_a2dp_source_start_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_ind;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SOURCE_START_IND_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__source__status__t" kindref="compound">wiced_bt_a2dp_source_status_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_cfm;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SOURCE_START_CFM_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__source__status__t" kindref="compound">wiced_bt_a2dp_source_status_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>suspend;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WICED_BT_A2DP_SOURCE_SUSPEND_EVT<sp/>payload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__a2dp__source__config__t" kindref="compound">wiced_bt_a2dp_source_config_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_config;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delay_ms;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Delay<sp/>reported<sp/>from<sp/>DELAY_RPT_EVT<sp/>from<sp/>SINK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__a2dp__source__event__data__t" kindref="compound">wiced_bt_a2dp_source_event_data_t</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="188"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Callback<sp/>Type<sp/>Definitions</highlight></codeline>
+<codeline lineno="189"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kindref="member">wiced_bt_a2dp_source_control_cb_t</ref>)(<sp/>wiced_bt_a2dp_source_event_t<sp/>event,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionwiced__bt__a2dp__source__event__data__t" kindref="compound">wiced_bt_a2dp_source_event_data_t</ref>*<sp/>p_data<sp/>);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="202"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Function<sp/>Declarations</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__src_1ga64e646849124fda257b1e142df1ec59d" kindref="member">wiced_bt_a2dp_source_init</ref>(<sp/><ref refid="structwiced__bt__a2dp__source__config__data__t" kindref="compound">wiced_bt_a2dp_source_config_data_t</ref>*<sp/>p_config_data,</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kindref="member">wiced_bt_a2dp_source_control_cb_t</ref><sp/>control_cb,<sp/>wiced_bt_heap_t*<sp/>heap);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__src_1gaf76285c3f3c36bea183f2cd05d343b8b" kindref="member">wiced_bt_a2dp_source_init_ext</ref>(<ref refid="structwiced__bt__a2dp__source__config__data__ext__t" kindref="compound">wiced_bt_a2dp_source_config_data_ext_t</ref><sp/>*p_config_data,</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kindref="member">wiced_bt_a2dp_source_control_cb_t</ref><sp/>control_cb,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wiced_bt_heap_t<sp/>*heap);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__src_1gae424889596c4bf6ecba3e9719669c35e" kindref="member">wiced_bt_a2dp_source_deinit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__src_1ga484c0b6eaa8b1e4bf73b4e131d89eeb9" kindref="member">wiced_bt_a2dp_source_connect</ref>(<sp/>wiced_bt_device_address_t<sp/>bd_address<sp/>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__src_1gadbd6a259d7be9441f3385e432ad1d75c" kindref="member">wiced_bt_a2dp_source_disconnect</ref>(<sp/>uint16_t<sp/>handle<sp/>);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__src_1ga39b26b04f3ace9751414828fe5c202cb" kindref="member">wiced_bt_a2dp_source_start</ref>(<sp/>uint16_t<sp/>handle,<sp/>wiced_bt_a2dp_codec_info_t<sp/>*codec_info<sp/>);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__src_1ga22bbe0c4cc3a5bc2ed0e67f17e76b383" kindref="member">wiced_bt_a2dp_source_send_start_response</ref>(<sp/>uint16_t<sp/>handle,<sp/>uint8_t<sp/>label,<sp/>uint8_t<sp/>status<sp/>);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__src_1ga3e06972c21d81492d1f12f003cecfbe8" kindref="member">wiced_bt_a2dp_source_suspend</ref>(<sp/>uint16_t<sp/>handle<sp/>);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__a2dp__src_1ga83372db916adc5b4fbef423a844bc8fb" kindref="member">wiced_bt_a2dp_source_start_streaming</ref>(uint8_t<sp/>handle,<sp/>uint8_t<sp/>*p_media_buf,<sp/>uint16_t<sp/>buf_len,<sp/>uint32_t<sp/>time_stamp,<sp/>uint8_t<sp/>m_pt);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@}<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>end<sp/>of<sp/>wicedbt_a2dp_src<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_WICED_BT_A2DP_SOURCE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h"/>
+  </compounddef>
+</doxygen>

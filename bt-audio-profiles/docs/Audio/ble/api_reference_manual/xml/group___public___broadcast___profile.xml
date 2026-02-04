@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___public___broadcast___profile" kind="group">
+    <compoundname>Public_Broadcast_Profile</compoundname>
+    <title>Public_Broadcast_Profile</title>
+    <innerclass refid="structle__audio__public__broadcast__t" prot="public">le_audio_public_broadcast_t</innerclass>
+    <innerclass refid="structle__audio__rcv__public__broadcast__t" prot="public">le_audio_rcv_public_broadcast_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___public___broadcast___profile_1ga10cf7da36049730145265b2f051c80dc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>le_audio_pbp_audio_config_t</name>
+        <enumvalue id="group___public___broadcast___profile_1gga10cf7da36049730145265b2f051c80dca5ebfaa3fd841064e71c9bc317c66bd7f" prot="public">
+          <name>WICED_BT_GA_PBP_GENERIC_CODEC_PUBLIC_BROADCAST_AUDIO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Generic Codec Broadcast Audio config. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___public___broadcast___profile_1gga10cf7da36049730145265b2f051c80dcafdb6123abf08d42af0d50ebc58b46ca7" prot="public">
+          <name>WICED_BT_GA_PBP_STANDARD_QUALITY_PUBLIC_BROADCAST_AUDIO</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Standard Quality Broadcast Audio config. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___public___broadcast___profile_1gga10cf7da36049730145265b2f051c80dca84ba764e6b9bb681121d113eef27c1f6" prot="public">
+          <name>WICED_BT_GA_PBP_HIGH_QUALITY_PUBLIC_BROADCAST_AUDIO</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>High Quality Broadcast Audio config. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Public broadcast Audio Stream Config. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="51" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___public___broadcast___profile_1ga43800184956695e02f8b2e90d83d9cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t le_audio_pbp_is_public_broadcast</definition>
+        <argsstring>(uint16_t adv_len, uint8_t *p_adv_data, le_audio_rcv_public_broadcast_t *p_public_rcv_br)</argsstring>
+        <name>le_audio_pbp_is_public_broadcast</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>adv_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_adv_data</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__rcv__public__broadcast__t" kindref="compound">le_audio_rcv_public_broadcast_t</ref> *</type>
+          <declname>p_public_rcv_br</declname>
+        </param>
+        <briefdescription>
+<para>Check if Peer adv data has public broadcast info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Peer device adv data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_public_rcv_br</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Broadcast details parsed from adv data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bool_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___public___broadcast___profile_1ga0aa0b94120aa3eeda9ffeeeb1a53f193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t le_audio_pbp_build_adv_data</definition>
+        <argsstring>(uint8_t *p_data, uint32_t offset, le_audio_public_broadcast_t *public_broadcast, uint32_t *len)</argsstring>
+        <name>le_audio_pbp_build_adv_data</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type><ref refid="structle__audio__public__broadcast__t" kindref="compound">le_audio_public_broadcast_t</ref> *</type>
+          <declname>public_broadcast</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Build public broadcast adv data from the configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Adv data to be filled after building. Caller has to allocate enough memory </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset for extended adv to be considered before building </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">public_broadcast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Broadcast data to be considered for filling adv data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of the adv data after building </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bool_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="96" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___public___broadcast___profile_1gabc1afa415227e5335ea80b4f67ed0f47" prot="public" static="no">
+        <name>PBP_BROADCAST_TRACE</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+<para>Enable this for getting PBP library traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="20" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1gad9a72bb497bf7f059a622de782d06b06" prot="public" static="no">
+        <name>PBP_BROADCAST_TRACE_CRIT</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+<para>Enable this for getting PBP library traces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="21" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1gad31650d8adc57575cc7d13e02e191abf" prot="public" static="no">
+        <name>WICED_BT_GA_PBP_TYPE_BROADCAST_NAME</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+<para>adv type: BTM_BLE_ADVERT_TYPE_BROADCAST_NAME </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="23" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1ga79739d16af3cef60ad2fc4798af9f7f8" prot="public" static="no">
+        <name>MAX_BROADCAST_NAME_ADV_SIZE</name>
+        <initializer>32</initializer>
+        <briefdescription>
+<para>MAX size of Broadcast name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="24" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1ga54adbb6e8d65a4c6f3bdfe89fe12cb88" prot="public" static="no">
+        <name>PBP_METADATA_PROGRAM_INFO_TYPE</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+<para>Program info metadata type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="25" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1ga8f90efe3cd744c7ff8b6282df406d173" prot="public" static="no">
+        <name>APPEARANCE_VALUE_AD_SIZE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>Size of appearance value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="26" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1gaed3a2cd004bd7373ece7fb13680be2d9" prot="public" static="no">
+        <name>MAX_PROGRAM_INFO_SIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Max size of Program info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="27" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___public___broadcast___profile_1ga8f9509cf4540049a8120f93a89d0df42" prot="public" static="no">
+        <name>MAX_METADATA_LEN</name>
+        <initializer>100</initializer>
+        <briefdescription>
+<para>Max len of metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" line="28" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_pbp.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Public Broadcast Profile (PBP) defines a Public Broadcast Announcement that a Broadcast Source can include in an extended advertisement to indicate that a Broadcast Source is transmitting at least one of the following: </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>A broadcast Audio Stream with a configuration that every BAP Broadcast Sink can receive and decode (Standard Quality Public Broadcast Audio)</para>
+</listitem><listitem><para>A broadcast Audio Stream that uses a High Quality Public Broadcast Audio Stream configuration<itemizedlist>
+<listitem><para>The Public Broadcast Announcement also indicates whether the broadcast Audio Streams in the Broadcast Isochronous Group (BIG) are encrypted or not. If the Public Broadcast Announcement indicates that the broadcast Audio Streams are encrypted, a Broadcast Sink must use a Broadcast_Code to decrypt them </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

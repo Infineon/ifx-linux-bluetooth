@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['target_5fcaller_5fid',['target_caller_id',['../structwiced__bt__ga__tbs__incoming__tg__bearer__uri__t.html#a362884e979473cc313a5db34f6852a80',1,'wiced_bt_ga_tbs_incoming_tg_bearer_uri_t']]],
+  ['target_5flatency',['target_latency',['../structwiced__bt__ga__ascs__config__codec__args__t.html#a96c03361e576debc1f4a3b9d7fdde42a',1,'wiced_bt_ga_ascs_config_codec_args_t']]],
+  ['target_5fphy',['target_phy',['../structwiced__bt__ga__ascs__config__codec__args__t.html#a2d21a625fad246566575a515a4f9889d',1,'wiced_bt_ga_ascs_config_codec_args_t']]],
+  ['tbs_5fbearer_5fprovider_5fname',['TBS_BEARER_PROVIDER_NAME',['../group___telephone___bearer___service___a_p_is.html#gga457dc8408da042c06c5c098acd071acfada82513e0c55cafeba8a7c44d32ebdee',1,'wiced_bt_ga_tbs.h']]],
+  ['tbs_5fbearer_5fsignal_5fstrength',['TBS_BEARER_SIGNAL_STRENGTH',['../group___telephone___bearer___service___a_p_is.html#gga457dc8408da042c06c5c098acd071acfa1810f94444872b1a559eea1c004505c7',1,'wiced_bt_ga_tbs.h']]],
+  ['tbs_5fbearer_5fsignal_5fstrength_5freporting_5finterval',['TBS_BEARER_SIGNAL_STRENGTH_REPORTING_INTERVAL',['../group___telephone___bearer___service___a_p_is.html#gga457dc8408da042c06c5c098acd071acfaef9b80ab93a0d6db2b2d6964bd1c5c05',1,'wiced_bt_ga_tbs.h']]],
+  ['tbs_5fbearer_5ftechnology',['TBS_BEARER_TECHNOLOGY',['../group___telephone___bearer___service___a_p_is.html#gga457dc8408da042c06c5c098acd071acfa11c9d102ab3599d6edff1ac98105b265',1,'wiced_bt_ga_tbs.h']]],
+  ['tbs_5fbearer_5fuci',['TBS_BEARER_UCI',['../group___telephone___bearer___service___a_p_is.html#gga457dc8408da042c06c5c098acd071acfa4acddab301fa1d250d68ed5dad476199',1,'wiced_bt_ga_tbs.h']]],
+  ['telephone_5fbearer_5fservice_5fapis',['Telephone_Bearer_Service_APIs',['../group___telephone___bearer___service___a_p_is.html',1,'']]],
+  ['termination_5fdata',['termination_data',['../structwiced__bt__ga__tbs__call__control__point__t.html#ad5804f4c6ce1e9e32357d92c6e40f7b5',1,'wiced_bt_ga_tbs_call_control_point_t']]],
+  ['termination_5freason',['termination_reason',['../structwiced__bt__ga__tbs__call__termination__reason__data__t.html#a0c6529472704c31bc051773afbca166f',1,'wiced_bt_ga_tbs_call_termination_reason_data_t']]],
+  ['tmap_5frole',['tmap_role',['../unionwiced__bt__ga__tmap__data__t.html#ab894702abd0cce2a0eb27239ebe7012c',1,'wiced_bt_ga_tmap_data_t']]],
+  ['track_5fduration',['track_duration',['../unionwiced__bt__ga__mcs__data__t.html#a116ab729d63735a0b8583279241434b2',1,'wiced_bt_ga_mcs_data_t']]],
+  ['track_5fnumber',['track_number',['../unionwiced__bt__ga__mcs__operation__data__t.html#a0e35dcdba569cc7736fa160b53222cab',1,'wiced_bt_ga_mcs_operation_data_t']]],
+  ['track_5fposition',['track_position',['../unionwiced__bt__ga__mcs__data__t.html#a39ec00ebaa000454e0117d519f4726ad',1,'wiced_bt_ga_mcs_data_t']]],
+  ['track_5ftitle',['track_title',['../unionwiced__bt__ga__mcs__data__t.html#a0e2b4b46e9427621564b0140140c54d5',1,'wiced_bt_ga_mcs_data_t']]]
+];

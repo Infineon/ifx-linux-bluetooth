@@ -1,0 +1,559 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__ga__has_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_ga_has.h</compoundname>
+    <includes local="yes">wiced_bt_ble.h</includes>
+    <includes local="yes">wiced_bt_dev.h</includes>
+    <includes local="yes">wiced_bt_gatt.h</includes>
+    <includes refid="wiced__bt__ga_8h" local="yes">wiced_bt_ga.h</includes>
+    <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
+    <incdepgraph>
+      <node id="79">
+        <label>wiced_bt_ga_has.h</label>
+        <link refid="wiced__bt__ga__has_8h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="80">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="81">
+        <label>wiced_bt_dev.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structwiced__bt__ga__has__preset__records__t" prot="public">wiced_bt_ga_has_preset_records_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__has__cp__read__preset__t" prot="public">wiced_bt_ga_has_cp_read_preset_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t" prot="public">wiced_bt_ga_has_cp_rsp_preset_changed_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__has__control__point__t" prot="public">wiced_bt_ga_has_control_point_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__has__evt__data__t" prot="public">wiced_bt_ga_has_evt_data_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__has__data__t" prot="public">wiced_bt_ga_has_data_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a9cf349cc13f7fce39afcceec83451eac" prot="public" static="no">
+        <name>HAS_TRACE</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="15" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a34729915351167618813ef7f5354bdb0" prot="public" static="no">
+        <name>HAS_TRACE_CRIT</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="16" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a34b68ac6b175827d03466a82f9d891e8" prot="public" static="no">
+        <name>HAS_TRACE_ARRAY</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="17" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a9f567cad6eba24d0db278378097e3e9f" prot="public" static="no">
+        <name>HAS_MAX_PRESET_RECORD_NAME_LENGTH</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="19" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a9df8d562375e51b3bd81a3633cd694fd" prot="public" static="no">
+        <name>HAS_BINAURAL_HEARING_AID</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="20" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1aa388e998c55a85d44bc607ddef4f8d86" prot="public" static="no">
+        <name>HAS_MONAURAL_HEARING_AID</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="21" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a8ffeca851f704dda28424c150cce8612" prot="public" static="no">
+        <name>HAS_BANDED_HEARING_AID</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="22" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1af17b7089f5f0dc256868623ca2ada8b2" prot="public" static="no">
+        <name>HAS_PRESET_SYNCHRONIZATION_NOT_SUPPORTED</name>
+        <initializer>(0 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="23" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a843f7d43130ef764121d069e066d8149" prot="public" static="no">
+        <name>HAS_PRESET_SYNCHRONIZATION_SUPPORTED</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="24" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a6d1c5d67edbb8db824318acf6b816e2c" prot="public" static="no">
+        <name>HAS_IDENTICAL_PRESET_IN_COORDINATED_SET</name>
+        <initializer>(0 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="25" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a6337ce9f737baa610230cfbaea338ce9" prot="public" static="no">
+        <name>HAS_INDEPENDENT_PRESET_IN_COORDINATED_SET</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="26" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a2e3c5d2e22390afb1288760375c2d622" prot="public" static="no">
+        <name>HAS_STATIC_PRESET</name>
+        <initializer>(0 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="27" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1ac75cb26357b81da39734e411eb1ee7fc" prot="public" static="no">
+        <name>HAS_DYNAMIC_PRESET</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="28" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1ab1110c27432165b8e40181e538612147" prot="public" static="no">
+        <name>HAS_WRITABLE_PRESETS_NOT_SUPPORTED</name>
+        <initializer>(0 &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="29" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__ga__has_8h_1a23b1b93efb85d0376b6c5ebba6e76883" prot="public" static="no">
+        <name>HAS_WRITABLE_PRESETS_SUPPORTED</name>
+        <initializer>(1&lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="30" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_has_opcode_e</name>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aadafd2771e4349f8ec13a72699d6c3fef" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_INVALID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aa3a77318b34cbb375b2bb3fc3506f3c91" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_READ_PRESETS_REQUEST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aa81e002ffa217a6c0f327851a40ca37ae" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_READ_PRESET_RESPONSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aa954f8b3237cde3a40a39a08a02ce5721" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_PRESET_CHANGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aa7b77062b698c5ae5bf77d2a3bc28aa1f" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_WRITE_PRESET_NAME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aa38384b802e755f6bb2968f80d6b825c9" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_SET_ACTIVE_PRESET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aa8f829e6f8b17ea5ed21c4eed829fdbe9" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_SET_NEXT_PRESET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aa4f0a28102ee33881aaed21bf2388c9b3" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_SET_PREVIOUS_PRESET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aae9a2bd52b5a8a3040a8264f5e5d5025b" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_SET_ACTIVE_PRESET_SYNCHRONIZED_LOCALLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aa42c77eb883aeeccfe8b59b5e91889aba" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_SET_NEXT_PRESET_SYNCHRONIZED_LOCALLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1a0911fa24b54790b128e13876c0e15e6aa53d3b2bc22bc9813f8ea0ae7eeea0384" prot="public">
+          <name>WICED_BT_GA_HAS_OPCODE_SET_PREVIOUS_PRESET_SYNCHRONIZED_LOCALLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="42" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="41" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga__has_8h_1aa07e64030c0ac8323448c804581565b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_has_preset_change_id_e</name>
+        <enumvalue id="wiced__bt__ga__has_8h_1aa07e64030c0ac8323448c804581565b5ab117e6c0e1c7cbc8b7c277b96e51c31d" prot="public">
+          <name>WICED_BT_GA_HAS_GENERIC_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1aa07e64030c0ac8323448c804581565b5ad8d34aa0176aa8fbf80546b16b039bb2" prot="public">
+          <name>WICED_BT_GA_HAS_PRESET_RECORD_DELETED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1aa07e64030c0ac8323448c804581565b5a2e140e7adf3cbc3621863ff82cfc07fb" prot="public">
+          <name>WICED_BT_GA_HAS_PRESET_RECORD_AVAILABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga__has_8h_1aa07e64030c0ac8323448c804581565b5a1c186b148c03c5eb1a6f6c0a2a01d588" prot="public">
+          <name>WICED_BT_GA_HAS_PRESET_RECORD_UNAVAILABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="59" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="58" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wiced__bt__ga__has_8h_1a849e07cb2b55c7220ca1b9312a1d0d7b" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_has_opcode_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_has_opcode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="56" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga__has_8h_1a4cfa8d9caf10fe356230809e49c56547" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_has_preset_change_id_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_has_preset_change_id_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="66" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wiced__bt__ga__has_8h_1a68976569c4f314b4a45e06a253b1783f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_has_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_has_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the HAS service_type/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of HAS instances to be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wiced__bt__ga__has_8h_1a28d497790b598fdf124d882bcbec9683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_has_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_has_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable HAS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wiced__bt__ga__has_8h_1abbfe5b858aabbddc503fd19770914c14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_has_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_has_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable HAS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="120" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_HAS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_HAS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_dev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_TRACE(...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_TRACE_CRIT(...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_TRACE_ARRAY(...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_MAX_PRESET_RECORD_NAME_LENGTH<sp/>40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_BINAURAL_HEARING_AID<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_MONAURAL_HEARING_AID<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_BANDED_HEARING_AID<sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_PRESET_SYNCHRONIZATION_NOT_SUPPORTED<sp/>(0<sp/>&lt;&lt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_PRESET_SYNCHRONIZATION_SUPPORTED<sp/>(1<sp/>&lt;&lt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_IDENTICAL_PRESET_IN_COORDINATED_SET<sp/>(0<sp/>&lt;&lt;<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_INDEPENDENT_PRESET_IN_COORDINATED_SET<sp/>(1<sp/>&lt;&lt;<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_STATIC_PRESET<sp/>(0<sp/>&lt;&lt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_DYNAMIC_PRESET<sp/>(1<sp/>&lt;&lt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_WRITABLE_PRESETS_NOT_SUPPORTED<sp/>(0<sp/>&lt;&lt;<sp/>5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAS_WRITABLE_PRESETS_SUPPORTED<sp/>(1&lt;&lt;<sp/>5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structwiced__bt__ga__has__preset__records__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>preset_index;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>properties;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>is_last;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/>name;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__has__preset__records__t" kindref="compound">wiced_bt_ga_has_preset_records_t</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>wiced_bt_ga_has_opcode_e</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_INVALID,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_READ_PRESETS_REQUEST,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_READ_PRESET_RESPONSE,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_PRESET_CHANGED,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_WRITE_PRESET_NAME,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_SET_ACTIVE_PRESET,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_SET_NEXT_PRESET,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_SET_PREVIOUS_PRESET,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_SET_ACTIVE_PRESET_SYNCHRONIZED_LOCALLY,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_SET_NEXT_PRESET_SYNCHRONIZED_LOCALLY,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_OPCODE_SET_PREVIOUS_PRESET_SYNCHRONIZED_LOCALLY</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>wiced_bt_ga_has_opcode_t;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>wiced_bt_ga_has_preset_change_id_e</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_GENERIC_UPDATE,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_PRESET_RECORD_DELETED,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_PRESET_RECORD_AVAILABLE,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>WICED_BT_GA_HAS_PRESET_RECORD_UNAVAILABLE</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>wiced_bt_ga_has_preset_change_id_t;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structwiced__bt__ga__has__cp__read__preset__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>start_index;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>num_presets;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__has__cp__read__preset__t" kindref="compound">wiced_bt_ga_has_cp_read_preset_t</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_ga_has_preset_change_id_t<sp/>change_id;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>is_last;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__has__preset__records__t" kindref="compound">wiced_bt_ga_has_preset_records_t</ref><sp/>preset_rec;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>prev_index;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>preset_index;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t" kindref="compound">wiced_bt_ga_has_cp_rsp_preset_changed_t</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="structwiced__bt__ga__has__control__point__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_ga_has_opcode_t<sp/>opcode;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__has__cp__read__preset__t" kindref="compound">wiced_bt_ga_has_cp_read_preset_t</ref><sp/>read_preset;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>preset_index;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__has__preset__records__t" kindref="compound">wiced_bt_ga_has_preset_records_t</ref><sp/>preset_rec;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__has__control__point__t" kindref="compound">wiced_bt_ga_has_control_point_t</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="structwiced__bt__ga__has__evt__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_ga_has_opcode_t<sp/>opcode;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>hearing_aid_feature;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>active_preset_index;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__has__preset__records__t" kindref="compound">wiced_bt_ga_has_preset_records_t</ref><sp/>read_rsp_prest;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__has__cp__rsp__preset__changed__t" kindref="compound">wiced_bt_ga_has_cp_rsp_preset_changed_t</ref><sp/>preset_changed;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__has__evt__data__t" kindref="compound">wiced_bt_ga_has_evt_data_t</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="unionwiced__bt__ga__has__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__has__evt__data__t" kindref="compound">wiced_bt_ga_has_evt_data_t</ref><sp/>evt_data;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__has__control__point__t" kindref="compound">wiced_bt_ga_has_control_point_t</ref><sp/>has_cp_cmd;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__ga__has__data__t" kindref="compound">wiced_bt_ga_has_data_t</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">wiced_result_t<sp/>wiced_bt_ga_has_init(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
+<codeline lineno="117"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_ga_has_enable_server(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_ga_has_enable_client(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_HAS_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h"/>
+  </compounddef>
+</doxygen>

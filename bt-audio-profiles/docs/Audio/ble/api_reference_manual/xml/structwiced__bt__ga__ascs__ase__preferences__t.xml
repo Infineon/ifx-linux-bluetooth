@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__ascs__ase__preferences__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_ascs_ase_preferences_t</compoundname>
+    <includes local="no">wiced_bt_ga_ascs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__preferences__t_1acf8550a4c1023e8f683173f6b9c2eabf" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__ascs_1ga99c8eb613af867fa724376bdb9aa38b9" kindref="member">wiced_bt_ga_ascs_framing_t</ref></type>
+        <definition>wiced_bt_ga_ascs_framing_t wiced_bt_ga_ascs_ase_preferences_t::framing</definition>
+        <argsstring></argsstring>
+        <name>framing</name>
+        <briefdescription>
+<para>Server preferred value for the Framing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="236" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__preferences__t_1a0a81dccbfb7eb9be2cfad014655bba25" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__ascs_1ga9923db7099317f333d9a3ffa558f1bc3" kindref="member">wiced_bt_ga_ascs_phy_t</ref></type>
+        <definition>wiced_bt_ga_ascs_phy_t wiced_bt_ga_ascs_ase_preferences_t::preferred_phy</definition>
+        <argsstring></argsstring>
+        <name>preferred_phy</name>
+        <briefdescription>
+<para>Server preferred value for the PHY. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="237" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__preferences__t_1a753e3849a405e194bf3c77b7c8e94e30" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_ase_preferences_t::preferred_retransmission_number</definition>
+        <argsstring></argsstring>
+        <name>preferred_retransmission_number</name>
+        <briefdescription>
+<para>Server preferred value for the Retransmission_Number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="238" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__preferences__t_1a9eba1b897a8920d465c1311851fba7dc" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_ga_ascs_ase_preferences_t::max_transport_latency</definition>
+        <argsstring></argsstring>
+        <name>max_transport_latency</name>
+        <briefdescription>
+<para>Server preferred value for the Max_Transport_Latency. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="239" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__preferences__t_1af8f27035bc4744605e1628e789f8b8a8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_ascs_ase_preferences_t::presentation_delay_in_us_min</definition>
+        <argsstring></argsstring>
+        <name>presentation_delay_in_us_min</name>
+        <briefdescription>
+<para>Minimum server supported Presentation_Delay. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="240" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__preferences__t_1a7b1e0d9e78a0fc38e07d4a65875ce450" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_ascs_ase_preferences_t::presentation_delay_in_us_max</definition>
+        <argsstring></argsstring>
+        <name>presentation_delay_in_us_max</name>
+        <briefdescription>
+<para>Maximum server supported Presentation_Delay. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="241" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__preferences__t_1afb82a5d4974c8189da6b5258566dabcd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_ascs_ase_preferences_t::preferred_presentation_delay_in_us_min</definition>
+        <argsstring></argsstring>
+        <name>preferred_presentation_delay_in_us_min</name>
+        <briefdescription>
+<para>Minimum server supported Presentation_Delay. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="242" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__preferences__t_1ab95450db89d0f52e8bdd57c79134e0f6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_ascs_ase_preferences_t::preferred_presentation_delay_in_us_max</definition>
+        <argsstring></argsstring>
+        <name>preferred_presentation_delay_in_us_max</name>
+        <briefdescription>
+<para>Maximum server supported Presentation_Delay. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="243" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ASE Preference values. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="235" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="234" bodyend="244"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__ascs__ase__preferences__t_1acf8550a4c1023e8f683173f6b9c2eabf" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_preferences_t</scope><name>framing</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__preferences__t_1a9eba1b897a8920d465c1311851fba7dc" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_preferences_t</scope><name>max_transport_latency</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__preferences__t_1a0a81dccbfb7eb9be2cfad014655bba25" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_preferences_t</scope><name>preferred_phy</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__preferences__t_1ab95450db89d0f52e8bdd57c79134e0f6" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_preferences_t</scope><name>preferred_presentation_delay_in_us_max</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__preferences__t_1afb82a5d4974c8189da6b5258566dabcd" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_preferences_t</scope><name>preferred_presentation_delay_in_us_min</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__preferences__t_1a753e3849a405e194bf3c77b7c8e94e30" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_preferences_t</scope><name>preferred_retransmission_number</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__preferences__t_1a7b1e0d9e78a0fc38e07d4a65875ce450" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_preferences_t</scope><name>presentation_delay_in_us_max</name></member>
+      <member refid="structwiced__bt__ga__ascs__ase__preferences__t_1af8f27035bc4744605e1628e789f8b8a8" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_preferences_t</scope><name>presentation_delay_in_us_min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

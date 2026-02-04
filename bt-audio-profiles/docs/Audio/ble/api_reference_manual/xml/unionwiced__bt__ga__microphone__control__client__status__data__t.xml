@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__ga__microphone__control__client__status__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_microphone_control_client_status_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_mics.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__ga__microphone__control__client__status__data__t_1a16afd0ac33f844246ae2d85bb1fe7da2" prot="public" static="no" mutable="no">
+        <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+        <definition>wiced_bt_ga_mute_val_t wiced_bt_ga_microphone_control_client_status_data_t::mute_state</definition>
+        <argsstring></argsstring>
+        <name>mute_state</name>
+        <briefdescription>
+<para>changed microphone setting value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="63" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__microphone__control__client__status__data__t_1a82839df96e98edfd2f5fdb61cef6cd69" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_microphone_control_client_status_data_t::error_status</definition>
+        <argsstring></argsstring>
+        <name>error_status</name>
+        <briefdescription>
+<para>error opcode in case of error event </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="64" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__microphone__control__client__status__data__t_1aa235ef8fcedcfc5b7acc5b6075df1ddb" prot="public" static="no" mutable="no">
+        <type><ref refid="unionwiced__bt__ga__aics__data__t" kindref="compound">wiced_bt_ga_aics_data_t</ref></type>
+        <definition>wiced_bt_ga_aics_data_t wiced_bt_ga_microphone_control_client_status_data_t::aics_data</definition>
+        <argsstring></argsstring>
+        <name>aics_data</name>
+        <briefdescription>
+<para>AICS Status data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="65" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>microphone Control client status Data </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="259">
+        <label>wiced_bt_ga_aics_gain_settings_params_t</label>
+        <link refid="structwiced__bt__ga__aics__gain__settings__params__t"/>
+      </node>
+      <node id="256">
+        <label>wiced_bt_ga_aics_data_t</label>
+        <link refid="unionwiced__bt__ga__aics__data__t"/>
+        <childnode refid="257" relation="usage">
+          <edgelabel>control_point</edgelabel>
+        </childnode>
+        <childnode refid="258" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+        <childnode refid="259" relation="usage">
+          <edgelabel>gain_setting</edgelabel>
+        </childnode>
+      </node>
+      <node id="258">
+        <label>wiced_bt_ga_aics_input_state_t</label>
+        <link refid="structwiced__bt__ga__aics__input__state__t"/>
+      </node>
+      <node id="257">
+        <label>wiced_bt_ga_aics_control_point_t</label>
+        <link refid="structwiced__bt__ga__aics__control__point__t"/>
+        <childnode refid="258" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="255">
+        <label>wiced_bt_ga_microphone_control_client_status_data_t</label>
+        <link refid="unionwiced__bt__ga__microphone__control__client__status__data__t"/>
+        <childnode refid="256" relation="usage">
+          <edgelabel>aics_data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="62" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" bodystart="61" bodyend="66"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__ga__microphone__control__client__status__data__t_1aa235ef8fcedcfc5b7acc5b6075df1ddb" prot="public" virt="non-virtual"><scope>wiced_bt_ga_microphone_control_client_status_data_t</scope><name>aics_data</name></member>
+      <member refid="unionwiced__bt__ga__microphone__control__client__status__data__t_1a82839df96e98edfd2f5fdb61cef6cd69" prot="public" virt="non-virtual"><scope>wiced_bt_ga_microphone_control_client_status_data_t</scope><name>error_status</name></member>
+      <member refid="unionwiced__bt__ga__microphone__control__client__status__data__t_1a16afd0ac33f844246ae2d85bb1fe7da2" prot="public" virt="non-virtual"><scope>wiced_bt_ga_microphone_control_client_status_data_t</scope><name>mute_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

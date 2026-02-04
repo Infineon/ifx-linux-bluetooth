@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__microphone__state__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_microphone_state_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_mics.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__microphone__state__data__t_1a7f14afc6525ac0db7ed1a0e9cffa59a3" prot="public" static="no" mutable="no">
+        <type><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref></type>
+        <definition>wiced_bt_ga_mute_val_t wiced_bt_ga_microphone_state_data_t::mute_state</definition>
+        <argsstring></argsstring>
+        <name>mute_state</name>
+        <briefdescription>
+<para>current mute state value of the peer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="55" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>microphone State data </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="54" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" bodystart="53" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__microphone__state__data__t_1a7f14afc6525ac0db7ed1a0e9cffa59a3" prot="public" virt="non-virtual"><scope>wiced_bt_ga_microphone_state_data_t</scope><name>mute_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

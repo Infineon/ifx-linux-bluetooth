@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__bass__init__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_bass_init_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_bass.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__init__data__t_1a352869d9e9824d3ce31c5c17f486659b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bass_init_data_t::max_broadcast_receive_state</definition>
+        <argsstring></argsstring>
+        <name>max_broadcast_receive_state</name>
+        <briefdescription>
+<para>Max number of Broadcast Receive States per BASS service instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="158" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BASS init data for service object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="157" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="156" bodyend="159"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__bass__init__data__t_1a352869d9e9824d3ce31c5c17f486659b" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_init_data_t</scope><name>max_broadcast_receive_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

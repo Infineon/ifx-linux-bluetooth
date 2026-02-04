@@ -1,0 +1,1174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group___media___control___a_p_is" kind="group">
+    <compoundname>Media_Control_APIs</compoundname>
+    <title>Media_Control_APIs</title>
+    <innerclass refid="unionwiced__bt__ga__mcs__operation__data__t" prot="public">wiced_bt_ga_mcs_operation_data_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__mcs__operation__t" prot="public">wiced_bt_ga_mcs_operation_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__mcs__data__t" prot="public">wiced_bt_ga_mcs_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___media___control___a_p_is_1gad836b7c1d6af67e63ed2ec28fb6d905e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_media_control_playing_order_e</name>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ea79ad584b8959077b858cdf9305d78a92" prot="public">
+          <name>WICED_BT_GA_MCS_SINGLE_ONCE</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>A single track is played once; there is no next track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905eab23d61f1e484d71e960db4a8c46c4d46" prot="public">
+          <name>WICED_BT_GA_MCS_SINGLE_REPEAT</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>A single track is played repeatedly; the next track is the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ea6580f67dcaa19b8255b1e99ed4286fc5" prot="public">
+          <name>WICED_BT_GA_MCS_IN_ORDER_ONCE</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>The tracks within a group are played once in track order. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ea166b12fe6d8ffe8a3cd86c941ccb694e" prot="public">
+          <name>WICED_BT_GA_MCS_IN_ORDER_REPEAT</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>The tracks within a group are played in track order repeatedly. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905eafc5e1a7c91dea27f7ea41be7fb431228" prot="public">
+          <name>WICED_BT_GA_MCS_OLDEST_ONCE</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>The tracks within a group are played once only from the oldest first. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ea74b7aba4e9ff0ff2346a02eb36e6d1a3" prot="public">
+          <name>WICED_BT_GA_MCS_OLDEST_REPEAT</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>The tracks within a group are played from the oldest first repeatedly. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ea0f26c5da1baab77c20c7f4585c719100" prot="public">
+          <name>WICED_BT_GA_MCS_NEWEST_ONCE</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>The tracks within a group are played once only from the newest first. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ea31cb679b635b1b07947f939016020882" prot="public">
+          <name>WICED_BT_GA_MCS_NEWEST_REPEAT</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>The tracks within a group are played from the newest first repeatedly. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ead6e2e31dd48fb701639eaaeaddebac00" prot="public">
+          <name>WICED_BT_GA_MCS_SHUFFLE_ONCE</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+<para>The tracks within a group are played in random order once. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ea656c59938e794624c64f4ad87b837db2" prot="public">
+          <name>WICED_BT_GA_MCS_SHUFFLE_REPEAT</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+<para>The tracks within a group are played in random order repeatedly. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Media Playing order (Media Control Service Section 3.15 Playing Order) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="31" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="30" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media___control___a_p_is_1ga21fefbca714bb3ed4cf2a4efd43380ab" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_media_control_state_e</name>
+        <enumvalue id="group___media___control___a_p_is_1gga21fefbca714bb3ed4cf2a4efd43380abaea6084a45819ef7f247287dc1fbea18c" prot="public">
+          <name>WICED_BT_GA_MCS_MEDIA_INACTIVE</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>The current track is inactive. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga21fefbca714bb3ed4cf2a4efd43380aba6a50684ac557e0ae6ee4c569942052cc" prot="public">
+          <name>WICED_BT_GA_MCS_MEDIA_PLAYING</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>The current track is playing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga21fefbca714bb3ed4cf2a4efd43380aba7876891034dcb6ca01da3a057b36a308" prot="public">
+          <name>WICED_BT_GA_MCS_MEDIA_PAUSED</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>The current track is paused. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga21fefbca714bb3ed4cf2a4efd43380abae177f131f7cd7ece7797e0f661eb5227" prot="public">
+          <name>WICED_BT_GA_MCS_MEDIA_SEEKING</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>The current track is fast forwarding or fast rewinding. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Media State (Media Control Service Section 3.17 Media State) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="64" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media___control___a_p_is_1ga42c8c4b2656da4e0835d5dd6eaf58677" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_mcp_media_control_operation_e</name>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a3b7cb1b832f568fa78148de77300dec1" prot="public">
+          <name>WICED_BT_GA_MCS_INVALID</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>Invalid Operation ID. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a50a081093a163f6aa11f2cc585c14404" prot="public">
+          <name>WICED_BT_GA_MCS_PLAY</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>Start playing the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a5334ed309b5823be6986844a8c211618" prot="public">
+          <name>WICED_BT_GA_MCS_PAUSE</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>Pause playing the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a29b1ca8f5601ea9f71e3ddeb3d3f167f" prot="public">
+          <name>WICED_BT_GA_MCS_FAST_REWIND</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>Fast rewind the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a30821edcec9274000f08289f1b85ef34" prot="public">
+          <name>WICED_BT_GA_MCS_FAST_FORWARD</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>Fast forward the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677ac5f3cb3e996c749f78cb5894625374e8" prot="public">
+          <name>WICED_BT_GA_MCS_STOP</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>Stop current activity and return to stopped state. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a9795c682118ceb56f8c34b6b4a43464b" prot="public">
+          <name>WICED_BT_GA_MCS_MOVE_RELATIVE</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>Set the current position relative to the current position. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a5dec13277475b9a15a09635eb5b3c97b" prot="public">
+          <name>WICED_BT_GA_MCS_PREVIOUS_SEGMENT</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+<para>Set the current position to the previous segment of the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a0320332d4e93755fa9c0389a875f7286" prot="public">
+          <name>WICED_BT_GA_MCS_NEXT_SEGMENT</name>
+          <initializer>= 0x21</initializer>
+          <briefdescription>
+<para>Set the current position to the next segment of the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a7315e559392bd390c7dbc7fbbc5fdc41" prot="public">
+          <name>WICED_BT_GA_MCS_FIRST_SEGMENT</name>
+          <initializer>= 0x22</initializer>
+          <briefdescription>
+<para>Set the current position to the first segment of the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677ab433db369471289ff79651d63ea8b26c" prot="public">
+          <name>WICED_BT_GA_MCS_LAST_SEGMENT</name>
+          <initializer>= 0x23</initializer>
+          <briefdescription>
+<para>Set the current position to the last segment of the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a2b54928d71bfe59526dc08ab909df66e" prot="public">
+          <name>WICED_BT_GA_MCS_GOTO_SEGMENT</name>
+          <initializer>= 0x24</initializer>
+          <briefdescription>
+<para>Set the current position to the nth segment of the current track. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677aef8ba6900b298a06aef2af06a289bc15" prot="public">
+          <name>WICED_BT_GA_MCS_PREVIOUS_TRACK</name>
+          <initializer>= 0x30</initializer>
+          <briefdescription>
+<para>Set the current track to the previous track in the current group playing order. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a24ead143a77ff88ffe46b94701929513" prot="public">
+          <name>WICED_BT_GA_MCS_NEXT_TRACK</name>
+          <initializer>= 0x31</initializer>
+          <briefdescription>
+<para>Set the current track to the next track in the current group playing order. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677ad4073ab20e6f76b7320f526c0ce3a1ce" prot="public">
+          <name>WICED_BT_GA_MCS_FIRST_TRACK</name>
+          <initializer>= 0x32</initializer>
+          <briefdescription>
+<para>Set the current track to the first track in the current group playing order. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a6c5547fd5a79acd1d1a75dd0cfddb055" prot="public">
+          <name>WICED_BT_GA_MCS_LAST_TRACK</name>
+          <initializer>= 0x33</initializer>
+          <briefdescription>
+<para>Set the current track to the last track in the current group playing order. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677ac5d6e724880776570d6630807b5444a8" prot="public">
+          <name>WICED_BT_GA_MCS_GOTO_TRACK</name>
+          <initializer>= 0x34</initializer>
+          <briefdescription>
+<para>Set the current track to the nth track in the current group playing order. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a0e045cea544f2eeae74a0c0e249e90ef" prot="public">
+          <name>WICED_BT_GA_MCS_PREVIOUS_GROUP</name>
+          <initializer>= 0x40</initializer>
+          <briefdescription>
+<para>Set the current group to the previous group in the sequence of groups. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a876878b0d4a586c17f10223c957a7512" prot="public">
+          <name>WICED_BT_GA_MCS_NEXT_GROUP</name>
+          <initializer>= 0x41</initializer>
+          <briefdescription>
+<para>Set the current group to the next group in the sequence of groups. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677acf490bd938404c8705f69184886ab708" prot="public">
+          <name>WICED_BT_GA_MCS_FIRST_GROUP</name>
+          <initializer>= 0x42</initializer>
+          <briefdescription>
+<para>Set the current group to the first group in the sequence of groups. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a48b5a683290cb810fbf9556f2ab5e991" prot="public">
+          <name>WICED_BT_GA_MCS_LAST_GROUP</name>
+          <initializer>= 0x43</initializer>
+          <briefdescription>
+<para>Set the current group to the last group in the sequence of groups. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677adb964b4adc88fd633a613ecb40d4645f" prot="public">
+          <name>WICED_BT_GA_MCS_GOTO_GROUP</name>
+          <initializer>= 0x44</initializer>
+          <briefdescription>
+<para>Set the current group to the nth group in the sequence of groups. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Media Control Opcode (Media Control Service Section 3.18 Media Control Point) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="76" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="75" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___media___control___a_p_is_1ga336d0e4e80aa0c7de47887bdaa35914d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_mcp_result_e</name>
+        <enumvalue id="group___media___control___a_p_is_1gga336d0e4e80aa0c7de47887bdaa35914da4c88726820ccc09b3009bb5448542b6d" prot="public">
+          <name>WICED_BT_GA_MCS_SUCCESS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Action requested by the opcode write was completed successfully. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga336d0e4e80aa0c7de47887bdaa35914da954c7e7b80c7642c15630fe9fb4224e6" prot="public">
+          <name>WICED_BT_GA_MCS_OPCODE_NOT_SUPPORTED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>An invalid opcode was used for the Media Control Point write. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga336d0e4e80aa0c7de47887bdaa35914da7b54e294c58556269b53219f5c6da0b5" prot="public">
+          <name>WICED_BT_GA_MCS_MEDIA_PLAYER_INACTIVE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>The Media Player State characteristic value is Inactive. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___media___control___a_p_is_1gga336d0e4e80aa0c7de47887bdaa35914da1ff7696596a9b4a0f58a63a22be514d2" prot="public">
+          <name>WICED_BT_GA_MCS_COMMAND_CANNOT_BE_COMPLETED</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>The requested action of any Media Control Point write cannot be completed successfully due to a condition within the player. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Media Control Opcode (Media Control Service Section 3.18 Media Control Point, Table 3.9: Media Control Point Notification Result Codes) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="107" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="106" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___media___control___a_p_is_1gaf916a125663a55c59a306f3a4908c28b" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_media_control_playing_order_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_media_control_playing_order_t</name>
+        <briefdescription>
+<para>MCS Playing order values (see <ref refid="group___media___control___a_p_is_1gad836b7c1d6af67e63ed2ec28fb6d905e" kindref="member">wiced_bt_ga_media_control_playing_order_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="43" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media___control___a_p_is_1gae95e0e5fbadbecf2de223458c514b42a" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_media_control_state_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_media_control_state_t</name>
+        <briefdescription>
+<para>Media state (see <ref refid="group___media___control___a_p_is_1ga21fefbca714bb3ed4cf2a4efd43380ab" kindref="member">wiced_bt_ga_media_control_state_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="70" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media___control___a_p_is_1gaba609f9b3ca60bbaec1ab1ad0e1c4d41" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_mcp_media_control_operation_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_mcp_media_control_operation_t</name>
+        <briefdescription>
+<para>MCS Control point operations (see <ref refid="group___media___control___a_p_is_1ga42c8c4b2656da4e0835d5dd6eaf58677" kindref="member">wiced_bt_ga_mcp_media_control_operation_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="100" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___media___control___a_p_is_1ga96b76b5d97440009aedccaa5f1e2a7d6" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_ga_mcp_result_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_mcp_result_t</name>
+        <briefdescription>
+<para>MCP result list (see <ref refid="group___media___control___a_p_is_1ga336d0e4e80aa0c7de47887bdaa35914d" kindref="member">wiced_bt_ga_mcp_result_e</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="113" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___media___control___a_p_is_1ga4ebea163b97ed02293a0d3e702db065c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_gmcs_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_gmcs_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the GMCS service_type/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of GMCS instances to be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___media___control___a_p_is_1ga36c4daa2445a02521b7a2aa2d2b55b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_mcs_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_mcs_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the MCS service_type/profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of MCS instances to be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___media___control___a_p_is_1gae5b58fb74983a14e8da0320c644923cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_mcs_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_mcs_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable MCS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="233" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___media___control___a_p_is_1ga3425f8dda3ce55e36b7923996c6f8062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_mcs_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_mcs_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable MCS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___media___control___a_p_is_1ga8f9bf6bd5b1148e8927ded8f2115b82d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_gmcs_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_gmcs_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable GMCS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___media___control___a_p_is_1gafebb2f0522ba7082ce171a75319ce2a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_gmcs_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_gmcs_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable GMCS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___media___control___a_p_is_1ga4449990275cfaf1a145e4a652642a220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_mcs_media_track_selected</definition>
+        <argsstring>(gatt_intf_service_object_t *p_service, wiced_bool_t is_track_selected)</argsstring>
+        <name>wiced_bt_ga_mcs_media_track_selected</name>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>is_track_selected</declname>
+        </param>
+        <briefdescription>
+<para>Select track and set if media track is valid or invalid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the mcs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">is_track_selected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: True if the track selected is valid track, false otherwise </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="255" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___media___control___a_p_is_1gaac12441e72b65685108f00a4c59ad4ae" prot="public" static="no">
+        <name>MAX_MEDIA_PLAYER_NAME_LEN</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Maximum Media Player length supported by application. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="21" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga761fac3fbd9596f8f59dfa14ca2f7c9a" prot="public" static="no">
+        <name>MAX_MEDIA_TRACK_TITLE_LEN</name>
+        <initializer>100</initializer>
+        <briefdescription>
+<para>Maximum Track Title length supported by application. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="22" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga1bbdb04f88856d2660a8a933731d33e7" prot="public" static="no">
+        <name>MAX_MEDIA_EVENT_DATA_LENGTH</name>
+        <initializer>100</initializer>
+        <briefdescription>
+<para>Maximum Event Data length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="23" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga05f60e58d791b675100a10b9f207aa17" prot="public" static="no">
+        <name>MIN_MEDIA_PLAYBACK_SPEED</name>
+        <initializer>(-128)</initializer>
+        <briefdescription>
+<para>Minimum playback speed supported by MCS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="24" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gaed41256ee349acbea87d62e211055cf0" prot="public" static="no">
+        <name>MAX_MEDIA_PLAYBACK_SPEED</name>
+        <initializer>(127)</initializer>
+        <briefdescription>
+<para>Maximum playback speed supported by MCS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="25" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gada42638707803e3c30e7e9cfef5b5fd5" prot="public" static="no">
+        <name>MCS_SINGLE_ONCE_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;0)</initializer>
+        <briefdescription>
+<para>A single track is played once; there is no next track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="48" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gad3bf3c5d272bf72d9f8833a5122b5dc3" prot="public" static="no">
+        <name>MCS_SINGLE_REPEAT_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;1)</initializer>
+        <briefdescription>
+<para>A single track is played repeatedly; the next track is the current track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="49" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga04f128692ac659c234b8fa2fa92c3833" prot="public" static="no">
+        <name>MCS_IN_ORDER_ONCE_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;2)</initializer>
+        <briefdescription>
+<para>The tracks within a group are played once in track order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="50" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gaf90f01e2046d287cf192dcb1ff1a00de" prot="public" static="no">
+        <name>MCS_IN_ORDER_REPEAT_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;3)</initializer>
+        <briefdescription>
+<para>The tracks within a group are played in track order repeatedly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="51" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga9d1a8872889e232f470db9dc39d66c4a" prot="public" static="no">
+        <name>MCS_OLDEST_ONCE_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;4)</initializer>
+        <briefdescription>
+<para>The tracks within a group are played once only from the oldest first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="52" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gad3544f1b51db0b946c379b088a0e427a" prot="public" static="no">
+        <name>MCS_OLDEST_REPEAT_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;5)</initializer>
+        <briefdescription>
+<para>The tracks within a group are played from the oldest first repeatedly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="53" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gac30a18f01416c2595ec1457d9d7fb1c3" prot="public" static="no">
+        <name>MCS_NEWEST_ONCE_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;6)</initializer>
+        <briefdescription>
+<para>The tracks within a group are played once only from the newest first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="54" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga1324e6a7e716199619011652ba5da31f" prot="public" static="no">
+        <name>MCS_NEWEST_REPEAT_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;7)</initializer>
+        <briefdescription>
+<para>The tracks within a group are played from the newest first repeatedly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="55" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga3aa61b22d5fab93db27a2680c680c931" prot="public" static="no">
+        <name>MCS_SHUFFLE_ONCE_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;8)</initializer>
+        <briefdescription>
+<para>The tracks within a group are played in random order once. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="56" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga8ab5d0d5caaa621ed01bfd0d0726744b" prot="public" static="no">
+        <name>MCS_SHUFFLE_REPEAT_PLAYING_ORDER_MASK</name>
+        <initializer>(1&lt;&lt;9)</initializer>
+        <briefdescription>
+<para>The tracks within a group are played in random order repeatedly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="57" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gac7859df610d4eb977ba9406ab61fbc7e" prot="public" static="no">
+        <name>MCS_PLAY_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;0)</initializer>
+        <briefdescription>
+<para>Media Control Opcode Supported (Media Control Service Section 3.19 Media Control Point Opcodes Supported) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Start playing the current track </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="119" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gaa7b8b44e85932706d69d69915668e76f" prot="public" static="no">
+        <name>MCS_PAUSE_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;1)</initializer>
+        <briefdescription>
+<para>Pause playing the current track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="120" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga186ffda99672418455b53fcd0391b47e" prot="public" static="no">
+        <name>MCS_FAST_REWIND_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;2)</initializer>
+        <briefdescription>
+<para>Fast forward the current track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="121" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga92a41712286bde17b6c84da0fbc83c7c" prot="public" static="no">
+        <name>MCS_FAST_FORWARD_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;3)</initializer>
+        <briefdescription>
+<para>Fast rewind the current track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="122" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga240e0e471e5d479bdc0a1bbf1beb7c93" prot="public" static="no">
+        <name>MCS_STOP_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;4)</initializer>
+        <briefdescription>
+<para>Stop current activity and return to stopped state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="123" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga339d8ed6e34e4847684dd3d6e0f6b022" prot="public" static="no">
+        <name>MCS_MOVE_RELATIVE_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;5)</initializer>
+        <briefdescription>
+<para>Set the current position relative to the current position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="124" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga7160a5bba10bbe79ab9954d54a516b45" prot="public" static="no">
+        <name>MCS_PREVIOUS_SEGMENT_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;6)</initializer>
+        <briefdescription>
+<para>Set the current position to the previous segment of the current track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="125" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga039495b02b1f3b2bdf8b5ec3346391da" prot="public" static="no">
+        <name>MCS_NEXT_SEGMENT_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;7)</initializer>
+        <briefdescription>
+<para>Set the current position to the next segment of the current track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="126" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga01a60ea9e6c23158ce9c58411fbfa8e5" prot="public" static="no">
+        <name>MCS_FIRST_SEGMENT_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;8)</initializer>
+        <briefdescription>
+<para>Set the current position to the first segment of the current track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="127" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gaec58b5793befd4a1103e6346117ac400" prot="public" static="no">
+        <name>MCS_LAST_SEGMENT_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;9)</initializer>
+        <briefdescription>
+<para>Set the current position to the last segment of the current track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="128" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga51001d86be0870e40f29406d9e23f739" prot="public" static="no">
+        <name>MCS_GOTO_SEGMENT_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;10)</initializer>
+        <briefdescription>
+<para>Set the current position to the nth segment of the current track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="129" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gaac6e6a616fe6244f893bb1d2b10e3032" prot="public" static="no">
+        <name>MCS_PREVIOUS_TRACK_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;11)</initializer>
+        <briefdescription>
+<para>Set the current track to the previous track in the current group playing order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="130" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga1d2a278ca0e236c28f03bc924f315298" prot="public" static="no">
+        <name>MCS_NEXT_TRACK_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;12)</initializer>
+        <briefdescription>
+<para>Set the current track to the next track in the current group playing order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="131" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gad2bcaa8544723e5717d456c2fd19cb25" prot="public" static="no">
+        <name>MCS_FIRST_TRACK_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;13)</initializer>
+        <briefdescription>
+<para>Set the current track to the first track in the current group playing order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="132" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gaaa033cddd1a36d77ca54222ae47a5374" prot="public" static="no">
+        <name>MCS_LAST_TRACK_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;14)</initializer>
+        <briefdescription>
+<para>Set the current track to the last track in the current group playing order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="133" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1gaba043e3483154d55f4aced2dbb881254" prot="public" static="no">
+        <name>MCS_GOTO_TRACK_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;15)</initializer>
+        <briefdescription>
+<para>Set the current track to the nth track in the current group playing order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="134" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga9ecbf606d8ec2e69a0594ce2efa911a4" prot="public" static="no">
+        <name>MCS_PREVIOUS_GROUP_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;16)</initializer>
+        <briefdescription>
+<para>Set the current group to the previous group in the sequence of groups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="135" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga289046c071c0f8588c409534b705af5f" prot="public" static="no">
+        <name>MCS_NEXT_GROUP_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;17)</initializer>
+        <briefdescription>
+<para>Set the current group to the next group in the sequence of groups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="136" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga5791361d3b105785b7d6c21ee253d60f" prot="public" static="no">
+        <name>MCS_FIRST_GROUP_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;18)</initializer>
+        <briefdescription>
+<para>Set the current group to the first group in the sequence of groups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="137" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga201d0aa07b3fcc43f0da1246db4cce8a" prot="public" static="no">
+        <name>MCS_LAST_GROUP_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;19)</initializer>
+        <briefdescription>
+<para>Set the current group to the last group in the sequence of groups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="138" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga06cecc9d254c8fedd8f7d6ca5bf2d3d7" prot="public" static="no">
+        <name>MCS_GOTO_GROUP_OPCODE_SUPPORTED_MASK</name>
+        <initializer>(1&lt;&lt;20)</initializer>
+        <briefdescription>
+<para>Set the current group to the nth group in the sequence of groups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="139" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga836a4b208c12bf90ea5ec81b0e6d542a" prot="public" static="no">
+        <name>MCS_BASIC_OPCODES_SUPPORTED</name>
+        <initializer>( <ref refid="group___media___control___a_p_is_1gac7859df610d4eb977ba9406ab61fbc7e" kindref="member">MCS_PLAY_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1gaa7b8b44e85932706d69d69915668e76f" kindref="member">MCS_PAUSE_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga186ffda99672418455b53fcd0391b47e" kindref="member">MCS_FAST_REWIND_OPCODE_SUPPORTED_MASK</ref>  | \
+                                        <ref refid="group___media___control___a_p_is_1ga92a41712286bde17b6c84da0fbc83c7c" kindref="member">MCS_FAST_FORWARD_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga240e0e471e5d479bdc0a1bbf1beb7c93" kindref="member">MCS_STOP_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga339d8ed6e34e4847684dd3d6e0f6b022" kindref="member">MCS_MOVE_RELATIVE_OPCODE_SUPPORTED_MASK</ref> )</initializer>
+        <briefdescription>
+<para>Media Control Basic Opcodes supported mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="144" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga50603ef09d6a599949d2bec42761db57" prot="public" static="no">
+        <name>MCS_SEGMENT_OPCODES_SUPPORTED</name>
+        <initializer>( <ref refid="group___media___control___a_p_is_1ga7160a5bba10bbe79ab9954d54a516b45" kindref="member">MCS_PREVIOUS_SEGMENT_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga039495b02b1f3b2bdf8b5ec3346391da" kindref="member">MCS_NEXT_SEGMENT_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga01a60ea9e6c23158ce9c58411fbfa8e5" kindref="member">MCS_FIRST_SEGMENT_OPCODE_SUPPORTED_MASK</ref>  | \
+                                        <ref refid="group___media___control___a_p_is_1gaec58b5793befd4a1103e6346117ac400" kindref="member">MCS_LAST_SEGMENT_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga51001d86be0870e40f29406d9e23f739" kindref="member">MCS_GOTO_SEGMENT_OPCODE_SUPPORTED_MASK</ref> )</initializer>
+        <briefdescription>
+<para>Media Control Segment Opcodes supported mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="154" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga202922205b67a855e2a9ba271e07b10e" prot="public" static="no">
+        <name>MCS_TRACK_OPCODES_SUPPORTED</name>
+        <initializer>( <ref refid="group___media___control___a_p_is_1gaac6e6a616fe6244f893bb1d2b10e3032" kindref="member">MCS_PREVIOUS_TRACK_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga1d2a278ca0e236c28f03bc924f315298" kindref="member">MCS_NEXT_TRACK_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1gad2bcaa8544723e5717d456c2fd19cb25" kindref="member">MCS_FIRST_TRACK_OPCODE_SUPPORTED_MASK</ref>  | \
+                                        <ref refid="group___media___control___a_p_is_1gaaa033cddd1a36d77ca54222ae47a5374" kindref="member">MCS_LAST_TRACK_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1gaba043e3483154d55f4aced2dbb881254" kindref="member">MCS_GOTO_TRACK_OPCODE_SUPPORTED_MASK</ref> )</initializer>
+        <briefdescription>
+<para>Media Control Track Opcodes supported mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="163" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___media___control___a_p_is_1ga6c26845154fd50ff8895df417bc4cde1" prot="public" static="no">
+        <name>MCS_GROUP_OPCODES_SUPPORTED</name>
+        <initializer>( <ref refid="group___media___control___a_p_is_1ga9ecbf606d8ec2e69a0594ce2efa911a4" kindref="member">MCS_PREVIOUS_GROUP_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga289046c071c0f8588c409534b705af5f" kindref="member">MCS_NEXT_GROUP_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga5791361d3b105785b7d6c21ee253d60f" kindref="member">MCS_FIRST_GROUP_OPCODE_SUPPORTED_MASK</ref>  | \
+                                        <ref refid="group___media___control___a_p_is_1ga201d0aa07b3fcc43f0da1246db4cce8a" kindref="member">MCS_LAST_GROUP_OPCODE_SUPPORTED_MASK</ref> | \
+                                        <ref refid="group___media___control___a_p_is_1ga06cecc9d254c8fedd8f7d6ca5bf2d3d7" kindref="member">MCS_GOTO_GROUP_OPCODE_SUPPORTED_MASK</ref> )</initializer>
+        <briefdescription>
+<para>Media Control Group Opcodes supported mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="172" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MCS/GMCS exposes characteristics that describe a single media player. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A media player in this context is a device, or part of a device, that allows another device to control the media that is played. For example, a media player could be a television, a set-top box, a radio, a phone running a radio or music application, a phone running a podcast application, or a similar type of device or application. MCS does not directly manage the audio transport GMCS provides status and control of media playback for the device as a single unit. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

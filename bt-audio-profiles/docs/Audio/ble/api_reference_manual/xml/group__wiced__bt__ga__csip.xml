@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__ga__csip" kind="group">
+    <compoundname>Wiced_bt_ga_csip</compoundname>
+    <title>Wiced_bt_ga_csip</title>
+    <innerclass refid="structwiced__bt__ga__csip__set__entry" prot="public">wiced_bt_ga_csip_set_entry</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__ga__csip_1gaf99a18b86149b1e8b40483ca83a29d1c" prot="public" static="no">
+        <type>wiced_bt_gatt_status_t(*</type>
+        <definition>typedef wiced_bt_gatt_status_t(* wiced_bt_ordered_access_procedure_cmpl_cb) (gatt_intf_service_object_t *p_csip_inst, void *p_data, wiced_bt_gatt_status_t status)</definition>
+        <argsstring>)(gatt_intf_service_object_t *p_csip_inst, void *p_data, wiced_bt_gatt_status_t status)</argsstring>
+        <name>wiced_bt_ordered_access_procedure_cmpl_cb</name>
+        <briefdescription>
+<para>Ordered Access complete callback to be set by the application, this will be invoked once the ordered access procedure is complete. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="41" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__csip_1ga3462af3e15c8ac9574b8451a0a4a3666" prot="public" static="no">
+        <type>wiced_bt_gatt_status_t(*</type>
+        <definition>typedef wiced_bt_gatt_status_t(* wiced_bt_lock_procedure_cmpl_cb) (gatt_intf_service_object_t *p_csip_inst, void *p_data, wiced_bt_gatt_status_t status)</definition>
+        <argsstring>)(gatt_intf_service_object_t *p_csip_inst, void *p_data, wiced_bt_gatt_status_t status)</argsstring>
+        <name>wiced_bt_lock_procedure_cmpl_cb</name>
+        <briefdescription>
+<para>Lock procedure complete callback to be set by the application, this will be invoked once the lock procedure is complete. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="45" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__csip_1ga61a414ec1fbfebe896e803e398ebda9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_ga_csip_check_if_belongs_to_coordinated_set</definition>
+        <argsstring>(wiced_ble_ext_scan_results_t *p_adv_report, uint16_t adv_len, uint8_t *p_adv_data, SIRK *p_sirk)</argsstring>
+        <name>wiced_bt_ga_csip_check_if_belongs_to_coordinated_set</name>
+        <param>
+          <type>wiced_ble_ext_scan_results_t *</type>
+          <declname>p_adv_report</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>adv_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_adv_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref> *</type>
+          <declname>p_sirk</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the device belong to the co-ordinated set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if PSRI belongs to the co-ordinated set</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_adv_report</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>adv_report of the scan </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: adv data of the scan </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_sirk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: sirk value of the co-ordinate set to be found</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bool_t WICED_TRUE if psri belongs to coordinated set of sirk </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csip_1ga72facf625a3b0346e11ff09018f3fb0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_csip_read_set_identity_resolving_key</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service)</argsstring>
+        <name>wiced_bt_ga_csip_read_set_identity_resolving_key</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <briefdescription>
+<para>Read set identification resolving key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads the set identification resolving key characteristic of the csis</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the coordinated set identification client</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the read operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csip_1ga8a4a4cfb4788dc039111e444120eb7e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_csip_read_lock_value</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service)</argsstring>
+        <name>wiced_bt_ga_csip_read_lock_value</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <briefdescription>
+<para>Read lock state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads the lock state of the csis instance</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the coordinated set identification client</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the read operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csip_1ga1e705b087fdea85ef34da3f0d7dbcbc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_csip_request_lock</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, wiced_bt_ga_csis_lock_val_t lock_val)</argsstring>
+        <name>wiced_bt_ga_csip_request_lock</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1ga1710461f12a7630b4f5667924addc423" kindref="member">wiced_bt_ga_csis_lock_val_t</ref></type>
+          <declname>lock_val</declname>
+        </param>
+        <briefdescription>
+<para>Set lock state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the lock state of the csis instance</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: instance of the coordinated set identification client </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">lock_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: lock value to be set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_bt_gatt_status_t result of the read operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csip_1gac40634a80c8fca5fd3702c073cd85cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t wiced_bt_ga_csip_start_lock_procedure</definition>
+        <argsstring>(wiced_bt_ga_csip_set_entry *p_set, int num_instances, wiced_bt_ga_csis_lock_val_t lock_val, wiced_bt_lock_procedure_cmpl_cb cb, void *p_data)</argsstring>
+        <name>wiced_bt_ga_csip_start_lock_procedure</name>
+        <param>
+          <type><ref refid="structwiced__bt__ga__csip__set__entry" kindref="compound">wiced_bt_ga_csip_set_entry</ref> *</type>
+          <declname>p_set</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csis__common_1ga1710461f12a7630b4f5667924addc423" kindref="member">wiced_bt_ga_csis_lock_val_t</ref></type>
+          <declname>lock_val</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csip_1ga3462af3e15c8ac9574b8451a0a4a3666" kindref="member">wiced_bt_lock_procedure_cmpl_cb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>Lock Procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tries to aquire lock from the least rank device to highest rank. If any device responds with lock denied unlocks already locked devices.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: csip set member entries to perform lock procedure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: number of client instances sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">lock_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: lock value to be set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: callback returned when the complete lock procedure is completed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer : this will be return in given cb </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csip_1ga6e36395619dd9d6921671f9d29615046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_csip_start_ordered_access_procedure</definition>
+        <argsstring>(wiced_bt_ga_csip_set_entry *p_set, int num_instances, wiced_bt_ordered_access_procedure_cmpl_cb cb, void *p_data)</argsstring>
+        <name>wiced_bt_ga_csip_start_ordered_access_procedure</name>
+        <param>
+          <type><ref refid="structwiced__bt__ga__csip__set__entry" kindref="compound">wiced_bt_ga_csip_set_entry</ref> *</type>
+          <declname>p_set</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__csip_1gaf99a18b86149b1e8b40483ca83a29d1c" kindref="member">wiced_bt_ordered_access_procedure_cmpl_cb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>Ordered Access Procedure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads lock value from the least rank device to highest rank. If any device responds with locked, returns with the event WICED_BT_GA_CSIP_ORDERED_ACCESS_PROCEDURE_COMPLETE with status set to the procedure status</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: csip set member entries to be locked </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: number of client instances sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: callback returned when the complete ordered access procedure is completed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer : this will be return in given cb </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__csip_1ga9a808d74d2a4ae78097e7df1b15b0fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_ga_csip_is_lock_procedure_in_progress</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_csip_is_lock_procedure_in_progress</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks if lock procedure is in progress. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wiced_bool_t WICED_TRUE if lock procedure is in progress </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__ga__csip_1gadadd09c000ca942d62ecf0296eca85f1" prot="public" static="no">
+        <name>WICED_BT_GA_CSIP_SET_MEMBER_DISCOVERY_TIMEOUT_IN_SEC</name>
+        <initializer>10</initializer>
+        <briefdescription>
+<para>CSIP timeout to discover the set members set at 10 seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="38" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

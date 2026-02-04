@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wicedbt__a2dp__src" kind="group">
+    <compoundname>wicedbt_a2dp_src</compoundname>
+    <title>Advanced Audio Distribution Profile (A2DP) Source</title>
+    <innerclass refid="structwiced__bt__a2dp__source__codec__info__list__t" prot="public">wiced_bt_a2dp_source_codec_info_list_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__config__data__t" prot="public">wiced_bt_a2dp_source_config_data_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__config__data__ext__t" prot="public">wiced_bt_a2dp_source_config_data_ext_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__status__t" prot="public">wiced_bt_a2dp_source_status_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__start__t" prot="public">wiced_bt_a2dp_source_start_t</innerclass>
+    <innerclass refid="structwiced__bt__a2dp__source__config__t" prot="public">wiced_bt_a2dp_source_config_t</innerclass>
+    <innerclass refid="unionwiced__bt__a2dp__source__event__data__t" prot="public">wiced_bt_a2dp_source_event_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wicedbt__a2dp__src_1ga5fd2aac50304a14f4f2c8740c721bfab" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_a2dp_source_event_t</name>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfababe0327c10e4a0610a4d8481c2f286371" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_CONNECT_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfabae73d2fd68adf35b21a89a985f9a01696" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_DISCONNECT_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba584bf5af7cfb810f09ec43a1e538fac4" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_START_IND_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba2077d7b7fda3a7783ac107bc9b60bc44" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_START_CFM_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfabafa168914df247001b48066a9d4a08090" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_SUSPEND_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba6626614fa7bf09d2cb41699b24af49b2" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_CONFIGURE_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba32c11d3ca08054c2119894721bafb7d2" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_WRITE_CFM_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga5fd2aac50304a14f4f2c8740c721bfaba7ca9f5f38cfd59e2ed04a633a4b2586d" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_DELAY_RPT_EVT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="95" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="94" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wicedbt__a2dp__src_1ga2b2ea8e292c6162dbece732d060c1e07" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_a2dp_source_feature_mask_t</name>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga2b2ea8e292c6162dbece732d060c1e07aa1d66047d783eac57e73844ee2f85627" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_FEAT_PROTECT</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wicedbt__a2dp__src_1gga2b2ea8e292c6162dbece732d060c1e07a2560ffa4a5c0739fc79a15caea490097" prot="public">
+          <name>WICED_BT_A2DP_SOURCE_FEAT_DELAY_RPT</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="109" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="108" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_a2dp_source_control_cb_t) (wiced_bt_a2dp_source_event_t event, wiced_bt_a2dp_source_event_data_t *p_data)</definition>
+        <argsstring>)(wiced_bt_a2dp_source_event_t event, wiced_bt_a2dp_source_event_data_t *p_data)</argsstring>
+        <name>wiced_bt_a2dp_source_control_cb_t</name>
+        <briefdescription>
+<para>The A2DP Control path callback type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application implements a callback of this type to receive A2DP control path events. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of event being notified to app. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to data associated with the event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="198" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga64e646849124fda257b1e142df1ec59d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_init</definition>
+        <argsstring>(wiced_bt_a2dp_source_config_data_t *p_config_data, wiced_bt_a2dp_source_control_cb_t control_cb, wiced_bt_heap_t *heap)</argsstring>
+        <name>wiced_bt_a2dp_source_init</name>
+        <param>
+          <type><ref refid="structwiced__bt__a2dp__source__config__data__t" kindref="compound">wiced_bt_a2dp_source_config_data_t</ref> *</type>
+          <declname>p_config_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kindref="member">wiced_bt_a2dp_source_control_cb_t</ref></type>
+          <declname>control_cb</declname>
+        </param>
+        <param>
+          <type>wiced_bt_heap_t *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+<para>API to initialize the A2DP SOURCE component and register with the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>[Deprecated]</para>
+<para>Called by the application before any other API is called. The application provides source configuration data and control and data callbacks to receive control events and data packets, respectively. Replaced with wiced_bt_a2dp_source_init_ext. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_config_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A2DP source configuration parameters. This should remain valid until deinit is called as the pointer is stored and used inside the library. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">control_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function for receiving source events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">heap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wiced_bt_heap_t pointer to be used in A2dp source profile library </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1gaf76285c3f3c36bea183f2cd05d343b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_init_ext</definition>
+        <argsstring>(wiced_bt_a2dp_source_config_data_ext_t *p_config_data, wiced_bt_a2dp_source_control_cb_t control_cb, wiced_bt_heap_t *heap)</argsstring>
+        <name>wiced_bt_a2dp_source_init_ext</name>
+        <param>
+          <type><ref refid="structwiced__bt__a2dp__source__config__data__ext__t" kindref="compound">wiced_bt_a2dp_source_config_data_ext_t</ref> *</type>
+          <declname>p_config_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kindref="member">wiced_bt_a2dp_source_control_cb_t</ref></type>
+          <declname>control_cb</declname>
+        </param>
+        <param>
+          <type>wiced_bt_heap_t *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+<para>API to initialize the A2DP SOURCE component and register with the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application before any other API is called. The application provides source configuration data and control and data callbacks to receive control events and data packets, respectively. The order of codecs in codec_capabilities is important. This is used to decide which peer sep we open stream on. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_config_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A2DP source configuration parameters. This should remain valid until deinit is called as the pointer is stored and used inside the library. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">control_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function for receiving source events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">heap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wiced_bt_heap_t pointer to be used in A2dp source profile library </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1gae424889596c4bf6ecba3e9719669c35e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_deinit</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_a2dp_source_deinit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>The API to deregister from the stack and to clean up the memory of A2DP source component. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application when A2DP source component is no longer needed by it. <simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga484c0b6eaa8b1e4bf73b4e131d89eeb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_connect</definition>
+        <argsstring>(wiced_bt_device_address_t bd_address)</argsstring>
+        <name>wiced_bt_a2dp_source_connect</name>
+        <param>
+          <type>wiced_bt_device_address_t</type>
+          <declname>bd_address</declname>
+        </param>
+        <briefdescription>
+<para>The API to connect to a peer device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the app to establish A2DP connection with a peer device. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bd_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Bluetooth device address of the device to which connection is requested. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1gadbd6a259d7be9441f3385e432ad1d75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_disconnect</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_a2dp_source_disconnect</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>The API to disconnect the connection from a connected peer device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application to disconnect from a connected A2DP source. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to the peer device to disconnect from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga39b26b04f3ace9751414828fe5c202cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_start</definition>
+        <argsstring>(uint16_t handle, wiced_bt_a2dp_codec_info_t *codec_info)</argsstring>
+        <name>wiced_bt_a2dp_source_start</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>wiced_bt_a2dp_codec_info_t *</type>
+          <declname>codec_info</declname>
+        </param>
+        <briefdescription>
+<para>The API to start streaming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application when it wants to indicate the peer to start streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to peer device to create a streaming connection. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">codec_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Codec configuration structure pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga22bbe0c4cc3a5bc2ed0e67f17e76b383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_send_start_response</definition>
+        <argsstring>(uint16_t handle, uint8_t label, uint8_t status)</argsstring>
+        <name>wiced_bt_a2dp_source_send_start_response</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>The API to send a start response on receiving a start request from the peer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application when it wants to indicate the peer that it is ready to start streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to peer device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transaction label </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates if a start request is accepted(AVDT_SUCCESS) or rejected(AVDT Error codes) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga3e06972c21d81492d1f12f003cecfbe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_suspend</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>wiced_bt_a2dp_source_suspend</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>The API to suspend streaming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application when the streaming is to be suspended. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to peer device for which streaming is suspended. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="292" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga83372db916adc5b4fbef423a844bc8fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_start_streaming</definition>
+        <argsstring>(uint8_t handle, uint8_t *p_media_buf, uint16_t buf_len, uint32_t time_stamp, uint8_t m_pt)</argsstring>
+        <name>wiced_bt_a2dp_source_start_streaming</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_media_buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>buf_len</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>time_stamp</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>m_pt</declname>
+        </param>
+        <briefdescription>
+<para>The API to send media data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by the application after streaming is started. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle corresponding to peer device for which streaming is suspended. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_media_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the media buffer to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_stamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time stamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">m_pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Marker and payload byte </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wiced_result_t (WICED_BT_XXX) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="305" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wicedbt__a2dp__src_1ga42d679bbdbba668cbd6703cfecf3ee01" prot="public" static="no">
+        <name>WICED_BT_A2DP_SOURCE_NUM_CODECS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="76" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wicedbt__a2dp__src_1ga28113bee5470bcff086d9c02325b6d3a" prot="public" static="no">
+        <name>WICED_BT_A2DP_SOURCE_NUM_SEPS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="85" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This section describes Advanced Audio Distribution Profile Source interfaces. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

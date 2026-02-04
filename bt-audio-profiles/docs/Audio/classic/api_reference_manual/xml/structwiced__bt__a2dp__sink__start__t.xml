@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__a2dp__sink__start__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_a2dp_sink_start_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__a2dp__sink__start__t_1ad9ce89610a5fa25717da5f59cb960e7d" prot="public" static="no" mutable="no">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_sink_start_t::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" line="160" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__a2dp__sink__start__t_1aaca42bdae1d61e331b3431b549c046f1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_a2dp_sink_start_t::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" line="161" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__a2dp__sink__start__t_1a85ba413dc4a8165017aafd3cfb4e729c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_a2dp_sink_start_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" line="162" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__a2dp__sink__start__t_1a35d79d9512a8b81dc0508e4d355d577b" prot="public" static="no" mutable="no">
+        <type>wiced_bt_device_address_t</type>
+        <definition>wiced_bt_device_address_t wiced_bt_a2dp_sink_start_t::bdaddr</definition>
+        <argsstring></argsstring>
+        <name>bdaddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" line="163" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" line="159" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_sink.h" bodystart="158" bodyend="164"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__a2dp__sink__start__t_1a35d79d9512a8b81dc0508e4d355d577b" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_start_t</scope><name>bdaddr</name></member>
+      <member refid="structwiced__bt__a2dp__sink__start__t_1a85ba413dc4a8165017aafd3cfb4e729c" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_start_t</scope><name>handle</name></member>
+      <member refid="structwiced__bt__a2dp__sink__start__t_1aaca42bdae1d61e331b3431b549c046f1" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_start_t</scope><name>label</name></member>
+      <member refid="structwiced__bt__a2dp__sink__start__t_1ad9ce89610a5fa25717da5f59cb960e7d" prot="public" virt="non-virtual"><scope>wiced_bt_a2dp_sink_start_t</scope><name>result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

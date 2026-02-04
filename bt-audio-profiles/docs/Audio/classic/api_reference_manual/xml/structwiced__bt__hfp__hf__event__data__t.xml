@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__hfp__hf__event__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_hfp_hf_event_data_t</compoundname>
+    <includes local="no">wiced_bt_hfp_hf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a89603a1f276efda27aaab5ad4b29eb85" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_hfp_hf_event_data_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+<para>Connection Handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="337" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a856ea7e2935f44e24dc7ba697d4a5b65" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__hf__connection__data__t" kindref="compound">wiced_bt_hfp_hf_connection_data_t</ref></type>
+        <definition>wiced_bt_hfp_hf_connection_data_t wiced_bt_hfp_hf_event_data_t::conn_data</definition>
+        <argsstring></argsstring>
+        <name>conn_data</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_CONNECTION_STATE_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="340" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1af5628dd8acf49925194854b9680af88d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_hfp_hf_event_data_t::ag_feature_flags</definition>
+        <argsstring></argsstring>
+        <name>ag_feature_flags</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_AG_FEATURE_SUPPORT_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="341" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1aac25061b2fb5dead53e2c4ba29c2f96b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1ga5becf2b81ab9966b180f2ae1a8526872" kindref="member">wiced_bt_hfp_hf_service_state_t</ref></type>
+        <definition>wiced_bt_hfp_hf_service_state_t wiced_bt_hfp_hf_event_data_t::service_state</definition>
+        <argsstring></argsstring>
+        <name>service_state</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_SERVICE_STATE_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="342" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a4c5b8b30b8343ac55f291d7c62165fed" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1ga31769d2412c71d378f690799a3cb82ec" kindref="member">wiced_bt_hfp_hf_service_type_t</ref></type>
+        <definition>wiced_bt_hfp_hf_service_type_t wiced_bt_hfp_hf_event_data_t::service_type</definition>
+        <argsstring></argsstring>
+        <name>service_type</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_SERVICE_TYPE_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="343" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a196d9c80d77a5f70c89fc2fa430baeeb" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__hf__call__data__t" kindref="compound">wiced_bt_hfp_hf_call_data_t</ref></type>
+        <definition>wiced_bt_hfp_hf_call_data_t wiced_bt_hfp_hf_event_data_t::call_data</definition>
+        <argsstring></argsstring>
+        <name>call_data</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_CALL_STATE_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="344" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a77fe28a21ba1d297372a4d85be66f14d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1gaefc3137ceb787ec502a62411336f1aef" kindref="member">wiced_bt_hfp_hf_inband_ring_state_t</ref></type>
+        <definition>wiced_bt_hfp_hf_inband_ring_state_t wiced_bt_hfp_hf_event_data_t::inband_ring</definition>
+        <argsstring></argsstring>
+        <name>inband_ring</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_INBAND_RING_STATE_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="345" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a4b750493588ca295988f8025606976a7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_event_data_t::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_RSSI_IND_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="346" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a770c4d4c5cb7f753c2c672a4c5aebaa9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_event_data_t::battery_level</definition>
+        <argsstring></argsstring>
+        <name>battery_level</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_BATTERY_STATUS_IND_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="347" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1afc6b48244354f69c819c1c9f0d539352" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__hf__volume__data__t" kindref="compound">wiced_bt_hfp_hf_volume_data_t</ref></type>
+        <definition>wiced_bt_hfp_hf_volume_data_t wiced_bt_hfp_hf_event_data_t::volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_VOLUME_CHANGE_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="348" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a31abef670c2bab5759f4607c96bcfb58" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__hf__clip__data__t" kindref="compound">wiced_bt_hfp_hf_clip_data_t</ref></type>
+        <definition>wiced_bt_hfp_hf_clip_data_t wiced_bt_hfp_hf_event_data_t::clip</definition>
+        <argsstring></argsstring>
+        <name>clip</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_CLIP_IND_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="349" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a2ffecfa93368ea1886320382654a54e3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1ga68111fa7a4a27221e466b90f7d70c19b" kindref="member">wiced_bt_hfp_hf_codec_t</ref></type>
+        <definition>wiced_bt_hfp_hf_codec_t wiced_bt_hfp_hf_event_data_t::selected_codec</definition>
+        <argsstring></argsstring>
+        <name>selected_codec</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HFP_CODEC_SET_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="350" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a552920d96fe47b00d89dfb5a930e1aae" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__hf__active__call__t" kindref="compound">wiced_bt_hfp_hf_active_call_t</ref></type>
+        <definition>wiced_bt_hfp_hf_active_call_t wiced_bt_hfp_hf_event_data_t::active_call</definition>
+        <argsstring></argsstring>
+        <name>active_call</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HFP_ACTIVE_CALL_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="351" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a523eab9383886a8aefb2a0e17d953c16" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_event_data_t::error_code</definition>
+        <argsstring></argsstring>
+        <name>error_code</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_CME_ERROR_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="352" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1afd5407555a953f3deba37ba9aa8cf527" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1gac5d8d1e0a4813afc504792aaa919238b" kindref="member">wiced_bt_hfp_hf_at_result_code_t</ref></type>
+        <definition>wiced_bt_hfp_hf_at_result_code_t wiced_bt_hfp_hf_event_data_t::cnum_data</definition>
+        <argsstring></argsstring>
+        <name>cnum_data</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_CNUM_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="353" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1ab0bfddc8a585742d6a3e03242bf487f5" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__hf__clip__data__t" kindref="compound">wiced_bt_hfp_hf_clip_data_t</ref></type>
+        <definition>wiced_bt_hfp_hf_clip_data_t wiced_bt_hfp_hf_event_data_t::binp_data</definition>
+        <argsstring></argsstring>
+        <name>binp_data</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_BINP_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="354" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1ae1a9e0de7165cc86fd61840c1cf749f8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_hfp_hf_event_data_t::voice_recognition</definition>
+        <argsstring></argsstring>
+        <name>voice_recognition</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_VOICE_RECOGNITION_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="355" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a85ba8210bca06ad91dad398e13306123" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__hfp__hf__bind__data__t" kindref="compound">wiced_bt_hfp_hf_bind_data_t</ref></type>
+        <definition>wiced_bt_hfp_hf_bind_data_t wiced_bt_hfp_hf_event_data_t::bind_data</definition>
+        <argsstring></argsstring>
+        <name>bind_data</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_BINP_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="356" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a4efca561d612747b133cd34bb6d47451" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1gac6ee0ce03112fee33e032ccda1165968" kindref="member">wiced_bt_hfp_hf_operator_name</ref></type>
+        <definition>wiced_bt_hfp_hf_operator_name wiced_bt_hfp_hf_event_data_t::cops_data</definition>
+        <argsstring></argsstring>
+        <name>cops_data</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_COPS_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="357" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1ad942926470e64cff2299517f35dc65d0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wicedbt__hfp_1gab2066e9cbcdba2bca1a4fffd0bce9cf7" kindref="member">wiced_bt_hfp_hf_btrh_response_t</ref></type>
+        <definition>wiced_bt_hfp_hf_btrh_response_t wiced_bt_hfp_hf_event_data_t::btrh_result</definition>
+        <argsstring></argsstring>
+        <name>btrh_result</name>
+        <briefdescription>
+<para>Payload for WICED_BT_HFP_HF_BTRH_EVT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="358" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__hfp__hf__event__data__t_1a28888b1fc97c452fd29257884338e9e6" prot="public" static="no" mutable="no">
+        <type>union wiced_bt_hfp_hf_event_data_t::@0</type>
+        <definition>union wiced_bt_hfp_hf_event_data_t::@0 wiced_bt_hfp_hf_event_data_t::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="359" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HF Event Data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="85">
+        <label>wiced_bt_hfp_hf_active_call_t</label>
+        <link refid="structwiced__bt__hfp__hf__active__call__t"/>
+      </node>
+      <node id="88">
+        <label>wiced_bt_hfp_hf_connection_data_t</label>
+        <link refid="structwiced__bt__hfp__hf__connection__data__t"/>
+      </node>
+      <node id="84">
+        <label>wiced_bt_hfp_hf_event_data_t</label>
+        <link refid="structwiced__bt__hfp__hf__event__data__t"/>
+        <childnode refid="85" relation="usage">
+          <edgelabel>active_call</edgelabel>
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>bind_data</edgelabel>
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>call_data</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>conn_data</edgelabel>
+        </childnode>
+        <childnode refid="89" relation="usage">
+          <edgelabel>binp_data</edgelabel>
+          <edgelabel>clip</edgelabel>
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>volume</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>wiced_bt_hfp_hf_bind_data_t</label>
+        <link refid="structwiced__bt__hfp__hf__bind__data__t"/>
+      </node>
+      <node id="89">
+        <label>wiced_bt_hfp_hf_clip_data_t</label>
+        <link refid="structwiced__bt__hfp__hf__clip__data__t"/>
+      </node>
+      <node id="90">
+        <label>wiced_bt_hfp_hf_volume_data_t</label>
+        <link refid="structwiced__bt__hfp__hf__volume__data__t"/>
+      </node>
+      <node id="87">
+        <label>wiced_bt_hfp_hf_call_data_t</label>
+        <link refid="structwiced__bt__hfp__hf__call__data__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="336" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="335" bodyend="360"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a552920d96fe47b00d89dfb5a930e1aae" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>active_call</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1af5628dd8acf49925194854b9680af88d" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>ag_feature_flags</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a770c4d4c5cb7f753c2c672a4c5aebaa9" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>battery_level</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a85ba8210bca06ad91dad398e13306123" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>bind_data</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1ab0bfddc8a585742d6a3e03242bf487f5" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>binp_data</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1ad942926470e64cff2299517f35dc65d0" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>btrh_result</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a196d9c80d77a5f70c89fc2fa430baeeb" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>call_data</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a31abef670c2bab5759f4607c96bcfb58" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>clip</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1afd5407555a953f3deba37ba9aa8cf527" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>cnum_data</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a856ea7e2935f44e24dc7ba697d4a5b65" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>conn_data</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a4efca561d612747b133cd34bb6d47451" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>cops_data</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a523eab9383886a8aefb2a0e17d953c16" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>error_code</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a89603a1f276efda27aaab5ad4b29eb85" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>handle</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a77fe28a21ba1d297372a4d85be66f14d" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>inband_ring</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a4b750493588ca295988f8025606976a7" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>rssi</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a2ffecfa93368ea1886320382654a54e3" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>selected_codec</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1aac25061b2fb5dead53e2c4ba29c2f96b" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>service_state</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1a4c5b8b30b8343ac55f291d7c62165fed" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>service_type</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1ae1a9e0de7165cc86fd61840c1cf749f8" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>voice_recognition</name></member>
+      <member refid="structwiced__bt__hfp__hf__event__data__t_1afc6b48244354f69c819c1c9f0d539352" prot="public" virt="non-virtual"><scope>wiced_bt_hfp_hf_event_data_t</scope><name>volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

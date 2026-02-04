@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__ascs__cp__cmd__sts__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_ascs_cp_cmd_sts_t</compoundname>
+    <includes local="no">wiced_bt_ga_ascs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__cmd__sts__t_1a5f562201bad8ad239aeb529a9e42df93" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_cp_cmd_sts_t::ase_id</definition>
+        <argsstring></argsstring>
+        <name>ase_id</name>
+        <briefdescription>
+<para>ASE id of the status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="215" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__cmd__sts__t_1a9f8c9f19370485653ccabb00b60c69ec" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__ascs_1ga6f448c51359fc19766bf7998f304b9c0" kindref="member">wiced_bt_ga_ascs_cp_response_code_t</ref></type>
+        <definition>wiced_bt_ga_ascs_cp_response_code_t wiced_bt_ga_ascs_cp_cmd_sts_t::response_code</definition>
+        <argsstring></argsstring>
+        <name>response_code</name>
+        <briefdescription>
+<para>Response code of the status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="216" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__cmd__sts__t_1a91a650cafe1c530645ec3b0f72bac0d5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__ascs_1ga43d4b221db4d0499c22ccb7b22222537" kindref="member">wiced_bt_ga_ascs_cp_err_reason_t</ref></type>
+        <definition>wiced_bt_ga_ascs_cp_err_reason_t wiced_bt_ga_ascs_cp_cmd_sts_t::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+<para>Error reason if any. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="217" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>defines the information to be provided by the application when rejecting a request from client </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="214" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="213" bodyend="218"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__ascs__cp__cmd__sts__t_1a5f562201bad8ad239aeb529a9e42df93" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_cmd_sts_t</scope><name>ase_id</name></member>
+      <member refid="structwiced__bt__ga__ascs__cp__cmd__sts__t_1a91a650cafe1c530645ec3b0f72bac0d5" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_cmd_sts_t</scope><name>reason</name></member>
+      <member refid="structwiced__bt__ga__ascs__cp__cmd__sts__t_1a9f8c9f19370485653ccabb00b60c69ec" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_cmd_sts_t</scope><name>response_code</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

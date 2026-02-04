@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__ga__vcs__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_vcs_data_t</compoundname>
+    <includes local="no">wiced_bt_ga_vcs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__ga__vcs__data__t_1a386ed91a6d44daf3967188f5e525a53b" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__vcs__control__point__t" kindref="compound">wiced_bt_ga_vcs_control_point_t</ref></type>
+        <definition>wiced_bt_ga_vcs_control_point_t wiced_bt_ga_vcs_data_t::control_point_data</definition>
+        <argsstring></argsstring>
+        <name>control_point_data</name>
+        <briefdescription>
+<para>volume information </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="90" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__vcs__data__t_1a7c8233554e3ba444c1474ee4fef302ab" prot="public" static="no" mutable="no">
+        <type><ref refid="group___generic___structures_1ga586763db26059b7048666921829f9b59" kindref="member">wiced_bt_ga_volume_flag_val_t</ref></type>
+        <definition>wiced_bt_ga_volume_flag_val_t wiced_bt_ga_vcs_data_t::volume_flag</definition>
+        <argsstring></argsstring>
+        <name>volume_flag</name>
+        <briefdescription>
+<para>volume persistence flag </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="91" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__ga__vcs__data__t_1a8570739095ef92f6c8880aa1e6442613" prot="public" static="no" mutable="no">
+        <type><ref refid="structvcs__included__t" kindref="compound">vcs_included_t</ref></type>
+        <definition>vcs_included_t wiced_bt_ga_vcs_data_t::volume_included</definition>
+        <argsstring></argsstring>
+        <name>volume_included</name>
+        <briefdescription>
+<para>volume included service data </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="92" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Volume service data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="343">
+        <label>vocs_opcode_t</label>
+        <link refid="structvocs__opcode__t"/>
+      </node>
+      <node id="341">
+        <label>wiced_bt_ga_aics_gain_settings_params_t</label>
+        <link refid="structwiced__bt__ga__aics__gain__settings__params__t"/>
+      </node>
+      <node id="345">
+        <label>wiced_bt_ga_vcs_volume_state_t</label>
+        <link refid="structwiced__bt__ga__vcs__volume__state__t"/>
+      </node>
+      <node id="337">
+        <label>vcs_included_t</label>
+        <link refid="structvcs__included__t"/>
+        <childnode refid="338" relation="usage">
+          <edgelabel>p_aics</edgelabel>
+        </childnode>
+        <childnode refid="342" relation="usage">
+          <edgelabel>p_vocs</edgelabel>
+        </childnode>
+      </node>
+      <node id="338">
+        <label>wiced_bt_ga_aics_data_t</label>
+        <link refid="unionwiced__bt__ga__aics__data__t"/>
+        <childnode refid="339" relation="usage">
+          <edgelabel>control_point</edgelabel>
+        </childnode>
+        <childnode refid="340" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+        <childnode refid="341" relation="usage">
+          <edgelabel>gain_setting</edgelabel>
+        </childnode>
+      </node>
+      <node id="342">
+        <label>wiced_bt_ga_vocs_data_t</label>
+        <link refid="unionwiced__bt__ga__vocs__data__t"/>
+        <childnode refid="343" relation="usage">
+          <edgelabel>control_point</edgelabel>
+        </childnode>
+      </node>
+      <node id="340">
+        <label>wiced_bt_ga_aics_input_state_t</label>
+        <link refid="structwiced__bt__ga__aics__input__state__t"/>
+      </node>
+      <node id="339">
+        <label>wiced_bt_ga_aics_control_point_t</label>
+        <link refid="structwiced__bt__ga__aics__control__point__t"/>
+        <childnode refid="340" relation="usage">
+          <edgelabel>input_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="344">
+        <label>wiced_bt_ga_vcs_control_point_t</label>
+        <link refid="structwiced__bt__ga__vcs__control__point__t"/>
+        <childnode refid="345" relation="usage">
+          <edgelabel>volume_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="336">
+        <label>wiced_bt_ga_vcs_data_t</label>
+        <link refid="unionwiced__bt__ga__vcs__data__t"/>
+        <childnode refid="337" relation="usage">
+          <edgelabel>volume_included</edgelabel>
+        </childnode>
+        <childnode refid="344" relation="usage">
+          <edgelabel>control_point_data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="89" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="89" bodyend="93"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__ga__vcs__data__t_1a386ed91a6d44daf3967188f5e525a53b" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vcs_data_t</scope><name>control_point_data</name></member>
+      <member refid="unionwiced__bt__ga__vcs__data__t_1a7c8233554e3ba444c1474ee4fef302ab" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vcs_data_t</scope><name>volume_flag</name></member>
+      <member refid="unionwiced__bt__ga__vcs__data__t_1a8570739095ef92f6c8880aa1e6442613" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vcs_data_t</scope><name>volume_included</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

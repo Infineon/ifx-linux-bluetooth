@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__bass__set__broadcast__code__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_bass_set_broadcast_code_t</compoundname>
+    <includes local="no">wiced_bt_ga_bass.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__set__broadcast__code__t_1a18a441b22bebb9b02f130532c521db9c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bass_set_broadcast_code_t::source_id</definition>
+        <argsstring></argsstring>
+        <name>source_id</name>
+        <briefdescription>
+<para>Source_ID assigned by the server to a Broadcast Receive State characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="118" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bass__set__broadcast__code__t_1a40a589f0b70a6c61fb9f64d541d3c97e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__bap_1gae0cdaca69053f685e1ba06266dbd4788" kindref="member">wiced_bt_bap_broadcast_code_t</ref></type>
+        <definition>wiced_bt_bap_broadcast_code_t wiced_bt_ga_bass_set_broadcast_code_t::broadcast_code</definition>
+        <argsstring></argsstring>
+        <name>broadcast_code</name>
+        <briefdescription>
+<para>Broadcast_Code for the Source_ID assigned to a Broadcast Receive State characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="119" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BASS Set Broadcast Code Operation parameter. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="117" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="116" bodyend="121"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__bass__set__broadcast__code__t_1a40a589f0b70a6c61fb9f64d541d3c97e" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_set_broadcast_code_t</scope><name>broadcast_code</name></member>
+      <member refid="structwiced__bt__ga__bass__set__broadcast__code__t_1a18a441b22bebb9b02f130532c521db9c" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_set_broadcast_code_t</scope><name>source_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

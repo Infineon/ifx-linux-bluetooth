@@ -1,0 +1,2350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__ga__bap_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_ga_bap.h</compoundname>
+    <includes refid="wiced__bt__ga_8h" local="yes">wiced_bt_ga.h</includes>
+    <includedby refid="le__audio__bap__broadcast_8h" local="yes">le_audio_bap_broadcast.h</includedby>
+    <includedby refid="wiced__bt__ga__ascs_8h" local="yes">wiced_bt_ga_ascs.h</includedby>
+    <includedby refid="le__audio__cap_8h" local="yes">le_audio_cap.h</includedby>
+    <includedby refid="wiced__bt__ga__pacs_8h" local="yes">wiced_bt_ga_pacs.h</includedby>
+    <includedby refid="wiced__bt__ga__bass_8h" local="yes">wiced_bt_ga_bass.h</includedby>
+    <innerclass refid="structwiced__bt__ga__bap__codec__id__t" prot="public">wiced_bt_ga_bap_codec_id_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bap__csc__t" prot="public">wiced_bt_ga_bap_csc_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bap__metadata__t" prot="public">wiced_bt_ga_bap_metadata_t</innerclass>
+    <innerclass refid="structwiced__bt__ga__bap__stream__config__t" prot="public">wiced_bt_ga_bap_stream_config_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__ga__bap_1ga90b44a48835a5580f30ebe073e04e799" prot="public" static="no">
+        <name>CHECK_FOR_NULL_AND_RETURN_VALUE</name>
+        <param><defname>x</defname></param>
+        <param><defname>error_return_value</defname></param>
+        <initializer>if (!x)                                                         \
+    {                                                               \
+        WICED_BT_TRACE(&quot;[%s] %s is NULL\n&quot;, __FUNCTION__, #x); \
+        return error_return_value;                                  \
+    }</initializer>
+        <briefdescription>
+<para>Macros for NULL checking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="28" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap_1ga5fac8e5f52575dcca58377af08d5f3e0" prot="public" static="no">
+        <name>CHECK_FOR_NULL_AND_RETURN</name>
+        <param><defname>x</defname></param>
+        <initializer>if (!x)                                                         \
+    {                                                               \
+        WICED_BT_TRACE(&quot;[%s] %s is NULL\n&quot;, __FUNCTION__, #x); \
+        return;                                                     \
+    }</initializer>
+        <briefdescription>
+<para>Macros for NULL checking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="36" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap_1ga394d9b8cd7f10f57d2b0b0ad7ba7fd8d" prot="public" static="no">
+        <name>BAP_BROADCAST_CODE_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+<para>Length in bytes for Broadcast Code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="44" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap_1ga470bfb9b9e27e63d38daf1aed626f161" prot="public" static="no">
+        <name>BAP_BROADCAST_ID_SIZE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>Length in bytes for Broadcast ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="45" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga735405d7ab557cce7fbe564180109f2c" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_PROHIBITED</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+<para>Prohibited. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="54" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga72e3a138e047869b01875018d106136d" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_UNSPECIFIED</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+<para>Unspecified Matches any audio context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="55" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga8fa88704bee9efbf4101bbcd3d5ba86d" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_CONVERSATIONAL</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+<para>Conversation between humans, for example, in telephony or video calls, including traditional cellular as well as VoIP and Push-to-Talk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="56" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gaf49b35532ed53c781d96b3c6785703b8" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_MEDIA</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+<para>Media, for example, music playback, radio, podcast or movie soundtrack, or tv audio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="57" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga547997ee0f2bff9e7673413e5ce1cfda" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_GAME</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+<para>Audio associated with video gaming, for example gaming media; gaming effects; music and in-game voice chat between participants; or a mix of all the above. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="58" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gafdacf0042a52c6082c267172688236e1" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_INSTRUCTIONAL</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+<para>Instructional audio, for example, in navigation, announcements, or user guidance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="59" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga18152e6c8b23925e3be3d03f5a8565a9" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_VOICE_ASSISTANTS</name>
+        <initializer>0x0020</initializer>
+        <briefdescription>
+<para>Man-machine communication, for example, with voice recognition or virtual assistants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="60" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga8ba714a7fbad1c900459f7eed6311696" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_LIVE</name>
+        <initializer>0x0040</initializer>
+        <briefdescription>
+<para>Live audio, for example, from a microphone where audio is perceived both through a direct acoustic path and through an LE Audio Stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="61" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga25d09157e49e34c6a807558b95587749" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_SOUND_EFFECT</name>
+        <initializer>0x0080</initializer>
+        <briefdescription>
+<para>Sound effects including keyboard and touch feedback; menu and user interface sounds; and other system sounds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="62" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga30dac2f47e6dcee5341296368bd826a2" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_NOTIFICATIONS</name>
+        <initializer>0x100</initializer>
+        <briefdescription>
+<para>Notification and reminder sounds; attention-seeking audio, for example, in beeps signaling the arrival of a message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="63" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gaef14316e1c7e468acf4dfcabf4ce7f73" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_RINGTONE</name>
+        <initializer>0x0200</initializer>
+        <briefdescription>
+<para>Alerts the user to an incoming call, for example, an incoming telephony or video call, including traditional cellular as well as VoIP and Push-to-Talk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="64" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gacf14ad934bb05e93038e34acb27ba2ee" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_ALERTS</name>
+        <initializer>0x0400</initializer>
+        <briefdescription>
+<para>Alarms and timers; immediate alerts, for example, in a critical battery alarm, timer expiry or alarm clock, toaster, cooker, kettle, microwave, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="65" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga86c6f06871326083a16292e9fe2cfd56" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_EMERGENCY_ALARM</name>
+        <initializer>0x0800</initializer>
+        <briefdescription>
+<para>Emergency sounds, for example, fire alarms or other urgent alerts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="66" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga2dc64fc704394416e71dcf7415af394e" prot="public" static="no">
+        <name>BAP_CONTEXT_TYPE_TV</name>
+        <initializer>0x0200</initializer>
+        <briefdescription>
+<para>Metadata conforming to the Bluetooth Broadcast TV profile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="67" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gaa07b88a6637b305d145a6572e788d283" prot="public" static="no">
+        <name>VALID_CONTEXT_TYPE_MASK</name>
+        <initializer>0x0FFF</initializer>
+        <briefdescription>
+<para>Mask for valid context types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="69" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga8ecea6b8ba858be0caabea55f1a21815" prot="public" static="no">
+        <name>INVALID_CONTEXT_TYPE_MASK</name>
+        <initializer>0xF000</initializer>
+        <briefdescription>
+<para>Mask for invalid context types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="70" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga60815dcdb71650bf2fb61e1d0f41f939" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_NOT_ALLOWED</name>
+        <initializer>0X00000000</initializer>
+        <briefdescription>
+<para>This audio location value is not allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="82" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga9155a26b8c6958cd385b195334a2e076" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_LEFT</name>
+        <initializer>0X00000001</initializer>
+        <briefdescription>
+<para>Audio location value for Front Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="83" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga8bbf10be0076ffe5e2737ddb1ab08c13" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_RIGHT</name>
+        <initializer>0X00000002</initializer>
+        <briefdescription>
+<para>Audio location value for Front Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="84" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga802a794eefc36a6ca220546b23af754a" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_CENTER</name>
+        <initializer>0X00000004</initializer>
+        <briefdescription>
+<para>Audio location value for Front Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="85" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga99ee6d22b6702016ab5865c985d9177d" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_LOW_FREQUENCY_EFFECTS_1</name>
+        <initializer>0X00000008</initializer>
+        <briefdescription>
+<para>Audio location value for Low Frequency effect 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="86" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaca42e407c0fa9e306af313dfb8d00f90" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BACK_LEFT</name>
+        <initializer>0X00000010</initializer>
+        <briefdescription>
+<para>Audio location value for Back Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="87" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga1d7eff7549e7839a2537bfec664f12e0" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BACK_RIGHT</name>
+        <initializer>0X00000020</initializer>
+        <briefdescription>
+<para>Audio location value for Back Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="88" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gabef61a713f60b8589a383b1962ecef71" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_LEFT_OF_CENTER</name>
+        <initializer>0X00000040</initializer>
+        <briefdescription>
+<para>Audio location value for Front Left of Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="89" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gabe7d712f49298465188a1b7dd9220db5" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_RIGHT_OF_CENTER</name>
+        <initializer>0X00000080</initializer>
+        <briefdescription>
+<para>Audio location value for Front Right of Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="90" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga8f6f783bc2564b8afa493157e0ef9cd5" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BACK_CENTER</name>
+        <initializer>0X00000100</initializer>
+        <briefdescription>
+<para>Audio location value for BAck Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="91" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga57d9d0bbdc66aecdb5c04adff6aae47f" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_LOW_FREQUENCY_EFFECTS_2</name>
+        <initializer>0X00000200</initializer>
+        <briefdescription>
+<para>Audio location value for Low Frequency effect 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="92" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga2f5e3220bf89e9f71bbf9fed2b846872" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_SIDE_LEFT</name>
+        <initializer>0X00000400</initializer>
+        <briefdescription>
+<para>Audio location value for Side Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="93" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga4fcb0ded92eadd7145ed46a9f1460d52" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_SIDE_RIGHT</name>
+        <initializer>0X00000800</initializer>
+        <briefdescription>
+<para>Audio location value for Side Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="94" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga920a807e106bd1176f1d4975d762d625" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_FRONT_LEFT</name>
+        <initializer>0X00001000</initializer>
+        <briefdescription>
+<para>Audio location value for Top Front Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="95" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga0b0b27c745ff9934a5d2d012d2690fa9" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_FRONT_RIGHT</name>
+        <initializer>0X00002000</initializer>
+        <briefdescription>
+<para>Audio location value for Top Front Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="96" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga35b10599d31e0f10c49f74e146dc1f5b" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_FRONT_CENTER</name>
+        <initializer>0X00004000</initializer>
+        <briefdescription>
+<para>Audio location value for Front Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="97" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga87d561f73096bab27b9432108d00e8d5" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_CENTER</name>
+        <initializer>0X00008000</initializer>
+        <briefdescription>
+<para>Audio location value for Top Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="98" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaf5bc15141c210d033b184592ef29d816" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_BACK_LEFT</name>
+        <initializer>0X00010000</initializer>
+        <briefdescription>
+<para>Audio location value for Back Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="99" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga062b76a597c7fbbd3b422f6f99012a0b" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_BACK_RIGHT</name>
+        <initializer>0X00020000</initializer>
+        <briefdescription>
+<para>Audio location value for Back Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="100" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga929cca262c32816969d1773d88db22dc" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_SIDE_LEFT</name>
+        <initializer>0X00040000</initializer>
+        <briefdescription>
+<para>Audio location value for Side Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="101" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaa058c7137b4abc07e702b1a4bf68a52f" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_SIDE_RIGHT</name>
+        <initializer>0X00080000</initializer>
+        <briefdescription>
+<para>Audio location value for Side Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="102" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga6b98e527c15c9696b31b1caef73e6739" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_TOP_BACK_CENTER</name>
+        <initializer>0X00100000</initializer>
+        <briefdescription>
+<para>Audio location value for Back Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="103" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaf76981876ab68248d5763e0695a20a7d" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BOTTOM_FRONT_CENTER</name>
+        <initializer>0X00200000</initializer>
+        <briefdescription>
+<para>Audio location value for Bottom Front Center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="104" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gae2c18a688a4fb9b00bc7089231a7f115" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BOTTOM_FRONT_LEFT</name>
+        <initializer>0X00400000</initializer>
+        <briefdescription>
+<para>Audio location value for Bottom Front Left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="105" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga0f35b39e7a85354376ef86c0e2bb6b12" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_BOTTOM_FRONT_RIGHT</name>
+        <initializer>0X00800000</initializer>
+        <briefdescription>
+<para>Audio location value for Bottom Front Right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="106" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gad5bd1d931e58b7f1dcaafd8a36a922c3" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_LEFT_WIDE</name>
+        <initializer>0X01000000</initializer>
+        <briefdescription>
+<para>Audio location value for Front Left Wide. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="107" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga25c85d87f52beb42c7143a15de5ae7a2" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_FRONT_RIGHT_WIDE</name>
+        <initializer>0X02000000</initializer>
+        <briefdescription>
+<para>Audio location value for Front Right Wide. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="108" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga29b9cbbe6215bdcc0e9b0e85d1b7e17a" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_LEFT_SURROUND</name>
+        <initializer>0X04000000</initializer>
+        <briefdescription>
+<para>Audio location value for Left Surround. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="109" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gaeda905b00c73d365a923837fac388940" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_RIGHT_SURROUND</name>
+        <initializer>0X08000000</initializer>
+        <briefdescription>
+<para>Audio location value for Right Surround. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="110" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1gad18d30fc1cd9471e200569490e5578f7" prot="public" static="no">
+        <name>BAP_AUDIO_LOCATION_INVALID_MASK</name>
+        <initializer>0xF0000000</initializer>
+        <briefdescription>
+<para>Invalid Mask for audio location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="111" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga409f12b0e144d59d68bd3c5379e591d7" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_8_KHZ</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+<para>Bit 0: 8,000 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="122" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gafff6770f8b5a0e8757726118b0874f60" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_11_025_KHZ</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+<para>Bit 1: 11,025 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="123" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga088346baa1a470793a1521633e29ec34" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_16_KHZ</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+<para>Bit 2: 16,000 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="124" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gae2d8e9e404059a3c85d2c8fbed5a4aa2" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_22_050_KHZ</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+<para>Bit 3: 22,050 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="125" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga6ede6d0414e4b714449b15b3747541d5" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_24_KHZ</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+<para>Bit 4: 24,000 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="126" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gabd8d7165ff862b32d1dac35f115021f2" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_32_KHZ</name>
+        <initializer>(1 &lt;&lt; 5)</initializer>
+        <briefdescription>
+<para>Bit 5: 32,000 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="127" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga7a571d64283a8825e506befcf0c3f161" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_44_1_KHZ</name>
+        <initializer>(1 &lt;&lt; 6)</initializer>
+        <briefdescription>
+<para>Bit 6: 44,100 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="128" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga0edcf217ec6bd8d1131cc12d1962eb68" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_48_KHZ</name>
+        <initializer>(1 &lt;&lt; 7)</initializer>
+        <briefdescription>
+<para>Bit 7: 48,000 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="129" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gac5e6ac1a2cd6f75ddd0383d8f56e3fdb" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_88_200_KHZ</name>
+        <initializer>(1 &lt;&lt; 8)</initializer>
+        <briefdescription>
+<para>Bit 8: 88,200 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="130" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga8539bedb8fec01a3a244a17a2fe2aa62" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_96_KHZ</name>
+        <initializer>(1 &lt;&lt; 9)</initializer>
+        <briefdescription>
+<para>Bit 9: 96,000 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="131" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gae89103c74b0c9acfa5a2e29e24b5e5d6" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_176_400_KHZ</name>
+        <initializer>(1 &lt;&lt; 10)</initializer>
+        <briefdescription>
+<para>Bit 10: 176,400 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="132" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gae3e96597a3036d46c70afed31a481759" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_192_KHZ</name>
+        <initializer>(1 &lt;&lt; 11)</initializer>
+        <briefdescription>
+<para>Bit 11: 192,000 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="133" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga8fda6222636656eecffb8938be630513" prot="public" static="no">
+        <name>BAP_SUPPORTED_SAMPLING_FREQ_384_KHZ</name>
+        <initializer>(1 &lt;&lt; 12)</initializer>
+        <briefdescription>
+<para>Bit 12: 384,000 Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="134" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap_1ga8b11e382b8fa9d62434bc2c20cf512bc" prot="public" static="no">
+        <name>BAP_SUPPORTED_FRAME_DURATION_7_5MS</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+<para>Bit 0: 7.5 ms frame duration supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="139" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap_1ga634c5ef21f3a919ec4efe9c3655478ca" prot="public" static="no">
+        <name>BAP_SUPPORTED_FRAME_DURATION_10MS</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+<para>Bit 1: 10 ms frame duration supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="140" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap_1ga8f95060b865fbb14d4c6a4f79a330861" prot="public" static="no">
+        <name>BAP_SUPPORTED_FRAME_DURATION_7_5MS_PREFERRED</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+<para>Bit 4: 7.5 ms preferred. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Valid only when 7.5 ms is supported and 10 ms is supported. Shall not be set to 0b1 any of (bit 5 or bit 6 or bit 7) is set to 0b1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="142" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__wiced__bt__ga__bap_1ga837a7557038e2af0f1236b2d13fca64b" prot="public" static="no">
+        <name>BAP_SUPPORTED_FRAME_DURATION_10MS_PREFERRED</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+<para>Valid only when 7.5 ms is supported and 10 ms is supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Shall not be set to 0b1 if any of (bit 4 or bit 5 or bit 7) is set to 0b1. Bit 6: 10 ms preferred. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="143" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gaec3a7f0b39f8acee6a9c31a4fe73adc4" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_8_KHz</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+<para>8000Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="151" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga65252d54bd05577c2d06222567ec9bb4" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_11_025_KHz</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+<para>11025 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="152" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga883fd97e93aa3376d5bf046c899dfe07" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_16_KHz</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+<para>16000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="153" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gadf9e793d4bd0845a10a5eee26a6cbc94" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_22_050_KHz</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+<para>22050 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="154" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gada16eace15da58833d21c69f934903d8" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_24_KHz</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+<para>24000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="155" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gaf8df855ec37d015fdbaf547b0db5f069" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_32_KHz</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+<para>32000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="156" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gaeeee56b2013296e149e4b98d2d579ebb" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_44_1_KHz</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+<para>44100 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="157" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga8469df5e0c8db805fc3b5f587561a61b" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_48_KHz</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+<para>48000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="158" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga28c8e9967cb5a5e6e68623861a4fa030" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_88_2_KHz</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+<para>88200 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="159" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga1c3831f581a216ae3dcb46b7cc1830f9" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_96_KHz</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+<para>96000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="160" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga9634174badf4c570e64706b86be39c77" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_176_4_KHz</name>
+        <initializer>0x0B</initializer>
+        <briefdescription>
+<para>176400 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="161" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1gae32419a062627520de83841bd6daf795" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_192_KHz</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+<para>192000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="162" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q_1ga5c769ff9624a4f64f1396c85d9817d54" prot="public" static="no">
+        <name>BAP_SAMPLING_FREQ_384_KHz</name>
+        <initializer>0x0D</initializer>
+        <briefdescription>
+<para>384000 Hz Frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="163" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_r_a_m_e___d_u_r_a_t_i_o_n_1gac82a73981c6d9a33787bf1cc205f3730" prot="public" static="no">
+        <name>BAP_FRAME_DURATION_7_5</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+<para>7.5 ms frame duration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="174" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_r_a_m_e___d_u_r_a_t_i_o_n_1ga720caab6975456ee98a25bfa6611aa62" prot="public" static="no">
+        <name>BAP_FRAME_DURATION_10</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+<para>10ms frame duration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="175" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_r_a_m_e___d_u_r_a_t_i_o_n_1ga2e13abcccfc426031070f8bbb29eae70" prot="public" static="no">
+        <name>BAP_FRAME_DURATION_8163</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+<para>8.16327 ms frame duration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="176" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_r_a_m_e___d_u_r_a_t_i_o_n_1gab8af1b1dcb5a07d0f6a77320401e7e5c" prot="public" static="no">
+        <name>BAP_FRAME_DURATION_10884</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+<para>10.88435 ms frame duration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="177" column="9" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__bap_1gab4174b478bc9c1bb8b35777b2772464c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_bap_codec_capabilities_type_t</name>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab4174b478bc9c1bb8b35777b2772464ca53e142c89971cddd26061a4636ead153" prot="public">
+          <name>BAP_CODEC_CAPABILITIES_INVALID_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab4174b478bc9c1bb8b35777b2772464ca0f10eeb35bc6ac6cc0b00061c9286015" prot="public">
+          <name>BAP_CODEC_CAPABILITIES_SUPPORTED_SAMPLING_FREQUENCIES_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab4174b478bc9c1bb8b35777b2772464cac75505d0ca50a566501916264693df0e" prot="public">
+          <name>BAP_CODEC_CAPABILITIES_SUPPORTED_FRAME_DURATIONS_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab4174b478bc9c1bb8b35777b2772464ca0320394adf76c280f9f5a0ac201c96bf" prot="public">
+          <name>BAP_CODEC_CAPABILITIES_SUPPORTED_AUDIO_CHANNEL_COUNTS_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab4174b478bc9c1bb8b35777b2772464ca0a5893b28646b145388c6c7668f13cf0" prot="public">
+          <name>BAP_CODEC_CAPABILITIES_SUPPORTED_OCTETS_PER_CODEC_FRAME_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab4174b478bc9c1bb8b35777b2772464ca08f90b93a10692969d3137fd3109f523" prot="public">
+          <name>BAP_CODEC_CAPABILITIES_SUPPORTED_MAX_CODEC_FRAMES_PER_SDU_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab4174b478bc9c1bb8b35777b2772464ca3d10ba64e9d022f2797df6a1dd59b1ce" prot="public">
+          <name>BAP_CODEC_CAPABILITIES_MAX_TYPE</name>
+          <initializer>= BAP_CODEC_CAPABILITIES_SUPPORTED_MAX_CODEC_FRAMES_PER_SDU_TYPE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Codec Specific Capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="183" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="182" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__bap_1ga84416c7ca3e991f38e69858ed176b8db" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_bap_codec_configuration_type_t</name>
+        <enumvalue id="group__wiced__bt__ga__bap_1gga84416c7ca3e991f38e69858ed176b8dba76ef3912a141f6db94516482d9096eda" prot="public">
+          <name>BAP_CODEC_CONFIG_INVALID_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1gga84416c7ca3e991f38e69858ed176b8dba027ae82ce2e939e9afd8eeb0add75ed1" prot="public">
+          <name>BAP_CODEC_CONFIG_SAMPLING_FREQUENCY_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1gga84416c7ca3e991f38e69858ed176b8dbac63e7360eda5f1a53ad314e4dfc89fe3" prot="public">
+          <name>BAP_CODEC_CONFIG_FRAME_DURATION_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1gga84416c7ca3e991f38e69858ed176b8dba3c9c63a1cdd17814f7302450e23457fa" prot="public">
+          <name>BAP_CODEC_CONFIG_AUDIO_CHANNEL_ALLOCATION_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1gga84416c7ca3e991f38e69858ed176b8dba1de265833a740033c867fcb6a686771c" prot="public">
+          <name>BAP_CODEC_CONFIG_OCTETS_PER_CODEC_FRAME_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1gga84416c7ca3e991f38e69858ed176b8dbab354fecfc4a00878d2d374fe7c9227ff" prot="public">
+          <name>BAP_CODEC_CONFIG_LC3_BLOCKS_PER_SDU_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1gga84416c7ca3e991f38e69858ed176b8dbab82a3ff93fb8e09f8664e10013ca1ef8" prot="public">
+          <name>BAP_CODEC_CONFIG_MAX_TYPE</name>
+          <initializer>= BAP_CODEC_CONFIG_LC3_BLOCKS_PER_SDU_TYPE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Codec Specific Configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="195" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="194" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__bap_1gaff43104a3e39632548f7ec9ece48f5d1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_bap_metadata_type_t</name>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1af91ae1cca1243f223358e59eb0b32eb3" prot="public">
+          <name>BAP_METADATA_INVALID_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1a25db639c55a35381329a67957f2e8304" prot="public">
+          <name>BAP_METADATA_PREFERRED_AUDIO_CONTEXTS_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1a84555f95e06cf1e5ab8df48ff7108399" prot="public">
+          <name>BAP_METADATA_STREAMING_AUDIO_CONTEXTS_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1af8d73524c48f1f79f6f512e731fa8d7b" prot="public">
+          <name>BAP_METADATA_PROGRAM_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1aec46a3dc666a04736f4d42e0a36ed0d2" prot="public">
+          <name>BAP_METADATA_LANGUAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1aa39b49ba3bb49c60ea8e7d51c868a502" prot="public">
+          <name>BAP_METADATA_CCID_LIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1a4a346438779eafcd78df5e59ff192773" prot="public">
+          <name>BAP_METADATA_PARENTAL_RATING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1a6121d1648ca77ab63650f2354314fa0d" prot="public">
+          <name>BAP_METADATA_PROGRAM_INFO_URI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1ae61eef904f56a985014790845cae5606" prot="public">
+          <name>BAP_METADATA_MAX_TYPE</name>
+          <initializer>= BAP_METADATA_PROGRAM_INFO_URI</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1a0ba39cc59d8b7e7a97a7569b5f7b96bc" prot="public">
+          <name>BAP_METADATA_EXTENDED_METADATA_TYPE</name>
+          <initializer>= 0xFE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggaff43104a3e39632548f7ec9ece48f5d1afa10bba3e9736e594cf1ccaffbd73d45" prot="public">
+          <name>BAP_METADATA_VENDOR_SPECIFIC_TYPE</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Metadata types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="207" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="206" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__wiced__bt__ga__bap_1gab228eef8bfa0c7fd18a9bffc12b95713" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_bap_codec_config_t</name>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aac2fce5f88e7c63ec82789ec16151765" prot="public">
+          <name>BAP_CODEC_CONFIG_8_1_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713af12714f63d3f2b697161e0e2cf21b61f" prot="public">
+          <name>BAP_CODEC_CONFIG_8_1_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aa48378847ccfedb5bfbbf51d81b27cfd" prot="public">
+          <name>BAP_CODEC_CONFIG_8_2_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713ade0ce5b27ac5e14457c0f95a732e0dce" prot="public">
+          <name>BAP_CODEC_CONFIG_8_2_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a7b97402838c8ab2b7dc9024a0feb90db" prot="public">
+          <name>BAP_CODEC_CONFIG_16_1_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a9aa1fef0026b3ed6f0e51805ac83f58c" prot="public">
+          <name>BAP_CODEC_CONFIG_16_1_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aea1e56ff345afc71900b104d80cbf6e4" prot="public">
+          <name>BAP_CODEC_CONFIG_16_2_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a930b72bcf714f5224405cf2c037c0fbc" prot="public">
+          <name>BAP_CODEC_CONFIG_16_2_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a2734a78a9d4013b373008222e722ae91" prot="public">
+          <name>BAP_CODEC_CONFIG_24_1_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a153e996c7fa9e053ccd4fbabbfd6fa23" prot="public">
+          <name>BAP_CODEC_CONFIG_24_1_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a1e463ca21cc210a5e8fde87031107b35" prot="public">
+          <name>BAP_CODEC_CONFIG_24_2_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713afa8a079f55776212f2524418d3b73d81" prot="public">
+          <name>BAP_CODEC_CONFIG_24_2_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a1c60cdefd521fa8f0929416b48b4902b" prot="public">
+          <name>BAP_CODEC_CONFIG_32_1_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a1bc4788a5eec0ea3bcc1c8a03e9a28e1" prot="public">
+          <name>BAP_CODEC_CONFIG_32_1_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a22fc0992481e8fc9b70f3e28909c973b" prot="public">
+          <name>BAP_CODEC_CONFIG_32_2_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a9569193a6f41420fe1df57ea4b10177f" prot="public">
+          <name>BAP_CODEC_CONFIG_32_2_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aeee71965fe22bf246da4f330a532269f" prot="public">
+          <name>BAP_CODEC_CONFIG_441_1_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a7aeffdb4626a4a4fa591b9194f4efddc" prot="public">
+          <name>BAP_CODEC_CONFIG_441_1_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a9e1d4cd987873be41c252f64c9dfd01d" prot="public">
+          <name>BAP_CODEC_CONFIG_441_2_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a3ea92efeb7e9120a0349f47c78e7f8db" prot="public">
+          <name>BAP_CODEC_CONFIG_441_2_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a749af3b62d4712ea5dfaa6351497edee" prot="public">
+          <name>BAP_CODEC_CONFIG_48_1_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a7832b1fb7749567359d4c62d9f5a74b1" prot="public">
+          <name>BAP_CODEC_CONFIG_48_1_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713ab418e0ad08c9fc1b8d74243ff601605e" prot="public">
+          <name>BAP_CODEC_CONFIG_48_2_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aad9b12f82c5e5bbcda6b7222058fd317" prot="public">
+          <name>BAP_CODEC_CONFIG_48_2_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a77b84c33b4a3d40a70d745d6486aadd4" prot="public">
+          <name>BAP_CODEC_CONFIG_48_3_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713ac79d0cdb0b20ddbddddb821053386922" prot="public">
+          <name>BAP_CODEC_CONFIG_48_3_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a98a8d4e8ea787491b12abf57f22c80da" prot="public">
+          <name>BAP_CODEC_CONFIG_48_4_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aa8e9747da73807254c2be5ab967cc19d" prot="public">
+          <name>BAP_CODEC_CONFIG_48_4_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a8d00340e48ae4d177277b0d75532805e" prot="public">
+          <name>BAP_CODEC_CONFIG_48_5_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a0ac30ae00b47f576897011aa24ce69e7" prot="public">
+          <name>BAP_CODEC_CONFIG_48_5_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a07187f92b4eb8fcea7b955aca1aea0ad" prot="public">
+          <name>BAP_CODEC_CONFIG_48_6_1</name>
+          <briefdescription>
+<para>Config setting for low latency audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aff9468a3ab772515af6487cab7be3715" prot="public">
+          <name>BAP_CODEC_CONFIG_48_6_2</name>
+          <briefdescription>
+<para>Config setting for high quality audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Codec configuration list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="269" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="268" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t wiced_bt_ga_bap_context_type_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_ga_bap_context_type_t</name>
+        <briefdescription>
+<para>BAP audio context types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="72" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__wiced__bt__ga__bap_1gae0cdaca69053f685e1ba06266dbd4788" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t wiced_bt_bap_broadcast_code_t[BAP_BROADCAST_CODE_SIZE]</definition>
+        <argsstring>[BAP_BROADCAST_CODE_SIZE]</argsstring>
+        <name>wiced_bt_bap_broadcast_code_t</name>
+        <briefdescription>
+<para>Broadcast code value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="304" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1gaba4867263bf1acca873ee9e681a1eff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_ga_bap_is_state_transition_valid</definition>
+        <argsstring>(ascs_characteristics_t char_type, uint8_t ase_state, uint8_t opcode, uint8_t *next_state)</argsstring>
+        <name>wiced_bt_ga_bap_is_state_transition_valid</name>
+        <param>
+          <type>ascs_characteristics_t</type>
+          <declname>char_type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ase_state</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>next_state</declname>
+        </param>
+        <briefdescription>
+<para>Check if the transition results in a valid state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">char_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic to be written </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ase_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: current ASE state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: opcode for transition </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">next_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: state after the transition </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if transition is valid false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1ga60de5d2346717f69cec93bc57ebd5d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bap_update_ltv</definition>
+        <argsstring>(uint8_t *dest, uint8_t length, uint8_t type, const uint8_t *value)</argsstring>
+        <name>wiced_bt_ga_bap_update_ltv</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Update ltv to stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to stream to store ltv data the caller has to allocate the memory before calling </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ltv type which is being updated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: value of ltv which is being filled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1ga1f87083815d078de68f966d6b2cd59de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* wiced_bt_ga_bap_fill_csc</definition>
+        <argsstring>(uint8_t *p_dst, const wiced_bt_ga_bap_csc_t *args_ptr)</argsstring>
+        <name>wiced_bt_ga_bap_fill_csc</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structwiced__bt__ga__bap__csc__t" kindref="compound">wiced_bt_ga_bap_csc_t</ref> *</type>
+          <declname>args_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Fill codec specifc configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">p_dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to stream to store codec specific configuration the caller has to allocate the memory before calling </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">args_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to codec specific configuration to be filled to the stream </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1ga0feb4bfbf9cc5732e1a1b8cc0ff42261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_bap_parse_csc</definition>
+        <argsstring>(uint8_t *stream, int stream_len, wiced_bt_ga_bap_csc_t *p_csc)</argsstring>
+        <name>wiced_bt_ga_bap_parse_csc</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stream_len</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__csc__t" kindref="compound">wiced_bt_ga_bap_csc_t</ref> *</type>
+          <declname>p_csc</declname>
+        </param>
+        <briefdescription>
+<para>Parse codec specifc configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to stream to be parsed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stream_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of the stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_csc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to the codec specific config structure which has to be filled, memory has to be allocated before calling </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="347" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1ga69f8cb30461ce08a052f3efbf9b71079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_bap_get_metadata</definition>
+        <argsstring>(uint8_t *stream, int stream_len, wiced_bt_ga_bap_metadata_t *p_metadata, uint32_t *response, uint32_t *reason)</argsstring>
+        <name>wiced_bt_ga_bap_get_metadata</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stream_len</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>p_metadata</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Parse metadata from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to stream to be parsed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stream_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: length of the stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to the metadata structure which has to be filled, memory has to be allocated before calling </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: response of the parsing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: reason if parsing was not successful </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="358" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1gae1cbb78ce6123bc020e1c13ed997f25f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* wiced_bt_ga_bap_fill_metadata</definition>
+        <argsstring>(uint8_t *p_dst, wiced_bt_ga_bap_metadata_t *p_metadata)</argsstring>
+        <name>wiced_bt_ga_bap_fill_metadata</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref> *</type>
+          <declname>p_metadata</declname>
+        </param>
+        <briefdescription>
+<para>Fill metadata to the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">p_dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to stream to be filled, memory has to be allocated before calling </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to the metadata structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="371" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1ga81988e702f4721e61a4518078bcd259e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bap_get_sampling_freq_index</definition>
+        <argsstring>(uint32_t sampling_freq)</argsstring>
+        <name>wiced_bt_ga_bap_get_sampling_freq_index</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <briefdescription>
+<para>Get the bit index for the specific sampling frequency. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Sampling frequency for which the bit index has to be found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bit_index : bit index for the sampling frequency provided </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="381" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1gad221282845fc4ab58b72492d1d08fd9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bap_get_fram_duration_index</definition>
+        <argsstring>(uint32_t frame_duration)</argsstring>
+        <name>wiced_bt_ga_bap_get_fram_duration_index</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>frame_duration</declname>
+        </param>
+        <briefdescription>
+<para>Get the bit index for the frame duration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">frame_duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: frame duration for which the bit index has to be found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bit_index : bit index for the frame duration provided </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="391" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1gaad022eecd61d56af7f16e04460ae4e41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_bap_get_unicast_stream_config</definition>
+        <argsstring>(uint32_t codec_config, wiced_bt_ga_bap_stream_config_t *p_stream_config)</argsstring>
+        <name>wiced_bt_ga_bap_get_unicast_stream_config</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>codec_config</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__stream__config__t" kindref="compound">wiced_bt_ga_bap_stream_config_t</ref> *</type>
+          <declname>p_stream_config</declname>
+        </param>
+        <briefdescription>
+<para>Get Unicast Stream configuration for the codec configuration provided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">codec_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Codec config for which configuration values has to be provided </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_stream_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: stream configuration values for the given config </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="400" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1gacddb365d7bb354f44063156404f3e840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_bap_get_broadcast_stream_config</definition>
+        <argsstring>(uint32_t codec_config, wiced_bt_ga_bap_stream_config_t *p_stream_config)</argsstring>
+        <name>wiced_bt_ga_bap_get_broadcast_stream_config</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>codec_config</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__ga__bap__stream__config__t" kindref="compound">wiced_bt_ga_bap_stream_config_t</ref> *</type>
+          <declname>p_stream_config</declname>
+        </param>
+        <briefdescription>
+<para>Get Broadcast Stream configuration for the codec configuration provided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">codec_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Codec config for which configuration values has to be provided </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_stream_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: stream configuration values for the given config </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="409" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__bap_1ga67c075b6c9e6158a6664c7e5f6e1ae13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_bap_get_decoded_data_size</definition>
+        <argsstring>(uint16_t sampling_frequency, uint16_t frame_duration)</argsstring>
+        <name>wiced_bt_ga_bap_get_decoded_data_size</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>sampling_frequency</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>frame_duration</declname>
+        </param>
+        <briefdescription>
+<para>Calculates output sample buffer size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sampling_frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Supported sampling rate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">frame_duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Supported frame duration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frame size : No. of samples in decoded data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="418" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Basic Audio Profile (BAP) Application Programming Interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_BAP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_BAP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#define<sp/>CHECK_FOR_NULL_AND_RETURN_VALUE(x,<sp/>error_return_value)<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(!x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WICED_BT_TRACE(&quot;[%s]<sp/>%s<sp/>is<sp/>NULL\n&quot;,<sp/>__FUNCTION__,<sp/>#x);<sp/>\</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>error_return_value;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#define<sp/>CHECK_FOR_NULL_AND_RETURN(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(!x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WICED_BT_TRACE(&quot;[%s]<sp/>%s<sp/>is<sp/>NULL\n&quot;,<sp/>__FUNCTION__,<sp/>#x);<sp/>\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BAP_BROADCAST_CODE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor">#define<sp/>BAP_BROADCAST_ID_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor">//<sp/>Context<sp/>Types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_PROHIBITED<sp/>0x0000<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_UNSPECIFIED<sp/>0x0001<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_CONVERSATIONAL<sp/>0x0002<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_MEDIA<sp/>0x0004<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_GAME<sp/>0x0008<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_INSTRUCTIONAL<sp/>0x0010<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_VOICE_ASSISTANTS<sp/>0x0020<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_LIVE<sp/>0x0040<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_SOUND_EFFECT<sp/>0x0080<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_NOTIFICATIONS<sp/>0x100<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_RINGTONE<sp/>0x0200<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_ALERTS<sp/>0x0400<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_EMERGENCY_ALARM<sp/>0x0800<sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">#define<sp/>BAP_CONTEXT_TYPE_TV<sp/>0x0200<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor">#define<sp/>VALID_CONTEXT_TYPE_MASK<sp/>0x0FFF<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor">#define<sp/>INVALID_CONTEXT_TYPE_MASK<sp/>0xF000<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor">typedef<sp/>uint16_t<sp/>wiced_bt_ga_bap_context_type_t;<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_NOT_ALLOWED<sp/>0X00000000<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_FRONT_LEFT<sp/>0X00000001<sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_FRONT_RIGHT<sp/>0X00000002<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_FRONT_CENTER<sp/>0X00000004<sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_LOW_FREQUENCY_EFFECTS_1<sp/>0X00000008<sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_BACK_LEFT<sp/>0X00000010<sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_BACK_RIGHT<sp/>0X00000020<sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_FRONT_LEFT_OF_CENTER<sp/>0X00000040<sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_FRONT_RIGHT_OF_CENTER<sp/>0X00000080<sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_BACK_CENTER<sp/>0X00000100<sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_LOW_FREQUENCY_EFFECTS_2<sp/>0X00000200<sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_SIDE_LEFT<sp/>0X00000400<sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_SIDE_RIGHT<sp/>0X00000800<sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_TOP_FRONT_LEFT<sp/>0X00001000<sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_TOP_FRONT_RIGHT<sp/>0X00002000<sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_TOP_FRONT_CENTER<sp/>0X00004000<sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_TOP_CENTER<sp/>0X00008000<sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_TOP_BACK_LEFT<sp/>0X00010000<sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_TOP_BACK_RIGHT<sp/>0X00020000<sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_TOP_SIDE_LEFT<sp/>0X00040000<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_TOP_SIDE_RIGHT<sp/>0X00080000<sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_TOP_BACK_CENTER<sp/>0X00100000<sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_BOTTOM_FRONT_CENTER<sp/>0X00200000<sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_BOTTOM_FRONT_LEFT<sp/>0X00400000<sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_BOTTOM_FRONT_RIGHT<sp/>0X00800000<sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_FRONT_LEFT_WIDE<sp/>0X01000000<sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_FRONT_RIGHT_WIDE<sp/>0X02000000<sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_LEFT_SURROUND<sp/>0X04000000<sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_RIGHT_SURROUND<sp/>0X08000000<sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor">#define<sp/>BAP_AUDIO_LOCATION_INVALID_MASK<sp/>0xF0000000<sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor">//<sp/>sampling<sp/>freq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_8_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_11_025_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_16_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_22_050_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>3)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_24_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>4)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_32_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>5)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_44_1_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>6)<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_48_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>7)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_88_200_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>8)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_96_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>9)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_176_400_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>10)<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_192_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>11)<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_SAMPLING_FREQ_384_KHZ<sp/>(1<sp/>&lt;&lt;<sp/>12)<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor">//<sp/>frame<sp/>durations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_FRAME_DURATION_7_5MS<sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_FRAME_DURATION_10MS<sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_FRAME_DURATION_7_5MS_PREFERRED<sp/>0x10<sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor">#define<sp/>BAP_SUPPORTED_FRAME_DURATION_10MS_PREFERRED<sp/>0x20<sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_8_KHz<sp/>0x01<sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_11_025_KHz<sp/>0x02<sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_16_KHz<sp/>0x03<sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_22_050_KHz<sp/>0x04<sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_24_KHz<sp/>0x05<sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_32_KHz<sp/>0x06<sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_44_1_KHz<sp/>0x07<sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_48_KHz<sp/>0x08<sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_88_2_KHz<sp/>0x09<sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_96_KHz<sp/>0x0A<sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_176_4_KHz<sp/>0x0B<sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_192_KHz<sp/>0x0C<sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor">#define<sp/>BAP_SAMPLING_FREQ_384_KHz<sp/>0x0D<sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor">//<sp/>frame<sp/>durations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BAP_FRAME_DURATION_7_5<sp/>0x00<sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor">#define<sp/>BAP_FRAME_DURATION_10<sp/>0x01<sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor">#define<sp/>BAP_FRAME_DURATION_8163<sp/>0x02<sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor">#define<sp/>BAP_FRAME_DURATION_10884<sp/>0x03<sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor">typedef<sp/>enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CAPABILITIES_INVALID_TYPE,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CAPABILITIES_SUPPORTED_SAMPLING_FREQUENCIES_TYPE,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CAPABILITIES_SUPPORTED_FRAME_DURATIONS_TYPE,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CAPABILITIES_SUPPORTED_AUDIO_CHANNEL_COUNTS_TYPE,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CAPABILITIES_SUPPORTED_OCTETS_PER_CODEC_FRAME_TYPE,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CAPABILITIES_SUPPORTED_MAX_CODEC_FRAMES_PER_SDU_TYPE,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CAPABILITIES_MAX_TYPE<sp/>=<sp/>BAP_CODEC_CAPABILITIES_SUPPORTED_MAX_CODEC_FRAMES_PER_SDU_TYPE</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__bap_1gab4174b478bc9c1bb8b35777b2772464c" kindref="member">wiced_bt_ga_bap_codec_capabilities_type_t</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CONFIG_INVALID_TYPE,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CONFIG_SAMPLING_FREQUENCY_TYPE,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CONFIG_FRAME_DURATION_TYPE,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CONFIG_AUDIO_CHANNEL_ALLOCATION_TYPE,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CONFIG_OCTETS_PER_CODEC_FRAME_TYPE,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CONFIG_LC3_BLOCKS_PER_SDU_TYPE,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_CODEC_CONFIG_MAX_TYPE<sp/>=<sp/>BAP_CODEC_CONFIG_LC3_BLOCKS_PER_SDU_TYPE</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__bap_1ga84416c7ca3e991f38e69858ed176b8db" kindref="member">wiced_bt_ga_bap_codec_configuration_type_t</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_INVALID_TYPE,</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_PREFERRED_AUDIO_CONTEXTS_TYPE,</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_STREAMING_AUDIO_CONTEXTS_TYPE,</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_PROGRAM_INFO,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_LANGUAGE,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_CCID_LIST,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_PARENTAL_RATING,</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_PROGRAM_INFO_URI,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_MAX_TYPE<sp/>=<sp/>BAP_METADATA_PROGRAM_INFO_URI,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_EXTENDED_METADATA_TYPE<sp/>=<sp/>0xFE,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>BAP_METADATA_VENDOR_SPECIFIC_TYPE<sp/>=<sp/>0xFF,</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__bap_1gaff43104a3e39632548f7ec9ece48f5d1" kindref="member">wiced_bt_ga_bap_metadata_type_t</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="structwiced__bt__ga__bap__codec__id__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>coding_format;<sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>company_id;<sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>vendor_specific_codec_id;<sp/></highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__bap__codec__id__t" kindref="compound">wiced_bt_ga_bap_codec_id_t</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="structwiced__bt__ga__bap__csc__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sampling_frequency;<sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>frame_duration;<sp/></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>audio_channel_allocation;<sp/></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>octets_per_codec_frame;<sp/><sp/></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>lc3_blocks_per_sdu;<sp/></highlight></codeline>
+<codeline lineno="237"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__bap__csc__t" kindref="compound">wiced_bt_ga_bap_csc_t</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="structwiced__bt__ga__bap__metadata__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/>metadata_present;<sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>preferred_audio_ctx;<sp/></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>streaming_audio_ctx;<sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>vendor_specific_data_length;<sp/></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*p_vendor_specific_data;<sp/></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>upper_layer_data_length;<sp/></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*p_upper_layer_data;<sp/></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>program_info_len;<sp/></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*program_info;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref>;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="structwiced__bt__ga__bap__stream__config__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sampling_frequency;<sp/></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>frame_duration;<sp/></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sdu_interval;<sp/></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>octets_per_codec_frame;<sp/></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_ble_isoc_framing_t<sp/>framing;<sp/></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>retransmission_number;<sp/></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>max_transport_latency;<sp/></highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__bap__stream__config__t" kindref="compound">wiced_bt_ga_bap_stream_config_t</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aac2fce5f88e7c63ec82789ec16151765" kindref="member">BAP_CODEC_CONFIG_8_1_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713af12714f63d3f2b697161e0e2cf21b61f" kindref="member">BAP_CODEC_CONFIG_8_1_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aa48378847ccfedb5bfbbf51d81b27cfd" kindref="member">BAP_CODEC_CONFIG_8_2_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713ade0ce5b27ac5e14457c0f95a732e0dce" kindref="member">BAP_CODEC_CONFIG_8_2_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a7b97402838c8ab2b7dc9024a0feb90db" kindref="member">BAP_CODEC_CONFIG_16_1_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a9aa1fef0026b3ed6f0e51805ac83f58c" kindref="member">BAP_CODEC_CONFIG_16_1_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aea1e56ff345afc71900b104d80cbf6e4" kindref="member">BAP_CODEC_CONFIG_16_2_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a930b72bcf714f5224405cf2c037c0fbc" kindref="member">BAP_CODEC_CONFIG_16_2_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a2734a78a9d4013b373008222e722ae91" kindref="member">BAP_CODEC_CONFIG_24_1_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a153e996c7fa9e053ccd4fbabbfd6fa23" kindref="member">BAP_CODEC_CONFIG_24_1_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a1e463ca21cc210a5e8fde87031107b35" kindref="member">BAP_CODEC_CONFIG_24_2_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713afa8a079f55776212f2524418d3b73d81" kindref="member">BAP_CODEC_CONFIG_24_2_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a1c60cdefd521fa8f0929416b48b4902b" kindref="member">BAP_CODEC_CONFIG_32_1_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a1bc4788a5eec0ea3bcc1c8a03e9a28e1" kindref="member">BAP_CODEC_CONFIG_32_1_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a22fc0992481e8fc9b70f3e28909c973b" kindref="member">BAP_CODEC_CONFIG_32_2_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a9569193a6f41420fe1df57ea4b10177f" kindref="member">BAP_CODEC_CONFIG_32_2_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aeee71965fe22bf246da4f330a532269f" kindref="member">BAP_CODEC_CONFIG_441_1_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a7aeffdb4626a4a4fa591b9194f4efddc" kindref="member">BAP_CODEC_CONFIG_441_1_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a9e1d4cd987873be41c252f64c9dfd01d" kindref="member">BAP_CODEC_CONFIG_441_2_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a3ea92efeb7e9120a0349f47c78e7f8db" kindref="member">BAP_CODEC_CONFIG_441_2_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a749af3b62d4712ea5dfaa6351497edee" kindref="member">BAP_CODEC_CONFIG_48_1_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a7832b1fb7749567359d4c62d9f5a74b1" kindref="member">BAP_CODEC_CONFIG_48_1_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713ab418e0ad08c9fc1b8d74243ff601605e" kindref="member">BAP_CODEC_CONFIG_48_2_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aad9b12f82c5e5bbcda6b7222058fd317" kindref="member">BAP_CODEC_CONFIG_48_2_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a77b84c33b4a3d40a70d745d6486aadd4" kindref="member">BAP_CODEC_CONFIG_48_3_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713ac79d0cdb0b20ddbddddb821053386922" kindref="member">BAP_CODEC_CONFIG_48_3_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a98a8d4e8ea787491b12abf57f22c80da" kindref="member">BAP_CODEC_CONFIG_48_4_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aa8e9747da73807254c2be5ab967cc19d" kindref="member">BAP_CODEC_CONFIG_48_4_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a8d00340e48ae4d177277b0d75532805e" kindref="member">BAP_CODEC_CONFIG_48_5_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a0ac30ae00b47f576897011aa24ce69e7" kindref="member">BAP_CODEC_CONFIG_48_5_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713a07187f92b4eb8fcea7b955aca1aea0ad" kindref="member">BAP_CODEC_CONFIG_48_6_1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__bap_1ggab228eef8bfa0c7fd18a9bffc12b95713aff9468a3ab772515af6487cab7be3715" kindref="member">BAP_CODEC_CONFIG_48_6_2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__bap_1gab228eef8bfa0c7fd18a9bffc12b95713" kindref="member">wiced_bt_ga_bap_codec_config_t</ref>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group__wiced__bt__ga__bap_1gae0cdaca69053f685e1ba06266dbd4788" kindref="member">wiced_bt_bap_broadcast_code_t</ref>[<ref refid="group__wiced__bt__ga__bap_1ga394d9b8cd7f10f57d2b0b0ad7ba7fd8d" kindref="member">BAP_BROADCAST_CODE_SIZE</ref>];<sp/></highlight></codeline>
+<codeline lineno="315"><highlight class="normal">wiced_bool_t<sp/><ref refid="group__wiced__bt__ga__bap_1gaba4867263bf1acca873ee9e681a1eff9" kindref="member">wiced_bt_ga_bap_is_state_transition_valid</ref>(ascs_characteristics_t<sp/>char_type,</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>ase_state,</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>opcode,</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*next_state);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal">uint8_t<sp/><ref refid="group__wiced__bt__ga__bap_1ga60de5d2346717f69cec93bc57ebd5d85" kindref="member">wiced_bt_ga_bap_update_ltv</ref>(uint8_t<sp/>*dest,<sp/>uint8_t<sp/>length,<sp/>uint8_t<sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal">uint8_t<sp/>*<ref refid="group__wiced__bt__ga__bap_1ga1f87083815d078de68f966d6b2cd59de" kindref="member">wiced_bt_ga_bap_fill_csc</ref>(uint8_t<sp/>*p_dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structwiced__bt__ga__bap__csc__t" kindref="compound">wiced_bt_ga_bap_csc_t</ref><sp/>*args_ptr);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap_1ga0feb4bfbf9cc5732e1a1b8cc0ff42261" kindref="member">wiced_bt_ga_bap_parse_csc</ref>(uint8_t<sp/>*stream,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stream_len,<sp/><ref refid="structwiced__bt__ga__bap__csc__t" kindref="compound">wiced_bt_ga_bap_csc_t</ref><sp/>*p_csc);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap_1ga69f8cb30461ce08a052f3efbf9b71079" kindref="member">wiced_bt_ga_bap_get_metadata</ref>(uint8_t<sp/>*stream,</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stream_len,</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>*p_metadata,</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>*response,</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>*reason);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal">uint8_t<sp/>*<ref refid="group__wiced__bt__ga__bap_1gae1cbb78ce6123bc020e1c13ed997f25f" kindref="member">wiced_bt_ga_bap_fill_metadata</ref>(uint8_t<sp/>*p_dst,<sp/><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>*p_metadata);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal">uint8_t<sp/><ref refid="group__wiced__bt__ga__bap_1ga81988e702f4721e61a4518078bcd259e" kindref="member">wiced_bt_ga_bap_get_sampling_freq_index</ref>(uint32_t<sp/>sampling_freq);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal">uint8_t<sp/><ref refid="group__wiced__bt__ga__bap_1gad221282845fc4ab58b72492d1d08fd9b" kindref="member">wiced_bt_ga_bap_get_fram_duration_index</ref>(uint32_t<sp/>frame_duration);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap_1gaad022eecd61d56af7f16e04460ae4e41" kindref="member">wiced_bt_ga_bap_get_unicast_stream_config</ref>(uint32_t<sp/>codec_config,<sp/><ref refid="structwiced__bt__ga__bap__stream__config__t" kindref="compound">wiced_bt_ga_bap_stream_config_t</ref><sp/>*p_stream_config);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__bap_1gacddb365d7bb354f44063156404f3e840" kindref="member">wiced_bt_ga_bap_get_broadcast_stream_config</ref>(uint32_t<sp/>codec_config,</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__stream__config__t" kindref="compound">wiced_bt_ga_bap_stream_config_t</ref><sp/>*p_stream_config);</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal">uint32_t<sp/><ref refid="group__wiced__bt__ga__bap_1ga67c075b6c9e6158a6664c7e5f6e1ae13" kindref="member">wiced_bt_ga_bap_get_decoded_data_size</ref>(uint16_t<sp/>sampling_frequency,<sp/>uint16_t<sp/>frame_duration);</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_BAP_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h"/>
+  </compounddef>
+</doxygen>

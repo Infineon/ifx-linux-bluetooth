@@ -1,0 +1,144 @@
+/******************************************************************************
+ * (c) 2020, Cypress Semiconductor Corporation. All rights reserved.
+ *******************************************************************************
+ * This software, including source code, documentation and related materials
+ * ("Software"), is owned by Cypress Semiconductor Corporation or one of its
+ * subsidiaries ("Cypress") and is protected by and subject to worldwide patent
+ * protection (United States and foreign), United States copyright laws and
+ * international treaty provisions. Therefore, you may use this Software only
+ * as provided in the license agreement accompanying the software package from
+ * which you obtained this Software ("EULA").
+ *
+ * If no EULA applies, Cypress hereby grants you a personal, non-exclusive,
+ * non-transferable license to copy, modify, and compile the Software source
+ * code solely for use in connection with Cypress's integrated circuit products.
+ * Any reproduction, modification, translation, compilation, or representation
+ * of this Software except as specified above is prohibited without the express
+ * written permission of Cypress.
+ *
+ * Disclaimer: THIS SOFTWARE IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress
+ * reserves the right to make changes to the Software without notice. Cypress
+ * does not assume any liability arising out of the application or use of the
+ * Software or any product or circuit described in the Software. Cypress does
+ * not authorize its products for use in any products where a malfunction or
+ * failure of the Cypress product may reasonably be expected to result in
+ * significant property damage, injury or death ("High Risk Product"). By
+ * including Cypress's product in a High Risk Product, the manufacturer of such
+ * system or application assumes all risk of such use and in doing so agrees to
+ * indemnify Cypress against all liability.
+ *****************************************************************************/
+/******************************************************************************
+ * File Name: main.c
+ *
+ * Description: This is the main source file for Linux Findme CE.
+ *
+ * Related Document: See README.md
+ *
+ *****************************************************************************/
+
+/*******************************************************************************
+*       INCLUDES
+*******************************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include "utils_arg_parser.h"
+#include "findme.h"
+#include "wiced_memory.h"
+#include "platform_linux.h"
+#include "wiced_bt_cfg.h"
+
+/*******************************************************************************
+*       MACROS
+*******************************************************************************/
+#ifndef MAX_PATH
+#define MAX_PATH        (256)
+#endif
+
+/*******************************************************************************
+*       FUNCTION DECLARATIONS
+*******************************************************************************/
+uint32_t hci_control_proc_rx_cmd(uint8_t* p_buffer, uint32_t length);
+void APPLICATION_START(void);
+
+/*******************************************************************************
+*       FUNCTION DEFINITION
+*******************************************************************************/
+
+/*******************************************************************************
+* Function Name: hci_control_proc_rx_cmd()
+********************************************************************************
+* Summary:
+*   Function to handle HCI receive
+*
+* Parameters:
+*   uint8_t* p_buffer   : rx buffer
+*   uint32_t length     : rx buffer length
+*
+* Return:
+*  status code
+*
+*******************************************************************************/
+uint32_t hci_control_proc_rx_cmd(uint8_t* p_buffer, uint32_t length)
+{
+    return 0;
+}
+
+/*******************************************************************************
+* Function Name: APPLICATION_START()
+********************************************************************************
+* Summary:
+*   BT stack initialization function wrapper
+*
+* Parameters:
+*   None
+*
+* Return:
+*   None
+*
+*******************************************************************************/
+void APPLICATION_START(void)
+{
+    application_start();
+}
+
+/*******************************************************************************
+* Function Name: main()
+********************************************************************************
+* Summary:
+*   Application entry function
+*
+* Parameters:
+*   int argc            : argument count
+*   char *argv[]        : list of arguments
+*
+* Return:
+*   None
+*
+*******************************************************************************/
+int main(int argc, char* argv[])
+{
+    arg_parser_arguments_t parsed_args = {0};
+    if (PARSE_ERROR == arg_parser_get_args(argc, argv, &parsed_args))
+    {
+        return PARSE_ERROR;
+    }
+
+    /* Init BTSPY */
+    cy_bt_spy_comm_init(parsed_args.is_socket_tcp, parsed_args.spy_inst, parsed_args.peer_ip_addr);
+
+    cy_platform_bluetooth_init(
+        parsed_args.patchFile,
+        parsed_args.com_port,
+        parsed_args.baud_rate,
+        parsed_args.patch_baud,
+        &parsed_args.p_gpio_cfg.autobaud_cfg);
+
+    printf("Linux CE Findme project initialization complete....\n");
+
+    for(;;);
+
+    return EXIT_SUCCESS;
+}

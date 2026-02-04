@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__aics__input__state__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_aics_input_state_t</compoundname>
+    <includes local="no">wiced_bt_ga_aics.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__aics__input__state__t_1a2e7529824acbc920263d447c02942375" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t wiced_bt_ga_aics_input_state_t::gain_setting</definition>
+        <argsstring></argsstring>
+        <name>gain_setting</name>
+        <briefdescription>
+<para>Gain Settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="86" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__aics__input__state__t_1a35c87df8cc8584cbf29f2f05db2211b0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__aics_1ga47ea2366abaae05a06b80e13509cf259" kindref="member">wiced_bt_ga_aics_mute_t</ref></type>
+        <definition>wiced_bt_ga_aics_mute_t wiced_bt_ga_aics_input_state_t::mute_mode</definition>
+        <argsstring></argsstring>
+        <name>mute_mode</name>
+        <briefdescription>
+<para>Mute Mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="87" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__aics__input__state__t_1a6e74ee02c24d795c6b1b4f1349bb1d8d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__ga__aics_1gadfb91edbc7ad523454a00232570f4679" kindref="member">wiced_bt_ga_aics_gain_mode_t</ref></type>
+        <definition>wiced_bt_ga_aics_gain_mode_t wiced_bt_ga_aics_input_state_t::gain_mode</definition>
+        <argsstring></argsstring>
+        <name>gain_mode</name>
+        <briefdescription>
+<para>Gain Mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="88" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AICS Input State. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="85" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="85" bodyend="89"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__aics__input__state__t_1a6e74ee02c24d795c6b1b4f1349bb1d8d" prot="public" virt="non-virtual"><scope>wiced_bt_ga_aics_input_state_t</scope><name>gain_mode</name></member>
+      <member refid="structwiced__bt__ga__aics__input__state__t_1a2e7529824acbc920263d447c02942375" prot="public" virt="non-virtual"><scope>wiced_bt_ga_aics_input_state_t</scope><name>gain_setting</name></member>
+      <member refid="structwiced__bt__ga__aics__input__state__t_1a35c87df8cc8584cbf29f2f05db2211b0" prot="public" virt="non-virtual"><scope>wiced_bt_ga_aics_input_state_t</scope><name>mute_mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

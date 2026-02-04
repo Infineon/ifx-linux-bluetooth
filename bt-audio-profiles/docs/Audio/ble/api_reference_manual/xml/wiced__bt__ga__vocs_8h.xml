@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__ga__vocs_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_ga_vocs.h</compoundname>
+    <includes local="yes">wiced_bt_dev.h</includes>
+    <includes local="yes">wiced_bt_ble.h</includes>
+    <includes local="yes">wiced_bt_gatt.h</includes>
+    <includes local="yes">gatt_interface.h</includes>
+    <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
+    <includedby refid="wiced__bt__ga__vcs_8h" local="yes">wiced_bt_ga_vcs.h</includedby>
+    <incdepgraph>
+      <node id="131">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="130">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="129">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="128">
+        <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="127">
+        <label>wiced_bt_ga_vocs.h</label>
+        <link refid="wiced__bt__ga__vocs_8h"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvocs__opcode__t" prot="public">vocs_opcode_t</innerclass>
+    <innerclass refid="unionwiced__bt__ga__vocs__data__t" prot="public">wiced_bt_ga_vocs_data_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__wiced__bt__ga__vocs_1ga59814e2e50ea309ef56dd83c044447e5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wiced_bt_ga_vocs_opcode_t</name>
+        <enumvalue id="group__wiced__bt__ga__vocs_1gga59814e2e50ea309ef56dd83c044447e5ab4310fd6fde0648dd4a21b6d9506d31a" prot="public">
+          <name>WICED_BT_GA_VOCS_OPCODE_SET_VOLUME_OFFSET</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Set Volume Offset. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Volume Offset Control Service opcodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="31" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="31" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__wiced__bt__ga__vocs_1ga242ae62612826525c74b76cc5980600f" prot="public" static="no" mutable="no">
+        <type>gatt_intf_service_methods_t</type>
+        <definition>gatt_intf_service_methods_t vocs_methods</definition>
+        <argsstring></argsstring>
+        <name>vocs_methods</name>
+        <briefdescription>
+<para>Volume offset related methods defined in the init file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1gab1d975515a3afaa7d6d5a3d9b74959d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t vocs_notify</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, gatt_intf_attribute_t *p_char, void *p_n)</argsstring>
+        <name>vocs_notify</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_n</declname>
+        </param>
+        <briefdescription>
+<para>VOCS API to notify characteristic data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: VOCS service object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic to be notified </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic data to be notified </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1gaacb691f77667fde13a9c1fbce8ae49b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bt_gatt_status_t</type>
+        <definition>wiced_bt_gatt_status_t vocs_write_remote_attribute</definition>
+        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, gatt_intf_attribute_t *p_char, void *p_n)</argsstring>
+        <name>vocs_write_remote_attribute</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_id</declname>
+        </param>
+        <param>
+          <type>gatt_intf_service_object_t *</type>
+          <declname>p_service</declname>
+        </param>
+        <param>
+          <type>gatt_intf_attribute_t *</type>
+          <declname>p_char</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p_n</declname>
+        </param>
+        <briefdescription>
+<para>VOCS API to write characteristic data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conn_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GATT Connection ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: VOCS service object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic to be written </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: characteristic data to be written </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1gac23501468259a7b45931942bbac5dec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_ga_vocs_init</definition>
+        <argsstring>(uint8_t num_instances, void *pv_ini)</argsstring>
+        <name>wiced_bt_ga_vocs_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_instances</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv_ini</declname>
+        </param>
+        <briefdescription>
+<para>VOCS init. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num_instances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Number of VOCS instances for the application </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pv_ini</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: expected to be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1ga45eb8d6267fd0f2df6c0daa24e442d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_vocs_enable_server</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_vocs_enable_server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable VOCS server module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__vocs_1ga7eea18d8ca74f2ef4cbd03187c693623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_ga_vocs_enable_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>wiced_bt_ga_vocs_enable_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable VOCS client module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="86" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Volume Offset Control Service (VOCS) Application Programming Interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_VOCS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_VOCS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_dev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gatt_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__vocs_1gga59814e2e50ea309ef56dd83c044447e5ab4310fd6fde0648dd4a21b6d9506d31a" kindref="member">WICED_BT_GA_VOCS_OPCODE_SET_VOLUME_OFFSET</ref><sp/>=<sp/>1<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__vocs_1ga59814e2e50ea309ef56dd83c044447e5" kindref="member">wiced_bt_ga_vocs_opcode_t</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structvocs__opcode__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__vocs_1ga59814e2e50ea309ef56dd83c044447e5" kindref="member">wiced_bt_ga_vocs_opcode_t</ref><sp/>opcode;<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>volume_offset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/><ref refid="structvocs__opcode__t" kindref="compound">vocs_opcode_t</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="unionwiced__bt__ga__vocs__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>volume_offset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>audio_location;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/>description;<sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvocs__opcode__t" kindref="compound">vocs_opcode_t</ref><sp/>control_point;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<ref refid="unionwiced__bt__ga__vocs__data__t" kindref="compound">wiced_bt_ga_vocs_data_t</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gatt_intf_service_methods_t<sp/><ref refid="group__wiced__bt__ga__vocs_1ga242ae62612826525c74b76cc5980600f" kindref="member">vocs_methods</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vocs_1gab1d975515a3afaa7d6d5a3d9b74959d9" kindref="member">vocs_notify</ref>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>gatt_intf_attribute_t<sp/>*p_char,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_n);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vocs_1gaacb691f77667fde13a9c1fbce8ae49b0" kindref="member">vocs_write_remote_attribute</ref>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>gatt_intf_attribute_t<sp/>*p_char,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p_n);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__vocs_1gac23501468259a7b45931942bbac5dec7" kindref="member">wiced_bt_ga_vocs_init</ref>(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vocs_1ga45eb8d6267fd0f2df6c0daa24e442d76" kindref="member">wiced_bt_ga_vocs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vocs_1ga7eea18d8ca74f2ef4cbd03187c693623" kindref="member">wiced_bt_ga_vocs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_VOCS_H__</highlight></codeline>
+    </programlisting>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h"/>
+  </compounddef>
+</doxygen>

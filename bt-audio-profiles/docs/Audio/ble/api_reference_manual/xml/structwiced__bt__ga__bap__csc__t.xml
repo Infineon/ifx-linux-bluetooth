@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__bap__csc__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_bap_csc_t</compoundname>
+    <includes local="no">wiced_bt_ga_bap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__csc__t_1ae9f746952234d2b8f68d6aecc8187567" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_bap_csc_t::sampling_frequency</definition>
+        <argsstring></argsstring>
+        <name>sampling_frequency</name>
+        <briefdescription>
+<para>sampling frequency to be used in codec specific configuration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="232" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__csc__t_1a9f04cb7f4beff78086f2f2acfadd3280" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_bap_csc_t::frame_duration</definition>
+        <argsstring></argsstring>
+        <name>frame_duration</name>
+        <briefdescription>
+<para>framing duration in codec specific configuration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="233" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__csc__t_1ad96a8d38c3a4fb4e969cc796dfd729dc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_ga_bap_csc_t::audio_channel_allocation</definition>
+        <argsstring></argsstring>
+        <name>audio_channel_allocation</name>
+        <briefdescription>
+<para>audio channel allocation in codec specific configuration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="234" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__csc__t_1a6c01e034917ddb306ea6803e7c3f74e1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_ga_bap_csc_t::octets_per_codec_frame</definition>
+        <argsstring></argsstring>
+        <name>octets_per_codec_frame</name>
+        <briefdescription>
+<para>octects per codec frame in codec specific configuration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="235" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__bap__csc__t_1a236b06130f7eb02be8d0fcc7a3f7bee3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_bap_csc_t::lc3_blocks_per_sdu</definition>
+        <argsstring></argsstring>
+        <name>lc3_blocks_per_sdu</name>
+        <briefdescription>
+<para>lc3 blocks per sdu in codec specific configuration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="236" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Codec Specific Configuration. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="231" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="230" bodyend="237"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__bap__csc__t_1ad96a8d38c3a4fb4e969cc796dfd729dc" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_csc_t</scope><name>audio_channel_allocation</name></member>
+      <member refid="structwiced__bt__ga__bap__csc__t_1a9f04cb7f4beff78086f2f2acfadd3280" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_csc_t</scope><name>frame_duration</name></member>
+      <member refid="structwiced__bt__ga__bap__csc__t_1a236b06130f7eb02be8d0fcc7a3f7bee3" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_csc_t</scope><name>lc3_blocks_per_sdu</name></member>
+      <member refid="structwiced__bt__ga__bap__csc__t_1a6c01e034917ddb306ea6803e7c3f74e1" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_csc_t</scope><name>octets_per_codec_frame</name></member>
+      <member refid="structwiced__bt__ga__bap__csc__t_1ae9f746952234d2b8f68d6aecc8187567" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_csc_t</scope><name>sampling_frequency</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

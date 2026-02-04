@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__ga__ascs__cp__params__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_ga_ascs_cp_params_t</compoundname>
+    <includes local="no">wiced_bt_ga_ascs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__params__t_1a32f727afa22d3eb72d19b05640755917" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_ga_ascs_cp_params_t::ase_id</definition>
+        <argsstring></argsstring>
+        <name>ase_id</name>
+        <briefdescription>
+<para>ASE Id to be used for this control point operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="191" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__params__t_1afbab8272fa113f3ee66b8ca80787557e" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref></type>
+        <definition>wiced_bt_ga_ascs_config_codec_args_t wiced_bt_ga_ascs_cp_params_t::config_codec_params</definition>
+        <argsstring></argsstring>
+        <name>config_codec_params</name>
+        <briefdescription>
+<para>To be used incase of Config Codec Operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="194" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__params__t_1a5d9e3f10704f2cfa3d8cf3cc8637f544" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__ascs__config__qos__args__t" kindref="compound">wiced_bt_ga_ascs_config_qos_args_t</ref></type>
+        <definition>wiced_bt_ga_ascs_config_qos_args_t wiced_bt_ga_ascs_cp_params_t::config_qos_params</definition>
+        <argsstring></argsstring>
+        <name>config_qos_params</name>
+        <briefdescription>
+<para>To be used incase of Qos Config Operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="195" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__params__t_1a10a083190bc72679ccf867977e9688ba" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref></type>
+        <definition>wiced_bt_ga_bap_metadata_t wiced_bt_ga_ascs_cp_params_t::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <briefdescription>
+<para>To be used incase of Metadata related Operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="196" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__ga__ascs__cp__params__t_1a3fbd600596a1c7b64183d2f5fa7f4357" prot="public" static="no" mutable="no">
+        <type>union wiced_bt_ga_ascs_cp_params_t::@16</type>
+        <definition>union wiced_bt_ga_ascs_cp_params_t::@16 wiced_bt_ga_ascs_cp_params_t::@17</definition>
+        <argsstring></argsstring>
+        <name>@17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="197" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ASCS CP parameters. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="159">
+        <label>wiced_bt_ga_ascs_config_qos_args_t</label>
+        <link refid="structwiced__bt__ga__ascs__config__qos__args__t"/>
+      </node>
+      <node id="157">
+        <label>wiced_bt_ga_bap_csc_t</label>
+        <link refid="structwiced__bt__ga__bap__csc__t"/>
+      </node>
+      <node id="158">
+        <label>wiced_bt_ga_bap_codec_id_t</label>
+        <link refid="structwiced__bt__ga__bap__codec__id__t"/>
+      </node>
+      <node id="154">
+        <label>wiced_bt_ga_ascs_cp_params_t</label>
+        <link refid="structwiced__bt__ga__ascs__cp__params__t"/>
+        <childnode refid="155" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+        <childnode refid="156" relation="usage">
+          <edgelabel>config_codec_params</edgelabel>
+        </childnode>
+        <childnode refid="159" relation="usage">
+          <edgelabel>config_qos_params</edgelabel>
+        </childnode>
+      </node>
+      <node id="155">
+        <label>wiced_bt_ga_bap_metadata_t</label>
+        <link refid="structwiced__bt__ga__bap__metadata__t"/>
+      </node>
+      <node id="156">
+        <label>wiced_bt_ga_ascs_config_codec_args_t</label>
+        <link refid="structwiced__bt__ga__ascs__config__codec__args__t"/>
+        <childnode refid="157" relation="usage">
+          <edgelabel>csc</edgelabel>
+        </childnode>
+        <childnode refid="158" relation="usage">
+          <edgelabel>codec_id</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="190" column="1" bodyfile="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="189" bodyend="198"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__ga__ascs__cp__params__t_1a32f727afa22d3eb72d19b05640755917" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_params_t</scope><name>ase_id</name></member>
+      <member refid="structwiced__bt__ga__ascs__cp__params__t_1afbab8272fa113f3ee66b8ca80787557e" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_params_t</scope><name>config_codec_params</name></member>
+      <member refid="structwiced__bt__ga__ascs__cp__params__t_1a5d9e3f10704f2cfa3d8cf3cc8637f544" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_params_t</scope><name>config_qos_params</name></member>
+      <member refid="structwiced__bt__ga__ascs__cp__params__t_1a10a083190bc72679ccf867977e9688ba" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_cp_params_t</scope><name>metadata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

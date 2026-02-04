@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_7c45aee659336a24f7f6f7a861d79179" kind="dir">
+    <compoundname>temp_include_dir</compoundname>
+    <innerfile refid="audio__driver_8h">audio_driver.h</innerfile>
+    <innerfile refid="csis__psri__key_8h">csis_psri_key.h</innerfile>
+    <innerfile refid="le__audio__bap__broadcast_8h">le_audio_bap_broadcast.h</innerfile>
+    <innerfile refid="le__audio__cap_8h">le_audio_cap.h</innerfile>
+    <innerfile refid="le__audio__pbp_8h">le_audio_pbp.h</innerfile>
+    <innerfile refid="le__audio__rpc_8h">le_audio_rpc.h</innerfile>
+    <innerfile refid="wiced__bt__ga_8h">wiced_bt_ga.h</innerfile>
+    <innerfile refid="wiced__bt__ga__aics_8h">wiced_bt_ga_aics.h</innerfile>
+    <innerfile refid="wiced__bt__ga__ascs_8h">wiced_bt_ga_ascs.h</innerfile>
+    <innerfile refid="wiced__bt__ga__bap_8h">wiced_bt_ga_bap.h</innerfile>
+    <innerfile refid="wiced__bt__ga__bass_8h">wiced_bt_ga_bass.h</innerfile>
+    <innerfile refid="wiced__bt__ga__common_8h">wiced_bt_ga_common.h</innerfile>
+    <innerfile refid="wiced__bt__ga__csip_8h">wiced_bt_ga_csip.h</innerfile>
+    <innerfile refid="wiced__bt__ga__csis_8h">wiced_bt_ga_csis.h</innerfile>
+    <innerfile refid="wiced__bt__ga__csis__common_8h">wiced_bt_ga_csis_common.h</innerfile>
+    <innerfile refid="wiced__bt__ga__gmap_8h">wiced_bt_ga_gmap.h</innerfile>
+    <innerfile refid="wiced__bt__ga__hap_8h">wiced_bt_ga_hap.h</innerfile>
+    <innerfile refid="wiced__bt__ga__has_8h">wiced_bt_ga_has.h</innerfile>
+    <innerfile refid="wiced__bt__ga__ias_8h">wiced_bt_ga_ias.h</innerfile>
+    <innerfile refid="wiced__bt__ga__mcs_8h">wiced_bt_ga_mcs.h</innerfile>
+    <innerfile refid="wiced__bt__ga__mics_8h">wiced_bt_ga_mics.h</innerfile>
+    <innerfile refid="wiced__bt__ga__pacs_8h">wiced_bt_ga_pacs.h</innerfile>
+    <innerfile refid="wiced__bt__ga__tbs_8h">wiced_bt_ga_tbs.h</innerfile>
+    <innerfile refid="wiced__bt__ga__tmap_8h">wiced_bt_ga_tmap.h</innerfile>
+    <innerfile refid="wiced__bt__ga__vcp_8h">wiced_bt_ga_vcp.h</innerfile>
+    <innerfile refid="wiced__bt__ga__vcs_8h">wiced_bt_ga_vcs.h</innerfile>
+    <innerfile refid="wiced__bt__ga__vocs_8h">wiced_bt_ga_vocs.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/glb/qAjI-NvgK/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/"/>
+  </compounddef>
+</doxygen>
